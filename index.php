@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:url"           content="http://www.geostat.ge/regions/" />
-	<meta property="og:type"          content="website" />
-	<meta property="og:title"         content="სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით" />
-	<meta property="og:description"   content="სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით" />
-	<meta property="og:image"         content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
-	<meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" /> 
-	<meta property="og:image:width" content="740" /> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:url" content="http://www.geostat.ge/regions/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით" />
+	<meta property="og:description" content="სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით" />
+	<meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
+	<meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
+	<meta property="og:image:width" content="740" />
 	<meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link rel="stylesheet" href="mediastyles.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-154977204-1');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-154977204-1');
+	</script>
 
 </head>
+
 <body>
 	<div class="hidden">
 		<script type="text/javascript">
 			var images = new Array()
-				function preload() {
-					for (i = 0; i < preload.arguments.length; i++) {
-						images[i] = new Image()
-						images[i].src = preload.arguments[i]
-					}
+
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
 				}
-				preload(					
-					"1600-900-optimized/2.jpg",
-					"1600-900-optimized/3.jpg",
-					"1600-900-optimized/4.jpg",
-					"1600-900-optimized/5.jpg",
-					"1600-900-optimized/6.jpg",
-					"1600-900-optimized/7.jpg",
-					"1600-900-optimized/8.jpg",
-					"1600-900-optimized/9.jpg",
-					"1600-900-optimized/10.jpg",
-					"1600-900-optimized/11.jpg",
-					"1600-900-optimized/12.jpg",
-					"1600-900-optimized/15.jpg"
-				)
+			}
+			preload(
+				"1600-900-optimized/2.jpg",
+				"1600-900-optimized/3.jpg",
+				"1600-900-optimized/4.jpg",
+				"1600-900-optimized/5.jpg",
+				"1600-900-optimized/6.jpg",
+				"1600-900-optimized/7.jpg",
+				"1600-900-optimized/8.jpg",
+				"1600-900-optimized/9.jpg",
+				"1600-900-optimized/10.jpg",
+				"1600-900-optimized/11.jpg",
+				"1600-900-optimized/12.jpg",
+				"1600-900-optimized/15.jpg"
+			)
 		</script>
 	</div>
 	<div id="background-main" class="background-image"></div>
-	<div class="main-container" >
+	<div class="main-container">
 		<div id="brand-logo">
-			<a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png"/></a>
+			<a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
 		</div>
-		<header class="header1" >
-			<h1><p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით</p></h1>
+		<header class="header1">
+			<h1>
+				<p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით</p>
+			</h1>
 		</header>
 		<div id="languages">
 			<a href="#" id="ka" class="lang"><img src="images/ka.png" /></a>
@@ -75,19 +84,19 @@
 			<span class="tr" Key="RECTEXT2">
 				ბრაუზერების გამოყენება:
 			</span>
-			<a href="http://www.google.com/chrome/"><img src="images/chrome-100.png"/></a>
-			<a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png"/></a>
-			<a href="http://www.opera.com/"><img src="images/opera-100.png"/></a>
+			<a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
+			<a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
+			<a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
 		</div>
 		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
 		<div id="textbox">
-			<div id="textbox1"><img class="indic-icons" src="images/map-200-b.png"/><span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69.700 კვ. კმ</span></div>
-			<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png"/><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 688.6 ათასი</span></div>
-			<div id="textbox3"><img class="indic-icons" src="images/line-chart-200-r.png"/><span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: -6.8%</span></div>
-			<div id="textbox4"><img class="indic-icons" src="images/user-200-y.png"/><span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 4 255.7 აშშ დოლარი</span></div>
-			<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png"/><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 10.9%</span></div>
-			<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png"/><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 20.6%</span></div>
-			<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png"/><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 709 729</span></div>
+			<div id="textbox1"><img class="indic-icons" src="images/map-200-b.png" /><span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69.700 კვ. კმ</span></div>
+			<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png" /><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 688.6 ათასი</span></div>
+			<div id="textbox3"><img class="indic-icons" src="images/line-chart-200-r.png" /><span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: -6.8%</span></div>
+			<div id="textbox4"><img class="indic-icons" src="images/user-200-y.png" /><span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 4 255.7 აშშ დოლარი</span></div>
+			<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 10.9%</span></div>
+			<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 20.6%</span></div>
+			<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 709 729</span></div>
 		</div>
 		<!-- <style type="text/css">
 			.tooltipz{
@@ -101,7 +110,7 @@
 			}
 		</style> -->
 		<div>
-			<div class="col-md-2" >
+			<div class="col-md-2">
 				<div class="side-box1" id="resultleftbox">
 				</div>
 			</div>
@@ -324,8 +333,8 @@
 										<text id="text17347" transform="matrix(1 0 0 -.99998 1454 262)">
 											<tspan id="tspan17349" class="tr" Key="KAKHETI_DEDOPLISTSQARO">დედოფლისწყარო</tspan>
 										</text>
-									</g>										
-									<g id="textgroup11" opacity="0" font-size="12px" >
+									</g>
+									<g id="textgroup11" opacity="0" font-size="12px">
 										<text id="text17355" transform="scale(1 -1)" y="-669" x="1078">
 											<tspan id="tspan17357" class="tr" Key="MTSKHETA_KAZBEGI">ყაზბეგი</tspan>
 										</text>
@@ -339,7 +348,7 @@
 											<tspan id="tspan17405" class="tr" Key="MTSKHETA_MTSKHETA">მცხეთა</tspan>
 										</text>
 									</g>
-									<g id="textgroup12" opacity="0" font-size="10px" >
+									<g id="textgroup12" opacity="0" font-size="10px">
 										<text id="text17471" transform="scale(1 -.99999)" y="-480" x="867">
 											<tspan id="tspan17473" class="tr" Key="SHIDA_KHASHURI">ხაშური</tspan>
 										</text>
@@ -367,38 +376,38 @@
 								</g>
 							</g>
 							<g id="textgroup10" class="unselectable" opacity="0" font-size="3px" fill="#ffffff">
-								<text id="text4739" y="785.1842" x="1344.2976" >
+								<text id="text4739" y="785.1842" x="1344.2976">
 									<tspan id="tspan4741" class="tr" Key="VAKE">ვაკე</tspan>
 								</text>
 								<text id="text4743" y="799.36945" x="1353.406" line-height="125%">
 									<tspan id="tspan4745" class="tr" Key="MTATSMINDA">მთაწმინდა</tspan>
-									</text>
+								</text>
 								<text id="text5295" y="752.63293" x="1346.8359" line-height="125%">
 									<tspan id="tspan5297" class="tr" Key="SABURTALO">საბურთალო</tspan>
-									</text>
+								</text>
 								<text id="text5295-3" y="759.72675" x="1363.9094" line-height="125%">
 									<tspan id="tspan5297-5" class="tr" Key="DIDUBE">დიდუბე</tspan>
-									</text>
+								</text>
 								<text id="text5295-3-5" y="763.27063" x="1377.3926" line-height="125%">
 									<tspan id="tspan5297-5-4" class="tr" Key="NADZALADEVI">ნაძალადევი</tspan>
-									</text>
+								</text>
 								<text id="text4739-7" y="743.94983" x="1381.7162" line-height="125%">
 									<tspan id="tspan4741-3" class="tr" Key="GLDANI">გლდანი</tspan>
-									</text>
+								</text>
 								<text id="text4739-7-4" y="784.35553" x="1410.9137" line-height="125%">
 									<tspan id="tspan4741-3-0" class="tr" Key="SAMGORI">სამგორი</tspan>
-									</text>
+								</text>
 								<text id="text4739-7-4-8" y="798.11658" x="1378.7488" line-height="125%">
 									<tspan id="tspan4741-3-0-8" class="tr" Key="KRTSANISI">კრწანისი</tspan>
-									</text>
+								</text>
 								<text id="text4739-7-4-8-8" y="787.21759" x="1385.5345" line-height="125%">
 									<tspan id="tspan4741-3-0-8-3" class="tr" Key="ISANI">ისანი</tspan>
-									</text>
+								</text>
 								<text id="text4739-7-4-8-8-3" y="776.18567" x="1377.2666" line-height="125%">
 									<tspan id="tspan4741-3-0-8-3-5" class="tr" Key="CHUGURETI">ჩუღურეთი</tspan>
 								</text>
-							</g>								
-							<g id="textgroupregion" class="unselectable"  transform="matrix(1.25 0 0 -1.25 -70.785 1260.7)" fill="#fff">
+							</g>
+							<g id="textgroupregion" class="unselectable" transform="matrix(1.25 0 0 -1.25 -70.785 1260.7)" fill="#fff">
 								<g id="g17541" font-size="18px" clip-path="url(#clipPath17543)" font-family="Sylfaen" font-weight="" fill="#4c4c4c">
 									<text id="text17549" y="-402" x="1260" transform="matrix(1 0 -.21256 -1 0 0)">
 										<tspan id="tspan17551" class="tr" Key="KAKHETI">კახეთი</tspan>
@@ -440,12 +449,12 @@
 										<tspan id="tspan17965" class="tr" Key="TBILISI">თბილისი</tspan>
 									</text>
 								</g>
-							</g>								
+							</g>
 						</g>
 					</svg>
 				</div>
 			</div>
-			<div class="col-md-2" >
+			<div class="col-md-2">
 				<div class="side-box2" id="resultrightbox">
 				</div>
 			</div>
@@ -464,233 +473,240 @@
 			    });
 			});
 		</script> -->
-	<footer>
-	<div>
-		<div>				
-			<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-			</script>
-			<div class="fb-share-button" data-href="http://geostat.ge/regions/" data-layout="button" data-mobile-iframe="false">
-				<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"></a>
+		<footer>
+			<div>
+				<div>
+					<div id="fb-root"></div>
+					<script>
+						(function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(id)) return;
+							js = d.createElement(s);
+							js.id = id;
+							js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+							fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-share-button" data-href="http://geostat.ge/regions/" data-layout="button" data-mobile-iframe="false">
+						<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"></a>
+					</div>
+					<style media="screen" type="text/css">
+						.fb_iframe_widget span {
+							vertical-align: baseline !important;
+							width: 27px !important;
+							overflow: hidden !important;
+							border-radius: 3px;
+						}
+
+						#twitter-widget-0 {
+							width: 23px !important;
+							overflow: hidden !important;
+							border-radius: 3px;
+						}
+					</style>
+					<a class="twitter-share-button" href="https://twitter.com/intent/tweet"></a>
+					<script>
+						window.twttr = (function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0],
+								t = window.twttr || {};
+							if (d.getElementById(id)) return t;
+							js = d.createElement(s);
+							js.id = id;
+							js.src = "https://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+							t._e = [];
+							t.ready = function(f) {
+								t._e.push(f);
+							};
+							return t;
+						}(document, "script", "twitter-wjs"));
+					</script>
+				</div>
 			</div>
-			<style media="screen" type="text/css">
-			.fb_iframe_widget span
-			{
-				vertical-align: baseline !important;
-				width: 27px !important;
-				overflow: hidden !important;
-				border-radius: 3px;
-			}
-			#twitter-widget-0 {
-				width: 23px !important;
-				overflow: hidden !important;
-				border-radius: 3px;					
-			}				
-			</style>								
-			<a class="twitter-share-button" href="https://twitter.com/intent/tweet" ></a>
-			<script>window.twttr = (function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0],
-				t = window.twttr || {};
-			  if (d.getElementById(id)) return t;
-			  js = d.createElement(s);
-			  js.id = id;
-			  js.src = "https://platform.twitter.com/widgets.js";
-			  fjs.parentNode.insertBefore(js, fjs);
-			  t._e = [];
-			  t.ready = function(f) {
-				t._e.push(f);
-			  };
-			  return t;
-			}(document, "script", "twitter-wjs"));
-			</script>				
-		</div>
-	</div>
-	<span class="tr" key="COPYRIGHT1">© 2016 ყველა უფლება დაცულია.</span>
-	<br>
-	<span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
-	
-	<span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
-	</footer>
+			<span class="tr" key="COPYRIGHT1">© 2016 ყველა უფლება დაცულია.</span>
+			<br>
+			<span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
+
+			<span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
+		</footer>
 	</div>
 	<script>
-        $(document).ready(function () {
-            var pathSelected = $('svg').find('path');
-            function calculateCordinates() {
-                $('svg').children('path').each(function () {
-                    var scale;
-                    var transX;
-                    var transY;
-                    // Calculate scale, x, y
-                    $(this).attr('data-scale', scale);
-                    $(this).attr('data-trans-x', transX);
-                    $(this).attr('data-trans-y', transY);
-                });
-            }
-            calculateCordinates();									
-            $(pathSelected).on("click", function (event) {
-				var getid = event.target.id;				
-                var main1x = document.getElementById('layer1');
-                var dataScale = $(this).data('scale');
-                var dataTransX = $(this).data('trans-x');
-                var dataTransY = $(this).data('trans-y');		
-                var clicked = $(this).attr("data-clicked");
-                $(this).parent().children('path').each(function () {
-                    $(this).attr("data-clicked", false);
-                    $(this).attr("class", 'nonactive');
-                    $(this).attr("opacity", '1');
-                });				
+		$(document).ready(function() {
+			var pathSelected = $('svg').find('path');
+
+			function calculateCordinates() {
+				$('svg').children('path').each(function() {
+					var scale;
+					var transX;
+					var transY;
+					// Calculate scale, x, y
+					$(this).attr('data-scale', scale);
+					$(this).attr('data-trans-x', transX);
+					$(this).attr('data-trans-y', transY);
+				});
+			}
+			calculateCordinates();
+			$(pathSelected).on("click", function(event) {
+				var getid = event.target.id;
+				var main1x = document.getElementById('layer1');
+				var dataScale = $(this).data('scale');
+				var dataTransX = $(this).data('trans-x');
+				var dataTransY = $(this).data('trans-y');
+				var clicked = $(this).attr("data-clicked");
+				$(this).parent().children('path').each(function() {
+					$(this).attr("data-clicked", false);
+					$(this).attr("class", 'nonactive');
+					$(this).attr("opacity", '1');
+				});
 				if (getid.length > 6) {
-					eventtriggerid = getid.substr(getid.length-2);
+					eventtriggerid = getid.substr(getid.length - 2);
 				} else {
-					eventtriggerid = getid.substr(getid.length-1);
-				}								
+					eventtriggerid = getid.substr(getid.length - 1);
+				}
 				if (clicked == 'false') {
-                    if (eventtriggerid == '1' || eventtriggerid == '13'){
+					if (eventtriggerid == '1' || eventtriggerid == '13') {
 						return false;
-					}
-					else {
-                    TweenMax.to(main1x, .7, {
-                        scale: dataScale,
-                        x: -dataTransX,
-                        y: -dataTransY,
-                        ease: Power2.easeInOut,
-                        transformOrigin:"50% 50%"
-                    })                    
-					$('#background-main').css("background-image", "url(1600-900-optimized/"+eventtriggerid+".jpg)");									
-                    $(this).parent().children('path').attr("opacity", '0');
-					$(this).parent().children('path').attr("class", 'pointer-events');
-                    $(this).attr("data-clicked", true);
-                    $(this).attr("class", 'active');
-					$("#textgroup" + eventtriggerid).attr("opacity", '1');
-					$('#textgroupregion').attr("opacity", '0');
-					$('.zoom-out').css("opacity", '1');
-					$('.zoom-out').css("visibility", 'visible');
-					$('.zoom-out').addClass("btn-color"+eventtriggerid+"");					
-					$('#resultrightbox').css("visibility", "visible");
-					$('#resultleftbox').css("visibility", "visible");
-					$('#textbox').css("visibility", "hidden");
-					$('#textbox').css("opacity", "0");					
-					$('body').removeClass('scrollhide');					
-					var englishcheck = /^[A-Za-z0-9]*$/;					
-					if  (!englishcheck.test($('#tspan17965').html())) {
-						var langcheck = 'geo';
 					} else {
-						var langcheck = 'eng';
-					}					
-					$.post('validaterightbox.php', {postvariable: getid, postvariablelang: langcheck},										
-					function(data) {
-						$('#resultrightbox').html(data);
-						$(document).ready(function() {
-						var english = /^[A-Za-z0-9]*$/;
-						if ( !english.test($('#tspan17965').html())) {
-							$('.tr').each(function(i){
-							  $(this).text(aLangKeys['ka'][ $(this).attr('key') ]);
-							});
+						TweenMax.to(main1x, .7, {
+							scale: dataScale,
+							x: -dataTransX,
+							y: -dataTransY,
+							ease: Power2.easeInOut,
+							transformOrigin: "50% 50%"
+						})
+						$('#background-main').css("background-image", "url(1600-900-optimized/" + eventtriggerid + ".jpg)");
+						$(this).parent().children('path').attr("opacity", '0');
+						$(this).parent().children('path').attr("class", 'pointer-events');
+						$(this).attr("data-clicked", true);
+						$(this).attr("class", 'active');
+						$("#textgroup" + eventtriggerid).attr("opacity", '1');
+						$('#textgroupregion').attr("opacity", '0');
+						$('.zoom-out').css("opacity", '1');
+						$('.zoom-out').css("visibility", 'visible');
+						$('.zoom-out').addClass("btn-color" + eventtriggerid + "");
+						$('#resultrightbox').css("visibility", "visible");
+						$('#resultleftbox').css("visibility", "visible");
+						$('#textbox').css("visibility", "hidden");
+						$('#textbox').css("opacity", "0");
+						$('body').removeClass('scrollhide');
+						var englishcheck = /^[A-Za-z0-9]*$/;
+						if (!englishcheck.test($('#tspan17965').html())) {
+							var langcheck = 'geo';
 						} else {
-							$('.tr').each(function(i){
-							  $(this).text(aLangKeys['en'][ $(this).attr('key') ]);
-							});
+							var langcheck = 'eng';
 						}
+						$.post('validaterightbox.php', {
+								postvariable: getid,
+								postvariablelang: langcheck
+							},
+							function(data) {
+								$('#resultrightbox').html(data);
+								$(document).ready(function() {
+									var english = /^[A-Za-z0-9]*$/;
+									if (!english.test($('#tspan17965').html())) {
+										$('.tr').each(function(i) {
+											$(this).text(aLangKeys['ka'][$(this).attr('key')]);
+										});
+									} else {
+										$('.tr').each(function(i) {
+											$(this).text(aLangKeys['en'][$(this).attr('key')]);
+										});
+									}
+								});
+							}
+						);
+						$.post('validateleftbox.php', {
+							postvariable: getid,
+							postvariablelang: langcheck
+						}, function(data) {
+							$('#resultleftbox').html(data);
+							$(document).ready(function() {
+								var english = /^[A-Za-z0-9]*$/;
+								if (!english.test($('#tspan17965').html())) {
+									$('.tr').each(function(i) {
+										$(this).text(aLangKeys['ka'][$(this).attr('key')]);
+									});
+								} else {
+									$('.tr').each(function(i) {
+										$(this).text(aLangKeys['en'][$(this).attr('key')]);
+									});
+								}
+							});
+						});
+						var lang = $('.lang').attr('id');
+						$('#pagetitlename').attr('key', 'REGION' + eventtriggerid + '');
+						$('#pagetitlename').each(function(i) {
+							var english = /^[A-Za-z0-9]*$/;
+							if (!english.test($('#tspan17965').html())) {
+								$('#pagetitlename').each(function(i) {
+									$(this).text(aLangKeys['ka']['REGION' + eventtriggerid + '']);
+								});
+							} else {
+								$('#pagetitlename').each(function(i) {
+									$(this).text(aLangKeys['en']['REGION' + eventtriggerid + '']);
+								});
+							}
 						});
 					}
-					);					
-					$.post('validateleftbox.php', {postvariable: getid, postvariablelang: langcheck}, function(data) {
-						$('#resultleftbox').html(data);
-						$(document).ready(function() {
-						var english = /^[A-Za-z0-9]*$/;
-						if ( !english.test($('#tspan17965').html())) {
-							$('.tr').each(function(i){
-								$(this).text(aLangKeys['ka'][ $(this).attr('key') ]);
-							});						
-						} else {
-							$('.tr').each(function(i){
-							  $(this).text(aLangKeys['en'][ $(this).attr('key') ]);
-							});
-						}
-						});
-					}
-					);					
-					var lang = $('.lang').attr('id');					
-					$('#pagetitlename').attr('key', 'REGION' + eventtriggerid + '');
-					$('#pagetitlename').each(function(i) {
-						var english = /^[A-Za-z0-9]*$/;
-						if ( !english.test($('#tspan17965').html())) {
-							$('#pagetitlename').each(function(i){
-							  $(this).text(aLangKeys['ka']['REGION' + eventtriggerid + '']);
-							});
-						} else {
-							$('#pagetitlename').each(function(i){
-							  $(this).text(aLangKeys['en']['REGION' + eventtriggerid + '']);
-							});
-						}
-					});					
-					}
-				}				
-                else {
-                    TweenMax.to(main1x, .6, {
-                        scale: 1,
-                        x: -4.0476,
-                        y: -3.1201,
-                        ease: Power2.easeInOut,
-                        transformOrigin: "50% 50%"
-                    })					
-					$('#background-main').css("background-image", "url(1600-900-optimized/15.jpg)");					
-                    $(this).attr("data-clicked", false);
-                    $(this).attr("class", 'nonactive');
+				} else {
+					TweenMax.to(main1x, .6, {
+						scale: 1,
+						x: -4.0476,
+						y: -3.1201,
+						ease: Power2.easeInOut,
+						transformOrigin: "50% 50%"
+					})
+					$('#background-main').css("background-image", "url(1600-900-optimized/15.jpg)");
+					$(this).attr("data-clicked", false);
+					$(this).attr("class", 'nonactive');
 					$('#resultrightbox').css("visibility", "hidden");
 					$('#resultleftbox').css("visibility", "hidden");
 					$('#resultrightbox').empty();
 					$('#resultleftbox').empty();
 					$('#textbox').css("visibility", "visible");
 					$('#textbox').css("opacity", "1");
-					$("#textgroup" + eventtriggerid).attr("opacity", '0');					
+					$("#textgroup" + eventtriggerid).attr("opacity", '0');
 					$('.zoom-out').css("opacity", '0');
 					$('.zoom-out').css("visibility", 'hidden');
-					$('.zoom-out').removeClass("btn-color"+eventtriggerid+"");					
-					$('#textgroupregion').attr("opacity", '1');					
-					$('body').addClass('scrollhide');												
-					var lang = $('.lang').attr('id');					
+					$('.zoom-out').removeClass("btn-color" + eventtriggerid + "");
+					$('#textgroupregion').attr("opacity", '1');
+					$('body').addClass('scrollhide');
+					var lang = $('.lang').attr('id');
 					$('#pagetitlename').attr('key', 'REGION14');
-					$('#pagetitlename').each(function(i) {						
+					$('#pagetitlename').each(function(i) {
 						var english = /^[A-Za-z0-9]*$/;
-						if ( !english.test($('#tspan17965').html())) {
-							$('#pagetitlename').each(function(i){
-							  $(this).text(aLangKeys['ka']['REGION14']);
+						if (!english.test($('#tspan17965').html())) {
+							$('#pagetitlename').each(function(i) {
+								$(this).text(aLangKeys['ka']['REGION14']);
 							});
 						} else {
-							$('#pagetitlename').each(function(i){
-							  $(this).text(aLangKeys['en']['REGION14']);
+							$('#pagetitlename').each(function(i) {
+								$(this).text(aLangKeys['en']['REGION14']);
 							});
-						}						
+						}
 					});
 				}
-			});			
-			$('.zoom-out').on("click", function (event){				
-				var getid = event.target.id;				
-                var main1x = document.getElementById('layer1');
-                var dataScale = $(pathSelected).data('scale');
-                var dataTransX = $(pathSelected).data('trans-x');
-                var dataTransY = $(pathSelected).data('trans-y');		
-                var clicked = $(pathSelected).attr("data-clicked");
-                $(pathSelected).parent().children('path').each(function () {
-                    $(this).attr("data-clicked", false);
-                    $(this).attr("class", 'nonactive');
-                    $(this).attr("opacity", '1');
-                });
+			});
+			$('.zoom-out').on("click", function(event) {
+				var getid = event.target.id;
+				var main1x = document.getElementById('layer1');
+				var dataScale = $(pathSelected).data('scale');
+				var dataTransX = $(pathSelected).data('trans-x');
+				var dataTransY = $(pathSelected).data('trans-y');
+				var clicked = $(pathSelected).attr("data-clicked");
+				$(pathSelected).parent().children('path').each(function() {
+					$(this).attr("data-clicked", false);
+					$(this).attr("class", 'nonactive');
+					$(this).attr("opacity", '1');
+				});
 				TweenMax.to(main1x, .6, {
 					scale: 1,
 					x: -4.0476,
 					y: -3.1201,
 					ease: Power2.easeInOut,
 					transformOrigin: "50% 50%"
-				})				
-				$('#background-main').css("background-image", "url(1600-900-optimized/15.jpg)");				
+				})
+				$('#background-main').css("background-image", "url(1600-900-optimized/15.jpg)");
 				$(pathSelected).attr("data-clicked", false);
 				$(pathSelected).attr("class", 'nonactive');
 				$('#resultrightbox').css("visibility", "hidden");
@@ -699,35 +715,35 @@
 				$('#resultleftbox').empty();
 				$('#textbox').css("visibility", "visible");
 				$('#textbox').css("opacity", "1");
-				$("#textgroup" + eventtriggerid).attr("opacity", '0');				
+				$("#textgroup" + eventtriggerid).attr("opacity", '0');
 				$('.zoom-out').css("opacity", '0');
 				$('.zoom-out').css("visibility", 'hidden');
-				$('.zoom-out').removeClass("btn-color"+eventtriggerid+"");				
-				$('#textgroupregion').attr("opacity", '1');				
-				$('body').addClass('scrollhide');											
-				var lang = $('.lang').attr('id');				
+				$('.zoom-out').removeClass("btn-color" + eventtriggerid + "");
+				$('#textgroupregion').attr("opacity", '1');
+				$('body').addClass('scrollhide');
+				var lang = $('.lang').attr('id');
 				$('#pagetitlename').attr('key', 'REGION14');
-				$('#pagetitlename').each(function(i) {					
+				$('#pagetitlename').each(function(i) {
 					var english = /^[A-Za-z0-9]*$/;
-					if ( !english.test($('#tspan17965').html())) {
-						$('#pagetitlename').each(function(i){
-						  $(this).text(aLangKeys['ka']['REGION14']);
+					if (!english.test($('#tspan17965').html())) {
+						$('#pagetitlename').each(function(i) {
+							$(this).text(aLangKeys['ka']['REGION14']);
 						});
 					} else {
-						$('#pagetitlename').each(function(i){
-						  $(this).text(aLangKeys['en']['REGION14']);
+						$('#pagetitlename').each(function(i) {
+							$(this).text(aLangKeys['en']['REGION14']);
 						});
-					}					
-				});				
+					}
+				});
 			});
-        });
-    </script>	
-	<script>		
-		$(document).ready(function() {	
-			$('.lang').click( function() {
-				var lang = $(this).attr('id');				
-				$('.tr').each(function(i){
-				  $(this).text(aLangKeys[lang][ $(this).attr('key') ]);
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.lang').click(function() {
+				var lang = $(this).attr('id');
+				$('.tr').each(function(i) {
+					$(this).text(aLangKeys[lang][$(this).attr('key')]);
 				});
 			});
 			$('#en').click(function() {
@@ -753,59 +769,66 @@
 			$('#textbox div span').attr('rel', 'popover');
 			$('#textbox div span').attr('data-trigger', 'hover');
 			$('.textboxspan1').popover({
-					html: true,
-					animation: true,
-					content: '2014 წლის 1 მარტის მდგომარეობით',
-					placement: 'right'
-			});			
+				html: true,
+				animation: true,
+				content: '2014 წლის 1 მარტის მდგომარეობით',
+				placement: 'right'
+			});
 			$('.textboxspan2').popover({
-					html: true,
-					animation: true,
-					content: '2022 წლის 1 იანვრის მდგომარეობით',
-					placement: 'right'
+				html: true,
+				animation: true,
+				content: '2022 წლის 1 იანვრის მდგომარეობით',
+				placement: 'right'
 			});
 			$('.textboxspan3').popover({
-					html: true,
-					animation: true,
-					content: '2020 წლის  მონაცემები',
-					placement: 'right'
+				html: true,
+				animation: true,
+				content: '2020 წლის  მონაცემები',
+				placement: 'right'
 			});
 			$('.textboxspan4').popover({
-					html: true,
-					animation: true,
-					content: '2020 წლის  მონაცემები',
-					placement: 'right'
+				html: true,
+				animation: true,
+				content: '2020 წლის  მონაცემები',
+				placement: 'right'
 			});
 			$('.textboxspan5').popover({
-					html: true,
-					animation: true,
-					content: 'წლიური (2022 წლის აგვისტოს მდგომარეობით)',
-					placement: 'right'
+				html: true,
+				animation: true,
+				content: 'წლიური (2022 წლის აგვისტოს მდგომარეობით)',
+				placement: 'right'
 			});
 			$('.textboxspan6').popover({
-					html: true,
-					animation: true,
-					content: '2021 წლის მიხედვით',
-					placement: 'right'
+				html: true,
+				animation: true,
+				content: '2021 წლის მიხედვით',
+				placement: 'right'
 			});
 			$('.textboxspan7').popover({
-					html: true,
-					animation: true,
-					content: '2018 წლის 1 სექტემბრის მდგომარეობით',
-					placement: 'right'
+				html: true,
+				animation: true,
+				content: '2018 წლის 1 სექტემბრის მდგომარეობით',
+				placement: 'right'
 			});
 		});
 	</script>
 	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-100884866-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+		ga('create', 'UA-100884866-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 	<script type="text/javascript" src="lang.js"></script>
 </body>
+
 </html>
