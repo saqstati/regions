@@ -149,6 +149,20 @@ table tbody tr td img:after{content:url(images/excel-9-24.png);}
 .pointer-events{pointer-events:none;}
 
 
-.btn i{
-    right: 6px;
+.textbox-right{
+    position: absolute;
+    right: 0;
+    top: 99px;
+    z-index: 100;
+}
+.check {
+    margin-left: 15px;
+}
+
+.regions-info{
+    display: flex;
+}
+
+.regions-btn{
+    color: black;
 }

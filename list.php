@@ -90,7 +90,106 @@
         </div>
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
     </div>
-    
+
+    <div class="regions-info">
+        <div class="check">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="afxazeti" value="something" disabled>
+                <label class="form-check-label">აფხაზეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="samegrelo" value="something">
+                <label class="form-check-label">სამეგრელო-ზემო სვანეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="guria" value="something">
+                <label class="form-check-label">გურია</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="achara" value="something">
+                <label class="form-check-label">აჭარის ა.რ.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="javaxeti" value="something">
+                <label class="form-check-label">სამცხე-ჯავახეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="imereti" value="something">
+                <label class="form-check-label">იმერეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="racha" value="something">
+                <label class="form-check-label">რაჭა-ლეჩხუმი და ქვემო სვანეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="qqartli" value="something">
+                <label class="form-check-label">ქვემო ქართლი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="kaxeti" value="something">
+                <label class="form-check-label">კახეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="tbilisi" value="something">
+                <label class="form-check-label">თბილისი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="mcxeta" value="something">
+                <label class="form-check-label">მცხეთა მთიანეთი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="shqartli" value="something">
+                <label class="form-check-label">შიდა ქართლი</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="oseti" value="something" disabled>
+                <label class="form-check-label">სამხრეთ ოსეთი</label>
+            </div>
+        </div>
+
+
+        <div class="table container-fluid">
+            <div class="container-fluid">
+                <table border="1" class="table-responsive">
+                    <thead class="table_background">
+                        <th>ფართობი (კვ.კმ)</th>
+                        <th>მოსახლეობის რიცხოვნობა (ათასი)</th>
+                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>
+                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)</th>
+                        <th>უმუშევრობის დონე (%)</th>
+                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>
+                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>
+                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>
+                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>
+
+                    </thead>
+                    <tbody>
+                        <?php
+                        include('connection.php');
+                        $query = mysqli_query($link, "select * from `regions`");
+                        while ($row = mysqli_fetch_array($query)) {
+                        ?>
+                            <tr class="table-active">
+                                <td><?php echo $row['Area']; ?></td>
+                                <td><?php echo $row['Population']; ?></td>
+                                <td><?php echo $row['GDP']; ?></td>
+                                <td><?php echo $row['GDPPerCapita']; ?></td>
+                                <td><?php echo $row['UnemploymentRate']; ?></td>
+                                <td><?php echo $row['EmploymentRate']; ?></td>
+                                <td><?php echo $row['EmploymentRateIndustry']; ?></td>
+                                <td><?php echo $row['AverageSalaryIndustry']; ?></td>
+                                <td><?php echo $row['RegistredEntities']; ?></td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
     <footer>
         <div>
             <div>

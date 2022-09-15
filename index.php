@@ -88,7 +88,12 @@
 			<a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
 			<a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
 		</div>
-		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
+		<div class="textbox-right">
+			<a class="regions-btn" href="list.php"><button>რეგიონების შედარება</button></a>
+		</div>
+		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
+		</div>
+		
 		<div id="textbox">
 			<div id="textbox1"><img class="indic-icons" src="images/map-200-b.png" /><span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69.700 კვ. კმ</span></div>
 			<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png" /><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 688.6 ათასი</span></div>
@@ -98,6 +103,7 @@
 			<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 20.6%</span></div>
 			<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 709 729</span></div>
 		</div>
+
 		<!-- <style type="text/css">
 			.tooltipz{
 			    width:220px;
