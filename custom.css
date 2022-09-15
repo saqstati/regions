@@ -166,3 +166,18 @@ table tbody tr td img:after{content:url(images/excel-9-24.png);}
 .regions-btn{
     color: black;
 }
+
+.grid{
+    display: grid;
+  }
+  thead, tbody {
+    display: inline-flex;
+  }
+  .flex {
+    display: flex;
+  }
+  
+  tbody tr{
+    display: inline-grid;
+  }
+  

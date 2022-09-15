@@ -91,7 +91,7 @@
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
     </div>
 
-    <div class="regions-info">
+    <!-- <div class="regions-info">
         <div class="check">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="check1" name="afxazeti" value="something" disabled>
@@ -187,6 +187,48 @@
                 </table>
             </div>
         </div>
+    </div>
+    <center><button name="get" class="btn">გაფილტვრა</button></center> -->
+
+    <div>
+        <form method="POST" action="">
+
+            <table class="table table-bordered bg-black">
+                <tbody>
+                    <?php
+                    require 'connection.php';
+                    $query = mysqli_query($link, "SELECT * FROM `regions`");
+                    while ($fetch = mysqli_fetch_array($query)) {
+                    ?>
+                        <tr class="grid">
+                            <td><input type="checkbox" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" /><?php echo $fetch['Name'] ?></td>
+                        </tr>
+                    <?php
+                    }
+                    ?>
+                </tbody>
+                <tbody class="col-sm d-flex">
+                    <tr class="grid">
+                        <th>ფართობი (კვ.კმ)</th>
+                        <th>მოსახლეობის რიცხოვნობა (ათასი)</th>
+                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>
+                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)</th>
+                        <th>უმუშევრობის დონე (%)</th>
+                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>
+                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>
+                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>
+                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>
+                    </tr>
+                    <div class="inline d-flex ">
+                        <?php include 'get_select.php' ?>
+                    </div>
+                </tbody>
+            </table>
+
+            <center><button name="get" class="btn">გაფილტვრა</button></center>
+        </form>
+
+
     </div>
 
 
