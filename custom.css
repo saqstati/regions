@@ -182,5 +182,17 @@ table tbody tr td img:after{content:url(images/excel-9-24.png);}
   }
   
 .td-empty{
-  width: 570px;
+  width: 471px;
+  font-weight: bolder;
+  font-size: x-large !important;
+}
+
+th, td{
+  font-size: 13px !important;
+  font-weight: bold;
+}
+
+input[type=checkbox]{
+  margin: 0 5px 5px 5px !important;
+
 }

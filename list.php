@@ -69,7 +69,7 @@
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით</p>
+                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაციის შედარება საქართველოს რეგიონების მიხედვით</p>
             </h1>
         </header>
         <div id="languages">
@@ -95,7 +95,7 @@
 
             <table class="table table-bordered bg-black">
                 <tbody>
-                    <td class="td-empty"></td>
+                    <td class="td-empty"> <br>ძირითადი მაჩვენებლები</td>
                     <?php
                     require 'connection.php';
                     $query = mysqli_query($link, "SELECT * FROM `regions`");
@@ -104,6 +104,9 @@
                         <tr class="grid">
                             <td><input type="checkbox" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" /><?php echo $fetch['Name'] ?></td>
                         </tr>
+                        <script>
+                            
+                        </script>
                     <?php
                     }
                     ?>
@@ -126,7 +129,7 @@
                 </tbody>
             </table>
 
-            <center><button name="get" class="btn">გაფილტვრა</button></center>
+            <center><button name="get" class="btn">ძიება</button></center>
         </form>
 
 
