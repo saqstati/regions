@@ -113,15 +113,15 @@
                 </tbody>
                 <tbody class="col-sm d-flex">
                     <tr class="grid">
-                        <th>ფართობი (კვ.კმ)</th>
-                        <th>მოსახლეობის რიცხოვნობა (ათასი)</th>
-                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>
-                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)</th>
-                        <th>უმუშევრობის დონე (%)</th>
-                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>
-                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>
-                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>
-                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>
+                        <th>ფართობი (კვ.კმ) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>უმუშევრობის დონე (%) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
                     </tr>
                     <div class="inline d-flex ">
                         <?php include 'get_select.php' ?>
