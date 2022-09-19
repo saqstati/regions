@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="mediastyles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -32,6 +34,7 @@
 
         gtag('config', 'UA-154977204-1');
     </script>
+
 
 </head>
 
@@ -91,7 +94,7 @@
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
     </div>
     <div>
-        <form method="POST" action="">
+        <form method="POST" action="" name="applyform">
 
             <table class="table table-bordered bg-black">
                 <tbody>
@@ -112,45 +115,20 @@
                     ?>
                 </tbody>
                 <tbody class="col-sm d-flex">
-                    <tr class="grid">
-
-                        <!-- მცდელობა1 რათა გავასწორო ძირითადის ჩეკბოქსი -->
-
-                        <!-- <?php
-                        if (isset($_POST['dziritadi'])) {
-                            echo "checked fartobi" . "<br>";
-                        }
-                        if (isset($_POST['test2'])) {
-                            echo "checked value2";
-                        }
-                        ?> -->
-                        
-                        <th>ფართობი (კვ.კმ) <input class="right" id="press" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
-                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>უმუშევრობის დონე (%) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                    <tr class="grid machveneblebi">
+                        <th>ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()"/></th>
+                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" onclick="myFunction2()" /></th>
+                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" /></th>
+                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" /></th>
+                        <th>უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" /></th>
+                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="myCheck6" type="checkbox" name="dziritadi[]" /></th>
+                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="myCheck7" type="checkbox" name="dziritadi[]" /></th>
+                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" /></th>
+                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" /></th>
                     </tr>
+                    <td id="append">
 
-                    <!-- მცდელობა2 რათა გავასწორო ძირითადის ჩეკბოქსი -->
-                    <?php
-                        if (isset($_POST['submit'])) {
-
-                            if (!empty($_POST['dziritadi'])) {
-
-                                foreach ($_POST['dziritadi'] as $value) {
-                                    echo "value : " . $value . '<br/>';
-                                }
-                            }
-                        }
-                    ?>
-                    <div class="inline d-flex ">
-                        <?php include 'get_select.php' ?>
-                    </div>
+                    </td>
                 </tbody>
             </table>
 
@@ -217,6 +195,114 @@
 
         <span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
     </footer>
+
+    <script>
+        let parent = document.getElementById("append");
+
+
+        function render(data) {
+
+            var wrapper = document.createElement("tr");
+
+            let html = `
+                <tr>
+                    <td id="text" style="display:none" >${data.Area}</td>
+                    <td id="text2" style="display:none">${data.Population}</td>
+                    <td id="text3" style="display:none">${data.GDP}</td>
+                    <td id="text4" style="display:none">${data.GDPPerCapita}</td>
+                    <td id="text5" style="display:none">${data.UnemploymentRate}</td>
+                    <td id="text6" style="display:none">${data.EmploymentRate}</td>
+                    <td id="text7" style="display:none">${data.EmploymentRateIndustry}</td>
+                    <td id="text8" style="display:none">${data.AverageSalaryIndustry}</td>
+                    <td id="text9" style="display:none">${data.RegistredEntities}</td>
+                </tr> 
+            `
+
+            wrapper.innerHTML = html;
+
+            return wrapper;
+
+        }
+
+
+        function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+
+        function myFunction2() {
+            var checkBox2 = document.getElementById("myCheck2");
+            var text2 = document.getElementById("text2");
+            if (checkBox2.checked == true) {
+                text2.style.display = "block";
+            } else {
+                text2.style.display = "none";
+            }
+        }
+
+        // function myFunction3() {
+        //     var checkBox3 = document.getElementById("myCheck3");
+        //     var text3 = document.getElementById("text3");
+        //     if (checkBox3.checked == true) {
+        //         text3.style.display = "block";
+        //     } else {
+        //         text3.style.display = "none";
+        //     }
+        // }
+
+
+        let testRequest = function(data) {
+            return axios({
+                    method: "post",
+                    url: "get_select.php",
+                    data: data,
+                    headers: {
+                        "Content-Type": "multipart/form-data"
+                    },
+                })
+                .then(function(response) {
+
+                    parent.innerHTML = "";
+
+                    response.data.map(function(i) {
+                        let dom = render(i);
+                        parent.append(dom);
+                    });
+
+                    //handle success
+                    console.log(response.data);
+                })
+                .catch(function(response) {
+                    //handle error
+                    console.log(response);
+                });
+        }
+
+
+        function validateform(e) {
+
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ', ' + pair[1]);
+            }
+
+            testRequest(formData)
+        }
+
+
+        var form = document.getElementsByName('applyform')[0];
+        console.log("form", form)
+        form.addEventListener('submit', validateform);
+    </script>
+
 </body>
 
 </html>

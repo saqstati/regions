@@ -745,7 +745,7 @@ tbody tr {
 }
 
 .td-empty {
-  width: 471px;
+  width: 337px;
   font-weight: bolder;
   font-size: x-large !important;
 }
@@ -760,13 +760,34 @@ input[type="checkbox"] {
   margin: 0 5px 5px 5px !important;
 }
 
-.position-center {
+/* .position-center {
   position: absolute;
   top: 87%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 footer {
   bottom: -25px;
+}
+
+#append {
+  display: inline-flex;
+}
+
+#append tr {
+  margin-right: 10px;
+  border-left-style: outset;
+}
+
+#append tr:first-child {
+  border-left-style: unset;
+}
+
+.machveneblebi{
+  width: 337px;
+}
+
+.mhidden{
+  display: none;
 }
