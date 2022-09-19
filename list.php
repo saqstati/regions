@@ -105,7 +105,7 @@
                             <td><input type="checkbox" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" /><?php echo $fetch['Name'] ?></td>
                         </tr>
                         <script>
-                            
+
                         </script>
                     <?php
                     }
@@ -113,23 +113,48 @@
                 </tbody>
                 <tbody class="col-sm d-flex">
                     <tr class="grid">
-                        <th>ფართობი (კვ.კმ) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>უმუშევრობის დონე (%) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
-                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="press" type="checkbox" name="dziritadi" /></th>
+
+                        <!-- მცდელობა1 რათა გავასწორო ძირითადის ჩეკბოქსი -->
+
+                        <!-- <?php
+                        if (isset($_POST['dziritadi'])) {
+                            echo "checked fartobi" . "<br>";
+                        }
+                        if (isset($_POST['test2'])) {
+                            echo "checked value2";
+                        }
+                        ?> -->
+                        
+                        <th>ფართობი (კვ.კმ) <input class="right" id="press" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
+                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>უმუშევრობის დონე (%) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="press" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
                     </tr>
+
+                    <!-- მცდელობა2 რათა გავასწორო ძირითადის ჩეკბოქსი -->
+                    <?php
+                        if (isset($_POST['submit'])) {
+
+                            if (!empty($_POST['dziritadi'])) {
+
+                                foreach ($_POST['dziritadi'] as $value) {
+                                    echo "value : " . $value . '<br/>';
+                                }
+                            }
+                        }
+                    ?>
                     <div class="inline d-flex ">
                         <?php include 'get_select.php' ?>
                     </div>
                 </tbody>
             </table>
 
-            <center><button name="get" class="btn">ძიება</button></center>
+            <center class="position-center"><button name="get" class="btn">ძიება</button></center>
         </form>
 
 
