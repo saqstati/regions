@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით" />
-    <meta property="og:description" content="სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით" />
+    <meta property="og:title" content="სტატისტიკური ინფორმაციის შედარება საქართველოს რეგიონების მიხედვით" />
+    <meta property="og:description" content="სტატისტიკური ინფორმაციის შედარება საქართველოს რეგიონების მიხედვით" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
@@ -116,15 +116,15 @@
                 </tbody>
                 <tbody class="col-sm d-flex">
                     <tr class="grid machveneblebi">
-                        <th>ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
-                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" /></th>
-                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" /></th>
-                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" /></th>
-                        <th>უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" /></th>
-                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="myCheck6" type="checkbox" name="dziritadi[]" /></th>
-                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="myCheck7" type="checkbox" name="dziritadi[]" /></th>
-                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" /></th>
-                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" /></th>
+                        <th class="machveneblebi_height">ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="myCheck6" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="myCheck7" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
                     </tr>
                     <td id="append" class="TestHide" style="display:none">
 
@@ -132,7 +132,7 @@
                 </tbody>
             </table>
 
-            <center class="position-center"><button type="submit" name="get" id="btn" class="btn">ძიება</button></center>
+            <center class="position-center"><button type="submit" name="submit" value="submit" id="btn" class="btn">ძიება</button></center>
         </form>
 
 
@@ -220,15 +220,15 @@
 
             let html = `
                 <tr>
-                    <td>${data.Area}</td>
-                    <td>${data.Population}</td>
-                    <td>${data.GDP}</td>
-                    <td>${data.GDPPerCapita}</td>
-                    <td>${data.UnemploymentRate}</td>
-                    <td>${data.EmploymentRate}</td>
-                    <td>${data.EmploymentRateIndustry}</td>
-                    <td>${data.AverageSalaryIndustry}</td>
-                    <td>${data.RegistredEntities}</td>
+                    <td class="tdInfoRow"><div class="area">${data.Area}</div></td>
+                    <td class="tdInfoRow"><div class="population">${data.Population}</div></td>
+                    <td class="tdInfoRow"><div class="GDP"> ${data.GDP} </div> </td>
+                    <td class="tdInfoRow"><div class="GDPPerCapita">${data.GDPPerCapita}</div></td>
+                    <td class="tdInfoRow"><div class="UnemploymentRate">${data.UnemploymentRate}</div></td>
+                    <td class="tdInfoRow"><div class="EmploymentRate">${data.EmploymentRate}</div></td>
+                    <td class="tdInfoRow"><div class="EmploymentRateIndustry">${data.EmploymentRateIndustry}</div></td>
+                    <td class="tdInfoRow"><div class="AverageSalaryIndustry">${data.AverageSalaryIndustry}</div></td>
+                    <td class="tdInfoRow"><div class="RegistredEntities">${data.RegistredEntities}</div></td>
                 </tr> 
             `
 
@@ -239,15 +239,116 @@
         }
 
 
-        // function myFunction() {
-        //     var checkBox = document.getElementById("myCheck");
-        //     var area = document.getElementById("area");
-        //     if (checkBox.checked == true) {
-        //         area.style.display = "block";
-        //     } else {
-        //         area.style.display = "none";
-        //     }
-        // }
+        function myFunction() {
+
+            var checkBox = document.getElementById("myCheck");
+            var area = document.querySelectorAll(".area");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck2");
+            area = document.querySelectorAll(".population");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+            checkBox = document.getElementById("myCheck3");
+            area = document.querySelectorAll(".GDP");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck4");
+            area = document.querySelectorAll(".GDPPerCapita");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck5");
+            area = document.querySelectorAll(".UnemploymentRate");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck6");
+            area = document.querySelectorAll(".EmploymentRate");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck7");
+            area = document.querySelectorAll(".EmploymentRateIndustry");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck8");
+            area = document.querySelectorAll(".AverageSalaryIndustry");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+            checkBox = document.getElementById("myCheck9");
+            area = document.querySelectorAll(".RegistredEntities");
+            if (checkBox.checked == true) {
+                area.forEach(function(e) {
+                    e.style.display = "block";
+                });
+            } else {
+                area.forEach(function(e) {
+                    e.style.display = "none";
+                });
+            }
+
+        }
 
 
 
@@ -272,6 +373,7 @@
 
                     //handle success
                     console.log(response.data);
+                    myFunction();
                 })
                 .catch(function(response) {
                     //handle error
@@ -290,7 +392,10 @@
                 console.log(pair[0] + ', ' + pair[1]);
             }
 
-            testRequest(formData)
+
+            testRequest(formData);
+
+
         }
 
 
@@ -299,6 +404,8 @@
         form.addEventListener('submit', validateform);
     </script>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>

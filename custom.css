@@ -784,10 +784,19 @@ footer {
   border-left-style: unset;
 }
 
-.machveneblebi{
+.machveneblebi {
   width: 337px;
 }
 
-.mhidden{
+.mhidden {
   display: none;
+}
+
+.tdInfoRow {
+  border: 1px solid black;
+  height: 25px !important;
+}
+
+.machveneblebi_height{
+  height: 40px !important;
 }
