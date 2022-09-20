@@ -116,8 +116,8 @@
                 </tbody>
                 <tbody class="col-sm d-flex">
                     <tr class="grid machveneblebi">
-                        <th>ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()"/></th>
-                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" onclick="myFunction2()" /></th>
+                        <th>ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
+                        <th>მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" /></th>
                         <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" /></th>
                         <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" /></th>
                         <th>უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" /></th>
@@ -126,18 +126,32 @@
                         <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" /></th>
                         <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" /></th>
                     </tr>
-                    <td id="append">
+                    <td id="append" class="TestHide" style="display:none">
 
                     </td>
                 </tbody>
             </table>
 
-            <center class="position-center"><button name="get" class="btn">ძიება</button></center>
+            <center class="position-center"><button type="submit" name="get" id="btn" class="btn">ძიება</button></center>
         </form>
+
 
 
     </div>
 
+    <script>
+        const btn = document.querySelector("#btn");
+        const container = document.querySelector("#append");
+        btn.addEventListener("click", function() {
+            if (container.style.display === "block") {
+                container.style.display = "none";
+                btn.innerHTML = "ძიება"
+            } else {
+                container.style.display = "inline-flex";
+                btn.innerHTML = "ძიება"
+            }
+        });
+    </script>
 
     <footer>
         <div>
@@ -206,15 +220,15 @@
 
             let html = `
                 <tr>
-                    <td id="text" style="display:none" >${data.Area}</td>
-                    <td id="text2" style="display:none">${data.Population}</td>
-                    <td id="text3" style="display:none">${data.GDP}</td>
-                    <td id="text4" style="display:none">${data.GDPPerCapita}</td>
-                    <td id="text5" style="display:none">${data.UnemploymentRate}</td>
-                    <td id="text6" style="display:none">${data.EmploymentRate}</td>
-                    <td id="text7" style="display:none">${data.EmploymentRateIndustry}</td>
-                    <td id="text8" style="display:none">${data.AverageSalaryIndustry}</td>
-                    <td id="text9" style="display:none">${data.RegistredEntities}</td>
+                    <td>${data.Area}</td>
+                    <td>${data.Population}</td>
+                    <td>${data.GDP}</td>
+                    <td>${data.GDPPerCapita}</td>
+                    <td>${data.UnemploymentRate}</td>
+                    <td>${data.EmploymentRate}</td>
+                    <td>${data.EmploymentRateIndustry}</td>
+                    <td>${data.AverageSalaryIndustry}</td>
+                    <td>${data.RegistredEntities}</td>
                 </tr> 
             `
 
@@ -225,35 +239,17 @@
         }
 
 
-        function myFunction() {
-            var checkBox = document.getElementById("myCheck");
-            var text = document.getElementById("text");
-            if (checkBox.checked == true) {
-                text.style.display = "block";
-            } else {
-                text.style.display = "none";
-            }
-        }
-
-        function myFunction2() {
-            var checkBox2 = document.getElementById("myCheck2");
-            var text2 = document.getElementById("text2");
-            if (checkBox2.checked == true) {
-                text2.style.display = "block";
-            } else {
-                text2.style.display = "none";
-            }
-        }
-
-        // function myFunction3() {
-        //     var checkBox3 = document.getElementById("myCheck3");
-        //     var text3 = document.getElementById("text3");
-        //     if (checkBox3.checked == true) {
-        //         text3.style.display = "block";
+        // function myFunction() {
+        //     var checkBox = document.getElementById("myCheck");
+        //     var area = document.getElementById("area");
+        //     if (checkBox.checked == true) {
+        //         area.style.display = "block";
         //     } else {
-        //         text3.style.display = "none";
+        //         area.style.display = "none";
         //     }
         // }
+
+
 
 
         let testRequest = function(data) {
