@@ -12,7 +12,7 @@
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია საქართველოს რეგიონების მიხედვით</title>
+    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაციის შედარება საქართველოს რეგიონების მიხედვით</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
