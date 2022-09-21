@@ -88,8 +88,11 @@
 			<a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
 			<a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
 		</div>
-		<div class="textbox-right">
-			<a class="regions-btn" href="list.php"><button>რეგიონების შედარება</button></a>
+		<div class="textbox-right zoom-out">
+			<span><a class="regions-btn" href="list.php">რეგიონების შედარება</a></span>
+		</div>
+		<div class="textbox-right-home">
+			<span><a class="regions-btn" href="list.php">რეგიონების შედარება</a></span>
 		</div>
 		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
 		</div>
@@ -589,6 +592,7 @@
 						$('#textgroupregion').attr("opacity", '0');
 						$('.zoom-out').css("opacity", '1');
 						$('.zoom-out').css("visibility", 'visible');
+						$('.textbox-right-home').css("visibility", 'hidden');
 						$('.zoom-out').addClass("btn-color" + eventtriggerid + "");
 						$('#resultrightbox').css("visibility", "visible");
 						$('#resultleftbox').css("visibility", "visible");

@@ -19,6 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="stylesheet" type="text/css" href="list.css">
     <link rel="stylesheet" href="mediastyles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
@@ -105,7 +106,7 @@
                     while ($fetch = mysqli_fetch_array($query)) {
                     ?>
                         <tr class="grid">
-                            <td><input type="checkbox" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" /><?php echo $fetch['Name'] ?></td>
+                            <td class="regionebi"><input type="checkbox" id="regionInfo" name="reg_id[]"  value="<?php echo $fetch['ID'] ?>" onclick="trInfoRowFunction()" /><?php echo $fetch['Name'] ?></td>
                         </tr>
                         <script>
 
@@ -118,13 +119,13 @@
                     <tr class="grid machveneblebi">
                         <th class="machveneblebi_height">ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
                         <th class="machveneblebi_height">მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="myCheck6" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="myCheck7" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="myCheck6" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="myCheck7" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
+                        <th class="machveneblebi_height">რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
                     </tr>
                     <td id="append" class="TestHide" style="display:none">
 
@@ -217,9 +218,10 @@
         function render(data) {
 
             var wrapper = document.createElement("tr");
+            wrapper.className = "trInfoRow";
 
             let html = `
-                <tr>
+                <tr id=trInfoRow>
                     <td class="tdInfoRow"><div class="area">${data.Area}</div></td>
                     <td class="tdInfoRow"><div class="population">${data.Population}</div></td>
                     <td class="tdInfoRow"><div class="GDP"> ${data.GDP} </div> </td>
@@ -238,6 +240,19 @@
 
         }
 
+        function trInfoRowFunction() {
+            var checkBox = document.getElementById("regionInfo");
+            var trInfoRow = document.querySelectorAll(".trInfoRow");
+            if (checkBox.checked == true) {
+                trInfoRow.forEach(function(n) {
+                    n.style.display = "block";
+                });
+            } else {
+                trInfoRow.forEach(function(n) {
+                    n.style.display = "none";
+                });
+            }
+        }
 
         function myFunction() {
 
@@ -374,6 +389,7 @@
                     //handle success
                     console.log(response.data);
                     myFunction();
+                    // trInfoRowFunction();
                 })
                 .catch(function(response) {
                     //handle error
