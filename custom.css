@@ -759,3 +759,8 @@ table tbody tr td img:after {
   left: -20px;
   transition: 0.6s;
 }
+
+.test{
+  background: black;
+  color: red;
+}

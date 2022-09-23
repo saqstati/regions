@@ -50,6 +50,9 @@ footer {
 #append tr {
     margin-right: 10px;
     border-left-style: outset;
+
+    min-width: 80px;
+    max-width: 80px;
 }
 
 #append tr:first-child {
@@ -69,6 +72,7 @@ footer {
     height: 25px !important;
     width: 78px !important;
     text-align: center;
+    margin-top: 12px;
 }
 
 .machveneblebi_height {
@@ -77,4 +81,19 @@ footer {
 
 .regionebi {
     width: 98px;
+}
+
+#IdTrInfoRow {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.trInfoRow, .trInfoRow2 {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.test{
+    background: black;
+    color: red;
 }

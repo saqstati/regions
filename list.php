@@ -94,6 +94,9 @@
         </div>
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
     </div>
+    <div class="test">
+        ეს ის არ არის, რასაც შენ ფიქრობ
+    </div>
     <div>
         <form method="POST" action="" name="applyform">
 
@@ -106,7 +109,7 @@
                     while ($fetch = mysqli_fetch_array($query)) {
                     ?>
                         <tr class="grid">
-                            <td class="regionebi"><input type="checkbox" id="regionInfo" name="reg_id[]"  value="<?php echo $fetch['ID'] ?>" onclick="trInfoRowFunction()" /><?php echo $fetch['Name'] ?></td>
+                            <td class="regionebi"><input type="checkbox" id="regionInfo" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" onclick="trInfoRowFunction()" /><?php echo $fetch['Name'] ?></td>
                         </tr>
                         <script>
 
@@ -212,25 +215,62 @@
     </footer>
 
     <script>
+
+        const trWrapper = [
+            'trInfoRow',
+            'trInfoRow2',
+            'trInfoRow3',
+            'trInfoRow4',
+            'trInfoRow5',
+            'trInfoRow6',
+            'trInfoRow7',
+            'trInfoRow8',
+            'trInfoRow9',
+            'trInfoRow10',
+            'trInfoRow11',
+            'trInfoRow12',
+            'trInfoRow13',
+        ];
+
+        const tdWrapper = [
+            'tdInfoRow',
+            'tdInfoRow2',
+            'tdInfoRow3',
+            'tdInfoRow4',
+            'tdInfoRow5',
+            'tdInfoRow6',
+            'tdInfoRow7',
+            'tdInfoRow8',
+            'tdInfoRow9',
+            'tdInfoRow10',
+            'tdInfoRow11',
+            'tdInfoRow12',
+            'tdInfoRow13',
+        ];
+
+
+
+
         let parent = document.getElementById("append");
 
 
-        function render(data) {
-
+        function render(data,index) {
+            console.log(index)
             var wrapper = document.createElement("tr");
-            wrapper.className = "trInfoRow";
+            wrapper.id = "IdTrInfoRow";
+            wrapper.className = trWrapper[index];
 
             let html = `
                 <tr id=trInfoRow>
-                    <td class="tdInfoRow"><div class="area">${data.Area}</div></td>
-                    <td class="tdInfoRow"><div class="population">${data.Population}</div></td>
-                    <td class="tdInfoRow"><div class="GDP"> ${data.GDP} </div> </td>
-                    <td class="tdInfoRow"><div class="GDPPerCapita">${data.GDPPerCapita}</div></td>
-                    <td class="tdInfoRow"><div class="UnemploymentRate">${data.UnemploymentRate}</div></td>
-                    <td class="tdInfoRow"><div class="EmploymentRate">${data.EmploymentRate}</div></td>
-                    <td class="tdInfoRow"><div class="EmploymentRateIndustry">${data.EmploymentRateIndustry}</div></td>
-                    <td class="tdInfoRow"><div class="AverageSalaryIndustry">${data.AverageSalaryIndustry}</div></td>
-                    <td class="tdInfoRow"><div class="RegistredEntities">${data.RegistredEntities}</div></td>
+                    <td class=${tdWrapper[index]}><div class="area">${data.Area}</div></td>
+                    <td class=${tdWrapper[index]}><div class="population">${data.Population}</div></td>
+                    <td class=${tdWrapper[index]}><div class="GDP"> ${data.GDP} </div> </td>
+                    <td class=${tdWrapper[index]}><div class="GDPPerCapita">${data.GDPPerCapita}</div></td>
+                    <td class=${tdWrapper[index]}><div class="UnemploymentRate">${data.UnemploymentRate}</div></td>
+                    <td class=${tdWrapper[index]}><div class="EmploymentRate">${data.EmploymentRate}</div></td>
+                    <td class=${tdWrapper[index]}><div class="EmploymentRateIndustry">${data.EmploymentRateIndustry}</div></td>
+                    <td class=${tdWrapper[index]}><div class="AverageSalaryIndustry">${data.AverageSalaryIndustry}</div></td>
+                    <td class=${tdWrapper[index]}><div class="RegistredEntities">${data.RegistredEntities}</div></td>
                 </tr> 
             `
 
@@ -242,17 +282,36 @@
 
         function trInfoRowFunction() {
             var checkBox = document.getElementById("regionInfo");
-            var trInfoRow = document.querySelectorAll(".trInfoRow");
+            var trInfoRow = document.querySelectorAll(".tdInfoRow");
+            
             if (checkBox.checked == true) {
                 trInfoRow.forEach(function(n) {
-                    n.style.display = "block";
+                    n.style.display = "inline-grid";
                 });
             } else {
                 trInfoRow.forEach(function(n) {
                     n.style.display = "none";
+                    // TestHide.style.display = "none";
                 });
             }
+
+            var checkBox = document.getElementById("regionInfo");
+            var trInfoRow2 = document.querySelectorAll(".tdInfoRow2");
+            
+            if (checkBox.checked == true) {
+                trInfoRow2.forEach(function(n) {
+                    n.style.display = "inline-grid";
+                });
+            } else {
+                trInfoRow2.forEach(function(n) {
+                    n.style.display = "none";
+                    // TestHide.style.display = "none";
+                });
+            }
+
+         
         }
+
 
         function myFunction() {
 
@@ -381,15 +440,15 @@
 
                     parent.innerHTML = "";
 
-                    response.data.map(function(i) {
-                        let dom = render(i);
+                    response.data.map(function(i,index) {
+                        let dom = render(i,index);
                         parent.append(dom);
                     });
 
                     //handle success
                     console.log(response.data);
                     myFunction();
-                    // trInfoRowFunction();
+                    // trInfoRowFunction(); 
                 })
                 .catch(function(response) {
                     //handle error
