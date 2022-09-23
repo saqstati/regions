@@ -51,8 +51,8 @@ footer {
     margin-right: 10px;
     border-left-style: outset;
 
-    min-width: 80px;
-    max-width: 80px;
+    /* min-width: 80px;
+    max-width: 80px; */
 }
 
 #append tr:first-child {
@@ -86,14 +86,4 @@ footer {
 #IdTrInfoRow {
     min-width: 80px;
     max-width: 80px;
-}
-
-.trInfoRow, .trInfoRow2 {
-    min-width: 80px;
-    max-width: 80px;
-}
-
-.test{
-    background: black;
-    color: red;
 }

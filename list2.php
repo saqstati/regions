@@ -94,6 +94,7 @@
         </div>
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
     </div>
+    <div>
         <form method="POST" action="" name="applyform">
 
             <table class="table table-bordered bg-black">
@@ -102,15 +103,15 @@
                     <?php
                     require 'connection.php';
                     $query = mysqli_query($link, "SELECT * FROM `regions`");
-                    $i = '';
-                    while ($fetch = mysqli_fetch_array($query)) { 
+                    while ($fetch = mysqli_fetch_array($query)) {
                     ?>
                         <tr class="grid">
-                            <td class="regionebi"><input type="checkbox" id="regionInfo<?php echo $i;?>" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" onclick="trInfoRowFunction()" /><?php echo $fetch['Name'] ?></td>
+                            <td class="regionebi"><input type="checkbox" id="regionInfo" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" onclick="trInfoRowFunction()" /><?php echo $fetch['Name'] ?></td>
                         </tr>
-                        
+                        <script>
+                            
+                        </script>
                     <?php
-                    $i = ($i == '') ? 2 : $i + 1;
                     }
                     ?>
                 </tbody>
@@ -138,55 +139,6 @@
 
 
     </div>
-    
-<?php 
- 
-    $item[0][] = "ძირითადი მაჩვენებლები";
-    $item[0][] = "ფართობი (კვ.კმ)";
-    $item[0][] = "მოსახლეობის რიცხოვნობა (ათასი)";
-    $item[0][] = "მთლიანი შიდა პროდუქტი (მლნ. ლარი)";
-    $item[0][] = "მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)";
-    $item[0][] = "უმუშევრობის დონე (%)";
-    $item[0][] = "დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)";
-    $item[0][] = "დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)";
-    $item[0][] = "დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)";
-    $item[0][] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
-
-    $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `regions`");
-    while($row = $result->fetch_assoc()) {$i++;
-        $item[$i][] = $row["Name"];
-        $item[$i][] = $row["Area"];
-		$item[$i][] = $row["Population"];
-		$item[$i][] = $row["GDP"];
-		$item[$i][] = $row["GDPPerCapita"];
-		$item[$i][] = $row["UnemploymentRate"];
-		$item[$i][] = $row["EmploymentRate"];
-		$item[$i][] = $row["EmploymentRateIndustry"];
-		$item[$i][] = $row["AverageSalaryIndustry"];
-		$item[$i][] = $row["RegistredEntities"];
-    }
-?>    
-
-    <table class="table table-bordered bg-black">
-        <tbody>
-        <?php foreach($item as $k => $v){?>
-        <tr>
-            <?php foreach($v as $l => $b){?>
-                <?php if($k == 0 && $l == 0){?>
-                    <td class="td-empty" style="height : 100px !important;"> <br><?php echo $b;?></td>
-                <?php } else if($k == 0){?>
-                    <th class="machveneblebi_height" style="height : 50px !important;"><?php echo $b;?> <input class="right" id="myCol<?php echo $l;?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l;?>)" /></th>
-                <?php } else if($l == 0){?>
-                    <td class="regionebi reg"  style="height : 100px !important;"><input type="checkbox" id="reg<?php echo $k;?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k;?>)" /><?php echo $b; ?></td>
-                <?php } else {?>
-                    <td style="height : 50px !important;"><div class="Col<?php echo $k;?> Row<?php echo $l;?> table<?php echo $k."_".$l;?>" style="display: none;" ><?php echo $b;?></div></td>
-                <?php } ?>
-            <?php } ?>
-        </tr>
-        <?php } ?>
-        </tbody>
-    </table>
 
     <script>
         const btn = document.querySelector("#btn");
@@ -200,28 +152,6 @@
                 btn.innerHTML = "ძიება"
             }
         });
-
-        function ShowRow(t,i){
-            var j;
-            if(t.checked == false) $(".Row"+i).hide();
-            else {
-                $(".Row"+i).show();
-                for(j = 1; j <= 13; j++) 
-                    if(document.getElementById("reg"+j).checked == false) $(".Col"+j).hide();
-            }
-        }
-
-        function ShowCol(t,i){
-            var j;
-            if(t.checked == false) $(".Col"+i).hide();
-            else {
-                $(".Col"+i).show();
-                for(j = 1; j<= 9; j++) {
-                    if(document.getElementById("myCol"+j).checked == false) $(".Row"+j).hide();
-                }
-            }
-        }
-
     </script>
 
     <footer>
@@ -282,22 +212,6 @@
     </footer>
 
     <script>
-
-        const regionInfo = [
-            'regionInfo',
-            'regionInfo2',
-            'regionInfo3',
-            'regionInfo4',
-            'regionInfo5',
-            'regionInfo6',
-            'regionInfo7',
-            'regionInfo8',
-            'regionInfo9',
-            'regionInfo10',
-            'regionInfo11',
-            'regionInfo12',
-            'regionInfo13',
-        ];
 
         const trWrapper = [
             'trInfoRow',
@@ -378,21 +292,20 @@
                 });
             }
 
-            var checkBox = document.getElementById("regionInfo2");
+            var checkBox = document.getElementById("regionInfo");
             var trInfoRow2 = document.querySelectorAll(".tdInfoRow2");
             
             if (checkBox.checked == true) {
-                trInfoRow2.forEach(function(z) {
-                    z.style.display = "inline-grid";
+                trInfoRow2.forEach(function(n) {
+                    n.style.display = "inline-grid";
                 });
             } else {
-                trInfoRow2.forEach(function(z) {
-                    z.style.display = "none";
+                trInfoRow2.forEach(function(n) {
+                    n.style.display = "none";
                     // TestHide.style.display = "none";
                 });
             }
 
-         
         }
 
 
