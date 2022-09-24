@@ -94,53 +94,32 @@
         </div>
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span></div>
     </div>
-        <form method="POST" action="" name="applyform">
+    <form method="POST" action="" name="applyform">
 
-            <table class="table table-bordered bg-black">
-                <tbody>
-                    <td class="td-empty"> <br>ძირითადი მაჩვენებლები</td>
-                    <?php
-                    require 'connection.php';
-                    $query = mysqli_query($link, "SELECT * FROM `regions`");
-                    $i = '';
-                    while ($fetch = mysqli_fetch_array($query)) { 
-                    ?>
-                        <tr class="grid">
-                            <td class="regionebi"><input type="checkbox" id="regionInfo<?php echo $i;?>" name="reg_id[]" value="<?php echo $fetch['ID'] ?>" onclick="trInfoRowFunction()" /><?php echo $fetch['Name'] ?></td>
-                        </tr>
-                        
-                    <?php
-                    $i = ($i == '') ? 2 : $i + 1;
-                    }
-                    ?>
-                </tbody>
-                <tbody class="col-sm d-flex">
-                    <tr class="grid machveneblebi">
-                        <th class="machveneblebi_height">ფართობი (კვ.კმ) <input class="right" id="myCheck" type="checkbox" name="dziritadi[]" value="fartobi" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">მოსახლეობის რიცხოვნობა (ათასი) <input class="right" id="myCheck2" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">მთლიანი შიდა პროდუქტი (მლნ. ლარი) <input class="right" id="myCheck3" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი) <input class="right" id="myCheck4" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">უმუშევრობის დონე (%) <input class="right" id="myCheck5" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">დასაქმებულთა რაოდენობა, სულ (ათასი კაცი) <input class="right" id="myCheck6" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი) <input class="right" id="myCheck7" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი) <input class="right" id="myCheck8" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                        <th class="machveneblebi_height">რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული) <input class="right" id="myCheck9" type="checkbox" name="dziritadi[]" onclick="myFunction()" /></th>
-                    </tr>
-                    <td id="append" class="TestHide" style="display:none">
+        <table class="table table-bordered bg-black">
 
-                    </td>
-                </tbody>
-            </table>
+            <?php
+            require 'connection.php';
+            $query = mysqli_query($link, "SELECT * FROM `regions`");
+            $i = '';
+            while ($fetch = mysqli_fetch_array($query)) {
+            ?>
 
-            <center class="position-center"><button type="submit" name="submit" value="submit" id="btn" class="btn">ძიება</button></center>
-        </form>
+            <?php
+                $i = ($i == '') ? 2 : $i + 1;
+            }
+            ?>
+
+
+        </table>
+    </form>
 
 
 
     </div>
-    
-<?php 
- 
+
+    <?php
+
     $item[0][] = "ძირითადი მაჩვენებლები";
     $item[0][] = "ფართობი (კვ.კმ)";
     $item[0][] = "მოსახლეობის რიცხოვნობა (ათასი)";
@@ -154,37 +133,40 @@
 
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `regions`");
-    while($row = $result->fetch_assoc()) {$i++;
+    while ($row = $result->fetch_assoc()) {
+        $i++;
         $item[$i][] = $row["Name"];
         $item[$i][] = $row["Area"];
-		$item[$i][] = $row["Population"];
-		$item[$i][] = $row["GDP"];
-		$item[$i][] = $row["GDPPerCapita"];
-		$item[$i][] = $row["UnemploymentRate"];
-		$item[$i][] = $row["EmploymentRate"];
-		$item[$i][] = $row["EmploymentRateIndustry"];
-		$item[$i][] = $row["AverageSalaryIndustry"];
-		$item[$i][] = $row["RegistredEntities"];
+        $item[$i][] = $row["Population"];
+        $item[$i][] = $row["GDP"];
+        $item[$i][] = $row["GDPPerCapita"];
+        $item[$i][] = $row["UnemploymentRate"];
+        $item[$i][] = $row["EmploymentRate"];
+        $item[$i][] = $row["EmploymentRateIndustry"];
+        $item[$i][] = $row["AverageSalaryIndustry"];
+        $item[$i][] = $row["RegistredEntities"];
     }
-?>    
+    ?>
 
     <table class="table table-bordered bg-black">
         <tbody>
-        <?php foreach($item as $k => $v){?>
-        <tr>
-            <?php foreach($v as $l => $b){?>
-                <?php if($k == 0 && $l == 0){?>
-                    <td class="td-empty" style="height : 100px !important;"> <br><?php echo $b;?></td>
-                <?php } else if($k == 0){?>
-                    <th class="machveneblebi_height" style="height : 50px !important;"><?php echo $b;?> <input class="right" id="myCol<?php echo $l;?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l;?>)" /></th>
-                <?php } else if($l == 0){?>
-                    <td class="regionebi reg"  style="height : 100px !important;"><input type="checkbox" id="reg<?php echo $k;?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k;?>)" /><?php echo $b; ?></td>
-                <?php } else {?>
-                    <td style="height : 50px !important;"><div class="Col<?php echo $k;?> Row<?php echo $l;?> table<?php echo $k."_".$l;?>" style="display: none;" ><?php echo $b;?></div></td>
-                <?php } ?>
+            <?php foreach ($item as $k => $v) { ?>
+                <tr>
+                    <?php foreach ($v as $l => $b) { ?>
+                        <?php if ($k == 0 && $l == 0) { ?>
+                            <td class="td-empty" style="height : 100px !important; border-right:none;"> <br><?php echo $b; ?></td>
+                        <?php } else if ($k == 0) { ?>
+                            <th class="machveneblebi_height" style="height : 50px !important;"><?php echo $b; ?> <input class="right" id="myCol<?php echo $l; ?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l; ?>)" /></th>
+                        <?php } else if ($l == 0) { ?>
+                            <td class="regionebi reg" style="height : 100px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
+                        <?php } else { ?>
+                            <td style="height : 50px !important;">
+                                <div class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="display: none;"><?php echo $b; ?></div>
+                            </td>
+                        <?php } ?>
+                    <?php } ?>
+                </tr>
             <?php } ?>
-        </tr>
-        <?php } ?>
         </tbody>
     </table>
 
@@ -201,27 +183,26 @@
             }
         });
 
-        function ShowRow(t,i){
+        function ShowRow(t, i) {
             var j;
-            if(t.checked == false) $(".Row"+i).hide();
+            if (t.checked == false) $(".Row" + i).hide();
             else {
-                $(".Row"+i).show();
-                for(j = 1; j <= 13; j++) 
-                    if(document.getElementById("reg"+j).checked == false) $(".Col"+j).hide();
+                $(".Row" + i).show();
+                for (j = 1; j <= 13; j++)
+                    if (document.getElementById("reg" + j).checked == false) $(".Col" + j).hide();
             }
         }
 
-        function ShowCol(t,i){
+        function ShowCol(t, i) {
             var j;
-            if(t.checked == false) $(".Col"+i).hide();
+            if (t.checked == false) $(".Col" + i).hide();
             else {
-                $(".Col"+i).show();
-                for(j = 1; j<= 9; j++) {
-                    if(document.getElementById("myCol"+j).checked == false) $(".Row"+j).hide();
+                $(".Col" + i).show();
+                for (j = 1; j <= 9; j++) {
+                    if (document.getElementById("myCol" + j).checked == false) $(".Row" + j).hide();
                 }
             }
         }
-
     </script>
 
     <footer>
@@ -282,7 +263,6 @@
     </footer>
 
     <script>
-
         const regionInfo = [
             'regionInfo',
             'regionInfo2',
@@ -337,7 +317,7 @@
         let parent = document.getElementById("append");
 
 
-        function render(data,index) {
+        function render(data, index) {
             console.log(index)
             var wrapper = document.createElement("tr");
             wrapper.id = "IdTrInfoRow";
@@ -366,7 +346,7 @@
         function trInfoRowFunction() {
             var checkBox = document.getElementById("regionInfo");
             var trInfoRow = document.querySelectorAll(".tdInfoRow");
-            
+
             if (checkBox.checked == true) {
                 trInfoRow.forEach(function(n) {
                     n.style.display = "inline-grid";
@@ -380,7 +360,7 @@
 
             var checkBox = document.getElementById("regionInfo2");
             var trInfoRow2 = document.querySelectorAll(".tdInfoRow2");
-            
+
             if (checkBox.checked == true) {
                 trInfoRow2.forEach(function(z) {
                     z.style.display = "inline-grid";
@@ -392,7 +372,7 @@
                 });
             }
 
-         
+
         }
 
 
@@ -523,8 +503,8 @@
 
                     parent.innerHTML = "";
 
-                    response.data.map(function(i,index) {
-                        let dom = render(i,index);
+                    response.data.map(function(i, index) {
+                        let dom = render(i, index);
                         parent.append(dom);
                     });
 
