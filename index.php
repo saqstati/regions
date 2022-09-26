@@ -727,6 +727,7 @@
 				$('#textbox').css("visibility", "visible");
 				$('#textbox').css("opacity", "1");
 				$("#textgroup" + eventtriggerid).attr("opacity", '0');
+				$('.textbox-right-home').css("visibility", 'visible');
 				$('.zoom-out').css("opacity", '0');
 				$('.zoom-out').css("visibility", 'hidden');
 				$('.zoom-out').removeClass("btn-color" + eventtriggerid + "");
