@@ -80,7 +80,7 @@ footer {
 }
 
 .regionebi {
-    width: 98px;
+    width: 120px;
 }
 
 #IdTrInfoRow {
@@ -91,4 +91,21 @@ footer {
 
 #list-footer{
     position: unset !important;
+}
+
+tbody tr:first-child {
+    width: 336px !important;
+}
+
+/* tbody tr:not:first-child{
+    width: 120px;
+} */
+
+
+.pngIcons{
+    width: 23px;    
+}
+
+.iconsPng:hover {
+    text-decoration: none;
 }

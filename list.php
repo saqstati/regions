@@ -19,7 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="custom.css">
-    <link rel="stylesheet" type="text/css" href="list.css">
+    <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="mediastyles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
@@ -160,7 +160,7 @@
                         <?php } else if ($l == 0) { ?>
                             <td class="regionebi reg" style="height : 100px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
                         <?php } else { ?>
-                            <td style="height : 50px !important;">
+                            <td style="height : 50px !important; text-align: right;">
                                 <div class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="display: none;"><?php echo $b; ?></div>
                             </td>
                         <?php } ?>
@@ -171,7 +171,6 @@
     </table>
 
     <script>
-
         function ShowRow(t, i) {
             var j;
             if (t.checked == false) $(".Row" + i).hide();
@@ -209,7 +208,7 @@
                     }(document, 'script', 'facebook-jssdk'));
                 </script>
                 <div class="fb-share-button" data-href="http://geostat.ge/regions/" data-layout="button" data-mobile-iframe="false">
-                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"></a>
+                    <!-- <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"></a> -->
                 </div>
                 <style media="screen" type="text/css">
                     .fb_iframe_widget span {
@@ -225,7 +224,12 @@
                         border-radius: 3px;
                     }
                 </style>
-                <a class="twitter-share-button" href="https://twitter.com/intent/tweet"></a>
+                <!-- <a class="twitter-share-button" href="https://twitter.com/intent/tweet"></a>
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large"></a> -->
+                <div class="footer-icons">
+                    <a class="iconsPng" target="_blank" href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=http%3A%2F%2Fgeostat.ge%2Fregions%2F&display=popup&ref=plugin&src=share_button"> <img class="pngIcons" src="images/facebook.png" alt="icon"> </a>
+                    <a class="iconsPng" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=%E1%83%A1%E1%83%A2%E1%83%90%E1%83%A2%E1%83%98%E1%83%A1%E1%83%A2%E1%83%98%E1%83%99%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%98%E1%83%9C%E1%83%A4%E1%83%9D%E1%83%A0%E1%83%9B%E1%83%90%E1%83%AA%E1%83%98%E1%83%90%20%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1%20%E1%83%A0%E1%83%94%E1%83%92%E1%83%98%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1%20%E1%83%9B%E1%83%98%E1%83%AE%E1%83%94%E1%83%93%E1%83%95%E1%83%98%E1%83%97&url=http%3A%2F%2Flocalhost%2Fregions%2F"> <img class="pngIcons" src="images/twitter.png" alt="icon"> </a>
+                </div>
                 <script>
                     window.twttr = (function(d, s, id) {
                         var js, fjs = d.getElementsByTagName(s)[0],
@@ -244,7 +248,7 @@
                 </script>
             </div>
         </div>
-        <span class="tr" key="COPYRIGHT1">© 2016 ყველა უფლება დაცულია.</span>
+        <span class="tr" key="COPYRIGHT1">© 2022 ყველა უფლება დაცულია.</span>
         <br>
         <span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
 

@@ -760,7 +760,10 @@ table tbody tr td img:after {
   transition: 0.6s;
 }
 
-.test{
-  background: black;
-  color: red;
+a#b {
+  left: -6px !important;
+}
+
+.btn i {
+  left: -6px !important;
 }
