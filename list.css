@@ -88,8 +88,7 @@ footer {
     max-width: 80px;
 }
 
-
-#list-footer{
+#list-footer {
     position: unset !important;
 }
 
@@ -101,11 +100,16 @@ tbody tr:first-child {
     width: 120px;
 } */
 
-
-.pngIcons{
-    width: 23px;    
+.pngIcons {
+    width: 23px;
 }
 
 .iconsPng:hover {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1366px) {
+    body {
+        zoom: 67%;
+    }
 }

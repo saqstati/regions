@@ -148,7 +148,7 @@
     }
     ?>
 
-    <table class="table table-bordered bg-black">
+    <table class="table table-responsive table-bordered bg-black">
         <tbody>
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
