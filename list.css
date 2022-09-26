@@ -127,3 +127,11 @@ tbody tr:first-child {
 .copy3{
     font-weight: bold;
 }
+
+th.machveneblebi_height {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
