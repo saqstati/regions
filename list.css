@@ -123,3 +123,7 @@ tbody tr:first-child {
     align-items: center;
     text-align: center;
 }
+
+.copy3{
+    font-weight: bold;
+}
