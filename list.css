@@ -113,3 +113,13 @@ tbody tr:first-child {
         zoom: 67%;
     }
 }
+
+.regionebi.reg{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
