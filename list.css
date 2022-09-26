@@ -87,3 +87,8 @@ footer {
     min-width: 80px;
     max-width: 80px;
 }
+
+
+#list-footer{
+    position: unset !important;
+}

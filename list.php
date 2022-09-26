@@ -171,17 +171,6 @@
     </table>
 
     <script>
-        const btn = document.querySelector("#btn");
-        const container = document.querySelector("#append");
-        btn.addEventListener("click", function() {
-            if (container.style.display === "block") {
-                container.style.display = "none";
-                btn.innerHTML = "ძიება"
-            } else {
-                container.style.display = "inline-flex";
-                btn.innerHTML = "ძიება"
-            }
-        });
 
         function ShowRow(t, i) {
             var j;
@@ -205,7 +194,7 @@
         }
     </script>
 
-    <footer>
+    <footer id="list-footer">
         <div>
             <div>
                 <div id="fb-root"></div>
