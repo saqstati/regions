@@ -1,7 +1,3 @@
-<?php
-include "config.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +6,13 @@ include "config.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $lang['pagetitlename'] ?>" />
-    <meta property="og:description" content="<?php echo $lang['pagetitlename'] ?>" />
+    <meta property="og:title" content="Comparison of main indicators according to the regions of Georgia" />
+    <meta property="og:description" content="Comparison of main indicators according to the regions of Georgia" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE"><?php echo $lang['pagetitlename'] ?></title>
+    <title class="tr" Key="PAGE_TITLE">Comparison of main indicators according to the regions of Georgia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -77,25 +73,26 @@ include "config.php";
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14"><?php echo $lang['pagetitlename'] ?></p>
+                <p id="pagetitlename" class="tr" Key="REGION14">Comparison of main indicators according to the regions of Georgia</p>
             </h1>
         </header>
         <div id="languages">
-            <a href="list.php?lang=ka" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
-            <a href="list.php?lang=en" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
+            <a href="list.php" id="ka" class="lang"><img src="images/ka.png" /></a>
+            <a href="listEN.php" id="en" class="lang"><img src="images/en.png" /></a>
         </div>
         <div id="recommendation">
             <span class="tr" Key="RECTEXT1">
-                <?php echo $lang['RECTEXT1'] ?>
+                Recomended browsers:
             </span>
             <br>
             <span class="tr" Key="RECTEXT2">
-                <?php echo $lang['RECTEXT2'] ?>
+                
             </span>
             <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
             <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
         </div>
+        <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">Go Back</span></div>
     </div>
     <form method="POST" action="" name="applyform">
 
@@ -123,16 +120,16 @@ include "config.php";
 
     <?php
 
-    $item[0][] = "ძირითადი მაჩვენებლები";
-    $item[0][] = "ფართობი (კვ.კმ)";
-    $item[0][] = "მოსახლეობის რიცხოვნობა (ათასი)";
-    $item[0][] = "მთლიანი შიდა პროდუქტი (მლნ. ლარი)";
-    $item[0][] = "მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)";
-    $item[0][] = "უმუშევრობის დონე (%)";
-    $item[0][] = "დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)";
-    $item[0][] = "დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)";
-    $item[0][] = "დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)";
-    $item[0][] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    $item[0][] = "Key Indicators";
+    $item[0][] = "Area (sq. km)";
+    $item[0][] = "The Number of Population (thousands)";
+    $item[0][] = "Gross Domestic Product (Mil. GEL)";
+    $item[0][] = "Gross Domestic Product per capita (USD)";
+    $item[0][] = "Unemployment Rate (percentage)";
+    $item[0][] = "Employed (thousand person)";
+    $item[0][] = "Employment Level in Bussiness Sector (thousand person)";
+    $item[0][] = "Average monthly remuneration of employed persons (GEL)";
+    $item[0][] = "The Number of Registered Business Entities (unit)";
 
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `regions`");
@@ -251,11 +248,11 @@ include "config.php";
                 </script>
             </div>
         </div>
-        <span class="tr" key="COPYRIGHT1"><?php echo $lang['COPYRIGHT1'] ?></span>
+        <span class="tr" key="COPYRIGHT1">© 2022 All rights reserved.</span>
         <br>
-        <span class="tr" key="COPYRIGHT2"><?php echo $lang['COPYRIGHT2'] ?></span><br>
+        <span class="tr" key="COPYRIGHT2">National Statistics Office of Georgia (Geostat)</span><br>
 
-        <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"><?php echo $lang['COPYRIGHT3'] ?></a></span>
+        <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">Terms of Use</a></span>
     </footer>
 
     <script>

@@ -411,9 +411,12 @@ var aLangKeys=new Array();
 	aLangKeys['en']['RECTEXT2']='Recommended web browsers:';
 	aLangKeys['ka']['RECTEXT2']='ბრაუზერების გამოყენება:';
 	
-	aLangKeys['en']['COPYRIGHT1']='© 2016 All rights reserved.';
-	aLangKeys['ka']['COPYRIGHT1']='© 2016 ყველა უფლება დაცულია.';
+	aLangKeys['en']['COPYRIGHT1']='© 2022 All rights reserved.';
+	aLangKeys['ka']['COPYRIGHT1']='© 2022 ყველა უფლება დაცულია.';
 	aLangKeys['en']['COPYRIGHT2']='National Statistics Office of Georgia (Geostat)';
 	aLangKeys['ka']['COPYRIGHT2']='საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)';
 	aLangKeys['en']['COPYRIGHT3']='Terms of Use';
 	aLangKeys['ka']['COPYRIGHT3']='მონაცემთა გამოყენების პირობები';
+
+	aLangKeys['ka']['regionsBtn']='რეგიონების შედარება';
+	aLangKeys['en']['regionsBtn']='Comparison of regions';
