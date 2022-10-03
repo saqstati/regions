@@ -477,30 +477,6 @@ table tbody tr td img:after {
   opacity: 1;
 }
 
-#group2-zoomed {
-  fill: #678dac;
-  stroke-width: 0.5px;
-  stroke: white;
-  transition: 0.6s fill;
-  transition: 0.6s stroke-width;
-  transition: 0.6s stroke;
-  transition: 0.6s opacity;
-}
-#group2-zoomed:hover {
-  fill: #757ea6;
-  cursor: pointer;
-  stroke-width: 0.5px;
-  stroke: white;
-}
-#group2-zoomed.active {
-  fill: #757ea6;
-  opacity: 1;
-}
-
-#group2-zoomed{
-  display: none;
-}
-
 
 
 #group3 {
