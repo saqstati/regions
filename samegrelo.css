@@ -45,7 +45,86 @@
 
 
   g#layer1 {
-    transform: scale(1.7);
-    -webkit-transform-origin-x: 699px;
-    -webkit-transform-origin-y: 360px;
+    transform: scale(1.8);
+    -webkit-transform-origin-x: 889px;
+    -webkit-transform-origin-y: 400px;
 }
+
+.btn.textbox-left-home {
+  margin-top: -57px;
+  margin-left: 25px;
+}
+
+.textbox-left-home{
+  z-index: 100 !important;
+  width: 160px;
+  left: unset;
+  background-color: #678dac;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.textbox-left-home:hover{
+  background-color: #757ea6;
+}
+
+.textbox-right-home:hover{
+  background-color: #757ea6 !important;
+}
+.textbox-right-home{
+  background-color: #678dac !important;
+}
+
+.back-btn{
+  text-decoration: none;
+  color: #fff;
+}
+
+.back-btn:visited, .back-btn:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.machveneblebi-right {
+  font-family: arial, sans-serif !important;
+  border-collapse: collapse !important;
+  width: 20% !important;
+  float: right;
+  margin-right: 25px;
+}
+
+.machveneblebi-right td, .machveneblebi-right th {
+  text-align: left !important;
+  padding: 8px !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.machveneblebi-right th{
+  font-weight: bolder;
+}
+
+.machveneblebi-right td:hover{
+  background-color: #f5f5f5;
+}
+
+.machveneblebi-right td{
+  font-weight: bold;
+}
+
+.machveneblebi-right tr:nth-child(even) {
+  background-color: transparent !important;
+}
+
+.float-right{
+  float: right;
+}
+
+#svg4380{
+  /* z-index: -1 !important; */
+  width: 920px;
+  height: 100%;
+}
+

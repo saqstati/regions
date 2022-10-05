@@ -726,7 +726,7 @@ table tbody tr td img:after {
 .textbox-right-home {
   position: absolute !important;
   right: 25px !important;
-  top: 71px !important;
+  top: 85px !important;
   z-index: 100 !important;
   width: 160px;
   left: unset;

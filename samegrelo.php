@@ -93,19 +93,22 @@
         <div class="btn textbox-right zoom-out">
             <a class="regions-btn" href="list.php"><span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
         </div>
-        <div class="btn textbox-right-home">
-            <a class="regions-btn" href="list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
+        <div class="display-flex">
+            <div class="btn textbox-left-home">
+                <a class="back-btn" href="index.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
+            </div>
+            <div class="btn textbox-right-home">
+                <a class="regions-btn" href="list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
+            </div>
         </div>
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
         </div>
 
         <div class="col-md-2">
-            <div class="side-box1" id="resultleftbox">
 
-            </div>
         </div>
         <div class="map-box">
-            <svg id="svg4380" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1943.8392 1029.9621" version="1.1">
+            <svg id="svg4380" xmlns="http://www.w3.org/2000/svg" viewBox="" version="1.1">
 
                 <g id="layer1">
                     <a xlink:href="samegrelo/mestia.php" class="text-decoration-none">
@@ -160,13 +163,47 @@
             </svg>
         </div>
 
-        <div class="col-md-2">
-            <div class="side-box2" id="resultleftbox">
-
-            </div>
-        </div>
-
-
+        <table class="machveneblebi-right">
+            <?php
+                include('connection.php');
+                $query = mysqli_query($link, "select * from `regions` where ID = 2");
+                while ($row = mysqli_fetch_array($query)) {
+                ?> <tr>
+                <th>ძირითადი მაჩვენებლები</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>ფართობი (კვ.კმ): <span class="float-right"><?php echo $row['Area']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>მოსახლეობის რიცხოვნობა (ათასი):<span class="float-right"><?php echo $row['Population']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>მთლიანი შიდა პროდუქტი (მლნ. ლარი):<span class="float-right"><?php echo $row['GDP']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი):<span class="float-right"><?php echo $row['GDPPerCapita']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>უმუშევრობის დონე (%):<span class="float-right"><?php echo $row['UnemploymentRate']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი):<span class="float-right"><?php echo $row['EmploymentRate']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):<span class="float-right"><?php echo $row['EmploymentRateIndustry']; ?></span></td>
+                    </tr>
+                    <tr>
+                        <td>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი): <span class="float-right"><?php echo $row['AverageSalaryIndustry']; ?></span> </td>
+                    </tr>
+                    <tr>
+                        <td>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული): <span class="float-right"><?php echo $row['RegistredEntities']; ?></span> </td>
+                    </tr>
+                </tbody>
+            <?php
+                }
+            ?>
+        </table>
 
 
         <footer>
