@@ -104,9 +104,36 @@
         <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
         </div>
 
-        <div class="col-md-2">
+        <table class="machveneblebi-left">
+            <?php
+            include('connection.php');
+            $query = mysqli_query($link, "select * from `regions` where ID = 2");
+            while ($row = mysqli_fetch_array($query)) {
+            ?> <tr>
+                    <th>რეგიონული სტატისტიკა</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ძირითადი ინფორმაცია <span class="float-right"><i class="dropdown_img"></i></span>
+                        </td>
+                    </tr>
+                    <tr class="informacia">
+                        <td>
+                            რეგიონის ფართობი
+                        </td>
+                    </tr>
+                    <tr class="informacia">
+                        <td>
+                            მუნიციპალიტეტების, ქალაქების და სოფლების რაოდენობა
+                        </td>
+                    </tr>
 
-        </div>
+                </tbody>
+            <?php
+            }
+            ?>
+        </table>
+
         <div class="map-box">
             <svg id="svg4380" xmlns="http://www.w3.org/2000/svg" viewBox="" version="1.1">
 
@@ -165,43 +192,43 @@
 
         <table class="machveneblebi-right">
             <?php
-                include('connection.php');
-                $query = mysqli_query($link, "select * from `regions` where ID = 2");
-                while ($row = mysqli_fetch_array($query)) {
-                ?> <tr>
-                <th>ძირითადი მაჩვენებლები</th>
+            include('connection.php');
+            $query = mysqli_query($link, "select * from `regions` where ID = 2");
+            while ($row = mysqli_fetch_array($query)) {
+            ?> <tr>
+                    <th>ძირითადი მაჩვენებლები</th>
                 </tr>
                 <tbody>
                     <tr>
-                        <td>ფართობი (კვ.კმ): <span class="float-right"><?php echo $row['Area']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2014 წლის 1 მარტის მდგომარეობით">ფართობი (კვ.კმ): <span class="float-right"><?php echo $row['Area']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>მოსახლეობის რიცხოვნობა (ათასი):<span class="float-right"><?php echo $row['Population']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2021 წლის 1 იანვრის მდგომარეობით">მოსახლეობის რიცხოვნობა (ათასი):<span class="float-right"><?php echo $row['Population']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>მთლიანი შიდა პროდუქტი (მლნ. ლარი):<span class="float-right"><?php echo $row['GDP']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2020 წლის მონაცემების მიხედვით">მთლიანი შიდა პროდუქტი (მლნ. ლარი):<span class="float-right"><?php echo $row['GDP']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი):<span class="float-right"><?php echo $row['GDPPerCapita']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2020 წლის მონაცემების მიხედვით">მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი):<span class="float-right"><?php echo $row['GDPPerCapita']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>უმუშევრობის დონე (%):<span class="float-right"><?php echo $row['UnemploymentRate']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2021 წლის მიხედვით">უმუშევრობის დონე (%):<span class="float-right"><?php echo $row['UnemploymentRate']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი):<span class="float-right"><?php echo $row['EmploymentRate']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2021 წლის მიხედვით">დასაქმებულთა რაოდენობა, სულ (ათასი კაცი):<span class="float-right"><?php echo $row['EmploymentRate']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):<span class="float-right"><?php echo $row['EmploymentRateIndustry']; ?></span></td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2020 წლის მიხედვით">დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):<span class="float-right"><?php echo $row['EmploymentRateIndustry']; ?></span></td>
                     </tr>
                     <tr>
-                        <td>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი): <span class="float-right"><?php echo $row['AverageSalaryIndustry']; ?></span> </td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2020 წლის მიხედვით">დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი): <span class="float-right"><?php echo $row['AverageSalaryIndustry']; ?></span> </td>
                     </tr>
                     <tr>
-                        <td>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული): <span class="float-right"><?php echo $row['RegistredEntities']; ?></span> </td>
+                        <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="2021 წლის 1 იანვრის მდგომარეობით">რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული): <span class="float-right"><?php echo $row['RegistredEntities']; ?></span> </td>
                     </tr>
                 </tbody>
             <?php
-                }
+            }
             ?>
         </table>
 

@@ -10,6 +10,25 @@
 //     }
 // } );
 
+const dziritadi = document.querySelector('#dziritadi');
+const informacia = document.querySelectorAll('.informacia');
+
+
+dziritadi.addEventListener('click', () => {
+    for (let i = 0; i < informacia.length; i++) {
+        const element = informacia[i];
+        if (element.style.display === 'block') {
+            element.style.display = 'none'
+        }else {
+            element.style.display = 'block'
+        }
+    }
+       
+    
+   
+})
+
+
 // function samegrelo_function() {
 //   var x = document.getElementById("group2-zoomed");
 //   if (x.style.display === "none") {
@@ -55,4 +74,8 @@
 //     });
 // });
 
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
 
