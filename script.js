@@ -10,24 +10,33 @@
 //     }
 // } );
 
-const dziritadi = document.querySelector('#dziritadi');
-const informacia = document.querySelectorAll('.informacia');
+const dziritadi = document.querySelector("#dziritadi");
+const informacia = document.querySelectorAll(".informacia");
 
-
-dziritadi.addEventListener('click', () => {
-    for (let i = 0; i < informacia.length; i++) {
-        const element = informacia[i];
-        if (element.style.display === 'block') {
-            element.style.display = 'none'
-        }else {
-            element.style.display = 'block'
-        }
+dziritadi.addEventListener("click", () => {
+  for (let i = 0; i < informacia.length; i++) {
+    const element = informacia[i];
+    if (element.style.display === "flex") {
+      element.style.display = "none";
+    } else {
+      element.style.display = "flex";
     }
-       
-    
-   
-})
+  }
+});
 
+// dziritadi.addEventListener("click", () => {
+//   if (element.style.display === "flex") {
+//     element.style.display = "none";
+//   } else {
+//     element.style.display = "flex";
+//   }
+// });
+
+function changeClass() {
+  // document.getElementById('classchange').className = "dropdown_img_down";
+  var element = document.getElementById("classchange");
+  element.classList.toggle("dropdown_img_down");
+}
 
 // function samegrelo_function() {
 //   var x = document.getElementById("group2-zoomed");
@@ -74,8 +83,31 @@ dziritadi.addEventListener('click', () => {
 //     });
 // });
 
-
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
+$(document).ready(function () {
+  $('[data-toggle="popover"]').popover();
 });
 
+// function switchMode(){
+//     // Body switching
+//     if(document.getElementById("classchange").className == "classchange-day"){
+//         document.getElementById("classchange").className = "classchange-night";
+//     }else{
+//         document.getElementById("classchange").className = "classchange-day";
+//     }
+//     // Heading switching
+//     if(document.getElementById("main-heading").className == "main-heading-day"){
+//         document.getElementById("main-heading").className = "main-heading-night";
+//     }else{
+//         document.getElementById("main-heading").className = "main-heading-day";
+//     }
+
+// function classchange(){
+//     if (do) {
+
+//     } else {
+
+//     }
+// }
+
+// let containsClass = element.classList.contains('dropdown_up');
+// element.classList.toggle('dropdown_up', !containsClass);

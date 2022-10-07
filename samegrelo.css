@@ -129,7 +129,7 @@
   margin-left: 100px;
 }
 
-.dropdown_img {
+.dropdown_img_up {
   width: 25px;
   height: 25px;
   background: url('images/angle-down-24.png')  no-repeat center;
@@ -137,9 +137,14 @@
   display: block;
 }
 
-/* .informacia {
-  display: none;
-} */
+.dropdown_img_down {
+  width: 25px;
+  height: 25px;
+  background: url('images/angle-up-24.png')  no-repeat center;
+  background-size: 25px;
+  display: block;
+}
+
 
 
 .machveneblebi-left {
@@ -160,17 +165,22 @@
   font-weight: bolder;
 }
 
+#dziritadi{
+  font-weight: bolder;
+}
+
 .machveneblebi-left td:hover{
   background-color: #f5f5f5;
 }
 
-.machveneblebi-left td{
-  font-weight: bold;
-}
 
 .machveneblebi-left tr:nth-child(even) {
   background-color: transparent !important;
 }
 
 
+.informacia {
+  display: none;
+  justify-content: space-between;
+}
 
