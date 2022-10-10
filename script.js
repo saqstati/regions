@@ -10,32 +10,49 @@
 //     }
 // } );
 
-const dziritadi = document.querySelector("#dziritadi");
-const informacia = document.querySelectorAll(".informacia");
+// function changeClass() {
+//   var element = document.getElementById("classchange");
+//   element.classList.toggle("dropdown_img_down");
+// }
 
-dziritadi.addEventListener("click", () => {
-  for (let i = 0; i < informacia.length; i++) {
-    const element = informacia[i];
-    if (element.style.display === "flex") {
-      element.style.display = "none";
-    } else {
-      element.style.display = "flex";
+let itemsToShow = {
+  dziritadi1: "informacia1",
+  dziritadi2: "informacia2",
+  dziritadi3: "informacia3",
+  dziritadi4: "informacia4",
+  dziritadi5: "informacia5",
+  dziritadi6: "informacia6",
+  dziritadi7: "informacia7",
+  dziritadi8: "informacia8",
+  dziritadi9: "informacia9",
+  dziritadi10: "informacia10",
+  dziritadi11: "informacia11",
+
+};
+
+function GetIdChange() {
+  let dziritadiel = window.event.target.id;
+  if(window.event.target.style.background=="url(\"images/angle-up-24.png\") 98% 50% no-repeat"){
+    window.event.target.style.background="url('images/angle-down-24.png')  no-repeat"
+    window.event.target.style.backgroundPosition="98% 50%"
+  }else{
+    window.event.target.style.background="url('images/angle-up-24.png') no-repeat"
+    window.event.target.style.backgroundPosition="98% 50%"
+  }
+
+
+  var informacia = document.querySelectorAll(`.${itemsToShow[dziritadiel]}`);
+  if(informacia){
+    for (let i = 0; i < informacia.length; i++) {
+      const element = informacia[i];
+      if (element.style.display === "flex") {
+        element.style.display = "none";
+      } else {
+        element.style.display = "flex";
+      }
     }
   }
-});
-
-// dziritadi.addEventListener("click", () => {
-//   if (element.style.display === "flex") {
-//     element.style.display = "none";
-//   } else {
-//     element.style.display = "flex";
-//   }
-// });
-
-function changeClass() {
-  // document.getElementById('classchange').className = "dropdown_img_down";
-  var element = document.getElementById("classchange");
-  element.classList.toggle("dropdown_img_down");
+ 
 }
 
 // function samegrelo_function() {

@@ -1,53 +1,52 @@
 .background-image {
-    background-image: url(1600-900-optimized/2.jpg) !important;
+  background-image: url(1600-900-optimized/2.jpg) !important;
 }
 
 #group2-zoomed {
-    fill: #678dac;
-    stroke-width: 0.5px;
-    stroke: white;
-    transition: 0.6s fill;
-    transition: 0.6s stroke-width;
-    transition: 0.6s stroke;
-    transition: 0.6s opacity;
-  }
-  #group2-zoomed:hover {
-    fill: #757ea6;
-    cursor: pointer;
-    stroke-width: 0.5px;
-    stroke: white;
-  }
-  #group2-zoomed.active {
-    fill: #757ea6;
-    opacity: 1;
-  }
+  fill: #678dac;
+  stroke-width: 0.5px;
+  stroke: white;
+  transition: 0.6s fill;
+  transition: 0.6s stroke-width;
+  transition: 0.6s stroke;
+  transition: 0.6s opacity;
+}
+#group2-zoomed:hover {
+  fill: #757ea6;
+  cursor: pointer;
+  stroke-width: 0.5px;
+  stroke: white;
+}
+#group2-zoomed.active {
+  fill: #757ea6;
+  opacity: 1;
+}
 
-  .map-box{
-    height: unset !important;
+.map-box {
+  height: unset !important;
 
-    position: absolute !important;
-    left: 15% !important;
-    right: 50% !important;
-  }
+  position: absolute !important;
+  left: 15% !important;
+  right: 50% !important;
+}
 
-  #svgRegions{
-    font-size: 15px;
-    text-decoration: none;
-  }
+#svgRegions {
+  font-size: 15px;
+  text-decoration: none;
+}
 
-  #svgRegions:hover{
-    text-decoration: none;
-  }
+#svgRegions:hover {
+  text-decoration: none;
+}
 
-  .text-decoration-none:hover{
-    text-decoration: none;
-  }
+.text-decoration-none:hover {
+  text-decoration: none;
+}
 
-
-  g#layer1 {
-    transform: scale(1.8);
-    -webkit-transform-origin-x: 889px;
-    -webkit-transform-origin-y: 400px;
+g#layer1 {
+  transform: scale(1.8);
+  -webkit-transform-origin-x: 889px;
+  -webkit-transform-origin-y: 400px;
 }
 
 .btn.textbox-left-home {
@@ -55,7 +54,7 @@
   margin-left: 25px;
 }
 
-.textbox-left-home{
+.textbox-left-home {
   z-index: 100 !important;
   width: 160px;
   left: unset;
@@ -67,23 +66,24 @@
   border-radius: 4px;
 }
 
-.textbox-left-home:hover{
+.textbox-left-home:hover {
   background-color: #757ea6;
 }
 
-.textbox-right-home:hover{
+.textbox-right-home:hover {
   background-color: #757ea6 !important;
 }
-.textbox-right-home{
+.textbox-right-home {
   background-color: #678dac !important;
 }
 
-.back-btn{
+.back-btn {
   text-decoration: none;
   color: #fff;
 }
 
-.back-btn:visited, .back-btn:hover{
+.back-btn:visited,
+.back-btn:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -96,21 +96,22 @@
   margin-right: 25px;
 }
 
-.machveneblebi-right td, .machveneblebi-right th {
+.machveneblebi-right td,
+.machveneblebi-right th {
   text-align: left !important;
   padding: 8px !important;
   border-bottom: 1px solid #ddd !important;
 }
 
-.machveneblebi-right th{
+.machveneblebi-right th {
   font-weight: bolder;
 }
 
-.machveneblebi-right td:hover{
+.machveneblebi-right td:hover {
   background-color: #f5f5f5;
 }
 
-.machveneblebi-right td{
+.machveneblebi-right td {
   font-weight: bold;
 }
 
@@ -118,69 +119,137 @@
   background-color: transparent !important;
 }
 
-.float-right{
+.float-right {
   float: right;
 }
 
-#svg4380{
+#svg4380 {
   /* z-index: -1 !important; */
   width: 920px;
   height: 100%;
   margin-left: 100px;
 }
 
-.dropdown_img_up {
-  width: 25px;
-  height: 25px;
-  background: url('images/angle-down-24.png')  no-repeat center;
-  background-size: 25px;
-  display: block;
-}
-
-.dropdown_img_down {
-  width: 25px;
-  height: 25px;
-  background: url('images/angle-up-24.png')  no-repeat center;
-  background-size: 25px;
-  display: block;
-}
-
-
-
 .machveneblebi-left {
   font-family: arial, sans-serif !important;
   border-collapse: collapse !important;
-  width: 20% !important;
+  width: 17% !important;
   float: left;
   margin-left: 25px;
 }
 
-.machveneblebi-left td, .machveneblebi-left th {
+.machveneblebi-left td,
+.machveneblebi-left th {
   text-align: left !important;
   padding: 8px !important;
   border-bottom: 1px solid #ddd !important;
 }
 
-.machveneblebi-left th{
+.machveneblebi-left th {
   font-weight: bolder;
 }
 
-#dziritadi{
+#dziritadi1,
+#dziritadi2,
+#dziritadi3,
+#dziritadi4,
+#dziritadi5,
+#dziritadi6,
+#dziritadi7,
+#dziritadi8,
+#dziritadi9,
+#dziritadi10,
+#dziritadi11 {
+  font-weight: bolder;
+  background: url("images/angle-down-24.png") no-repeat;
+  background-size: 25px;
+  background-position: 98% 50%;
+  cursor: pointer;
+}
+#dziritadi {
   font-weight: bolder;
 }
 
-.machveneblebi-left td:hover{
+.machveneblebi-left td:hover {
   background-color: #f5f5f5;
 }
-
 
 .machveneblebi-left tr:nth-child(even) {
   background-color: transparent !important;
 }
 
-
-.informacia {
+.informacia,
+.informacia1,
+.informacia2,
+.informacia3,
+.informacia4,
+.informacia5,
+.informacia6,
+.informacia7,
+.informacia8,
+.informacia9,
+.informacia10,
+.informacia11 {
   display: none;
   justify-content: space-between;
+  border-bottom: 1px solid #ddd !important;
 }
 
+.informacia:hover,
+.informacia1:hover,
+.informacia2:hover,
+.informacia3:hover,
+.informacia4:hover,
+.informacia5:hover,
+.informacia6:hover,
+.informacia7:hover,
+.informacia8:hover,
+.informacia9:hover,
+.informacia10:hover,
+.informacia11:hover,
+#dziritadi1:hover,
+#dziritadi2:hover,
+#dziritadi3:hover,
+#dziritadi4:hover,
+#dziritadi5:hover,
+#dziritadi6:hover,
+#dziritadi7:hover,
+#dziritadi8:hover,
+#dziritadi9:hover,
+#dziritadi10:hover,
+#dziritadi11:hover,
+#dziritadi:hover {
+  background-color: #f5f5f5 !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+tr.informacia1:hover,
+tr.informacia2:hover,
+tr.informacia3:hover,
+tr.informacia4:hover,
+tr.informacia5:hover,
+tr.informacia6:hover,
+tr.informacia7:hover,
+tr.informacia8:hover,
+tr.informacia9:hover,
+tr.informacia10:hover,
+tr.informacia11:hover,
+tr.informacia:hover{
+  background-color: #f5f5f5 !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+tr.informacia1,
+tr.informacia2,
+tr.informacia3,
+tr.informacia4,
+tr.informacia5,
+tr.informacia6,
+tr.informacia7,
+tr.informacia8,
+tr.informacia9,
+tr.informacia10,
+tr.informacia11,
+tr.informacia{
+  border-bottom: 1px solid #ddd !important;
+}

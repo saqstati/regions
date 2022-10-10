@@ -108,17 +108,17 @@
         <table class="machveneblebi-left">
             <?php
             include('connection.php');
-            $query = mysqli_query($link, "select * from `regions` where ID = 2");
+            $query = mysqli_query($link, "select * from `regions` where ID = 4");
             while ($row = mysqli_fetch_array($query)) {
             ?> <tr>
                     <th>რეგიონული სტატისტიკა</th>
                 </tr>
                 <tbody>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ძირითადი ინფორმაცია <span class="float-right"><i class="dropdown_img_up"></i></span>
-                        </td>
+                        <th id="dziritadi1" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ძირითადი ინფორმაცია <span class="float-right"><i id="classchange" class="dropdown_img_up" ></i></span>
+                        </th>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia1">
                         <td>
                             რეგიონის ფართობი
                         </td>
@@ -126,7 +126,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia1">
                         <td>
                             მუნიციპალიტეტების, ქალაქების და სოფლების რაოდენობა
                         </td>
@@ -139,10 +139,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია <span class="float-right"><i class="dropdown_img_up"></i></span>
-                        </td>
+                        <td id="dziritadi2" onclick="GetIdChange()"  title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია</td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia2">
                         <td>
                             მოკვდაობა
                         </td>
@@ -150,7 +149,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/demografia/mokvdaoba_asaki_sqesi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia2">
                         <td>
                             გარდაცვალების მიზეზები
                         </td>
@@ -158,7 +157,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/demografia/gardacvalebis%20mizezebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia2">
                         <td>
                             ძირითადი დემოგრაფიული მაჩვენებლები
                         </td>
@@ -175,10 +174,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დასაქმება და ხელფასები <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დასაქმება და ხელფასები 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia3">
                         <td>
                             დასაქმება, უმუშევრობა
                         </td>
@@ -186,7 +185,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia3">
                         <td>
                             ხელფასები
                         </td>
@@ -195,10 +194,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="ქ.ზუგდიდის მიხედვით">ფასები და ინფლაცია <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="ქ.ზუგდიდის მიხედვით">ფასები და ინფლაცია 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia4">
                         <td>
                             სამომხმარებლო ფასების ინდექსი 12 თვის საშუალო წინა 12 თვის საშუალოსთან
                         </td>
@@ -206,7 +205,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/fasebi/samomxmareblo%20fasebis%20indeqsebi%2012%20tvis%20sashualo%20wina%2012%20Tvis%20saSualosTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia4">
                         <td>
                             სამომხმარებლო ფასების ინდექსი წინა თვესთან
                         </td>
@@ -214,7 +213,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20tvestan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia4">
                         <td>
                             სამომხმარებლო ფასების ინდექსი წინა წლის შესაბამის თვესთან
                         </td>
@@ -223,10 +222,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ცხოვრების დონე <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ცხოვრების დონე 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia5">
                         <td>
                             შემოსავლები
                         </td>
@@ -234,7 +233,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/ckhovrebis%20done/shemosavlebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia5">
                         <td>
                             ხარჯები
                         </td>
@@ -243,10 +242,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ბიზნეს სექტორი <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ბიზნეს სექტორი 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia6">
                         <td>
                             საქმიანობის მიხედვით (NACE rev.2)
                         </td>
@@ -254,7 +253,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/biznes%20seqtori/saqmianobis%20mikhedvit_nace%20rev.2.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia6">
                         <td>
                             საკუთრების ფორმის მიხედვით
                         </td>
@@ -262,7 +261,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/biznes%20seqtori/sakutrebis%20formis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia6">
                         <td>
                             ზომის მიხედვით
                         </td>
@@ -271,14 +270,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/">ბიზნეს რეგისტრი</a> <span class="float-right"></span>
+                        <td id="dziritadi"  title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/">ბიზნეს რეგისტრი</a> <span class="float-right"></span>
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სოფლის მეურნეობა <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სოფლის მეურნეობა 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia7">
                         <td>
                             ერთწლიანი კულტურები
                         </td>
@@ -286,7 +285,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/soflis%20meurneoba/1.%20erttsliani%20kulturebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia7">
                         <td>
                             მრავალწლოვანი კულტურების წარმოება
                         </td>
@@ -294,7 +293,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/soflis%20meurneoba/2.%20mravaltslovani%20kulturebis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia7">
                         <td>
                             პირუტყვის სულადობა
                         </td>
@@ -302,7 +301,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/soflis%20meurneoba/3.%20pirutkvis%20suladoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia7">
                         <td>
                             მეცხოველეობის პროდუქციის წარმოება
                         </td>
@@ -315,10 +314,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მშენებლობა <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მშენებლობა 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia8">
                         <td>
                             დასრულებული მშენებლობები
                         </td>
@@ -326,7 +325,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia8">
                         <td>
                             ნებართვები
                         </td>
@@ -334,7 +333,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/mshenebloba/mshenebloba_nebartvebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia8">
                         <td>
                             ძირითადი მაჩვენებლები
                         </td>
@@ -351,10 +350,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სასტუმროები და რესტორნები <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi9" title="" onclick="GetIdChange()"  data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სასტუმროები და რესტორნები 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia9">
                         <td>
                             სასტუმროები და რესტორნები
                         </td>
@@ -362,7 +361,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/sastumroebi%20da%20restornebi/sastumroebi%20da%20restornebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia9">
                         <td>
                             სტუმართა რაოდენობა
                         </td>
@@ -371,10 +370,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტრანსპორტი და დასაწყობება <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტრანსპორტი და დასაწყობება 
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia10">
                         <td>
                             ტრანსპორტი და დასაწყობება
                         </td>
@@ -382,7 +381,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia10">
                         <td>
                             რეგისტრირებული ავტომობილების რაოდენობა
                         </td>
@@ -390,7 +389,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia10">
                         <td>
                             საერთო სარგებლობის საავტომობილო გზების სიგრძე
                         </td>
@@ -399,10 +398,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტურიზმი (შიდა) <span class="float-right"><i class="dropdown_img_up"></i></span>
+                        <td id="dziritadi11" title="" onclick="GetIdChange()"  data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტურიზმი (შიდა) <span class="float-right"><i id="classchange" class="dropdown_img_up"></i>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia11">
                         <td>
                             საცხოვრებელი ადგილის მიხედვით
                         </td>
@@ -410,7 +409,7 @@
                             <span class="float-right"><a href="http://localhost/regions/regions/4/turizmi/ganawileba%20sacxovrebeli%20adgilis%20mixedvit.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                         </td>
                     </tr>
-                    <tr class="informacia">
+                    <tr class="informacia11">
                         <td>
                             მონახულებული რეგიონებით
                         </td>

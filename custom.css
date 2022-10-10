@@ -202,7 +202,8 @@ svg {
 footer {
   position: fixed;
   bottom: 0px;
-  width: 100%;
+  left: 20%;
+  width: 60%;
   text-align: center;
 }
 .header1 h1 {
@@ -477,8 +478,6 @@ table tbody tr td img:after {
   opacity: 1;
 }
 
-
-
 #group3 {
   fill: #6ea76f;
   stroke-width: 0.5px;
@@ -730,7 +729,6 @@ table tbody tr td img:after {
   z-index: 100 !important;
   width: 160px;
   left: unset;
-  
 
   background-color: #f44336;
   color: white;
