@@ -53,9 +53,13 @@ g#layer5 {
     margin-top: -338px;
 }
 #mcxetaSVG{
-    width: 1000px;
-    margin-top: -208px;
-    margin-left: 110px;
+    width: 1100px;
+    margin-left: 82px;
+    margin-top: -27px;
+}
+
+.map-box{
+    max-width: 1200px;
 }
 
 .tianetiPNG{
