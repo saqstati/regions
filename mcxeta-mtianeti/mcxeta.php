@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის დუშეთის შესახებ" />
-    <meta property="og:description" content="სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის დუშეთის შესახებ" />
+    <meta property="og:title" content="სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის მცხეთას შესახებ" />
+    <meta property="og:description" content="სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის მცხეთას შესახებ" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის დუშეთის შესახებ</title>
+    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის მცხეთას შესახებ</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -72,7 +72,7 @@
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის დუშეთის შესახებ</p>
+                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია მცხეთა-მთიანეთის რეგიონის მცხეთას შესახებ</p>
             </h1>
         </header>
         <div id="languages">
@@ -96,7 +96,7 @@
         </div>
         <div class="display-flex">
             <div class="btn textbox-left-home">
-                <a class="back-btn" href="../index.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
+                <a class="back-btn" href="../mcxeta-mtianeti.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
             </div>
             <div class="btn textbox-right-home">
                 <a class="regions-btn" href="../list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
@@ -467,7 +467,7 @@
             </svg> -->
 
 
-            <svg id="mcxetaSVG" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1000px" height="100%" viewBox="0 0 21600.000000 28800.000000" preserveAspectRatio="xMidYMid meet">
+            <svg id="mcxetaSVG" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1000px" height="100%" viewBox="0 0 29600.000000 28800.000000" preserveAspectRatio="xMidYMid meet">
 
                 <g transform="translate(0.000000,28800.000000) scale(0.100000,-0.100000)">
                     <a xlink:href="../mcxeta-mtianeti.php" class="text-decoration-none">
@@ -2858,6 +2858,7 @@ l22 75 58 7 c138 18 211 133 171 271 -9 30 -16 82 -16 115 l0 60 48 31 c48 31
 43 56 10 c32 6 111 18 177 27 110 15 364 87 460 130 17 8 31 14 33 14 2 1 32
 -19 66 -44z m51176 -190050 c-36 -37 -80 -57 -99 -46 -7 5 16 22 56 43 38 19
 70 36 72 37 3 0 -10 -15 -29 -34z"/>
+                    </a>
 <path d="M39021 198940 c-51 -10 -95 -21 -96 -22 -1 -2 -5 -12 -9 -24 -5 -16
 11 -38 79 -107 95 -98 133 -163 161 -277 16 -69 18 -154 24 -995 7 -903 7
 -921 29 -997 61 -220 183 -378 359 -467 216 -109 597 -113 852 -8 219 90 388

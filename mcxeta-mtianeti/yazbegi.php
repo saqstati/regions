@@ -96,7 +96,7 @@
         </div>
         <div class="display-flex">
             <div class="btn textbox-left-home">
-                <a class="back-btn" href="../index.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
+                <a class="back-btn" href="../mcxeta-mtianeti.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
             </div>
             <div class="btn textbox-right-home">
                 <a class="regions-btn" href="../list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
@@ -454,7 +454,7 @@
         <div class="map-box">
 
 
-            <svg id="yazbegiSVG" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1000px" height="100%" viewBox="0 0 21600.000000 28800.000000" preserveAspectRatio="xMidYMid meet">
+            <svg id="yazbegiSVG" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1000px" height="100%" viewBox="0 0 31600.000000 28800.000000" preserveAspectRatio="xMidYMid meet">
 
                 <g transform="translate(0.000000,28800.000000) scale(0.100000,-0.100000)">
                     <a xlink:href="../mcxeta-mtianeti.php" class="text-decoration-none">
@@ -1346,6 +1346,7 @@ c216 265 398 489 403 498 5 9 37 158 70 330 33 172 114 591 180 932 l120 619
 56 113 98 212 43 99 173 366 290 594 l211 415 180 575 c197 630 187 593 237
 869 44 244 150 660 173 682 9 9 76 68 147 131 l130 115 386 211 c213 116 477
 267 587 335 190 119 207 128 353 175 85 28 156 51 160 51 3 1 40 -70 82 -156z"/>
+                    </a>
 <path d="M178905 187530 c-176 -30 -340 -116 -470 -246 -107 -108 -167 -207
 -216 -364 -31 -99 -33 -114 -33 -250 0 -136 2 -151 33 -250 49 -157 109 -256
 216 -364 108 -108 210 -170 360 -218 95 -31 108 -32 255 -32 142 0 162 2 245

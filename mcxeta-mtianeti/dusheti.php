@@ -96,7 +96,7 @@
         </div>
         <div class="display-flex">
             <div class="btn textbox-left-home">
-                <a class="back-btn" href="../index.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
+                <a class="back-btn" href="../mcxeta-mtianeti.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
             </div>
             <div class="btn textbox-right-home">
                 <a class="regions-btn" href="../list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
