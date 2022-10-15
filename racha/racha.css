@@ -1,0 +1,47 @@
+.background-image {
+    background-image: url(../1600-900-optimized/7.jpg) !important;
+  }
+
+
+g#layer7 {
+    transform: scale(2.0);
+    -webkit-transform-origin-x: 1392px;
+    -webkit-transform-origin-y: 499px;
+}
+
+#group3-zoomed {
+    fill: #ce8d34;
+    stroke-width: 0.5px;
+    stroke: white;
+    transition: 0.6s fill;
+    transition: 0.6s stroke-width;
+    transition: 0.6s stroke;
+    transition: 0.6s opacity;
+  }
+  #group3-zoomed:hover {
+    fill: #cb744c;
+    cursor: pointer;
+    stroke-width: 0.5px;
+    stroke: white;
+  }
+  #group3-zoomed.active {
+    fill: #cb744c;
+    opacity: 1;
+  }
+
+  .textbox-right-home {
+      background-color: #ce8d34 !important;
+  }
+
+  .btn.textbox-left-home, .btn.textbox-right-home{
+    background-color: #ce8d34;
+  }
+
+  .textbox-left-home:hover, .textbox-right-home:hover{
+    background-color: #cb744c !important;
+  }
+
+  #svgRegions{
+      font-size: 12px;
+      text-decoration: none;
+    }
