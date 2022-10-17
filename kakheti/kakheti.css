@@ -1,40 +1,95 @@
 .background-image {
     background-image: url(../1600-900-optimized/9.jpg) !important;
-  }
-  g#layer9 {
+}
+g#layer9 {
     transform: scale(1.3);
     -webkit-transform-origin-x: 5400px;
     -webkit-transform-origin-y: 1900px;
-  }
-  
-  #group6-zoomed {
-      fill: #c85861;
-      stroke-width: 0.5px;
-      stroke: white;
-      transition: 0.6s fill;
-      transition: 0.6s stroke-width;
-      transition: 0.6s stroke;
-      transition: 0.6s opacity;
-    }
-    #group6-zoomed:hover {
-      fill: #c75685;
-      cursor: pointer;
-      stroke-width: 0.5px;
-      stroke: white;
-    }
-    #group6-zoomed.active {
-      fill: #c75685;
-      opacity: 1;
-    }
-  
-    .btn.textbox-left-home, .btn.textbox-right-home{
-      background-color: #c85861;
-    }
-  
-    .textbox-right-home{
-      background-color: #c85861 !important;
-    }
-  
-    .textbox-left-home:hover, .textbox-right-home:hover{
-      background-color: #c75685 !important;
-    }
+}
+
+#group6-zoomed {
+    fill: #c85861;
+    stroke-width: 0.5px;
+    stroke: white;
+    transition: 0.6s fill;
+    transition: 0.6s stroke-width;
+    transition: 0.6s stroke;
+    transition: 0.6s opacity;
+}
+#group6-zoomed:hover {
+    fill: #c75685;
+    cursor: pointer;
+    stroke-width: 0.5px;
+    stroke: white;
+}
+#group6-zoomed.active {
+    fill: #c75685;
+    opacity: 1;
+}
+
+.btn.textbox-left-home,
+.btn.textbox-right-home {
+    background-color: #c85861;
+}
+
+.textbox-right-home {
+    background-color: #c85861 !important;
+}
+
+.textbox-left-home:hover,
+.textbox-right-home:hover {
+    background-color: #c75685 !important;
+}
+
+.map-box {
+    max-width: 1000px;
+    margin-left: 59px;
+}
+
+#axmetaSVG {
+    width: 630px;
+    margin-left: 179px;
+    margin-top: -27px;
+}
+
+#telaviSVG {
+    width: 630px;
+    margin-left: 179px;
+    margin-top: -71px;
+}
+
+#kvareliSVG {
+    width: 1100px;
+    margin-left: 22px;
+    margin-top: -55px;
+}
+
+#lagodexiSVG {
+    width: 901px;
+    margin-left: 10%;
+    margin-top: -247px;
+}
+
+#gurjaaniSVG {
+    width: 902px;
+    margin-left: 10%;
+    margin-top: -247px;
+}
+
+#sagarejoSVG {
+    width: 735px;
+    margin-left: 12%;
+    margin-top: -12%;
+}
+
+#signagiSVG {
+    width: 1030px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#dedofliswyaroSVG {
+    width: 1030px;
+    margin-left: 10%;
+    margin-top: 0%;
+}
