@@ -234,7 +234,7 @@ tr.informacia8:hover,
 tr.informacia9:hover,
 tr.informacia10:hover,
 tr.informacia11:hover,
-tr.informacia:hover{
+tr.informacia:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
 }
@@ -250,6 +250,58 @@ tr.informacia8,
 tr.informacia9,
 tr.informacia10,
 tr.informacia11,
-tr.informacia{
+tr.informacia {
   border-bottom: 1px solid #ddd !important;
+}
+
+.map-box {
+  max-width: 1300px;
+}
+
+#abashaSVG {
+  width: 1030px;
+  margin-left: 4%;
+  margin-top: -1%;
+}
+
+#chxorowyuSVG {
+  width: 642px;
+  margin-left: 24%;
+  margin-top: -5%;
+}
+
+#xobiSVG {
+  width: 832px;
+  margin-left: 19%;
+  margin-top: -15%;
+}
+
+#martviliSVG {
+  width: 683px;
+  margin-left: 19%;
+  margin-top: -9%;
+}
+
+#mestiaSVG {
+  width: 1111px;
+  margin-left: 9%;
+  margin-top: -9%;
+}
+
+#senakiSVG {
+  width: 826px;
+  margin-left: 15%;
+  margin-top: -15%;
+}
+
+#tsalenjikhaSVG {
+  width: 677px;
+  margin-left: 19%;
+  margin-top: -9%;
+}
+
+#zugdidiSVG {
+  width: 898px;
+  margin-left: 17%;
+  margin-top: -18%;
 }

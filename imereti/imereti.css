@@ -1,40 +1,84 @@
 .background-image {
-    background-image: url(../1600-900-optimized/6.jpg) !important;
-  }
-  g#layer6 {
-    transform: scale(1.9);
-    -webkit-transform-origin-x: 1300px;
-    -webkit-transform-origin-y: 945px;
-  }
-  
-  #group6-zoomed {
-      fill: #c85861;
-      stroke-width: 0.5px;
-      stroke: white;
-      transition: 0.6s fill;
-      transition: 0.6s stroke-width;
-      transition: 0.6s stroke;
-      transition: 0.6s opacity;
-    }
-    #group6-zoomed:hover {
-      fill: #c75685;
-      cursor: pointer;
-      stroke-width: 0.5px;
-      stroke: white;
-    }
-    #group6-zoomed.active {
-      fill: #c75685;
-      opacity: 1;
-    }
-  
-    .btn.textbox-left-home, .btn.textbox-right-home{
-      background-color: #c85861;
-    }
-  
-    .textbox-right-home{
-      background-color: #c85861 !important;
-    }
-  
-    .textbox-left-home:hover, .textbox-right-home:hover{
-      background-color: #c75685 !important;
-    }
+  background-image: url(../1600-900-optimized/6.jpg) !important;
+}
+g#layer6 {
+  transform: scale(1.9);
+  -webkit-transform-origin-x: 1300px;
+  -webkit-transform-origin-y: 945px;
+}
+
+#group6-zoomed {
+  fill: #c85861;
+  stroke-width: 0.5px;
+  stroke: white;
+  transition: 0.6s fill;
+  transition: 0.6s stroke-width;
+  transition: 0.6s stroke;
+  transition: 0.6s opacity;
+}
+#group6-zoomed:hover {
+  fill: #c75685;
+  cursor: pointer;
+  stroke-width: 0.5px;
+  stroke: white;
+}
+#group6-zoomed.active {
+  fill: #c75685;
+  opacity: 1;
+}
+
+.btn.textbox-left-home,
+.btn.textbox-right-home {
+  background-color: #c85861;
+}
+
+.textbox-right-home {
+  background-color: #c85861 !important;
+}
+
+.textbox-left-home:hover,
+.textbox-right-home:hover {
+  background-color: #c75685 !important;
+}
+
+#baghdatiSVG {
+  width: 752px;
+  margin-left: 17%;
+  margin-top: -13%;
+}
+
+#chiaturaSVG {
+  width: 730px;
+  margin-left: 18%;
+  margin-top: -10%;
+}
+
+#khoniSVG, #sachkhereSVG {
+  width: 641px;
+  margin-left: 18%;
+  margin-top: -6%;
+}
+
+#samtrediaSVG{
+  width: 749px;
+  margin-left: 18%;
+  margin-top: -11%;
+}
+
+#terjolaSVG{
+  width: 1111px;
+  margin-left: 6%;
+  margin-top: -10%;
+}
+
+#tkibuliSVG{
+  width: 1111px;
+  margin-left: 7%;
+  margin-top: -8%;
+}
+
+#vaniSVG{
+  width: 800px;
+  margin-left: 16%;
+  margin-top: -13%;
+}
