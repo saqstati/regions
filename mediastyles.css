@@ -186,7 +186,7 @@ table tbody tr td img:after{width:10px;height:10px;}
     }
 
     .map-box{
-        max-width: 1100px;
+        max-width: 1050px;
     }
 
     #vaniSVG {
@@ -229,5 +229,165 @@ table tbody tr td img:after{width:10px;height:10px;}
         margin-top: -9%;
     }
 
+
+    g.layer1{
+        transform: scale(1.1) !important;
+        -webkit-transform-origin-x: 4100px !important;
+        -webkit-transform-origin-y: 1948px !important;
+    }
+    g#layer2 {
+        transform: scale(2.2);
+        -webkit-transform-origin-x: 840px;
+        -webkit-transform-origin-y: 1005px;
+    }
+
+    g#layer3 {
+        transform: scale(2.2);
+        -webkit-transform-origin-x: 781px;
+        -webkit-transform-origin-y: 1330px;
+    }
+
+    g#layer7 {
+        transform: scale(1.7);
+        -webkit-transform-origin-x: 1728px;
+        -webkit-transform-origin-y: 690px;
+    }
+
+    g#layer5 {
+        transform: scale(1.4);
+        -webkit-transform-origin-x: 2420px;
+        -webkit-transform-origin-y: 2420px;
+    }
+
+    g#layer12 {
+        transform: scale(2.0);
+        -webkit-transform-origin-x: 1954px;
+        -webkit-transform-origin-y: 1131px;
+    }
+
+    g#layer8 {
+        transform: scale(1.4);
+        -webkit-transform-origin-x: 3600px;
+        -webkit-transform-origin-y: 2417px;
+    }
+    g.layer11{
+        transform: scale(1.1) !important;
+        -webkit-transform-origin-x: 12500px !important;
+        -webkit-transform-origin-y: 3936px !important;
+    }
+
+    g#layer9 {
+        transform: scale(1.1);
+        -webkit-transform-origin-x: 15500px;
+        -webkit-transform-origin-y: 5100px;
+    }
+    
+    #mestiaSVG {
+        width: 826px;
+        margin-left: 3.54%;
+        margin-top: -14%;
+    }
+
+    #tsalenjikhaSVG {
+        width: 423px;
+        margin-left: 19%;
+        margin-top: -9%;
+    }
+
+    #chxorowyuSVG {
+        width: 384px;
+        margin-left: 24%;
+        margin-top: -5%;
+    }
+
+    #zugdidiSVG {
+        width: 620px;
+        margin-left: 8%;
+        margin-top: -18%;
+    }
+
+    #xobiSVG {
+        width: 516px;
+        margin-left: 19%;
+        margin-top: -13%;
+    }
+
+    #senakiSVG {
+        width: 537px;
+        margin-left: 15%;
+        margin-top: -13%;
+    }
+
+    #abashaSVG {
+        width: 666px;
+        margin-left: 6%;
+        margin-top: -3%;
+    }
+
+    #martviliSVG {
+        width: 438px;
+        margin-left: 20%;
+        margin-top: -9%;
+    }
+
+
+    #mcxetaSVG {
+        width: 694px;
+        margin-left: 99px;
+        margin-top: -27px;
+    }
+
+    #axmetaSVG {
+        width: 388px;
+        margin-left: 155px;
+        margin-top: -41px;
+    }
+    #telaviSVG {
+        width: 391px;
+        margin-left: 179px;
+        margin-top: -71px;
+    }
+
+    #kvareliSVG {
+        width: 720px;
+        margin-left: 39px;
+        margin-top: -55px;
+    }
+
+    #lagodexiSVG {
+        width: 510px;
+        margin-left: 10%;
+        margin-top: -146px;
+    }
+
+    #gurjaaniSVG {
+        width: 497px;
+        margin-left: 10%;
+        margin-top: -125px;
+    }
+
+    #sagarejoSVG {
+        width: 478px;
+        margin-left: 12%;
+        margin-top: -12%;
+    }
+    #signagiSVG {
+        width: 627px;
+        margin-left: 10%;
+        margin-top: -2%;
+    }
+
+    #dedofliswyaroSVG {
+        width: 650px;
+        margin-left: 2%;
+        margin-top: -1%;
+    }
+
+
+    #tbilisiSVG {
+        width: 671px;
+        margin-left: 11%;
+        margin-top: -3%;
+    }
 
 }
