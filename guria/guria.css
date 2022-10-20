@@ -38,3 +38,9 @@ g#layer2 {
   .textbox-left-home:hover, .textbox-right-home:hover{
     background-color: #66aba5 !important;
   }
+
+  #chokhatauriSVG, #lanchxutiSVG, #ozurgetiSVG {
+    width: 1081px;
+    margin-left: 9%;
+    margin-top: -4%;
+  }
