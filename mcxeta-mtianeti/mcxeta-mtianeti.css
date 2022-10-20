@@ -41,7 +41,7 @@ g#layer5 {
     background-color: #b5568c !important;
 }
 
-#dushetiSVG {
+#dushetiSVG, #tianetiSVG {
     width: 694px;
     margin-top: -115px;
     margin-left: 199px;
@@ -50,7 +50,7 @@ g#layer5 {
 #yazbegiSVG{
     margin-left: 59px;
     width: 1200px;
-    margin-top: -338px;
+    margin-top: -104px;
 }
 #mcxetaSVG{
     width: 1100px;
@@ -60,8 +60,4 @@ g#layer5 {
 
 .map-box{
     max-width: 1200px;
-}
-
-.tianetiPNG{
-    width: 1000px;
 }
