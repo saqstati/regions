@@ -52,8 +52,14 @@ g#layer3 {
   margin-top: -10%;
 }
 
-#qobuletiSVG {
+#qobuletiSVG, #shuaxeviSVG, #xelvachauriSVG {
   width: 1079px;
   margin-left: 10%;
   margin-top: -1%;
+}
+
+#xuloSVG {
+  width: 620px;
+  margin-left: 21%;
+  margin-top: -6%;
 }
