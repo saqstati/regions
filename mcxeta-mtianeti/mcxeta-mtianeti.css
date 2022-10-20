@@ -42,13 +42,12 @@ g#layer5 {
 }
 
 #dushetiSVG, #tianetiSVG {
-    width: 694px;
+    width: 676px;
     margin-top: -115px;
     margin-left: 199px;
 }
 
 #yazbegiSVG{
-    margin-left: 59px;
     width: 1200px;
     margin-top: -104px;
 }
@@ -59,5 +58,6 @@ g#layer5 {
 }
 
 .map-box{
-    max-width: 1200px;
+    max-width: 1050px;
+    margin-left: 55px;
 }
