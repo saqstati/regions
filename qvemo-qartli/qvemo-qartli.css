@@ -1,40 +1,61 @@
 .background-image {
-    background-image: url(../1600-900-optimized/8.jpg) !important;
-  }
-  g#layer8 {
-    transform: scale(1.9);
-    -webkit-transform-origin-x: 2175px;
-    -webkit-transform-origin-y: 1405px;
-  }
-  
-  #group3-zoomed {
-      fill: #6ea76f;
-      stroke-width: 0.5px;
-      stroke: white;
-      transition: 0.6s fill;
-      transition: 0.6s stroke-width;
-      transition: 0.6s stroke;
-      transition: 0.6s opacity;
-    }
-    #group3-zoomed:hover {
-      fill: #66aba5;
-      cursor: pointer;
-      stroke-width: 0.5px;
-      stroke: white;
-    }
-    #group3-zoomed.active {
-      fill: #66aba5;
-      opacity: 1;
-    }
-  
-    .btn.textbox-left-home, .btn.textbox-right-home{
-      background-color: #6ea76f;
-    }
-  
-    .textbox-right-home{
-      background-color: #6ea76f !important;
-    }
-  
-    .textbox-left-home:hover, .textbox-right-home:hover{
-      background-color: #66aba5 !important;
-    }
+  background-image: url(../1600-900-optimized/8.jpg) !important;
+}
+g#layer8 {
+  transform: scale(1.9);
+  -webkit-transform-origin-x: 2175px;
+  -webkit-transform-origin-y: 1405px;
+}
+
+#group3-zoomed {
+  fill: #6ea76f;
+  stroke-width: 0.5px;
+  stroke: white;
+  transition: 0.6s fill;
+  transition: 0.6s stroke-width;
+  transition: 0.6s stroke;
+  transition: 0.6s opacity;
+}
+#group3-zoomed:hover {
+  fill: #66aba5;
+  cursor: pointer;
+  stroke-width: 0.5px;
+  stroke: white;
+}
+#group3-zoomed.active {
+  fill: #66aba5;
+  opacity: 1;
+}
+
+.btn.textbox-left-home,
+.btn.textbox-right-home {
+  background-color: #6ea76f;
+}
+
+.textbox-right-home {
+  background-color: #6ea76f !important;
+}
+
+.textbox-left-home:hover,
+.textbox-right-home:hover {
+  background-color: #66aba5 !important;
+}
+
+#marneuliSVG, #dmanisiSVG, #bolnisiSVG {
+  width: 965px;
+  margin-left: 9%;
+  margin-top: -21%;
+}
+
+#walkaSVG,
+#tetriwyaroSVG {
+  width: 1100px;
+  margin-left: 8%;
+  margin-top: -5%;
+}
+
+#gardabaniSVG {
+  width: 629px;
+  margin-left: 12%;
+  margin-top: -5%;
+}
