@@ -1,13 +1,22 @@
 .background-image {
-    background-image: url(../1600-900-optimized/12.jpg) !important;
-  }
+  background-image: url(../1600-900-optimized/12.jpg) !important;
+}
 
 g#layer12 {
-    transform: scale(2.7);
-    -webkit-transform-origin-x: 1550px;
-    -webkit-transform-origin-y: 842px;
-  }
+  transform: scale(2.7);
+  -webkit-transform-origin-x: 1550px;
+  -webkit-transform-origin-y: 842px;
+}
 
-#svg4380{
-    margin-left: 170px;
-  }
+#svg4380 {
+  margin-left: 170px;
+}
+
+#goriSVG,
+#kaspiSVG,
+#qareliSVG,
+#xashuriSVG {
+  width: 677px;
+  margin-left: 19%;
+  margin-top: -8%;
+}
