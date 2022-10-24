@@ -50,18 +50,18 @@
                 }
             }
             preload(
-                "1600-900-optimized/2.jpg",
-                "1600-900-optimized/3.jpg",
-                "1600-900-optimized/4.jpg",
-                "1600-900-optimized/5.jpg",
-                "1600-900-optimized/6.jpg",
-                "1600-900-optimized/7.jpg",
-                "1600-900-optimized/8.jpg",
-                "1600-900-optimized/9.jpg",
-                "1600-900-optimized/10.jpg",
-                "1600-900-optimized/11.jpg",
-                "1600-900-optimized/12.jpg",
-                "1600-900-optimized/15.jpg"
+                "../1600-900-optimized/2.jpg",
+                "../1600-900-optimized/3.jpg",
+                "../1600-900-optimized/4.jpg",
+                "../1600-900-optimized/5.jpg",
+                "../1600-900-optimized/6.jpg",
+                "../1600-900-optimized/7.jpg",
+                "../1600-900-optimized/8.jpg",
+                "../1600-900-optimized/9.jpg",
+                "../1600-900-optimized/10.jpg",
+                "../1600-900-optimized/11.jpg",
+                "../1600-900-optimized/12.jpg",
+                "../1600-900-optimized/15.jpg"
             )
         </script>
     </div>

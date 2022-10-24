@@ -450,7 +450,7 @@
             }
             ?>
         </table>
-        <div class="map-box">
+        <div class="map-box" style="max-width: 805px; margin-left: 57px;">
             <img src="maps/lentekhi.svg" alt="lentekhiSVG" id="lentekhiSVG">
         </div>
 

@@ -1881,16 +1881,6 @@
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M722.04,1862.26125C722.04,1856.76055,717.58076,1852.30135,712.08,1852.30135C706.57924,1852.30135,702.12,1856.76055,702.12,1862.26125
 				C702.12,1867.76196,706.57924,1872.22115,712.08,1872.22115C717.58076,1872.22115,722.04,1867.76196,722.04,1862.26125z"/>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#FF0000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 1776.42 1697.50291)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
-				</text>
-			</g>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 1776.42 1697.86291)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">.</tspan>
-				</text>
-			</g>
 		</g>
 		<g id="sattlements_Anno_6">
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >

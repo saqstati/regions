@@ -2024,16 +2024,6 @@
 				L1450.56,174.47824L1453.68,173.87825L1458.48,173.87825"/>
 		</g>
 		<g id="sattlements">
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#FF0000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 749.46 2689.53293)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
-				</text>
-			</g>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 749.46 2689.89292)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">.</tspan>
-				</text>
-			</g>
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M925.56,2998.88981C925.56,2993.38911,921.10076,2988.92991,915.6,2988.92991C910.09924,2988.92991,905.64,2993.38911,905.64,2998.88981
 				C905.64,3004.39051,910.09924,3008.84971,915.6,3008.84971C921.10076,3008.84971,925.56,3004.39051,925.56,2998.88981z"/>

@@ -72,7 +72,7 @@
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია რაჭა-ლეჩხუმისა და ქვემო სვანეთის რეგიონის ცაგერის შესახებ</p>
+                <p id="pagetitlename" class="tr" Key="REGION14" style="font-size: 22px;">სტატისტიკური ინფორმაცია რაჭა-ლეჩხუმისა და ქვემო სვანეთის რეგიონის ცაგერის შესახებ</p>
             </h1>
         </header>
         <div id="languages">

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის წალკის შესახებ" />
-    <meta property="og:description" content="სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის წალკის შესახებ" />
+    <meta property="og:title" content="სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის გარდაბანის შესახებ" />
+    <meta property="og:description" content="სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის გარდაბანის შესახებ" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის წალკის შესახებ</title>
+    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის გარდაბანის შესახებ</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -72,7 +72,7 @@
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის წალკის შესახებ</p>
+                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია ქვემო ქართლის რეგიონის გარდაბანის შესახებ</p>
             </h1>
         </header>
         <div id="languages">

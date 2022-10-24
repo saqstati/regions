@@ -1982,16 +1982,6 @@
 				M334.08387,1788.84267C334.08387,1783.3419,329.62457,1778.88265,324.12375,1778.88265C318.62293,1778.88265,314.16364,1783.3419
 				,314.16364,1788.84267C314.16364,1794.34343,318.62293,1798.80268,324.12375,1798.80268C329.62457,1798.80268,334.08387,1794.34343
 				,334.08387,1788.84267z"/>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#FF0000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30.00035 0 0 30.00005 651.78755 836.04125)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
-				</text>
-			</g>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30.00035 0 0 30.00005 651.78755 836.40125)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">.</tspan>
-				</text>
-			</g>
 		</g>
 		<g id="sattlements_Anno_4">
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >

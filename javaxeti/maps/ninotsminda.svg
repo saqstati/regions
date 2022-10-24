@@ -651,11 +651,6 @@
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
 				</text>
 			</g>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 837.3 2033.37953)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">.</tspan>
-				</text>
-			</g>
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1512.84,2478.21505C1512.84,2472.71435,1508.38076,2468.25515,1502.88,2468.25515C1497.37924,2468.25515,1492.92,2472.71435
 				,1492.92,2478.21505C1492.92,2483.71575,1497.37924,2488.17495,1502.88,2488.17495C1508.38076,2488.17495,1512.84,2483.71575

@@ -665,16 +665,6 @@
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M956.88,1810.06178C956.88,1804.56108,952.42076,1800.10188,946.92,1800.10188C941.41924,1800.10188,936.96,1804.56108,936.96,1810.06178
 				C936.96,1815.56248,941.41924,1820.02168,946.92,1820.02168C952.42076,1820.02168,956.88,1815.56248,956.88,1810.06178z"/>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#FF0000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 1269.78 1820.74167)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
-				</text>
-			</g>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 1269.78 1821.10167)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">.</tspan>
-				</text>
-			</g>
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1556.76,1798.78189C1556.76,1793.28119,1552.30076,1788.82199,1546.8,1788.82199C1541.29924,1788.82199,1536.84,1793.28119,
 				1536.84,1798.78189C1536.84,1804.28259,1541.29924,1808.74179,1546.8,1808.74179C1552.30076,1808.74179,1556.76,1804.28259,1556.76,1798.78189

@@ -1517,16 +1517,6 @@
 				M1328.04,2592.09391C1328.04,2586.59321,1323.58076,2582.13401,1318.08,2582.13401C1312.57924,2582.13401,1308.12,2586.59321
 				,1308.12,2592.09391C1308.12,2597.59461,1312.57924,2602.05381,1318.08,2602.05381C1323.58076,2602.05381,1328.04,2597.59461
 				,1328.04,2592.09391z"/>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#FF0000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 1103.82 2539.77443)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
-				</text>
-			</g>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(30 0 0 29.9997 1103.82 2540.13443)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">.</tspan>
-				</text>
-			</g>
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M412.8,2865.45116C412.8,2859.95046,408.34076,2855.49126,402.84,2855.49126C397.33924,2855.49126,392.88,2859.95046,392.88,2865.45116
 				C392.88,2870.95186,397.33924,2875.41106,402.84,2875.41106C408.34076,2875.41106,412.8,2870.95186,412.8,2865.45116z"/>

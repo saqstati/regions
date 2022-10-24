@@ -87,9 +87,9 @@
             <span class="tr" Key="RECTEXT2">
                 ბრაუზერების გამოყენება:
             </span>
-            <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
-            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
-            <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
+            <a href="http://www.google.com/chrome/"><img src="../images/chrome-100.png" /></a>
+            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="../images/firefox-100.png" /></a>
+            <a href="http://www.opera.com/"><img src="../images/opera-100.png" /></a>
         </div>
         <div class="btn textbox-right zoom-out">
             <a class="regions-btn" href="../list.php"><span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
