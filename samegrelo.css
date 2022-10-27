@@ -159,11 +159,22 @@ g#layer1 {
 #dziritadi8,
 #dziritadi9,
 #dziritadi10,
-#dziritadi11 {
+#dziritadi11,
+#dziritadi12,
+#dziritadi13,
+#dziritadi14,
+#dziritadi15,
+#dziritadi16,
+#dziritadi17,
+#dziritadi18,
+#dziritadi19,
+#dziritadi20,
+#dziritadi21,
+#dziritadi22 {
   font-weight: bolder;
-  background: url("images/angle-down-24.png") no-repeat;
-  background-size: 25px;
-  background-position: 98% 50%;
+  background: url("https://cdn-icons-png.flaticon.com/512/32/32195.png") no-repeat;
+  background-size: 18px 18px !important;
+  background-position: 96% 50% !important;
   cursor: pointer;
 }
 #dziritadi {
@@ -189,7 +200,18 @@ g#layer1 {
 .informacia8,
 .informacia9,
 .informacia10,
-.informacia11 {
+.informacia11,
+.informacia12,
+.informacia13,
+.informacia14,
+.informacia15,
+.informacia16,
+.informacia17,
+.informacia18,
+.informacia19,
+.informacia20,
+.informacia21,
+.informacia22 {
   display: none;
   justify-content: space-between;
   border-bottom: 1px solid #ddd !important;
@@ -207,6 +229,17 @@ g#layer1 {
 .informacia9:hover,
 .informacia10:hover,
 .informacia11:hover,
+.informacia12:hover,
+.informacia13:hover,
+.informacia14:hover,
+.informacia15:hover,
+.informacia16:hover,
+.informacia17:hover,
+.informacia18:hover,
+.informacia19:hover,
+.informacia20:hover,
+.informacia21:hover,
+.informacia22:hover,
 #dziritadi1:hover,
 #dziritadi2:hover,
 #dziritadi3:hover,
@@ -218,7 +251,18 @@ g#layer1 {
 #dziritadi9:hover,
 #dziritadi10:hover,
 #dziritadi11:hover,
-#dziritadi:hover {
+#dziritadi:hover,
+#dziritadi12:hover,
+#dziritadi13:hover,
+#dziritadi14:hover,
+#dziritadi15:hover,
+#dziritadi16:hover,
+#dziritadi17:hover,
+#dziritadi18:hover,
+#dziritadi19:hover,
+#dziritadi20:hover,
+#dziritadi21:hover,
+#dziritadi22:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
 }
@@ -234,7 +278,18 @@ tr.informacia8:hover,
 tr.informacia9:hover,
 tr.informacia10:hover,
 tr.informacia11:hover,
-tr.informacia:hover {
+tr.informacia:hover,
+tr.informacia12:hover,
+tr.informacia13:hover,
+tr.informacia14:hover,
+tr.informacia15:hover,
+tr.informacia16:hover,
+tr.informacia17:hover,
+tr.informacia18:hover,
+tr.informacia19:hover,
+tr.informacia20:hover,
+tr.informacia21:hover,
+tr.informacia22:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
 }
@@ -250,12 +305,24 @@ tr.informacia8,
 tr.informacia9,
 tr.informacia10,
 tr.informacia11,
-tr.informacia {
+tr.informacia,
+tr.informacia12,
+tr.informacia13,
+tr.informacia14,
+tr.informacia15,
+tr.informacia16,
+tr.informacia17,
+tr.informacia18,
+tr.informacia19,
+tr.informacia20,
+tr.informacia21,
+tr.informacia22 {
   border-bottom: 1px solid #ddd !important;
 }
 
 .map-box {
-  max-width: 1300px;
+  max-width: 1050px;
+  margin-left: 76px;
 }
 
 #abashaSVG {
@@ -284,7 +351,7 @@ tr.informacia {
 
 #mestiaSVG {
   width: 1111px;
-  margin-left: 9%;
+  margin-left: 4%;
   margin-top: -9%;
 }
 
@@ -306,8 +373,7 @@ tr.informacia {
   margin-top: -18%;
 }
 
-
-#tbilisiSVG{
+#tbilisiSVG {
   width: 1079px;
   margin-left: 9%;
   margin-top: -10%;

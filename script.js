@@ -27,19 +27,32 @@ let itemsToShow = {
   dziritadi9: "informacia9",
   dziritadi10: "informacia10",
   dziritadi11: "informacia11",
+  dziritadi12: "informacia12",
+  dziritadi13: "informacia13",
+  dziritadi14: "informacia14",
+  dziritadi15: "informacia15",
+  dziritadi16: "informacia16",
+  dziritadi17: "informacia17",
+  dziritadi18: "informacia18",
+  dziritadi19: "informacia19",
+  dziritadi20: "informacia20",
+  dziritadi21: "informacia21",
+  dziritadi22: "informacia22",
 
 };
 
 function GetIdChange() {
   let dziritadiel = window.event.target.id;
-  if(window.event.target.style.background=="url(\"images/angle-up-24.png\") 98% 50% no-repeat"){
-    window.event.target.style.background="url('images/angle-down-24.png')  no-repeat"
-    window.event.target.style.backgroundPosition="98% 50%"
+  if(window.event.target.style.background=="url(\"https://cdn-icons-png.flaticon.com/512/32/32323.png\") 98% 50% no-repeat"){
+    window.event.target.style.background="url('https://cdn-icons-png.flaticon.com/512/32/32195.png')  no-repeat"
+    window.event.target.style.backgroundPosition="96% 50%"
+    window.event.target.style.backgroundSize='18px 18px'
   }else{
-    window.event.target.style.background="url('images/angle-up-24.png') no-repeat"
+    window.event.target.style.background="url('https://cdn-icons-png.flaticon.com/512/32/32323.png') no-repeat"
     window.event.target.style.backgroundPosition="98% 50%"
   }
 
+  
 
   var informacia = document.querySelectorAll(`.${itemsToShow[dziritadiel]}`);
   if(informacia){

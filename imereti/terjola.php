@@ -108,347 +108,798 @@
         <table class="machveneblebi-left">
             <?php
             include('../connection.php');
-            $query = mysqli_query($link, "select * from `regions` where ID = 6");
+            $query = mysqli_query($link, "select * from `municipal_statistics`");
             while ($row = mysqli_fetch_array($query)) {
-            ?> <tr>
-                    <th>რეგიონული სტატისტიკა</th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <th id="dziritadi1" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ძირითადი ინფორმაცია <span class="float-right"><i id="classchange" class="dropdown_img_up" ></i></span>
-                        </th>
-                    </tr>
-                    <tr class="informacia1">
-                        <td>
-                            რეგიონის ფართობი
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia1">
-                        <td>
-                            მუნიციპალიტეტების, ქალაქების და სოფლების რაოდენობა
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მოსახლეობა <span class="float-right"><a href="http://localhost/regions/regions/6/mosakhleoba/mosakhleoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi2" onclick="GetIdChange()"  title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია</td>
-                    </tr>
-                    <tr class="informacia2">
-                        <td>
-                            მოკვდაობა
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/demografia/mokvdaoba_asaki_sqesi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia2">
-                        <td>
-                            გარდაცვალების მიზეზები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/demografia/gardacvalebis%20mizezebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia2">
-                        <td>
-                            ძირითადი დემოგრაფიული მაჩვენებლები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მშპ და დამატებული ღირებულება <span class="float-right"><a href="http://localhost/regions/regions/6/mshp%20da%20damatebuli%20girebuleba/mshp%20da%20damatebuli%20girebuleba.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">პირდაპირი უცხოური ინვესტიციები <span class="float-right"><a href="http://localhost/regions/regions/6/pirdapiri%20uckhouri%20investiciebi/pirdapiri%20uckhouri%20investiciebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დასაქმება და ხელფასები 
-                        </td>
-                    </tr>
-                    <tr class="informacia3">
-                        <td>
-                            დასაქმება, უმუშევრობა
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia3">
-                        <td>
-                            ხელფასები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/dasaqmeba_umushevroba/khelfasi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="ქ.ზუგდიდის მიხედვით">ფასები და ინფლაცია 
-                        </td>
-                    </tr>
-                    <tr class="informacia4">
-                        <td>
-                            სამომხმარებლო ფასების ინდექსი 12 თვის საშუალო წინა 12 თვის საშუალოსთან
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/fasebi/samomxmareblo%20fasebis%20indeqsebi%2012%20tvis%20sashualo%20wina%2012%20Tvis%20saSualosTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia4">
-                        <td>
-                            სამომხმარებლო ფასების ინდექსი წინა თვესთან
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20tvestan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia4">
-                        <td>
-                            სამომხმარებლო ფასების ინდექსი წინა წლის შესაბამის თვესთან
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ცხოვრების დონე 
-                        </td>
-                    </tr>
-                    <tr class="informacia5">
-                        <td>
-                            შემოსავლები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/ckhovrebis%20done/shemosavlebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia5">
-                        <td>
-                            ხარჯები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/ckhovrebis%20done/kharjebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ბიზნეს სექტორი 
-                        </td>
-                    </tr>
-                    <tr class="informacia6">
-                        <td>
-                            საქმიანობის მიხედვით (NACE rev.2)
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/biznes%20seqtori/saqmianobis%20mikhedvit_nace%20rev.2.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia6">
-                        <td>
-                            საკუთრების ფორმის მიხედვით
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/biznes%20seqtori/sakutrebis%20formis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia6">
-                        <td>
-                            ზომის მიხედვით
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/biznes%20seqtori/zomis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi"  title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/">ბიზნეს რეგისტრი</a> <span class="float-right"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სოფლის მეურნეობა 
-                        </td>
-                    </tr>
-                    <tr class="informacia7">
-                        <td>
-                            ერთწლიანი კულტურები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/soflis%20meurneoba/1.%20erttsliani%20kulturebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia7">
-                        <td>
-                            მრავალწლოვანი კულტურების წარმოება
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/soflis%20meurneoba/2.%20mravaltslovani%20kulturebis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia7">
-                        <td>
-                            პირუტყვის სულადობა
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/soflis%20meurneoba/3.%20pirutkvis%20suladoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia7">
-                        <td>
-                            მეცხოველეობის პროდუქციის წარმოება
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/soflis%20meurneoba/4.%20metskhoveleobis%20produktsiis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მრეწველობა<span class="float-right"><a href=""> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მშენებლობა 
-                        </td>
-                    </tr>
-                    <tr class="informacia8">
-                        <td>
-                            დასრულებული მშენებლობები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia8">
-                        <td>
-                            ნებართვები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/mshenebloba/mshenebloba_nebartvebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia8">
-                        <td>
-                            ძირითადი მაჩვენებლები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/mshenebloba/mshenebloba_dziritadi%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ენერგეტიკა<span class="float-right"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ვაჭრობა<span class="float-right"><a href=""> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi9" title="" onclick="GetIdChange()"  data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სასტუმროები და რესტორნები 
-                        </td>
-                    </tr>
-                    <tr class="informacia9">
-                        <td>
-                            სასტუმროები და რესტორნები
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/sastumroebi%20da%20restornebi/sastumroebi%20da%20restornebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia9">
-                        <td>
-                            სტუმართა რაოდენობა
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/sastumroebi%20da%20restornebi/stumarta%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტრანსპორტი და დასაწყობება 
-                        </td>
-                    </tr>
-                    <tr class="informacia10">
-                        <td>
-                            ტრანსპორტი და დასაწყობება
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia10">
-                        <td>
-                            რეგისტრირებული ავტომობილების რაოდენობა
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia10">
-                        <td>
-                            საერთო სარგებლობის საავტომობილო გზების სიგრძე
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi11" title="" onclick="GetIdChange()"  data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტურიზმი (შიდა) <span class="float-right"><i id="classchange" class="dropdown_img_up"></i>
-                        </td>
-                    </tr>
-                    <tr class="informacia11">
-                        <td>
-                            საცხოვრებელი ადგილის მიხედვით
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/turizmi/ganawileba%20sacxovrebeli%20adgilis%20mixedvit.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr class="informacia11">
-                        <td>
-                            მონახულებული რეგიონებით
-                        </td>
-                        <td>
-                            <span class="float-right"><a href="http://localhost/regions/regions/6/turizmi/ganawileba%20monaxulebuli%20regionebit.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სამართლებრივი სტატისტიკა<span class="float-right"><a href="http://localhost/regions/regions/6/samartlebrivi%20statistika/samartlebrivi%20statistika.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ჯანდაცვა და სოციალური უზრუნველყოფა<span class="float-right"><a href="http://localhost/regions/regions/6/jandacva%20da%20socialuri%20uzrunvelkofa/jandacva%20da%20socialuri%20uzrunvelkofa.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">განათლება<span class="float-right"><a href="http://localhost/regions/regions/6/ganatleba/ganatleba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">კულტურა<span class="float-right"><a href="http://localhost/regions/regions/6/kultura/kultura.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">გარემოს დაცვა<span class="float-right"><a href="http://localhost/regions/regions/6/garemos%20dacva/garemos%20dacva.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ინფრასტრუქტურა<span class="float-right"><a href="http://localhost/regions/regions/6/infrastruqtura/infrastruqtura.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                        </td>
-                    </tr>
-
-
-
-
-                </tbody>
-            <?php
+                $basicInformation[$row['ID']] = $row['basicInformation'];
+                $Population[$row['ID']] = $row['Population'];
+                $birth[$row['ID']] = $row['birth'];
+                $death[$row['ID']] = $row['death'];
+                $naturalIncrease[$row['ID']] = $row['naturalIncrease'];
+                $marriage[$row['ID']] = $row['marriage'];
+                $divorce[$row['ID']] = $row['divorce'];
+                $populationDescription[$row['ID']] = $row['populationDescription'];
+                $employmentAndSalaries[$row['ID']] = $row['employmentAndSalaries'];
+                $businessSector[$row['ID']] = $row['businessSector'];
+                $businessRegister[$row['ID']] = $row['businessRegister'];
+                $accordingToTheTypesOfActivities[$row['ID']] = $row['accordingToTheTypesOfActivities'];
+                $AccordingToTheFormsOfOwnership[$row['ID']] = $row['AccordingToTheFormsOfOwnership'];
+                $accordingToOrganizationalLegalForms[$row['ID']] = $row['accordingToOrganizationalLegalForms'];
+                $agriculture[$row['ID']] = $row['agriculture'];
+                $construction[$row['ID']] = $row['construction'];
+                $trading[$row['ID']] = $row['trading'];
+                $hotels[$row['ID']] = $row['hotels'];
+                $transportAndStorage[$row['ID']] = $row['transportAndStorage'];
+                $healthCareAndSocialSecurity[$row['ID']] = $row['healthCareAndSocialSecurity'];
+                $education[$row['ID']] = $row['education'];
+                $culture[$row['ID']] = $row['culture'];
             }
-            ?>
+            ?> <tr>
+                <th>მუნიციპალური სტატისტიკა</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th id="dziritadi1" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $basicInformation[1]; ?> <span class="float-right"><i id="classchange" class="dropdown_img_up"></i></span>
+                    </th>
+                </tr>
+                <tr class="informacia1">
+                    <td>
+                        <?php echo $basicInformation[2]; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia1">
+                    <td>
+                        <?php echo $basicInformation['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia1">
+                    <td>
+                        <?php echo $basicInformation['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia1">
+                    <td>
+                        <?php echo $basicInformation['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi2" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $Population['1']; ?></td>
+                </tr>
+                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="1 იანვრის მდომარეობით">
+                    <td>
+                        <?php echo $Population['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/mokvdaoba_asaki_sqesi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="1 იანვრის მდგომარეობით">
+                    <td>
+                        <?php echo $Population['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/gardacvalebis%20mizezebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia2">
+                    <td>
+                        <?php echo $Population['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia2">
+                    <td>
+                        <?php echo $Population['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $birth['1']; ?></td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/khelfasi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $death['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%2012%20tvis%20sashualo%20wina%2012%20Tvis%20saSualosTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20tvestan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $naturalIncrease['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia5">
+                    <td>
+                        <?php echo $naturalIncrease['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/ckhovrebis%20done/shemosavlebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia5">
+                    <td>
+                        <?php echo $naturalIncrease['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/ckhovrebis%20done/kharjebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $marriage['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia6">
+                    <td>
+                        <?php echo $marriage['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/saqmianobis%20mikhedvit_nace%20rev.2.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia6">
+                    <td>
+                        <?php echo $marriage['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/sakutrebis%20formis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia6">
+                    <td>
+                        <?php echo $marriage['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/zomis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia6">
+                    <td>
+                        <?php echo $marriage['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/zomis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $divorce['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia7">
+                    <td>
+                        <?php echo $divorce['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/soflis%20meurneoba/1.%20erttsliani%20kulturebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia7">
+                    <td>
+                        <?php echo $divorce['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/soflis%20meurneoba/2.%20mravaltslovani%20kulturebis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia7">
+                    <td>
+                        <?php echo $divorce['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/soflis%20meurneoba/3.%20pirutkvis%20suladoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $populationDescription['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/mshenebloba_nebartvebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/mshenebloba_dziritadi%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi9" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""> <?php echo $employmentAndSalaries['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia9">
+                    <td>
+                        <?php echo $employmentAndSalaries['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/sastumroebi%20da%20restornebi/sastumroebi%20da%20restornebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia9">
+                    <td>
+                        <?php echo $employmentAndSalaries['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/sastumroebi%20da%20restornebi/stumarta%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia9">
+                    <td>
+                        <?php echo $employmentAndSalaries['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/sastumroebi%20da%20restornebi/stumarta%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessSector['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['9']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi11" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessRegister['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia11">
+                    <td>
+                        <?php echo $businessRegister['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia11">
+                    <td>
+                        <?php echo $businessRegister['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia11">
+                    <td>
+                        <?php echo $businessRegister['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia11">
+                    <td>
+                        <?php echo $businessRegister['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi12" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $accordingToTheTypesOfActivities['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia12">
+                    <td>
+                        <?php echo $accordingToTheTypesOfActivities['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia12">
+                    <td>
+                        <?php echo $accordingToTheTypesOfActivities['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi13" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $AccordingToTheFormsOfOwnership['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia13">
+                    <td>
+                        <?php echo $AccordingToTheFormsOfOwnership['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia13">
+                    <td>
+                        <?php echo $AccordingToTheFormsOfOwnership['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi14" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $accordingToOrganizationalLegalForms['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia14">
+                    <td>
+                        <?php echo $accordingToOrganizationalLegalForms['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia14">
+                    <td>
+                        <?php echo $accordingToOrganizationalLegalForms['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi15" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $agriculture['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia15">
+                    <td>
+                        <?php echo $agriculture['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi16" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $construction['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia16">
+                    <td>
+                        <?php echo $construction['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia16">
+                    <td>
+                        <?php echo $construction['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi17" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $trading['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['9']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi18" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotels['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi19" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $transportAndStorage['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia19">
+                    <td>
+                        <?php echo $transportAndStorage['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi20" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi21" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia21">
+                    <td>
+                        <?php echo $education['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia21">
+                    <td>
+                        <?php echo $education['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi22" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $culture['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia22">
+                    <td>
+                        <?php echo $culture['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia22">
+                    <td>
+                        <?php echo $culture['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+
+
+
+
+            </tbody>
         </table>
         <div class="map-box">
             <img src="maps/terjola.svg" alt="terjolaSVG" id="terjolaSVG">
