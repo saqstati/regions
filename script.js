@@ -38,24 +38,27 @@ let itemsToShow = {
   dziritadi20: "informacia20",
   dziritadi21: "informacia21",
   dziritadi22: "informacia22",
-
+  dziritadiMain: "informaciaMain",
 };
 
 function GetIdChange() {
   let dziritadiel = window.event.target.id;
-  if(window.event.target.style.background=="url(\"https://cdn-icons-png.flaticon.com/512/32/32323.png\") 98% 50% no-repeat"){
-    window.event.target.style.background="url('https://cdn-icons-png.flaticon.com/512/32/32195.png')  no-repeat"
-    window.event.target.style.backgroundPosition="96% 50%"
-    window.event.target.style.backgroundSize='18px 18px'
-  }else{
-    window.event.target.style.background="url('https://cdn-icons-png.flaticon.com/512/32/32323.png') no-repeat"
-    window.event.target.style.backgroundPosition="98% 50%"
+  if (
+    window.event.target.style.background ==
+    'url("https://cdn-icons-png.flaticon.com/512/32/32323.png") 98% 50% no-repeat'
+  ) {
+    window.event.target.style.background =
+      "url('https://cdn-icons-png.flaticon.com/512/32/32195.png')  no-repeat";
+    window.event.target.style.backgroundPosition = "96% 50%";
+    window.event.target.style.backgroundSize = "18px 18px";
+  } else {
+    window.event.target.style.background =
+      "url('https://cdn-icons-png.flaticon.com/512/32/32323.png') no-repeat";
+    window.event.target.style.backgroundPosition = "98% 50%";
   }
 
-  
-
   var informacia = document.querySelectorAll(`.${itemsToShow[dziritadiel]}`);
-  if(informacia){
+  if (informacia) {
     for (let i = 0; i < informacia.length; i++) {
       const element = informacia[i];
       if (element.style.display === "flex") {
@@ -63,6 +66,19 @@ function GetIdChange() {
       } else {
         element.style.display = "flex";
       }
+    }
+  }
+}
+
+let showDemografia = [dziritadi3];
+
+function demografiaShow() {
+  for (let i = 3; i < 8; i++) {
+    var x = document.getElementById(`dziritadi${i}`);
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
   }
  

@@ -207,6 +207,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია</td>
+                </tr>
+                <style>
+                    #dziritadi3,
+                    #dziritadi4,
+                    #dziritadi5,
+                    #dziritadi6,
+                    #dziritadi7 {
+                        display: none;
+                    }
+                </style>
+                <tr>
                     <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $birth['1']; ?></td>
                 </tr>
                 <tr class="informacia3">

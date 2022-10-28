@@ -44,9 +44,9 @@
 }
 
 g#layer1 {
-  transform: scale(1.8);
-  -webkit-transform-origin-x: 889px;
-  -webkit-transform-origin-y: 400px;
+  transform: scale(1.5);
+  -webkit-transform-origin-x: 1000px;
+  -webkit-transform-origin-y: 422px;
 }
 
 .btn.textbox-left-home {
@@ -170,7 +170,8 @@ g#layer1 {
 #dziritadi19,
 #dziritadi20,
 #dziritadi21,
-#dziritadi22 {
+#dziritadi22,
+#dziritadiMain {
   font-weight: bolder;
   background: url("https://cdn-icons-png.flaticon.com/512/32/32195.png") no-repeat;
   background-size: 18px 18px !important;
@@ -211,7 +212,8 @@ g#layer1 {
 .informacia19,
 .informacia20,
 .informacia21,
-.informacia22 {
+.informacia22,
+.informaciaMain {
   display: none;
   justify-content: space-between;
   border-bottom: 1px solid #ddd !important;
@@ -262,7 +264,8 @@ g#layer1 {
 #dziritadi19:hover,
 #dziritadi20:hover,
 #dziritadi21:hover,
-#dziritadi22:hover {
+#dziritadi22:hover,
+#dziritadiMain:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
 }
@@ -289,7 +292,8 @@ tr.informacia18:hover,
 tr.informacia19:hover,
 tr.informacia20:hover,
 tr.informacia21:hover,
-tr.informacia22:hover {
+tr.informacia22:hover,
+tr.informaciaMain:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
 }
@@ -316,7 +320,8 @@ tr.informacia18,
 tr.informacia19,
 tr.informacia20,
 tr.informacia21,
-tr.informacia22 {
+tr.informacia22,
+tr.informaciaMain {
   border-bottom: 1px solid #ddd !important;
 }
 
@@ -369,8 +374,8 @@ tr.informacia22 {
 
 #zugdidiSVG {
   width: 898px;
-  margin-left: 17%;
-  margin-top: -18%;
+  margin-left: 10%;
+  margin-top: -23%;
 }
 
 #tbilisiSVG {
