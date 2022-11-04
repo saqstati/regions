@@ -1189,12 +1189,5 @@
 				</text>
 			</g>
 		</g>
-		<g id="Other">
-			<clipPath id="SVG_CP_2">
-				<path d="M0,0L3456,0L3456,2592L0,2592z"/>
-			</clipPath>
-			<path clip-path="url(#SVG_CP_2)" fill="none" stroke="#000000" stroke-width="0.95999" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
-				M0,2592.00387L0,0L3455.97999,0L3455.97999,2592.00387L0,2592.00387z"/>
-		</g>
 	</g>
 </svg>
