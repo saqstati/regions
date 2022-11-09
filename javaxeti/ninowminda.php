@@ -1,3 +1,8 @@
+<?php
+include "../config.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="სტატისტიკური ინფორმაცია სამეგრელო-ზემო სვანეთის რეგიონის ნინოწმინდას შესახებ" />
-    <meta property="og:description" content="სტატისტიკური ინფორმაცია სამეგრელო-ზემო სვანეთის რეგიონის ნინოწმინდას შესახებ" />
+    <meta property="og:title" content="<?php echo $lang['ninotsmindatitlename'] ?>" />
+    <meta property="og:description" content="<?php echo $lang['ninotsmindatitlename'] ?>" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია სამეგრელო-ზემო სვანეთის რეგიონის ნინოწმინდას შესახებ</title>
+    <title class="tr" Key="PAGE_TITLE"><?php echo $lang['ninotsmindatitlename'] ?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -68,47 +73,43 @@
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="../images/logo_transparency_geo.png" /></a>
+            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" /></a>
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია სამეგრელო-ზემო სვანეთის რეგიონის ნინოწმინდას შესახებ</p>
+                <p id="pagetitlename" class="tr" Key="REGION14"><?php echo $lang['ninotsmindatitlename'] ?></p>
             </h1>
         </header>
         <div id="languages">
-            <a href="#" id="ka" class="lang"><img src="../images/ka.png" /></a>
-            <a href="#" id="en" class="lang"><img src="../images/en.png" /></a>
+            <a href="ninowminda.php?lang=ka" id="ka" class="lang"><img src="../images/ka.png" /></a>
+            <a href="ninowminda.php?lang=en" id="en" class="lang"><img src="../images/en.png" /></a>
         </div>
         <div id="recommendation">
             <span class="tr" Key="RECTEXT1">
-                რეკომენდირებულია განახლებული
+                <?php echo $lang['RECTEXT1'] ?>
             </span>
             <br>
             <span class="tr" Key="RECTEXT2">
-                ბრაუზერების გამოყენება:
+                <?php echo $lang['RECTEXT2'] ?>
             </span>
             <a href="http://www.google.com/chrome/"><img src="../images/chrome-100.png" /></a>
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="../images/firefox-100.png" /></a>
             <a href="http://www.opera.com/"><img src="../images/opera-100.png" /></a>
         </div>
-        <div class="btn textbox-right zoom-out">
-            <a class="regions-btn" href="../list.php"><span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
-        </div>
         <div class="display-flex">
             <div class="btn textbox-left-home">
-                <a class="back-btn" href="../javaxeti.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
+                <a class="back-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../javaxeti.php?lang=en' : '../javaxeti.php?lang=ka'; ?>"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
             </div>
             <div class="btn textbox-right-home">
-                <a class="regions-btn" href="../list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
+                <a class="regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../list.php?lang=en' : '../list.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Compare Regions' : 'რეგიონების შედარება'; ?></span></a>
             </div>
-        </div>
-        <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
         </div>
 
         <table class="machveneblebi-left">
             <?php
             include('../connection.php');
-            $query = mysqli_query($link, "select * from `municipal_statistics`");
+            $table = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'municipal_statistics_en' : 'municipal_statistics';
+            $query = mysqli_query($link, "select * from " . $table);
             while ($row = mysqli_fetch_array($query)) {
                 $basicInformation[$row['ID']] = $row['basicInformation'];
                 $Population[$row['ID']] = $row['Population'];
@@ -134,7 +135,7 @@
                 $culture[$row['ID']] = $row['culture'];
             }
             ?> <tr>
-                <th>მუნიციპალური სტატისტიკა</th>
+                <th><?php echo $lang['munstat'] ?></th>
             </tr>
             <tbody>
                 <tr>
@@ -209,7 +210,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია</td>
+                    <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $lang['demograph'] ?></td>
                 </tr>
                 <style>
                     #dziritadi3,
@@ -915,7 +916,7 @@
         </table>
 
         <div class="map-box">
-            <img src="maps/ninotsminda.svg" alt="ninowmindaSVG" id="ninowmindaSVG">
+            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'maps/ninotsmindaen.svg' : 'maps/ninotsminda.svg'; ?>" alt="ninowmindaSVG" id="ninowmindaSVG">
         </div>
 
         <table class="machveneblebi-right">
@@ -1011,11 +1012,11 @@
                     </script>
                 </div>
             </div>
-            <span class="tr" key="COPYRIGHT1">© 2022 ყველა უფლება დაცულია.</span>
+            <span class="tr" key="COPYRIGHT1"><?php echo $lang['COPYRIGHT1'] ?></span>
             <br>
-            <span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
+            <span class="tr" key="COPYRIGHT2"><?php echo $lang['COPYRIGHT2'] ?></span><br>
 
-            <span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
+            <span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"><?php echo $lang['COPYRIGHT3'] ?></a></span>
         </footer>
 
         <script src="../script.js"></script>

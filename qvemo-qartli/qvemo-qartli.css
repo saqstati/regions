@@ -42,9 +42,13 @@ g#layer8 {
 }
 
 #marneuliSVG, #dmanisiSVG, #bolnisiSVG {
-  width: 965px;
+  width: 964px;
   margin-left: 9%;
-  margin-top: -21%;
+  margin-top: -29%;
+}
+
+#bolnisiSVG{
+  margin-top: -1% !important;
 }
 
 #walkaSVG,

@@ -1,3 +1,7 @@
+<?php
+include "config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="სტატისტიკური ინფორმაცია თბილისის რეგიონის შესახებ" />
-    <meta property="og:description" content="სტატისტიკური ინფორმაცია თბილისის რეგიონის შესახებ" />
+    <meta property="og:title" content="<?php echo $lang['tbilisititlename'] ?>" />
+    <meta property="og:description" content="<?php echo $lang['tbilisititlename'] ?>" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია თბილისის რეგიონის შესახებ</title>
+    <title class="tr" Key="PAGE_TITLE"><?php echo $lang['tbilisititlename'] ?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -68,41 +72,36 @@
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
+            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'images/logo_transparency_eng.png' : 'images/logo_transparency_geo.png'; ?>" /></a>
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია თბილისის რეგიონის შესახებ</p>
+                <p id="pagetitlename" class="tr" Key="REGION14"><?php echo $lang['tbilisititlename'] ?></p>
             </h1>
         </header>
         <div id="languages">
-            <a href="#" id="ka" class="lang"><img src="images/ka.png" /></a>
-            <a href="#" id="en" class="lang"><img src="images/en.png" /></a>
+            <a href="tbilisi.php?lang=ka" id="ka" class="lang"><img src="images/ka.png" /></a>
+            <a href="tbilisi.php?lang=en" id="en" class="lang"><img src="images/en.png" /></a>
         </div>
         <div id="recommendation">
             <span class="tr" Key="RECTEXT1">
-                რეკომენდირებულია განახლებული
+                <?php echo $lang['RECTEXT1'] ?>
             </span>
             <br>
             <span class="tr" Key="RECTEXT2">
-                ბრაუზერების გამოყენება:
+                <?php echo $lang['RECTEXT2'] ?>
             </span>
             <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
             <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
         </div>
-        <div class="btn textbox-right zoom-out">
-            <a class="regions-btn" href="list.php"><span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
-        </div>
         <div class="display-flex">
             <div class="btn textbox-left-home">
-                <a class="back-btn" href="index.php"> <span class="tr" Key="backBtn">უკან დაბრუნება</span></a>
+                <a class="back-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'index.php#' : 'index.php?lang=ka'; ?>"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
             </div>
             <div class="btn textbox-right-home">
-                <a class="regions-btn" href="list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
+                <a class="regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'list.php?lang=en' : 'list.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Compare Regions' : 'რეგიონების შედარება'; ?></span></a>
             </div>
-        </div>
-        <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
         </div>
 
         <table class="machveneblebi-left">
@@ -115,7 +114,7 @@
                 </tr>
                 <tbody>
                     <tr>
-                        <th id="dziritadi1" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ძირითადი ინფორმაცია <span class="float-right"><i id="classchange" class="dropdown_img_up" ></i></span>
+                        <th id="dziritadi1" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ძირითადი ინფორმაცია <span class="float-right"><i id="classchange" class="dropdown_img_up"></i></span>
                         </th>
                     </tr>
                     <tr class="informacia1">
@@ -139,7 +138,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi2" onclick="GetIdChange()"  title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია</td>
+                        <td id="dziritadi2" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დემოგრაფია</td>
                     </tr>
                     <tr class="informacia2">
                         <td>
@@ -174,7 +173,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დასაქმება და ხელფასები 
+                        <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">დასაქმება და ხელფასები
                         </td>
                     </tr>
                     <tr class="informacia3">
@@ -194,7 +193,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ფასები და ინფლაცია 
+                        <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ფასები და ინფლაცია
                         </td>
                     </tr>
                     <tr class="informacia4">
@@ -222,7 +221,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ცხოვრების დონე 
+                        <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ცხოვრების დონე
                         </td>
                     </tr>
                     <tr class="informacia5">
@@ -242,7 +241,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ბიზნეს სექტორი 
+                        <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ბიზნეს სექტორი
                         </td>
                     </tr>
                     <tr class="informacia6">
@@ -270,11 +269,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi"  title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/">ბიზნეს რეგისტრი</a> <span class="float-right"></span>
+                        <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/">ბიზნეს რეგისტრი</a> <span class="float-right"></span>
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სოფლის მეურნეობა 
+                        <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სოფლის მეურნეობა
                         </td>
                     </tr>
                     <tr class="informacia7">
@@ -314,7 +313,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მშენებლობა 
+                        <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">მშენებლობა
                         </td>
                     </tr>
                     <tr class="informacia8">
@@ -350,7 +349,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi9" title="" onclick="GetIdChange()"  data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სასტუმროები და რესტორნები 
+                        <td id="dziritadi9" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">სასტუმროები და რესტორნები
                         </td>
                     </tr>
                     <tr class="informacia9">
@@ -370,7 +369,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტრანსპორტი და დასაწყობება 
+                        <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტრანსპორტი და დასაწყობება
                         </td>
                     </tr>
                     <tr class="informacia10">
@@ -398,7 +397,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="dziritadi11" title="" onclick="GetIdChange()"  data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტურიზმი (შიდა) <span class="float-right"><i id="classchange" class="dropdown_img_up"></i>
+                        <td id="dziritadi11" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">ტურიზმი (შიდა) <span class="float-right"><i id="classchange" class="dropdown_img_up"></i>
                         </td>
                     </tr>
                     <tr class="informacia11">
@@ -451,7 +450,7 @@
             ?>
         </table>
         <div class="map-box" style="max-width: 700px; margin-left:55px;">
-            <img src="tbilisi.svg" alt="tbilisiSVG" id="tbilisiSVG">
+            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'tbilisien.svg' : 'tbilisi.svg'; ?>" alt="tbilisiSVG" id="tbilisiSVG">
         </div>
 
         <table class="machveneblebi-right">
@@ -549,11 +548,11 @@
                     </script>
                 </div>
             </div>
-            <span class="tr" key="COPYRIGHT1">© 2022 ყველა უფლება დაცულია.</span>
+            <span class="tr" key="COPYRIGHT1"><?php echo $lang['COPYRIGHT1'] ?></span>
             <br>
-            <span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
+            <span class="tr" key="COPYRIGHT2"><?php echo $lang['COPYRIGHT2'] ?></span><br>
 
-            <span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
+            <span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"><?php echo $lang['COPYRIGHT3'] ?></a></span>
         </footer>
 
         <script src="script.js"></script>
