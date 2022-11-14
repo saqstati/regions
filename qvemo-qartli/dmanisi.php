@@ -134,7 +134,7 @@ include "../config.php";
                 $culture[$row['ID']] = $row['culture'];
             }
             ?> <tr>
-                <<th><?php echo $lang['munstat'] ?></th>
+                <th><?php echo $lang['munstat'] ?></th>
             </tr>
             <tbody>
                 <tr>

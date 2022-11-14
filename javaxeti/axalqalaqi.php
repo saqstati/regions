@@ -916,7 +916,7 @@ include "../config.php";
         </table>
 
         <div class="map-box">
-            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'maps/akhalkalaki.svg' : 'maps/akhalkalaki.svg'; ?>" alt="axalqalaqiSVG" id="axalqalaqiSVG">
+            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'maps/akhalkalakien.svg' : 'maps/akhalqalaqi.svg'; ?>" alt="axalqalaqiSVG" id="axalqalaqiSVG">
         </div>
 
         <table class="machveneblebi-right">
