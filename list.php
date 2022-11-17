@@ -10,13 +10,13 @@ include "config.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $lang['pagetitlename'] ?>" />
-    <meta property="og:description" content="<?php echo $lang['pagetitlename'] ?>" />
+    <meta property="og:title" content="ძირითადი მაჩვენებლების შედარება საქართველოს რეგიონების მიხედვით" />
+    <meta property="og:description" content="ძირითადი მაჩვენებლების შედარება საქართველოს რეგიონების მიხედვით" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE"><?php echo $lang['pagetitlename'] ?></title>
+    <title class="tr" Key="PAGE_TITLE">ძირითადი მაჩვენებლების შედარება საქართველოს რეგიონების მიხედვით</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -77,20 +77,20 @@ include "config.php";
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14"><?php echo $lang['pagetitlename'] ?></p>
+                <p id="pagetitlename" class="tr" Key="REGION14">ძირითადი მაჩვენებლების შედარება საქართველოს რეგიონების მიხედვით</p>
             </h1>
         </header>
         <div id="languages">
-            <a href="list.php?lang=ka" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
-            <a href="list.php?lang=en" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
+            <a href="list.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
+            <a href="listEN.php" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
         </div>
         <div id="recommendation">
             <span class="tr" Key="RECTEXT1">
-                <?php echo $lang['RECTEXT1'] ?>
+                რეკომენდირებულია განახლებული
             </span>
             <br>
             <span class="tr" Key="RECTEXT2">
-                <?php echo $lang['RECTEXT2'] ?>
+                ბრაუზერის გამოყენება:
             </span>
             <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
@@ -251,11 +251,11 @@ include "config.php";
                 </script>
             </div>
         </div>
-        <span class="tr" key="COPYRIGHT1"><?php echo $lang['COPYRIGHT1'] ?></span>
+        <span class="tr" key="COPYRIGHT1">© 2022 ყველა უფლება დაცულია.</span>
         <br>
-        <span class="tr" key="COPYRIGHT2"><?php echo $lang['COPYRIGHT2'] ?></span><br>
+        <span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
 
-        <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"><?php echo $lang['COPYRIGHT3'] ?></a></span>
+        <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
     </footer>
 
     <script>

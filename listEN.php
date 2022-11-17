@@ -69,7 +69,7 @@
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
+            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_eng.png" /></a>
         </div>
         <header class="header1">
             <h1>
@@ -135,7 +135,7 @@
     $result = mysqli_query($link, "SELECT * FROM `regions`");
     while ($row = $result->fetch_assoc()) {
         $i++;
-        $item[$i][] = $row["Name"];
+        $item[$i][] = $row["NameEN"];
         $item[$i][] = $row["Area"];
         $item[$i][] = $row["Population"];
         $item[$i][] = $row["GDP"];

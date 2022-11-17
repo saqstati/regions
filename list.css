@@ -89,7 +89,8 @@ footer {
 }
 
 #list-footer {
-    position: unset !important;
+    /* position: unset !important; */
+    position: relative;
 }
 
 tbody tr:first-child {
