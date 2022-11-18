@@ -22,6 +22,10 @@
   opacity: 1;
 }
 
+#pagetitlename {
+  font-size: 28px;
+}
+
 .map-box {
   height: unset !important;
 
