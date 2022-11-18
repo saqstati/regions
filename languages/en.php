@@ -9,6 +9,7 @@
 		"abashatitlename" => "Statistical information about municipality Abasha, Samegrelo-Zemo Svaneti region",
 		"senakititlename" => "Statistical information about municipality Senaki, Samegrelo-Zemo Svaneti region",
 		"khobititlename" => "Statistical information about municipality Khobi, Samegrelo-Zemo Svaneti region",
+		"potititlename" => "Statistical information about municipality Poti, Samegrelo-Zemo Svaneti region",
 		"zugdidititlename" => "Statistical information about municipality Zugdidi, Samegrelo-Zemo Svaneti region",
 		"guriatitlename" => "Statistical information about region of Guria",
 		"lanchkhutititlename" => "Statistical information about municipality Lanchkhuti, Guria region",

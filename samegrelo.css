@@ -53,6 +53,12 @@ g#layer1 {
   -webkit-transform-origin-y: 422px;
 }
 
+g#poti {
+  transform: scale(1.5);
+  -webkit-transform-origin-x: 1000px;
+  -webkit-transform-origin-y: 422px;
+}
+
 .btn.textbox-left-home {
   margin-top: -57px;
   margin-left: 25px;
@@ -380,6 +386,12 @@ tr.informaciaMain {
   width: 898px;
   margin-left: 10%;
   margin-top: -23%;
+}
+
+#potiSVG {
+  width: 618px;
+  margin-left: 12%;
+  margin-top: -7%;
 }
 
 #tbilisiSVG {
