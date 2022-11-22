@@ -688,7 +688,7 @@ include "../config.php";
                         <?php echo $construction['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/გაცემული_ნებართვები/ქვემო%20ქართლი/გარდაბანი.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia16">
@@ -696,7 +696,7 @@ include "../config.php";
                         <?php echo $construction['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/dasrulebuli_mshenebloba/ქვემო%20ქართლი/გარდაბანი.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>

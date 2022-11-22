@@ -345,7 +345,7 @@ include "config.php";
                         <?php echo $construction[2]; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/dasrulebuli_mshenebloba/თბილისი.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
@@ -353,7 +353,7 @@ include "config.php";
                         <?php echo $construction[3]; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/mshenebloba/mshenebloba_nebartvebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/გაცემული_ნებართვები/თბილისი.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
