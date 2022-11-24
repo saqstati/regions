@@ -147,7 +147,7 @@ include "../config.php";
                         <?php echo $basicInformation[2]; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="http://localhost/regions/municipal/fartobi/Wyaltubo.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia1">

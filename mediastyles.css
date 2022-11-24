@@ -682,11 +682,17 @@
     }
 }
 
-@media screen and (max-width: 2560px) and (min-width: 1366px) {
+@media screen and (max-width: 1300px) {
     g.layer1 {
         transform: scale(1.1) !important;
         -webkit-transform-origin-x: 4100px !important;
         -webkit-transform-origin-y: 1746px !important;
+    }
+
+    #mestiaSVG {
+        width: 716px;
+        margin-left: 0.54%;
+        margin-top: -14%;
     }
 
     g#layer2 {
