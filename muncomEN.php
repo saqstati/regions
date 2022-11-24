@@ -10,13 +10,13 @@ include "config.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით" />
-    <meta property="og:description" content="ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით" />
+    <meta property="og:title" content="Comparison of the main indicators according to the municipalities of Georgia" />
+    <meta property="og:description" content="Comparison of the main indicators according to the municipalities of Georgia" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით</title>
+    <title class="tr" Key="PAGE_TITLE">Comparison of the main indicators according to the municipalities of Georgia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -73,11 +73,11 @@ include "config.php";
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
+            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_eng.png" /></a>
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით</p>
+                <p id="pagetitlename" class="tr" Key="REGION14">Comparison of the main indicators according to the municipalities of Georgia</p>
             </h1>
         </header>
         <div id="languages">
@@ -123,26 +123,26 @@ include "config.php";
 
     <?php
     $j=0;
-    $item[$j++][0] = "ძირითადი მაჩვენებლები";
-    $item[$j++][0] = "ფართობი (კვ.კმ)";
-    $item[$j++][0] = "ქალაქების და დაბების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "სოფლების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "მოსახლეობის რიცხოვნობა (ათასი)";
-    $item[$j++][0] = "ცოცხლად დაბადებულთა რიცხოვნობა (კაცი)";
-    $item[$j++][0] = "შობადობის ზოგადი კოეფიციენტი (დაბადებულთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
-    $item[$j++][0] = "გარდაცვლილთა რიცხოვნობა (კაცი)";
-    $item[$j++][0] = "მოკვდაობის ზოგადი კოეფიციენტი (გარდაცვლილთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
-    $item[$j++][0] = "დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი)";
-    $item[$j++][0] = "დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი)";
-    $item[$j++][0] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    $item[$j++][0] = "Key Indicators";
+    $item[$j++][0] = "Area (sq. km)";
+    $item[$j++][0] = "Number of cities and towns (unit)";
+    $item[$j++][0] = "Number of villages (unit)";
+    $item[$j++][0] = "Population (thousands)";
+    $item[$j++][0] = "Number of live births (male)";
+    $item[$j++][0] = "General birth rate (number of births per 1000 people)";
+    $item[$j++][0] = "Death (men)";
+    $item[$j++][0] = "General mortality rate (number of deaths per 1000 people)";
+    $item[$j++][0] = "Number of employees in the business sector (thousands of people)";
+    $item[$j++][0] = "Average monthly salary of employees in the business sector (GEL)";
+    $item[$j++][0] = "Number of registered economic entities (unit)";
+    $item[$j++][0] = "Number of active economic entities (unit)";
 
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `municipalities`");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j=0;
-        $item[$j++][$i] = $row["Name"];
+        $item[$j++][$i] = $row["NameEN"];
         $item[$j++][$i] = $row["Area"];
         $item[$j++][$i] = $row["NumberOfCT"];
         $item[$j++][$i] = $row["Villages"];

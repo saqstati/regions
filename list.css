@@ -115,7 +115,7 @@ tbody tr:first-child {
     }
 }
 
-.regionebi.reg{
+.regionebi.reg {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
@@ -125,7 +125,7 @@ tbody tr:first-child {
     text-align: center;
 }
 
-.copy3{
+.copy3 {
     font-weight: bold;
 }
 
@@ -135,4 +135,24 @@ th.machveneblebi_height {
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
