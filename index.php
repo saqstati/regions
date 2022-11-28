@@ -88,11 +88,11 @@
 			<a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
 			<a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
 		</div>
-		<div class="btn textbox-right zoom-out">
-			<a class="regions-btn" href="list.php"><span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
-		</div>
 		<div class="btn textbox-right-home">
 			<a class="regions-btn" href="list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
+		</div>
+		<div class=" textbox-right-home mun">
+			<a class="regions-btn" href="muncom.php"> <span class="tr" Key="regionsBtn">მუნიციპალიტეტების შედარება</span></a>
 		</div>
 		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
 		</div>

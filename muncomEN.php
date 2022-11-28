@@ -86,11 +86,11 @@ include "config.php";
         </div>
         <div id="recommendation">
             <span class="tr" Key="RECTEXT1">
-                რეკომენდირებულია განახლებული
+                Recommended web browsers
             </span>
             <br>
             <span class="tr" Key="RECTEXT2">
-                ბრაუზერის გამოყენება:
+                
             </span>
             <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
@@ -122,7 +122,7 @@ include "config.php";
     </div>
 
     <?php
-    $j=0;
+    $j = 0;
     $item[$j++][0] = "Key Indicators";
     $item[$j++][0] = "Area (sq. km)";
     $item[$j++][0] = "Number of cities and towns (unit)";
@@ -141,7 +141,7 @@ include "config.php";
     $result = mysqli_query($link, "SELECT * FROM `municipalities`");
     while ($row = $result->fetch_assoc()) {
         $i++;
-        $j=0;
+        $j = 0;
         $item[$j++][$i] = $row["NameEN"];
         $item[$j++][$i] = $row["Area"];
         $item[$j++][$i] = $row["NumberOfCT"];
@@ -156,7 +156,7 @@ include "config.php";
         $item[$j++][$i] = $row["RegEcSub"];
         $item[$j++][$i] = $row["ActEcSub"];
     }
-   
+
     ?>
 
     <table class="table table-responsive table-bordered bg-black">

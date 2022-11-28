@@ -741,6 +741,15 @@ table tbody tr td img:after {
   background-color: red;
 }
 
+.mun{
+  margin-top: 50px;
+}
+
+.regions-mun {
+  margin-right: 180px;
+  width: 250px;
+}
+
 .regions-btn {
   color: #fff;
   text-decoration: none;
