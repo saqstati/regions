@@ -97,6 +97,12 @@ include "config.php";
             <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
         </div>
     </div>
+
+    <div class="display-flex">
+        <a class=" btn textbox-left-home back-btn" onclick="previous()" > <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+    </div>
+    
+
     <form method="POST" action="" name="applyform">
 
         <table class="table table-bordered bg-black">

@@ -22,7 +22,7 @@
 		"shuakhevititlename" => "Statistical information about municipality Shuakhevi, Adjara region",
 		"khelvachaurititlename" => "Statistical information about municipality Khelvachauri, Adjara region",
 		"khulotitlename" => "Statistical information about municipality Khulo, Adjara region",
-		"rachatitlename" => "Statistical information about region of Racha",
+		"rachatitlename" => "Statistical information about region of Racha-Lechkhumi and Kvemo Svaneti",
 		"ambrolaurititlename" => "Statistical information about municipality Ambrolauri, Racha region",
 		"tsagerititlename" => "Statistical information about municipality Tsageri, Racha region",
 		"lentekhititlename" => "Statistical information about municipality Lentekhi, Racha region",

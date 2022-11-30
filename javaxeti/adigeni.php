@@ -675,7 +675,7 @@ include "../config.php";
                         <?php echo $agriculture['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'http://localhost/regions/municipal/ENG/Share%20of%20Agriculture%20Land%20Area/Samtskhe-Javakheti/Adigeni%20Municipality.xlsx' : 'http://localhost/regions/municipal/soflis%20meurneoba/ეკო_აქტ/სამცხე-ჯავახეთი/ადიგენის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>

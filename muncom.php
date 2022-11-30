@@ -20,6 +20,8 @@ include "config.php";
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="custom.css">
@@ -97,6 +99,11 @@ include "config.php";
             <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
         </div>
     </div>
+
+    <div class="display-flex">
+        <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+    </div>
+
     <form method="POST" action="" name="applyform">
 
         <table class="table table-bordered bg-black">
@@ -122,7 +129,7 @@ include "config.php";
     </div>
 
     <?php
-    $j=0;
+    $j = 0;
     $item[$j++][0] = "ძირითადი მაჩვენებლები";
     $item[$j++][0] = "ფართობი (კვ.კმ)";
     $item[$j++][0] = "ქალაქების და დაბების რაოდენობა (ერთეული)";
@@ -141,7 +148,7 @@ include "config.php";
     $result = mysqli_query($link, "SELECT * FROM `municipalities`");
     while ($row = $result->fetch_assoc()) {
         $i++;
-        $j=0;
+        $j = 0;
         $item[$j++][$i] = $row["Name"];
         $item[$j++][$i] = $row["Area"];
         $item[$j++][$i] = $row["NumberOfCT"];
@@ -156,7 +163,7 @@ include "config.php";
         $item[$j++][$i] = $row["RegEcSub"];
         $item[$j++][$i] = $row["ActEcSub"];
     }
-   
+
     ?>
 
     <table class="table table-responsive table-bordered bg-black">
@@ -165,9 +172,18 @@ include "config.php";
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>
                         <?php if ($k == 0 && $l == 0) { ?>
-                            <td class="td-empty" style="height : 160px !important; border-right:none;"> <br><?php echo $b; ?></td>
+                            <td class="td-empty" style="height : 160px !important; border-right:none;">
+                                <br><?php echo $b; ?>
+                                <br>
+                                <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                                    <?php foreach ($item[0] as $x => $y) { ?>
+                                        <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+                                    <?php } ?>
+
+                                </select>
+                            </td>
                         <?php } else if ($k == 0) { ?>
-                            <th class="machveneblebi_height" style="height : 50px !important;"><?php echo $b; ?> <input class="right" id="myCol<?php echo $l; ?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l; ?>)" /></th>
+                            <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; display:none;"><?php echo $b; ?> <input class="right" id="myCol<?php echo $l; ?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l; ?>)" /></th>
                         <?php } else if ($l == 0) { ?>
                             <td class="regionebi reg" style="height : 160px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
                         <?php } else { ?>

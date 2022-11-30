@@ -1,3 +1,10 @@
+function previous() {
+  window.history.back();
+}
+
+$(document).ready(function() {
+  $('.js-example-basic-multiple').select2();
+});
 // const btn = document.querySelector("#btn");
 // const container = document.querySelector("#press");
 // btn.addEventListener("click", function () {
@@ -70,7 +77,7 @@ function GetIdChange() {
   }
 }
 
-let showDemografia = [dziritadi3];
+// let showDemografia = [dziritadi3];
 
 function demografiaShow() {
   for (let i = 3; i < 8; i++) {
@@ -157,3 +164,4 @@ $(document).ready(function () {
 
 // let containsClass = element.classList.contains('dropdown_up');
 // element.classList.toggle('dropdown_up', !containsClass);
+
