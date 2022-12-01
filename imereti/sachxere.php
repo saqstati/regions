@@ -587,7 +587,7 @@ include "../config.php";
                         <?php echo $businessRegister['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'http://localhost/regions/municipal/ENG/Business%20Register/Number%20of%20newly%20registered%20business%20entities%20in%20Georgia%20per%201000%20population/Imereti/Sachkhere%20Municipality.xlsx' : 'http://localhost/regions/municipal/ბიზნეს%20რეგისტრი/წელიწადში%20რეგისტრირებული%20ახალი%20ბიზნეს%20სუბიექტების%20რაოდენობა%20მოსახლეობის%201000%20კაცზე/იმერეთი/საჩხერის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia11">
@@ -595,7 +595,7 @@ include "../config.php";
                         <?php echo $businessRegister['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'http://localhost/regions/municipal/ENG/Business%20Register/Number%20of%20active%20business%20entities%20registered%20in%20Georgia%20per%201000%20population/Imereti/Sachkhere%20Municipality.xlsx' : 'http://localhost/regions/municipal/ბიზნეს%20რეგისტრი/ეკონომიკურად%20აქტიური%20ბიზნეს%20სუბიექტების%20რაოდენობა%20მოსახლეობის%201000%20კაცზე/იმერეთი/საჩხერის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia11">
@@ -603,7 +603,7 @@ include "../config.php";
                         <?php echo $businessRegister['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'http://localhost/regions/municipal/ENG/Business%20Register/Number%20of%20public%20institutions%20per%201000%20population/Imereti/Sachkhere%20Municipality.xlsx' : 'http://localhost/regions/municipal/ბიზნეს%20რეგისტრი/საჯარო%20დაწესებულებების%20რაოდენობა%20მოსახლეობის%201000%20კაცზე/იმერეთი/საჩხერის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
