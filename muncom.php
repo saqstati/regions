@@ -22,6 +22,8 @@ include "config.php";
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="/path/to/select2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="custom.css">
@@ -166,6 +168,12 @@ include "config.php";
 
     ?>
 
+<select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
+                                    <?php foreach ($item[0] as $x => $y) if($x>0){ ?>
+                                        <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+                                    <?php } ?>
+                                </select>
+
     <table class="table table-responsive table-bordered bg-black">
         <tbody>
             <?php foreach ($item as $k => $v) { ?>
@@ -175,20 +183,16 @@ include "config.php";
                             <td class="td-empty" style="height : 160px !important; border-right:none;">
                                 <br><?php echo $b; ?>
                                 <br>
-                                <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
-                                    <?php foreach ($item[0] as $x => $y) { ?>
-                                        <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
-                                    <?php } ?>
+                                
 
-                                </select>
                             </td>
                         <?php } else if ($k == 0) { ?>
-                            <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; display:none;"><?php echo $b; ?> <input class="right" id="myCol<?php echo $l; ?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l; ?>)" /></th>
+                            <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
                             <td class="regionebi reg" style="height : 160px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
                         <?php } else { ?>
-                            <td style="height : 50px !important; text-align: right;">
-                                <div class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="display: none;"><?php echo $b; ?></div>
+                            <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
+                                <div style=""><?php echo $b; ?></div>
                             </td>
                         <?php } ?>
                     <?php } ?>
@@ -197,26 +201,53 @@ include "config.php";
         </tbody>
     </table>
 
-    <script>
-        function ShowRow(t, i) {
-            var j;
-            if (t.checked == false) $(".Row" + i).hide();
-            else {
-                $(".Row" + i).show();
-                for (j = 1; j <= 13; j++)
-                    if (document.getElementById("reg" + j).checked == false) $(".Col" + j).hide();
-            }
-        }
 
+
+    <script>
         function ShowCol(t, i) {
             var j;
+            var selected = $('.js-example-basic-multiple').val();
             if (t.checked == false) $(".Col" + i).hide();
             else {
                 $(".Col" + i).show();
                 for (j = 1; j <= 64; j++) {
-                    if (document.getElementById("myCol" + j).checked == false) $(".Row" + j).hide();
+
+                    if (!inArray(selected, j)) $(".Row" + j).hide();
                 }
             }
+        }
+
+        $('.js-example-basic-multiple').select2().on("change", function(e) {
+            var selected = $('.js-example-basic-multiple').val();
+            var i;
+            for (i = 1; i <= 64; i++) {
+                var j;
+
+                if (!inArray(selected, i)) $(".Row" + i).hide();
+                else {
+                    $(".Row" + i).show();
+                    for (j = 1; j <= 13; j++)
+                        if (!$("#reg" + j).is(':checked')) $(".Col" + j).hide();
+                }
+            }
+        });
+
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2({
+                placeholder: "აირჩიე რეგიონი"
+            });
+        });
+
+        $('select').select2({
+            theme: 'bootstrap4',
+        });
+
+        function inArray(haystack, needle) {
+            var length = haystack.length;
+            for (var i = 0; i < length; i++) {
+                if (haystack[i] == needle) return true;
+            }
+            return false;
         }
     </script>
 

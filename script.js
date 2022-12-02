@@ -2,9 +2,6 @@ function previous() {
   window.history.back();
 }
 
-$(document).ready(function() {
-  $('.js-example-basic-multiple').select2();
-});
 // const btn = document.querySelector("#btn");
 // const container = document.querySelector("#press");
 // btn.addEventListener("click", function () {

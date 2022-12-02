@@ -420,3 +420,6 @@ var aLangKeys=new Array();
 
 	aLangKeys['ka']['regionsBtn']='რეგიონების შედარება';
 	aLangKeys['en']['regionsBtn']='Comparison of regions';
+
+	aLangKeys['ka']['municipalBtn']='მუნიციპალიტეტების შედარება';
+	aLangKeys['en']['municipalBtn']='Comparison of Municipaliteties';

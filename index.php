@@ -92,7 +92,7 @@
 			<a class="regions-btn" href="list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
 		</div>
 		<div class=" textbox-right-home mun">
-			<a class="regions-btn" href="muncom.php"> <span class="tr" Key="regionsBtn">მუნიციპალიტეტების შედარება</span></a>
+			<a class="regions-btn" href="muncom.php"> <span class="tr" Key="municipalBtn">მუნიციპალიტეტების შედარება</span></a>
 		</div>
 		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
 		</div>
@@ -561,7 +561,7 @@
 			<span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
 		</footer>
 	</div>
-	<script>
+	<!-- <script>
 		$(document).ready(function() {
 			var pathSelected = $('svg').find('path');
 
@@ -771,7 +771,7 @@
 				});
 			});
 		});
-	</script>
+	</script> -->
 	<script>
 		$(document).ready(function() {
 			$('.lang').click(function() {
