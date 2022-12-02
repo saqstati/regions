@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2022 at 08:26 AM
+-- Generation Time: Dec 02, 2022 at 11:58 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -122,18 +122,18 @@ CREATE TABLE `key_indicators_reg` (
 
 INSERT INTO `key_indicators_reg` (`ID`, `keyIndicators`, `dataContent`) VALUES
 (1, 'ძირითადი მაჩვენებლები', NULL),
-(2, 'ფართობი (კვ. კმ):', NULL),
-(3, 'ქალაქების და დაბების რაოდენობა (ერთეული)', NULL),
-(4, 'სოფლების რაოდენობა (ერთეული)', NULL),
-(5, 'მოსახლეობის რიცხოვნობა (ათასი):', NULL),
-(6, 'ცოცხლად დაბადებულთა რიცხოვნობა (კაცი):', NULL),
-(7, 'შობადობის ზოგადი კოეფიციენტი (დაბადებულთა რიცხოვნობა მოსახლეობის 1000 კაცზე):', NULL),
-(8, 'გარდაცვლილთა რიცხოვნობა (კაცი):', NULL),
-(9, 'მოკვდაობის ზოგადი კოეფიციენტი (გარდაცვლილთა რიცხოვნობა მოსახლეობის 1000 კაცზე):', NULL),
-(10, 'დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი):', NULL),
-(11, 'დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი):', NULL),
-(12, 'რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', NULL),
-(13, 'აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', NULL);
+(2, 'ფართობი (კვ. კმ):', '2014 წლის 1 მარტის მდგომარეობით'),
+(3, 'ქალაქების და დაბების რაოდენობა (ერთეული)', '2022 წლის 1 იანვრის მდგომარეობით'),
+(4, 'სოფლების რაოდენობა (ერთეული)', '2022 წლის 1 იანვრის მდგომარეობით'),
+(5, 'მოსახლეობის რიცხოვნობა (ათასი):', '2022 წლის 1 იანვრის მდგომარეობით'),
+(6, 'ცოცხლად დაბადებულთა რიცხოვნობა (კაცი):', '2021 წლის მონაცემების მიხედით'),
+(7, 'შობადობის ზოგადი კოეფიციენტი (დაბადებულთა რიცხოვნობა მოსახლეობის 1000 კაცზე):', '2021 წლის მონაცემების მიხედით'),
+(8, 'გარდაცვლილთა რიცხოვნობა (კაცი):', '2021 წლის მონაცემების მიხედით'),
+(9, 'მოკვდაობის ზოგადი კოეფიციენტი (გარდაცვლილთა რიცხოვნობა მოსახლეობის 1000 კაცზე):', '2021 წლის მონაცემების მიხედით'),
+(10, 'დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი):', '2021 წლის მონაცემების მიხედით'),
+(11, 'დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი):', '2021 წლის მონაცემების მიხედით'),
+(12, 'რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', '2021 წლის მონაცემების მიხედით'),
+(13, 'აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', '2021 წლის მონაცემების მიხედით');
 
 -- --------------------------------------------------------
 
@@ -153,18 +153,18 @@ CREATE TABLE `key_indicators_reg_en` (
 
 INSERT INTO `key_indicators_reg_en` (`ID`, `keyIndicators`, `dataContent`) VALUES
 (1, 'Key indicators', NULL),
-(2, 'Area (sq. km):', ''),
-(3, 'Number of cities and towns (unit)', ''),
-(4, 'Number of villages (unit)', NULL),
-(5, 'Number of population (thousands):', NULL),
-(6, 'Number of live births (male):', NULL),
-(7, 'General birth rate (number of births per 1000 people):', NULL),
-(8, 'Number of dead (men):', NULL),
-(9, 'General mortality rate (number of deaths per 1,000 people):', NULL),
-(10, 'Number of employees in the business sector (thousands of people):', NULL),
-(11, 'Average monthly salary of employees in the business sector (GEL):', NULL),
-(12, 'Number of registered economic entities (unit)', NULL),
-(13, 'Number of active economic entities (unit)', NULL);
+(2, 'Area (sq. km):', 'By March 1, 2014'),
+(3, 'Number of cities and towns (unit)', 'By January 1, 2022'),
+(4, 'Number of villages (unit)', 'By January 1, 2022'),
+(5, 'Number of population (thousands):', 'By January 1, 2022'),
+(6, 'Number of live births (male):', 'Data of 2021'),
+(7, 'General birth rate (number of births per 1000 people):', 'Data of 2021'),
+(8, 'Number of dead (men):', 'Data of 2021'),
+(9, 'General mortality rate (number of deaths per 1,000 people):', 'Data of 2021'),
+(10, 'Number of employees in the business sector (thousands of people):', 'Data of 2021'),
+(11, 'Average monthly salary of employees in the business sector (GEL):', 'Data of 2021'),
+(12, 'Number of registered economic entities (unit)', 'Data of 2021'),
+(13, 'Number of active economic entities (unit)', 'Data of 2021');
 
 -- --------------------------------------------------------
 
@@ -654,7 +654,7 @@ ALTER TABLE `key_indicators_en`
 -- AUTO_INCREMENT for table `key_indicators_reg`
 --
 ALTER TABLE `key_indicators_reg`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `key_indicators_reg_en`

@@ -168,11 +168,11 @@ include "config.php";
 
     ?>
 
-<select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
-                                    <?php foreach ($item[0] as $x => $y) if($x>0){ ?>
-                                        <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
-                                    <?php } ?>
-                                </select>
+    <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
+        <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
+            <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+        <?php } ?>
+    </select>
 
     <table class="table table-responsive table-bordered bg-black">
         <tbody>
@@ -183,7 +183,7 @@ include "config.php";
                             <td class="td-empty" style="height : 160px !important; border-right:none;">
                                 <br><?php echo $b; ?>
                                 <br>
-                                
+
 
                             </td>
                         <?php } else if ($k == 0) { ?>
