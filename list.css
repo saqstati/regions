@@ -12,6 +12,10 @@ tbody {
     float: right;
 }
 
+.background-image {
+    background-image: url(1600-900-optimized/white_background.jpg);
+}
+
 tbody tr {
     display: inline-grid;
 }
@@ -208,4 +212,8 @@ th.machveneblebi_height {
 .chart, .maps{
     width: 250px;
     display: inline-grid;
+}
+
+.table-bordered {
+    border: none;
 }

@@ -204,7 +204,7 @@ include "config.php";
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>
                         <?php if ($k == 0 && $l == 0) { ?>
-                            <td class="td-empty" style="height : 160px !important; border-right:none;">
+                            <td class="td-empty" style="height : 160px !important; border:none;">
                                 <br><?php echo $b; ?>
                                 <br>
 
