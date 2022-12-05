@@ -117,7 +117,7 @@ tbody tr:first-child {
 
 .regionebi.reg {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-content: space-between;
     justify-content: space-between;
@@ -180,7 +180,32 @@ th.machveneblebi_height {
     background-color: #ed1c24 !important;
 }
 
+.selector {
+    text-align: center;
+}
 
-.select2 {
-    width:100%!important;
-    }
+.btn-srch {
+    color: #fff;
+    background-color: #f44336;
+}
+
+#srch {
+    margin: 10px 0 10px 0;
+}
+
+.btn-srch:hover {
+    color: #333;
+    background-color: #ed1c24;
+}
+
+.multiselect-list {
+    text-align: left;
+}
+.multiselect-wrapper {
+    width: 250px !important;
+}
+
+.chart, .maps{
+    width: 250px;
+    display: inline-grid;
+}

@@ -29,6 +29,10 @@ include "config.php";
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="mediastyles.css">
+
+    <link href="multiselect/styles/multiselect.css" rel="stylesheet">
+    <script src="multiselect/multiselect.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -132,7 +136,7 @@ include "config.php";
 
     <?php
     $j = 0;
-    $item[$j++][0] = "ძირითადი მაჩვენებლები";
+    $item[$j++][0] = "";
     $item[$j++][0] = "ფართობი (კვ.კმ)";
     $item[$j++][0] = "ქალაქების და დაბების რაოდენობა (ერთეული)";
     $item[$j++][0] = "სოფლების რაოდენობა (ერთეული)";
@@ -168,13 +172,33 @@ include "config.php";
 
     ?>
 
-    <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
-        <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
-            <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
-        <?php } ?>
-    </select>
+    <div class="selector">
+        <div class="maps">
+            <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;" onchange="alert('123')">
+                <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
+                    <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+                <?php } ?>
+            </select>
+            <img class="chart" src="1600-900-optimized/geomaps.png" alt="chart">
+        </div>
+        <!-- <br /> -->
 
-    <table class="table table-responsive table-bordered bg-black">
+        <div class="chart">
+            <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
+                <?php foreach ($item as $x => $y) if ($x > 0) { ?>
+                    <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
+                <?php } ?>
+            </select>
+            <img class="chart" src="1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:133px;">
+        </div>
+
+        <br />
+
+        <button id="srch" type="button" class="btn btn-srch">ძიება</button>
+
+    </div>
+
+    <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
         <tbody>
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
@@ -189,7 +213,7 @@ include "config.php";
                         <?php } else if ($k == 0) { ?>
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <td class="regionebi reg" style="height : 160px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
+                            <td class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -204,7 +228,24 @@ include "config.php";
 
 
     <script>
+        $("#srch").on("click", function(e) {
+            var i, j;
+            var selected;
+            selected = $('#municipaliteties').val();
+            for (j = 1; j <= 64; j++) {
+                if (!inArray(selected, j)) $(".Row" + j).hide();
+                else $(".Row" + j).show();
+            }
+            selected = $('#key_indicators').val();
+            if (selected != '') $(".Row0").show();
+            for (j = 1; j <= 12; j++) {
+                if (!inArray(selected, j)) $(".Col" + j).hide();
+            }
+        });
+
         function ShowCol(t, i) {
+            console.log($('#municipaliteties').val());
+
             var j;
             var selected = $('.js-example-basic-multiple').val();
             if (t.checked == false) $(".Col" + i).hide();
@@ -217,6 +258,7 @@ include "config.php";
             }
         }
 
+        /*
         $('.js-example-basic-multiple').select2().on("change", function(e) {
             var selected = $('.js-example-basic-multiple').val();
             var i;
@@ -231,16 +273,26 @@ include "config.php";
                 }
             }
         });
-
+*/
         $(document).ready(function() {
-            $('.js-example-basic-multiple').select2({
-                placeholder: "აირჩიე რეგიონი"
-            });
+            $('#municipaliteties').multiselect();
+            $('#key_indicators').multiselect();
         });
+        //document.multiselect('#municipaliteties');
+        //document.multiselect('#key_indicators');
+        /*
+                $(document).ready(function() {
+                    $('.js-example-basic-multiple').select2({
+                        placeholder: "აირჩიე მუნიციპალიტეტები"
+                    });
+                });
 
-        $('select').select2({
-            theme: 'bootstrap4',
-        });
+                $('select').select2({
+                    theme: 'bootstrap4',
+                });
+                */
+
+        document.getElementById("municipaliteties_input").placeholder = "აირჩიეთ მუნიციპალიტეტები";
 
         function inArray(haystack, needle) {
             var length = haystack.length;
@@ -313,285 +365,6 @@ include "config.php";
         <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
     </footer>
 
-    <script>
-        const regionInfo = [
-            'regionInfo',
-            'regionInfo2',
-            'regionInfo3',
-            'regionInfo4',
-            'regionInfo5',
-            'regionInfo6',
-            'regionInfo7',
-            'regionInfo8',
-            'regionInfo9',
-            'regionInfo10',
-            'regionInfo11',
-            'regionInfo12',
-            'regionInfo13',
-        ];
-
-        const trWrapper = [
-            'trInfoRow',
-            'trInfoRow2',
-            'trInfoRow3',
-            'trInfoRow4',
-            'trInfoRow5',
-            'trInfoRow6',
-            'trInfoRow7',
-            'trInfoRow8',
-            'trInfoRow9',
-            'trInfoRow10',
-            'trInfoRow11',
-            'trInfoRow12',
-            'trInfoRow13',
-        ];
-
-        const tdWrapper = [
-            'tdInfoRow',
-            'tdInfoRow2',
-            'tdInfoRow3',
-            'tdInfoRow4',
-            'tdInfoRow5',
-            'tdInfoRow6',
-            'tdInfoRow7',
-            'tdInfoRow8',
-            'tdInfoRow9',
-            'tdInfoRow10',
-            'tdInfoRow11',
-            'tdInfoRow12',
-            'tdInfoRow13',
-        ];
-
-
-
-
-        let parent = document.getElementById("append");
-
-
-        function render(data, index) {
-            console.log(index)
-            var wrapper = document.createElement("tr");
-            wrapper.id = "IdTrInfoRow";
-            wrapper.className = trWrapper[index];
-
-            let html = `
-                <tr id=trInfoRow>
-                    <td class=${tdWrapper[index]}><div class="area">${data.Area}</div></td>
-                    <td class=${tdWrapper[index]}><div class="population">${data.Population}</div></td>
-                    <td class=${tdWrapper[index]}><div class="GDP"> ${data.GDP} </div> </td>
-                    <td class=${tdWrapper[index]}><div class="GDPPerCapita">${data.GDPPerCapita}</div></td>
-                    <td class=${tdWrapper[index]}><div class="UnemploymentRate">${data.UnemploymentRate}</div></td>
-                    <td class=${tdWrapper[index]}><div class="EmploymentRate">${data.EmploymentRate}</div></td>
-                    <td class=${tdWrapper[index]}><div class="EmploymentRateIndustry">${data.EmploymentRateIndustry}</div></td>
-                    <td class=${tdWrapper[index]}><div class="AverageSalaryIndustry">${data.AverageSalaryIndustry}</div></td>
-                    <td class=${tdWrapper[index]}><div class="RegistredEntities">${data.RegistredEntities}</div></td>
-                </tr> 
-            `
-
-            wrapper.innerHTML = html;
-
-            return wrapper;
-
-        }
-
-        function trInfoRowFunction() {
-            var checkBox = document.getElementById("regionInfo");
-            var trInfoRow = document.querySelectorAll(".tdInfoRow");
-
-            if (checkBox.checked == true) {
-                trInfoRow.forEach(function(n) {
-                    n.style.display = "inline-grid";
-                });
-            } else {
-                trInfoRow.forEach(function(n) {
-                    n.style.display = "none";
-                    // TestHide.style.display = "none";
-                });
-            }
-
-            var checkBox = document.getElementById("regionInfo2");
-            var trInfoRow2 = document.querySelectorAll(".tdInfoRow2");
-
-            if (checkBox.checked == true) {
-                trInfoRow2.forEach(function(z) {
-                    z.style.display = "inline-grid";
-                });
-            } else {
-                trInfoRow2.forEach(function(z) {
-                    z.style.display = "none";
-                    // TestHide.style.display = "none";
-                });
-            }
-
-
-        }
-
-
-        function myFunction() {
-
-            var checkBox = document.getElementById("myCheck");
-            var area = document.querySelectorAll(".area");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck2");
-            area = document.querySelectorAll(".population");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-            checkBox = document.getElementById("myCheck3");
-            area = document.querySelectorAll(".GDP");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck4");
-            area = document.querySelectorAll(".GDPPerCapita");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck5");
-            area = document.querySelectorAll(".UnemploymentRate");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck6");
-            area = document.querySelectorAll(".EmploymentRate");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck7");
-            area = document.querySelectorAll(".EmploymentRateIndustry");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck8");
-            area = document.querySelectorAll(".AverageSalaryIndustry");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck9");
-            area = document.querySelectorAll(".RegistredEntities");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-        }
-
-
-
-
-        let testRequest = function(data) {
-            return axios({
-                    method: "post",
-                    url: "get_select.php",
-                    data: data,
-                    headers: {
-                        "Content-Type": "multipart/form-data"
-                    },
-                })
-                .then(function(response) {
-
-                    parent.innerHTML = "";
-
-                    response.data.map(function(i, index) {
-                        let dom = render(i, index);
-                        parent.append(dom);
-                    });
-
-                    //handle success
-                    console.log(response.data);
-                    myFunction();
-                    // trInfoRowFunction(); 
-                })
-                .catch(function(response) {
-                    //handle error
-                    console.log(response);
-                });
-        }
-
-
-        function validateform(e) {
-
-            e.preventDefault();
-
-            const formData = new FormData(e.target);
-
-            for (var pair of formData.entries()) {
-                console.log(pair[0] + ', ' + pair[1]);
-            }
-
-
-            testRequest(formData);
-
-
-        }
-
-
-        var form = document.getElementsByName('applyform')[0];
-        console.log("form", form)
-        form.addEventListener('submit', validateform);
-    </script>
 
 
     <script src="script.js"></script>
