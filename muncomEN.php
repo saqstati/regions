@@ -29,6 +29,9 @@ include "config.php";
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="mediastyles.css">
+    <link href="multiselect/styles/multiselect.css" rel="stylesheet">
+    <script src="multiselect/multiselect.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -94,7 +97,7 @@ include "config.php";
             </span>
             <br>
             <span class="tr" Key="RECTEXT2">
-                
+
             </span>
             <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
@@ -103,7 +106,7 @@ include "config.php";
     </div>
 
     <div class="display-flex">
-        <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+        <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'Back'; ?></span></a>
     </div>
 
     <form method="POST" action="" name="applyform">
@@ -132,7 +135,7 @@ include "config.php";
 
     <?php
     $j = 0;
-    $item[$j++][0] = "Key Indicators";
+    $item[$j++][0] = "";
     $item[$j++][0] = "Area (sq. km)";
     $item[$j++][0] = "Number of cities and towns (unit)";
     $item[$j++][0] = "Number of villages (unit)";
@@ -168,19 +171,41 @@ include "config.php";
 
     ?>
 
-    <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
-        <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
-            <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
-        <?php } ?>
-    </select>
+    <div class="selector">
+        <div class="maps">
+            <span class="selector-text">Choose Municipaliteties</span>
+            <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;" onchange="alert('123')">
+                <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
+                    <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+                <?php } ?>
+            </select>
+            <img class="chart" src="1600-900-optimized/geomaps.png" alt="chart">
+        </div>
+        <!-- <br /> -->
 
-    <table class="table table-responsive table-bordered bg-black">
+        <div class="chart">
+            <span class="selector-text">Choose Key Indicators</span>
+            <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
+                <?php foreach ($item as $x => $y) if ($x > 0) { ?>
+                    <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
+                <?php } ?>
+            </select>
+            <img class="chart" src="1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:133px;">
+        </div>
+
+        <br />
+
+        <button id="srch" type="button" class="btn btn-srch">Search</button>
+
+    </div>
+
+    <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
         <tbody>
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>
                         <?php if ($k == 0 && $l == 0) { ?>
-                            <td class="td-empty" style="height : 160px !important; border-right:none;">
+                            <td class="td-empty" style="height : 160px !important; border:none;">
                                 <br><?php echo $b; ?>
                                 <br>
 
@@ -189,7 +214,7 @@ include "config.php";
                         <?php } else if ($k == 0) { ?>
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <td class="regionebi reg" style="height : 160px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
+                            <td class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -204,7 +229,24 @@ include "config.php";
 
 
     <script>
+        $("#srch").on("click", function(e) {
+            var i, j;
+            var selected;
+            selected = $('#municipaliteties').val();
+            for (j = 1; j <= 64; j++) {
+                if (!inArray(selected, j)) $(".Row" + j).hide();
+                else $(".Row" + j).show();
+            }
+            selected = $('#key_indicators').val();
+            if (selected != '') $(".Row0").show();
+            for (j = 1; j <= 12; j++) {
+                if (!inArray(selected, j)) $(".Col" + j).hide();
+            }
+        });
+
         function ShowCol(t, i) {
+            console.log($('#municipaliteties').val());
+
             var j;
             var selected = $('.js-example-basic-multiple').val();
             if (t.checked == false) $(".Col" + i).hide();
@@ -217,6 +259,7 @@ include "config.php";
             }
         }
 
+        /*
         $('.js-example-basic-multiple').select2().on("change", function(e) {
             var selected = $('.js-example-basic-multiple').val();
             var i;
@@ -231,16 +274,26 @@ include "config.php";
                 }
             }
         });
-
+*/
         $(document).ready(function() {
-            $('.js-example-basic-multiple').select2({
-                placeholder: "Choose Municipaliteties"
-            });
+            $('#municipaliteties').multiselect();
+            $('#key_indicators').multiselect();
         });
+        //document.multiselect('#municipaliteties');
+        //document.multiselect('#key_indicators');
+        /*
+                $(document).ready(function() {
+                    $('.js-example-basic-multiple').select2({
+                        placeholder: "აირჩიე მუნიციპალიტეტები"
+                    });
+                });
 
-        $('select').select2({
-            theme: 'bootstrap4',
-        });
+                $('select').select2({
+                    theme: 'bootstrap4',
+                });
+                */
+
+        document.getElementById("municipaliteties_input").placeholder = "აირჩიეთ მუნიციპალიტეტები";
 
         function inArray(haystack, needle) {
             var length = haystack.length;

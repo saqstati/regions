@@ -22,7 +22,6 @@ include "config.php";
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="/path/to/select2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
@@ -174,7 +173,8 @@ include "config.php";
 
     <div class="selector">
         <div class="maps">
-            <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;" onchange="alert('123')">
+            <span class="selector-text">აირჩიეთ მუნიციპალიტეტები</span>
+            <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
                 <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
                     <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
                 <?php } ?>
@@ -184,6 +184,7 @@ include "config.php";
         <!-- <br /> -->
 
         <div class="chart">
+            <span class="selector-text">აირჩიეთ მაჩვენებლები</span>
             <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
                 <?php foreach ($item as $x => $y) if ($x > 0) { ?>
                     <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
@@ -224,6 +225,10 @@ include "config.php";
             <?php } ?>
         </tbody>
     </table>
+
+    <div class="download center">
+        <a href="http://localhost/regions/export_excel.php"><button type="button" class="btn btn-success"><i class="fas fa download">Download</i></button></a>
+    </div>
 
 
 
@@ -278,6 +283,9 @@ include "config.php";
             $('#municipaliteties').multiselect();
             $('#key_indicators').multiselect();
         });
+
+
+
         //document.multiselect('#municipaliteties');
         //document.multiselect('#key_indicators');
         /*
@@ -292,7 +300,6 @@ include "config.php";
                 });
                 */
 
-        document.getElementById("municipaliteties_input").placeholder = "აირჩიეთ მუნიციპალიტეტები";
 
         function inArray(haystack, needle) {
             var length = haystack.length;

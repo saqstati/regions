@@ -12,6 +12,10 @@ tbody {
     float: right;
 }
 
+.center{
+    text-align: center;
+}
+
 .background-image {
     background-image: url(1600-900-optimized/white_background.jpg);
 }
@@ -21,7 +25,7 @@ tbody tr {
 }
 
 .td-empty {
-    width: 337px;
+    /* width: 337px; */
     font-weight: bolder;
     font-size: x-large !important;
 }
@@ -98,7 +102,7 @@ footer {
 }
 
 tbody tr:first-child {
-    width: 336px !important;
+    width: 150px !important;
 }
 
 /* tbody tr:not:first-child{
@@ -209,11 +213,20 @@ th.machveneblebi_height {
     width: 250px !important;
 }
 
-.chart, .maps{
+.chart,
+.maps {
     width: 250px;
     display: inline-grid;
+    border-radius: 15px;
 }
 
 .table-bordered {
     border: none;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+.selector-text{
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: 600;
 }
