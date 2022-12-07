@@ -190,7 +190,7 @@ include "config.php";
                     <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
                 <?php } ?>
             </select>
-            <img class="chart" src="1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:133px;">
+            <img class="chart" src="1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:147px;">
         </div>
 
         <br />
@@ -200,7 +200,7 @@ include "config.php";
     </div>
 
     <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
-        <tbody>
+        <tbody class="cxrili">
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>

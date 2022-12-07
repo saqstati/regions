@@ -1,3 +1,7 @@
+<?php
+include "config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +20,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" href="list.css">
     <link rel="stylesheet" href="mediastyles.css">
+    <link href="multiselect/styles/multiselect.css" rel="stylesheet">
+    <script src="multiselect/multiselect.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -77,8 +87,8 @@
             </h1>
         </header>
         <div id="languages">
-            <a href="list.php" id="ka" class="lang"><img src="images/ka.png" /></a>
-            <a href="listEN.php" id="en" class="lang"><img src="images/en.png" /></a>
+            <a href="list.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
+            <a href="listEN.php" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
         </div>
         <div id="recommendation">
             <span class="tr" Key="RECTEXT1">
@@ -92,13 +102,11 @@
             <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
             <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
         </div>
-        <div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">Go Back</span></div>
     </div>
 
     <div class="display-flex">
-        <a class=" btn textbox-left-home back-btn" onclick="previous()" > <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+        <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'Back'; ?></span></a>
     </div>
-
 
     <form method="POST" action="" name="applyform">
 
@@ -125,49 +133,84 @@
     </div>
 
     <?php
-
-    $item[0][] = "Key Indicators";
-    $item[0][] = "Area (sq. km)";
-    $item[0][] = "The Number of Population (thousands)";
-    $item[0][] = "Gross Domestic Product (Mil. GEL)";
-    $item[0][] = "Gross Domestic Product per capita (USD)";
-    $item[0][] = "Unemployment Rate (percentage)";
-    $item[0][] = "Employed (thousand person)";
-    $item[0][] = "Employment Level in Bussiness Sector (thousand person)";
-    $item[0][] = "Average monthly remuneration of employed persons (GEL)";
-    $item[0][] = "The Number of Registered Business Entities (unit)";
+    $j = 0;
+    $item[$j++][0] = "";
+    $item[$j++][0] = "Area (sq. km)";
+    $item[$j++][0] = "The Number of Population (thousands)";
+    $item[$j++][0] = "Gross Domestic Product (Mil. GEL)";
+    $item[$j++][0] = "Gross Domestic Product per capita (USD)";
+    $item[$j++][0] = "Unemployment Rate (percentage)";
+    $item[$j++][0] = "Employed (thousand person)";
+    $item[$j++][0] = "Employment Level in Bussiness Sector (thousand person)";
+    $item[$j++][0] = "Average monthly remuneration of employed persons (GEL)";
+    $item[$j++][0] = "The Number of Registered Business Entities (unit)";
 
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `regions`");
     while ($row = $result->fetch_assoc()) {
         $i++;
-        $item[$i][] = $row["NameEN"];
-        $item[$i][] = $row["Area"];
-        $item[$i][] = $row["Population"];
-        $item[$i][] = $row["GDP"];
-        $item[$i][] = $row["GDPPerCapita"];
-        $item[$i][] = $row["UnemploymentRate"];
-        $item[$i][] = $row["EmploymentRate"];
-        $item[$i][] = $row["EmploymentRateIndustry"];
-        $item[$i][] = $row["AverageSalaryIndustry"];
-        $item[$i][] = $row["RegistredEntities"];
+        $j = 0;
+        $item[$j++][$i] = $row["NameEN"];
+        $item[$j++][$i] = $row["Area"];
+        $item[$j++][$i] = $row["Population"];
+        $item[$j++][$i] = $row["GDP"];
+        $item[$j++][$i] = $row["GDPPerCapita"];
+        $item[$j++][$i] = $row["UnemploymentRate"];
+        $item[$j++][$i] = $row["EmploymentRate"];
+        $item[$j++][$i] = $row["EmploymentRateIndustry"];
+        $item[$j++][$i] = $row["AverageSalaryIndustry"];
+        $item[$j++][$i] = $row["RegistredEntities"];
     }
+
     ?>
 
-    <table class="table table-responsive table-bordered bg-black">
-        <tbody>
+    <div class="selector">
+        <div class="maps">
+            <span class="selector-text">Choose Regions</span>
+            <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
+                <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
+                    <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+                <?php } ?>
+            </select>
+            <img class="chart" src="1600-900-optimized/geomaps.png" alt="chart">
+        </div>
+        <!-- <br /> -->
+
+        <div class="chart">
+            <span class="selector-text">Choose Key Indicators</span>
+            <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
+                <?php foreach ($item as $x => $y) if ($x > 0) { ?>
+                    <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
+                <?php } ?>
+            </select>
+            <img class="chart" src="1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:147px;">
+        </div>
+
+        <br />
+
+        <button id="srch" type="button" class="btn btn-srch">Search</button>
+
+    </div>
+
+    <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
+        <tbody class="cxrili">
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>
                         <?php if ($k == 0 && $l == 0) { ?>
-                            <td class="td-empty" style="height : 100px !important; border-right:none;"> <br><?php echo $b; ?></td>
+                            <td class="td-empty" style="height : 160px !important; border:none;">
+                                <br><?php echo $b; ?>
+                                <br>
+
+
+                            </td>
                         <?php } else if ($k == 0) { ?>
-                            <th class="machveneblebi_height" style="height : 50px !important;"><?php echo $b; ?> <input class="right" id="myCol<?php echo $l; ?>" type="checkbox" name="dziritadi[]" value="fartobi" onclick="ShowRow(this,<?php echo $l; ?>)" /></th>
+                            <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <td class="regionebi reg" style="height : 100px !important;"><input type="checkbox" id="reg<?php echo $k; ?>" name="reg_id[]" value="" onclick="ShowCol(this,<?php echo $k; ?>)" /><?php echo $b; ?></td>
+                            <td class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
-                            <td style="height : 50px !important; text-align: right;">
-                                <div class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="display: none;"><?php echo $b; ?></div>
+                            <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
+                                <div style=""><?php echo $b; ?></div>
                             </td>
                         <?php } ?>
                     <?php } ?>
@@ -176,26 +219,87 @@
         </tbody>
     </table>
 
+    <div class="download center">
+        <a href="http://localhost/regions/export_excel_reg_en.php"><button type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">Download</button></a>
+    </div>
+
+
+
     <script>
-        function ShowRow(t, i) {
-            var j;
-            if (t.checked == false) $(".Row" + i).hide();
-            else {
-                $(".Row" + i).show();
-                for (j = 1; j <= 13; j++)
-                    if (document.getElementById("reg" + j).checked == false) $(".Col" + j).hide();
+        $("#srch").on("click", function(e) {
+            var i, j;
+            var selected;
+            selected = $('#municipaliteties').val();
+            for (j = 1; j <= 64; j++) {
+                if (!inArray(selected, j)) $(".Row" + j).hide();
+                else $(".Row" + j).show();
             }
-        }
+            selected = $('#key_indicators').val();
+            if (selected != '') $(".Row0").show();
+            for (j = 1; j <= 12; j++) {
+                if (!inArray(selected, j)) $(".Col" + j).hide();
+            }
+        });
 
         function ShowCol(t, i) {
+            console.log($('#municipaliteties').val());
+
             var j;
+            var selected = $('.js-example-basic-multiple').val();
             if (t.checked == false) $(".Col" + i).hide();
             else {
                 $(".Col" + i).show();
-                for (j = 1; j <= 9; j++) {
-                    if (document.getElementById("myCol" + j).checked == false) $(".Row" + j).hide();
+                for (j = 1; j <= 64; j++) {
+
+                    if (!inArray(selected, j)) $(".Row" + j).hide();
                 }
             }
+        }
+
+        /*
+        $('.js-example-basic-multiple').select2().on("change", function(e) {
+            var selected = $('.js-example-basic-multiple').val();
+            var i;
+            for (i = 1; i <= 64; i++) {
+                var j;
+
+                if (!inArray(selected, i)) $(".Row" + i).hide();
+                else {
+                    $(".Row" + i).show();
+                    for (j = 1; j <= 13; j++)
+                        if (!$("#reg" + j).is(':checked')) $(".Col" + j).hide();
+                }
+            }
+        });
+*/
+        $(document).ready(function() {
+            $('#municipaliteties').multiselect();
+            $('#key_indicators').multiselect();
+        });
+
+
+
+        //document.multiselect('#municipaliteties');
+        //document.multiselect('#key_indicators');
+        /*
+                $(document).ready(function() {
+                    $('.js-example-basic-multiple').select2({
+                        placeholder: "აირჩიე მუნიციპალიტეტები"
+                    });
+                });
+
+                $('select').select2({
+                    theme: 'bootstrap4',
+                });
+                */
+
+
+        function inArray(haystack, needle) {
+            var length = haystack.length;
+            for (var i = 0; i < length; i++) {
+                if (haystack[i] == needle) return true;
+            }
+            return false;
         }
     </script>
 
@@ -261,285 +365,6 @@
         <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">Terms of Use</a></span>
     </footer>
 
-    <script>
-        const regionInfo = [
-            'regionInfo',
-            'regionInfo2',
-            'regionInfo3',
-            'regionInfo4',
-            'regionInfo5',
-            'regionInfo6',
-            'regionInfo7',
-            'regionInfo8',
-            'regionInfo9',
-            'regionInfo10',
-            'regionInfo11',
-            'regionInfo12',
-            'regionInfo13',
-        ];
-
-        const trWrapper = [
-            'trInfoRow',
-            'trInfoRow2',
-            'trInfoRow3',
-            'trInfoRow4',
-            'trInfoRow5',
-            'trInfoRow6',
-            'trInfoRow7',
-            'trInfoRow8',
-            'trInfoRow9',
-            'trInfoRow10',
-            'trInfoRow11',
-            'trInfoRow12',
-            'trInfoRow13',
-        ];
-
-        const tdWrapper = [
-            'tdInfoRow',
-            'tdInfoRow2',
-            'tdInfoRow3',
-            'tdInfoRow4',
-            'tdInfoRow5',
-            'tdInfoRow6',
-            'tdInfoRow7',
-            'tdInfoRow8',
-            'tdInfoRow9',
-            'tdInfoRow10',
-            'tdInfoRow11',
-            'tdInfoRow12',
-            'tdInfoRow13',
-        ];
-
-
-
-
-        let parent = document.getElementById("append");
-
-
-        function render(data, index) {
-            console.log(index)
-            var wrapper = document.createElement("tr");
-            wrapper.id = "IdTrInfoRow";
-            wrapper.className = trWrapper[index];
-
-            let html = `
-                <tr id=trInfoRow>
-                    <td class=${tdWrapper[index]}><div class="area">${data.Area}</div></td>
-                    <td class=${tdWrapper[index]}><div class="population">${data.Population}</div></td>
-                    <td class=${tdWrapper[index]}><div class="GDP"> ${data.GDP} </div> </td>
-                    <td class=${tdWrapper[index]}><div class="GDPPerCapita">${data.GDPPerCapita}</div></td>
-                    <td class=${tdWrapper[index]}><div class="UnemploymentRate">${data.UnemploymentRate}</div></td>
-                    <td class=${tdWrapper[index]}><div class="EmploymentRate">${data.EmploymentRate}</div></td>
-                    <td class=${tdWrapper[index]}><div class="EmploymentRateIndustry">${data.EmploymentRateIndustry}</div></td>
-                    <td class=${tdWrapper[index]}><div class="AverageSalaryIndustry">${data.AverageSalaryIndustry}</div></td>
-                    <td class=${tdWrapper[index]}><div class="RegistredEntities">${data.RegistredEntities}</div></td>
-                </tr> 
-            `
-
-            wrapper.innerHTML = html;
-
-            return wrapper;
-
-        }
-
-        function trInfoRowFunction() {
-            var checkBox = document.getElementById("regionInfo");
-            var trInfoRow = document.querySelectorAll(".tdInfoRow");
-
-            if (checkBox.checked == true) {
-                trInfoRow.forEach(function(n) {
-                    n.style.display = "inline-grid";
-                });
-            } else {
-                trInfoRow.forEach(function(n) {
-                    n.style.display = "none";
-                    // TestHide.style.display = "none";
-                });
-            }
-
-            var checkBox = document.getElementById("regionInfo2");
-            var trInfoRow2 = document.querySelectorAll(".tdInfoRow2");
-
-            if (checkBox.checked == true) {
-                trInfoRow2.forEach(function(z) {
-                    z.style.display = "inline-grid";
-                });
-            } else {
-                trInfoRow2.forEach(function(z) {
-                    z.style.display = "none";
-                    // TestHide.style.display = "none";
-                });
-            }
-
-
-        }
-
-
-        function myFunction() {
-
-            var checkBox = document.getElementById("myCheck");
-            var area = document.querySelectorAll(".area");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck2");
-            area = document.querySelectorAll(".population");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-            checkBox = document.getElementById("myCheck3");
-            area = document.querySelectorAll(".GDP");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck4");
-            area = document.querySelectorAll(".GDPPerCapita");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck5");
-            area = document.querySelectorAll(".UnemploymentRate");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck6");
-            area = document.querySelectorAll(".EmploymentRate");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck7");
-            area = document.querySelectorAll(".EmploymentRateIndustry");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck8");
-            area = document.querySelectorAll(".AverageSalaryIndustry");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-            checkBox = document.getElementById("myCheck9");
-            area = document.querySelectorAll(".RegistredEntities");
-            if (checkBox.checked == true) {
-                area.forEach(function(e) {
-                    e.style.display = "block";
-                });
-            } else {
-                area.forEach(function(e) {
-                    e.style.display = "none";
-                });
-            }
-
-        }
-
-
-
-
-        let testRequest = function(data) {
-            return axios({
-                    method: "post",
-                    url: "get_select.php",
-                    data: data,
-                    headers: {
-                        "Content-Type": "multipart/form-data"
-                    },
-                })
-                .then(function(response) {
-
-                    parent.innerHTML = "";
-
-                    response.data.map(function(i, index) {
-                        let dom = render(i, index);
-                        parent.append(dom);
-                    });
-
-                    //handle success
-                    console.log(response.data);
-                    myFunction();
-                    // trInfoRowFunction(); 
-                })
-                .catch(function(response) {
-                    //handle error
-                    console.log(response);
-                });
-        }
-
-
-        function validateform(e) {
-
-            e.preventDefault();
-
-            const formData = new FormData(e.target);
-
-            for (var pair of formData.entries()) {
-                console.log(pair[0] + ', ' + pair[1]);
-            }
-
-
-            testRequest(formData);
-
-
-        }
-
-
-        var form = document.getElementsByName('applyform')[0];
-        console.log("form", form)
-        form.addEventListener('submit', validateform);
-    </script>
 
 
     <script src="script.js"></script>
