@@ -210,12 +210,12 @@ th.machveneblebi_height {
     text-align: left;
 }
 .multiselect-wrapper {
-    width: 250px !important;
+    width: 276px !important;
 }
 
 .chart,
 .maps {
-    width: 250px;
+    width: 276px;
     display: inline-grid;
     border-radius: 15px;
     height: 147px;
@@ -233,6 +233,7 @@ th.machveneblebi_height {
 .selector-text {
     font-family: "Century Gothic", sans-serif;
     font-weight: 600;
+    font-size: 20px;
 }
 
 

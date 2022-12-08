@@ -188,12 +188,12 @@ include "config.php";
 
         <br />
 
-        <button id="srch" type="button" class="btn btn-srch">Search</button>
+        <button id="srch" type="button" class="btn btn-srch" onclick="addbackcolor()">Search</button>
 
     </div>
 
     <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
-        <tbody class="cxrili">
+        <tbody id="cxrili">
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>
