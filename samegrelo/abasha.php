@@ -156,22 +156,6 @@ include "../config.php";
                         <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia1">
-                    <td>
-                        <?php echo $basicInformation['4']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia1">
-                    <td>
-                        <?php echo $basicInformation['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
                 <tr>
                     <td id="dziritadi2" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $Population['1']; ?></td>
                 </tr>
@@ -199,14 +183,6 @@ include "../config.php";
                         <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia2">
-                    <td>
-                        <?php echo $Population['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
                 <tr>
                     <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $lang['demograph'] ?></td>
                 </tr>
@@ -217,6 +193,7 @@ include "../config.php";
                     #dziritadi6,
                     #dziritadi7 {
                         display: none;
+                        margin-left: 20px;
                     }
                 </style>
                 <tr>
@@ -461,14 +438,6 @@ include "../config.php";
                 <tr class="informacia8">
                     <td>
                         <?php echo $populationDescription['7']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia8">
-                    <td>
-                        <?php echo $populationDescription['8']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
@@ -758,14 +727,6 @@ include "../config.php";
                         <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia17">
-                    <td>
-                        <?php echo $trading['9']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
                 <tr>
                     <td id="dziritadi18" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotels['1']; ?>
                     </td>
@@ -797,14 +758,6 @@ include "../config.php";
                 <tr class="informacia18">
                     <td>
                         <?php echo $hotels['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia18">
-                    <td>
-                        <?php echo $hotels['6']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
@@ -858,14 +811,6 @@ include "../config.php";
                         <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['6']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
                 <tr>
                     <td id="dziritadi21" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?>
                     </td>
@@ -893,14 +838,6 @@ include "../config.php";
                 <tr class="informacia22">
                     <td>
                         <?php echo $culture['2']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia22">
-                    <td>
-                        <?php echo $culture['3']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>

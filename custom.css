@@ -1,4 +1,22 @@
-﻿#brand-logo-link img {
+﻿/* loader */
+body {
+  animation: transitionIn 0.75s;
+}
+
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX("-10deg");
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX("0");
+  }
+}
+
+#brand-logo-link img {
   width: 110px;
   height: 75px;
   margin: 10px;
@@ -741,7 +759,7 @@ table tbody tr td img:after {
   background-color: red;
 }
 
-.mun{
+.mun {
   margin-top: 50px;
 }
 
