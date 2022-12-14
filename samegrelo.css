@@ -341,8 +341,8 @@ tr.informaciaMain {
 }
 
 #abashaSVG {
-  width: 1030px;
-  margin-left: 4%;
+  width: 940px;
+  margin-left: 8%;
   margin-top: -1%;
 }
 
@@ -398,4 +398,10 @@ tr.informaciaMain {
   width: 1079px;
   margin-left: 9%;
   margin-top: -10%;
+}
+
+#withoutArrow {
+  font-weight: bolder;
+  background-size: 18px 18px !important;
+  background-position: 96% 50% !important;
 }
