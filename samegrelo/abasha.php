@@ -641,7 +641,7 @@ include "../config.php";
                         <?php echo $construction['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="/regions/municipal/mshenebloba/გაცემული_ნებართვები/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Permissions%20granted/Samegrelo-Zemo%20Svaneti/Abasha%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia16">
@@ -649,7 +649,7 @@ include "../config.php";
                         <?php echo $construction['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="/regions/municipal/mshenebloba/dasrulebuli_mshenebloba/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Completed%20Construction/Samegrelo-Zemo%20Svaneti/Abasha%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/დასრულებული%20მშენებლობა/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>

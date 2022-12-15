@@ -72,7 +72,7 @@ include "config.php";
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'images/logo_transparency_eng.png' : 'images/logo_transparency_geo.png'; ?>" /></a>
+            <a href="/regions/index.php" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'images/logo_transparency_eng.png' : 'images/logo_transparency_geo.png'; ?>" /></a>
         </div>
         <header class="header1">
             <h1>
@@ -147,321 +147,673 @@ include "config.php";
                         <?php echo $basicInformation[2]; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Main%20Information/Municipality%20area/Khulo%20Municipality.xlsx' : '/regions/municipal/ძირითადი%20ინფორმაცია/მუნიციპალიტეტის%20ფართობი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia1">
                     <td>
-                        <?php echo $basicInformation[3]; ?>
+                        <?php echo $basicInformation['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Main%20Information/Administrative%20structure/C.%20Tbilisi.xlsx' : '/regions/municipal/ძირითადი%20ინფორმაცია/ადმინისტრაციული%20მოწყობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $population[1]; ?> <span class="float-right"><a href="http://localhost/regions/regions/10/mosakhleoba/mosakhleoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="dziritadi2" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $Population['1']; ?></td>
+                </tr>
+                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">
+                    <td>
+                        <?php echo $Population['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Number%20of%20population/Khulo.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr>
-                    <td id="dziritadi2" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $demography[1]; ?></td>
-                </tr>
-                <tr class="informacia2">
+                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">
                     <td>
-                        <?php echo $demography[2]; ?>
+                        <?php echo $Population['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/demografia/mokvdaoba_asaki_sqesi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia2">
-                    <td>
-                        <?php echo $demography[3]; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/demografia/gardacvalebis%20mizezebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Share%20of%20urban%20population/Khulo.xlsx' : '/regions/municipal/მოსახლეობა/საქალაქო%20დასახლებაში%20მცხოვრები%20მოსახლეობის%20წილი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia2">
                     <td>
-                        <?php echo $demography[4]; ?>
+                        <?php echo $Population['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Density%20of%20population/Khulo.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20სიმჭიდროვე/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $gdbAndValueAdded[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/mshp%20da%20damatebuli%20girebuleba/mshp%20da%20damatebuli%20girebuleba.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
+                    <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $lang['demograph'] ?></td>
                 </tr>
+                <style>
+                    #dziritadi3,
+                    #dziritadi4,
+                    #dziritadi5,
+                    #dziritadi6,
+                    #dziritadi7 {
+                        display: none;
+                        margin-left: 20px;
+                    }
+                </style>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $foreignDirectInvestment[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/pirdapiri%20uckhouri%20investiciebi/pirdapiri%20uckhouri%20investiciebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
+                    <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $birth['1']; ?></td>
                 </tr>
-                <tr>
-                    <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $employmentAndSalaries[1]; ?>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20live%20births/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
                     <td>
-                        <?php echo $employmentAndSalaries[2]; ?>
+                        <?php echo $birth['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20birth%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/შობადობის%20ზოგადი%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
                     <td>
-                        <?php echo $employmentAndSalaries[3]; ?>
+                        <?php echo $birth['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/dasaqmeba_umushevroba/khelfasi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/მკვდრადშობილთა%20რიცხოვნობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'According to Tbilisi' : 'ქ.თბილისის მიხედვით'; ?>"><?php echo $pricesAndInflation[1]; ?>
+                    <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $death['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia4">
                     <td>
-                        <?php echo $pricesAndInflation[2]; ?>
+                        <?php echo $death['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/fasebi/samomxmareblo%20fasebis%20indeqsebi%2012%20tvis%20sashualo%20wina%2012%20Tvis%20saSualosTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia4">
-                    <td>
-                        <?php echo $pricesAndInflation[3]; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20tvestan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
                     <td>
-                        <?php echo $pricesAndInflation[4]; ?>
+                        <?php echo $death['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20death%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Infant%20mortality%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ჩვილ%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Under-5%20mortality%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/5%20წლამდე%20ასაკის%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Deaths%20from%20suicide/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Suicide%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $standartOfLiving[1]; ?>
+                    <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $naturalIncrease['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia5">
                     <td>
-                        <?php echo $standartOfLiving[2]; ?>
+                        <?php echo $naturalIncrease['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/ckhovrebis%20done/shemosavlebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Natural%20increase/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ბუნებრივი%20მატება/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia5">
                     <td>
-                        <?php echo $standartOfLiving[3]; ?>
+                        <?php echo $naturalIncrease['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/ckhovrebis%20done/kharjebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Natural%20increase%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ბუნებრივი%20მატების%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessSector[1]; ?>
+                    <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $marriage['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia6">
                     <td>
-                        <?php echo $businessSector[2]; ?>
+                        <?php echo $marriage['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/biznes%20seqtori/saqmianobis%20mikhedvit_nace%20rev.2.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20registered%20marriages/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia6">
                     <td>
-                        <?php echo $businessSector[3]; ?>
+                        <?php echo $marriage['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/biznes%20seqtori/sakutrebis%20formis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20marriage%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20ზოგადი%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia6">
-                    <td><?php echo $businessSector[4]; ?>
+                    <td>
+                        <?php echo $marriage['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/biznes%20seqtori/zomis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia6">
+                    <td>
+                        <?php echo $marriage['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/"><?php echo $businessRegister[1]; ?></a> <span class="float-right"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $agriculture[1]; ?>
+                    <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $divorce['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia7">
                     <td>
-                        <?php echo $agriculture[2]; ?>
+                        <?php echo $divorce['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/soflis%20meurneoba/1.%20erttsliani%20kulturebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia7">
-                    <td>
-                        <?php echo $agriculture[3]; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/soflis%20meurneoba/2.%20mravaltslovani%20kulturebis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20registered%20divorces/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20განქორწინებათა%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia7">
                     <td>
-                        <?php echo $agriculture[4]; ?>
+                        <?php echo $divorce['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/soflis%20meurneoba/3.%20pirutkvis%20suladoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20divorce%20rate/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინების%20ზოგადი%20კოეფიციენტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia7">
                     <td>
-                        <?php echo $agriculture[5]; ?>
+                        <?php echo $divorce['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/soflis%20meurneoba/4.%20metskhoveleobis%20produktsiis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Khulo.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $industry[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/mretsveloba/mretsveloba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $construction[1]; ?>
+                    <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $populationDescription['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia8">
                     <td>
-                        <?php echo $construction[2]; ?>
+                        <?php echo $populationDescription['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/dasrulebuli_mshenebloba/თბილისი.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/Khulo.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
                     <td>
-                        <?php echo $construction[3]; ?>
+                        <?php echo $populationDescription['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/გაცემული_ნებართვები/თბილისი.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Khulo.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
                     <td>
-                        <?php echo $construction[4]; ?>
+                        <?php echo $populationDescription['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/mshenebloba/mshenebloba_dziritadi%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Khulo.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20population/Khulo.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/Khulo.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia8">
+                    <td>
+                        <?php echo $populationDescription['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20private%20households/Khulo.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/კერძო%20შინამეურნეობები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $energy[1]; ?><span class="float-right"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $trading[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/vachroba/vachroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="dziritadi9" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotelsAndRestaurants[1]; ?>
+                    <td id="dziritadi9" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""> <?php echo $employmentAndSalaries['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia9">
                     <td>
-                        <?php echo $hotelsAndRestaurants[2]; ?>
+                        <?php echo $employmentAndSalaries['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/sastumroebi%20da%20restornebi/sastumroebi%20da%20restornebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/C.%20Tbilisi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia9">
                     <td>
-                        <?php echo $hotelsAndRestaurants[3]; ?>
+                        <?php echo $employmentAndSalaries['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/sastumroebi%20da%20restornebi/stumarta%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employees/C.%20Tbilisi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia9">
+                    <td>
+                        <?php echo $employmentAndSalaries['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/C.%20Tbilisi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $transportAndStorage[1]; ?>
+                    <td id="dziritadi10" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessSector['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia10">
                     <td>
-                        <?php echo $transportAndStorage[2]; ?>
+                        <?php echo $businessSector['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia10">
-                    <td>
-                        <?php echo $transportAndStorage[3]; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/turnover/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/ბრუნვა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
                     <td>
-                        <?php echo $transportAndStorage[4]; ?>
+                        <?php echo $businessSector['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Production%20Value/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/პროდუქციის%20გამოშვება/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Pesronal%20Costs/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/შრომითი%20დანახარჯები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Purchase%20of%20good%20and%20services/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/საქონლისა%20და%20მომსახურების%20ყიდვები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Purchase%20of%20good%20and%20services%20for%20resale/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/გადასაყიდად%20განკუთვნილი%20საქონლისა%20და%20მომსახურების%20ყიდვები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Value%20added/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/დამატებული%20ღირებულება/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Intermediate%20consumption/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/შუალედური%20მოხმარება/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia10">
+                    <td>
+                        <?php echo $businessSector['9']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Investments%20in%20fixed%20assets/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/ინვესტიციები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi11" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""> <?php echo $tourism[1]; ?><span class="float-right"><i id="classchange" class="dropdown_img_up"></i>
+                    <td id="dziritadi11" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessRegister['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia11">
                     <td>
-                        <?php echo $tourism[2]; ?>
+                        <?php echo $businessRegister['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/turizmi/ganawileba%20sacxovrebeli%20adgilis%20mixedvit.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Registered%20entities%20per%201000%20persons/C.%20Tbilisi.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/რეგისტრირებული%20სუბიექტები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia11">
                     <td>
-                        <?php echo $tourism[3]; ?>
+                        <?php echo $businessRegister['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/10/turizmi/ganawileba%20monaxulebuli%20regionebit.xls"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20newly%20registered%20business%20entities%20in%20Georgia/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/ახლად%20რეგისტრირებული%20ბიზნეს%20სუბიექტები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia11">
+                    <td>
+                        <?php echo $businessRegister['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20active%20business%20entities%20registered%20in%20Georgia/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/ეკონომიკურად%20აქტიური%20ბიზნეს%20სუბიექტების%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia11">
+                    <td>
+                        <?php echo $businessRegister['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20public%20institutions/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/საჯარო%20დაწესებულებების%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $legalStatistics[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/samartlebrivi%20statistika/samartlebrivi%20statistika.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="dziritadi12" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $accordingToTheTypesOfActivities['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia12">
+                    <td>
+                        <?php echo $accordingToTheTypesOfActivities['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byKindOfEconomicActivity/Number%20of%20registered%20entities%20by%20kind%20of%20economic%20activity/C.%20Tbilisi.xlsx' : '/regions/municipal/ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia12">
+                    <td>
+                        <?php echo $accordingToTheTypesOfActivities['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byKindOfEconomicActivity/Number%20of%20active%20entities%20by%20kind%20of%20economic%20activity/C.%20Tbilisi.xlsx' : '/regions/municipal/ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/jandacva%20da%20socialuri%20uzrunvelkofa/jandacva%20da%20socialuri%20uzrunvelkofa.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="dziritadi13" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $AccordingToTheFormsOfOwnership['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia13">
+                    <td>
+                        <?php echo $AccordingToTheFormsOfOwnership['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOwnershipType/Number%20of%20registered%20entities%20by%20ownership%20type/C.%20Tbilisi.xlsx' : '/regions/municipal/საკუთრების%20ფორმების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20საკუთრების%20ფორმების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia13">
+                    <td>
+                        <?php echo $AccordingToTheFormsOfOwnership['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOwnershipType/Number%20of%20active%20entities%20by%20ownership%20type%20and%20size/C.%20Tbilisi.xlsx' : '/regions/municipal/საკუთრების%20ფორმების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20საკუთრების%20ფორმებისა%20და%20ზომების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/ganatleba/ganatleba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="dziritadi14" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $accordingToOrganizationalLegalForms['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia14">
+                    <td>
+                        <?php echo $accordingToOrganizationalLegalForms['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOrganization-legalForms/Number%20of%20registered%20entities%20by%20organizational-legal%20form/C.%20Tbilisi.xlsx' : '/regions/municipal/ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia14">
+                    <td>
+                        <?php echo $accordingToOrganizationalLegalForms['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOrganization-legalForms/Number%20of%20active%20entities%20by%20organizational-legal%20form/C.%20Tbilisi.xlsx' : '/regions/municipal/ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვ/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $culture[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/kultura/kultura.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $agriculture['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Share%20of%20Agriculture%20Land%20Area/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/soflis%20meurneoba/ეკო_აქტ/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $environmentalProtection[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/garemos%20dacva/garemos%20dacva.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="dziritadi16" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $construction['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia16">
+                    <td>
+                        <?php echo $construction['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Permissions%20granted/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia16">
+                    <td>
+                        <?php echo $construction['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Completed%20Construction/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/დასრულებული%20მშენებლობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $infrastructure[1]; ?><span class="float-right"><a href="http://localhost/regions/regions/10/infrastruqtura/infrastruqtura.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="dziritadi17" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $trading['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20organizational%20legal%20forms%20in%20Georgia/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ორგანიზაციულ-სამართლებლივი%20ფორმების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20ownership%20type%20in%20Georgia/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20საკუთრების%20ფორმის%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20type%20in%20Georgia/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ტიპების%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20on%20days%20of%20trade/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ვაჭრობის%20დღეთა%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['6']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Average%20annual%20number%20of%20employed%20persons/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20დირექციებში%20დასაქმებულთა%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['7']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20market-place%20and%20sellers%20on%20the%20markets%20and%20fairs/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრებში%20და%20ბაზრობებში%20სავაჭრო%20ადგილების%20და%20მოვაჭრეთა%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia17">
+                    <td>
+                        <?php echo $trading['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi18" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotels['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20hotels%20and%20hotel-type%20establishments%20and%20their%20total%20area/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20რაოდენობა%20და%20ფართობი/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Rooms%20in%20Hotels%20and%20Hotel-type%20enterprises/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/ნომრების%20რაოდენობა%20სასტუმროებსა%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Guests/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სტუმრები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia18">
+                    <td>
+                        <?php echo $hotels['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $transportAndStorage['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/TransportAndStorage/Length%20of%20transport%20ways/C.%20Tbilisi%20Municipality.xlsx' : '/regions/municipal/ტრანსპორტი%20და%20დასაწყობება/საერთო%20სარგებლობის%20საავტომობილო%20გზების%20სიგრძე/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi20" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/C.%20Tbilisi.xlsx' : '/regions/municipal/კულტურა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/C.%20Tbilisi.xlsx' : '/regions/municipal/კულტურა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/C.%20Tbilisi.xlsx' : '/regions/municipal/კულტურა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia20">
+                    <td>
+                        <?php echo $healthCareAndSocialSecurity['5']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/C.%20Tbilisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20და%20საარსებო%20შემწეობის%20მიმღები%20ოჯახების%20რაოდენობა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dziritadi21" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia21">
+                    <td>
+                        <?php echo $education['2']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/Preschool%20and%20Education%20Institutions/C.%20Tbilisi.xlsx' : '/regions/municipal/განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia21">
+                    <td>
+                        <?php echo $education['3']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/General%20Educational%20Institution/C.%20Tbilisi.xlsx' : '/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $culture['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/C.%20Tbilisi.xlsx' : '/regions/municipal/კულტურა/ქ.%20თბილისი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
 

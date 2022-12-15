@@ -71,7 +71,7 @@ include "../config.php";
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" /></a>
+            <a href="/regions/index.php" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" /></a>
         </div>
         <header class="header1">
             <h1>
@@ -148,7 +148,7 @@ include "../config.php";
                         <?php echo $basicInformation[2]; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/municipal/fartobi/mestia.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Main%20Information/Municipality%20area/Mestia%20Municipality.xlsx' : '/regions/municipal/ძირითადი%20ინფორმაცია/მუნიციპალიტეტის%20ფართობი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia1">
@@ -156,42 +156,26 @@ include "../config.php";
                         <?php echo $basicInformation['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia1">
-                    <td>
-                        <?php echo $basicInformation['4']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/regionis%20fartobi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia1">
-                    <td>
-                        <?php echo $basicInformation['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dziritadi%20informacia/municipalitetebis,%20qalaqebis%20da%20soflebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Main%20Information/Administrative%20structure/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ძირითადი%20ინფორმაცია/ადმინისტრაციული%20მოწყობა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
                     <td id="dziritadi2" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $Population['1']; ?></td>
                 </tr>
-                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="1 იანვრის მდომარეობით">
+                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">
                     <td>
                         <?php echo $Population['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/mokvdaoba_asaki_sqesi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Number%20of%20population/Mestia.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="1 იანვრის მდგომარეობით">
+                <tr class="informacia2" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">
                     <td>
                         <?php echo $Population['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/gardacvalebis%20mizezebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Share%20of%20urban%20population/Mestia.xlsx' : '/regions/municipal/მოსახლეობა/საქალაქო%20დასახლებაში%20მცხოვრები%20მოსახლეობის%20წილი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia2">
@@ -199,15 +183,7 @@ include "../config.php";
                         <?php echo $Population['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia2">
-                    <td>
-                        <?php echo $Population['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/demografia/dziritadi%20demografiuli%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Density%20of%20population/Mestia.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20სიმჭიდროვე/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -220,6 +196,7 @@ include "../config.php";
                     #dziritadi6,
                     #dziritadi7 {
                         display: none;
+                        margin-left: 20px;
                     }
                 </style>
                 <tr>
@@ -230,7 +207,7 @@ include "../config.php";
                         <?php echo $birth['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20live%20births/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
@@ -238,7 +215,7 @@ include "../config.php";
                         <?php echo $birth['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20birth%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/შობადობის%20ზოგადი%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
@@ -246,7 +223,7 @@ include "../config.php";
                         <?php echo $birth['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
@@ -254,7 +231,7 @@ include "../config.php";
                         <?php echo $birth['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/dasaqmeba_umushevroba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
@@ -262,7 +239,7 @@ include "../config.php";
                         <?php echo $birth['6']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/dasaqmeba_umushevroba/khelfasi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/მკვდრადშობილთა%20რიცხოვნობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -274,7 +251,7 @@ include "../config.php";
                         <?php echo $death['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%2012%20tvis%20sashualo%20wina%2012%20Tvis%20saSualosTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
@@ -282,7 +259,7 @@ include "../config.php";
                         <?php echo $death['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20tvestan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20death%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
@@ -290,7 +267,7 @@ include "../config.php";
                         <?php echo $death['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
@@ -298,15 +275,7 @@ include "../config.php";
                         <?php echo $death['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia4">
-                    <td>
-                        <?php echo $death['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Infant%20mortality%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ჩვილ%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
@@ -314,7 +283,7 @@ include "../config.php";
                         <?php echo $death['6']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Under-5%20mortality%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/5%20წლამდე%20ასაკის%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
@@ -322,7 +291,7 @@ include "../config.php";
                         <?php echo $death['7']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Deaths%20from%20suicide/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
@@ -330,7 +299,7 @@ include "../config.php";
                         <?php echo $death['8']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/fasebi/samomxmareblo%20fasebis%20indeqsebi%20wina%20wlis%20shesabamis%20TvesTan%20-%20zugdidi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Suicide%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -342,7 +311,7 @@ include "../config.php";
                         <?php echo $naturalIncrease['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/ckhovrebis%20done/shemosavlebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Natural%20increase/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ბუნებრივი%20მატება/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia5">
@@ -350,7 +319,7 @@ include "../config.php";
                         <?php echo $naturalIncrease['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/ckhovrebis%20done/kharjebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Natural%20increase%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ბუნებრივი%20მატების%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -362,7 +331,7 @@ include "../config.php";
                         <?php echo $marriage['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/saqmianobis%20mikhedvit_nace%20rev.2.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20registered%20marriages/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia6">
@@ -370,7 +339,7 @@ include "../config.php";
                         <?php echo $marriage['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/sakutrebis%20formis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20marriage%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20ზოგადი%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia6">
@@ -378,7 +347,7 @@ include "../config.php";
                         <?php echo $marriage['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/zomis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia6">
@@ -386,7 +355,7 @@ include "../config.php";
                         <?php echo $marriage['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/biznes%20seqtori/zomis%20mikhedvit.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -398,7 +367,7 @@ include "../config.php";
                         <?php echo $divorce['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/soflis%20meurneoba/1.%20erttsliani%20kulturebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20registered%20divorces/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20განქორწინებათა%20რაოდენობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia7">
@@ -406,7 +375,7 @@ include "../config.php";
                         <?php echo $divorce['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/soflis%20meurneoba/2.%20mravaltslovani%20kulturebis%20tsarmoeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20divorce%20rate/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინების%20ზოგადი%20კოეფიციენტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia7">
@@ -414,7 +383,7 @@ include "../config.php";
                         <?php echo $divorce['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/soflis%20meurneoba/3.%20pirutkvis%20suladoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Mestia.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -426,7 +395,7 @@ include "../config.php";
                         <?php echo $populationDescription['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/Mestia.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
@@ -434,7 +403,7 @@ include "../config.php";
                         <?php echo $populationDescription['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/mshenebloba_nebartvebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Mestia.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
@@ -442,7 +411,7 @@ include "../config.php";
                         <?php echo $populationDescription['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/mshenebloba_dziritadi%20machveneblebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Mestia.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
@@ -450,7 +419,7 @@ include "../config.php";
                         <?php echo $populationDescription['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20population/Mestia.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
@@ -458,7 +427,7 @@ include "../config.php";
                         <?php echo $populationDescription['6']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/Mestia.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia8">
@@ -466,15 +435,7 @@ include "../config.php";
                         <?php echo $populationDescription['7']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia8">
-                    <td>
-                        <?php echo $populationDescription['8']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/mshenebloba/dasrulebuli%20msheneblobebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20private%20households/Mestia.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/კერძო%20შინამეურნეობები/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -486,7 +447,7 @@ include "../config.php";
                         <?php echo $employmentAndSalaries['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/sastumroebi%20da%20restornebi/sastumroebi%20da%20restornebi.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia9">
@@ -494,7 +455,7 @@ include "../config.php";
                         <?php echo $employmentAndSalaries['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/sastumroebi%20da%20restornebi/stumarta%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employees/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia9">
@@ -502,7 +463,7 @@ include "../config.php";
                         <?php echo $employmentAndSalaries['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/sastumroebi%20da%20restornebi/stumarta%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -514,7 +475,7 @@ include "../config.php";
                         <?php echo $businessSector['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/turnover/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/ბრუნვა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -522,7 +483,7 @@ include "../config.php";
                         <?php echo $businessSector['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Production%20Value/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/პროდუქციის%20გამოშვება/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -530,7 +491,7 @@ include "../config.php";
                         <?php echo $businessSector['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Pesronal%20Costs/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/შრომითი%20დანახარჯები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -538,7 +499,7 @@ include "../config.php";
                         <?php echo $businessSector['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Purchase%20of%20good%20and%20services/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/საქონლისა%20და%20მომსახურების%20ყიდვები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -546,7 +507,7 @@ include "../config.php";
                         <?php echo $businessSector['6']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Purchase%20of%20good%20and%20services%20for%20resale/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/გადასაყიდად%20განკუთვნილი%20საქონლისა%20და%20მომსახურების%20ყიდვები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -554,7 +515,7 @@ include "../config.php";
                         <?php echo $businessSector['7']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Value%20added/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/დამატებული%20ღირებულება/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -562,7 +523,7 @@ include "../config.php";
                         <?php echo $businessSector['8']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Intermediate%20consumption/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/შუალედური%20მოხმარება/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia10">
@@ -570,7 +531,7 @@ include "../config.php";
                         <?php echo $businessSector['9']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Investments%20in%20fixed%20assets/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/ინვესტიციები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -582,7 +543,7 @@ include "../config.php";
                         <?php echo $businessRegister['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Registered%20entities%20per%201000%20persons/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/რეგისტრირებული%20სუბიექტები/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia11">
@@ -590,7 +551,7 @@ include "../config.php";
                         <?php echo $businessRegister['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20newly%20registered%20business%20entities%20in%20Georgia/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/ახლად%20რეგისტრირებული%20ბიზნეს%20სუბიექტები/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia11">
@@ -598,7 +559,7 @@ include "../config.php";
                         <?php echo $businessRegister['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20active%20business%20entities%20registered%20in%20Georgia/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/ეკონომიკურად%20აქტიური%20ბიზნეს%20სუბიექტების%20რაოდენობა/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia11">
@@ -606,7 +567,7 @@ include "../config.php";
                         <?php echo $businessRegister['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20public%20institutions/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/საჯარო%20დაწესებულებების%20რაოდენობა/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -618,7 +579,7 @@ include "../config.php";
                         <?php echo $accordingToTheTypesOfActivities['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byKindOfEconomicActivity/Number%20of%20registered%20entities%20by%20kind%20of%20economic%20activity/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia12">
@@ -626,7 +587,7 @@ include "../config.php";
                         <?php echo $accordingToTheTypesOfActivities['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byKindOfEconomicActivity/Number%20of%20active%20entities%20by%20kind%20of%20economic%20activity/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -638,7 +599,7 @@ include "../config.php";
                         <?php echo $AccordingToTheFormsOfOwnership['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOwnershipType/Number%20of%20registered%20entities%20by%20ownership%20type/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/საკუთრების%20ფორმების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20საკუთრების%20ფორმების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia13">
@@ -646,7 +607,7 @@ include "../config.php";
                         <?php echo $AccordingToTheFormsOfOwnership['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOwnershipType/Number%20of%20active%20entities%20by%20ownership%20type%20and%20size/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/საკუთრების%20ფორმების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20საკუთრების%20ფორმებისა%20და%20ზომების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -658,7 +619,7 @@ include "../config.php";
                         <?php echo $accordingToOrganizationalLegalForms['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOrganization-legalForms/Number%20of%20registered%20entities%20by%20organizational-legal%20form/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia14">
@@ -666,19 +627,12 @@ include "../config.php";
                         <?php echo $accordingToOrganizationalLegalForms['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOrganization-legalForms/Number%20of%20active%20entities%20by%20organizational-legal%20form/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვ/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi15" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $agriculture['1']; ?>
-                    </td>
-                </tr>
-                <tr class="informacia15">
-                    <td>
-                        <?php echo $agriculture['2']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'http://localhost/regions/municipal/ENG/Share%20of%20Agriculture%20Land%20Area/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : 'http://localhost/regions/municipal/soflis%20meurneoba/ეკო_აქტ/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $agriculture['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Share%20of%20Agriculture%20Land%20Area/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/soflis%20meurneoba/ეკო_აქტ/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
                 <tr>
@@ -690,7 +644,7 @@ include "../config.php";
                         <?php echo $construction['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/გაცემული_ნებართვები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Permissions%20granted/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia16">
@@ -698,7 +652,7 @@ include "../config.php";
                         <?php echo $construction['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/municipal/mshenebloba/dasrulebuli_mshenebloba/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Completed%20Construction/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/დასრულებული%20მშენებლობა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -710,7 +664,7 @@ include "../config.php";
                         <?php echo $trading['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20organizational%20legal%20forms%20in%20Georgia/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ორგანიზაციულ-სამართლებლივი%20ფორმების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia17">
@@ -718,7 +672,7 @@ include "../config.php";
                         <?php echo $trading['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20ownership%20type%20in%20Georgia/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20საკუთრების%20ფორმის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia17">
@@ -726,7 +680,7 @@ include "../config.php";
                         <?php echo $trading['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20type%20in%20Georgia/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ტიპების%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia17">
@@ -734,7 +688,7 @@ include "../config.php";
                         <?php echo $trading['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20on%20days%20of%20trade/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ვაჭრობის%20დღეთა%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia17">
@@ -742,7 +696,7 @@ include "../config.php";
                         <?php echo $trading['6']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Average%20annual%20number%20of%20employed%20persons/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20დირექციებში%20დასაქმებულთა%20რაოდენობა/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia17">
@@ -750,7 +704,7 @@ include "../config.php";
                         <?php echo $trading['7']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20market-place%20and%20sellers%20on%20the%20markets%20and%20fairs/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრებში%20და%20ბაზრობებში%20სავაჭრო%20ადგილების%20და%20მოვაჭრეთა%20რაოდენობა/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia17">
@@ -758,15 +712,7 @@ include "../config.php";
                         <?php echo $trading['8']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia17">
-                    <td>
-                        <?php echo $trading['9']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/gzebis%20sigrdze.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -778,7 +724,7 @@ include "../config.php";
                         <?php echo $hotels['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20hotels%20and%20hotel-type%20establishments%20and%20their%20total%20area/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20რაოდენობა%20და%20ფართობი/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia18">
@@ -786,7 +732,7 @@ include "../config.php";
                         <?php echo $hotels['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Rooms%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/ნომრების%20რაოდენობა%20სასტუმროებსა%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia18">
@@ -794,7 +740,7 @@ include "../config.php";
                         <?php echo $hotels['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Guests/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სტუმრები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia18">
@@ -802,27 +748,12 @@ include "../config.php";
                         <?php echo $hotels['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia18">
-                    <td>
-                        <?php echo $hotels['6']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/registrirebuli%20avtomobilebis%20raodenoba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi19" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $transportAndStorage['1']; ?>
-                    </td>
-                </tr>
-                <tr class="informacia19">
-                    <td>
-                        <?php echo $transportAndStorage['2']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $transportAndStorage['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/TransportAndStorage/Length%20of%20transport%20ways/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx' : '/regions/municipal/ტრანსპორტი%20და%20დასაწყობება/საერთო%20სარგებლობის%20საავტომობილო%20გზების%20სიგრძე/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
                 <tr>
@@ -834,7 +765,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/კულტურა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia20">
@@ -842,7 +773,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/კულტურა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia20">
@@ -850,7 +781,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/კულტურა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia20">
@@ -858,15 +789,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['6']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20და%20საარსებო%20შემწეობის%20მიმღები%20ოჯახების%20რაოდენობა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -878,7 +801,7 @@ include "../config.php";
                         <?php echo $education['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/Preschool%20and%20Education%20Institutions/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia21">
@@ -886,27 +809,12 @@ include "../config.php";
                         <?php echo $education['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/General%20Educational%20Institution/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi22" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $culture['1']; ?>
-                    </td>
-                </tr>
-                <tr class="informacia22">
-                    <td>
-                        <?php echo $culture['2']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia22">
-                    <td>
-                        <?php echo $culture['3']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="http://localhost/regions/regions/2/transporti%20da%20kavshirgabmuloba/transporti%20da%20dasawyobeba.xlsx"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $culture['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Samegrelo-Zemo%20Svaneti/Mestia.xlsx' : '/regions/municipal/კულტურა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
 

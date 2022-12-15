@@ -227,7 +227,9 @@ include "config.php";
     </table>
 
     <div class="download center">
-        <a href="http://localhost/regions/export_excel.php"><button type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button></a>
+        
+            <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button>
+        
     </div>
 
 
@@ -282,6 +284,16 @@ include "config.php";
         $(document).ready(function() {
             $('#municipaliteties').multiselect();
             $('#key_indicators').multiselect();
+
+            $('#export').on('click',function(){
+                var mun;
+                mun = $('#municipaliteties').val();
+                var key;
+                key = $('#key_indicators').val();
+                if(mun != '' && key != '')
+                //console.log("/regions/export_excel.php?mun=" + mun + "&key=" + key);
+                window.location = "/regions/export_excel.php?mun=" + mun + "&key=" + key;
+            });
         });
 
 
