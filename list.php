@@ -146,7 +146,7 @@ include "config.php";
     $item[$j++][0] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
 
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `regions`");
+    $result = mysqli_query($link, "SELECT * FROM `regions` ORDER BY Name ASC");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;

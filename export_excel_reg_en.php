@@ -33,7 +33,7 @@
 			<tbody>
 	";
  
-	$query = mysqli_query($link, "SELECT * FROM `regions` WHERE ID IN(". $mun .")");
+	$query = mysqli_query($link, "SELECT * FROM `regions` WHERE ID IN(". $mun .") ORDER BY Name ASC");
 	while($fetch = $query->fetch_array()){
  
 	$output .= "

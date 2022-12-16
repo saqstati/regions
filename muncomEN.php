@@ -150,7 +150,7 @@ include "config.php";
     $item[$j++][0] = "Number of active economic entities (unit)";
 
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `municipalities`");
+    $result = mysqli_query($link, "SELECT * FROM `municipalities` ORDER BY Name ASC");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;
