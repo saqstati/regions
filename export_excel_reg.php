@@ -1,10 +1,13 @@
 <?php
 	header("Content-Type: application/xls");    
-	header("Content-Disposition: attachment; filename=regions_list.xls");  
+	header("Content-Disposition: attachment; filename=regions.xls");  
 	header("Pragma: no-cache"); 
 	header("Expires: 0");
  
 	require_once 'connection.php';
+
+	$key = isset($_GET['key']) ? $_GET['key'] : '0';
+	$mun = isset($_GET['mun']) ? $_GET['mun'] : '0';
  
 	$output = "";
  
@@ -12,37 +15,42 @@
 		<table>
 			<thead>
 				<tr>
-					<th>რეგიონი</th>
-					<th>ფართობი (კვ.კმ)</th>
-					<th>მოსახლეობის რიცხოვნობა (ათასი)</th>
-					<th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>
-                    <th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)</th>
-                    <th>უმუშევრობის დონე (%)</th>
-                    <th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>
-                    <th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>
-                    <th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>
-                    <th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>
+				";
+	
+	$output .= "<th>რეგიონი</th>";
+	$output .= str_contains($key,'1') ? "<th>ფართობი (კვ.კმ)</th>" : "" ;
+	$output .= str_contains($key,'2') ? "<th>მოსახლეობის რიცხოვნობა (ათასი)</th>" : "" ;
+	$output .= str_contains($key,'3') ? "<th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>" : "" ;
+	$output .= str_contains($key,'4') ? "<th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)" : "" ;
+	$output .= str_contains($key,'5') ? "<th>უმუშევრობის დონე (%)</th>" : "" ;
+	$output .= str_contains($key,'6') ? "<th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>" : "" ;
+	$output .= str_contains($key,'7') ? "<th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>" : "" ;
+	$output .= str_contains($key,'8') ? "<th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>" : "" ;
+	$output .= str_contains($key,'9') ? "<th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>" : "" ;
+
+	$output .="					
 				</tr>
 			<tbody>
 	";
  
-	$query = mysqli_query($link, "SELECT * FROM `regions`");
+	$query = mysqli_query($link, "SELECT * FROM `regions` WHERE ID IN(". $mun .")");
 	while($fetch = $query->fetch_array()){
  
 	$output .= "
 				<tr>
-                    <td>".$fetch['Name']."</td>
-					<td>".$fetch['Area']."</td>
-					<td>".$fetch['Population']."</td>
-					<td>".$fetch['GDP']."</td>
-					<td>".$fetch['GDPPerCapita']."</td>
-					<td>".$fetch['UnemploymentRate']."</td>
-                    <td>".$fetch['EmploymentRate']."</td>
-                    <td>".$fetch['EmploymentRateIndustry']."</td>
-                    <td>".$fetch['AverageSalaryIndustry']."</td>
-                    <td>".$fetch['RegistredEntities']."</td>
-				</tr>
-	";
+                    <td>".$fetch['Name']."</td>";
+
+					$output .= str_contains($key,'1') ? "<td>".$fetch['Area']."</td>" : "" ;
+					$output .= str_contains($key,'2') ? "<td>".$fetch['Population']."</td>" : "" ;
+					$output .= str_contains($key,'3') ? "<td>".$fetch['GDP']."</td>" : "" ;
+					$output .= str_contains($key,'4') ? "<td>".$fetch['GDPPerCapita']."</td>" : "" ;
+					$output .= str_contains($key,'5') ? "<td>".$fetch['UnemploymentRate']."</td>" : "" ;
+                    $output .= str_contains($key,'6') ? "<td>".$fetch['EmploymentRate']."</td>" : "" ;
+                    $output .= str_contains($key,'7') ? "<td>".$fetch['EmploymentRateIndustry']."</td>" : "" ;
+                    $output .= str_contains($key,'8') ? "<td>".$fetch['AverageSalaryIndustry']."</td>" : "" ;
+                    $output .= str_contains($key,'9') ? "<td>".$fetch['RegistredEntities']."</td>" : "" ;
+
+	$output .= "</tr>";
 	}
  
 	$output .="

@@ -79,7 +79,7 @@ include "config.php";
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_eng.png" /></a>
+            <a href="/regions/index.php" id="brand-logo-link" class=""><img src="images/logo_transparency_eng.png" /></a>
         </div>
         <header class="header1">
             <h1>
@@ -220,7 +220,9 @@ include "config.php";
     </table>
 
     <div class="download center">
-        <a href="http://localhost/regions/export_excel_reg_en.php"><button type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">Download</button></a>
+        
+            <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">Download</button>
+    
     </div>
 
 
@@ -275,6 +277,16 @@ include "config.php";
         $(document).ready(function() {
             $('#municipaliteties').multiselect();
             $('#key_indicators').multiselect();
+
+            $('#export').on('click', function() {
+                var mun;
+                mun = $('#municipaliteties').val();
+                var key;
+                key = $('#key_indicators').val();
+                if (mun != '' && key != '')
+                    //console.log("/regions/export_excel.php?mun=" + mun + "&key=" + key);
+                    window.location = "/regions/export_excel_reg_en.php?mun=" + mun + "&key=" + key;
+            });
         });
 
 

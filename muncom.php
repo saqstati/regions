@@ -80,7 +80,7 @@ include "config.php";
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div id="brand-logo">
-            <a href="http://www.geostat.ge/" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
+            <a href="/regions/index.php" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
         </div>
         <header class="header1">
             <h1>
