@@ -219,7 +219,7 @@ include "config.php";
         </tbody>
     </table>
 
-    <div class="download center">
+    <div id="displayNone" class="download displayNone center">
         
             <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">Download</button>
     

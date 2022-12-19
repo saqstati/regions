@@ -85,7 +85,6 @@ function demografiaShow() {
       x.style.display = "block";
     }
   }
- 
 }
 
 // function samegrelo_function() {
@@ -162,8 +161,15 @@ $(document).ready(function () {
 // let containsClass = element.classList.contains('dropdown_up');
 // element.classList.toggle('dropdown_up', !containsClass);
 
-
 function addbackcolor() {
   var element = document.getElementById("cxrili");
   element.classList.add("cxrili_style");
+
+
+  var element = document.getElementById("displayNone");
+  element.classList.remove("displayNone");
 }
+
+// function deleteDisplayNone() {
+  
+// }

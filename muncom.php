@@ -214,7 +214,7 @@ include "config.php";
                         <?php } else if ($k == 0) { ?>
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <td class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
+                            <td title="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="info" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -226,10 +226,10 @@ include "config.php";
         </tbody>
     </table>
 
-    <div class="download center">
-        
-            <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button>
-        
+    <div id="displayNone" class="download center displayNone">
+
+        <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button>
+
     </div>
 
 
@@ -285,14 +285,14 @@ include "config.php";
             $('#municipaliteties').multiselect();
             $('#key_indicators').multiselect();
 
-            $('#export').on('click',function(){
+            $('#export').on('click', function() {
                 var mun;
                 mun = $('#municipaliteties').val();
                 var key;
                 key = $('#key_indicators').val();
-                if(mun != '' && key != '')
-                //console.log("/regions/export_excel.php?mun=" + mun + "&key=" + key);
-                window.location = "/regions/export_excel.php?mun=" + mun + "&key=" + key;
+                if (mun != '' && key != '')
+                    //console.log("/regions/export_excel.php?mun=" + mun + "&key=" + key);
+                    window.location = "/regions/export_excel.php?mun=" + mun + "&key=" + key;
             });
         });
 
