@@ -18,15 +18,15 @@
 				";
 	
 	$output .= "<th>რეგიონი</th>";
-	$output .= str_contains($key,'1') ? "<th>ფართობი (კვ.კმ)</th>" : "" ;
-	$output .= str_contains($key,'2') ? "<th>მოსახლეობის რიცხოვნობა (ათასი)</th>" : "" ;
-	$output .= str_contains($key,'3') ? "<th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>" : "" ;
-	$output .= str_contains($key,'4') ? "<th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)" : "" ;
-	$output .= str_contains($key,'5') ? "<th>უმუშევრობის დონე (%)</th>" : "" ;
-	$output .= str_contains($key,'6') ? "<th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>" : "" ;
-	$output .= str_contains($key,'7') ? "<th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>" : "" ;
-	$output .= str_contains($key,'8') ? "<th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>" : "" ;
-	$output .= str_contains($key,'9') ? "<th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>" : "" ;
+	$output .= strrpos($key,'1') ? "<th>ფართობი (კვ.კმ)</th>" : "" ;
+	$output .= strrpos($key,'2') ? "<th>მოსახლეობის რიცხოვნობა (ათასი)</th>" : "" ;
+	$output .= strrpos($key,'3') ? "<th>მთლიანი შიდა პროდუქტი (მლნ. ლარი)</th>" : "" ;
+	$output .= strrpos($key,'4') ? "<th>მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)" : "" ;
+	$output .= strrpos($key,'5') ? "<th>უმუშევრობის დონე (%)</th>" : "" ;
+	$output .= strrpos($key,'6') ? "<th>დასაქმებულთა რაოდენობა, სულ (ათასი კაცი)</th>" : "" ;
+	$output .= strrpos($key,'7') ? "<th>დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)</th>" : "" ;
+	$output .= strrpos($key,'8') ? "<th>დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)</th>" : "" ;
+	$output .= strrpos($key,'9') ? "<th>რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)</th>" : "" ;
 
 	$output .="					
 				</tr>
@@ -40,15 +40,15 @@
 				<tr>
                     <td>".$fetch['Name']."</td>";
 
-					$output .= str_contains($key,'1') ? "<td>".$fetch['Area']."</td>" : "" ;
-					$output .= str_contains($key,'2') ? "<td>".$fetch['Population']."</td>" : "" ;
-					$output .= str_contains($key,'3') ? "<td>".$fetch['GDP']."</td>" : "" ;
-					$output .= str_contains($key,'4') ? "<td>".$fetch['GDPPerCapita']."</td>" : "" ;
-					$output .= str_contains($key,'5') ? "<td>".$fetch['UnemploymentRate']."</td>" : "" ;
-                    $output .= str_contains($key,'6') ? "<td>".$fetch['EmploymentRate']."</td>" : "" ;
-                    $output .= str_contains($key,'7') ? "<td>".$fetch['EmploymentRateIndustry']."</td>" : "" ;
-                    $output .= str_contains($key,'8') ? "<td>".$fetch['AverageSalaryIndustry']."</td>" : "" ;
-                    $output .= str_contains($key,'9') ? "<td>".$fetch['RegistredEntities']."</td>" : "" ;
+					$output .= strrpos($key,'1') ? "<td>".$fetch['Area']."</td>" : "" ;
+					$output .= strrpos($key,'2') ? "<td>".$fetch['Population']."</td>" : "" ;
+					$output .= strrpos($key,'3') ? "<td>".$fetch['GDP']."</td>" : "" ;
+					$output .= strrpos($key,'4') ? "<td>".$fetch['GDPPerCapita']."</td>" : "" ;
+					$output .= strrpos($key,'5') ? "<td>".$fetch['UnemploymentRate']."</td>" : "" ;
+                    $output .= strrpos($key,'6') ? "<td>".$fetch['EmploymentRate']."</td>" : "" ;
+                    $output .= strrpos($key,'7') ? "<td>".$fetch['EmploymentRateIndustry']."</td>" : "" ;
+                    $output .= strrpos($key,'8') ? "<td>".$fetch['AverageSalaryIndustry']."</td>" : "" ;
+                    $output .= strrpos($key,'9') ? "<td>".$fetch['RegistredEntities']."</td>" : "" ;
 
 	$output .= "</tr>";
 	}

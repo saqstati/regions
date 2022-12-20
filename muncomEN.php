@@ -199,6 +199,14 @@ include "config.php";
 
     </div>
 
+    <?php 
+        $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_reg_en' : 'key_indicators_reg_en';
+        $query = mysqli_query($link, "select * from " . $tableRight);
+        while ($row = mysqli_fetch_array($query)) {
+            $dataContent[$row['ID']] = $row['dataContent'];
+        }
+    ?>
+
     <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
         <tbody id="cxrili">
             <?php foreach ($item as $k => $v) { ?>
@@ -214,7 +222,7 @@ include "config.php";
                         <?php } else if ($k == 0) { ?>
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <td class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
+                            <td title="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php echo $dataContent[3]; ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
