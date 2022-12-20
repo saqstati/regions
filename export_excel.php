@@ -73,3 +73,5 @@ $output .= "
 	";
 
 echo $output;
+
+?>

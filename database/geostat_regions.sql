@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2022 at 11:36 AM
+-- Generation Time: Dec 20, 2022 at 01:53 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -56,24 +56,25 @@ INSERT INTO `georgia_indicators` (`ID`, `Area`, `Population`, `GDP`, `GDPPerCapi
 CREATE TABLE `key_indicators` (
   `ID` int(11) NOT NULL,
   `keyIndicators` varchar(128) NOT NULL,
-  `dataContent` varchar(255) DEFAULT NULL
+  `dataContent` varchar(255) DEFAULT NULL,
+  `dataHover` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `key_indicators`
 --
 
-INSERT INTO `key_indicators` (`ID`, `keyIndicators`, `dataContent`) VALUES
-(1, 'ძირითადი მაჩვენებლები', ''),
-(2, 'ფართობი (კვ.კმ):', '2014 წლის 1 მარტის მდგომარეობით'),
-(3, 'მოსახლეობის რიცხოვნობა (ათასი):', '2021 წლის 1 იანვრის მდგომარეობით'),
-(4, 'მთლიანი შიდა პროდუქტი (მლნ. ლარი):', '2020 წლის მონაცემების მიხედვით'),
-(5, 'მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი):', '2020 წლის მონაცემების მიხედვით'),
-(6, 'უმუშევრობის დონე (%):', '2021 წლის მიხედვით'),
-(7, 'დასაქმებულთა რაოდენობა, სულ (ათასი კაცი):', '2021 წლის მიხედვით'),
-(8, 'დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):', '2020 წლის მიხედვით'),
-(9, 'დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი):', '2020 წლის მიხედვით'),
-(10, 'რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული):', '2021 წლის 1 იანვრის მდგომარეობით');
+INSERT INTO `key_indicators` (`ID`, `keyIndicators`, `dataContent`, `dataHover`) VALUES
+(1, 'ძირითადი მაჩვენებლები', '', '2014 წლის 1 მარტის მდგომარეობით'),
+(2, 'ფართობი (კვ.კმ):', '2014 წლის 1 მარტის მდგომარეობით', '2021 წლის 1 იანვრის მდგომარეობით'),
+(3, 'მოსახლეობის რიცხოვნობა (ათასი):', '2021 წლის 1 იანვრის მდგომარეობით', '2020 წლის მონაცემების მიხედვით'),
+(4, 'მთლიანი შიდა პროდუქტი (მლნ. ლარი):', '2020 წლის მონაცემების მიხედვით', '2020 წლის მონაცემების მიხედვით'),
+(5, 'მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი):', '2020 წლის მონაცემების მიხედვით', '2021 წლის მიხედვით'),
+(6, 'უმუშევრობის დონე (%):', '2021 წლის მიხედვით', '2021 წლის მიხედვით'),
+(7, 'დასაქმებულთა რაოდენობა, სულ (ათასი კაცი):', '2021 წლის მიხედვით', '2020 წლის მიხედვით'),
+(8, 'დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):', '2020 წლის მიხედვით', '2020 წლის მიხედვით'),
+(9, 'დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი):', '2020 წლის მიხედვით', '2021 წლის 1 იანვრის მდგომარეობით'),
+(10, 'რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული):', '2021 წლის 1 იანვრის მდგომარეობით', NULL);
 
 -- --------------------------------------------------------
 
@@ -84,25 +85,25 @@ INSERT INTO `key_indicators` (`ID`, `keyIndicators`, `dataContent`) VALUES
 CREATE TABLE `key_indicators_en` (
   `ID` int(11) NOT NULL,
   `keyIndicatorsEn` varchar(128) NOT NULL,
-  `dataContent` varchar(255) DEFAULT NULL
+  `dataContent` varchar(255) DEFAULT NULL,
+  `dataHover` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `key_indicators_en`
 --
 
-INSERT INTO `key_indicators_en` (`ID`, `keyIndicatorsEn`, `dataContent`) VALUES
-(1, 'Key indicators', NULL),
-(2, 'Area (sq. km):', 'As of March 1, 2014'),
-(3, 'Number of population (thousands):', 'As of January 1, 2021'),
-(4, 'Gross domestic product (million GEL):', 'According to 2020 data'),
-(5, 'Gross domestic product per capita (USD):', 'According to 2020 data'),
-(6, 'Unemployment rate (%):', 'According to the year 2021'),
-(7, 'Number of employees, total (thousands of people):', 'According to the year 2021'),
-(8, 'Number of employees - in the business sector (thousands of people):', 'According to the year 2020'),
-(9, 'Average monthly salary of employees - in the business sector (GEL):', 'According to the year 2020'),
-(10, 'Number of registered economic entities (unit):', 'As of January 1, 2021'),
-(15, '', '');
+INSERT INTO `key_indicators_en` (`ID`, `keyIndicatorsEn`, `dataContent`, `dataHover`) VALUES
+(1, 'Key indicators', NULL, 'As of March 1, 2014'),
+(2, 'Area (sq. km):', 'As of March 1, 2014', 'As of January 1, 2021'),
+(3, 'Number of population (thousands):', 'As of January 1, 2021', 'According to 2020 data'),
+(4, 'Gross domestic product (million GEL):', 'According to 2020 data', 'According to 2020 data'),
+(5, 'Gross domestic product per capita (USD):', 'According to 2020 data', 'According to the year 2021'),
+(6, 'Unemployment rate (%):', 'According to the year 2021', 'According to the year 2021'),
+(7, 'Number of employees, total (thousands of people):', 'According to the year 2021', 'According to the year 2020'),
+(8, 'Number of employees - in the business sector (thousands of people):', 'According to the year 2020', 'According to the year 2020'),
+(9, 'Average monthly salary of employees - in the business sector (GEL):', 'According to the year 2020', 'As of January 1, 2021'),
+(10, 'Number of registered economic entities (unit):', 'As of January 1, 2021', '');
 
 -- --------------------------------------------------------
 
@@ -113,27 +114,28 @@ INSERT INTO `key_indicators_en` (`ID`, `keyIndicatorsEn`, `dataContent`) VALUES
 CREATE TABLE `key_indicators_reg` (
   `ID` int(11) NOT NULL,
   `keyIndicators` varchar(128) NOT NULL,
-  `dataContent` varchar(255) DEFAULT NULL
+  `dataContent` varchar(255) DEFAULT NULL,
+  `dataHover` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `key_indicators_reg`
 --
 
-INSERT INTO `key_indicators_reg` (`ID`, `keyIndicators`, `dataContent`) VALUES
-(1, 'ძირითადი მაჩვენებლები', NULL),
-(2, 'ფართობი (კვ. კმ):', '2014 წლის 1 მარტის მდგომარეობით'),
-(3, 'ქალაქების და დაბების რაოდენობა (ერთეული)', '2022 წლის 1 იანვრის მდგომარეობით'),
-(4, 'სოფლების რაოდენობა (ერთეული)', '2022 წლის 1 იანვრის მდგომარეობით'),
-(5, 'მოსახლეობის რიცხოვნობა (ათასი):', '2022 წლის 1 იანვრის მდგომარეობით'),
-(6, 'ცოცხლად დაბადებულთა რიცხოვნობა (კაცი):', '2021 წლის მონაცემების მიხედით'),
-(7, 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე):', '2021 წლის მონაცემების მიხედით'),
-(8, 'გარდაცვლილთა რიცხოვნობა (კაცი):', '2021 წლის მონაცემების მიხედით'),
-(9, 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე):', '2021 წლის მონაცემების მიხედით'),
-(10, 'დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი):', '2021 წლის მონაცემების მიხედით'),
-(11, 'დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი):', '2021 წლის მონაცემების მიხედით'),
-(12, 'რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', '2021 წლის მონაცემების მიხედით'),
-(13, 'აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', '2021 წლის მონაცემების მიხედით');
+INSERT INTO `key_indicators_reg` (`ID`, `keyIndicators`, `dataContent`, `dataHover`) VALUES
+(1, 'ძირითადი მაჩვენებლები', NULL, '2014 წლის 1 მარტის მდგომარეობით'),
+(2, 'ფართობი (კვ. კმ):', '2014 წლის 1 მარტის მდგომარეობით', '2022 წლის 1 იანვრის მდგომარეობით'),
+(3, 'ქალაქების და დაბების რაოდენობა (ერთეული)', '2022 წლის 1 იანვრის მდგომარეობით', '2022 წლის 1 იანვრის მდგომარეობით'),
+(4, 'სოფლების რაოდენობა (ერთეული)', '2022 წლის 1 იანვრის მდგომარეობით', '2022 წლის 1 იანვრის მდგომარეობით'),
+(5, 'მოსახლეობის რიცხოვნობა (ათასი):', '2022 წლის 1 იანვრის მდგომარეობით', '2021 წლის მონაცემების მიხედვით'),
+(6, 'ცოცხლად დაბადებულთა რიცხოვნობა (კაცი):', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(7, 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე):', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(8, 'გარდაცვლილთა რიცხოვნობა (კაცი):', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(9, 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე):', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(10, 'დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი):', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(11, 'დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი):', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(12, 'რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', '2021 წლის მონაცემების მიხედვით', '2021 წლის მონაცემების მიხედვით'),
+(13, 'აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)', '2021 წლის მონაცემების მიხედვით', NULL);
 
 -- --------------------------------------------------------
 
@@ -144,27 +146,28 @@ INSERT INTO `key_indicators_reg` (`ID`, `keyIndicators`, `dataContent`) VALUES
 CREATE TABLE `key_indicators_reg_en` (
   `ID` int(11) NOT NULL,
   `keyIndicators` varchar(128) NOT NULL,
-  `dataContent` varchar(255) DEFAULT NULL
+  `dataContent` varchar(255) DEFAULT NULL,
+  `dataHover` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `key_indicators_reg_en`
 --
 
-INSERT INTO `key_indicators_reg_en` (`ID`, `keyIndicators`, `dataContent`) VALUES
-(1, 'Key indicators', NULL),
-(2, 'Area (sq. km):', 'By March 1, 2014'),
-(3, 'Number of cities and boroughs (unit)', 'By January 1, 2022'),
-(4, 'Number of villages (unit)', 'By January 1, 2022'),
-(5, 'Number of population (thousands):', 'By January 1, 2022'),
-(6, 'Number of born alive (person)', 'Data of 2021'),
-(7, 'General birth rate (per 1 000 population)', 'Data of 2021'),
-(8, 'Number of deaths (person)', 'Data of 2021'),
-(9, 'General coefficient of mortality  (per 1 000 population)', 'Data of 2021'),
-(10, 'Employment Level in Bussiness Sector (thousand person):', 'Data of 2021'),
-(11, 'Average monthly remuneration of employed persons-in Bussiness Sector (GEL):', 'Data of 2021'),
-(12, 'The Number of Registered Business Entities (unit):', 'Data of 2021'),
-(13, 'Number of active economic subjects (units)', 'Data of 2021');
+INSERT INTO `key_indicators_reg_en` (`ID`, `keyIndicators`, `dataContent`, `dataHover`) VALUES
+(1, 'Key indicators', NULL, 'By March 1, 2014'),
+(2, 'Area (sq. km):', 'By March 1, 2014', 'By January 1, 2022'),
+(3, 'Number of cities and boroughs (unit)', 'By January 1, 2022', 'By January 1, 2022'),
+(4, 'Number of villages (unit)', 'By January 1, 2022', 'By January 1, 2022'),
+(5, 'Number of population (thousands):', 'By January 1, 2022', 'Data of 2021'),
+(6, 'Number of born alive (person)', 'Data of 2021', 'Data of 2021'),
+(7, 'General birth rate (per 1 000 population)', 'Data of 2021', 'Data of 2021'),
+(8, 'Number of deaths (person)', 'Data of 2021', 'Data of 2021'),
+(9, 'General coefficient of mortality  (per 1 000 population)', 'Data of 2021', 'Data of 2021'),
+(10, 'Employment Level in Bussiness Sector (thousand person):', 'Data of 2021', 'Data of 2021'),
+(11, 'Average monthly remuneration of employed persons-in Bussiness Sector (GEL):', 'Data of 2021', 'Data of 2021'),
+(12, 'The Number of Registered Business Entities (unit):', 'Data of 2021', 'Data of 2021'),
+(13, 'Number of active economic subjects (units)', 'Data of 2021', NULL);
 
 -- --------------------------------------------------------
 
