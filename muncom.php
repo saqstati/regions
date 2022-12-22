@@ -115,7 +115,7 @@ include "config.php";
 
             <?php
             require 'connection.php';
-            $query = mysqli_query($link, "SELECT * FROM `municipalities`");
+            $query = mysqli_query($link, "SELECT * FROM `municipalitiesaz`");
             $i = '';
             while ($fetch = mysqli_fetch_array($query)) {
             ?>
@@ -150,7 +150,7 @@ include "config.php";
     $item[$j++][0] = "აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
 
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `municipalities` ORDER BY Name ASC");
+    $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;

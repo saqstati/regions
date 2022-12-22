@@ -2077,9 +2077,7 @@
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1014.12,2822.48052C1014.12,2816.94659,1009.63389,2812.46045,1004.1,2812.46045C998.56611,2812.46045,994.08,2816.94659,994.08,2822.48052
 				C994.08,2828.01445,998.56611,2832.50059,1004.1,2832.50059C1009.63389,2832.50059,1014.12,2828.01445,1014.12,2822.48052z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
-				M799.8,2422.99762C799.8,2417.46368,795.34076,2412.97754,789.84,2412.97754C784.33924,2412.97754,779.88,2417.46368,779.88,2422.99762
-				C779.88,2428.53155,784.33924,2433.01769,789.84,2433.01769C795.34076,2433.01769,799.8,2428.53155,799.8,2422.99762z"/>
+			
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M658.92,2365.1572C658.92,2359.62326,654.43389,2355.13712,648.9,2355.13712C643.36611,2355.13712,638.88,2359.62326,638.88,2365.1572
 				C638.88,2370.69113,643.36611,2375.17727,648.9,2375.17727C654.43389,2375.17727,658.92,2370.69113,658.92,2365.1572z"/>
@@ -2222,7 +2220,7 @@
 				</text>
 			</g>
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 802.8 2421.2576)" >
+				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 752.8 2441.2576)" >
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">ჩ</tspan>
 					<tspan direction="ltr" unicode-bidi="embed" x="0.47116 ">ხ</tspan>
 					<tspan direction="ltr" unicode-bidi="embed" x="0.9952 ">ო</tspan>

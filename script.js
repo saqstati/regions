@@ -77,7 +77,7 @@ function GetIdChange() {
 // let showDemografia = [dziritadi3];
 
 function demografiaShow() {
-  for (let i = 3; i < 8; i++) {
+  for (let i = 3; i < 9; i++) {
     var x = document.getElementById(`dziritadi${i}`);
     if (x.style.display === "block") {
       x.style.display = "none";

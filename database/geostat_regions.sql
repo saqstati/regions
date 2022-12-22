@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2022 at 01:53 PM
+-- Generation Time: Dec 22, 2022 at 07:58 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -266,6 +266,100 @@ INSERT INTO `municipalities` (`ID`, `Name`, `NameEN`, `Area`, `NumberOfCT`, `Vil
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `municipalitiesaz`
+--
+
+CREATE TABLE `municipalitiesaz` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(128) NOT NULL,
+  `NameEN` varchar(255) NOT NULL,
+  `Area` varchar(128) NOT NULL,
+  `NumberOfCT` varchar(128) NOT NULL,
+  `Villages` varchar(128) NOT NULL,
+  `Population` varchar(128) NOT NULL,
+  `LiveBirths` varchar(128) NOT NULL,
+  `GeneralBirthRate` varchar(128) NOT NULL,
+  `Dead` varchar(128) NOT NULL,
+  `GeneralMortalityRate` varchar(128) NOT NULL,
+  `Employees` varchar(128) NOT NULL,
+  `AVGSalary` varchar(128) NOT NULL,
+  `RegEcSub` varchar(128) NOT NULL,
+  `ActEcSub` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `municipalitiesaz`
+--
+
+INSERT INTO `municipalitiesaz` (`ID`, `Name`, `NameEN`, `Area`, `NumberOfCT`, `Villages`, `Population`, `LiveBirths`, `GeneralBirthRate`, `Dead`, `GeneralMortalityRate`, `Employees`, `AVGSalary`, `RegEcSub`, `ActEcSub`) VALUES
+(1, 'აბაშა', 'Abasha', '322.5', '1', '35', '19.0', '190', '9.9', '399', '20.7', '0.8', '637.7', '3096', '646'),
+(20, 'ზუგდიდი', 'Zugdidi', '670.6', '1', '58', '97.1', '1,090', '11.1', '1,697', '17.3', '9.3', '675', '20572', '3821'),
+(31, 'მარტვილი', 'Martvili', '880.6', '1', '74', '30.9', '307', '9.8', '618', '19.8', '1.1', '527.7', '4819', '1025'),
+(32, 'მესტია', 'Mestia', '3044.5', '1', '160', '9.4', '133', '14.1', '150', '15.9', '0.5', '1455.6', '2231', '531'),
+(41, 'სენაკი', 'Senaki', '520.7', '1', '62', '33.1', '393', '11.7', '776', '23', '2.4', '729.6', '7564', '1707'),
+(44, 'ფოთი', 'Poti', '65.8', '1', '0', '41.1', '418', '10.1', '645', '15.6', '10.7', '1294.3', '11151', '2656'),
+(53, 'ჩხოროწყუ', 'Chkhorotsku', '619.4', '1', '30', '21.0', '199', '9.4', '347', '16.4', '1.0', '477.8', '3450', '838'),
+(55, 'წალენჯიხა', 'Tsalenjikha', '646.7', '2', '48', '22.6', '239', '10.4', '443', '19.3', '0.9', '795.8', '4338', '995'),
+(62, 'ხობი', 'Khobi', '676.0', '1', '57', '27.1', '234', '8.5', '503', '18.3', '1.7', '1358.9', '4076', '888'),
+(28, 'ლანჩხუთი', 'Lanchkhuti', '533.1', '1', '55', '29.4', '285', '9.6', '569', '19.2', '1.6', '589.4', '4876', '1056'),
+(35, 'ოზურგეთი', 'Ozurgeti', '652.7', '6', '68', '58.3', '596', '10.1', '1048', '17.8', '6', '728.9', '11325', '2749'),
+(52, 'ჩოხატაური', 'Chokhatauri', '825.1', '2', '61', '17.6', '201', '11.3', '356', '20.1', '1', '1263.2', '3076', '709'),
+(8, 'ბათუმი', 'Batumi', '82.3', '1', '0', '173.7', '2953', '17.1', '2036', '11.8', '59.49', '1134.2', '44713', '10872'),
+(46, 'ქედა', 'Keda', '452', '1', '64', '16.6', '211', '12.7', '202', '12.1', '1', '535.5', '2033', '488'),
+(47, 'ქობულეთი', 'Kobuleti', '711.3', '3', '48', '70.7', '998', '14', '1003', '14.1', '8.7', '867.2', '11459', '2607'),
+(51, 'შუახევი', 'Shuakhevi', '588', '1', '54', '14.8', '190', '12.8', '185', '12.4', '0.9', '300.6', '1742', '513'),
+(61, 'ხელვაჩაური', 'Khelvachauri', '356.4', '0', '64', '52.7', '736', '14', '550', '10.4', '2.2', '949', '10814', '2429'),
+(64, 'ხულო', 'Khulo', '710', '1', '83', '26.8', '311', '11.6', '284', '10.6', '0.6', '570.4', '3302', '941'),
+(2, 'ადიგენი', 'Adigeni', '799.5', '2', '55', '15.9', '201', '12.6', '252', '15.7', '0.6', '493.8', '4012', '660'),
+(4, 'ასპინძა', 'Aspindza', '825.0', '1', '25', '10.5', '128', '12.1', '147', '13.9', '0.8', '819.6', '1292', '345'),
+(5, 'ახალქალაქი', 'Akhalkalaki', '1235.0', '1', '64', '40.1', '586', '14.4', '605', '14.9', '1.6', '900.6', '4029', '867'),
+(6, 'ახალციხე', 'Akhaltsikhe', '997.5', '2', '45', '39.1', '415', '10.6', '595', '15.1', '4.1', '701.1', '7575', '1783'),
+(11, 'ბორჯომი', 'Borjomi', '1189.0', '4', '41', '24.7', '297', '12', '468', '18.8', '5.3', '1267.9', '4854', '1177'),
+(34, 'ნინოწმინდა', 'Ninotsminda', '1354.0', '1', '31', '17.9', '269', '14.6', '257', '13.9', '0.6', '500.9', '2083', '424'),
+(9, 'ბაღდათი', 'Baghdati', '815.4', '1', '25', '17.6', '208', '11.6', '423', '23.5', '1.2', '858.7', '3839', '857'),
+(18, 'ვანი', 'Vani', '557.0', '1', '41', '20.5', '253', '12.1', '423', '20.3', '0.8', '371.9', '3294', '666'),
+(19, 'ზესტაფონი', 'Zestaponi', '423.7', '2', '59', '54.3', '676', '12.4', '1,035', '18.9', '6.9', '1474.9', '11059', '2985'),
+(24, 'თერჯოლა', 'Terjola', '357.0', '1', '45', '30.4', '337', '10.9', '676', '21.9', '2.3', '1012.2', '5233', '1378'),
+(39, 'სამტრედია', 'Samtredia', '364.1', '2', '47', '42.2', '464', '10.8', '845', '19.7', '1.9', '607.2', '7976', '1733'),
+(40, 'საჩხერე', 'Sachkhere', '768.5', '1', '46', '34.1', '453', '13.1', '725', '21', '2.1', '1153.3', '7964', '1760'),
+(43, 'ტყიბული', 'Tkibuli', '478.8', '1', '47', '17.2', '141', '8', '438', '25', '2.2', '1122.8', '4347', '802'),
+(48, 'ქუთაისი', 'Kutaisi', '67.7', '1', '0', '129.3', '1,978', '15', '2,778', '21.1', '29.9', '813', '43809', '9068'),
+(57, 'წყალტუბო', 'Tskaltubo', '700.1', '1', '49', '44.6', '510', '11.2', '993', '21.7', '2.9', '1200.2', '7822', '1647'),
+(58, 'ჭიათურა', 'Chiatura', '540.0', '1', '60', '37.6', '447', '11.8', '811', '21.4', '4.2', '1555.2', '6737', '1506'),
+(59, 'ხარაგაული', 'Kharagauli', '913.9', '1', '78', '18.3', '187', '10.1', '386', '20.9', '2.6', '1722.5', '2794', '678'),
+(63, 'ხონი', 'Khoni', '428.5', '1', '41', '20.5', '225', '10.8', '467', '22.4', '1.3', '574.8', '3195', '743'),
+(3, 'ამბროლაური', 'Ambrolauri', '1139.2', '1', '69', '10.2', '82', '8', '303', '29.4', '1.0', '722.6', '2202', '463'),
+(29, 'ლენტეხი', 'Lentekhi', '1344.0', '1', '60', '3.9', '61', '15.4', '101', '25.5', '0.3', '627.1', '1205', '228'),
+(36, 'ონი', 'Oni', '1360.0', '1', '64', '5.4', '54', '9.8', '179', '32.6', '0.7', '662.6', '1063', '224'),
+(54, 'ცაგერი', 'Tsageri', '754.0', '1', '58', '8.1', '66', '8', '291', '35.1', '0.3', '1084.8', '1931', '376'),
+(10, 'ბოლნისი', 'Bolnisi', '804.0', '3', '45', '55.9', '684', '12.2', '678', '12.1', '6.7', '1813.8', '5537', '1190'),
+(12, 'გარდაბანი', 'Gardabani', '1212.2', '1', '36', '79.3', '1,031', '12.9', '1,079', '13.5', '7.0', '1256.5', '10727', '2626'),
+(16, 'დმანისი', 'Dmanisi', '1198.8', '1', '57', '20.9', '312', '14.9', '375', '17.9', '0.7', '1343.4', '2504', '621'),
+(22, 'თეთრიწყარო', 'Tetritskaro', '1174.5', '2', '91', '22.5', '191', '8.5', '360', '16', '1.2', '1025.1', '3327', '549'),
+(30, 'მარნეული', 'Marneuli', '935.5', '1', '77', '107.5', '1,555', '14.4', '1,167', '10.8', '5.3', '701.7', '12195', '3260'),
+(37, 'რუსთავი', 'Rustavi', '60.6', '1', '0', '128.8', '1,390', '10.7', '1,660', '12.8', '22.7', '1058.3', '23955', '4951'),
+(56, 'წალკა', 'Tsalka', '1050.6', '4', '40', '19.6', '235', '12', '246', '12.5', '1.0', '984.1', '1850', '435'),
+(13, 'გორი', 'Gori', '1336.3', '1', '119', '118.8', '1,535', '12.8', '1,836', '15.3', '10.8', '738.3', '16767', '4224'),
+(26, 'კასპი', 'Kaspi', '803.2', '1', '75', '41.1', '427', '10.3', '801', '19.3', '3.2', '1407.2', '5639', '1480'),
+(45, 'ქარელი', 'Kareli', '687.7', '2', '81', '40.3', '486', '12', '625', '15.4', '1.8', '897.4', '3980', '940'),
+(60, 'ხაშური', 'Khashuri', '585.2', '2', '82', '50.3', '595', '11.7', '897', '17.7', '3.8', '656.3', '9215', '2253'),
+(17, 'დუშეთი', 'Dusheti', '2981.5', '3', '288', '26.1', '293', '11.2', '529', '20.2', '1.2', '536.5', '3825', '880'),
+(25, 'თიანეთი', 'Tianeti', '906.3', '2', '87', '10.2', '75', '7.3', '233', '22.7', '0.5', '462.1', '1347', '302'),
+(33, 'მცხეთა', 'Mtskheta', '592.8', '1', '62', '52.2', '570', '10.8', '862', '16.4', '9.1', '1501', '7976', '1834'),
+(49, 'ყაზბეგი', 'Kazbegi', '1081.7', '1', '45', '3.8', '76', '20.2', '94', '24.9', '1.6', '819.1', '1448', '349'),
+(21, 'თბილისი', 'Tbilisi', '504.2', '5', '22', '1201.8', '14979', '12.5', '17922', '14.9', '460.6', '1505.8', '354495', '74241'),
+(7, 'ახმეტა', 'Akhmeta', '2207.6', '1', '111', '27.8', '365', '12.9', '578', '20.4', '1.4', '1134', '4117', '891'),
+(14, 'გურჯაანი', 'Gurjaani', '846.0', '1', '30', '51.0', '591', '11.5', '1,114', '21.7', '3.3', '921.6', '9257', '1928'),
+(15, 'დედოფლისწყარო', 'Dedoplistskaro', '2532.0', '1', '15', '20.4', '218', '10.6', '414', '20.2', '1.2', '466.1', '2853', '713'),
+(23, 'თელავი', 'Telavi', '1082.5', '1', '29', '54.0', '670', '12.3', '904', '16.6', '8.7', '873.3', '12758', '2828'),
+(27, 'ლაგოდეხი', 'Lagodekhi', '890.2', '1', '67', '40.7', '539', '13.2', '666', '16.3', '1.6', '480.9', '4549', '1102'),
+(38, 'საგარეჯო', 'Sagarejo', '1553.7', '1', '46', '52.0', '732', '14', '713', '13.7', '2.1', '823.8', '6279', '1454'),
+(42, 'სიღნაღი', 'Sighnaghi', '1251.0', '2', '19', '28.7', '306', '10.6', '678', '23.4', '1.3', '582.2', '5032', '1007'),
+(50, 'ყვარელი', 'Kvareli', '1000.0', '1', '21', '30.3', '369', '12.1', '466', '15.3', '2.5', '1438.2', '4176', '1019');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `municipal_statistics`
 --
 
@@ -300,7 +394,7 @@ CREATE TABLE `municipal_statistics` (
 --
 
 INSERT INTO `municipal_statistics` (`ID`, `basicInformation`, `Population`, `birth`, `death`, `naturalIncrease`, `marriage`, `divorce`, `populationDescription`, `employmentAndSalaries`, `businessSector`, `businessRegister`, `accordingToTheTypesOfActivities`, `AccordingToTheFormsOfOwnership`, `accordingToOrganizationalLegalForms`, `agriculture`, `construction`, `trading`, `hotels`, `transportAndStorage`, `healthCareAndSocialSecurity`, `education`, `culture`) VALUES
-(1, 'ძირითადი ინფორმაცია', 'მოსახლეობა', 'დაბადება', 'გარდაცვალება', 'ბუნებრივი მატება', 'ქორწინება', 'განქორწინება', 'მოსახლეობის აღწერა', 'დასაქმება და ხელფასები', 'ბიზნეს სექტორი', 'ბიზნეს რეგისტრი', 'ეკონომიკური საქმიანობის სახეების მიხედვით', 'საკუთრების ფორმების მიხედვით', 'ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'სოფლის მეურნეობა', 'მშენებლობა', 'ვაჭრობა', 'სასტუმროები', 'ტრანსპორტი და დასაწყობება', 'ჯანდაცვა და სოციალური უზრუნველყოფა', 'განათლება', 'კულტურა'),
+(1, 'ძირითადი ინფორმაცია', 'მოსახლეობა', 'დაბადება', 'გარდაცვალება', 'ბუნებრივი მატება', 'ქორწინება', 'განქორწინება', 'მოსახლეობის 2014 წლის აღწერა', 'დასაქმება და ხელფასები', 'ბიზნეს სექტორი', 'ბიზნეს რეგისტრი', 'ეკონომიკური საქმიანობის სახეების მიხედვით', 'საკუთრების ფორმების მიხედვით', 'ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'სოფლის მეურნეობა', 'მშენებლობა', 'ვაჭრობა', 'სასტუმროები', 'ტრანსპორტი და დასაწყობება', 'ჯანდაცვა და სოციალური უზრუნველყოფა', 'განათლება', 'კულტურა'),
 (2, 'მუნიციპალიტეტის ფართობი ', 'მოსახლეობის რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით 1 იანვრის მდგომარეობით', 'ცოცხლად დაბადებულთა რიცხოვნობა', 'გარდაცვლილთა რიცხოვნობა', 'ბუნებრივი მატება', 'რეგისტრირებულ ქორწინებათა რაოდენობა', 'რეგისტრირებულ განქორწინებათა რაოდენობა', 'მოსახლეობის მედიანური ასაკი', 'დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):', 'ბიზნეს სექტორის ბრუნვა, სულ', 'საქართველოში რეგისტრირებულ ბიზნეს სუბიექტეთა რაოდენობა (მოსახლეობის 1 000 კაცზე)', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა ეკონომიკური საქმიანობის სახეების მიხედვით', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა საკუთრების ფორმების მიხედვით', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'სასოფლო-სამეურნეო დანიშნულების მიწის ფართობის წილი მუნიციპალიტეტის მთელ ფართობში კვ.კმ-ზე', 'მშენებლობაზე გაცემული ნებართვები', 'ბაზრების და ბაზრობების  რაოდენობა, ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებების რაოდენობა და ფართობი (ადგილობრივი ერთეულების ჩათვლით)', 'საერთო სარგებლობის საავტომობილო გზების სიგრძე', 'პენსიის მიმღებთა რიცხოვნობა ', 'საჯარო სკოლამდელი აღზრდისა და განათლების დაწესებულებები', 'მუზეუმების და პროფესიული თეატრების რაოდენობა'),
 (3, 'დასახლებების რაოდენობა', 'საქალაქო დასახლებაში მცხოვრები  მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში  (%)', 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ბუნებრივი მატების კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'განქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', '65 წელზე მეტი ასაკის მოსახლეობის წილი (%)', 'დაქირავებით დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი):', 'ბიზნეს სექტორის პროდუქციის გამოშვება, სულ', 'საქართველოში ახლადრეგისტრირებულ ბიზნეს სუბიექტთა რაოდენობა (მოსახლეობის 1000 კაცზე)', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა ეკონომიკური საქმიანობის სახეებისა და ზომების მიხედვით', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა საკუთრების ფორმებისა და ზომების მიხედვით', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმებისა და  ზომების მიხედვით', '', 'ექსპულატაციაში მიღებული ობიექტები', 'ბაზრების და ბაზრობების რაოდენობა საკუთრების ფორმის მიხედვით', 'ნომრების რაოდენობა სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში', '', 'სოციალური პაკეტის მიმღებთა რიცხოვნობა', 'საჯარო და კერძო ზოგადსაგანმანათლებლო დაწესებულებები', ''),
 (4, '', 'მოსახლეობის სიმჭიდროვე 1 კვ.კმ-ზე', 'ცოცხლად დაბადებულთა რიცხოვნობა სქესის მიხედვით', 'გარდაცვლილთა რიცხოვნობა ასაკის და სქესის მიხედვით', '', 'დაქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'განქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'ასაკის დატვირთვის კოეფიციენტები', 'დაქირავებით დასაქმებულთა შრომის საშუალოთვიური ანაზღაურება - ბიზნეს სექტორში (ლარი):', 'ბიზნეს სექტორის შრომითი დანახარჯები, სულ', 'საქართველოში რეგისტრირებულ მოქმედ ბიზნეს სუბიექტეთა რაოდენობა (მოსახლეობის 1 000 კაცზე)', '', '', '', '', '', 'ბაზრების და ბაზრობების რაოდენობა ტიპების მიხედვით', 'სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში სტუმართა რაოდენობა ჩამოსვლის ადგილისა და მიზნის მიხედვით', '', 'სოციალურად დაუცველი პირების წილი მთელ მოსახლეობაში', '', ''),
@@ -347,7 +441,7 @@ CREATE TABLE `municipal_statistics_en` (
 --
 
 INSERT INTO `municipal_statistics_en` (`ID`, `basicInformation`, `Population`, `birth`, `death`, `naturalIncrease`, `marriage`, `divorce`, `populationDescription`, `employmentAndSalaries`, `businessSector`, `businessRegister`, `accordingToTheTypesOfActivities`, `AccordingToTheFormsOfOwnership`, `accordingToOrganizationalLegalForms`, `agriculture`, `construction`, `trading`, `hotels`, `transportAndStorage`, `healthCareAndSocialSecurity`, `education`, `culture`) VALUES
-(1, 'Main Information', 'Population', 'Births', 'Deaths', 'Natural Increase', 'Marriages', 'Divorce', 'Population census', 'Employment and Wages', 'Business Sector', 'Business Register', 'By kind of economic activity', 'By ownership type', 'By organizational-legal forms', 'Agriculture', 'Construction', 'Trade', 'Hotels', 'Transportation and storage', 'Healthcare and Social Protection', 'Education', 'Culture'),
+(1, 'Main Information', 'Population', 'Births', 'Deaths', 'Natural Increase', 'Marriages', 'Divorce', '2014 Population census', 'Employment and Wages', 'Business Sector', 'Business Register', 'By kind of economic activity', 'By ownership type', 'By organizational-legal forms', 'Agriculture', 'Construction', 'Trade', 'Hotels', 'Transportation and storage', 'Healthcare and Social Protection', 'Education', 'Culture'),
 (2, 'Municipality area', 'Number of population by urban-rural settlements as of 1 January', 'Number of live births', 'Number of deaths', 'Natural increase', 'Number of registered marriages', 'Number of registered divorces', 'Median age of the population', 'Number of employed persons - in the Business sector (thousand of persons)', 'Turnover of the business sector, total', 'Number of business entities registered in Georgia (per 1 000 population)', 'Number of entities registered in Georgia by kind of economic activity', 'Number of entities registered in Georgia by ownership type', 'Number of entities registered in Georgia by organizational-legal form', 'Share of Agriculture Land Area in Total Land Area of Municipality per sq. km', 'Permissions granted for construction', 'Number of markets and fairs by organizational legal forms in Georgia', 'Number of hotels and hotel-type establishments and their total area (including local units)', 'Length of transport ways ', 'Persons Receiving Pension', 'public preschool education and care (PEC) institutions', 'Number of museums and professional theaters'),
 (3, 'Number of settlements', 'Share of urban population in total population of the municipality (%)', 'Crude birth rate (per 1 000 population)', 'Crude death rate (per 1 000 population)', 'Natural increase rate (per 1 000 population)', 'Crude marriage rate (per 1 000 population)', 'Crude divorce rate (per 1 000 population)', 'Percentage of population aged 65 and over', 'Number of employees - in the Business sector (thousand of persons)', 'Production value of  the Business sector, Total', 'Number of newly registered business entities in Georgia (per 1 000 population)', 'Number of activ entities registered in Georgia by kind of economic activity and size', 'Number of activ entities registered in Georgia by ownership type and size', 'Number of activ entities registered in Georgia by organizational-legal form and size', '', 'Completed construction objects', 'Number of markets and fairs by ownership type in Georgia', 'Number of Rooms in Hotels and Hotel-type enterprises', '', 'Persons Receiving Social Package', 'Public and Private General Education Schools', ''),
 (4, '', 'Density of population per 1 sq. km', 'Number of live births by sex ', 'Number of deaths by age and sex', '', 'Number of married people by age and sex', 'Number of divorced people by age and gender', 'Age dependency ratios', 'Average monthly wages of employees - in the Business sector (GEL)', 'Personal cost of the Business sector, Total', 'Number of active business entities registered in Georgia (per 1 000 population)', '', '', '', '', '', 'Number of markets and fairs by type in Georgia', 'Number of Guests in Hotels and Hotel-type enterprises by visited place and purpose', '', 'The share of socially vulnerable persons in the population', '', ''),

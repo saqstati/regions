@@ -44,7 +44,7 @@ $output .= "
 			<tbody>
 	";
 
-$query = mysqli_query($link, "SELECT * FROM `municipalities` WHERE ID IN(" . $mun . ") ORDER BY Name ASC");
+$query = mysqli_query($link, "SELECT * FROM `municipalitiesaz` WHERE ID IN(" . $mun . ") ORDER BY Name ASC");
 while ($fetch = $query->fetch_array()) {
 
 	$output .= "

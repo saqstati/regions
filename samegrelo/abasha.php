@@ -191,7 +191,8 @@ include "../config.php";
                     #dziritadi4,
                     #dziritadi5,
                     #dziritadi6,
-                    #dziritadi7 {
+                    #dziritadi7,
+                    #dziritadi8 {
                         display: none;
                         margin-left: 20px;
                     }
