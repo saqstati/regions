@@ -1,25 +1,132 @@
 <?php
-// header("Content-Type: application/xls");
-// header("Content-Type: application/octet-stream"); 
-// header('Content-Encoding: UTF-8');
-// header('Content-Type: application/vnd.ms-excel; charset=UTF-8');
-// $data = "Some utf-8 characters Ä…Ä‡Å¼ÅºÄ‡Å‚";
-// header("Content-Transfer-Encoding: binary"); 
-// header('Expires: '.gmdate('D, d M Y H:i:s').' GMT'); 
-// header('Content-Disposition: attachment; filename = "Export '.date("Y-m-d").'.tsv"'); 
-// header("Content-Disposition: attachment; filename=municipaliteties_list.xls");
-// header("Pragma: no-cache");
-// header("Expires: 0");
+
+// require_once 'connection.php';
+// require_once __DIR__ . '/PHPExcel.php';
+// require_once __DIR__ . '/PHPExcel/Writer/Excel5.php';
+
+// $sql = 'SELECT * FROM municipalitiesaz';
+// $result = mysqli_query($link, $sql);
+
+// $objPHPExcel = new PHPExcel();
+// $objPHPExcel->setActiveSheetIndex(0)
+//             ->setCellValue('A1', 'A1')
+//             ->setCellValue('B1', 'A2')
+//             ->setCellValue('C1', 'A3')
+//             ->setCellValue('D1', 'A4')
+//             ->setCellValue('E1', 'A5')
+//             ->setCellValue('F1', 'A6')
+//             ->setCellValue('G1', 'A7')
+//             ->setCellValue('H1', 'A8');
+
+// $num_row = 1;
+// foreach ($result as $row) {
+// 	$num_row++;
+// 	$objPHPExcel->setActiveSheetIndex(0)
+// 		->setCellValue('A' . $num_row, $row['A1'])
+// 		->setCellValue('B' . $num_row, $row['A2'])
+// 		->setCellValue('C' . $num_row, $row['A3'])
+// 		->setCellValue('D' . $num_row, $row['A4'])
+// 		->setCellValue('E' . $num_row, $row['A5'])
+// 		->setCellValue('F' . $num_row, $row['A6'])
+// 		->setCellValue('G' . $num_row, $row['A7'])
+// 		->setCellValue('H' . $num_row, $row['A8']);
+// }
+
+// $objPHPExcel->getActiveSheet()
+//             ->getStyle('A1:J1')
+//             ->getFont()
+//             ->setBold(true);
+
+// $objPHPExcel->setActiveSheetIndex(0);
+// header('Content-Type: application/vnd.ms-excel');
+// header("Content-Disposition: attachment;Filename=export.xls");
+// header('Cache-Control: max-age=0');
+// $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+// $objWriter->save('php://output');
 
 
-header("Content-Type:   application/vnd.ms-excel; charset=utf-8");
-header("Content-Disposition: attachment; filename=abc.xls");  //File name extension was wrong
+// include_once ('xlsxwriter.class.php');
+// ini_set('display_errors', 0);
+// ini_set('log_errors', 1);
+// error_reporting(E_ALL & ~E_NOTICE);
+
+// $fileName = 'municipaliteties_compare.xlsx';
+
+
+// header('Content-Disposition: attachment; filename="'.XLSXWriter::sanitize_filename($fileName).'"');
+// header('Content-Type: pplication/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+// header('Content-Transfer-Encoding: binary'); 
+// header('Cache-Control:must-revalidated');
+// header('Pragma: public');
+
+// $opt = [
+// 	PDO::ATTR_ERRMODE               => PDO::ERRMODE_EXCEPTION,
+// 	PDO::ATTR_DEFAULT_FETCH_MODE    => PDO::FETCH_ASSOC,
+// 	PDO::ATTR_EMULATE_PREPARES      => false,
+// ];
+// try{
+// 	$pdo = new PDO($link, $opt);
+// }catch(PDOException $e){
+// 	echo $e->getMessage();
+// }
+
+// $query = $pdo->prepare($sql);
+
+// $query->execute();
+
+// $write = new XLSXWriter();
+
+// while($row = $query->fetch()){
+// 	$write->writeSheetRow('Sheet1',$row);
+// }
+
+// $write->writeToStdOut();
+// exit();
+
+header("Content-Type: application/xls");
+header('Content-Encoding: UTF-8');
+header("Content-Transfer-Encoding: binary"); 
+header('Expires: '.gmdate('D, d M Y H:i:s').' GMT'); 
+header("Content-Disposition: attachment; filename=municipaliteties_list.xls");
+header("Pragma: no-cache");
 header("Expires: 0");
-header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-header("Cache-Control: private",false);
+ob_clean();
+flush();
 
-header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-header("Content-Disposition: attachment;filename=\"filename.xlsx\"");
+// application/octet-stream
+
+// header("Expires: 0");
+// header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+// header("Cache-Control: private",false);
+
+// header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+// header("Content-Disposition: attachment;filename=\"filename.xlsx\"");
+
+// header("Pragma: public");
+// header("Expires: 0");
+// header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+// header("Content-type: application/vnd.ms-excel;charset:UTF-8");
+// header("Content-Type: application/force-download");
+// header("Content-Type: application/octet-stream");
+// header("Content-Type: application/download");
+// header("Content-Disposition: attachment;filename=orderlist.xlsx ");
+// header("Content-Transfer-Encoding: binary ");
+
+// Shuchkin\SimpleXLSXGen::fromArray( $output )->downloadAs('municipaliteties_list.xlsx');
+
+
+// $file = "myfile.xlsx";
+// header('Content-disposition: attachment; filename='.$file);
+// header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+// header('Content-Length: ' . filesize($file));
+// header('Content-Transfer-Encoding: binary');
+// header('Cache-Control: must-revalidate');
+// header('Pragma: public');
+// ob_clean();
+// flush(); 
+// readfile($file);
+
+
 
 require_once 'connection.php';
 

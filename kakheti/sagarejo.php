@@ -762,14 +762,6 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Kakheti/Sagarejo.xlsx' : '/regions/municipal/კულტურა/კახეთი/საგარეჯო.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['2']; ?>
-                    </td>
-                    <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Pensioners/Kakheti/Sagarejo.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/პენსიის%20მიმღებები/კახეთი/საგარეჯო.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>

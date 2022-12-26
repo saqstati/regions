@@ -345,7 +345,7 @@ include "../config.php";
                         <?php echo $marriage['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/Kaspi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/Kaspi.xlsx' : '/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia6">
@@ -353,7 +353,7 @@ include "../config.php";
                         <?php echo $marriage['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/Kaspi.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/Kaspi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი%20რაოდენობა/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -763,7 +763,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['2']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/კულტურა/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Pensioners/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/პენსიის%20მიმღებები/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia20">
@@ -771,7 +771,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['3']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/კულტურა/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Recipients%20of%20Social%20Packages/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/სოციალური%20პაკეტის%20მიმღებთა%20რიცხოვნობა/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia20">
@@ -779,7 +779,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['4']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/კულტურა/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Socially%20Vulnerable/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/სოციალურად%20დაუცველი%20პირების%20წილი/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia20">
@@ -787,7 +787,7 @@ include "../config.php";
                         <?php echo $healthCareAndSocialSecurity['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20და%20საარსებო%20შემწეობის%20მიმღები%20ოჯახების%20რაოდენობა/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Living%20Allowance%20Families/Shida%20Kartli/Kaspi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20და%20საარსებო%20შემწეობის%20მიმღები%20ოჯახების%20რაოდენობა/შიდა%20ქართლი/კასპი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
