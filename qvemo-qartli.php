@@ -531,7 +531,7 @@ include "config.php";
                 $keyIndicator[$row['ID']] = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? $row['keyIndicatorsEn'] : $row['keyIndicators'];
                 $dataContent[$row['ID']] = $row['dataContent'];
             }
-            $query = mysqli_query($link, "select * from `regions` where ID = 8");
+            $query = mysqli_query($link, "select * from `regions` where ID = 7");
             $row = mysqli_fetch_array($query);
             
             
