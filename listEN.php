@@ -146,7 +146,7 @@ include "config.php";
     $item[$j++][0] = "The Number of Registered Business Entities (unit)";
 
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `regions` ORDER BY Name ASC");
+    $result = mysqli_query($link, "SELECT * FROM `regions`");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;
