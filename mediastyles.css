@@ -1070,3 +1070,12 @@
         margin-left: 199px;
     }
 }
+
+
+/* macbook air m2 2022 screen breakpoint size */
+
+@media screen and (max-width: 1468px) {
+    #mestiaSVG{
+        width: 742px;
+    }
+}
