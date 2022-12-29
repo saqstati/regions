@@ -768,10 +768,7 @@
 				M1507.92,1671.37215C1507.92,1665.87136,1503.43389,1661.41208,1497.9,1661.41208C1492.36611,1661.41208,1487.88,1665.87136,
 				1487.88,1671.37215C1487.88,1676.87295,1492.36611,1681.33222,1497.9,1681.33222C1503.43389,1681.33222,1507.92,1676.87295,1507.92,1671.37215
 				z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
-				M1556.88,1257.60914C1556.88,1252.10835,1552.39389,1247.64907,1546.86,1247.64907C1541.32611,1247.64907,1536.84,1252.10835
-				,1536.84,1257.60914C1536.84,1263.10994,1541.32611,1267.56922,1546.86,1267.56922C1552.39389,1267.56922,1556.88,1263.10994
-				,1556.88,1257.60914z"/>
+			
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1765.92,1229.52894C1765.92,1224.02814,1761.43389,1219.56887,1755.9,1219.56887C1750.36611,1219.56887,1745.88,1224.02814,
 				1745.88,1229.52894C1745.88,1235.02974,1750.36611,1239.48901,1755.9,1239.48901C1761.43389,1239.48901,1765.92,1235.02974,1765.92,1229.52894
@@ -841,7 +838,7 @@
 				</text>
 			</g>
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 1536.96 1239.48901)" >
+				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 1490.96 1239.48901)" >
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">ა</tspan>
 					<tspan direction="ltr" unicode-bidi="embed" x="0.41827 ">ს</tspan>
 					<tspan direction="ltr" unicode-bidi="embed" x="0.90385 ">პ</tspan>
