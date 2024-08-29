@@ -8,12 +8,12 @@ include "config.php";
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="http://www.geostat.ge/regions/" />
+    <meta property="og:url" content="http://regions.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით" />
     <meta property="og:description" content="ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით" />
-    <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
-    <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
+    <meta property="og:image" content="http://regions.geostat.ge/regions/images/regionsbanner1.png" />
+    <meta property="og:image:secure_url" content="http://regions.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
     <title class="tr" Key="PAGE_TITLE">ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით</title>
@@ -47,10 +47,16 @@ include "config.php";
         gtag('config', 'UA-154977204-1');
     </script>
 
+    <script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "90%"
+        }
+    </script>
+
 
 </head>
 
-<body>
+<body onload="zoom()">
     <div class="hidden">
         <script type="text/javascript">
             var images = new Array()
@@ -144,10 +150,12 @@ include "config.php";
     $item[$j++][0] = "შობადობის ზოგადი კოეფიციენტი (დაბადებულთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
     $item[$j++][0] = "გარდაცვლილთა რიცხოვნობა (კაცი)";
     $item[$j++][0] = "მოკვდაობის ზოგადი კოეფიციენტი (გარდაცვლილთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
+    $item[$j++][0] = "ბუნებრივი მატება (კაცი):";
     $item[$j++][0] = "დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი)";
     $item[$j++][0] = "დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი)";
     $item[$j++][0] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "აქტიური ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    $item[$j++][0] = "მოქმედი ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    $item[$j++][0] = "ახლადრეგის-</br>ტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
 
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");
@@ -163,10 +171,12 @@ include "config.php";
         $item[$j++][$i] = $row["GeneralBirthRate"];
         $item[$j++][$i] = $row["Dead"];
         $item[$j++][$i] = $row["GeneralMortalityRate"];
+        $item[$j++][$i] = $row["NaturalIncrease"];
         $item[$j++][$i] = $row["Employees"];
         $item[$j++][$i] = $row["AVGSalary"];
         $item[$j++][$i] = $row["RegEcSub"];
         $item[$j++][$i] = $row["ActEcSub"];
+        $item[$j++][$i] = $row["NewlyEcEnt"];
     }
 
     ?>
@@ -199,15 +209,16 @@ include "config.php";
 
     </div>
 
-    <?php 
-        $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_reg' : 'key_indicators_reg';
-        $query = mysqli_query($link, "select * from " . $tableRight);
-        while ($row = mysqli_fetch_array($query)) {
-            $dataHover[$row['ID']] = $row['dataHover'];
-        }
+    <?php
+    $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_reg' : 'key_indicators_reg';
+    $query = mysqli_query($link, "select * from " . $tableRight);
+    while ($row = mysqli_fetch_array($query)) {
+        $dataHover[$row['ID']] = $row['dataHover'];
+    }
     ?>
 
-    <?php // print_r($dataContent); exit; ?>
+    <?php // print_r($dataContent); exit; 
+    ?>
 
     <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
         <tbody id="cxrili">
@@ -224,8 +235,8 @@ include "config.php";
                         <?php } else if ($k == 0) { ?>
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <?php if($index <= 12) $index = $index + 1;  ?>
-                            <td title="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
+                            <?php if ($index <= 15) $index = $index + 1;  ?>
+                            <td title="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important; width: 131px; display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -256,7 +267,7 @@ include "config.php";
             }
             selected = $('#key_indicators').val();
             if (selected != '') $(".Row0").show();
-            for (j = 1; j <= 12; j++) {
+            for (j = 1; j <= 15; j++) {
                 if (!inArray(selected, j)) $(".Col" + j).hide();
             }
         });

@@ -42,7 +42,15 @@ let itemsToShow = {
   dziritadi20: "informacia20",
   dziritadi21: "informacia21",
   dziritadi22: "informacia22",
+  dziritadi31: "informacia31",
+  dziritadi32: "informacia32",
+  dziritadi33: "informacia33",
+  dziritadi34: "informacia34",
+  dziritadi35: "informacia35",
+  dziritadi36: "informacia36",
   dziritadiMain: "informaciaMain",
+  dziritadiMain2: "informacia11",
+  dziritadiMain20: "informaciaMain20",
 };
 
 function GetIdChange() {
@@ -72,6 +80,14 @@ function GetIdChange() {
       }
     }
   }
+  // const info11 = document.querySelectorAll(".info11");
+  // if (info11.style.display !== "none") {
+  //   info11.style.display === "none";
+  //   console.log("121111111111111");
+  // } else {
+  //   info11.style.display === "block";
+  // }
+  console.log(dziritadiel);
 }
 
 // let showDemografia = [dziritadi3];
@@ -86,6 +102,48 @@ function demografiaShow() {
     }
   }
 }
+
+function healthcareShow() {
+  for (let i = 20; i < 22; i++) {
+    var x = document.getElementById(`dziritadi${i}`);
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+}
+
+function registerShow() {
+  for (let i = 12; i < 15; i++) {
+    var x = document.getElementById(`dziritadi${i}`);
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  // var y = document.getElementsByClassName(`info11`);
+  // if(y.style.display === "block") {
+  //   y.style.display === "none"
+  // }else {
+  //   y.style.display === "block"
+
+  // }
+}
+// function registerShow() {
+//   for (let i = 12; i < 15; i++) {
+//     var x = document.getElementById(`dziritadi${i}`);
+//     var y = document.getElementsByClassName(`informacia${i}`);
+//     if (x.style.display === "block") {
+//       x.style.display = "none";
+
+//     } else {
+//       x.style.display = "block";
+//     }
+//   }
+// }
 
 // function samegrelo_function() {
 //   var x = document.getElementById("group2-zoomed");
@@ -165,11 +223,10 @@ function addbackcolor() {
   var element = document.getElementById("cxrili");
   element.classList.add("cxrili_style");
 
-
   var element = document.getElementById("displayNone");
   element.classList.remove("displayNone");
 }
 
 // function deleteDisplayNone() {
-  
+
 // }

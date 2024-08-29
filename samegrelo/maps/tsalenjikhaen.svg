@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!-- Creator: Esri ArcMap 10.9.1.28388 -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="2592pt" height="3456pt" viewBox="0 0 2592 3456" enable-background="new 0 0 2592 3456"
-	version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<g id="Layers">
 		<g id="municipal">
-			<path clip-path="url(#SVG_CP_1)" fill="#678dac" fill-rule="evenodd" stroke="none" d="M1626.12,268.32195L1641.84,259.44189
+			<path clip-path="url(#SVG_CP_1)" fill="#678dac" fill-rule="evenodd" stroke="none"
+				d="M1626.12,268.32195L1641.84,259.44189
 				L1654.44,258.12188L1654.68,258.12188L1656.96,257.88188L1676.76,254.40185L1704,257.40187L1728,266.76194L1730.76,269.04196
 				L1735.68,273.00199L1745.88,281.28205L1745.88,281.40205L1755.6,289.2021L1770.24,301.20219L1790.16,322.08234L1815.24,363.96265
 				L1822.44,395.76288L1825.32,397.80289L1825.44,397.92289L1825.56,398.04289L1850.52,416.16303L1884.84,439.08319L1885.44,439.4432
@@ -574,8 +575,10 @@
 				L1483.2,252.96184L1483.8,246.36179L1484.64,236.52172L1484.4,234.96171L1482.96,227.76166L1479,206.4015L1503.96,209.40152L
 				1526.4,213.48155L1536.12,219.3616L1536.36,219.4816L1536.6,219.6016L1539.48,221.40161L1546.44,226.92165L1548.6,228.60166L
 				1560.84,233.8817L1580.52,238.92174L1583.4,239.64174L1592.76,243.24177L1593.12,243.72177L1612.56,262.56191L1615.56,263.88192
-				L1620.24,265.80193L1626.12,268.32195z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				L1620.24,265.80193L1626.12,268.32195z" />
+			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96"
+				stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
+				d="
 				M1626.12,268.32195L1641.84,259.44189L1654.44,258.12188L1654.68,258.12188L1656.96,257.88188L1676.76,254.40185L1704,257.40187
 				L1728,266.76194L1730.76,269.04196L1735.68,273.00199L1745.88,281.28205L1745.88,281.40205L1755.6,289.2021L1770.24,301.20219
 				L1790.16,322.08234L1815.24,363.96265L1822.44,395.76288L1825.32,397.80289L1825.44,397.92289L1825.56,398.04289L1850.52,416.16303
@@ -722,8 +725,10 @@
 				L1574.04,2605.81894L1574.16,2606.05895L1574.4,2606.17895L1574.52,2606.29895L1574.52,2606.65895L1574.76,2606.89895L1575,2607.25896
 				L1575.24,2607.61896L1575.48,2607.85896L1575.48,2608.09896L1575.6,2608.45896L1575.72,2608.81897L1575.96,2609.05897L1576.32,2609.17897
 				L1576.68,2609.29897L1577.04,2609.29897L1577.16,2609.17897L1577.4,2609.05897L1577.64,2609.29897L1578,2609.29897L1578.24,2609.17897
-				L1578.84,2609.17897"/>
-			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				L1578.84,2609.17897" />
+			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96"
+				stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
+				d="
 				M1578.84,2609.17897L1579.32,2609.05897L1579.68,2608.81897L1579.92,2608.69897L1580.16,2608.57896L1580.28,2608.45896L1580.52,2608.21896
 				L1580.76,2608.09896L1581,2607.97896L1581.24,2607.85896L1581.48,2607.85896L1581.6,2607.85896L1581.84,2607.85896L1582.08,2607.85896
 				L1582.32,2607.73896L1582.68,2607.73896L1583.04,2607.73896L1583.4,2607.61896L1585.2,2607.13895L1585.44,2607.13895L1585.56,2607.13895
@@ -870,8 +875,10 @@
 				L1074.72,3202.46328L1073.28,3201.98328L1072.56,3200.78327L1072.2,3200.66327L1071.6,3201.26327L1070.16,3201.38327L1069.56,3201.86328
 				L1070.28,3203.90329L1071.36,3205.94331L1071.24,3207.74332L1071.12,3207.86332L1070.52,3209.18333L1069.8,3210.14334L1069.68,3210.26334
 				L1068.24,3211.34335L1067.76,3211.70335L1067.16,3212.30335L1066.8,3213.50336L1067.64,3214.22337L1067.76,3214.34337L1068,3214.58337
-				L1068.48,3214.94337"/>
-			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				L1068.48,3214.94337" />
+			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96"
+				stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
+				d="
 				M1068.48,3214.94337L1068.72,3215.66338L1068.48,3215.90338L1067.52,3216.74339L1065.24,3217.46339L1064.52,3217.70339L1063.56,3217.94339
 				L1062,3218.1834L1061.04,3218.0634L1060.92,3219.0234L1061.28,3219.62341L1061.52,3220.58341L1061.28,3222.14343L1061.4,3222.50343
 				L1061.4,3222.86343L1061.52,3223.70344L1061.4,3225.02345L1060.32,3225.38345L1059,3224.18344L1057.08,3223.46344L1055.64,3223.10343
@@ -1018,8 +1025,10 @@
 				L696.72,2266.69648L696,2267.05648L695.28,2267.65649L693.84,2269.2165L690.72,2271.61652L688.44,2274.01653L687.6,2274.13653
 				L686.88,2274.37654L685.56,2274.13653L684.6,2274.97654L681.12,2275.69654L677.88,2275.93655L672.36,2276.17655L668.52,2274.25653
 				L667.68,2274.73654L665.88,2274.97654L665.52,2275.09654L664.92,2275.45654L662.64,2275.93655L652.8,2278.45656L649.68,2281.33659
-				L645,2283.8566"/>
-			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				L645,2283.8566" />
+			<path clip-path="url(#SVG_CP_1)" fill="none" stroke="#000000" stroke-width="3.96"
+				stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
+				d="
 				M645,2283.8566L643.44,2283.7366L642,2284.45661L640.08,2285.29661L638.64,2285.77662L637.68,2286.13662L636.36,2286.37662L635.28,2287.33663
 				L630.84,2288.65664L628.44,2288.65664L626.04,2289.01664L621.6,2288.41664L619.56,2288.53664L615.96,2287.81663L612.96,2288.05663
 				L611.64,2288.05663L609.48,2288.05663L608.28,2288.29664L606.72,2289.13664L606,2290.21665L605.4,2290.45665L604.2,2290.45665
@@ -1151,136 +1160,195 @@
 				L1483.2,252.96184L1483.8,246.36179L1484.64,236.52172L1484.4,234.96171L1482.96,227.76166L1479,206.4015L1503.96,209.40152L
 				1526.4,213.48155L1536.12,219.3616L1536.36,219.4816L1536.6,219.6016L1539.48,221.40161L1546.44,226.92165L1548.6,228.60166L
 				1560.84,233.8817L1580.52,238.92174L1583.4,239.64174L1592.76,243.24177L1593.12,243.72177L1612.56,262.56191L1615.56,263.88192
-				L1620.24,265.80193L1626.12,268.32195"/>
+				L1620.24,265.80193L1626.12,268.32195" />
 		</g>
 		<g id="sattlements">
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1305.12,1445.17051C1305.12,1439.66971,1300.63389,1435.21043,1295.1,1435.21043C1289.56611,1435.21043,1285.08,1439.66971,
 				1285.08,1445.17051C1285.08,1450.6713,1289.56611,1455.13058,1295.1,1455.13058C1300.63389,1455.13058,1305.12,1450.6713,1305.12,1445.17051
-				z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1613.64,1902.07383C1613.64,1896.5399,1609.15389,1892.05376,1603.62,1892.05376C1598.08611,1892.05376,1593.6,1896.5399,1593.6,1902.07383
-				C1593.6,1907.60776,1598.08611,1912.0939,1603.62,1912.0939C1609.15389,1912.0939,1613.64,1907.60776,1613.64,1902.07383z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C1593.6,1907.60776,1598.08611,1912.0939,1603.62,1912.0939C1609.15389,1912.0939,1613.64,1907.60776,1613.64,1902.07383z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M939.6,1568.95141C939.6,1563.41747,935.11389,1558.93133,929.58,1558.93133C924.04611,1558.93133,919.56,1563.41747,919.56,1568.95141
-				C919.56,1574.48534,924.04611,1578.97148,929.58,1578.97148C935.11389,1578.97148,939.6,1574.48534,939.6,1568.95141z"/>
-		
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C919.56,1574.48534,924.04611,1578.97148,929.58,1578.97148C935.11389,1578.97148,939.6,1574.48534,939.6,1568.95141z" />
+
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1030.56,2815.88047C1030.56,2810.34654,1026.07389,2805.8604,1020.54,2805.8604C1015.00611,2805.8604,1010.52,2810.34654,1010.52,2815.88047
 				C1010.52,2821.41441,1015.00611,2825.90054,1020.54,2825.90054C1026.07389,2825.90054,1030.56,2821.41441,1030.56,2815.88047
-				z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M851.28,1404.55021C851.28,1399.01628,846.79389,1394.53014,841.26,1394.53014C835.72611,1394.53014,831.24,1399.01628,831.24,1404.55021
-				C831.24,1410.08414,835.72611,1414.57028,841.26,1414.57028C846.79389,1414.57028,851.28,1410.08414,851.28,1404.55021z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C831.24,1410.08414,835.72611,1414.57028,841.26,1414.57028C846.79389,1414.57028,851.28,1410.08414,851.28,1404.55021z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M977.28,2109.43534C977.28,2103.9014,972.82076,2099.41526,967.32,2099.41526C961.81924,2099.41526,957.36,2103.9014,957.36,2109.43534
-				C957.36,2114.96927,961.81924,2119.45541,967.32,2119.45541C972.82076,2119.45541,977.28,2114.96927,977.28,2109.43534z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C957.36,2114.96927,961.81924,2119.45541,967.32,2119.45541C972.82076,2119.45541,977.28,2114.96927,977.28,2109.43534z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M650.88,1901.95383C650.88,1896.41989,646.39389,1891.93375,640.86,1891.93375C635.32611,1891.93375,630.84,1896.41989,630.84,1901.95383
-				C630.84,1907.48776,635.32611,1911.9739,640.86,1911.9739C646.39389,1911.9739,650.88,1907.48776,650.88,1901.95383z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C630.84,1907.48776,635.32611,1911.9739,640.86,1911.9739C646.39389,1911.9739,650.88,1907.48776,650.88,1901.95383z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1313.04,2805.08039C1313.04,2799.54646,1308.55389,2795.06032,1303.02,2795.06032C1297.48611,2795.06032,1293,2799.54646,1293,2805.08039
-				C1293,2810.61433,1297.48611,2815.10047,1303.02,2815.10047C1308.55389,2815.10047,1313.04,2810.61433,1313.04,2805.08039z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C1293,2810.61433,1297.48611,2815.10047,1303.02,2815.10047C1308.55389,2815.10047,1313.04,2810.61433,1313.04,2805.08039z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1589.64,2072.53507C1589.64,2067.03427,1585.15389,2062.575,1579.62,2062.575C1574.08611,2062.575,1569.6,2067.03427,1569.6,2072.53507
 				C1569.6,2078.03586,1574.08611,2082.49514,1579.62,2082.49514C1585.15389,2082.49514,1589.64,2078.03586,1589.64,2072.53507z
-				"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1282.56,2000.11454C1282.56,1994.58061,1278.07389,1990.09447,1272.54,1990.09447C1267.00611,1990.09447,1262.52,1994.58061
 				,1262.52,2000.11454C1262.52,2005.64847,1267.00611,2010.13461,1272.54,2010.13461C1278.07389,2010.13461,1282.56,2005.64847
-				,1282.56,2000.11454z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				,1282.56,2000.11454z" />
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M789,2008.99461C789,2003.46067,784.51389,1998.97453,778.98,1998.97453C773.44611,1998.97453,768.96,2003.46067,768.96,2008.99461
-				C768.96,2014.52854,773.44611,2019.01468,778.98,2019.01468C784.51389,2019.01468,789,2014.52854,789,2008.99461z"/>
-			
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				C768.96,2014.52854,773.44611,2019.01468,778.98,2019.01468C784.51389,2019.01468,789,2014.52854,789,2008.99461z" />
+
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
 				M1519.32,2395.99742C1519.32,2390.46349,1514.86076,2385.97735,1509.36,2385.97735C1503.85924,2385.97735,1499.4,2390.46349,
 				1499.4,2395.99742C1499.4,2401.53135,1503.85924,2406.01749,1509.36,2406.01749C1514.86076,2406.01749,1519.32,2401.53135,1519.32,2395.99742
-				z"/>
+				z" />
+
+			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
+				M1519.32,2395.99742C1519.32,2390.46349,1514.86076,2385.97735,1509.36,2385.97735C1503.85924,2385.97735,1499.4,2390.46349,
+				1499.4,2395.99742C1499.4,2401.53135,1503.85924,2406.01749,1509.36,2406.01749C1514.86076,2406.01749,1519.32,2401.53135,1519.32,2395.99742
+				z"
+				transform="translate(-1800, -2330) scale(2.0)" />
 		</g>
 		<g id="sattlements_Anno_6">
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1290.9 1420.69033)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1290.9 1420.69033)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Chkvareli</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1603.68 1890.61375)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1603.68 1890.61375)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Medani</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 933.6 1544.29123)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 933.6 1544.29123)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Chale</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1130.4 1489.69083)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1130.4 1489.69083)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Jvari</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1020.72 2804.42039)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1020.72 2804.42039)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Obuji</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 841.32 1393.09013)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 841.32 1393.09013)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Muzhava</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 967.44 2087.53518)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 967.44 2087.53518)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Etseri</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 640.92 1879.93367)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 640.92 1879.93367)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Fakhulani</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1303.08 2793.62031)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1303.08 2793.62031)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Nakipu</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1579.68 2050.57491)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1579.68 2050.57491)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Jgali</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1272.6 1988.65446)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1272.6 1988.65446)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Sachino</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 779.04 1983.13442)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 779.04 1983.13442)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Lia</tspan>
-				
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 1089.92 2414.05755)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 1089.92 2414.05755)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Tsalenjikha</tspan>
-					
+
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1517.64 2387.89736)" >
+			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000"
+				clip-path="url(#SVG_CP_1)">
+				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 1517.64 2387.89736)">
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Mikava</tspan>
-					
+
 				</text>
 			</g>
 		</g>

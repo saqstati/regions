@@ -2,9 +2,9 @@
   background-image: url(../1600-900-optimized/5.jpg) !important;
 }
 g#layer5 {
-  transform: scale(1.9);
-  -webkit-transform-origin-x: 1350px;
-  -webkit-transform-origin-y: 1360px;
+  transform: scale(1.8);
+  -webkit-transform-origin-x: 1500px;
+  -webkit-transform-origin-y: 1516px;
 }
 
 #group5-zoomed {
@@ -41,15 +41,18 @@ g#layer5 {
   background-color: #b5568c !important;
 }
 
-#axalqalaqiSVG, #ninowmindaSVG, #akhaltsikheSVG, #aspindzaSVG {
-  width: 677px;
+#axalqalaqiSVG,
+#ninowmindaSVG,
+#akhaltsikheSVG,
+#aspindzaSVG {
+  width: 619px;
   margin-left: 19%;
   margin-top: -8%;
 }
 
-#borjomiSVG, #adigeniSVG {
-  width: 1058px;
+#borjomiSVG,
+#adigeniSVG {
+  width: 1000px;
   margin-left: 8%;
   margin-top: -5%;
 }
-

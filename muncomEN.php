@@ -10,13 +10,13 @@ include "config.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Comparison of the main indicators according to the municipalities of Georgia" />
-    <meta property="og:description" content="Comparison of the main indicators according to the municipalities of Georgia" />
+    <meta property="og:title" content="Comparison of Key Indicators by Municipalities of Georgia" />
+    <meta property="og:description" content="Comparison of Key Indicators by Municipalities of Georgia" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">Comparison of the main indicators according to the municipalities of Georgia</title>
+    <title class="tr" Key="PAGE_TITLE">Comparison of Key Indicators by Municipalities of Georgia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -84,7 +84,7 @@ include "config.php";
         </div>
         <header class="header1">
             <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">Comparison of the main indicators according to the municipalities of Georgia</p>
+                <p id="pagetitlename" class="tr" Key="REGION14">Comparison of Key Indicators by Municipalities of Georgia</p>
             </h1>
         </header>
         <div id="languages">
@@ -144,10 +144,12 @@ include "config.php";
     $item[$j++][0] = "Crude birth rate (per 1 000 population)";
     $item[$j++][0] = "Number of Death (persons)";
     $item[$j++][0] = "Crude death rate (per 1 000 population)";
+    $item[$j++][0] = "Natural Increase (persons)";
     $item[$j++][0] = "Employment level in Business Sector (thousand person)";
     $item[$j++][0] = "Average monthly remuneration of employed persons-in business sector (GEL)";
     $item[$j++][0] = "The Number of Registered Business Entities (units)";
     $item[$j++][0] = "Number of active economic subjects (units)";
+    $item[$j++][0] = "Number of newly registered economic entities (units):";
 
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");
@@ -163,17 +165,19 @@ include "config.php";
         $item[$j++][$i] = $row["GeneralBirthRate"];
         $item[$j++][$i] = $row["Dead"];
         $item[$j++][$i] = $row["GeneralMortalityRate"];
+        $item[$j++][$i] = $row["NaturalIncrease"];
         $item[$j++][$i] = $row["Employees"];
         $item[$j++][$i] = $row["AVGSalary"];
         $item[$j++][$i] = $row["RegEcSub"];
         $item[$j++][$i] = $row["ActEcSub"];
+        $item[$j++][$i] = $row["NewlyEcEnt"];
     }
 
     ?>
 
     <div class="selector">
         <div class="maps">
-            <span class="selector-text">Choose Municipaliteties</span>
+            <span class="selector-text">Choose Municipalities</span>
             <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;" onchange="alert('123')">
                 <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
                     <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
@@ -184,7 +188,7 @@ include "config.php";
         <!-- <br /> -->
 
         <div class="chart">
-            <span class="selector-text">Choose Key Indicators</span>
+            <span class="selector-text">Choose Indicators</span>
             <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
                 <?php foreach ($item as $x => $y) if ($x > 0) { ?>
                     <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>

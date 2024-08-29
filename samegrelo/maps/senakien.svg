@@ -2413,6 +2413,10 @@
 				1984.08,1756.15277C1984.08,1761.6867,1988.56611,1766.17284,1994.1,1766.17284C1999.63389,1766.17284,2004.12,1761.6867,2004.12,1756.15277
 				z"/>
 		
+				<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				M2004.12,1756.15277C2004.12,1750.61883,1999.63389,1746.13269,1994.1,1746.13269C1988.56611,1746.13269,1984.08,1750.61883,
+				1984.08,1756.15277C1984.08,1761.6867,1988.56611,1766.17284,1994.1,1766.17284C1999.63389,1766.17284,2004.12,1761.6867,2004.12,1756.15277
+				z" transform="translate(-2675, -1515) scale(2.0)"/>
 		</g>
 		<g id="sattlements1">
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="

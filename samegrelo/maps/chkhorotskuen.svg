@@ -2087,6 +2087,12 @@
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1308.12,1787.473C1308.12,1781.93906,1303.66076,1777.45292,1298.16,1777.45292C1292.65924,1777.45292,1288.2,1781.93906,1288.2,1787.473
 				C1288.2,1793.00693,1292.65924,1797.49307,1298.16,1797.49307C1303.66076,1797.49307,1308.12,1793.00693,1308.12,1787.473z"/>
+				<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
+				M1308.12,1787.473C1308.12,1781.93906,1303.66076,1777.45292,1298.16,1777.45292C1292.65924,1777.45292,1288.2,1781.93906,1288.2,1787.473
+				C1288.2,1793.00693,1292.65924,1797.49307,1298.16,1797.49307C1303.66076,1797.49307,1308.12,1793.00693,1308.12,1787.473z" transform="translate(-1700, -1100) scale(2.0)"/>
 		</g>
 		<g id="sattlements1">
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
@@ -2162,7 +2168,7 @@
 				</text>
 			</g>
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 7512.8 2441.2576)" >
+				<text text-anchor="start" transform="matrix(70.92 0 0 70.92036 730.8 2441.2576)" >
 					<tspan direction="ltr" unicode-bidi="embed" x="0 ">Chkhorotsku</tspan>
 					
 				</text>

@@ -41,13 +41,15 @@ g#layer8 {
   background-color: #66aba5 !important;
 }
 
-#marneuliSVG, #dmanisiSVG, #bolnisiSVG {
-  width: 964px;
-  margin-left: 9%;
-  margin-top: -29%;
+#marneuliSVG,
+#dmanisiSVG,
+#bolnisiSVG {
+  width: 803px;
+  margin-left: 11%;
+  margin-top: -22%;
 }
 
-#bolnisiSVG{
+#bolnisiSVG {
   margin-top: -1% !important;
 }
 
@@ -59,7 +61,7 @@ g#layer8 {
 }
 
 #gardabaniSVG {
-  width: 629px;
-  margin-left: 12%;
+  width: 551px;
+  margin-left: 17%;
   margin-top: -5%;
 }

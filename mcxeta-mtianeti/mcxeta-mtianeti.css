@@ -2,9 +2,9 @@
     background-image: url(../1600-900-optimized/11.jpg) !important;
 }
 g#layer5 {
-    transform: scale(1.8);
-    -webkit-transform-origin-x: 2519px;
-    -webkit-transform-origin-y: 836px;
+    transform: scale(1.6);
+    -webkit-transform-origin-x: 2796px;
+    -webkit-transform-origin-y: 995px;
 }
 
 #group5-zoomed {
@@ -41,23 +41,25 @@ g#layer5 {
     background-color: #b5568c !important;
 }
 
-#dushetiSVG, #tianetiSVG {
-    width: 676px;
-    margin-top: -115px;
-    margin-left: 199px;
+#dushetiSVG,
+#tianetiSVG {
+    width: 592px;
+    margin-top: -85px;
+    margin-left: 267px;
 }
 
-#yazbegiSVG{
-    width: 1154px;
+#yazbegiSVG {
+    width: 1099px;
+    margin-left: 35px;
     margin-top: -104px;
 }
-#mcxetaSVG{
-    width: 1100px;
+#mcxetaSVG {
+    width: 970px;
     margin-left: 82px;
     margin-top: -27px;
 }
 
-.map-box{
+.map-box {
     max-width: 1050px;
     margin-left: 55px;
 }

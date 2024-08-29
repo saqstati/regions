@@ -45,11 +45,16 @@ include "config.php";
 
         gtag('config', 'UA-154977204-1');
     </script>
+    <script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "90%"
+        }
+    </script>
 
 
 </head>
 
-<body>
+<body onload="zoom()">
     <div class="hidden">
         <script type="text/javascript">
             var images = new Array()
@@ -137,6 +142,9 @@ include "config.php";
     $item[$j++][0] = "";
     $item[$j++][0] = "ფართობი (კვ.კმ)";
     $item[$j++][0] = "მოსახლეობის რიცხოვნობა (ათასი)";
+    $item[$j++][0] = "ცოცხლად დაბადებულთა რიცხოვნობა (კაცი):";
+    $item[$j++][0] = "გარდაცვლილთა რიცხოვნობა (კაცი):";
+    $item[$j++][0] = "ბუნებრივი მატება (კაცი):";
     $item[$j++][0] = "მთლიანი შიდა პროდუქტი (მლნ. ლარი)";
     $item[$j++][0] = "მთლიანი შიდა პროდუქტი ერთ სულ მოსახლეზე (აშშ დოლარი)";
     $item[$j++][0] = "უმუშევრობის დონე (%)";
@@ -144,15 +152,20 @@ include "config.php";
     $item[$j++][0] = "დასაქმებულთა რაოდენობა - ბიზნეს სექტორში (ათასი კაცი)";
     $item[$j++][0] = "დასაქმებულთა საშუალოთვიური ხელფასი - ბიზნეს სექტორში (ლარი)";
     $item[$j++][0] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    $item[$j++][0] = "მოქმედი ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    $item[$j++][0] = "ახლადრეგის-</br>ტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
 
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `regions` ORDER BY Name ASC");
+    $result = mysqli_query($link, "SELECT * FROM `regionsaz`");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;
         $item[$j++][$i] = $row["Name"];
         $item[$j++][$i] = $row["Area"];
         $item[$j++][$i] = $row["Population"];
+        $item[$j++][$i] = $row["liveBirth"];
+        $item[$j++][$i] = $row["death"];
+        $item[$j++][$i] = $row["naturalIncrease"];
         $item[$j++][$i] = $row["GDP"];
         $item[$j++][$i] = $row["GDPPerCapita"];
         $item[$j++][$i] = $row["UnemploymentRate"];
@@ -160,6 +173,8 @@ include "config.php";
         $item[$j++][$i] = $row["EmploymentRateIndustry"];
         $item[$j++][$i] = $row["AverageSalaryIndustry"];
         $item[$j++][$i] = $row["RegistredEntities"];
+        $item[$j++][$i] = $row["activeEntities"];
+        $item[$j++][$i] = $row["newlyRegistredEntities"];
     }
 
     ?>
@@ -192,17 +207,17 @@ include "config.php";
 
     </div>
 
-    <?php 
-        $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators' : 'key_indicators';
-        $query = mysqli_query($link, "select * from " . $tableRight);
-        while ($row = mysqli_fetch_array($query)) {
-            $dataHover[$row['ID']] = $row['dataHover'];
-        }
+    <?php
+    $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators' : 'key_indicators';
+    $query = mysqli_query($link, "select * from " . $tableRight);
+    while ($row = mysqli_fetch_array($query)) {
+        $dataHover[$row['ID']] = $row['dataHover'];
+    }
     ?>
 
     <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
         <tbody id="cxrili">
-        <?php $index = 0; ?>
+            <?php $index = 0; ?>
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
                     <?php foreach ($v as $l => $b) { ?>
@@ -215,8 +230,8 @@ include "config.php";
                         <?php } else if ($k == 0) { ?>
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
-                            <?php if($index <= 12) $index = $index + 1;  ?>
-                            <td title="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important;display:none;"><?php echo $b; ?></td>
+                            <?php if ($index <= 15) $index = $index + 1;  ?>
+                            <td title="" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important; width: 131px; display:none;"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -230,8 +245,8 @@ include "config.php";
 
     <div id="displayNone" class="download center displayNone">
 
-            <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button>
-      
+        <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button>
+
     </div>
 
 
@@ -247,7 +262,7 @@ include "config.php";
             }
             selected = $('#key_indicators').val();
             if (selected != '') $(".Row0").show();
-            for (j = 1; j <= 12; j++) {
+            for (j = 1; j <= 15; j++) {
                 if (!inArray(selected, j)) $(".Col" + j).hide();
             }
         });

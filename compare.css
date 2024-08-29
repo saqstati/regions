@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header img {
+    max-height: 50px;
+}
+
+#languages img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.recommendation p {
+    margin: 0;
+}
+
+.recommendation a img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.selector .form-group {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table .bg-black {
+    background-color: #343a40;
+    color: #fff;
+}
+
+#download-section button {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}

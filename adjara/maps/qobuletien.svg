@@ -1892,6 +1892,11 @@
 				M850.43508,1346.10201C850.43508,1340.56811,845.949,1336.08199,840.41513,1336.08199C834.88127,1336.08199,830.39519,1340.56811
 				,830.39519,1346.10201C830.39519,1351.63591,834.88127,1356.12202,840.41513,1356.12202C845.949,1356.12202,850.43508,1351.63591
 				,850.43508,1346.10201z"/>
+
+				<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.95999" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				M850.43508,1346.10201C850.43508,1340.56811,845.949,1336.08199,840.41513,1336.08199C834.88127,1336.08199,830.39519,1340.56811
+				,830.39519,1346.10201C830.39519,1351.63591,834.88127,1356.12202,840.41513,1356.12202C845.949,1356.12202,850.43508,1351.63591
+				,850.43508,1346.10201z" transform="translate(-965, -1833) scale(2.0)"/>
 		</g>
 		<g id="sattlements1">
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.95999" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
@@ -1906,11 +1911,7 @@
 				M1230.71287,977.46146C1230.71287,971.92756,1226.25366,967.44144,1220.75293,967.44144C1215.25221,967.44144,1210.79299,971.92756
 				,1210.79299,977.46146C1210.79299,982.99536,1215.25221,987.48147,1220.75293,987.48147C1226.25366,987.48147,1230.71287,982.99536
 				,1230.71287,977.46146z"/>
-			<g font-family="'ESRI Default Marker'" font-size="1" kerning="0" font-weight="400" fill="#FF0000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(29.99983 0 0 30.00005 651.71623 836.04125)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">!</tspan>
-				</text>
-			</g>
+		
 		</g>
 		<g id="sattlements_Anno_5">
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >

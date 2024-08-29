@@ -83,24 +83,13 @@ include "../config.php";
             <a href="samtredia.php?lang=ka" id="ka" class="lang"><img src="../images/ka.png" /></a>
             <a href="samtredia.php?lang=en" id="en" class="lang"><img src="../images/en.png" /></a>
         </div>
-        <div id="recommendation">
-            <span class="tr" Key="RECTEXT1">
-                <?php echo $lang['RECTEXT1'] ?>
-            </span>
-            <br>
-            <span class="tr" Key="RECTEXT2">
-                <?php echo $lang['RECTEXT2'] ?>
-            </span>
-            <a href="http://www.google.com/chrome/"><img src="../images/chrome-100.png" /></a>
-            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="../images/firefox-100.png" /></a>
-            <a href="http://www.opera.com/"><img src="../images/opera-100.png" /></a>
-        </div>
+        
         <div class="display-flex">
             <a class="back-btn btn textbox-left-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../imereti.php?lang=en' : '../imereti.php?lang=ka'; ?>"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
 
-            <a class="regions-btn btn textbox-right-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Compare Regions' : 'რეგიონების შედარება'; ?></span></a>
+            <a class="regions-btn btn textbox-right-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?></span></a>
 
-            <a class="btn textbox-right-home regions-mun regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../muncomEN.php?lang=en' : '../muncom.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Compare Municipaliteties' : 'მუნიციპალიტეტების შედარება'; ?></span></a>
+            <a class="btn textbox-right-home regions-mun regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../muncomEN.php?lang=en' : '../muncom.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?></span></a>
         </div>
 
         <table class="machveneblebi-left">
@@ -123,6 +112,7 @@ include "../config.php";
                 $accordingToTheTypesOfActivities[$row['ID']] = $row['accordingToTheTypesOfActivities'];
                 $AccordingToTheFormsOfOwnership[$row['ID']] = $row['AccordingToTheFormsOfOwnership'];
                 $accordingToOrganizationalLegalForms[$row['ID']] = $row['accordingToOrganizationalLegalForms'];
+                $budget[$row['ID']] = $row['budget'];
                 $agriculture[$row['ID']] = $row['agriculture'];
                 $construction[$row['ID']] = $row['construction'];
                 $trading[$row['ID']] = $row['trading'];
@@ -228,7 +218,7 @@ include "../config.php";
                         <?php echo $birth['5']; ?>
                     </td>
                     <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia3">
@@ -236,7 +226,23 @@ include "../config.php";
                         <?php echo $birth['6']; ?>
                     </td>
                     <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['7']; ?>
+                    </td>
+                    <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/მკვდრადშობილთა%20რიცხოვნობა/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia3">
+                    <td>
+                        <?php echo $birth['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Imereti/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -288,12 +294,35 @@ include "../config.php";
                         <?php echo $death['7']; ?>
                     </td>
                     <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                    <tr class="informacia4">
+                    <td>
+                        <?php echo $death['8']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20by%20urban-rural%20settlements/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20საქალაქო%20სასოფლო/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['9']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20by%20age%20groups/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/მიზეზები%20ძირითადი%20კლასების%20და%20ასაკის%20მიხედვით/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia4">
+                    <td>
+                        <?php echo $death['10']; ?>
+                    </td>
+                    <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Deaths%20from%20suicide/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr class="informacia4">
                     <td>
-                        <?php echo $death['8']; ?>
+                        <?php echo $death['11']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Suicide%20rate/Samtredia.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
@@ -531,8 +560,16 @@ include "../config.php";
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Investments%20in%20fixed%20assets/Imereti/Samtredia.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/ინვესტიციები/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
+                <style>
+                    #dziritadi12,
+                    #dziritadi13,
+                    #dziritadi14 {
+                        display: none;
+                        margin-left: 20px;
+                    }
+                </style>
                 <tr>
-                    <td id="dziritadi11" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessRegister['1']; ?>
+                    <td id="dziritadiMain2" title="" onclick="GetIdChange(); registerShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $businessRegister['1']; ?>
                     </td>
                 </tr>
                 <tr class="informacia11">
@@ -607,6 +644,14 @@ include "../config.php";
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOwnershipType/Number%20of%20active%20entities%20by%20ownership%20type%20and%20size/Imereti/Samtredia.xlsx' : '/regions/municipal/საკუთრების%20ფორმების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20საკუთრების%20ფორმებისა%20და%20ზომების%20მიხედვით/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
+                <tr class="informacia13">
+                    <td>
+                        <?php echo $AccordingToTheFormsOfOwnership['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOwnershipType/Number%20of%20entities%20newly%20registered%20in%20Georgia%20by%20ownership%20type/Imereti/Samtredia.xlsx' : '/regions/municipal/საკუთრების%20ფორმების%20მიხედვით/ახლადრეგისტრირებულ%20სუბიექტთა%20რაოდენობა/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
                 <tr>
                     <td id="dziritadi14" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $accordingToOrganizationalLegalForms['1']; ?>
                     </td>
@@ -625,6 +670,19 @@ include "../config.php";
                     </td>
                     <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOrganization-legalForms/Number%20of%20active%20entities%20by%20organizational-legal%20form/Imereti/Samtredia.xlsx' : '/regions/municipal/ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვ/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia14">
+                    <td>
+                        <?php echo $accordingToOrganizationalLegalForms['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byOrganization-legalForms/Number%20of%20entities%20newly%20registered%20in%20Georgia%20by%20organizational-legal%20form/Imereti/Samtredia.xlsx' : '/regions/municipal/ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/ახლადრეგისტრირებულ%20სუბიექტთა%20რაოდენობა/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $budget['1']; ?>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Budget/Imereti/Samtredia%20Municipality.xlsx' : '/regions/municipal/ბიუჯეტი/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
                 <tr>
@@ -753,47 +811,31 @@ include "../config.php";
                     <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/TransportAndStorage/Length%20of%20transport%20ways/Imereti/Samtredia%20Municipality.xlsx' : '/regions/municipal/ტრანსპორტი%20და%20დასაწყობება/საერთო%20სარგებლობის%20საავტომობილო%20გზების%20სიგრძე/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
+                <style>
+                    #dziritadi20,
+                    #dziritadi21 {
+                        display: none;
+                        margin-left: 20px;
+                    }
+                </style>
                 <tr>
-                    <td id="dziritadi20" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['1']; ?>
-                    </td>
+                    <td id="dziritadiMain20" title="" onclick="GetIdChange(); healthcareShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['1'] ?></td>
                 </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['2']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Pensioners/Imereti/Samtredia.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/პენსიის%20მიმღებები/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['3']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Recipients%20of%20Social%20Packages/Imereti/Samtredia.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/სოციალური%20პაკეტის%20მიმღებთა%20რიცხოვნობა/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['4']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Socially%20Vulnerable/Imereti/Samtredia.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/სოციალურად%20დაუცველი%20პირების%20წილი/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                    </td>
-                </tr>
-                <tr class="informacia20">
-                    <td>
-                        <?php echo $healthCareAndSocialSecurity['5']; ?>
-                    </td>
-                    <td>
-                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Living%20Allowance%20Families/Imereti/Samtredia.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20და%20საარსებო%20შემწეობის%20მიმღები%20ოჯახების%20რაოდენობა/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                <tr>
+                    <td id="dziritadi20" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['2']; ?>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Imereti/Samtredia.xlsx' : '/regions/municipal/ჯანდაცვა/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
-                    <td id="dziritadi21" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?>
+                    <td id="dziritadi21" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['11']; ?>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Imereti/Samtredia.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia21">
+                <tr>
+                    <td id="dziritadi22" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?>
+                    </td>
+                </tr>
+                <tr class="informacia22">
                     <td>
                         <?php echo $education['2']; ?>
                     </td>
@@ -801,12 +843,20 @@ include "../config.php";
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/Preschool%20and%20Education%20Institutions/Imereti/Samtredia.xlsx' : '/regions/municipal/განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
-                <tr class="informacia21">
+                <tr class="informacia22">
                     <td>
                         <?php echo $education['3']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/General%20Educational%20Institution/Imereti/Samtredia.xlsx' : '/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/იმერეთი/სამტრედია.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    </td>
+                </tr>
+                <tr class="informacia22">
+                    <td>
+                        <?php echo $education['4']; ?>
+                    </td>
+                    <td>
+                        <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Imereti/Samtredia.xlsx' : '/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                     </td>
                 </tr>
                 <tr>
@@ -867,82 +917,29 @@ include "../config.php";
                     <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[9]; ?>"><?php echo $keyIndicator[9]; ?><span class="float-right"><?php echo $row['GeneralMortalityRate']; ?></span> </td>
                 </tr>
                 <tr>
-                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[10]; ?>"><?php echo $keyIndicator[10]; ?><span class="float-right"><?php echo $row['Employees']; ?></span> </td>
+                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[10]; ?>"><?php echo $keyIndicator[10]; ?><span class="float-right"><?php echo $row['NaturalIncrease']; ?></span> </td>
                 </tr>
                 <tr>
-                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[11]; ?>"><?php echo $keyIndicator[11]; ?><span class="float-right"><?php echo $row['AVGSalary']; ?></span> </td>
+                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[11]; ?>"><?php echo $keyIndicator[11]; ?><span class="float-right"><?php echo $row['Employees']; ?></span> </td>
                 </tr>
                 <tr>
-                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[12]; ?>"><?php echo $keyIndicator[12]; ?><span class="float-right"><?php echo $row['RegEcSub']; ?></span> </td>
+                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[12]; ?>"><?php echo $keyIndicator[12]; ?><span class="float-right"><?php echo $row['AVGSalary']; ?></span> </td>
                 </tr>
                 <tr>
-                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[13]; ?>"><?php echo $keyIndicator[13]; ?><span class="float-right"><?php echo $row['ActEcSub']; ?></span> </td>
+                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[13]; ?>"><?php echo $keyIndicator[13]; ?><span class="float-right"><?php echo $row['RegEcSub']; ?></span> </td>
+                </tr>
+                <tr>
+                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[14]; ?>"><?php echo $keyIndicator[14]; ?><span class="float-right"><?php echo $row['ActEcSub']; ?></span> </td>
+                </tr>
+                <tr>
+                    <td title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<?php echo $dataContent[15]; ?>"><?php echo $keyIndicator[15]; ?><span class="float-right"><?php echo $row['NewlyEcEnt']; ?></span> </td>
                 </tr>
             </tbody>
             <?php
 
             ?>
         </table>
-
-
-
-
-        <footer>
-            <div>
-                <div>
-                    <div id="fb-root"></div>
-                    <script>
-                        (function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));
-                    </script>
-                    <div class="fb-share-button" data-href="http://geostat.ge/regions/" data-layout="button" data-mobile-iframe="false">
-                        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"></a>
-                    </div>
-                    <style media="screen" type="text/css">
-                        .fb_iframe_widget span {
-                            vertical-align: baseline !important;
-                            /* width: 27px !important; */
-                            overflow: hidden !important;
-                            border-radius: 3px;
-                        }
-
-                        #twitter-widget-0 {
-                            /* width: 23px !important; */
-                            overflow: hidden !important;
-                            border-radius: 3px;
-                        }
-                    </style>
-                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet"></a>
-                    <script>
-                        window.twttr = (function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                t = window.twttr || {};
-                            if (d.getElementById(id)) return t;
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = "https://platform.twitter.com/widgets.js";
-                            fjs.parentNode.insertBefore(js, fjs);
-                            t._e = [];
-                            t.ready = function(f) {
-                                t._e.push(f);
-                            };
-                            return t;
-                        }(document, "script", "twitter-wjs"));
-                    </script>
-                </div>
-            </div>
-            <span class="tr" key="COPYRIGHT1"><?php echo $lang['COPYRIGHT1'] ?></span>
-            <br>
-            <span class="tr" key="COPYRIGHT2"><?php echo $lang['COPYRIGHT2'] ?></span><br>
-
-            <span class="tr" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi"><?php echo $lang['COPYRIGHT3'] ?></a></span>
-        </footer>
+        <?php include '../footer_mun.php' ?>
 
         <script src="../script.js"></script>
         <script type="text/javascript" src="../lang.js"></script>

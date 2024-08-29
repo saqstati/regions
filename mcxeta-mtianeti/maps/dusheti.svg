@@ -2064,15 +2064,17 @@
 				M721.56,1978.21438C721.56,1972.71359,717.07389,1968.25431,711.54,1968.25431C706.00611,1968.25431,701.52,1972.71359,701.52,1978.21438
 				C701.52,1983.71518,706.00611,1988.17445,711.54,1988.17445C717.07389,1988.17445,721.56,1983.71518,721.56,1978.21438z"/>
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
-				M1013.52,2523.01834C1013.52,2517.51755,1009.03389,2513.05827,1003.5,2513.05827C997.96611,2513.05827,993.48,2517.51755,993.48,2523.01834
-				C993.48,2528.51914,997.96611,2532.97842,1003.5,2532.97842C1009.03389,2532.97842,1013.52,2528.51914,1013.52,2523.01834z"/>
-			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M2061,522.5438C2061,517.00987,2056.51389,512.52373,2050.98,512.52373C2045.44611,512.52373,2040.96,517.00987,2040.96,522.5438
 				C2040.96,528.07773,2045.44611,532.56387,2050.98,532.56387C2056.51389,532.56387,2061,528.07773,2061,522.5438z"/>
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1982.76,1466.95067C1982.76,1461.41673,1978.30076,1456.93059,1972.8,1456.93059C1967.29924,1456.93059,1962.84,1461.41673,
 				1962.84,1466.95067C1962.84,1472.4846,1967.29924,1476.97074,1972.8,1476.97074C1978.30076,1476.97074,1982.76,1472.4846,1982.76,1466.95067
 				z"/>
+
+				<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				M1982.76,1466.95067C1982.76,1461.41673,1978.30076,1456.93059,1972.8,1456.93059C1967.29924,1456.93059,1962.84,1461.41673,
+				1962.84,1466.95067C1962.84,1472.4846,1967.29924,1476.97074,1972.8,1476.97074C1978.30076,1476.97074,1982.76,1472.4846,1982.76,1466.95067
+				z"  transform="translate(-3000, -195) scale(2.0)"/>
 		</g>
 		<g id="sattlements_Anno_4">
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
@@ -2244,17 +2246,7 @@
 					<tspan direction="ltr" unicode-bidi="embed" x="3.80532 ">ი</tspan>
 				</text>
 			</g>
-			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >
-				<text text-anchor="start" transform="matrix(49.92 0 0 49.92036 801.78 2511.73826)" >
-					<tspan direction="ltr" unicode-bidi="embed" x="0 ">ჟ</tspan>
-					<tspan direction="ltr" unicode-bidi="embed" x="0.45673 ">ი</tspan>
-					<tspan direction="ltr" unicode-bidi="embed" x="1.00722 ">ნ</tspan>
-					<tspan direction="ltr" unicode-bidi="embed" x="1.4928 ">ვ</tspan>
-					<tspan direction="ltr" unicode-bidi="embed" x="1.97838 ">ა</tspan>
-					<tspan direction="ltr" unicode-bidi="embed" x="2.39665 ">ლ</tspan>
-					<tspan direction="ltr" unicode-bidi="embed" x="3.33656 ">ი</tspan>
-				</text>
-			</g>
+			
 		</g>
 		
 	</g>

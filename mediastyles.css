@@ -26,6 +26,7 @@
     }
     footer {
         display: none;
+		width: 100%;
     }
     .zoom-out {
         display: none;
@@ -54,7 +55,7 @@
         font-size: 13px;
     }
     .header1 h1 {
-        font-size: 27px;
+        font-size: 25px;
     }
     .zoom-out {
         font-size: 12px;
@@ -116,6 +117,9 @@
         margin: 8px;
         margin-left: 17px;
     }
+    svg {
+        width: 60%;
+      }
 }
 @media screen and (max-width: 1280px) {
     table thead tr th {
@@ -128,7 +132,7 @@
         font-size: 11px;
     }
     .header1 h1 {
-        font-size: 22px;
+        font-size: 18px;
     }
     .zoom-out {
         font-size: 10px;
@@ -202,7 +206,7 @@
         font-size: 10px;
     }
     .header1 h1 {
-        font-size: 16px;
+        font-size: 12px;
     }
     .zoom-out {
         font-size: 8px;
@@ -276,10 +280,11 @@
         font-size: 9px;
     }
     .header1 h1 {
-        font-size: 13px;
+        font-size: 8px;
     }
     footer {
-        font-size: 13px;
+        font-size: 8px;
+		width: 100%;
     }
     .zoom-out {
         font-size: 7px;
@@ -353,10 +358,11 @@
         font-size: 8px;
     }
     .header1 h1 {
-        font-size: 10px;
+        font-size: 8px;
     }
     footer {
-        font-size: 10px;
+        font-size: 7px;
+		width: 100%;
     }
     .zoom-out {
         font-size: 7px;
@@ -433,7 +439,8 @@
         font-size: 7px;
     }
     footer {
-        font-size: 9px;
+        font-size: 7px;
+		width: 100%;
     }
     .zoom-out {
         font-size: 6px;
@@ -519,7 +526,8 @@
         font-size: 6px;
     }
     footer {
-        font-size: 8px;
+        font-size: 7px;
+		width: 100%;
     }
     .zoom-out {
         font-size: 5.7px;
@@ -607,7 +615,8 @@
         font-size: 5px;
     }
     footer {
-        font-size: 5px;
+        font-size: 4px;
+		width: 100%;
     }
     .zoom-out {
         font-size: 5.7px;
@@ -682,7 +691,7 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1600px) {
     g.layer1 {
         transform: scale(1.1) !important;
         -webkit-transform-origin-x: 4100px !important;
@@ -690,7 +699,7 @@
     }
 
     #mestiaSVG {
-        width: 716px;
+        width: 852px;
         margin-left: 0.54%;
         margin-top: -14%;
     }
@@ -735,15 +744,15 @@
         -webkit-transform-origin-x: 12500px !important;
         -webkit-transform-origin-y: 3936px !important;
     }
-
+/* 
     g#layer9 {
         transform: scale(1.1);
         -webkit-transform-origin-x: 15500px;
         -webkit-transform-origin-y: 5100px;
-    }
+    } */
 }
 
-@media screen and (max-width: 1468px) {
+@media screen and (max-width: 1600px) {
     g#layer6 {
         transform: scale(1.3);
         -webkit-transform-origin-x: 2650px;
@@ -809,9 +818,9 @@
     }
 
     g.layer1 {
-        transform: scale(1.1) !important;
-        -webkit-transform-origin-x: 4100px !important;
-        -webkit-transform-origin-y: 1746px !important;
+        transform: scale(0.9) !important;
+        -webkit-transform-origin-x: -1500px !important;
+        -webkit-transform-origin-y: -1500px !important;
     }
     g#layer2 {
         transform: scale(2.2);
@@ -855,20 +864,20 @@
     }
 
     g#layer9 {
-        transform: scale(1.1);
-        -webkit-transform-origin-x: 15500px;
-        -webkit-transform-origin-y: 5100px;
+        transform: scale(0.8);
+        -webkit-transform-origin-x: -4500px;
+        -webkit-transform-origin-y: -1600px;
     }
 
     #svg4380 {
         margin-left: 35px !important;
     }
 
-    #mestiaSVG {
+    /* #mestiaSVG {
         width: 826px;
         margin-left: 0.54%;
         margin-top: -14%;
-    }
+    } */
 
     #tsalenjikhaSVG {
         width: 423px;
@@ -1074,10 +1083,8 @@
 
 /* macbook air m2 2022 screen breakpoint size */
 
-@media screen and (max-width: 1468px) {
-    #mestiaSVG{
-        width: 742px;
-    }
+@media screen and (max-width: 1600px) {
+
     .textbox-right-home{
         width: 175px;
     }
@@ -1085,6 +1092,14 @@
         width: 230px;
     }
     #pagetitlename {
-        font-size: 20px;
+        font-size: 1.5vw;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .mun {
+        margin-top: 25px;
     }
 }

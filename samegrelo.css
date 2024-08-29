@@ -28,7 +28,6 @@
 
 .map-box {
   height: unset !important;
-
   position: absolute !important;
   left: 15% !important;
   right: 50% !important;
@@ -48,9 +47,9 @@
 }
 
 g#layer1 {
-  transform: scale(1.5);
-  -webkit-transform-origin-x: 1000px;
-  -webkit-transform-origin-y: 422px;
+  transform: scale(1.4);
+  -webkit-transform-origin-x: 1095px;
+  -webkit-transform-origin-y: 551px;
 }
 
 g#poti {
@@ -146,6 +145,7 @@ g#poti {
   width: 17% !important;
   float: left;
   margin-left: 25px;
+  margin-bottom: 92px;
 }
 
 .machveneblebi-left td,
@@ -181,7 +181,15 @@ g#poti {
 #dziritadi20,
 #dziritadi21,
 #dziritadi22,
-#dziritadiMain {
+#dziritadi31,
+#dziritadi32,
+#dziritadi33,
+#dziritadi34,
+#dziritadi35,
+#dziritadi36,
+#dziritadiMain,
+#dziritadiMain2,
+#dziritadiMain20 {
   font-weight: bolder;
   background: url("https://cdn-icons-png.flaticon.com/512/32/32195.png") no-repeat;
   background-size: 18px 18px !important;
@@ -223,6 +231,12 @@ g#poti {
 .informacia20,
 .informacia21,
 .informacia22,
+.informacia31,
+.informacia32,
+.informacia33,
+.informacia34,
+.informacia35,
+.informacia36,
 .informaciaMain {
   display: none;
   justify-content: space-between;
@@ -252,6 +266,12 @@ g#poti {
 .informacia20:hover,
 .informacia21:hover,
 .informacia22:hover,
+.informacia31:hover,
+.informacia32:hover,
+.informacia33:hover,
+.informacia34:hover,
+.informacia35:hover,
+.informacia36:hover,
 #dziritadi1:hover,
 #dziritadi2:hover,
 #dziritadi3:hover,
@@ -275,7 +295,15 @@ g#poti {
 #dziritadi20:hover,
 #dziritadi21:hover,
 #dziritadi22:hover,
-#dziritadiMain:hover {
+#dziritadi31:hover,
+#dziritadi32:hover,
+#dziritadi33:hover,
+#dziritadi34:hover,
+#dziritadi35:hover,
+#dziritadi36:hover,
+#dziritadiMain:hover,
+#dziritadiMain2:hover,
+#dziritadiMain20:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
 }
@@ -303,6 +331,12 @@ tr.informacia19:hover,
 tr.informacia20:hover,
 tr.informacia21:hover,
 tr.informacia22:hover,
+tr.informacia31:hover,
+tr.informacia32:hover,
+tr.informacia33:hover,
+tr.informacia34:hover,
+tr.informacia35:hover,
+tr.informacia36:hover,
 tr.informaciaMain:hover {
   background-color: #f5f5f5 !important;
   border-bottom: 1px solid #ddd !important;
@@ -331,6 +365,12 @@ tr.informacia19,
 tr.informacia20,
 tr.informacia21,
 tr.informacia22,
+tr.informacia31,
+tr.informacia32,
+tr.informacia33,
+tr.informacia34,
+tr.informacia35,
+tr.informacia36,
 tr.informaciaMain {
   border-bottom: 1px solid #ddd !important;
 }
@@ -340,7 +380,8 @@ tr.informaciaMain {
   margin-left: 76px;
 }
 
-#dziritadi8 {
+#dziritadi8,
+#dziritadi31 {
   display: none;
   margin-left: 20px;
 }
@@ -352,20 +393,20 @@ tr.informaciaMain {
 }
 
 #chxorowyuSVG {
-  width: 642px;
+  width: 560px;
   margin-left: 24%;
   margin-top: -5%;
 }
 
 #xobiSVG {
-  width: 743px;
+  width: 692px;
   margin-left: 19%;
   margin-top: -15%;
 }
 
 #martviliSVG {
-  width: 683px;
-  margin-left: 19%;
+  width: 595px;
+  margin-left: 29%;
   margin-top: -9%;
 }
 
@@ -376,27 +417,27 @@ tr.informaciaMain {
 }
 
 #senakiSVG {
-  width: 826px;
+  width: 713px;
   margin-left: 15%;
   margin-top: -15%;
 }
 
 #tsalenjikhaSVG {
-  width: 677px;
-  margin-left: 19%;
+  width: 600px;
+  margin-left: 26%;
   margin-top: -9%;
 }
 
 #zugdidiSVG {
-  width: 898px;
+  width: 837px;
   margin-left: 10%;
   margin-top: -23%;
 }
 
 #potiSVG {
-  width: 618px;
-  margin-left: 12%;
-  margin-top: -7%;
+  width: 552px;
+  margin-left: 21%;
+  margin-top: -5%;
 }
 
 #tbilisiSVG {
@@ -409,4 +450,16 @@ tr.informaciaMain {
   font-weight: bolder;
   background-size: 18px 18px !important;
   background-position: 96% 50% !important;
+}
+
+.copyright_text {
+  font-size: 11px;
+}
+
+.footer_img {
+  width: 150px;
+}
+
+.footer_img_undp {
+  height: 60px;
 }

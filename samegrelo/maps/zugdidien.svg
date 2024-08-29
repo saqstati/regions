@@ -2451,6 +2451,13 @@
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M2275.68,904.32657C2275.68,898.82578,2271.22076,894.3665,2265.72,894.3665C2260.21924,894.3665,2255.76,898.82578,2255.76,904.32657
 				C2255.76,909.82737,2260.21924,914.28665,2265.72,914.28665C2271.22076,914.28665,2275.68,909.82737,2275.68,904.32657z"/>
+				<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000"
+				stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round"
+				stroke-linejoin="round"
+				d="
+				M2275.68,904.32657C2275.68,898.82578,2271.22076,894.3665,2265.72,894.3665C2260.21924,894.3665,2255.76,898.82578,2255.76,904.32657
+				C2255.76,909.82737,2260.21924,914.28665,2265.72,914.28665C2271.22076,914.28665,2275.68,909.82737,2275.68,904.32657z" 
+				transform="translate(-2780, -260) scale(2.0)"/>
 		</g>
 		<g id="sattlements_Anno_5">
 			<g font-family="'Sylfaen'" font-size="1" kerning="0" font-weight="700" fill="#000000" clip-path="url(#SVG_CP_1)" >

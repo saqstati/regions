@@ -1135,6 +1135,11 @@
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
 				M1703.16,814.02592C1703.16,808.49199,1698.67389,804.00585,1693.14,804.00585C1687.60611,804.00585,1683.12,808.49199,1683.12,814.02592
 				C1683.12,819.55985,1687.60611,824.04599,1693.14,824.04599C1698.67389,824.04599,1703.16,819.55985,1703.16,814.02592z"/>
+
+				
+				<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
+				M1703.16,814.02592C1703.16,808.49199,1698.67389,804.00585,1693.14,804.00585C1687.60611,804.00585,1683.12,808.49199,1683.12,814.02592
+				C1683.12,819.55985,1687.60611,824.04599,1693.14,824.04599C1698.67389,824.04599,1703.16,819.55985,1703.16,814.02592z" transform="translate(-2530, -705) scale(2.0)"/>
 		</g>
 		<g id="sattlements1">
 			<path clip-path="url(#SVG_CP_1)" fill="#FF0000" fill-rule="evenodd" stroke="#000000" stroke-width="0.96" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" d="
