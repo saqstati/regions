@@ -682,7 +682,7 @@ include "../config.php";
                 </tr>
                 <tr>
                     <td id="withoutArrow" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $budget['1']; ?>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Budget/Imereti/Sachkhere%20Municipality.xlsx' : '/regions/municipal/ბიუჯეტი/იმერეთი/საჩხერე%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Budget/Imereti/Sachkhere%20Municipality.xlsx' : '/regions/municipal/ბიუჯეტი/იმერეთი/საჩხერის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                     </td>
                 </tr>
                 <tr>

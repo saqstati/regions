@@ -95,7 +95,7 @@ include "config.php";
 			<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png" /><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 694.6 ათასი</span></div>
 			<div id="textbox3"><img class="indic-icons" src="images/line-chart-200-r.png" /><span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: 7.5%</span></div>
 			<div id="textbox4"><img class="indic-icons" src="images/user-200-y.png" /><span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 8218.8 აშშ დოლარი</span></div>
-			<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 1.8%</span></div>
+			<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 0.6%</span></div>
 			<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 16.4%</span></div>
 			<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 847 097</span></div>
 		</div>
@@ -792,7 +792,7 @@ include "config.php";
 				$('.textboxspan2').attr('data-content', 'By January 1, 2024');
 				$('.textboxspan3').attr('data-content', 'Preliminary data of 2023');
 				$('.textboxspan4').attr('data-content', 'Preliminary data of 2023');
-				$('.textboxspan5').attr('data-content', 'Annual by July, 2024');
+				$('.textboxspan5').attr('data-content', 'Annual by September, 2024');
 				$('.textboxspan6').attr('data-content', 'Data of 2023');
 				$('.textboxspan7').attr('data-content', 'By January 1, 2023');
 				$('#brand-logo-link img').attr('src', 'images/logo_transparency_eng.png');
@@ -805,7 +805,7 @@ include "config.php";
 				$('.textboxspan2').attr('data-content', '2024 წლის 1 იანვრის მდგომარეობით');
 				$('.textboxspan3').attr('data-content', '2023 წლის წინასწარი მონაცემები');
 				$('.textboxspan4').attr('data-content', '2023 წლის წინასწარი მონაცემები');
-				$('.textboxspan5').attr('data-content', 'წლიური (2024 წლის ივლისის მდგომარეობით)');
+				$('.textboxspan5').attr('data-content', 'წლიური (2024 წლის სექტემბრის მდგომარეობით)');
 				$('.textboxspan6').attr('data-content', '2023 წლის მიხედვით');
 				$('.textboxspan7').attr('data-content', '2023 წლის 1 იანვრის მდგომარეობით');
 				$('#brand-logo-link img').attr('src', 'images/logo_transparency_geo.png');
@@ -840,7 +840,7 @@ include "config.php";
 			$('.textboxspan5').popover({
 				html: true,
 				animation: true,
-				content: 'წლიური (2024 წლის ივლისის მდგომარეობით)',
+				content: 'წლიური (2024 წლის სექტემბრის მდგომარეობით)',
 				placement: 'right'
 			});
 			$('.textboxspan6').popover({
