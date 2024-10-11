@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost", "root", "Ana2013Mari", "geostat_regions");
+$link = mysqli_connect("localhost", "root", "", "geostat_regions");
 $link->query("SET CHARACTER SET utf8");
 
 

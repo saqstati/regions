@@ -768,6 +768,10 @@ table tbody tr td img:after {
   width: 250px;
 }
 
+.genders-btn{
+  margin-right: 440px;
+}
+
 .regions-btn {
   color: #fff;
   text-decoration: none;
