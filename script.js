@@ -230,3 +230,54 @@ function addbackcolor() {
 // function deleteDisplayNone() {
 
 // }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to get URL parameters
+  function getURLParameter(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+    var results = regex.exec(location.search);
+    return results === null
+      ? ""
+      : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  // Function to update URLs based on municipality and language
+  function updateMunicipalityLinks() {
+    // Get current language and page name from the URL
+    var lang = getURLParameter("lang");
+    var pageName = window.location.pathname.split("/").pop().split(".")[0]; // Extract the page name (e.g., "batumi", "qeda")
+
+    // Define a mapping for URLs
+    var urlMapping = {
+      batumi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/C.%20Batumi.xlsx",
+      },
+      qeda: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Keda.xlsx",
+      },
+      // Add more municipalities as needed...
+    };
+
+    // Determine the current municipality and language
+    var currentMunicipality = urlMapping[pageName]
+      ? urlMapping[pageName][lang]
+      : null;
+
+    // Update the links if the municipality is found
+    if (currentMunicipality) {
+      document.getElementById("linkBirths").href = currentMunicipality;
+    } else {
+      console.error(
+        "Municipality or language not found in data:",
+        pageName,
+        lang
+      );
+    }
+  }
+
+  // Call the function to update the table on page load
+  updateMunicipalityLinks();
+});
