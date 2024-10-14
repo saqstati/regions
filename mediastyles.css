@@ -26,7 +26,7 @@
     }
     footer {
         display: none;
-		width: 100%;
+        width: 100%;
     }
     .zoom-out {
         display: none;
@@ -45,6 +45,58 @@
     }
 }
 @media screen and (max-width: 1600px) {
+    g.layer1 {
+        transform: scale(1.1) !important;
+        -webkit-transform-origin-x: 4100px !important;
+        -webkit-transform-origin-y: 1746px !important;
+    }
+
+    #mestiaSVG {
+        width: 852px;
+        margin-left: 0.54%;
+        margin-top: -14%;
+    }
+
+    g#layer2 {
+        transform: scale(2.2);
+        -webkit-transform-origin-x: 840px;
+        -webkit-transform-origin-y: 1005px;
+    }
+
+    g#layer3 {
+        transform: scale(2.2);
+        -webkit-transform-origin-x: 781px;
+        -webkit-transform-origin-y: 1330px;
+    }
+
+    g#layer7 {
+        transform: scale(1.7);
+        -webkit-transform-origin-x: 1728px;
+        -webkit-transform-origin-y: 690px;
+    }
+
+    g#layer5 {
+        transform: scale(1.4);
+        -webkit-transform-origin-x: 2420px;
+        -webkit-transform-origin-y: 2420px;
+    }
+
+    g#layer12 {
+        transform: scale(2);
+        -webkit-transform-origin-x: 1954px;
+        -webkit-transform-origin-y: 1131px;
+    }
+
+    g#layer8 {
+        transform: scale(1.4);
+        -webkit-transform-origin-x: 3600px;
+        -webkit-transform-origin-y: 2417px;
+    }
+    g.layer11 {
+        transform: scale(1.1) !important;
+        -webkit-transform-origin-x: 12500px !important;
+        -webkit-transform-origin-y: 3936px !important;
+    }
     table thead tr th {
         font-size: 18px;
     }
@@ -119,7 +171,7 @@
     }
     svg {
         width: 60%;
-      }
+    }
 }
 @media screen and (max-width: 1280px) {
     table thead tr th {
@@ -269,22 +321,73 @@
         margin-left: 12px;
     }
 }
+@media screen and (max-width: 900px) {
+    svg {
+        width: 40% !important;
+    }
+    .display-flex {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: stretch; /* Make buttons take full width */
+    }
+
+    .btn {
+        text-align: center; /* Center-align text */
+        margin-bottom: 10px; /* Add space between buttons */
+        width: 100%; /* Make buttons take full width */
+    }
+    
+    #svg4380 {
+        width: 100%;
+        height: auto;
+        max-width: 1000px; /* You can set a max width if needed */
+    }
+    .btn.textbox-left-home {
+        margin-top: 0;
+    }
+    #pagetitlename {
+        font-size: 16px;
+    }
+    .machveneblebi-left,
+    .machveneblebi-left td,
+    .machveneblebi-left tr,
+    .machveneblebi-right td,
+    .machveneblebi-right tr {
+        font-size: 8px !important;
+    }
+    .textbox-right-home {
+        width: 20% !important;
+        top: unset !important;
+        font-size: 8px !important;
+    }
+    .textbox-left-home {
+        font-size: 8px;
+    }
+    .map-box {
+        height: unset !important;
+        position: absolute !important;
+        left: 20% !important;
+    }
+    footer .tr b {
+        font-size: 8px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     table thead tr th {
-        font-size: 12px;
+        font-size: 8px;
     }
     table tr th {
-        font-size: 9px;
+        font-size: 8px;
     }
     table tbody tr td div {
-        font-size: 9px;
+        font-size: 8px;
     }
     .header1 h1 {
         font-size: 8px;
     }
     footer {
         font-size: 8px;
-		width: 100%;
+        width: 100%;
     }
     .zoom-out {
         font-size: 7px;
@@ -362,7 +465,7 @@
     }
     footer {
         font-size: 7px;
-		width: 100%;
+        width: 100%;
     }
     .zoom-out {
         font-size: 7px;
@@ -440,7 +543,7 @@
     }
     footer {
         font-size: 7px;
-		width: 100%;
+        width: 100%;
     }
     .zoom-out {
         font-size: 6px;
@@ -527,7 +630,7 @@
     }
     footer {
         font-size: 7px;
-		width: 100%;
+        width: 100%;
     }
     .zoom-out {
         font-size: 5.7px;
@@ -616,7 +719,7 @@
     }
     footer {
         font-size: 4px;
-		width: 100%;
+        width: 100%;
     }
     .zoom-out {
         font-size: 5.7px;
@@ -689,70 +792,6 @@
         margin: 4.1px;
         margin-left: 5px;
     }
-}
-
-@media screen and (max-width: 1600px) {
-    g.layer1 {
-        transform: scale(1.1) !important;
-        -webkit-transform-origin-x: 4100px !important;
-        -webkit-transform-origin-y: 1746px !important;
-    }
-
-    #mestiaSVG {
-        width: 852px;
-        margin-left: 0.54%;
-        margin-top: -14%;
-    }
-
-    g#layer2 {
-        transform: scale(2.2);
-        -webkit-transform-origin-x: 840px;
-        -webkit-transform-origin-y: 1005px;
-    }
-
-    g#layer3 {
-        transform: scale(2.2);
-        -webkit-transform-origin-x: 781px;
-        -webkit-transform-origin-y: 1330px;
-    }
-
-    g#layer7 {
-        transform: scale(1.7);
-        -webkit-transform-origin-x: 1728px;
-        -webkit-transform-origin-y: 690px;
-    }
-
-    g#layer5 {
-        transform: scale(1.4);
-        -webkit-transform-origin-x: 2420px;
-        -webkit-transform-origin-y: 2420px;
-    }
-
-    g#layer12 {
-        transform: scale(2);
-        -webkit-transform-origin-x: 1954px;
-        -webkit-transform-origin-y: 1131px;
-    }
-
-    g#layer8 {
-        transform: scale(1.4);
-        -webkit-transform-origin-x: 3600px;
-        -webkit-transform-origin-y: 2417px;
-    }
-    g.layer11 {
-        transform: scale(1.1) !important;
-        -webkit-transform-origin-x: 12500px !important;
-        -webkit-transform-origin-y: 3936px !important;
-    }
-/* 
-    g#layer9 {
-        transform: scale(1.1);
-        -webkit-transform-origin-x: 15500px;
-        -webkit-transform-origin-y: 5100px;
-    } */
-}
-
-@media screen and (max-width: 1600px) {
     g#layer6 {
         transform: scale(1.3);
         -webkit-transform-origin-x: 2650px;
@@ -872,12 +911,6 @@
     #svg4380 {
         margin-left: 35px !important;
     }
-
-    /* #mestiaSVG {
-        width: 826px;
-        margin-left: 0.54%;
-        margin-top: -14%;
-    } */
 
     #tsalenjikhaSVG {
         width: 423px;
@@ -1078,24 +1111,18 @@
         margin-top: -73px;
         margin-left: 199px;
     }
-}
 
-
-/* macbook air m2 2022 screen breakpoint size */
-
-@media screen and (max-width: 1600px) {
-
-    .textbox-right-home{
+    .textbox-right-home {
         width: 175px;
     }
-    .regions-mun{
+    .regions-mun {
         width: 255px;
     }
     #pagetitlename {
         font-size: 1.5vw;
     }
 
-    footer{
+    footer {
         width: 100%;
     }
 

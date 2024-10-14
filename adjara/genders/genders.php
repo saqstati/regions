@@ -88,7 +88,7 @@ include "../../config.php";
             </div>
 
             <div class="display-flex">
-                <a class="back-btn btn textbox-left-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../batumi.php?lang=en' : '../batumi.php?lang=ka'; ?>"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+                <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
 
                 <a class="regions-btn btn textbox-right-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../listEN.php' : '../../list.php'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?></span></a>
 
