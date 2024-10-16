@@ -26,7 +26,7 @@ include "../../config.php";
     <link rel="stylesheet" type="text/css" href="../../samegrelo.css">
     <link rel="stylesheet" type="text/css" href="../../adjara/adjara.css">
     <link rel="stylesheet" type="text/css" href="../../custom.css">
-    <link rel="stylesheet" type="text/css" href="../../genders.scss">
+    <link rel="stylesheet" type="text/css" href="../../genders.css">
     <link rel="stylesheet" href="../../mediastyles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
@@ -340,52 +340,53 @@ include "../../config.php";
                 </table>
             </div>
         </div>
-        <?php include '../../footer_mun.php' ?>
+    </div>
+    <?php include '../../footer_mun.php' ?>
 
-        <script src="../../script.js"></script>
-        <script src="../../genders.js"></script>
-        <script type="../../text/javascript" src="lang.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                function updatePageTitleAndMeta() {
+    <script src="../../script.js"></script>
+    <script src="../../genders.js"></script>
+    <script type="../../text/javascript" src="lang.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function updatePageTitleAndMeta() {
 
-                    var municipality = localStorage.getItem("municipal");
-                    var lang = '<?php echo (isset($_GET['lang']) ? $_GET['lang'] : "ka"); ?>';
+                var municipality = localStorage.getItem("municipal");
+                var lang = '<?php echo (isset($_GET['lang']) ? $_GET['lang'] : "ka"); ?>';
 
 
-                    if (municipality) {
-                        var pageTitle = "";
-                        var ogTitle = "";
-                        var ogDescription = "";
+                if (municipality) {
+                    var pageTitle = "";
+                    var ogTitle = "";
+                    var ogDescription = "";
 
-                        switch (municipality) {
-                            case "batumi":
-                                pageTitle = lang === "en" ? "Statistical Information on Batumi Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ბათუმის მუნიციპალიტეტის შესახებ";
-                                ogTitle = "Statistical Information on Batumi Municipality, Adjara Region";
-                                ogDescription = "Statistical Information on Batumi Municipality, Adjara Region";
-                                break;
-                            case "qeda":
-                                pageTitle = lang === "en" ? "Statistical Information on Keda Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქედის მუნიციპალიტეტის შესახებ";
-                                ogTitle = "Statistical Information on Keda Municipality, Adjara Region";
-                                ogDescription = "Statistical Information on Keda Municipality, Adjara Region";
-                                break;
-                            default:
-                                pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";
-                                ogTitle = "Default OG Title";
-                                ogDescription = "Default description.";
-                        }
-
-                        document.title = pageTitle;
-                        document.getElementById("og-title").setAttribute("content", ogTitle);
-                        document.getElementById("og-description").setAttribute("content", ogDescription);
-                        document.getElementById("pagetitlename").textContent = pageTitle;
+                    switch (municipality) {
+                        case "batumi":
+                            pageTitle = lang === "en" ? "Statistical Information on Batumi Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ბათუმის მუნიციპალიტეტის შესახებ";
+                            ogTitle = "Statistical Information on Batumi Municipality, Adjara Region";
+                            ogDescription = "Statistical Information on Batumi Municipality, Adjara Region";
+                            break;
+                        case "qeda":
+                            pageTitle = lang === "en" ? "Statistical Information on Keda Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქედის მუნიციპალიტეტის შესახებ";
+                            ogTitle = "Statistical Information on Keda Municipality, Adjara Region";
+                            ogDescription = "Statistical Information on Keda Municipality, Adjara Region";
+                            break;
+                        default:
+                            pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";
+                            ogTitle = "Default OG Title";
+                            ogDescription = "Default description.";
                     }
+
+                    document.title = pageTitle;
+                    document.getElementById("og-title").setAttribute("content", ogTitle);
+                    document.getElementById("og-description").setAttribute("content", ogDescription);
+                    document.getElementById("pagetitlename").textContent = pageTitle;
                 }
+            }
 
 
-                updatePageTitleAndMeta();
-            });
-        </script>
+            updatePageTitleAndMeta();
+        });
+    </script>
 </body>
 
 </html>
