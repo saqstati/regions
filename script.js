@@ -227,12 +227,7 @@ function addbackcolor() {
   element.classList.remove("displayNone");
 }
 
-// function deleteDisplayNone() {
-
-// }
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to get URL parameters
   function getURLParameter(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
@@ -242,13 +237,11 @@ document.addEventListener("DOMContentLoaded", function () {
       : decodeURIComponent(results[1].replace(/\+/g, " "));
   }
 
-  // Function to update URLs based on municipality and language
   function updateMunicipalityLinks() {
-    // Get current language and page name from the URL
-    var lang = getURLParameter("lang");
-    var pageName = window.location.pathname.split("/").pop().split(".")[0]; // Extract the page name (e.g., "batumi", "qeda")
+    var pageName = localStorage.getItem("municipal");
 
-    // Define a mapping for URLs
+    var lang = getURLParameter("lang");
+
     var urlMapping = {
       batumi: {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქ.%20ბათუმი.xlsx",
@@ -261,12 +254,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add more municipalities as needed...
     };
 
-    // Determine the current municipality and language
     var currentMunicipality = urlMapping[pageName]
       ? urlMapping[pageName][lang]
       : null;
 
-    // Update the links if the municipality is found
     if (currentMunicipality) {
       document.getElementById("linkBirths").href = currentMunicipality;
     } else {
@@ -278,6 +269,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Call the function to update the table on page load
   updateMunicipalityLinks();
 });

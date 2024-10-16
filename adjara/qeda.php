@@ -91,7 +91,7 @@ include "../config.php";
 
             <a class="btn textbox-right-home regions-mun regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../muncomEN.php?lang=en' : '../muncom.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?></span></a>
 
-            <a class="btn textbox-right-home regions-mun regions-btn genders-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '.../adjara/genders/genders.php?lang=en' : '../adjara/genders/genders.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators.' : 'მაჩვენებლები გენდერულ ჭრილში'; ?></span></a>
+            <a class="btn textbox-right-home regions-mun regions-btn genders-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../adjara/genders/genders.php?lang=en' : '../adjara/genders/genders.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators.' : 'მაჩვენებლები გენდერულ ჭრილში'; ?></span></a>
         </div>
         <table class="machveneblebi-left">
             <?php
@@ -944,6 +944,9 @@ include "../config.php";
 
         <script src="../script.js"></script>
         <script type="../text/javascript" src="lang.js"></script>
+        <script>
+            localStorage.setItem('municipal', 'qeda');
+        </script>
 </body>
 
 </html>
