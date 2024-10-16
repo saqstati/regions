@@ -164,7 +164,7 @@ include "../../config.php";
                             </td>
                             <td>
                                 <span class="float-right">
-                                    <a id="linkRatio" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>">
+                                    <a id="linkRatio" href="#">
                                         <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
@@ -176,7 +176,7 @@ include "../../config.php";
                             </td>
                             <td>
                                 <span class="float-right">
-                                    <a id="linkStillbirths" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>">
+                                    <a id="linkStillbirths" href="#">
                                         <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
@@ -184,22 +184,6 @@ include "../../config.php";
                         </tr>
                         <tr>
                             <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $death['1']; ?>
-                            </td>
-                        </tr>
-                        <tr class="informacia4">
-                            <td>
-                                <?php echo $death['2']; ?>
-                            </td>
-                            <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                            </td>
-                        </tr>
-                        <tr class="informacia4">
-                            <td>
-                                <?php echo $death['3']; ?>
-                            </td>
-                            <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20death%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia4">
@@ -475,6 +459,7 @@ include "../../config.php";
         <?php include '../../footer_mun.php' ?>
 
         <script src="../../script.js"></script>
+        <script src="../../genders.js"></script>
         <script type="../../text/javascript" src="lang.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
