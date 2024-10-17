@@ -50,10 +50,6 @@ include "../../config.php";
 
             <div class="display-flex">
                 <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
-
-                <a class="regions-btn btn textbox-right-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../listEN.php' : '../../list.php'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?></span></a>
-
-                <a class="btn textbox-right-home regions-mun regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../muncomEN.php?lang=en' : '../../muncom.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?></span></a>
             </div>
 
             <div class="center">
@@ -110,6 +106,18 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkRatio" href="#">
+                                        <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia3">
+                            <td>
+                                <span id="birth6"><?php echo $birth['6']; ?></span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="motherAge" href="#">
                                         <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>

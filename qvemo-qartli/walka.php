@@ -314,7 +314,7 @@ include "../config.php";
                 </tr>
                 <tr class="informacia4">
                     <td>
-                        <?php echo $death['7']; ?>
+                        <?php echo $death['10']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Deaths%20from%20suicide/Tsalka.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/წალკა.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
@@ -322,7 +322,7 @@ include "../config.php";
                 </tr>
                 <tr class="informacia4">
                     <td>
-                        <?php echo $death['8']; ?>
+                        <?php echo $death['11']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Suicide%20rate/Tsalka.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/წალკა.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>

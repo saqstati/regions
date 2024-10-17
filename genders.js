@@ -26,6 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Keda.xlsx",
       },
     },
+    ageMother: {
+      batumi: {
+        ka: "/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/C.%20Batumi.xlsx",
+      },
+      qeda: {
+        ka: "/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Keda.xlsx",
+      },
+    },
     stillbirths: {
       batumi: {
         ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
@@ -79,12 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const birthLink = getLink("births", pageName, lang);
     const ratioLink = getLink("ratio", pageName, lang);
+    const ageMotherLink = getLink("ageMother", pageName, lang);
     const stillbirthLink = getLink("stillbirths", pageName, lang);
     const death4Link = getLink("deathagesex", pageName, lang);
     const death7Link = getLink("deathclases", pageName, lang);
 
     updateLink("linkBirths", birthLink);
     updateLink("linkRatio", ratioLink);
+    updateLink("motherAge", ageMotherLink);
     updateLink("linkStillbirths", stillbirthLink);
     updateLink("linkdeathagesex", death4Link);
     updateLink("linkdeathclases", death7Link);

@@ -322,7 +322,7 @@ include "../config.php";
                 </tr>
                 <tr class="informacia4">
                     <td>
-                        <?php echo $death['10']; ?>
+                        <?php echo $death['11']; ?>
                     </td>
                     <td>
                         <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Suicide%20rate/Akhaltsikhe.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/ახალციხე.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
