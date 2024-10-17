@@ -4,8 +4,8 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 // Set the page title based on the current page
 if ($current_page == 'adjara.php') {
     $page_title = $lang['adjaratitlename']; // Change this to the appropriate key for the Qeda title
-} else {
-    $page_title = $lang['batumititlename']; // Default to Batumi title
+} else if ($current_page ==  'adjara.php') {
+    $page_title = $lang['adjaratitlename']; // Default to Batumi title
 }
 
 // Determine the language URLs based on the current page
@@ -43,7 +43,7 @@ $lang_url_en = ($current_page == 'adjara.php') ? 'adjara.php?lang=en' : 'batumi.
     <div class="d-flex justify-content-between">
         <!-- Back Button on the left -->
         <div>
-            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../adjara.php?lang=en' : '../adjara.php?lang=ka'; ?>">
+            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../index.php?lang=en' : '../index.php?lang=ka'; ?>">
                 <span class="tr" Key="backBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?>
                 </span>

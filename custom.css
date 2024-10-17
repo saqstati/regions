@@ -814,3 +814,14 @@ a#b {
   border-color: #cb744c !important;
   color: white;
 }
+
+.index-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  width: 18%;
+}
+
+.index-btn:hover {
+  background-color: red;
+}

@@ -17,10 +17,13 @@ include "config.php";
 	<meta property="og:image:width" content="740" />
 	<meta property="og:image:height" content="450" />
 	<title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია საქართველოს რეგიონებისა და მუნიციპალიტეტების მიხედვით</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Bootstrap 5.3.0 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Bootstrap 5.3.0 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 	<link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link rel="stylesheet" href="mediastyles.css">
@@ -68,26 +71,46 @@ include "config.php";
 	</div>
 	<div id="background-main" class="background-image"></div>
 	<div class="main-container">
-		<div id="brand-logo">
-			<a href="/regions/index.php" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
-		</div>
-		<header class="header1">
-			<h1>
-				<p id="pagetitlename" class="tr" Key="REGION14">სტატისტიკური ინფორმაცია საქართველოს რეგიონებისა და მუნიციპალიტეტების მიხედვით</p>
-			</h1>
-		</header>
-		<div id="languages">
-			<a href="#" id="ka" class="lang"><img src="images/ka.png" /></a>
-			<a href="#" id="en" class="lang"><img src="images/en.png" /></a>
-			<input id="chosenlang" type="hidden" value="ka">
-		</div>
+		<div class="container">
+			<div class="d-flex align-items-center justify-content-between mb-4">
+				<!-- Brand Logo on the left -->
+				<div id="brand-logo" class="me-3">
+					<a href="index.php" id="brand-logo-link">
+						<img src="images/logo_transparency_geo.png" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
+					</a>
+				</div>
 
+				<!-- Page Title centered -->
+				<h1 id="pagetitlename" class="tr mx-auto" Key="REGION14" style="font-size: 20px; text-align: center; flex-grow: 1;">
+					სტატისტიკური ინფორმაცია საქართველოს რეგიონებისა და მუნიციპალიტეტების მიხედვით
+				</h1>
 
-		<a class="regions-btn btn textbox-right-home" href="list.php"> <span class="tr" Key="regionsBtn">რეგიონების შედარება</span></a>
+				<!-- Languages on the right -->
+				<div id="languages" class="d-flex">
+					<a href="#" id="ka" class="lang me-2">
+						<img src="images/ka.png" alt="Georgian Language" class="img-fluid" style="width: 25px; height: auto;" />
+					</a>
+					<a href="#" id="en" class="lang">
+						<img src="images/en.png" alt="English Language" class="img-fluid" style="width: 25px; height: auto;" />
+					</a>
+					<input id="chosenlang" type="hidden" value="ka">
+				</div>
+			</div>
 
-		<a class="regions-btn textbox-right-home mun" href="muncom.php"> <span class="tr" Key="municipalBtn">მუნიციპალიტეტების შედარება</span></a>
+			<!-- Buttons for region and municipality comparison -->
+			<div class="d-flex flex-column align-items-end">
+				<a class="regions-btn btn index-btn btn-sm mb-2" href="list.php">
+					<span class="tr" Key="regionsBtn">რეგიონების შედარება</span>
+				</a>
 
-		<div class="btn btn-md zoom-out"><span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
+				<a class="regions-btn btn index-btn btn-sm mb-2" href="muncom.php">
+					<span class="tr" Key="municipalBtn">მუნიციპალიტეტების შედარება</span>
+				</a>
+
+				<div class="btn btn-md btn-secondary zoom-out btn-sm index-btn">
+					<span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
+				</div>
+			</div>
 		</div>
 
 		<div id="textbox">
@@ -111,12 +134,12 @@ include "config.php";
 			    z-index:99;
 			}
 		</style> -->
-		<div>
+		<div class="container">
 			<div class="col-md-2">
 				<div class="side-box1" id="resultleftbox">
 				</div>
 			</div>
-			<div class="col-md-8 no-padding">
+			<div class="col-md-8 no-padding container">
 				<div class="map-box">
 					<svg id="svg4380" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1943.8392 1029.9621" version="1.1">
 						<g id="layer1">
