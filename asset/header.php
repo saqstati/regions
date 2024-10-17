@@ -2,15 +2,15 @@
 $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 
 // Set the page title based on the current page
-if ($current_page == 'qeda.php') {
-    $page_title = $lang['kedatitlename']; // Change this to the appropriate key for the Qeda title
+if ($current_page == 'adjara.php') {
+    $page_title = $lang['adjaratitlename']; // Change this to the appropriate key for the Qeda title
 } else {
     $page_title = $lang['batumititlename']; // Default to Batumi title
 }
 
 // Determine the language URLs based on the current page
-$lang_url_ka = ($current_page == 'qeda.php') ? 'qeda.php?lang=ka' : 'batumi.php?lang=ka';
-$lang_url_en = ($current_page == 'qeda.php') ? 'qeda.php?lang=en' : 'batumi.php?lang=en';
+$lang_url_ka = ($current_page == 'adjara.php') ? 'adjara.php?lang=ka' : 'batumi.php?lang=ka';
+$lang_url_en = ($current_page == 'adjara.php') ? 'adjara.php?lang=en' : 'batumi.php?lang=en';
 ?>
 
 <div class="container">

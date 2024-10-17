@@ -21,9 +21,10 @@ include "../../config.php";
     <title class="tr" Key="PAGE_TITLE" id="page-title"><?php echo $lang['batumititlename'] ?></title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- Bootstrap 5.3.0 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Correct Bootstrap 5.3.0 JS URL -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 
     <!-- Custom and Project-specific CSS -->
@@ -64,7 +65,7 @@ include "../../config.php";
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <!-- Brand Logo on the left -->
                     <div id="brand-logo" class="me-3">
-                        <a href="../regions/index.php" id="brand-logo-link">
+                        <a href="../../index.php" id="brand-logo-link">
                             <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../images/logo_transparency_eng.png' : '../../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
                         </a>
                     </div>
