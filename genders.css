@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  position: relative;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 1366px) {
+  footer {
+    margin-top: 250px;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.machveneblebi-left {
+  width: 40% !important;
+  margin-bottom: 0;
+  margin-left: 0;
+  float: none;
+}
+
+.machveneblebi-left td {
+  border-bottom: none !important;
+}
+
+.machveneblebi-left tr {
+  display: flex !important;
+}

@@ -2,7 +2,6 @@
 include "../../config.php";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,47 +29,9 @@ include "../../config.php";
     <link rel="stylesheet" href="../../mediastyles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-154977204-1');
-    </script>
-
 </head>
 
 <body>
-
-    <div class="hidden">
-        <script type="text/javascript">
-            var images = new Array()
-
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
-                }
-            }
-            preload(
-                "../../1600-900-optimized/2.jpg",
-                "../../1600-900-optimized/3.jpg",
-                "../../1600-900-optimized/4.jpg",
-                "../../1600-900-optimized/5.jpg",
-                "../../1600-900-optimized/6.jpg",
-                "../../1600-900-optimized/7.jpg",
-                "../../1600-900-optimized/8.jpg",
-                "../../1600-900-optimized/9.jpg",
-                "../../1600-900-optimized/10.jpg",
-                "../../1600-900-optimized/11.jpg",
-                "../../1600-900-optimized/12.jpg",
-                "../../1600-900-optimized/15.jpg"
-            )
-        </script>
-    </div>
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div class="content">
@@ -126,26 +87,10 @@ include "../../config.php";
                         $education[$row['ID']] = $row['education'];
                         $culture[$row['ID']] = $row['culture'];
                     }
-                    ?> <tr>
+                    ?> <tr style="justify-content: center;">
                         <th><?php echo $lang['munstat'] ?></th>
                     </tr>
                     <tbody>
-                        <tr>
-                            <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $lang['demograph'] ?></td>
-                        </tr>
-                        <style>
-                            #dziritadi3,
-                            #dziritadi4,
-                            #dziritadi5,
-                            #dziritadi6,
-                            #dziritadi7 {
-                                display: none;
-                                margin-left: 20px;
-                            }
-                        </style>
-                        <tr>
-                            <td id="dziritadi3" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $birth['1']; ?></td>
-                        </tr>
                         <tr class="informacia3">
                             <td>
                                 <span id="birth4"><?php echo $birth['4']; ?></span>
@@ -182,10 +127,6 @@ include "../../config.php";
                                 </span>
                             </td>
                         </tr>
-                        <tr>
-                            <td id="dziritadi4" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $death['1']; ?>
-                            </td>
-                        </tr>
                         <tr class="informacia4">
                             <td>
                                 <span id="death4"> <?php echo $death['4']; ?></span>
@@ -212,15 +153,6 @@ include "../../config.php";
                                 </span>
                             </td>
                         </tr>
-                        <tr>
-                            <td id="dziritadi5" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="">
-                                <?php echo $naturalIncrease['1']; ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="dziritadi6" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $marriage['1']; ?>
-                            </td>
-                        </tr>
                         <tr class="informacia6">
                             <td>
                                 <?php echo $marriage['4']; ?>
@@ -237,20 +169,12 @@ include "../../config.php";
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
-                        <tr>
-                            <td id="dziritadi7" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $divorce['1']; ?>
-                            </td>
-                        </tr>
                         <tr class="informacia7">
                             <td>
                                 <?php echo $divorce['4']; ?>
                             </td>
                             <td>
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="dziritadi8" onclick="GetIdChange()" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $populationDescription['1']; ?>
                             </td>
                         </tr>
                         <tr class="informacia8">
@@ -293,10 +217,6 @@ include "../../config.php";
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
-                        <tr>
-                            <td id="dziritadi9" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""> <?php echo $employmentAndSalaries['1']; ?>
-                            </td>
-                        </tr>
                         <tr class="informacia9">
                             <td>
                                 <?php echo $employmentAndSalaries['2']; ?>
@@ -319,12 +239,6 @@ include "../../config.php";
                             </td>
                             <td>
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td id="dziritadi18" title="" onclick="GetIdChange()" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotels['1']; ?>
                             </td>
                         </tr>
                         <tr class="informacia18">
