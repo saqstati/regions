@@ -8,6 +8,7 @@ include "../../config.php";
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?php echo $lang['batumititlename'] ?>" id="og-title" />
@@ -16,40 +17,79 @@ include "../../config.php";
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
+
     <title class="tr" Key="PAGE_TITLE" id="page-title"><?php echo $lang['batumititlename'] ?></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5.3.0 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
+
+    <!-- Custom and Project-specific CSS -->
     <link rel="stylesheet" type="text/css" href="../../samegrelo.css">
     <link rel="stylesheet" type="text/css" href="../../adjara/adjara.css">
     <link rel="stylesheet" type="text/css" href="../../custom.css">
     <link rel="stylesheet" type="text/css" href="../../genders.css">
     <link rel="stylesheet" href="../../mediastyles.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
+
+    <!-- GSAP for Animations -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+    <!-- Bootstrap 5.3.0 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div class="content">
-            <div id="brand-logo">
-                <a href="/regions/index.php" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../images/logo_transparency_eng.png' : '../../images/logo_transparency_geo.png'; ?>" /></a>
-            </div>
-            <header class="header1">
-                <h1>
-                    <p id="pagetitlename" class="tr" Key="REGION14"><?php echo $lang['batumititlename'] ?></p>
-                </h1>
-            </header>
-            <div id="languages">
-                <a href="genders.php?lang=ka" id="ka" class="lang"><img src="../../images/ka.png" /></a>
-                <a href="genders.php?lang=en" id="en" class="lang"><img src="../../images/en.png" /></a>
+            <?php
+            $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
+
+            // Set the page title based on the current page
+            if ($current_page == 'genders.php') {
+                $page_title = $lang['kedatitlename']; // Change this to the appropriate key for the Gender page title
+            } else {
+                $page_title = $lang['batumititlename']; // Default to Batumi title
+            }
+
+            // Determine the language URLs based on the current page
+            $lang_url_ka = ($current_page == 'genders.php') ? 'genders.php?lang=ka' : 'batumi.php?lang=ka';
+            $lang_url_en = ($current_page == 'genders.php') ? 'genders.php?lang=en' : 'batumi.php?lang=en';
+            ?>
+
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <!-- Brand Logo on the left -->
+                    <div id="brand-logo" class="me-3">
+                        <a href="../regions/index.php" id="brand-logo-link">
+                            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../images/logo_transparency_eng.png' : '../../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
+                        </a>
+                    </div>
+
+                    <!-- Page Title centered -->
+                    <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="font-size: 20px; flex-grow: 1;">
+                        <?php echo $page_title; ?>
+                    </h1>
+
+                    <!-- Languages on the right -->
+                    <div id="languages" class="d-flex">
+                        <a href="<?php echo $lang_url_ka; ?>" id="ka" class="lang me-2">
+                            <img src="../../images/ka.png" alt="Georgian Language" class="img-fluid" style="width: 25px; height: auto;" />
+                        </a>
+                        <a href="<?php echo $lang_url_en; ?>" id="en" class="lang">
+                            <img src="../../images/en.png" alt="English Language" class="img-fluid" style="width: 25px; height: auto;" />
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="display-flex">
-                <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <a class="btn header-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+                </div>
             </div>
 
             <div class="center">
@@ -94,7 +134,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkBirths" href="#">
-                                        <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -106,7 +146,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkRatio" href="#">
-                                        <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -118,7 +158,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="motherAge" href="#">
-                                        <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -130,7 +170,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkStillbirths" href="#">
-                                        <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -142,7 +182,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkdeathagesex" href="#">
-                                        <img src="/regions/images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -156,7 +196,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkdeathclases" href="#">
-                                        <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -166,7 +206,7 @@ include "../../config.php";
                                 <?php echo $marriage['4']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia6">
@@ -174,7 +214,7 @@ include "../../config.php";
                                 <?php echo $marriage['5']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia7">
@@ -182,7 +222,7 @@ include "../../config.php";
                                 <?php echo $divorce['4']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia8">
@@ -190,7 +230,7 @@ include "../../config.php";
                                 <?php echo $populationDescription['2']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia8">
@@ -198,7 +238,7 @@ include "../../config.php";
                                 <?php echo $populationDescription['3']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia8">
@@ -206,7 +246,7 @@ include "../../config.php";
                                 <?php echo $populationDescription['4']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia8">
@@ -214,7 +254,7 @@ include "../../config.php";
                                 <?php echo $populationDescription['5']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia8">
@@ -222,7 +262,7 @@ include "../../config.php";
                                 <?php echo $populationDescription['6']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia9">
@@ -230,7 +270,7 @@ include "../../config.php";
                                 <?php echo $employmentAndSalaries['2']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia9">
@@ -238,7 +278,7 @@ include "../../config.php";
                                 <?php echo $employmentAndSalaries['3']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employees/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employees/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia9">
@@ -246,7 +286,7 @@ include "../../config.php";
                                 <?php echo $employmentAndSalaries['4']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia18">
@@ -254,7 +294,7 @@ include "../../config.php";
                                 <?php echo $hotels['5']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="/regions/images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
 
@@ -309,6 +349,8 @@ include "../../config.php";
             updatePageTitleAndMeta();
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

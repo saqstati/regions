@@ -47,12 +47,13 @@ g#layer3 {
 }
 
 #qedaSVG {
-  width: 944px;
+  width: 600px;
   margin-left: 9%;
-  margin-top: -5%;
 }
 
-#qobuletiSVG, #shuaxeviSVG, #xelvachauriSVG {
+#qobuletiSVG,
+#shuaxeviSVG,
+#xelvachauriSVG {
   width: 923px;
   margin-left: 10%;
   margin-top: -1%;

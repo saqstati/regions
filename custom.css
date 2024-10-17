@@ -15,22 +15,6 @@ body {
   }
 }
 
-#brand-logo-link img {
-  width: 110px;
-  height: 75px;
-  margin: 10px;
-  position: absolute;
-  margin-left: 20px;
-}
-#languages {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
-#languages img {
-  margin: 3px;
-  border: 0px;
-}
 #recommendation {
   position: absolute;
   top: 40px;
@@ -818,4 +802,15 @@ a#b {
 .copyright__cnt p {
   margin-bottom: 0 !important;
   font-weight: bold;
+}
+
+.header-btn {
+  background-color: #ce8d34;
+  border-color: #ce8d34;
+  color: white;
+}
+.header-btn:hover {
+  background-color: #cb744c !important;
+  border-color: #cb744c !important;
+  color: white;
 }
