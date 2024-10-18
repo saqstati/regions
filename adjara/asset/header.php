@@ -13,17 +13,17 @@ $lang_url_ka = ($current_page == 'qeda.php') ? 'qeda.php?lang=ka' : 'batumi.php?
 $lang_url_en = ($current_page == 'qeda.php') ? 'qeda.php?lang=en' : 'batumi.php?lang=en';
 ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="d-flex align-items-center justify-content-between mb-4">
         <!-- Brand Logo on the left -->
         <div id="brand-logo" class="me-3">
-            <a href="../index.php" id="brand-logo-link">
+            <a href="index.php" id="brand-logo-link">
                 <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
             </a>
         </div>
 
         <!-- Page Title centered -->
-        <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="font-size: 20px; flex-grow: 1;">
+        <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="font-size: 28px; flex-grow: 1;">
             <?php echo $page_title; ?>
         </h1>
 
@@ -39,7 +39,7 @@ $lang_url_en = ($current_page == 'qeda.php') ? 'qeda.php?lang=en' : 'batumi.php?
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
     <div class="d-flex justify-content-between">
         <!-- Back Button on the left -->
         <div>
@@ -66,7 +66,7 @@ $lang_url_en = ($current_page == 'qeda.php') ? 'qeda.php?lang=en' : 'batumi.php?
 
             <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../adjara/genders/genders.php?lang=en' : '../adjara/genders/genders.php?lang=ka'; ?>">
                 <span class="tr" Key="regionsBtn">
-                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators' : 'მაჩვენებლები გენდერულ ჭრილში'; ?>
+                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators' : 'გენდერული სტატისტიკა'; ?>
                 </span>
             </a>
         </div>

@@ -60,7 +60,7 @@ include "../../config.php";
             $lang_url_en = ($current_page == 'genders.php') ? 'genders.php?lang=en' : 'batumi.php?lang=en';
             ?>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <!-- Brand Logo on the left -->
                     <div id="brand-logo" class="me-3">
@@ -70,7 +70,7 @@ include "../../config.php";
                     </div>
 
                     <!-- Page Title centered -->
-                    <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="font-size: 20px; flex-grow: 1;">
+                    <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="flex-grow: 1;">
                         <?php echo $page_title; ?>
                     </h1>
 
@@ -86,7 +86,7 @@ include "../../config.php";
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="d-flex justify-content-between">
                     <a class="btn header-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
                 </div>
@@ -124,7 +124,7 @@ include "../../config.php";
                         $culture[$row['ID']] = $row['culture'];
                     }
                     ?> <tr style="justify-content: center;">
-                        <th><?php echo $lang['munstat'] ?></th>
+                        <th><?php echo $lang['genderTitleName'] ?></th>
                     </tr>
                     <tbody>
                         <tr class="informacia3">

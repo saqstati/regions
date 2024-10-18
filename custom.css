@@ -207,7 +207,14 @@ footer {
   font-size: 0.6vw;
   width: 100%;
   text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+footer .copyright_text a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
 .header1 h1 {
   font-size: 1.7vw;
   font-weight: bold;
@@ -757,6 +764,10 @@ table tbody tr td img:after {
 }
 
 .regions-btn {
+  width: 25vh;
+  font-size: 14px;
+  background-color: #f44336;
+  border: none;
   color: #fff;
   text-decoration: none;
 }
@@ -765,6 +776,15 @@ table tbody tr td img:after {
 .regions-btn:visited {
   text-decoration: none;
   color: #fff;
+}
+
+.regions-btn:hover {
+  background-color: red;
+}
+
+#dziritadi a {
+  color: #337ab7;
+  text-decoration: none;
 }
 
 .textbox-right span:after {
@@ -824,4 +844,9 @@ a#b {
 
 .index-btn:hover {
   background-color: red;
+}
+
+#pagetitlename {
+  font-size: 28px;
+  font-weight: bold;
 }

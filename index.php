@@ -17,13 +17,10 @@ include "config.php";
 	<meta property="og:image:width" content="740" />
 	<meta property="og:image:height" content="450" />
 	<title class="tr" Key="PAGE_TITLE">სტატისტიკური ინფორმაცია საქართველოს რეგიონებისა და მუნიციპალიტეტების მიხედვით</title>
-	<!-- Bootstrap 5.3.0 CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-	<!-- Bootstrap 5.3.0 JS -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link rel="stylesheet" href="mediastyles.css">
@@ -71,8 +68,8 @@ include "config.php";
 	</div>
 	<div id="background-main" class="background-image"></div>
 	<div class="main-container">
-		<div class="container">
-			<div class="d-flex align-items-center justify-content-between mb-4">
+		<div class="container-fluid">
+			<div class="d-flex align-items-center justify-content-between mb-4" style="display:flex; justify-content: space-between">
 				<!-- Brand Logo on the left -->
 				<div id="brand-logo" class="me-3">
 					<a href="index.php" id="brand-logo-link">
@@ -81,7 +78,7 @@ include "config.php";
 				</div>
 
 				<!-- Page Title centered -->
-				<h1 id="pagetitlename" class="tr mx-auto" Key="REGION14" style="font-size: 20px; text-align: center; flex-grow: 1;">
+				<h1 id="pagetitlename" class="tr mx-auto" Key="REGION14" style="font-size: 1.7vw; text-align: center; flex-grow: 1; font-weight:bold;">
 					სტატისტიკური ინფორმაცია საქართველოს რეგიონებისა და მუნიციპალიტეტების მიხედვით
 				</h1>
 
@@ -98,12 +95,12 @@ include "config.php";
 			</div>
 
 			<!-- Buttons for region and municipality comparison -->
-			<div class="d-flex flex-column align-items-end">
-				<a class="regions-btn btn index-btn btn-sm mb-2" href="list.php">
+			<div class="d-flex flex-column align-items-end" style="display: flex; flex-direction: column; align-items:end;">
+				<a class="regions-btn btn btn-sm mb-2" style="margin-bottom: 5px;" href="list.php">
 					<span class="tr" Key="regionsBtn">რეგიონების შედარება</span>
 				</a>
 
-				<a class="regions-btn btn index-btn btn-sm mb-2" href="muncom.php">
+				<a class="regions-btn btn btn-sm mb-2" href="muncom.php">
 					<span class="tr" Key="municipalBtn">მუნიციპალიტეტების შედარება</span>
 				</a>
 
@@ -134,12 +131,12 @@ include "config.php";
 			    z-index:99;
 			}
 		</style> -->
-		<div class="container">
+		<div>
 			<div class="col-md-2">
 				<div class="side-box1" id="resultleftbox">
 				</div>
 			</div>
-			<div class="col-md-8 no-padding container">
+			<div class="col-md-8 no-padding">
 				<div class="map-box">
 					<svg id="svg4380" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1943.8392 1029.9621" version="1.1">
 						<g id="layer1">

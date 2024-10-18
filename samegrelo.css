@@ -27,8 +27,8 @@
 }
 
 .map-box {
-  height: unset !important;
-  position: absolute !important;
+  max-width: 1050px;
+  margin-left: 76px;
   left: 15% !important;
   right: 50% !important;
 }
@@ -375,10 +375,6 @@ tr.informaciaMain {
   border-bottom: 1px solid #ddd !important;
 }
 
-.map-box {
-  max-width: 1050px;
-  margin-left: 76px;
-}
 
 #dziritadi8,
 #dziritadi31 {
