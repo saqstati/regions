@@ -57,15 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
     deathclases: {
-        batumi: {
-          ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
-          en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Batumi.xlsx",
-        },
-        qeda: {
-          ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქედის%20მუნიციპალიტეტი.xlsx",
-          en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Keda.xlsx",
-        },
+      batumi: {
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Batumi.xlsx",
       },
+      qeda: {
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქედის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Keda.xlsx",
+      },
+    },
   };
 
   function updateLink(elementId, link) {
@@ -104,3 +104,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateMunicipalityLinks();
 });
+
+window.onload = function () {
+  const municipalValue = localStorage.getItem("municipal");
+
+  // Check if municipal value exists
+  if (municipalValue) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentLang = urlParams.get("lang") || "ka"; // Default to "ka" if no lang is provided
+    const currentUrl = window.location.href.split("?")[0]; // Get the current URL without query params
+
+    // Create the new URL with both municipal and lang parameters
+    const newUrl = `${currentUrl}?municipal=${municipalValue}&lang=${currentLang}`;
+
+    // Redirect only if the current URL is different from the new one
+    if (window.location.href !== newUrl) {
+      window.location.href = newUrl; // Avoids infinite loop
+    }
+  }
+};

@@ -3,14 +3,28 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 
 // Set the page title based on the current page
 if ($current_page == 'qeda.php') {
-    $page_title = $lang['kedatitlename']; // Change this to the appropriate key for the Qeda title
-} else {
-    $page_title = $lang['batumititlename']; // Default to Batumi title
+    $page_title = $lang['kedatitlename']; // Title for Qeda page
+} elseif ($current_page == 'batumi.php') {
+    $page_title = $lang['batumititlename']; // Title for Batumi page
+} elseif ($current_page == 'qobuleti.php') {
+    $page_title = $lang['kobuletititlename']; // Title for Qobuleti page
 }
 
 // Determine the language URLs based on the current page
-$lang_url_ka = ($current_page == 'qeda.php') ? 'qeda.php?lang=ka' : 'batumi.php?lang=ka';
-$lang_url_en = ($current_page == 'qeda.php') ? 'qeda.php?lang=en' : 'batumi.php?lang=en';
+if ($current_page == 'qeda.php') {
+    $lang_url_ka = 'qeda.php?lang=ka';
+    $lang_url_en = 'qeda.php?lang=en';
+} elseif ($current_page == 'batumi.php') {
+    $lang_url_ka = 'batumi.php?lang=ka';
+    $lang_url_en = 'batumi.php?lang=en';
+} elseif ($current_page == 'qobuleti.php') {
+    $lang_url_ka = 'qobuleti.php?lang=ka';
+    $lang_url_en = 'qobuleti.php?lang=en';
+} else {
+    // Fallback to default (batumi.php) in case the page isn't matched
+    $lang_url_ka = 'batumi.php?lang=ka';
+    $lang_url_en = 'batumi.php?lang=en';
+}
 ?>
 
 <div class="container-fluid">

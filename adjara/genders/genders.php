@@ -43,18 +43,26 @@ include "../../config.php";
     <div class="main-container">
         <div class="content">
             <?php
-            $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
+            // Get the municipal value from the URL parameters or fallback to the current page name
+            $current_page = isset($_GET['municipal']) ? $_GET['municipal'] : basename($_SERVER['PHP_SELF']);
 
-            // Set the page title based on the current page
-            if ($current_page == 'genders.php') {
-                $page_title = $lang['kedatitlename']; // Change this to the appropriate key for the Gender page title
-            } else {
-                $page_title = $lang['batumititlename']; // Default to Batumi title
+            // For debugging, you can uncomment the line below
+            // print_r($current_page); 
+
+            // Initialize municipal variable
+            $municipal = isset($_GET['municipal']) ? $_GET['municipal'] : '';
+
+            // Set the page title based on the municipal value
+            if ($current_page == 'qeda') {
+                $page_title = $lang['kedatitlename']; // Title for Qeda page
+            } elseif ($current_page == 'qobuleti') {
+                $page_title = $lang['kobuletititlename']; // Title for Qobuleti page
+            } elseif ($current_page == 'batumi') {
+                $page_title = $lang['batumititlename']; // Title for Batumi page
             }
 
-            // Determine the language URLs based on the current page
-            $lang_url_ka = ($current_page == 'genders.php') ? 'genders.php?lang=ka' : 'batumi.php?lang=ka';
-            $lang_url_en = ($current_page == 'genders.php') ? 'genders.php?lang=en' : 'batumi.php?lang=en';
+            $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
+            $lang_url_en = "genders.php?municipal=$municipal&lang=en";
             ?>
 
             <div class="container-fluid">
@@ -363,8 +371,19 @@ include "../../config.php";
         document.addEventListener("DOMContentLoaded", function() {
             function updatePageTitleAndMeta() {
 
+                // Retrieve the 'municipal' value from localStorage
                 var municipality = localStorage.getItem("municipal");
+
+                // Retrieve the 'lang' parameter from the PHP code
                 var lang = '<?php echo (isset($_GET['lang']) ? $_GET['lang'] : "ka"); ?>';
+
+                // Construct the new URL, ensuring both 'municipal' and 'lang' parameters are included
+                var newUrl = window.location.href.split("?")[0] + "?municipal=" + municipality + "&lang=" + lang;
+
+                // Perform the redirection only if the current URL is different from the constructed one
+                if (window.location.href !== newUrl) {
+                    window.location.href = newUrl; // This prevents an infinite loop
+                }
 
 
                 if (municipality) {
@@ -382,6 +401,11 @@ include "../../config.php";
                             pageTitle = lang === "en" ? "Statistical Information on Keda Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქედის მუნიციპალიტეტის შესახებ";
                             ogTitle = "Statistical Information on Keda Municipality, Adjara Region";
                             ogDescription = "Statistical Information on Keda Municipality, Adjara Region";
+                            break;
+                        case "qobuleti":
+                            pageTitle = lang === "en" ? "Statistical Information on Kobuleti Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქობულეთის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Kobuleti Municipality, Adjara Region";
+                            ogDescription = "Statistical Information on Kobuleti Municipality, Adjara Region";
                             break;
                         default:
                             pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";
