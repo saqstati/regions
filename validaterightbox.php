@@ -176,7 +176,7 @@
 						});
 						$('tr th:first-child').addClass('tr');
 						$('.resultright tbody tr').attr('rel', 'popover');
-						$('.resultright tbody tr').attr('data-trigger', 'hover');
+						$('.resultright tbody tr').attr('data-bs-trigger', 'hover');
 						$('#popover1').popover({
 								html: true,
 								animation: true,
@@ -232,26 +232,26 @@
 								placement: 'left'
 						});
 						$('#ka').click(function () {
-							$('#popover1').attr('data-content', '" . $value1geo . "');
-							$('#popover2').attr('data-content', '" . $value2geo . "');
-							$('#popover3').attr('data-content', '" . $value3geo . "');
-							$('#popover4').attr('data-content', '" . $value4geo . "');
-							$('#popover5').attr('data-content', '" . $value5geo . "');
-							$('#popover6').attr('data-content', '" . $value6geo . "');
-							$('#popover7').attr('data-content', '" . $value7geo . "');
-							$('#popover8').attr('data-content', '" . $value8geo . "');
-							$('#popover9').attr('data-content', '" . $value9geo . "');
+							$('#popover1').attr('data-bs-content', '" . $value1geo . "');
+							$('#popover2').attr('data-bs-content', '" . $value2geo . "');
+							$('#popover3').attr('data-bs-content', '" . $value3geo . "');
+							$('#popover4').attr('data-bs-content', '" . $value4geo . "');
+							$('#popover5').attr('data-bs-content', '" . $value5geo . "');
+							$('#popover6').attr('data-bs-content', '" . $value6geo . "');
+							$('#popover7').attr('data-bs-content', '" . $value7geo . "');
+							$('#popover8').attr('data-bs-content', '" . $value8geo . "');
+							$('#popover9').attr('data-bs-content', '" . $value9geo . "');
 						});
 						$('#en').click(function () {
-							$('#popover1').attr('data-content', '" . $value1eng . "');
-							$('#popover2').attr('data-content', '" . $value2eng . "');
-							$('#popover3').attr('data-content', '" . $value3eng . "');
-							$('#popover4').attr('data-content', '" . $value4eng . "');
-							$('#popover5').attr('data-content', '" . $value5eng . "');
-							$('#popover6').attr('data-content', '" . $value6eng . "');
-							$('#popover7').attr('data-content', '" . $value7eng . "');
-							$('#popover8').attr('data-content', '" . $value8eng . "');
-							$('#popover9').attr('data-content', '" . $value9eng . "');
+							$('#popover1').attr('data-bs-content', '" . $value1eng . "');
+							$('#popover2').attr('data-bs-content', '" . $value2eng . "');
+							$('#popover3').attr('data-bs-content', '" . $value3eng . "');
+							$('#popover4').attr('data-bs-content', '" . $value4eng . "');
+							$('#popover5').attr('data-bs-content', '" . $value5eng . "');
+							$('#popover6').attr('data-bs-content', '" . $value6eng . "');
+							$('#popover7').attr('data-bs-content', '" . $value7eng . "');
+							$('#popover8').attr('data-bs-content', '" . $value8eng . "');
+							$('#popover9').attr('data-bs-content', '" . $value9eng . "');
 						});
 					});
 				</script>

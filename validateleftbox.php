@@ -20,7 +20,7 @@
 						</tr>
 						</thead>
 						<tbody>
-						<tr data-toggle='collapse' data-target='.demo1' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo1' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_MAIN'>ძირითადი ინფორმაცია</th>
 							<th>
 								<img />
@@ -88,7 +88,7 @@
 								echo "	
 							</th>
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo2' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo2' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_DEMOGRAPHICS'>დემოგრაფია</th>
 							<th><img /></th>
 						</tr>
@@ -193,7 +193,7 @@
 								echo "
 							</th>							
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo12' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo12' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_EMP_AND_WAGES'>დასაქმება და ხელფასები</th>
 							<th><img /></th>
 						</tr>
@@ -243,7 +243,7 @@
 						</tr>
 						<tr"; 
 						if ($clickedid == '10' || $clickedid == '4' || $clickedid == '12' || $clickedid == '9' || $clickedid == '6' || $clickedid == '2') { 
-						echo " data-toggle='collapse' data-target='.demo3' class='accordion-toggle pointer collapsedpresent' id='popover10' rel='popover' data-trigger='hover'";
+						echo " data-bs-toggle='collapse' data-target='.demo3' class='accordion-toggle pointer collapsedpresent' id='popover10' rel='popover' data-bs-trigger='hover'";
 						} 
 						echo ">
 							<th Key='LEFTBOX_PRICE'>
@@ -503,7 +503,7 @@
 						";	
 						}
 						
-						echo "<tr data-toggle='collapse' data-target='.demo4' class='accordion-toggle pointer collapsedpresent'>
+						echo "<tr data-bs-toggle='collapse' data-target='.demo4' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_LIVING'>ცხოვრების დონე</th>
 							<th><img /></th>
 						</tr>
@@ -551,7 +551,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo5' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo5' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_BUSINESS'>ბიზნეს სექტორი</th>
 							<th><img /></th>
 						</tr>
@@ -624,7 +624,7 @@
 						<tr>
 							<th colspan='2'><a href='http://br.geostat.ge/register_geo/' target='_blank' Key='LEFTBOX_BUSINESSREGISTER' class='tr'>ბიზნეს რეგისტრი</a></th>
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo6' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo6' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_AGRICULTURE'>სოფლის მეურნეობა</th>
 							<th><img /></th>
 						</tr>
@@ -733,7 +733,7 @@
 								echo "
 							</th>							
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo7' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo7' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_CONSTRUCTION'>მშენებლობა</th>
 							<th><img /></th>
 						</tr>
@@ -824,7 +824,7 @@
 								echo "
 							</th>							
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo11' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo11' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_HOTELS'>სასტუმროები და რესტორნები</th>
 							<th><img /></th>
 						</tr>
@@ -872,7 +872,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo10' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo10' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_TRANSPORT'>ტრანსპორტი და დასაწყობება</th>
 							<th><img /></th>
 						</tr>
@@ -959,11 +959,11 @@
 								echo "
 							</th>							
 						</tr>-->
-						<tr data-toggle='collapse' data-target='.demo8' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo8' class='accordion-toggle pointer collapsedpresent'>
 							<th Key='LEFTBOX_TOURISM'>ტურიზმი</th>
 							<th><img /></th>
 						</tr>
-						<tr data-toggle='collapse' data-target='.demo9' class='accordion-toggle pointer collapsedpresent'>
+						<tr data-bs-toggle='collapse' data-target='.demo9' class='accordion-toggle pointer collapsedpresent'>
 							<td class='hiddenRow'>
 								<div class='accordian-body collapse demo8' Key='LEFTBOX_TOURISM_SHIDA'>შიდა ტურიზმი</div>
 							</td>
@@ -1175,7 +1175,7 @@
 					$('.langcheckhref39').attr('href', 'regions/" . $clickedid . "/fasebi/samomxmareblo fasebis indeqsebi 12 tvis sashualo wina 12 Tvis saSualosTan - zugdidi.xlsx');
 					$('.langcheckhref40').attr('href', 'regions/" . $clickedid . "/transporti da kavshirgabmuloba/registrirebuli avtomobilebis raodenoba.xlsx');
 					$('.langcheckhref41').attr('href', 'regions/" . $clickedid . "/samartlebrivi statistika/samartlebrivi statistika.xlsx');
-					$('#popover10').attr('data-content', '" . $hovercitygeo . "');
+					$('#popover10').attr('data-bs-content', '" . $hovercitygeo . "');
 				});	
 				$('#en').click(function () {
 					$('.langcheckhref1').attr('href', 'regionseng/" . $clickedid . "/main information/area.xlsx');
@@ -1224,7 +1224,7 @@
 					$('.langcheckhref39').attr('href', 'regionseng/" . $clickedid . "/prices/consumer price index 12 month avarage over the previous 12 month avarage - zugdidi.xlsx');
 					$('.langcheckhref40').attr('href', 'regionseng/" . $clickedid . "/transport and communication/number of motor vehicles.xlsx');
 					$('.langcheckhref41').attr('href', 'regionseng/" . $clickedid . "/justice statistics/justice statistics.xlsx');
-					$('#popover10').attr('data-content', '" . $hovercityeng . "');
+					$('#popover10').attr('data-bs-content', '" . $hovercityeng . "');
 				});	
 			});
 			</script>

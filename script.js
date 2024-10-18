@@ -191,7 +191,7 @@ function registerShow() {
 // });
 
 $(document).ready(function () {
-  $('[data-toggle="popover"]').popover();
+  $('[data-bs-toggle="popover"]').popover();
 });
 
 // function switchMode(){
@@ -226,3 +226,12 @@ function addbackcolor() {
   var element = document.getElementById("displayNone");
   element.classList.remove("displayNone");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var popoverTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="popover"]')
+  );
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+  });
+});

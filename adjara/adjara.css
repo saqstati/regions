@@ -40,6 +40,9 @@ g#layer3 {
 .textbox-right-home:hover {
   background-color: #cb744c !important;
 }
+.map-box{
+  width: unset !important;
+}
 
 #svgRegions {
   font-size: 12px;

@@ -129,10 +129,10 @@ include "../../config.php";
                     </tr>
                     <tbody>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $lang['demograph'] ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $lang['demograph'] ?></td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $birth['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $birth['1']; ?></td>
                         </tr>
                         <tr class="informacia3">
                             <td>
@@ -183,7 +183,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $death['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $death['1']; ?></td>
                         </tr>
                         <tr class="informacia4">
                             <td>
@@ -212,7 +212,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $marriage['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $marriage['1']; ?></td>
                         </tr>
                         <tr class="informacia6">
                             <td>
@@ -231,7 +231,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $divorce['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $divorce['1']; ?></td>
                         </tr>
                         <tr class="informacia7">
                             <td>
@@ -242,7 +242,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $populationDescription['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $populationDescription['1']; ?></td>
                         </tr>
                         <tr class="informacia8">
                             <td>
@@ -285,7 +285,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $employmentAndSalaries['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $employmentAndSalaries['1']; ?></td>
                         </tr>
                         <tr class="informacia9">
                             <td>
@@ -312,7 +312,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotels['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $hotels['1']; ?></td>
                         </tr>
                         <tr class="informacia18">
                             <td>
@@ -323,7 +323,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['1']; ?></td>
                         </tr>
                         <tr class="informacia21">
                             <td>
@@ -334,7 +334,7 @@ include "../../config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $education['1']; ?></td>
                         </tr>
                         <tr class="informacia22">
                             <td>

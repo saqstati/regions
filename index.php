@@ -808,26 +808,26 @@ include "config.php";
 				});
 			});
 			$('#en').click(function() {
-				$('.textboxspan1').attr('data-content', 'By March 1, 2014');
-				$('.textboxspan2').attr('data-content', 'By January 1, 2024');
-				$('.textboxspan3').attr('data-content', 'Preliminary data of 2023');
-				$('.textboxspan4').attr('data-content', 'Preliminary data of 2023');
-				$('.textboxspan5').attr('data-content', 'Annual by September, 2024');
-				$('.textboxspan6').attr('data-content', 'Data of 2023');
-				$('.textboxspan7').attr('data-content', 'By January 1, 2023');
+				$('.textboxspan1').attr('data-bs-content', 'By March 1, 2014');
+				$('.textboxspan2').attr('data-bs-content', 'By January 1, 2024');
+				$('.textboxspan3').attr('data-bs-content', 'Preliminary data of 2023');
+				$('.textboxspan4').attr('data-bs-content', 'Preliminary data of 2023');
+				$('.textboxspan5').attr('data-bs-content', 'Annual by September, 2024');
+				$('.textboxspan6').attr('data-bs-content', 'Data of 2023');
+				$('.textboxspan7').attr('data-bs-content', 'By January 1, 2023');
 				$('#brand-logo-link img').attr('src', 'images/logo_transparency_eng.png');
 				$('.eu_png').attr('src', 'images/logo/eu.png');
 
 
 			});
 			$('#ka').click(function() {
-				$('.textboxspan1').attr('data-content', '2014 წლის 1 მარტის მდგომარეობით');
-				$('.textboxspan2').attr('data-content', '2024 წლის 1 იანვრის მდგომარეობით');
-				$('.textboxspan3').attr('data-content', '2023 წლის წინასწარი მონაცემები');
-				$('.textboxspan4').attr('data-content', '2023 წლის წინასწარი მონაცემები');
-				$('.textboxspan5').attr('data-content', 'წლიური (2024 წლის სექტემბრის მდგომარეობით)');
-				$('.textboxspan6').attr('data-content', '2023 წლის მიხედვით');
-				$('.textboxspan7').attr('data-content', '2023 წლის 1 იანვრის მდგომარეობით');
+				$('.textboxspan1').attr('data-bs-content', '2014 წლის 1 მარტის მდგომარეობით');
+				$('.textboxspan2').attr('data-bs-content', '2024 წლის 1 იანვრის მდგომარეობით');
+				$('.textboxspan3').attr('data-bs-content', '2023 წლის წინასწარი მონაცემები');
+				$('.textboxspan4').attr('data-bs-content', '2023 წლის წინასწარი მონაცემები');
+				$('.textboxspan5').attr('data-bs-content', 'წლიური (2024 წლის სექტემბრის მდგომარეობით)');
+				$('.textboxspan6').attr('data-bs-content', '2023 წლის მიხედვით');
+				$('.textboxspan7').attr('data-bs-content', '2023 წლის 1 იანვრის მდგომარეობით');
 				$('#brand-logo-link img').attr('src', 'images/logo_transparency_geo.png');
 				$('.eu_png').attr('src', 'images/logo/eu-geo.png');
 			});
