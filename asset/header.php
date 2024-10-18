@@ -17,7 +17,7 @@ $lang_url_en = ($current_page == 'adjara.php') ? 'adjara.php?lang=en' : 'batumi.
     <div class="d-flex align-items-center justify-content-between mb-4">
         <!-- Brand Logo on the left -->
         <div id="brand-logo" class="me-3">
-            <a href="index.php" id="brand-logo-link">
+            <a href="./index.php" id="brand-logo-link">
                 <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'images/logo_transparency_eng.png' : 'images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
             </a>
         </div>
@@ -41,16 +41,12 @@ $lang_url_en = ($current_page == 'adjara.php') ? 'adjara.php?lang=en' : 'batumi.
 
 <div class="container-fluid">
     <div class="d-flex justify-content-between">
-        <!-- Back Button on the left -->
         <div>
-            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../index.php?lang=en' : '../index.php?lang=ka'; ?>">
-                <span class="tr" Key="backBtn">
-                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?>
-                </span>
+            <a class="btn header-btn" onclick="previous()">
+                <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span>
             </a>
         </div>
 
-        <!-- Right buttons for region and municipality comparison -->
         <div class="d-flex">
             <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>">
                 <span class="tr" Key="regionsBtn">

@@ -17,8 +17,6 @@ include "config.php";
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
     <title class="tr" Key="PAGE_TITLE"><?php echo $lang['adjaratitlename'] ?></title>
-    <!-- Correct Bootstrap 5.3.0 CSS URL -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
