@@ -23,6 +23,7 @@ include "../../config.php";
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5.3.0 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 
@@ -93,7 +94,7 @@ include "../../config.php";
             </div>
 
             <div class="center">
-                <table class="machveneblebi-left">
+                <table class="container gender_table">
                     <?php
                     include('../../connection.php');
                     $table = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'municipal_statistics_en' : 'municipal_statistics';
@@ -127,6 +128,12 @@ include "../../config.php";
                         <th><?php echo $lang['genderTitleName'] ?></th>
                     </tr>
                     <tbody>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $lang['demograph'] ?></td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $birth['1']; ?></td>
+                        </tr>
                         <tr class="informacia3">
                             <td>
                                 <span id="birth4"><?php echo $birth['4']; ?></span>
@@ -175,6 +182,9 @@ include "../../config.php";
                                 </span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $death['1']; ?></td>
+                        </tr>
                         <tr class="informacia4">
                             <td>
                                 <span id="death4"> <?php echo $death['4']; ?></span>
@@ -201,6 +211,9 @@ include "../../config.php";
                                 </span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $marriage['1']; ?></td>
+                        </tr>
                         <tr class="informacia6">
                             <td>
                                 <?php echo $marriage['4']; ?>
@@ -217,6 +230,9 @@ include "../../config.php";
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $divorce['1']; ?></td>
+                        </tr>
                         <tr class="informacia7">
                             <td>
                                 <?php echo $divorce['4']; ?>
@@ -224,6 +240,9 @@ include "../../config.php";
                             <td>
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $populationDescription['1']; ?></td>
                         </tr>
                         <tr class="informacia8">
                             <td>
@@ -265,6 +284,9 @@ include "../../config.php";
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $employmentAndSalaries['1']; ?></td>
+                        </tr>
                         <tr class="informacia9">
                             <td>
                                 <?php echo $employmentAndSalaries['2']; ?>
@@ -289,9 +311,42 @@ include "../../config.php";
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $hotels['1']; ?></td>
+                        </tr>
                         <tr class="informacia18">
                             <td>
                                 <?php echo $hotels['5']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $healthCareAndSocialSecurity['1']; ?></td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['11']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><?php echo $education['1']; ?></td>
+                        </tr>
+                        <tr class="informacia22">
+                            <td>
+                                <?php echo $education['3']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia22">
+                            <td>
+                                <?php echo $education['4']; ?>
                             </td>
                             <td>
                                 <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
@@ -302,8 +357,8 @@ include "../../config.php";
                 </table>
             </div>
         </div>
+        <?php include '../../footer_mun.php' ?>
     </div>
-    <?php include '../../footer_mun.php' ?>
 
     <script src="../../script.js"></script>
     <script src="../../genders.js"></script>

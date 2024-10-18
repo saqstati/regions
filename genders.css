@@ -17,7 +17,7 @@ body {
 
 footer {
   position: relative;
-  margin-top: 150px;
+  margin-top: 3%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -38,26 +38,28 @@ footer .copyright_text a {
   align-items: center;
 }
 
-.machveneblebi-left {
-  width: 40% !important;
-  margin-bottom: 0;
-  margin-left: 0;
-  float: none;
+.gender_table {
+  width: 40%;
 }
 
-.machveneblebi-left td {
+.gender_table td {
   border-bottom: none !important;
 }
 
-.machveneblebi-left tr {
+.gender_table tr {
   display: flex !important;
 }
 
-.machveneblebi-left tr:hover {
+.gender_table tr:hover {
   font-weight: bold;
 }
 
 #pagetitlename {
   font-size: 28px !important;
   font-weight: bold !important;
+}
+
+#genderListTitle {
+  margin-left: 10px;
+  font-weight: bold;
 }
