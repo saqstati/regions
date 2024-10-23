@@ -49,16 +49,16 @@ include "../../config.php";
             // For debugging, you can uncomment the line below
             // print_r($current_page); 
 
-            // Initialize municipal variable
             $municipal = isset($_GET['municipal']) ? $_GET['municipal'] : '';
 
-            // Set the page title based on the municipal value
             if ($current_page == 'qeda') {
-                $page_title = $lang['kedatitlename']; // Title for Qeda page
+                $page_title = $lang['kedatitlename'];
             } elseif ($current_page == 'qobuleti') {
-                $page_title = $lang['kobuletititlename']; // Title for Qobuleti page
+                $page_title = $lang['kobuletititlename'];
             } elseif ($current_page == 'batumi') {
-                $page_title = $lang['batumititlename']; // Title for Batumi page
+                $page_title = $lang['batumititlename'];
+            } elseif ($current_page == 'xelvachauri') {
+                $page_title = $lang['khelvachaurititlename'];
             }
 
             $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
@@ -406,6 +406,11 @@ include "../../config.php";
                             pageTitle = lang === "en" ? "Statistical Information on Kobuleti Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქობულეთის მუნიციპალიტეტის შესხებ";
                             ogTitle = "Statistical Information on Kobuleti Municipality, Adjara Region";
                             ogDescription = "Statistical Information on Kobuleti Municipality, Adjara Region";
+                            break;
+                            case "xelvachauri":
+                            pageTitle = lang === "en" ? "Statistical Information on Khelvachauri Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ხელვაჩაურის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Khelvachauri Municipality, Adjara Region";
+                            ogDescription = "Statistical Information on Khelvachauri Municipality, Adjara Region";
                             break;
                         default:
                             pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";

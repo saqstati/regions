@@ -8,6 +8,8 @@ if ($current_page == 'qeda.php') {
     $page_title = $lang['batumititlename']; // Title for Batumi page
 } elseif ($current_page == 'qobuleti.php') {
     $page_title = $lang['kobuletititlename']; // Title for Qobuleti page
+} elseif ($current_page == 'xelvachauri.php') {
+    $page_title = $lang['khelvachaurititlename']; // Title for Qobuleti page
 }
 
 // Determine the language URLs based on the current page
@@ -20,6 +22,9 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'qobuleti.php') {
     $lang_url_ka = 'qobuleti.php?lang=ka';
     $lang_url_en = 'qobuleti.php?lang=en';
+} elseif ($current_page == 'xelvachauri.php') {
+    $lang_url_ka = 'xelvachauri.php?lang=ka';
+    $lang_url_en = 'xelvachauri.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';
