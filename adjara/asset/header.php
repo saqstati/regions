@@ -3,13 +3,17 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 
 // Set the page title based on the current page
 if ($current_page == 'qeda.php') {
-    $page_title = $lang['kedatitlename']; // Title for Qeda page
+    $page_title = $lang['kedatitlename'];
 } elseif ($current_page == 'batumi.php') {
-    $page_title = $lang['batumititlename']; // Title for Batumi page
+    $page_title = $lang['batumititlename'];
 } elseif ($current_page == 'qobuleti.php') {
-    $page_title = $lang['kobuletititlename']; // Title for Qobuleti page
+    $page_title = $lang['kobuletititlename'];
 } elseif ($current_page == 'xelvachauri.php') {
-    $page_title = $lang['khelvachaurititlename']; // Title for Qobuleti page
+    $page_title = $lang['khelvachaurititlename'];
+} elseif ($current_page == 'shuaxevi.php') {
+    $page_title = $lang['shuakhevititlename'];
+} elseif ($current_page == 'xulo.php') {
+    $page_title = $lang['khulotitlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -25,6 +29,12 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'xelvachauri.php') {
     $lang_url_ka = 'xelvachauri.php?lang=ka';
     $lang_url_en = 'xelvachauri.php?lang=en';
+} elseif ($current_page == 'shuakhevititlename.php') {
+    $lang_url_ka = 'shuakhevititlename.php?lang=ka';
+    $lang_url_en = 'shuakhevititlename.php?lang=en';
+} elseif ($current_page == 'xulo.php') {
+    $lang_url_ka = 'khulotitlename.php?lang=ka';
+    $lang_url_en = 'khulotitlename.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';

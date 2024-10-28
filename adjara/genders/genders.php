@@ -59,6 +59,10 @@ include "../../config.php";
                 $page_title = $lang['batumititlename'];
             } elseif ($current_page == 'xelvachauri') {
                 $page_title = $lang['khelvachaurititlename'];
+            } elseif ($current_page == 'Shuakhevi') {
+                $page_title = $lang['shuakhevititlename'];
+            } elseif ($current_page == 'Khulo') {
+                $page_title = $lang['khulotitlename'];
             }
 
             $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
@@ -407,10 +411,20 @@ include "../../config.php";
                             ogTitle = "Statistical Information on Kobuleti Municipality, Adjara Region";
                             ogDescription = "Statistical Information on Kobuleti Municipality, Adjara Region";
                             break;
-                            case "xelvachauri":
+                        case "xelvachauri":
                             pageTitle = lang === "en" ? "Statistical Information on Khelvachauri Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ხელვაჩაურის მუნიციპალიტეტის შესხებ";
                             ogTitle = "Statistical Information on Khelvachauri Municipality, Adjara Region";
                             ogDescription = "Statistical Information on Khelvachauri Municipality, Adjara Region";
+                            break;
+                        case "Shuakhevi":
+                            pageTitle = lang === "en" ? "Statistical Information on Shuakhevi Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის შუახევის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Shuakhevi Municipality, Adjara Region";
+                            ogDescription = "Statistical Information on Shuakhevi Municipality, Adjara Region";
+                            break;
+                        case "Khulo":
+                            pageTitle = lang === "en" ? "Statistical Information on Khulo Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ხულოს მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Khulo Municipality, Adjara Region";
+                            ogDescription = "Statistical Information on Khulo Municipality, Adjara Region";
                             break;
                         default:
                             pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";
