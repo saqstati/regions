@@ -235,3 +235,55 @@ document.addEventListener("DOMContentLoaded", function () {
     return new bootstrap.Popover(popoverTriggerEl);
   });
 });
+
+// Function to detect the region from the URL path
+function applyRegionColors(region) {
+  let bgColor, hoverColor;
+
+  switch (region) {
+    case "adjara":
+      bgColor = "#ce8d34";
+      hoverColor = "#cb744c";
+      break;
+    case "guria":
+      bgColor = "#6ea76f";
+      hoverColor = "#66aba5";
+      break;
+    case "imereti":
+      bgColor = "#c85861";
+      hoverColor = "#c75685";
+      break;
+    default:
+      bgColor = "#ce8d34"; // Default to Adjara's color if region is unknown
+      hoverColor = "#cb744c";
+  }
+
+  document.querySelectorAll(".header-btn").forEach((btn) => {
+    btn.style.backgroundColor = bgColor;
+    btn.style.borderColor = bgColor;
+
+    btn.addEventListener("mouseover", () => {
+      btn.style.backgroundColor = hoverColor;
+      btn.style.borderColor = hoverColor;
+    });
+
+    btn.addEventListener("mouseout", () => {
+      btn.style.backgroundColor = bgColor;
+      btn.style.borderColor = bgColor;
+    });
+  });
+}
+
+// Retrieve region from URL
+const urlParams = new URLSearchParams(window.location.search);
+const region = window.location.pathname.includes("guria")
+  ? "guria"
+  : window.location.pathname.includes("adjara")
+  ? "adjara"
+  : window.location.pathname.includes("imereti")
+  ? "imereti"
+  : null;
+
+if (region) {
+  applyRegionColors(region);
+}

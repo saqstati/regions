@@ -3,14 +3,30 @@ $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 
 // Set the page title based on the current page
 if ($current_page == 'adjara.php') {
-    $page_title = $lang['adjaratitlename']; // Change this to the appropriate key for the Qeda title
-} else if ($current_page ==  'adjara.php') {
-    $page_title = $lang['adjaratitlename']; // Default to Batumi title
+    $page_title = $lang['adjaratitlename'];
+} elseif ($current_page == 'guria.php') {
+    $page_title = $lang['guriatitlename'];
+} elseif ($current_page == 'imereti.php') {
+    $page_title = $lang['imeretititlename'];
+} else {
+    $page_title = $lang['defaultTitle']; // Fallback title
 }
 
 // Determine the language URLs based on the current page
-$lang_url_ka = ($current_page == 'adjara.php') ? 'adjara.php?lang=ka' : 'batumi.php?lang=ka';
-$lang_url_en = ($current_page == 'adjara.php') ? 'adjara.php?lang=en' : 'batumi.php?lang=en';
+if ($current_page == 'adjara.php') {
+    $lang_url_ka = 'adjara.php?lang=ka';
+    $lang_url_en = 'adjara.php?lang=en';
+} elseif ($current_page == 'guria.php') {
+    $lang_url_ka = 'guria.php?lang=ka';
+    $lang_url_en = 'guria.php?lang=en';
+} elseif ($current_page == 'imereti.php') {
+    $lang_url_ka = 'imereti.php?lang=ka';
+    $lang_url_en = 'imereti.php?lang=en';
+} else {
+    // Fallback URLs if other pages are included
+    $lang_url_ka = 'default.php?lang=ka';
+    $lang_url_en = 'default.php?lang=en';
+}
 ?>
 
 <div class="container-fluid">
@@ -48,13 +64,13 @@ $lang_url_en = ($current_page == 'adjara.php') ? 'adjara.php?lang=en' : 'batumi.
         </div>
 
         <div class="d-flex">
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>">
+            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'listEN.php' : 'list.php'; ?>">
                 <span class="tr" Key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?>
                 </span>
             </a>
 
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../muncomEN.php?lang=en' : '../muncom.php?lang=ka'; ?>">
+            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'muncomEN.php?lang=en' : 'muncom.php?lang=ka'; ?>">
                 <span class="tr" Key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?>
                 </span>

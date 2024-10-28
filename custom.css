@@ -825,13 +825,10 @@ a#b {
 }
 
 .header-btn {
-  background-color: #ce8d34;
-  border-color: #ce8d34;
   color: white;
 }
+
 .header-btn:hover {
-  background-color: #cb744c !important;
-  border-color: #cb744c !important;
   color: white;
 }
 
