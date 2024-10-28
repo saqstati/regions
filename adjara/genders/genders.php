@@ -149,7 +149,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkBirths" href="#">
-                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -161,7 +161,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkRatio" href="#">
-                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -173,7 +173,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="motherAge" href="#">
-                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -185,7 +185,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkStillbirths" href="#">
-                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -200,7 +200,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkdeathagesex" href="#">
-                                        <img src="../..//images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -214,7 +214,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkdeathclases" href="#">
-                                        <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -224,18 +224,30 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia6">
                             <td>
-                                <?php echo $marriage['4']; ?>
+                                <span id="marriage4">
+                                    <?php echo $marriage['4']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkagemarriage" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr class="informacia6">
                             <td>
-                                <?php echo $marriage['5']; ?>
+                                <span id="marriage5">
+                                    <?php echo $marriage['5']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkmeanagemarriage" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -243,10 +255,16 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia7">
                             <td>
-                                <?php echo $divorce['4']; ?>
+                                <span id="divorce4">
+                                    <?php echo $divorce['4']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linknumberdivorce" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -254,42 +272,72 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia8">
                             <td>
-                                <?php echo $populationDescription['2']; ?>
+                                <span id="populationDescription2">
+                                    <?php echo $populationDescription['2']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                            </td>
-                        </tr>
-                        <tr class="informacia8">
-                            <td>
-                                <?php echo $populationDescription['3']; ?>
-                            </td>
-                            <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkpopulationDescription2" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr class="informacia8">
                             <td>
-                                <?php echo $populationDescription['4']; ?>
+                                <span id="populationDescription3">
+                                    <?php echo $populationDescription['3']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                            </td>
-                        </tr>
-                        <tr class="informacia8">
-                            <td>
-                                <?php echo $populationDescription['5']; ?>
-                            </td>
-                            <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Number%20of%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkpopulationDescription3" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr class="informacia8">
                             <td>
-                                <?php echo $populationDescription['6']; ?>
+                                <span id="populationDescription4">
+                                    <?php echo $populationDescription['4']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/C.%20Batumi.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkpopulationDescription4" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia8">
+                            <td>
+                                <span id="populationDescription5">
+                                    <?php echo $populationDescription['5']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkpopulationDescription5" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia8">
+                            <td>
+                                <span id="populationDescription6">
+                                    <?php echo $populationDescription['6']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkpopulationDescription6" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -297,26 +345,44 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia9">
                             <td>
-                                <?php echo $employmentAndSalaries['2']; ?>
+                                <span id="employmentAndSalaries2">
+                                    <?php echo $employmentAndSalaries['2']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                            </td>
-                        </tr>
-                        <tr class="informacia9">
-                            <td>
-                                <?php echo $employmentAndSalaries['3']; ?>
-                            </td>
-                            <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Employees/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkemploymentAndSalaries2" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr class="informacia9">
                             <td>
-                                <?php echo $employmentAndSalaries['4']; ?>
+                                <span id="employmentAndSalaries3">
+                                    <?php echo $employmentAndSalaries['3']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkemploymentAndSalaries3" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="employmentAndSalaries4">
+                                    <?php echo $employmentAndSalaries['4']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkemploymentAndSalaries4" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -324,10 +390,16 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia18">
                             <td>
-                                <?php echo $hotels['5']; ?>
+                                <span id="hotels5">
+                                    <?php echo $hotels['5']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkhotels5" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -335,10 +407,16 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia21">
                             <td>
-                                <?php echo $healthCareAndSocialSecurity['11']; ?>
+                                <span id="healthCareAndSocialSecurity21">
+                                    <?php echo $healthCareAndSocialSecurity['11']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity11" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -346,21 +424,32 @@ include "../../config.php";
                         </tr>
                         <tr class="informacia22">
                             <td>
-                                <?php echo $education['3']; ?>
+                                <span id="education3">
+                                    <?php echo $education['3']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkeducation3" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
                         <tr class="informacia22">
                             <td>
-                                <?php echo $education['4']; ?>
+                                <span id="education4">
+                                    <?php echo $education['4']; ?>
+                                </span>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../..//images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right">
+                                    <a id="linkeducation4" href="#">
+                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
                             </td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
