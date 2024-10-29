@@ -236,28 +236,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Function to detect the region from the URL path
-function applyRegionColors(region) {
-  let bgColor, hoverColor;
+// Function to detect the region from the URL path and apply colors and background image
+function applyRegionStyles(region) {
+  let bgColor, hoverColor, bgImage;
 
   switch (region) {
     case "adjara":
       bgColor = "#ce8d34";
       hoverColor = "#cb744c";
+      bgImage = "url('../1600-900-optimized/4.jpg')";
       break;
     case "guria":
       bgColor = "#6ea76f";
       hoverColor = "#66aba5";
+      bgImage = "url('../1600-900-optimized/3.jpg')";
       break;
     case "imereti":
       bgColor = "#c85861";
       hoverColor = "#c75685";
+      bgImage = "url('../1600-900-optimized/6.jpg')";
       break;
     default:
-      bgColor = "#ce8d34"; // Default to Adjara's color if region is unknown
+      bgColor = "#ce8d34"; // Default color (Adjara) if region is unknown
       hoverColor = "#cb744c";
+      bgImage = "url('../1600-900-optimized/default.jpg')"; // Default image
   }
 
+  // Apply button colors
   document.querySelectorAll(".header-btn").forEach((btn) => {
     btn.style.backgroundColor = bgColor;
     btn.style.borderColor = bgColor;
@@ -272,18 +277,54 @@ function applyRegionColors(region) {
       btn.style.borderColor = bgColor;
     });
   });
+
+  // Apply background image
+  const backgroundMain = document.getElementById("background-main");
+  if (backgroundMain && bgImage) {
+    backgroundMain.style.backgroundImage = bgImage;
+  }
 }
 
 // Retrieve region from URL
 const urlParams = new URLSearchParams(window.location.search);
-const region = window.location.pathname.includes("guria")
-  ? "guria"
-  : window.location.pathname.includes("adjara")
-  ? "adjara"
-  : window.location.pathname.includes("imereti")
-  ? "imereti"
-  : null;
+const municipal = urlParams.get("municipal")?.toLowerCase();
+let region;
 
+// Check for specific municipalities in Guria, Adjara, and Imereti
+if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
+  region = "guria";
+} else if (
+  ["batumi", "qeda", "qobuleti", "xelvachauri", "shuakhevi", "khulo"].includes(
+    municipal
+  )
+) {
+  region = "adjara";
+} else if (
+  [
+    "khoni",
+    "tskaltubo",
+    "baghdati",
+    "chiatura",
+    "kutaisi",
+    "sachkhere",
+    "samtredia",
+    "terjola",
+    "tkibuli",
+    "vani",
+    "kharagauli",
+    "zestaponi",
+  ].includes(municipal)
+) {
+  region = "imereti";
+} else if (window.location.pathname.includes("guria")) {
+  region = "guria";
+} else if (window.location.pathname.includes("adjara")) {
+  region = "adjara";
+} else if (window.location.pathname.includes("imereti")) {
+  region = "imereti";
+}
+
+// Apply styles based on detected region
 if (region) {
-  applyRegionColors(region);
+  applyRegionStyles(region);
 }

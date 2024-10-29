@@ -1,7 +1,6 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']); // Get the current page name
 
-// Set the page title based on the current page
 if ($current_page == 'qeda.php') {
     $page_title = $lang['kedatitlename'];
 } elseif ($current_page == 'batumi.php') {
@@ -14,6 +13,16 @@ if ($current_page == 'qeda.php') {
     $page_title = $lang['shuakhevititlename'];
 } elseif ($current_page == 'xulo.php') {
     $page_title = $lang['khulotitlename'];
+} elseif ($current_page == 'lanchxuti.php') {
+    $page_title = $lang['lanchkhutititlename'];
+} elseif ($current_page == 'ozurgeti.php') {
+    $page_title = $lang['ozurgetititlename'];
+} elseif ($current_page == 'choxatauri.php') {
+    $page_title = $lang['chokhataurititlename'];
+} elseif ($current_page == 'khoni.php') {
+    $page_title = $lang['khonititlename'];
+} elseif ($current_page == 'bagdadi.php') {
+    $page_title = $lang['baghdadititlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -35,6 +44,21 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'xulo.php') {
     $lang_url_ka = 'khulotitlename.php?lang=ka';
     $lang_url_en = 'khulotitlename.php?lang=en';
+} elseif ($current_page == 'lanchxuti.php') {
+    $lang_url_ka = 'lanchxuti.php?lang=ka';
+    $lang_url_en = 'lanchxuti.php?lang=en';
+} elseif ($current_page == 'ozurgeti.php') {
+    $lang_url_ka = 'ozurgeti.php?lang=ka';
+    $lang_url_en = 'ozurgeti.php?lang=en';
+} elseif ($current_page == 'choxatauri.php') {
+    $lang_url_ka = 'choxatauri.php?lang=ka';
+    $lang_url_en = 'choxatauri.php?lang=en';
+} elseif ($current_page == 'khoni.php') {
+    $lang_url_ka = 'khoni.php?lang=ka';
+    $lang_url_en = 'khoni.php?lang=en';
+} elseif ($current_page == 'bagdadi.php') {
+    $lang_url_ka = 'bagdadi.php?lang=ka';
+    $lang_url_en = 'bagdadi.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';
@@ -46,13 +70,13 @@ if ($current_page == 'qeda.php') {
     <div class="d-flex align-items-center justify-content-between mb-4">
         <!-- Brand Logo on the left -->
         <div id="brand-logo" class="me-3">
-            <a href="index.php" id="brand-logo-link">
+            <a href="../index.php" id="brand-logo-link">
                 <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
             </a>
         </div>
 
         <!-- Page Title centered -->
-        <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="font-size: 28px; flex-grow: 1;">
+        <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="flex-grow: 1;">
             <?php echo $page_title; ?>
         </h1>
 
@@ -70,16 +94,12 @@ if ($current_page == 'qeda.php') {
 
 <div class="container-fluid">
     <div class="d-flex justify-content-between">
-        <!-- Back Button on the left -->
         <div>
-            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../adjara.php?lang=en' : '../adjara.php?lang=ka'; ?>">
-                <span class="tr" Key="backBtn">
-                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?>
-                </span>
+            <a class="btn header-btn" onclick="previous()">
+                <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span>
             </a>
         </div>
 
-        <!-- Right buttons for region and municipality comparison -->
         <div class="d-flex">
             <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>">
                 <span class="tr" Key="regionsBtn">
@@ -93,7 +113,7 @@ if ($current_page == 'qeda.php') {
                 </span>
             </a>
 
-            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../adjara/genders/genders.php?lang=en' : '../adjara/genders/genders.php?lang=ka'; ?>">
+            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../genders/genders.php?lang=en' : '../genders/genders.php?lang=ka'; ?>">
                 <span class="tr" Key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators' : 'გენდერული სტატისტიკა'; ?>
                 </span>

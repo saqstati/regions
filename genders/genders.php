@@ -1,5 +1,5 @@
 <?php
-include "../../config.php";
+include "../config.php";
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +28,10 @@ include "../../config.php";
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 
     <!-- Custom and Project-specific CSS -->
-    <link rel="stylesheet" type="text/css" href="../../samegrelo.css">
-    <link rel="stylesheet" type="text/css" href="../../adjara/adjara.css">
-    <link rel="stylesheet" type="text/css" href="../../custom.css">
-    <link rel="stylesheet" type="text/css" href="../../genders.css">
-    <link rel="stylesheet" href="../../mediastyles.css">
+    <link rel="stylesheet" type="text/css" href="../samegrelo.css">
+    <link rel="stylesheet" type="text/css" href="../custom.css">
+    <link rel="stylesheet" type="text/css" href="css/genders.css">
+    <link rel="stylesheet" href="../mediastyles.css">
 
     <!-- GSAP for Animations -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -47,7 +46,7 @@ include "../../config.php";
             $current_page = isset($_GET['municipal']) ? $_GET['municipal'] : basename($_SERVER['PHP_SELF']);
 
             // For debugging, you can uncomment the line below
-            // print_r($current_page); 
+            // print_r($current_page);
 
             $municipal = isset($_GET['municipal']) ? $_GET['municipal'] : '';
 
@@ -63,6 +62,16 @@ include "../../config.php";
                 $page_title = $lang['shuakhevititlename'];
             } elseif ($current_page == 'Khulo') {
                 $page_title = $lang['khulotitlename'];
+            } elseif ($current_page == 'Lanchkhuti') {
+                $page_title = $lang['lanchkhutititlename'];
+            } elseif ($current_page == 'Ozurgeti') {
+                $page_title = $lang['ozurgetititlename'];
+            } elseif ($current_page == 'Chokhatauri') {
+                $page_title = $lang['chokhataurititlename'];
+            } elseif ($current_page == 'Khoni') {
+                $page_title = $lang['khonititlename'];
+            } elseif ($current_page == 'Baghdati') {
+                $page_title = $lang['baghdadititlename'];
             }
 
             $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
@@ -73,8 +82,8 @@ include "../../config.php";
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <!-- Brand Logo on the left -->
                     <div id="brand-logo" class="me-3">
-                        <a href="../../index.php" id="brand-logo-link">
-                            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../../images/logo_transparency_eng.png' : '../../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
+                        <a href="../index.php" id="brand-logo-link">
+                            <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
                         </a>
                     </div>
 
@@ -86,10 +95,10 @@ include "../../config.php";
                     <!-- Languages on the right -->
                     <div id="languages" class="d-flex">
                         <a href="<?php echo $lang_url_ka; ?>" id="ka" class="lang me-2">
-                            <img src="../../images/ka.png" alt="Georgian Language" class="img-fluid" style="width: 25px; height: auto;" />
+                            <img src="../images/ka.png" alt="Georgian Language" class="img-fluid" style="width: 25px; height: auto;" />
                         </a>
                         <a href="<?php echo $lang_url_en; ?>" id="en" class="lang">
-                            <img src="../../images/en.png" alt="English Language" class="img-fluid" style="width: 25px; height: auto;" />
+                            <img src="../images/en.png" alt="English Language" class="img-fluid" style="width: 25px; height: auto;" />
                         </a>
                     </div>
                 </div>
@@ -104,7 +113,7 @@ include "../../config.php";
             <div class="center">
                 <table class="container gender_table">
                     <?php
-                    include('../../connection.php');
+                    include('../connection.php');
                     $table = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'municipal_statistics_en' : 'municipal_statistics';
                     $query = mysqli_query($link, "select * from " . $table);
                     while ($row = mysqli_fetch_array($query)) {
@@ -149,7 +158,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkBirths" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -161,7 +170,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkRatio" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -173,7 +182,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="motherAge" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -185,7 +194,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkStillbirths" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -200,7 +209,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkdeathagesex" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="excel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="excel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -214,7 +223,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkdeathclases" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -231,7 +240,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkagemarriage" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -245,7 +254,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkmeanagemarriage" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -262,7 +271,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linknumberdivorce" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -279,7 +288,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkpopulationDescription2" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -293,7 +302,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkpopulationDescription3" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -307,7 +316,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkpopulationDescription4" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -321,7 +330,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkpopulationDescription5" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -335,7 +344,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkpopulationDescription6" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -352,7 +361,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkemploymentAndSalaries2" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -366,7 +375,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkemploymentAndSalaries3" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -380,7 +389,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkemploymentAndSalaries4" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -397,7 +406,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkhotels5" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -414,7 +423,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkhealthCareAndSocialSecurity11" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -431,7 +440,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkeducation3" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -445,7 +454,7 @@ include "../../config.php";
                             <td>
                                 <span class="float-right">
                                     <a id="linkeducation4" href="#">
-                                        <img src="../../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>
                             </td>
@@ -454,12 +463,12 @@ include "../../config.php";
                 </table>
             </div>
         </div>
-        <?php include '../../footer_mun.php' ?>
+        <?php include '../footer_mun.php' ?>
     </div>
 
-    <script src="../../script.js"></script>
-    <script src="../../genders.js"></script>
-    <script type="../../text/javascript" src="lang.js"></script>
+    <script src="../script.js"></script>
+    <script src="../genders.js"></script>
+    <script type="../text/javascript" src="lang.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             function updatePageTitleAndMeta() {
@@ -514,6 +523,31 @@ include "../../config.php";
                             pageTitle = lang === "en" ? "Statistical Information on Khulo Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ხულოს მუნიციპალიტეტის შესხებ";
                             ogTitle = "Statistical Information on Khulo Municipality, Adjara Region";
                             ogDescription = "Statistical Information on Khulo Municipality, Adjara Region";
+                            break;
+                        case "Lanchkhuti":
+                            pageTitle = lang === "en" ? "Statistical Information on Lanchkhuti Municipality, Guria Region" : "სტატისტიკური ინფორმაცია გურიის რეგიონის ლანჩხუთის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Lanchkhuti Municipality, Guria Region";
+                            ogDescription = "Statistical Information on Lanchkhuti Municipality, Guria Region";
+                            break;
+                        case "Ozurgeti":
+                            pageTitle = lang === "en" ? "Statistical Information on Ozurgeti Municipality, Guria Region" : "სტატისტიკური ინფორმაცია გურიის რეგიონის ოზურგეთის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Ozurgeti Municipality, Guria Region";
+                            ogDescription = "Statistical Information on Ozurgeti Municipality, Guria Region";
+                            break;
+                        case "Chokhatauri":
+                            pageTitle = lang === "en" ? "Statistical Information on Chokhatauri Municipality, Guria Region" : "სტატისტიკური ინფორმაცია გურიის რეგიონის ჩოხატაურის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Chokhatauri Municipality, Guria Region";
+                            ogDescription = "Statistical Information on Chokhatauri Municipality, Guria Region";
+                            break;
+                        case "Khoni":
+                            pageTitle = lang === "en" ? "Statistical Information on Khoni Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ხონის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Khoni Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Khoni Municipality, Imereti Region";
+                            break;
+                        case "Baghdati":
+                            pageTitle = lang === "en" ? "Statistical Information on Baghdati Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ბაღდათის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Baghdati Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Baghdati Municipality, Imereti Region";
                             break;
                         default:
                             pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";
