@@ -72,6 +72,26 @@ include "../config.php";
                 $page_title = $lang['khonititlename'];
             } elseif ($current_page == 'Baghdati') {
                 $page_title = $lang['baghdadititlename'];
+            } elseif ($current_page == 'Chiatura') {
+                $page_title = $lang['chiaturatitlename'];
+            } elseif ($current_page == 'Kutaisi') {
+                $page_title = $lang['kutaisititlename'];
+            } elseif ($current_page == 'Sachkhere') {
+                $page_title = $lang['sachkheretitlename'];
+            } elseif ($current_page == 'Samtredia') {
+                $page_title = $lang['samtrediatitlename'];
+            } elseif ($current_page == 'Terjola') {
+                $page_title = $lang['terjolatitlename'];
+            } elseif ($current_page == 'Tkibuli') {
+                $page_title = $lang['tkibulititlename'];
+            } elseif ($current_page == 'Vani') {
+                $page_title = $lang['vanititlename'];
+            } elseif ($current_page == 'Tskaltubo') {
+                $page_title = $lang['tskaltubotitlename'];
+            } elseif ($current_page == 'Kharagauli') {
+                $page_title = $lang['kharagaulititlename'];
+            } elseif ($current_page == 'Zestaponi') {
+                $page_title = $lang['zestaponititlename'];
             }
 
             $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
@@ -548,6 +568,56 @@ include "../config.php";
                             pageTitle = lang === "en" ? "Statistical Information on Baghdati Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ბაღდათის მუნიციპალიტეტის შესხებ";
                             ogTitle = "Statistical Information on Baghdati Municipality, Imereti Region";
                             ogDescription = "Statistical Information on Baghdati Municipality, Imereti Region";
+                            break;
+                        case "Chiatura":
+                            pageTitle = lang === "en" ? "Statistical Information on Chiatura Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ჭიათურის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Chiatura Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Chiatura Municipality, Imereti Region";
+                            break;
+                        case "Kutaisi":
+                            pageTitle = lang === "en" ? "Statistical Information on Kutaisi Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ქუთაისის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Kutaisi Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Kutaisi Municipality, Imereti Region";
+                            break;
+                        case "Sachkhere":
+                            pageTitle = lang === "en" ? "Statistical Information on Sachkhere Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის საჩხერის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Sachkhere Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Sachkhere Municipality, Imereti Region";
+                            break;
+                        case "Samtredia":
+                            pageTitle = lang === "en" ? "Statistical Information on Samtredia Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის სამტრედიის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Samtredia Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Samtredia Municipality, Imereti Region";
+                            break;
+                        case "Terjola":
+                            pageTitle = lang === "en" ? "Statistical Information on Terjola Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის თერჯოლის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Terjola Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Terjola Municipality, Imereti Region";
+                            break;
+                        case "Tkibuli":
+                            pageTitle = lang === "en" ? "Statistical Information on Tkibuli Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ტყიბულის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Tkibuli Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Tkibuli Municipality, Imereti Region";
+                            break;
+                        case "Vani":
+                            pageTitle = lang === "en" ? "Statistical Information on Vani Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ვანის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Vani Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Vani Municipality, Imereti Region";
+                            break;
+                        case "Tskaltubo":
+                            pageTitle = lang === "en" ? "Statistical Information on Tskaltubo Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის წყალტუბოს მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Tskaltubo Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Tskaltubo Municipality, Imereti Region";
+                            break;
+                        case "Kharagauli":
+                            pageTitle = lang === "en" ? "Statistical Information on Kharagauli Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ხარაგაულის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Kharagauli Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Kharagauli Municipality, Imereti Region";
+                            break;
+                        case "Zestaponi":
+                            pageTitle = lang === "en" ? "Statistical Information on Zestaponi Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ზესტაფონის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Zestaponi Municipality, Imereti Region";
+                            ogDescription = "Statistical Information on Zestaponi Municipality, Imereti Region";
                             break;
                         default:
                             pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";

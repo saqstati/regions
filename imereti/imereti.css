@@ -44,60 +44,54 @@ g#layer6 {
 #baghdatiSVG {
   width: 689px;
   margin-left: 17%;
-  margin-top: -15%;
 }
 
 #chiaturaSVG {
   width: 616px;
   margin-left: 18%;
-  margin-top: -10%;
 }
 
 #khoniSVG,
 #sachkhereSVG {
   width: 563px;
   margin-left: 18%;
-  margin-top: -6%;
 }
 
 #samtrediaSVG {
   width: 673px;
   margin-left: 18%;
-  margin-top: -14%;
+}
+
+.map-box {
+  left: 17% !important;
 }
 
 #terjolaSVG {
-  width: 1111px;
-  margin-left: 2%;
-  margin-top: -10%;
+  width: 1000px;
+  margin-left: 6%;
 }
 
 #tkibuliSVG {
   width: 961px;
   margin-left: 7%;
-  margin-top: -8%;
 }
 
 #vaniSVG {
   width: 682px;
   margin-left: 16%;
-  margin-top: -13%;
 }
 
 #tskaltuboSVG {
   width: 617px;
   margin-left: 18%;
-  margin-top: -10%;
 }
 
 #kharagauliSVG {
   width: 1008px;
   margin-left: 4%;
-  margin-top: -6%;
 }
 
 #zestafoniSVG {
   width: 1041px;
   margin-left: -1%;
-  margin-top: -6%;
 }

@@ -23,6 +23,26 @@ if ($current_page == 'qeda.php') {
     $page_title = $lang['khonititlename'];
 } elseif ($current_page == 'bagdadi.php') {
     $page_title = $lang['baghdadititlename'];
+} elseif ($current_page == 'chiatura.php') {
+    $page_title = $lang['chiaturatitlename'];
+} elseif ($current_page == 'kutaisi.php') {
+    $page_title = $lang['kutaisititlename'];
+} elseif ($current_page == 'sachxere.php') {
+    $page_title = $lang['sachkheretitlename'];
+} elseif ($current_page == 'samtredia.php') {
+    $page_title = $lang['samtrediatitlename'];
+} elseif ($current_page == 'terjola.php') {
+    $page_title = $lang['terjolatitlename'];
+} elseif ($current_page == 'tyibuli.php') {
+    $page_title = $lang['tkibulititlename'];
+} elseif ($current_page == 'vani.php') {
+    $page_title = $lang['vanititlename'];
+} elseif ($current_page == 'wyaltubo.php') {
+    $page_title = $lang['tskaltubotitlename'];
+} elseif ($current_page == 'xaragauli.php') {
+    $page_title = $lang['kharagaulititlename'];
+} elseif ($current_page == 'zestafoni.php') {
+    $page_title = $lang['zestaponititlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -59,6 +79,36 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'bagdadi.php') {
     $lang_url_ka = 'bagdadi.php?lang=ka';
     $lang_url_en = 'bagdadi.php?lang=en';
+} elseif ($current_page == 'chiatura.php') {
+    $lang_url_ka = 'chiatura.php?lang=ka';
+    $lang_url_en = 'chiatura.php?lang=en';
+} elseif ($current_page == 'kutaisi.php') {
+    $lang_url_ka = 'kutaisi.php?lang=ka';
+    $lang_url_en = 'kutaisi.php?lang=en';
+} elseif ($current_page == 'sachxere.php') {
+    $lang_url_ka = 'sachxere.php?lang=ka';
+    $lang_url_en = 'sachxere.php?lang=en';
+} elseif ($current_page == 'samtredia.php') {
+    $lang_url_ka = 'samtredia.php?lang=ka';
+    $lang_url_en = 'samtredia.php?lang=en';
+} elseif ($current_page == 'terjola.php') {
+    $lang_url_ka = 'terjola.php?lang=ka';
+    $lang_url_en = 'terjola.php?lang=en';
+} elseif ($current_page == 'tyibuli.php') {
+    $lang_url_ka = 'tyibuli.php?lang=ka';
+    $lang_url_en = 'tyibuli.php?lang=en';
+} elseif ($current_page == 'vani.php') {
+    $lang_url_ka = 'vani.php?lang=ka';
+    $lang_url_en = 'vani.php?lang=en';
+} elseif ($current_page == 'wyaltubo.php') {
+    $lang_url_ka = 'wyaltubo.php?lang=ka';
+    $lang_url_en = 'wyaltubo.php?lang=en';
+} elseif ($current_page == 'xaragauli.php') {
+    $lang_url_ka = 'xaragauli.php?lang=ka';
+    $lang_url_en = 'xaragauli.php?lang=en';
+} elseif ($current_page == 'zestafoni.php') {
+    $lang_url_ka = 'zestafoni.php?lang=ka';
+    $lang_url_en = 'zestafoni.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';
