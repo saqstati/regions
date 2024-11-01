@@ -17,81 +17,22 @@ include "../config.php";
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
     <title class="tr" Key="PAGE_TITLE"><?php echo $lang['akhaltsikhetitlename'] ?></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../samegrelo.css">
     <link rel="stylesheet" type="text/css" href="../javaxeti/javaxeti.css">
     <link rel="stylesheet" type="text/css" href="../custom.css">
     <link rel="stylesheet" href="../mediastyles.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-154977204-1');
-    </script>
-
 </head>
 
 <body>
-
-    <div class="hidden">
-        <script type="text/javascript">
-            var images = new Array()
-
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
-                }
-            }
-            preload(
-                "../1600-900-optimized/2.jpg",
-                "../1600-900-optimized/3.jpg",
-                "../1600-900-optimized/4.jpg",
-                "../1600-900-optimized/5.jpg",
-                "../1600-900-optimized/6.jpg",
-                "../1600-900-optimized/7.jpg",
-                "../1600-900-optimized/8.jpg",
-                "../1600-900-optimized/9.jpg",
-                "../1600-900-optimized/10.jpg",
-                "../1600-900-optimized/11.jpg",
-                "../1600-900-optimized/12.jpg",
-                "../1600-900-optimized/15.jpg"
-            )
-        </script>
-    </div>
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
-        <div id="brand-logo">
-            <a href="/regions/index.php" id="brand-logo-link" class=""><img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" /></a>
-        </div>
-        <header class="header1">
-            <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14"><?php echo $lang['akhaltsikhetitlename'] ?></p>
-            </h1>
-        </header>
-        <div id="languages">
-            <a href="axalcixe.php?lang=ka" id="ka" class="lang"><img src="../images/ka.png" /></a>
-            <a href="axalcixe.php?lang=en" id="en" class="lang"><img src="../images/en.png" /></a>
-        </div>
-
-        <div class="display-flex">
-            <a class="back-btn btn textbox-left-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../javaxeti.php?lang=en' : '../javaxeti.php?lang=ka'; ?>"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
-
-            <a class="regions-btn btn textbox-right-home" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?></span></a>
-
-            <a class="btn textbox-right-home regions-mun regions-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../muncomEN.php?lang=en' : '../muncom.php?lang=ka'; ?>"> <span class="tr" Key="regionsBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?></span></a>
-        </div>
-
+        <?php include '../asset/municHeader.php' ?>
         <table class="machveneblebi-left">
             <?php
             include('../connection.php');
@@ -944,6 +885,11 @@ include "../config.php";
 
         <script src="../script.js"></script>
         <script type="text/javascript" src="../lang.js"></script>
+        <script>
+            localStorage.setItem('municipal', 'Akhaltsikhe');
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

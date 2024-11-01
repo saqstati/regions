@@ -43,6 +43,12 @@ if ($current_page == 'qeda.php') {
     $page_title = $lang['kharagaulititlename'];
 } elseif ($current_page == 'zestafoni.php') {
     $page_title = $lang['zestaponititlename'];
+} elseif ($current_page == 'adigeni.php') {
+    $page_title = $lang['adigenititlename'];
+} elseif ($current_page == 'aspindza.php') {
+    $page_title = $lang['aspindzatitlename'];
+} elseif ($current_page == 'axalcixe.php') {
+    $page_title = $lang['akhaltsikhetitlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -109,6 +115,15 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'zestafoni.php') {
     $lang_url_ka = 'zestafoni.php?lang=ka';
     $lang_url_en = 'zestafoni.php?lang=en';
+} elseif ($current_page == 'adigeni.php') {
+    $lang_url_ka = 'adigeni.php?lang=ka';
+    $lang_url_en = 'adigeni.php?lang=en';
+} elseif ($current_page == 'aspindza.php') {
+    $lang_url_ka = 'aspindza.php?lang=ka';
+    $lang_url_en = 'aspindza.php?lang=en';
+} elseif ($current_page == 'axalcixe.php') {
+    $lang_url_ka = 'axalcixe.php?lang=ka';
+    $lang_url_en = 'axalcixe.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';

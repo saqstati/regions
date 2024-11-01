@@ -92,6 +92,10 @@ include "../config.php";
                 $page_title = $lang['kharagaulititlename'];
             } elseif ($current_page == 'Zestaponi') {
                 $page_title = $lang['zestaponititlename'];
+            } elseif ($current_page == 'Adigeni') {
+                $page_title = $lang['adigenititlename'];
+            } elseif ($current_page == 'Aspindza') {
+                $page_title = $lang['aspindzatitlename'];
             }
 
             $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
@@ -618,6 +622,21 @@ include "../config.php";
                             pageTitle = lang === "en" ? "Statistical Information on Zestaponi Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ზესტაფონის მუნიციპალიტეტის შესხებ";
                             ogTitle = "Statistical Information on Zestaponi Municipality, Imereti Region";
                             ogDescription = "Statistical Information on Zestaponi Municipality, Imereti Region";
+                            break;
+                        case "Adigeni":
+                            pageTitle = lang === "en" ? "Statistical Information on Adigeni Municipality, Samtskhe-Javakheti Region" : "სტატისტიკური ინფორმაცია სამცხე-ჯავახეთის რეგიონის ადიგენის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Adigeni Municipality, Samtskhe-Javakheti Region";
+                            ogDescription = "Statistical Information on Adigeni Municipality, Samtskhe-Javakheti Region";
+                            break;
+                        case "Aspindza":
+                            pageTitle = lang === "en" ? "Statistical Information on Aspindza Municipality, Samtskhe-Javakheti Region" : "სტატისტიკური ინფორმაცია სამცხე-ჯავახეთის რეგიონის ასპინძის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Aspindza Municipality, Samtskhe-Javakheti Region";
+                            ogDescription = "Statistical Information on Aspindza Municipality, Samtskhe-Javakheti Region";
+                            break;
+                        case "Akhaltsikhe":
+                            pageTitle = lang === "en" ? "Statistical Information on Akhaltsikhe Municipality, Samtskhe-Javakheti Region" : "სტატისტიკური ინფორმაცია სამცხე-ჯავახეთის რეგიონის ახალციხის მუნიციპალიტეტის შესხებ";
+                            ogTitle = "Statistical Information on Akhaltsikhe Municipality, Samtskhe-Javakheti Region";
+                            ogDescription = "Statistical Information on Akhaltsikhe Municipality, Samtskhe-Javakheti Region";
                             break;
                         default:
                             pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";

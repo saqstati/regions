@@ -1,6 +1,3 @@
-.background-image {
-  background-image: url(../1600-900-optimized/5.jpg) !important;
-}
 g#layer5 {
   transform: scale(1.8);
   -webkit-transform-origin-x: 1500px;
@@ -27,32 +24,16 @@ g#layer5 {
   opacity: 1;
 }
 
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-  background-color: #9e6e9c;
-}
-
-.textbox-right-home {
-  background-color: #9e6e9c !important;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-  background-color: #b5568c !important;
-}
-
 #axalqalaqiSVG,
 #ninowmindaSVG,
 #akhaltsikheSVG,
 #aspindzaSVG {
   width: 619px;
   margin-left: 19%;
-  margin-top: -8%;
 }
 
 #borjomiSVG,
 #adigeniSVG {
   width: 1000px;
   margin-left: 8%;
-  margin-top: -5%;
 }

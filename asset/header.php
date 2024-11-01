@@ -8,6 +8,8 @@ if ($current_page == 'adjara.php') {
     $page_title = $lang['guriatitlename'];
 } elseif ($current_page == 'imereti.php') {
     $page_title = $lang['imeretititlename'];
+} elseif ($current_page == 'javaxeti.php') {
+    $page_title = $lang['javakhetititlename'];
 } else {
     $page_title = $lang['defaultTitle']; // Fallback title
 }
@@ -22,8 +24,10 @@ if ($current_page == 'adjara.php') {
 } elseif ($current_page == 'imereti.php') {
     $lang_url_ka = 'imereti.php?lang=ka';
     $lang_url_en = 'imereti.php?lang=en';
+} elseif ($current_page == 'javaxeti.php') {
+    $lang_url_ka = 'javaxeti.php?lang=ka';
+    $lang_url_en = 'javaxeti.php?lang=en';
 } else {
-    // Fallback URLs if other pages are included
     $lang_url_ka = 'default.php?lang=ka';
     $lang_url_en = 'default.php?lang=en';
 }

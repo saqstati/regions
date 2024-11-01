@@ -244,22 +244,27 @@ function applyRegionStyles(region) {
     case "adjara":
       bgColor = "#ce8d34";
       hoverColor = "#cb744c";
-      bgImage = "url('../1600-900-optimized/4.jpg')";
+      bgImage = "url('/regions/1600-900-optimized/4.jpg')";
       break;
     case "guria":
       bgColor = "#6ea76f";
       hoverColor = "#66aba5";
-      bgImage = "url('../1600-900-optimized/3.jpg')";
+      bgImage = "url('/regions/1600-900-optimized/3.jpg')";
       break;
     case "imereti":
       bgColor = "#c85861";
       hoverColor = "#c75685";
-      bgImage = "url('../1600-900-optimized/6.jpg')";
+      bgImage = "url('/regions/1600-900-optimized/6.jpg')";
+      break;
+    case "Samtskhe-Javakheri":
+      bgColor = "#9e6e9c";
+      hoverColor = "#b5568c";
+      bgImage = "url('/regions/1600-900-optimized/5.jpg')";
       break;
     default:
       bgColor = "#ce8d34"; // Default color (Adjara) if region is unknown
       hoverColor = "#cb744c";
-      bgImage = "url('../1600-900-optimized/default.jpg')"; // Default image
+      bgImage = "url('/regions/1600-900-optimized/15.jpg')"; // Default image
   }
 
   // Apply button colors
@@ -290,7 +295,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const municipal = urlParams.get("municipal")?.toLowerCase();
 let region;
 
-// Check for specific municipalities in Guria, Adjara, and Imereti
 if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   region = "guria";
 } else if (
@@ -316,12 +320,25 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   ].includes(municipal)
 ) {
   region = "imereti";
+} else if (
+  [
+    "adigeni",
+    "aspindza",
+    "akhaltsikhe",
+    "akhalkalaki",
+    "borjomi",
+    "ninotsminda",
+  ].includes(municipal)
+) {
+  region = "Samtskhe-Javakheri";
 } else if (window.location.pathname.includes("guria")) {
   region = "guria";
 } else if (window.location.pathname.includes("adjara")) {
   region = "adjara";
 } else if (window.location.pathname.includes("imereti")) {
   region = "imereti";
+} else if (window.location.pathname.includes("javaxeti")) {
+  region = "Samtskhe-Javakheri";
 }
 
 // Apply styles based on detected region
