@@ -10,6 +10,18 @@ if ($current_page == 'adjara.php') {
     $page_title = $lang['imeretititlename'];
 } elseif ($current_page == 'javaxeti.php') {
     $page_title = $lang['javakhetititlename'];
+} elseif ($current_page == 'kakheti.php') {
+    $page_title = $lang['kakhetititlename'];
+} elseif ($current_page == 'mcxeta-mtianeti.php') {
+    $page_title = $lang['mtskhetamtianetititlename'];
+} elseif ($current_page == 'kakheti.php') {
+    $page_title = $lang['kakhetititlename'];
+} elseif ($current_page == 'kakheti.php') {
+    $page_title = $lang['kakhetititlename'];
+} elseif ($current_page == 'kakheti.php') {
+    $page_title = $lang['kakhetititlename'];
+} elseif ($current_page == 'kakheti.php') {
+    $page_title = $lang['kakhetititlename'];
 } else {
     $page_title = $lang['defaultTitle']; // Fallback title
 }
@@ -27,6 +39,9 @@ if ($current_page == 'adjara.php') {
 } elseif ($current_page == 'javaxeti.php') {
     $lang_url_ka = 'javaxeti.php?lang=ka';
     $lang_url_en = 'javaxeti.php?lang=en';
+} elseif ($current_page == 'kakheti.php') {
+    $lang_url_ka = 'kakheti.php?lang=ka';
+    $lang_url_en = 'kakheti.php?lang=en';
 } else {
     $lang_url_ka = 'default.php?lang=ka';
     $lang_url_en = 'default.php?lang=en';

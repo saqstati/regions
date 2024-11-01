@@ -49,6 +49,12 @@ if ($current_page == 'qeda.php') {
     $page_title = $lang['aspindzatitlename'];
 } elseif ($current_page == 'axalcixe.php') {
     $page_title = $lang['akhaltsikhetitlename'];
+} elseif ($current_page == 'axalqalaqi.php') {
+    $page_title = $lang['akhalkalakititlename'];
+} elseif ($current_page == 'borjomi.php') {
+    $page_title = $lang['borjomititlename'];
+} elseif ($current_page == 'ninowminda.php') {
+    $page_title = $lang['ninotsmindatitlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -124,6 +130,15 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'axalcixe.php') {
     $lang_url_ka = 'axalcixe.php?lang=ka';
     $lang_url_en = 'axalcixe.php?lang=en';
+} elseif ($current_page == 'axalqalaqi.php') {
+    $lang_url_ka = 'axalqalaqi.php?lang=ka';
+    $lang_url_en = 'axalqalaqi.php?lang=en';
+} elseif ($current_page == 'borjomi.php') {
+    $lang_url_ka = 'borjomi.php?lang=ka';
+    $lang_url_en = 'borjomi.php?lang=en';
+} elseif ($current_page == 'ninowminda.php') {
+    $lang_url_ka = 'ninowminda.php?lang=ka';
+    $lang_url_en = 'ninowminda.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';

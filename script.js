@@ -261,6 +261,11 @@ function applyRegionStyles(region) {
       hoverColor = "#b5568c";
       bgImage = "url('/regions/1600-900-optimized/5.jpg')";
       break;
+    case "Kakheti":
+      bgColor = "#c85861";
+      hoverColor = "#c75685";
+      bgImage = "url('/regions/1600-900-optimized/9.jpg')";
+      break;
     default:
       bgColor = "#ce8d34"; // Default color (Adjara) if region is unknown
       hoverColor = "#cb744c";
@@ -331,6 +336,19 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   ].includes(municipal)
 ) {
   region = "Samtskhe-Javakheri";
+} else if (
+  [
+    "akhmeta",
+    "dedoplistskaro",
+    "gurjaani",
+    "lagodekhi",
+    "sagarejo",
+    "sighnaghi",
+    "telavi",
+    "kvareli",
+  ].includes(municipal)
+) {
+  region = "Kakheti";
 } else if (window.location.pathname.includes("guria")) {
   region = "guria";
 } else if (window.location.pathname.includes("adjara")) {
@@ -339,6 +357,8 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   region = "imereti";
 } else if (window.location.pathname.includes("javaxeti")) {
   region = "Samtskhe-Javakheri";
+} else if (window.location.pathname.includes("kakheti")) {
+  region = "Kakheti";
 }
 
 // Apply styles based on detected region

@@ -2,6 +2,149 @@
 include "../config.php";
 ?>
 
+<?php
+$current_page = isset($_GET['municipal']) ? $_GET['municipal'] : basename($_SERVER['PHP_SELF']);
+$municipal = isset($_GET['municipal']) ? $_GET['municipal'] : '';
+
+if ($current_page == 'qeda') {
+    $page_title = $lang['kedatitlename'];
+} elseif ($current_page == 'qobuleti') {
+    $page_title = $lang['kobuletititlename'];
+} elseif ($current_page == 'batumi') {
+    $page_title = $lang['batumititlename'];
+} elseif ($current_page == 'xelvachauri') {
+    $page_title = $lang['khelvachaurititlename'];
+} elseif ($current_page == 'Shuakhevi') {
+    $page_title = $lang['shuakhevititlename'];
+} elseif ($current_page == 'Khulo') {
+    $page_title = $lang['khulotitlename'];
+} elseif ($current_page == 'Lanchkhuti') {
+    $page_title = $lang['lanchkhutititlename'];
+} elseif ($current_page == 'Ozurgeti') {
+    $page_title = $lang['ozurgetititlename'];
+} elseif ($current_page == 'Chokhatauri') {
+    $page_title = $lang['chokhataurititlename'];
+} elseif ($current_page == 'Khoni') {
+    $page_title = $lang['khonititlename'];
+} elseif ($current_page == 'Baghdati') {
+    $page_title = $lang['baghdadititlename'];
+} elseif ($current_page == 'Chiatura') {
+    $page_title = $lang['chiaturatitlename'];
+} elseif ($current_page == 'Kutaisi') {
+    $page_title = $lang['kutaisititlename'];
+} elseif ($current_page == 'Sachkhere') {
+    $page_title = $lang['sachkheretitlename'];
+} elseif ($current_page == 'Samtredia') {
+    $page_title = $lang['samtrediatitlename'];
+} elseif ($current_page == 'Terjola') {
+    $page_title = $lang['terjolatitlename'];
+} elseif ($current_page == 'Tkibuli') {
+    $page_title = $lang['tkibulititlename'];
+} elseif ($current_page == 'Vani') {
+    $page_title = $lang['vanititlename'];
+} elseif ($current_page == 'Tskaltubo') {
+    $page_title = $lang['tskaltubotitlename'];
+} elseif ($current_page == 'Kharagauli') {
+    $page_title = $lang['kharagaulititlename'];
+} elseif ($current_page == 'Zestaponi') {
+    $page_title = $lang['zestaponititlename'];
+} elseif ($current_page == 'Adigeni') {
+    $page_title = $lang['adigenititlename'];
+} elseif ($current_page == 'Aspindza') {
+    $page_title = $lang['aspindzatitlename'];
+} elseif ($current_page == 'Akhaltsikhe') {
+    $page_title = $lang['akhaltsikhetitlename'];
+} elseif ($current_page == 'Akhalkalaki') {
+    $page_title = $lang['akhalkalakititlename'];
+} elseif ($current_page == 'Borjomi') {
+    $page_title = $lang['borjomititlename'];
+} elseif ($current_page == 'Ninotsminda') {
+    $page_title = $lang['ninotsmindatitlename'];
+} elseif ($current_page == 'Gardabani') {
+    $page_title = $lang['gardabanititlename'];
+} elseif ($current_page == 'Bolnisi') {
+    $page_title = $lang['bolnisititlename'];
+} elseif ($current_page == 'Dmanisi') {
+    $page_title = $lang['dmanisititlename'];
+} elseif ($current_page == 'Tetritskaro') {
+    $page_title = $lang['tetritskarotitlename'];
+} elseif ($current_page == 'Tsalka') {
+    $page_title = $lang['tsalkatitlename'];
+} elseif ($current_page == 'Marneuli') {
+    $page_title = $lang['marneulititlename'];
+} elseif ($current_page == 'Lagodekhi') {
+    $page_title = $lang['lagodekhititlename'];
+} elseif ($current_page == 'Gurjaani') {
+    $page_title = $lang['gurjaanititlename'];
+} elseif ($current_page == 'Kvareli') {
+    $page_title = $lang['kvarelitiitlename'];
+} elseif ($current_page == 'Telavi') {
+    $page_title = $lang['telavititlename'];
+} elseif ($current_page == 'Sagarejo') {
+    $page_title = $lang['sagarejotitlename'];
+} elseif ($current_page == 'Dedoplistskaro') {
+    $page_title = $lang['dedoplistskarotitlename'];
+} elseif ($current_page == 'Signagi') {
+    $page_title = $lang['signagititlename'];
+} elseif ($current_page == 'Mtskheta') {
+    $page_title = $lang['mtskhetatitlename'];
+} elseif ($current_page == 'Dusheti') {
+    $page_title = $lang['dushetititlename'];
+} elseif ($current_page == 'Kazbegi') {
+    $page_title = $lang['kazbegititlename'];
+} elseif ($current_page == 'Tianeti') {
+    $page_title = $lang['tianetititlename'];
+} elseif ($current_page == 'Akhmeta') {
+    $page_title = $lang['akhmetatitlename'];
+} elseif ($current_page == 'Gori') {
+    $page_title = $lang['gorititlename'];
+} elseif ($current_page == 'Kaspi') {
+    $page_title = $lang['kaspititlename'];
+} elseif ($current_page == 'Kareli') {
+    $page_title = $lang['karelitiitlename'];
+} elseif ($current_page == 'Java') {
+    $page_title = $lang['javatitlename'];
+} elseif ($current_page == 'Tskhinvali') {
+    $page_title = $lang['tskhinvalititlename'];
+} elseif ($current_page == 'Khashuri') {
+    $page_title = $lang['khashuritiitlename'];
+} elseif ($current_page == 'Rustavi') {
+    $page_title = $lang['rustavititlename'];
+} elseif ($current_page == 'Zugdidi') {
+    $page_title = $lang['zugdidititlename'];
+} elseif ($current_page == 'Tsalenjikha') {
+    $page_title = $lang['tsalenjikhatitlename'];
+} elseif ($current_page == 'Jvari') {
+    $page_title = $lang['jvarititlename'];
+} elseif ($current_page == 'Abasha') {
+    $page_title = $lang['abashatitlename'];
+} elseif ($current_page == 'Poti') {
+    $page_title = $lang['potititlename'];
+} elseif ($current_page == 'Senaki') {
+    $page_title = $lang['senakititlename'];
+} elseif ($current_page == 'Khobi') {
+    $page_title = $lang['khobititlename'];
+} elseif ($current_page == 'Martvili') {
+    $page_title = $lang['martvilititlename'];
+} elseif ($current_page == 'Chkhorotsku') {
+    $page_title = $lang['chkhorotskutitlename'];
+} elseif ($current_page == 'Tsageri') {
+    $page_title = $lang['tsagerititlename'];
+} elseif ($current_page == 'Lentekhi') {
+    $page_title = $lang['lentekhititlename'];
+} elseif ($current_page == 'Mestia') {
+    $page_title = $lang['mestiatitlename'];
+} elseif ($current_page == 'Tbilisi') {
+    $page_title = $lang['tbilisititlename'];
+} else {
+    $page_title = $lang['defaulttitlename'];
+}
+
+$lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
+$lang_url_en = "genders.php?municipal=$municipal&lang=en";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,14 +154,14 @@ include "../config.php";
 
     <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $lang['batumititlename'] ?>" id="og-title" />
-    <meta property="og:description" content="<?php echo $lang['batumititlename'] ?>" id="og-description" />
+    <meta property="og:title" content="<?php echo $page_title ?>" id="og-title" />
+    <meta property="og:description" content="<?php echo $page_title ?>" id="og-description" />
     <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:secure_url" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
 
-    <title class="tr" Key="PAGE_TITLE" id="page-title"><?php echo $lang['batumititlename'] ?></title>
+    <title class="tr" Key="PAGE_TITLE" id="page-title"><?php echo $page_title ?></title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Bootstrap 5.3.0 CSS -->
@@ -41,67 +184,6 @@ include "../config.php";
     <div id="background-main" class="background-image"></div>
     <div class="main-container">
         <div class="content">
-            <?php
-            // Get the municipal value from the URL parameters or fallback to the current page name
-            $current_page = isset($_GET['municipal']) ? $_GET['municipal'] : basename($_SERVER['PHP_SELF']);
-
-            // For debugging, you can uncomment the line below
-            // print_r($current_page);
-
-            $municipal = isset($_GET['municipal']) ? $_GET['municipal'] : '';
-
-            if ($current_page == 'qeda') {
-                $page_title = $lang['kedatitlename'];
-            } elseif ($current_page == 'qobuleti') {
-                $page_title = $lang['kobuletititlename'];
-            } elseif ($current_page == 'batumi') {
-                $page_title = $lang['batumititlename'];
-            } elseif ($current_page == 'xelvachauri') {
-                $page_title = $lang['khelvachaurititlename'];
-            } elseif ($current_page == 'Shuakhevi') {
-                $page_title = $lang['shuakhevititlename'];
-            } elseif ($current_page == 'Khulo') {
-                $page_title = $lang['khulotitlename'];
-            } elseif ($current_page == 'Lanchkhuti') {
-                $page_title = $lang['lanchkhutititlename'];
-            } elseif ($current_page == 'Ozurgeti') {
-                $page_title = $lang['ozurgetititlename'];
-            } elseif ($current_page == 'Chokhatauri') {
-                $page_title = $lang['chokhataurititlename'];
-            } elseif ($current_page == 'Khoni') {
-                $page_title = $lang['khonititlename'];
-            } elseif ($current_page == 'Baghdati') {
-                $page_title = $lang['baghdadititlename'];
-            } elseif ($current_page == 'Chiatura') {
-                $page_title = $lang['chiaturatitlename'];
-            } elseif ($current_page == 'Kutaisi') {
-                $page_title = $lang['kutaisititlename'];
-            } elseif ($current_page == 'Sachkhere') {
-                $page_title = $lang['sachkheretitlename'];
-            } elseif ($current_page == 'Samtredia') {
-                $page_title = $lang['samtrediatitlename'];
-            } elseif ($current_page == 'Terjola') {
-                $page_title = $lang['terjolatitlename'];
-            } elseif ($current_page == 'Tkibuli') {
-                $page_title = $lang['tkibulititlename'];
-            } elseif ($current_page == 'Vani') {
-                $page_title = $lang['vanititlename'];
-            } elseif ($current_page == 'Tskaltubo') {
-                $page_title = $lang['tskaltubotitlename'];
-            } elseif ($current_page == 'Kharagauli') {
-                $page_title = $lang['kharagaulititlename'];
-            } elseif ($current_page == 'Zestaponi') {
-                $page_title = $lang['zestaponititlename'];
-            } elseif ($current_page == 'Adigeni') {
-                $page_title = $lang['adigenititlename'];
-            } elseif ($current_page == 'Aspindza') {
-                $page_title = $lang['aspindzatitlename'];
-            }
-
-            $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";
-            $lang_url_en = "genders.php?municipal=$municipal&lang=en";
-            ?>
-
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <!-- Brand Logo on the left -->
@@ -493,168 +575,6 @@ include "../config.php";
     <script src="../script.js"></script>
     <script src="../genders.js"></script>
     <script type="../text/javascript" src="lang.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            function updatePageTitleAndMeta() {
-
-                // Retrieve the 'municipal' value from localStorage
-                var municipality = localStorage.getItem("municipal");
-
-                // Retrieve the 'lang' parameter from the PHP code
-                var lang = '<?php echo (isset($_GET['lang']) ? $_GET['lang'] : "ka"); ?>';
-
-                // Construct the new URL, ensuring both 'municipal' and 'lang' parameters are included
-                var newUrl = window.location.href.split("?")[0] + "?municipal=" + municipality + "&lang=" + lang;
-
-                // Perform the redirection only if the current URL is different from the constructed one
-                if (window.location.href !== newUrl) {
-                    window.location.href = newUrl; // This prevents an infinite loop
-                }
-
-
-                if (municipality) {
-                    var pageTitle = "";
-                    var ogTitle = "";
-                    var ogDescription = "";
-
-                    switch (municipality) {
-                        case "batumi":
-                            pageTitle = lang === "en" ? "Statistical Information on Batumi Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ბათუმის მუნიციპალიტეტის შესახებ";
-                            ogTitle = "Statistical Information on Batumi Municipality, Adjara Region";
-                            ogDescription = "Statistical Information on Batumi Municipality, Adjara Region";
-                            break;
-                        case "qeda":
-                            pageTitle = lang === "en" ? "Statistical Information on Keda Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქედის მუნიციპალიტეტის შესახებ";
-                            ogTitle = "Statistical Information on Keda Municipality, Adjara Region";
-                            ogDescription = "Statistical Information on Keda Municipality, Adjara Region";
-                            break;
-                        case "qobuleti":
-                            pageTitle = lang === "en" ? "Statistical Information on Kobuleti Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ქობულეთის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Kobuleti Municipality, Adjara Region";
-                            ogDescription = "Statistical Information on Kobuleti Municipality, Adjara Region";
-                            break;
-                        case "xelvachauri":
-                            pageTitle = lang === "en" ? "Statistical Information on Khelvachauri Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ხელვაჩაურის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Khelvachauri Municipality, Adjara Region";
-                            ogDescription = "Statistical Information on Khelvachauri Municipality, Adjara Region";
-                            break;
-                        case "Shuakhevi":
-                            pageTitle = lang === "en" ? "Statistical Information on Shuakhevi Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის შუახევის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Shuakhevi Municipality, Adjara Region";
-                            ogDescription = "Statistical Information on Shuakhevi Municipality, Adjara Region";
-                            break;
-                        case "Khulo":
-                            pageTitle = lang === "en" ? "Statistical Information on Khulo Municipality, Adjara Region" : "სტატისტიკური ინფორმაცია აჭარის რეგიონის ხულოს მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Khulo Municipality, Adjara Region";
-                            ogDescription = "Statistical Information on Khulo Municipality, Adjara Region";
-                            break;
-                        case "Lanchkhuti":
-                            pageTitle = lang === "en" ? "Statistical Information on Lanchkhuti Municipality, Guria Region" : "სტატისტიკური ინფორმაცია გურიის რეგიონის ლანჩხუთის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Lanchkhuti Municipality, Guria Region";
-                            ogDescription = "Statistical Information on Lanchkhuti Municipality, Guria Region";
-                            break;
-                        case "Ozurgeti":
-                            pageTitle = lang === "en" ? "Statistical Information on Ozurgeti Municipality, Guria Region" : "სტატისტიკური ინფორმაცია გურიის რეგიონის ოზურგეთის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Ozurgeti Municipality, Guria Region";
-                            ogDescription = "Statistical Information on Ozurgeti Municipality, Guria Region";
-                            break;
-                        case "Chokhatauri":
-                            pageTitle = lang === "en" ? "Statistical Information on Chokhatauri Municipality, Guria Region" : "სტატისტიკური ინფორმაცია გურიის რეგიონის ჩოხატაურის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Chokhatauri Municipality, Guria Region";
-                            ogDescription = "Statistical Information on Chokhatauri Municipality, Guria Region";
-                            break;
-                        case "Khoni":
-                            pageTitle = lang === "en" ? "Statistical Information on Khoni Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ხონის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Khoni Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Khoni Municipality, Imereti Region";
-                            break;
-                        case "Baghdati":
-                            pageTitle = lang === "en" ? "Statistical Information on Baghdati Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ბაღდათის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Baghdati Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Baghdati Municipality, Imereti Region";
-                            break;
-                        case "Chiatura":
-                            pageTitle = lang === "en" ? "Statistical Information on Chiatura Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ჭიათურის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Chiatura Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Chiatura Municipality, Imereti Region";
-                            break;
-                        case "Kutaisi":
-                            pageTitle = lang === "en" ? "Statistical Information on Kutaisi Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ქუთაისის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Kutaisi Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Kutaisi Municipality, Imereti Region";
-                            break;
-                        case "Sachkhere":
-                            pageTitle = lang === "en" ? "Statistical Information on Sachkhere Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის საჩხერის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Sachkhere Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Sachkhere Municipality, Imereti Region";
-                            break;
-                        case "Samtredia":
-                            pageTitle = lang === "en" ? "Statistical Information on Samtredia Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის სამტრედიის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Samtredia Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Samtredia Municipality, Imereti Region";
-                            break;
-                        case "Terjola":
-                            pageTitle = lang === "en" ? "Statistical Information on Terjola Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის თერჯოლის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Terjola Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Terjola Municipality, Imereti Region";
-                            break;
-                        case "Tkibuli":
-                            pageTitle = lang === "en" ? "Statistical Information on Tkibuli Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ტყიბულის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Tkibuli Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Tkibuli Municipality, Imereti Region";
-                            break;
-                        case "Vani":
-                            pageTitle = lang === "en" ? "Statistical Information on Vani Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ვანის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Vani Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Vani Municipality, Imereti Region";
-                            break;
-                        case "Tskaltubo":
-                            pageTitle = lang === "en" ? "Statistical Information on Tskaltubo Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის წყალტუბოს მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Tskaltubo Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Tskaltubo Municipality, Imereti Region";
-                            break;
-                        case "Kharagauli":
-                            pageTitle = lang === "en" ? "Statistical Information on Kharagauli Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ხარაგაულის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Kharagauli Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Kharagauli Municipality, Imereti Region";
-                            break;
-                        case "Zestaponi":
-                            pageTitle = lang === "en" ? "Statistical Information on Zestaponi Municipality, Imereti Region" : "სტატისტიკური ინფორმაცია იმერეთის რეგიონის ზესტაფონის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Zestaponi Municipality, Imereti Region";
-                            ogDescription = "Statistical Information on Zestaponi Municipality, Imereti Region";
-                            break;
-                        case "Adigeni":
-                            pageTitle = lang === "en" ? "Statistical Information on Adigeni Municipality, Samtskhe-Javakheti Region" : "სტატისტიკური ინფორმაცია სამცხე-ჯავახეთის რეგიონის ადიგენის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Adigeni Municipality, Samtskhe-Javakheti Region";
-                            ogDescription = "Statistical Information on Adigeni Municipality, Samtskhe-Javakheti Region";
-                            break;
-                        case "Aspindza":
-                            pageTitle = lang === "en" ? "Statistical Information on Aspindza Municipality, Samtskhe-Javakheti Region" : "სტატისტიკური ინფორმაცია სამცხე-ჯავახეთის რეგიონის ასპინძის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Aspindza Municipality, Samtskhe-Javakheti Region";
-                            ogDescription = "Statistical Information on Aspindza Municipality, Samtskhe-Javakheti Region";
-                            break;
-                        case "Akhaltsikhe":
-                            pageTitle = lang === "en" ? "Statistical Information on Akhaltsikhe Municipality, Samtskhe-Javakheti Region" : "სტატისტიკური ინფორმაცია სამცხე-ჯავახეთის რეგიონის ახალციხის მუნიციპალიტეტის შესხებ";
-                            ogTitle = "Statistical Information on Akhaltsikhe Municipality, Samtskhe-Javakheti Region";
-                            ogDescription = "Statistical Information on Akhaltsikhe Municipality, Samtskhe-Javakheti Region";
-                            break;
-                        default:
-                            pageTitle = lang === "en" ? "Default Title" : "ძირითადი სათაური";
-                            ogTitle = "Default OG Title";
-                            ogDescription = "Default description.";
-                    }
-
-                    document.title = pageTitle;
-                    document.getElementById("og-title").setAttribute("content", ogTitle);
-                    document.getElementById("og-description").setAttribute("content", ogDescription);
-                    document.getElementById("pagetitlename").textContent = pageTitle;
-                }
-            }
-
-
-            updatePageTitleAndMeta();
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
