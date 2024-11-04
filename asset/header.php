@@ -14,16 +14,20 @@ if ($current_page == 'adjara.php') {
     $page_title = $lang['kakhetititlename'];
 } elseif ($current_page == 'mcxeta-mtianeti.php') {
     $page_title = $lang['mtskhetamtianetititlename'];
+} elseif ($current_page == 'qvemo-qartli.php') {
+    $page_title = $lang['kvemokartlititlename'];
+} elseif ($current_page == 'racha.php') {
+    $page_title = $lang['rachatitlename'];
 } elseif ($current_page == 'kakheti.php') {
     $page_title = $lang['kakhetititlename'];
 } elseif ($current_page == 'kakheti.php') {
     $page_title = $lang['kakhetititlename'];
-} elseif ($current_page == 'kakheti.php') {
-    $page_title = $lang['kakhetititlename'];
-} elseif ($current_page == 'kakheti.php') {
-    $page_title = $lang['kakhetititlename'];
+} elseif ($current_page == 'samegrelo.php') {
+    $page_title = $lang['samegrelotitlename'];
+} elseif ($current_page == 'shida-qartli.php') {
+    $page_title = $lang['shidakartlititlename'];
 } else {
-    $page_title = $lang['defaultTitle']; // Fallback title
+    $page_title = $lang['loadingtitlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -42,6 +46,21 @@ if ($current_page == 'adjara.php') {
 } elseif ($current_page == 'kakheti.php') {
     $lang_url_ka = 'kakheti.php?lang=ka';
     $lang_url_en = 'kakheti.php?lang=en';
+} elseif ($current_page == 'mcxeta-mtianeti.php') {
+    $lang_url_ka = 'mcxeta-mtianeti.php?lang=ka';
+    $lang_url_en = 'mcxeta-mtianeti.php?lang=en';
+} elseif ($current_page == 'qvemo-qartli.php') {
+    $lang_url_ka = 'qvemo-qartli.php?lang=ka';
+    $lang_url_en = 'qvemo-qartli.php?lang=en';
+} elseif ($current_page == 'racha.php') {
+    $lang_url_ka = 'racha.php?lang=ka';
+    $lang_url_en = 'racha.php?lang=en';
+} elseif ($current_page == 'samegrelo.php') {
+    $lang_url_ka = 'samegrelo.php?lang=ka';
+    $lang_url_en = 'samegrelo.php?lang=en';
+} elseif ($current_page == 'shida-qartli.php') {
+    $lang_url_ka = 'shida-qartli.php?lang=ka';
+    $lang_url_en = 'shida-qartli.php?lang=en';
 } else {
     $lang_url_ka = 'default.php?lang=ka';
     $lang_url_en = 'default.php?lang=en';

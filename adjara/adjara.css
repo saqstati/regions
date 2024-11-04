@@ -24,20 +24,7 @@ g#layer3 {
   opacity: 1;
 }
 
-.textbox-right-home {
-  background-color: #ce8d34 !important;
-}
-
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-  background-color: #ce8d34;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-  background-color: #cb744c !important;
-}
-.map-box{
+.map-box {
   width: unset !important;
 }
 
@@ -49,7 +36,6 @@ g#layer3 {
 #qedaSVG {
   width: 700px;
   margin-left: 17%;
-  margin-top: 8%;
 }
 
 #qobuletiSVG,
@@ -57,11 +43,9 @@ g#layer3 {
 #xelvachauriSVG {
   width: 923px;
   margin-left: 10%;
-  margin-top: -1%;
 }
 
 #xuloSVG {
   width: 558px;
   margin-left: 21%;
-  margin-top: -6%;
 }

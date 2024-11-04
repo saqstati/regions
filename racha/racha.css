@@ -1,7 +1,3 @@
-.background-image {
-  background-image: url(../1600-900-optimized/7.jpg) !important;
-}
-
 g#layer7 {
   transform: scale(2);
   -webkit-transform-origin-x: 1392px;
@@ -28,18 +24,8 @@ g#layer7 {
   opacity: 1;
 }
 
-.textbox-right-home {
-  background-color: #ce8d34 !important;
-}
-
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-  background-color: #ce8d34;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-  background-color: #cb744c !important;
+.map-box{
+  left: 18% !important;
 }
 
 #svgRegions {
@@ -51,12 +37,10 @@ g#layer7 {
 #oniSVG {
   width: 633px;
   margin-left: 17%;
-  margin-top: -9%;
 }
 
 #cageriSVG,
 #lentekhiSVG {
   width: 996px;
   margin-left: 8%;
-  margin-top: -3%;
 }

@@ -1,65 +1,45 @@
-.background-image {
-    background-image: url(../1600-900-optimized/11.jpg) !important;
-}
 g#layer5 {
-    transform: scale(1.6);
-    -webkit-transform-origin-x: 2796px;
-    -webkit-transform-origin-y: 995px;
+  transform: scale(1.6);
+  -webkit-transform-origin-x: 2796px;
+  -webkit-transform-origin-y: 995px;
 }
 
 #group5-zoomed {
-    fill: #9e6e9c;
-    stroke-width: 0.5px;
-    stroke: white;
-    transition: 0.6s fill;
-    transition: 0.6s stroke-width;
-    transition: 0.6s stroke;
-    transition: 0.6s opacity;
+  fill: #9e6e9c;
+  stroke-width: 0.5px;
+  stroke: white;
+  transition: 0.6s fill;
+  transition: 0.6s stroke-width;
+  transition: 0.6s stroke;
+  transition: 0.6s opacity;
 }
 #group5-zoomed:hover {
-    fill: #b5568c;
-    cursor: pointer;
-    stroke-width: 0.5px;
-    stroke: white;
+  fill: #b5568c;
+  cursor: pointer;
+  stroke-width: 0.5px;
+  stroke: white;
 }
 #group5-zoomed.active {
-    fill: #b5568c;
-    opacity: 1;
-}
-
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-    background-color: #9e6e9c;
-}
-
-.textbox-right-home {
-    background-color: #9e6e9c !important;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-    background-color: #b5568c !important;
+  fill: #b5568c;
+  opacity: 1;
 }
 
 #dushetiSVG,
 #tianetiSVG {
-    width: 592px;
-    margin-top: -85px;
-    margin-left: 267px;
+  width: 592px;
+  margin-left: 267px;
 }
 
 #yazbegiSVG {
-    width: 1099px;
-    margin-left: 35px;
-    margin-top: -104px;
+  width: 1099px;
+  margin-left: 35px;
 }
 #mcxetaSVG {
-    width: 970px;
-    margin-left: 82px;
-    margin-top: -27px;
+  width: 970px;
+  margin-left: 82px;
 }
 
 .map-box {
-    max-width: 1050px;
-    margin-left: 55px;
+  max-width: 1050px;
+  left: 18% !important;
 }

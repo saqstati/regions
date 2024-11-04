@@ -1,10 +1,11 @@
-.background-image {
-  background-image: url(../1600-900-optimized/8.jpg) !important;
-}
 g#layer8 {
   transform: scale(1.9);
   -webkit-transform-origin-x: 2175px;
   -webkit-transform-origin-y: 1405px;
+}
+
+.map-box {
+  left: 18% !important;
 }
 
 #group3-zoomed {
@@ -27,41 +28,20 @@ g#layer8 {
   opacity: 1;
 }
 
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-  background-color: #6ea76f;
-}
-
-.textbox-right-home {
-  background-color: #6ea76f !important;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-  background-color: #66aba5 !important;
-}
-
 #marneuliSVG,
 #dmanisiSVG,
 #bolnisiSVG {
   width: 803px;
   margin-left: 11%;
-  margin-top: -22%;
-}
-
-#bolnisiSVG {
-  margin-top: -1% !important;
 }
 
 #walkaSVG,
 #tetriwyaroSVG {
   width: 1056px;
   margin-left: 8%;
-  margin-top: -5%;
 }
 
 #gardabaniSVG {
   width: 551px;
   margin-left: 17%;
-  margin-top: -5%;
 }

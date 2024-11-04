@@ -74,7 +74,7 @@ $lang = array(
 	"gurjaanititlename" => "Statistical Information on Gurjaani Municipality, Kakheti Region",
 	"sagarejotitlename" => "Statistical Information on Sagarejo Municipality, Kakheti Region",
 	"sighnaghititlename" => "Statistical Information on Sighnaghi Municipality, Kakheti Region",
-	"dedophlistskarotitlename" => "Statistical Information on Dedoplistskaro Municipality, Kakheti Region",
+	"dedoplistskarotitlename" => "Statistical Information on Dedoplistskaro Municipality, Kakheti Region",
 	"tbilisititlename" => "Statistical Information on Tbilisi Municipality",
 	"munstat" => "Municipal statistics",
 	"demograph" => "Demography",
@@ -88,7 +88,7 @@ $lang = array(
 
 	"genderTitleName" => "Gender statistics",
 
-
+	"loadingtitlename" => "Loading...",
 
 	"lang_en" => "English",
 	"lang_ka" => "Georgian"

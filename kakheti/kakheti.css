@@ -24,20 +24,6 @@ g#layer9 {
   opacity: 1;
 }
 
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-  background-color: #c85861;
-}
-
-.textbox-right-home {
-  background-color: #c85861 !important;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-  background-color: #c75685 !important;
-}
-
 .map-box {
   max-width: 1000px;
   margin-left: 8%;
@@ -46,43 +32,36 @@ g#layer9 {
 #axmetaSVG {
   width: 531px;
   margin-left: 362px;
-  margin-top: -27px;
 }
 
 #telaviSVG {
   width: 560px;
   margin-left: 291px;
-  margin-top: -71px;
 }
 
 #kvareliSVG {
   width: 971px;
   margin-left: 61px;
-  margin-top: -55px;
 }
 
 #lagodexiSVG {
   width: 752px;
   margin-left: 21%;
-  margin-top: -195px;
 }
 
 #gurjaaniSVG {
   width: 709px;
   margin-left: 25%;
-  margin-top: -178px;
 }
 
 #sagarejoSVG {
   width: 622px;
   margin-left: 24%;
-  margin-top: -10%;
 }
 
 #signagiSVG {
   width: 932px;
   margin-left: 10%;
-  margin-top: 2%;
 }
 
 #dedofliswyaroSVG {

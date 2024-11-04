@@ -4,6 +4,10 @@ g#layer5 {
   -webkit-transform-origin-y: 1516px;
 }
 
+.map-box {
+  left: 20% !important;
+}
+
 #group5-zoomed {
   fill: #9e6e9c;
   stroke-width: 0.5px;

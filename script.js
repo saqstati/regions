@@ -266,6 +266,31 @@ function applyRegionStyles(region) {
       hoverColor = "#c75685";
       bgImage = "url('/regions/1600-900-optimized/9.jpg')";
       break;
+    case "Mtskheta-Mtianeti":
+      bgColor = "#9e6e9c";
+      hoverColor = "#b5568c";
+      bgImage = "url('/regions/1600-900-optimized/11.jpg')";
+      break;
+    case "Kvemo-Kartli":
+      bgColor = "#6ea76f";
+      hoverColor = "#66aba5";
+      bgImage = "url('/regions/1600-900-optimized/8.jpg')";
+      break;
+    case "Racha":
+      bgColor = "#ce8d34";
+      hoverColor = "#cb744c";
+      bgImage = "url('/regions/1600-900-optimized/7.jpg')";
+      break;
+    case "Samegrelo":
+      bgColor = "#678dac";
+      hoverColor = "#757ea6";
+      bgImage = "url('/regions/1600-900-optimized/2.jpg')";
+      break;
+    case "Shida-Kartli":
+      bgColor = "#678dac";
+      hoverColor = "#757ea6";
+      bgImage = "url('/regions/1600-900-optimized/12.jpg')";
+      break;
     default:
       bgColor = "#ce8d34"; // Default color (Adjara) if region is unknown
       hoverColor = "#cb744c";
@@ -349,6 +374,38 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   ].includes(municipal)
 ) {
   region = "Kakheti";
+} else if (["dusheti", "mtskheta", "tianeti", "kazbegi"].includes(municipal)) {
+  region = "Mtskheta-Mtianeti";
+} else if (
+  [
+    "bolnisi",
+    "dmanisi",
+    "gardabani",
+    "marneuli",
+    "rustavi",
+    "tetritskaro",
+    "tsalka",
+  ].includes(municipal)
+) {
+  region = "Kvemo-Kartli";
+} else if (["ambrolauri", "tsageri", "lentekhi", "oni"].includes(municipal)) {
+  region = "Racha";
+} else if (
+  [
+    "abasha",
+    "chkhorotsku",
+    "martvili",
+    "mestia",
+    "poti",
+    "senaki",
+    "tsalenjikha",
+    "khobi",
+    "zugdidi",
+  ].includes(municipal)
+) {
+  region = "Samegrelo";
+} else if (["gori", "kaspi", "kareli", "khashuri"].includes(municipal)) {
+  region = "Shida-Kartli";
 } else if (window.location.pathname.includes("guria")) {
   region = "guria";
 } else if (window.location.pathname.includes("adjara")) {
@@ -359,6 +416,16 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   region = "Samtskhe-Javakheri";
 } else if (window.location.pathname.includes("kakheti")) {
   region = "Kakheti";
+} else if (window.location.pathname.includes("mcxeta-mtianeti")) {
+  region = "Mtskheta-Mtianeti";
+} else if (window.location.pathname.includes("qvemo-qartli")) {
+  region = "Kvemo-Kartli";
+} else if (window.location.pathname.includes("racha")) {
+  region = "Racha";
+} else if (window.location.pathname.includes("samegrelo")) {
+  region = "Samegrelo";
+} else if (window.location.pathname.includes("shida-qartli")) {
+  region = "Shida-Kartli";
 }
 
 // Apply styles based on detected region

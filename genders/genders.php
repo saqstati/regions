@@ -77,15 +77,15 @@ if ($current_page == 'qeda') {
 } elseif ($current_page == 'Gurjaani') {
     $page_title = $lang['gurjaanititlename'];
 } elseif ($current_page == 'Kvareli') {
-    $page_title = $lang['kvarelitiitlename'];
+    $page_title = $lang['kvarelititlename'];
 } elseif ($current_page == 'Telavi') {
     $page_title = $lang['telavititlename'];
 } elseif ($current_page == 'Sagarejo') {
     $page_title = $lang['sagarejotitlename'];
 } elseif ($current_page == 'Dedoplistskaro') {
     $page_title = $lang['dedoplistskarotitlename'];
-} elseif ($current_page == 'Signagi') {
-    $page_title = $lang['signagititlename'];
+} elseif ($current_page == 'Sighnaghi') {
+    $page_title = $lang['sighnaghititlename'];
 } elseif ($current_page == 'Mtskheta') {
     $page_title = $lang['mtskhetatitlename'];
 } elseif ($current_page == 'Dusheti') {
@@ -102,8 +102,8 @@ if ($current_page == 'qeda') {
     $page_title = $lang['kaspititlename'];
 } elseif ($current_page == 'Kareli') {
     $page_title = $lang['karelitiitlename'];
-} elseif ($current_page == 'Java') {
-    $page_title = $lang['javatitlename'];
+} elseif ($current_page == 'Javakheti') {
+    $page_title = $lang['javakhetititlename'];
 } elseif ($current_page == 'Tskhinvali') {
     $page_title = $lang['tskhinvalititlename'];
 } elseif ($current_page == 'Khashuri') {
@@ -136,8 +136,12 @@ if ($current_page == 'qeda') {
     $page_title = $lang['mestiatitlename'];
 } elseif ($current_page == 'Tbilisi') {
     $page_title = $lang['tbilisititlename'];
+} elseif ($current_page == 'Ambrolauri') {
+    $page_title = $lang['ambrolaurititlename'];
+} elseif ($current_page == 'Oni') {
+    $page_title = $lang['onititlename'];
 } else {
-    $page_title = $lang['defaulttitlename'];
+    $page_title = $lang['loadingtitlename'];
 }
 
 $lang_url_ka = "genders.php?municipal=$municipal&lang=ka";

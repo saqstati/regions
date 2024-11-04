@@ -24,20 +24,6 @@ g#layer6 {
   opacity: 1;
 }
 
-.btn.textbox-left-home,
-.btn.textbox-right-home {
-  background-color: #c85861;
-}
-
-.textbox-right-home {
-  background-color: #c85861 !important;
-}
-
-.textbox-left-home:hover,
-.textbox-right-home:hover {
-  background-color: #c75685 !important;
-}
-
 #baghdatiSVG {
   width: 689px;
   margin-left: 17%;

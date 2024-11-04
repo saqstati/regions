@@ -55,6 +55,78 @@ if ($current_page == 'qeda.php') {
     $page_title = $lang['borjomititlename'];
 } elseif ($current_page == 'ninowminda.php') {
     $page_title = $lang['ninotsmindatitlename'];
+} elseif ($current_page == 'axmeta.php') {
+    $page_title = $lang['akhmetatitlename'];
+} elseif ($current_page == 'dedofliswyaro.php') {
+    $page_title = $lang['dedoplistskarotitlename'];
+} elseif ($current_page == 'gurjaani.php') {
+    $page_title = $lang['gurjaanititlename'];
+} elseif ($current_page == 'lagodexi.php') {
+    $page_title = $lang['lagodekhititlename'];
+} elseif ($current_page == 'sagarejo.php') {
+    $page_title = $lang['sagarejotitlename'];
+} elseif ($current_page == 'signagi.php') {
+    $page_title = $lang['sighnaghititlename'];
+} elseif ($current_page == 'telavi.php') {
+    $page_title = $lang['telavititlename'];
+} elseif ($current_page == 'yvareli.php') {
+    $page_title = $lang['kvarelititlename'];
+} elseif ($current_page == 'dusheti.php') {
+    $page_title = $lang['dushetititlename'];
+} elseif ($current_page == 'mcxeta.php') {
+    $page_title = $lang['mtskhetamtianetititlename'];
+} elseif ($current_page == 'tianeti.php') {
+    $page_title = $lang['tianetititlename'];
+} elseif ($current_page == 'yazbegi.php') {
+    $page_title = $lang['kazbegititlename'];
+} elseif ($current_page == 'bolnisi.php') {
+    $page_title = $lang['bolnisititlename'];
+} elseif ($current_page == 'dmanisi.php') {
+    $page_title = $lang['dmanisititlename'];
+} elseif ($current_page == 'gardabani.php') {
+    $page_title = $lang['gardabanititlename'];
+} elseif ($current_page == 'marneuli.php') {
+    $page_title = $lang['marneulititlename'];
+} elseif ($current_page == 'rustavi.php') {
+    $page_title = $lang['rustavititlename'];
+} elseif ($current_page == 'tetriwyaro.php') {
+    $page_title = $lang['tetritskarotitlename'];
+} elseif ($current_page == 'walka.php') {
+    $page_title = $lang['tsalkatitlename'];
+} elseif ($current_page == 'ambrolauri.php') {
+    $page_title = $lang['ambrolaurititlename'];
+} elseif ($current_page == 'cageri.php') {
+    $page_title = $lang['tsagerititlename'];
+} elseif ($current_page == 'oni.php') {
+    $page_title = $lang['onititlename'];
+} elseif ($current_page == 'lentexi.php') {
+    $page_title = $lang['lentekhititlename'];
+} elseif ($current_page == 'abasha.php') {
+    $page_title = $lang['abashatitlename'];
+} elseif ($current_page == 'chxorowyu.php') {
+    $page_title = $lang['chkhorotskutitlename'];
+} elseif ($current_page == 'martvili.php') {
+    $page_title = $lang['martvilititlename'];
+} elseif ($current_page == 'mestia.php') {
+    $page_title = $lang['mestiatitlename'];
+} elseif ($current_page == 'poti.php') {
+    $page_title = $lang['potititlename'];
+} elseif ($current_page == 'senaki.php') {
+    $page_title = $lang['senakititlename'];
+} elseif ($current_page == 'walenjixa.php') {
+    $page_title = $lang['tsalenjikhatitlename'];
+} elseif ($current_page == 'xobi.php') {
+    $page_title = $lang['khobititlename'];
+} elseif ($current_page == 'zugdidi.php') {
+    $page_title = $lang['zugdidititlename'];
+} elseif ($current_page == 'gori.php') {
+    $page_title = $lang['gorititlename'];
+} elseif ($current_page == 'kaspi.php') {
+    $page_title = $lang['kaspititlename'];
+} elseif ($current_page == 'qareli.php') {
+    $page_title = $lang['karelititlename'];
+} elseif ($current_page == 'xashuri.php') {
+    $page_title = $lang['khashurititlename'];
 }
 
 // Determine the language URLs based on the current page
@@ -139,6 +211,114 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'ninowminda.php') {
     $lang_url_ka = 'ninowminda.php?lang=ka';
     $lang_url_en = 'ninowminda.php?lang=en';
+} elseif ($current_page == 'axmeta.php') {
+    $lang_url_ka = 'axmeta.php?lang=ka';
+    $lang_url_en = 'axmeta.php?lang=en';
+} elseif ($current_page == 'dedofliswyaro.php') {
+    $lang_url_ka = 'dedofliswyaro.php?lang=ka';
+    $lang_url_en = 'dedofliswyaro.php?lang=en';
+} elseif ($current_page == 'gurjaani.php') {
+    $lang_url_ka = 'gurjaani.php?lang=ka';
+    $lang_url_en = 'gurjaani.php?lang=en';
+} elseif ($current_page == 'lagodexi.php') {
+    $lang_url_ka = 'lagodexi.php?lang=ka';
+    $lang_url_en = 'lagodexi.php?lang=en';
+} elseif ($current_page == 'sagarejo.php') {
+    $lang_url_ka = 'sagarejo.php?lang=ka';
+    $lang_url_en = 'sagarejo.php?lang=en';
+} elseif ($current_page == 'signagi.php') {
+    $lang_url_ka = 'signagi.php?lang=ka';
+    $lang_url_en = 'signagi.php?lang=en';
+} elseif ($current_page == 'telavi.php') {
+    $lang_url_ka = 'telavi.php?lang=ka';
+    $lang_url_en = 'telavi.php?lang=en';
+} elseif ($current_page == 'yvareli.php') {
+    $lang_url_ka = 'yvareli.php?lang=ka';
+    $lang_url_en = 'yvareli.php?lang=en';
+} elseif ($current_page == 'dusheti.php') {
+    $lang_url_ka = 'dusheti.php?lang=ka';
+    $lang_url_en = 'dusheti.php?lang=en';
+} elseif ($current_page == 'mcxeta.php') {
+    $lang_url_ka = 'mcxeta.php?lang=ka';
+    $lang_url_en = 'mcxeta.php?lang=en';
+} elseif ($current_page == 'tianeti.php') {
+    $lang_url_ka = 'tianeti.php?lang=ka';
+    $lang_url_en = 'tianeti.php?lang=en';
+} elseif ($current_page == 'yazbegi.php') {
+    $lang_url_ka = 'yazbegi.php?lang=ka';
+    $lang_url_en = 'yazbegi.php?lang=en';
+} elseif ($current_page == 'bolnisi.php') {
+    $lang_url_ka = 'bolnisi.php?lang=ka';
+    $lang_url_en = 'bolnisi.php?lang=en';
+} elseif ($current_page == 'dmanisi.php') {
+    $lang_url_ka = 'dmanisi.php?lang=ka';
+    $lang_url_en = 'dmanisi.php?lang=en';
+} elseif ($current_page == 'gardabani.php') {
+    $lang_url_ka = 'gardabani.php?lang=ka';
+    $lang_url_en = 'gardabani.php?lang=en';
+} elseif ($current_page == 'marneuli.php') {
+    $lang_url_ka = 'marneuli.php?lang=ka';
+    $lang_url_en = 'marneuli.php?lang=en';
+} elseif ($current_page == 'rustavi.php') {
+    $lang_url_ka = 'rustavi.php?lang=ka';
+    $lang_url_en = 'rustavi.php?lang=en';
+} elseif ($current_page == 'tetriwyaro.php') {
+    $lang_url_ka = 'tetriwyaro.php?lang=ka';
+    $lang_url_en = 'tetriwyaro.php?lang=en';
+} elseif ($current_page == 'walka.php') {
+    $lang_url_ka = 'walka.php?lang=ka';
+    $lang_url_en = 'walka.php?lang=en';
+} elseif ($current_page == 'ambrolauri.php') {
+    $lang_url_ka = 'ambrolauri.php?lang=ka';
+    $lang_url_en = 'ambrolauri.php?lang=en';
+} elseif ($current_page == 'cageri.php') {
+    $lang_url_ka = 'cageri.php?lang=ka';
+    $lang_url_en = 'cageri.php?lang=en';
+} elseif ($current_page == 'lentexi.php') {
+    $lang_url_ka = 'lentexi.php?lang=ka';
+    $lang_url_en = 'lentexi.php?lang=en';
+} elseif ($current_page == 'oni.php') {
+    $lang_url_ka = 'oni.php?lang=ka';
+    $lang_url_en = 'oni.php?lang=en';
+} elseif ($current_page == 'abasha.php') {
+    $lang_url_ka = 'abasha.php?lang=ka';
+    $lang_url_en = 'abasha.php?lang=en';
+} elseif ($current_page == 'chxorowyu.php') {
+    $lang_url_ka = 'chxorowyu.php?lang=ka';
+    $lang_url_en = 'chxorowyu.php?lang=en';
+} elseif ($current_page == 'martvili.php') {
+    $lang_url_ka = 'martvili.php?lang=ka';
+    $lang_url_en = 'martvili.php?lang=en';
+} elseif ($current_page == 'mestia.php') {
+    $lang_url_ka = 'mestia.php?lang=ka';
+    $lang_url_en = 'mestia.php?lang=en';
+} elseif ($current_page == 'poti.php') {
+    $lang_url_ka = 'poti.php?lang=ka';
+    $lang_url_en = 'poti.php?lang=en';
+} elseif ($current_page == 'senaki.php') {
+    $lang_url_ka = 'senaki.php?lang=ka';
+    $lang_url_en = 'senaki.php?lang=en';
+} elseif ($current_page == 'walenjixa.php') {
+    $lang_url_ka = 'walenjixa.php?lang=ka';
+    $lang_url_en = 'walenjixa.php?lang=en';
+} elseif ($current_page == 'xobi.php') {
+    $lang_url_ka = 'xobi.php?lang=ka';
+    $lang_url_en = 'xobi.php?lang=en';
+} elseif ($current_page == 'zugdidi.php') {
+    $lang_url_ka = 'zugdidi.php?lang=ka';
+    $lang_url_en = 'zugdidi.php?lang=en';
+} elseif ($current_page == 'gori.php') {
+    $lang_url_ka = 'gori.php?lang=ka';
+    $lang_url_en = 'gori.php?lang=en';
+} elseif ($current_page == 'kaspi.php') {
+    $lang_url_ka = 'kaspi.php?lang=ka';
+    $lang_url_en = 'kaspi.php?lang=en';
+} elseif ($current_page == 'qareli.php') {
+    $lang_url_ka = 'qareli.php?lang=ka';
+    $lang_url_en = 'qareli.php?lang=en';
+} elseif ($current_page == 'xashuri.php') {
+    $lang_url_ka = 'xashuri.php?lang=ka';
+    $lang_url_en = 'xashuri.php?lang=en';
 } else {
     // Fallback to default (batumi.php) in case the page isn't matched
     $lang_url_ka = 'batumi.php?lang=ka';
