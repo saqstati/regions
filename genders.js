@@ -11,15 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/C.%20Batumi.xlsx",
       },
-      qeda: {
+      Keda: {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქედა.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Keda.xlsx",
       },
-      xelvachauri: {
-        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხელვაჩაური.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khelvachauri.xlsx",
-      },
-      qobuleti: {
+      Kobuleti: {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქობულეთი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kobuleti.xlsx",
       },
@@ -27,9 +23,245 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/შუახევი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Shuakhevi.xlsx",
       },
+      Khelvachauri: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khelvachauri.xlsx",
+      },
       Khulo: {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხულო.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ონი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/გორი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kazbegi.xlsx",
+      },
+      Tbilisi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თბილისი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tbilisi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Kvareli.xlsx",
       },
     },
     ratio: {

@@ -6,13 +6,13 @@ include "../config.php";
 $current_page = isset($_GET['municipal']) ? $_GET['municipal'] : basename($_SERVER['PHP_SELF']);
 $municipal = isset($_GET['municipal']) ? $_GET['municipal'] : '';
 
-if ($current_page == 'qeda') {
+if ($current_page == 'Keda') {
     $page_title = $lang['kedatitlename'];
-} elseif ($current_page == 'qobuleti') {
+} elseif ($current_page == 'Kobuleti') {
     $page_title = $lang['kobuletititlename'];
 } elseif ($current_page == 'batumi') {
     $page_title = $lang['batumititlename'];
-} elseif ($current_page == 'xelvachauri') {
+} elseif ($current_page == 'Khelvachauri') {
     $page_title = $lang['khelvachaurititlename'];
 } elseif ($current_page == 'Shuakhevi') {
     $page_title = $lang['shuakhevititlename'];
