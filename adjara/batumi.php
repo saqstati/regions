@@ -2,7 +2,6 @@
 include "../config.php";
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -895,12 +894,11 @@ include "../config.php";
             ?>
         </table>
         <?php include '../footer_mun.php' ?>
-
         <script src="../script.js"></script>
         <!-- Fixing the incorrect type for lang.js -->
         <script type="text/javascript" src="../lang.js"></script>
         <script>
-            localStorage.setItem('municipal', 'batumi');
+            localStorage.setItem('municipal', 'Batumi');
         </script>
         <!-- Popper.js and Bootstrap 5 JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>

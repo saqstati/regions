@@ -328,7 +328,7 @@ let region;
 if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   region = "guria";
 } else if (
-  ["batumi", "qeda", "qobuleti", "xelvachauri", "shuakhevi", "khulo"].includes(
+  ["batumi", "keda", "kobuleti", "khelvachauri", "shuakhevi", "khulo"].includes(
     municipal
   )
 ) {
