@@ -414,7 +414,7 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
 } else if (window.location.pathname.includes("imereti")) {
   region = "imereti";
 } else if (window.location.pathname.includes("javaxeti")) {
-  region = "Samtskhe-Javakheri";
+  region = "Samtskhe-Javakheti";
 } else if (window.location.pathname.includes("kakheti")) {
   region = "Kakheti";
 } else if (window.location.pathname.includes("mcxeta-mtianeti")) {

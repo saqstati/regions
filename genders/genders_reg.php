@@ -10,6 +10,22 @@ if ($current_page == 'adjara') {
     $page_title = $lang['adjaratitlename'];
 } elseif ($current_page == 'guria') {
     $page_title = $lang['guriatitlename'];
+} elseif ($current_page == 'imereti') {
+    $page_title = $lang['imeretititlename'];
+} elseif ($current_page == 'Samtskhe-Javakheti') {
+    $page_title = $lang['javakhetititlename'];
+} elseif ($current_page == 'kakheti') {
+    $page_title = $lang['kahetititlename'];
+} elseif ($current_page == 'Mtskheta-Mtianeti') {
+    $page_title = $lang['mtskhetamtianetititlename'];
+} elseif ($current_page == 'kvemo_kartli') {
+    $page_title = $lang['kvemokartlititlename'];
+} elseif ($current_page == 'Racha') {
+    $page_title = $lang['rachatitlename'];
+} elseif ($current_page == 'Samegrelo') {
+    $page_title = $lang['samegrelotitlename'];
+} elseif ($current_page == 'shida_kartli') {
+    $page_title = $lang['shidakartlititlename'];
 } else {
     $page_title = $lang['loadingtitlename'];
 }
