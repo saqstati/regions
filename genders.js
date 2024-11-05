@@ -786,7 +786,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Batumi.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქედას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Keda.xlsx",
       },
       Kobuleti: {
@@ -806,7 +806,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Khulo.xlsx",
       },
       Abasha: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/აბაშას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/აბაშის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Abasha.xlsx",
       },
       Zugdidi: {
@@ -818,7 +818,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Martvili.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/მესტიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/მესტიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Mestia.xlsx",
       },
       Senaki: {
@@ -834,7 +834,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Chkhorotsku.xlsx",
       },
       Tsalenjikha: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/წალენჯიხას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/წალენჯიხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Tsalenjikha.xlsx",
       },
       Khobi: {
@@ -858,7 +858,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Adigeni.xlsx",
       },
       Aspindza: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ასპინძას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ასპინძის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Aspindza.xlsx",
       },
       Akhalkalaki: {
@@ -866,7 +866,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Akhalkalaki.xlsx",
       },
       Akhaltsikhe: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ახალციხეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ახალციხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Akhaltsikhe.xlsx",
       },
       Borjomi: {
@@ -874,7 +874,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Borjomi.xlsx",
       },
       Ninotsminda: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ნინოწმინდას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ნინოწმინდის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Ninotsminda.xlsx",
       },
       Baghdati: {
@@ -890,15 +890,15 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Zestaponi.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/თერჯოლას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/თერჯოლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Terjola.xlsx",
       },
       Samtredia: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/სამტრედიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/სამტრედიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Samtredia.xlsx",
       },
       Sachkhere: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/საჩხერეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/საჩხერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Sachkhere.xlsx",
       },
       Tkibuli: {
@@ -906,7 +906,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -914,7 +914,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Tskaltubo.xlsx",
       },
       Chiatura: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ჭიათურას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ჭიათურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Chiatura.xlsx",
       },
       Kharagauli: {
@@ -946,7 +946,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Bolnisi.xlsx",
       },
       Gardabani: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/გარდაბანის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/გარდაბნის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Gardabani.xlsx",
       },
       Dmanisi: {
@@ -962,11 +962,11 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/რუსთავის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Rustavi.xlsx",
       },
       Tsalka: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/წალკას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/წალკის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Tsalka.xlsx",
       },
       Gori: {
@@ -994,7 +994,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Tianeti.xlsx",
       },
       Mtskheta: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/მცხეთას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/მცხეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Mtskheta.xlsx",
       },
       Kazbegi: {
@@ -1002,11 +1002,11 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Kazbegi.xlsx",
       },
       Tbilisi: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/თბილისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20თბილისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Tbilisi.xlsx",
       },
       Akhmeta: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ახმეტას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ახმეტის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Akhmeta.xlsx",
       },
       Gurjaani: {
@@ -1034,7 +1034,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Sighnaghi.xlsx",
       },
       Kvareli: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ყვარელის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ყვარლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Kvareli.xlsx",
       },
     },
@@ -1302,7 +1302,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Batumi.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქედას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Keda.xlsx",
       },
       Kobuleti: {
@@ -1322,7 +1322,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Khulo.xlsx",
       },
       Abasha: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/აბაშას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/აბაშის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Abasha.xlsx",
       },
       Zugdidi: {
@@ -1334,7 +1334,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Martvili.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/მესტიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/მესტიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Mestia.xlsx",
       },
       Senaki: {
@@ -1350,7 +1350,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Chkhorotsku.xlsx",
       },
       Tsalenjikha: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/წალენჯიხას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/წალენჯიხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tsalenjikha.xlsx",
       },
       Khobi: {
@@ -1374,7 +1374,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Adigeni.xlsx",
       },
       Aspindza: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ასპინძას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ასპინძის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Aspindza.xlsx",
       },
       Akhalkalaki: {
@@ -1382,7 +1382,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Akhalkalaki.xlsx",
       },
       Akhaltsikhe: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ახალციხეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ახალციხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Akhaltsikhe.xlsx",
       },
       Borjomi: {
@@ -1390,7 +1390,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Borjomi.xlsx",
       },
       Ninotsminda: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ნინოწმინდას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ნინოწმინდის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Ninotsminda.xlsx",
       },
       Baghdati: {
@@ -1406,15 +1406,15 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Zestaponi.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/თერჯოლას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/თერჯოლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Terjola.xlsx",
       },
       Samtredia: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/სამტრედიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/სამტრედიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Samtredia.xlsx",
       },
       Sachkhere: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/საჩხერეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/საჩხერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Sachkhere.xlsx",
       },
       Tkibuli: {
@@ -1422,7 +1422,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -1430,7 +1430,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tskaltubo.xlsx",
       },
       Chiatura: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ჭიათურას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ჭიათურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Chiatura.xlsx",
       },
       Kharagauli: {
@@ -1462,7 +1462,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Bolnisi.xlsx",
       },
       Gardabani: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/გარდაბანის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/გარდაბნის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Gardabani.xlsx",
       },
       Dmanisi: {
@@ -1478,11 +1478,11 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/რუსთავის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Rustavi.xlsx",
       },
       Tsalka: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/წალკას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/წალკის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tsalka.xlsx",
       },
       Gori: {
@@ -1510,7 +1510,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tianeti.xlsx",
       },
       Mtskheta: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/მცხეთას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/მცხეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Mtskheta.xlsx",
       },
       Kazbegi: {
@@ -1518,11 +1518,11 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Kazbegi.xlsx",
       },
       Tbilisi: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/თბილისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20თბილისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Tbilisi.xlsx",
       },
       Akhmeta: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ახმეტას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ახმეტის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Akhmeta.xlsx",
       },
       Gurjaani: {
@@ -1550,7 +1550,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Sighnaghi.xlsx",
       },
       Kvareli: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ყვარელის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ყვარლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Kvareli.xlsx",
       },
     },
@@ -5172,7 +5172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Batumi.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქედას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Keda.xlsx",
       },
       Kobuleti: {
@@ -5192,7 +5192,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Khulo.xlsx",
       },
       Abasha: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/აბაშას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/აბაშის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Abasha.xlsx",
       },
       Zugdidi: {
@@ -5204,7 +5204,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Martvili.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/მესტიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/მესტიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Mestia.xlsx",
       },
       Senaki: {
@@ -5220,7 +5220,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Chkhorotsku.xlsx",
       },
       Tsalenjikha: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/წალენჯიხას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/წალენჯიხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Tsalenjikha.xlsx",
       },
       Khobi: {
@@ -5244,7 +5244,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Adigeni.xlsx",
       },
       Aspindza: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ასპინძას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ასპინძის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Aspindza.xlsx",
       },
       Akhalkalaki: {
@@ -5252,7 +5252,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Akhalkalaki.xlsx",
       },
       Akhaltsikhe: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ახალციხეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ახალციხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Akhaltsikhe.xlsx",
       },
       Borjomi: {
@@ -5260,7 +5260,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Borjomi.xlsx",
       },
       Ninotsminda: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ნინოწმინდას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ნინოწმინდის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Ninotsminda.xlsx",
       },
       Baghdati: {
@@ -5276,15 +5276,15 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Zestaponi.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/თერჯოლას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/თერჯოლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Terjola.xlsx",
       },
       Samtredia: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/სამტრედიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/სამტრედიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Samtredia.xlsx",
       },
       Sachkhere: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/საჩხერეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/საჩხერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Sachkhere.xlsx",
       },
       Tkibuli: {
@@ -5292,7 +5292,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -5300,7 +5300,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Tskaltubo.xlsx",
       },
       Chiatura: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ჭიათურას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ჭიათურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Chiatura.xlsx",
       },
       Kharagauli: {
@@ -5324,7 +5324,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ ცაგერის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ცაგერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -5332,7 +5332,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Bolnisi.xlsx",
       },
       Gardabani: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/გარდაბანის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/გარდაბნის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Gardabani.xlsx",
       },
       Dmanisi: {
@@ -5348,11 +5348,11 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/რუსთავის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Rustavi.xlsx",
       },
       Tsalka: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/წალკას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/წალკის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Tsalka.xlsx",
       },
       Gori: {
@@ -5380,7 +5380,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Tianeti.xlsx",
       },
       Mtskheta: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/მცხეთას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/მცხეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Mtskheta.xlsx",
       },
       Kazbegi: {
@@ -5388,11 +5388,11 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Kazbegi.xlsx",
       },
       Tbilisi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/თბილისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20თბილისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Tbilisi.xlsx",
       },
       Akhmeta: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ახმეტას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ახმეტის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Akhmeta.xlsx",
       },
       Gurjaani: {
