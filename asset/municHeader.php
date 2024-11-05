@@ -142,12 +142,12 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'xelvachauri.php') {
     $lang_url_ka = 'xelvachauri.php?lang=ka';
     $lang_url_en = 'xelvachauri.php?lang=en';
-} elseif ($current_page == 'shuakhevititlename.php') {
-    $lang_url_ka = 'shuakhevititlename.php?lang=ka';
-    $lang_url_en = 'shuakhevititlename.php?lang=en';
+} elseif ($current_page == 'shuaxevi.php') {
+    $lang_url_ka = 'shuaxevi.php?lang=ka';
+    $lang_url_en = 'shuaxevi.php?lang=en';
 } elseif ($current_page == 'xulo.php') {
-    $lang_url_ka = 'khulotitlename.php?lang=ka';
-    $lang_url_en = 'khulotitlename.php?lang=en';
+    $lang_url_ka = 'xulo.php?lang=ka';
+    $lang_url_en = 'xulo.php?lang=en';
 } elseif ($current_page == 'lanchxuti.php') {
     $lang_url_ka = 'lanchxuti.php?lang=ka';
     $lang_url_en = 'lanchxuti.php?lang=en';

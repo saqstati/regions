@@ -844,6 +844,8 @@ a#b {
 }
 
 #pagetitlename {
-  font-size: 28px;
+  font-size: 28px !important;
+  font-family: Sylfaen;
+  color: #3f3f3f;
   font-weight: bold;
 }
