@@ -16,16 +16,11 @@ tbody {
     text-align: center;
 }
 
-/* .background-image {
-    background-image: url(1600-900-optimized/white_background.jpg);
-} */
-
 tbody tr {
     display: inline-grid;
 }
 
 .td-empty {
-    /* width: 337px; */
     font-weight: bolder;
     font-size: x-large !important;
 }
@@ -40,17 +35,6 @@ input[type="checkbox"] {
     margin: 0 5px 5px 5px !important;
 }
 
-/* .position-center {
-    position: absolute;
-    top: 87%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
-
-footer {
-    bottom: -25px;
-}
-
 #append {
     display: inline-flex;
 }
@@ -58,9 +42,6 @@ footer {
 #append tr {
     margin-right: 10px;
     border-left-style: outset;
-
-    /* min-width: 80px;
-    max-width: 80px; */
 }
 
 #append tr:first-child {
@@ -76,7 +57,6 @@ footer {
 }
 
 .tdInfoRow {
-    /* border: 1px solid black; */
     height: 25px !important;
     width: 78px !important;
     text-align: center;
@@ -97,17 +77,12 @@ footer {
 }
 
 #list-footer {
-    /* position: unset !important; */
     position: relative;
 }
 
 tbody tr:first-child {
-    width: 150px !important;
+    width: 245px !important;
 }
-
-/* tbody tr:not:first-child{
-    width: 120px;
-} */
 
 .pngIcons {
     width: 23px;
@@ -117,11 +92,11 @@ tbody tr:first-child {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1366px) {
+/* @media screen and (max-width: 1366px) {
     body {
         zoom: 67%;
     }
-}
+} */
 
 .regionebi.reg {
     display: flex;

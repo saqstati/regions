@@ -96,7 +96,7 @@ include "config.php";
 
 			<!-- Buttons for region and municipality comparison -->
 			<div class="d-flex flex-column align-items-end" style="display: flex; flex-direction: column; align-items:end;">
-				<a class="regions-btn btn btn-sm mb-2" style="margin-bottom: 5px;" href="list.php">
+				<a class="regions-btn btn btn-sm mb-2" style="margin-bottom: 5px;" href="regionComp.php">
 					<span class="tr" Key="regionsBtn">რეგიონების შედარება</span>
 				</a>
 

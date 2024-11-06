@@ -361,7 +361,7 @@ if ($current_page == 'qeda.php') {
         </div>
 
         <div class="d-flex">
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../list.php'; ?>">
+            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../regionComp.php'; ?>">
                 <span class="tr" Key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?>
                 </span>
