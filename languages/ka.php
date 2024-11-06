@@ -88,8 +88,6 @@ $lang = array(
 
 	"genderTitleName" => "გენდერული სტატისტიკა",
 
-	"regionComp" => "ძირითადი მაჩვენებლების შედარება საქართველოს რეგიონების მიხედვით",
-
 	"loadingtitlename" => "იტვირთება...",
 
 	"lang_en" => "English",

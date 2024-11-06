@@ -88,8 +88,6 @@ $lang = array(
 
 	"genderTitleName" => "Gender statistics",
 
-	"regionComp" => "Comparison of Key Indicators by Regions of Georgia",
-
 	"loadingtitlename" => "Loading...",
 
 	"lang_en" => "English",

@@ -5,7 +5,10 @@ $current_page = isset($_GET['region']) ? $_GET['region'] : basename($_SERVER['PH
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // Default to English if no lang specified
 
 if ($current_page == 'regionComp.php') {
-    $page_title = $lang == 'en' ? 'Region Comparison' : 'რეგიონების შედარება';
+    $page_title = $lang == 'en' ? 'Comparison of Key Indicators by Regions of Georgia' : 'ძირითადი მაჩვენებლების შედარება საქართველოს რეგიონების მიხედვით';
+    $copy1 = $lang == 'en' ? 'This website has been produced with the assistance of the European Union, Denmark and the United Nations Development Programme (UNDP).' : 'ვებგვერდი შექმნილია ევროკავშირის, დანიისა და გაეროს განვითარების პროგრამის მხარდაჭერით. მის შინაარსზე სრულად პასუხისმგებელია საქართველოს სტატისტიკის ეროვნული სამსახური.';
+    $copy2 = $lang == 'en' ? 'Its contents are the sole responsibility of the GEOSTAT and do not necessarily reflect the views of the European Union, Denmark and UNDP.' : 'ვებგვერდის შინაარსი შესაძლოა არ გამოხატავდეს ევროკავშირის, დანიისა და გაეროს განვითარების პროგრამის შეხედულებებს.';
+    $copy3 = $lang == 'en' ? 'Terms of Use' : 'მონაცემთა გამოყენების პირობები';
 } else {
     $page_title = $lang == 'en' ? 'Loading...' : 'ჩატვირთვა...';
 }
@@ -39,16 +42,16 @@ $lang_url_en = "regionComp.php?lang=en";
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css">
     <link rel="stylesheet" href="../custom.css">
-    <link rel="stylesheet" href="../list.css">
+    <link rel="stylesheet" href="css/comparison.css">
     <link rel="stylesheet" href="../mediastyles.css">
     <link rel="stylesheet" href="../multiselect/styles/multiselect.css">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -86,7 +89,7 @@ $lang_url_en = "regionComp.php?lang=en";
 
         <div class="container-fluid">
             <div class="d-flex justify-content-between">
-                <a class="btn header-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+                <a class="btn btn-danger" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
             </div>
         </div>
 
@@ -191,19 +194,19 @@ $lang_url_en = "regionComp.php?lang=en";
             <img class="chart" src="../1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style=" height: 147px;">
         </div>
         <br />
-        <button id="srch" type="button" class="btn btn-srch" onclick="addbackcolor()"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Search' : 'ძიება'; ?></button>
+        <button id="srch" type="button" class="btn btn-danger" data-bs-toggle="button" onclick="addbackcolor()"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Search' : 'ძიება'; ?></button>
     </div>
 
     <?php
-    $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators' : 'key_indicators';
+    $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_en' : 'key_indicators';
     $query = mysqli_query($link, "select * from " . $tableRight);
     while ($row = mysqli_fetch_array($query)) {
         $dataHover[$row['ID']] = $row['dataHover'];
     }
     ?>
 
-    <table class="table table-responsive table-bordered" style="text-align: center;">
-        <tbody id="cxrili" class="container">
+    <table class="table table-sm table-responsive table-bordered table-hover mt-5">
+        <tbody id="cxrili">
             <?php $index = 0; ?>
             <?php foreach ($item as $k => $v) { ?>
                 <tr>
@@ -218,7 +221,7 @@ $lang_url_en = "regionComp.php?lang=en";
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
                             <?php if ($index <= 15) $index = $index + 1;  ?>
-                            <td title="" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important; width: 131px; display:none;"><?php echo $b; ?></td>
+                            <td title="" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important; width: 131px; display:none; border-bottom: 1px solid #dee2e6"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -234,7 +237,7 @@ $lang_url_en = "regionComp.php?lang=en";
         <button id="export" type="button" class="btn btn-success"><img src="../images/download.png" alt="download" style="width:25px;"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Download' : 'გადმოწერა'; ?></button>
     </div>
 
-
+    <?php include 'components/footer.php'; ?>
 
     <script>
         $("#srch").on("click", function(e) {
@@ -291,10 +294,21 @@ $lang_url_en = "regionComp.php?lang=en";
         }
     </script>
 
-    <script src="../script.js"></script>
     <script type="text/javascript" src="../lang.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
+    <script src="../multiselect/multiselect.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#municipalities, #key_indicators').select2({
+                theme: 'bootstrap4',
+                placeholder: '<?php echo $lang == "en" ? "Select Options" : "აირჩიეთ პარამეტრები"; ?>'
+            });
+        });
+    </script>
 </body>
 
 </html>
