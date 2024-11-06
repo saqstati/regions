@@ -96,11 +96,11 @@ include "config.php";
 
 			<!-- Buttons for region and municipality comparison -->
 			<div class="d-flex flex-column align-items-end" style="display: flex; flex-direction: column; align-items:end;">
-				<a class="regions-btn btn btn-sm mb-2" style="margin-bottom: 5px;" href="regionComp.php">
+				<a class="regions-btn btn btn-sm mb-2" style="margin-bottom: 5px;" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'comparison/regionComp.php?lang=en' : 'comparison/regionComp.php?lang=ka'; ?>">
 					<span class="tr" Key="regionsBtn">რეგიონების შედარება</span>
 				</a>
 
-				<a class="regions-btn btn btn-sm mb-2" href="muncom.php">
+				<a class="regions-btn btn btn-sm mb-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'comparison/municipalComp.php?lang=en' : 'comparison/municipalComp.php?lang=ka'; ?>">
 					<span class="tr" Key="municipalBtn">მუნიციპალიტეტების შედარება</span>
 				</a>
 

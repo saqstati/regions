@@ -1,59 +1,61 @@
 <?php
-include "config.php";
+include "../config.php";
+
+$current_page = isset($_GET['region']) ? $_GET['region'] : basename($_SERVER['PHP_SELF']);
+$lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // Default to English if no lang specified
+
+if ($current_page == 'regionComp.php') {
+    $page_title = $lang == 'en' ? 'Comparison of Key Indicators by Municipalities of Georgia' : 'ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით';
+    $copy1 = $lang == 'en' ? 'This website has been produced with the assistance of the European Union, Denmark and the United Nations Development Programme (UNDP).' : 'ვებგვერდი შექმნილია ევროკავშირის, დანიისა და გაეროს განვითარების პროგრამის მხარდაჭერით. მის შინაარსზე სრულად პასუხისმგებელია საქართველოს სტატისტიკის ეროვნული სამსახური.';
+    $copy2 = $lang == 'en' ? 'Its contents are the sole responsibility of the GEOSTAT and do not necessarily reflect the views of the European Union, Denmark and UNDP.' : 'ვებგვერდის შინაარსი შესაძლოა არ გამოხატავდეს ევროკავშირის, დანიისა და გაეროს განვითარების პროგრამის შეხედულებებს.';
+    $copy3 = $lang == 'en' ? 'Terms of Use' : 'მონაცემთა გამოყენების პირობები';
+} else {
+    $page_title = $lang == 'en' ? 'Loading...' : 'ჩატვირთვა...';
+}
+
+$lang_url_ka = "municipalComp.php?lang=ka";
+$lang_url_en = "municipalComp.php?lang=en";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="http://regions.geostat.ge/regions/" />
+    <meta name="description" content="Compare key indicators across the regions of Georgia.">
+    <meta property="og:url" content="http://www.geostat.ge/regions/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით" />
-    <meta property="og:description" content="ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით" />
-    <meta property="og:image" content="http://regions.geostat.ge/regions/images/regionsbanner1.png" />
-    <meta property="og:image:secure_url" content="http://regions.geostat.ge/regions/images/regionsbanner1.png" />
+    <meta property="og:title" content="<?php echo $page_title ?>" />
+    <meta property="og:description" content="<?php echo $page_title ?>" />
+    <meta property="og:image" content="http://www.geostat.ge/regions/images/regionsbanner1.png" />
+    <meta property="og:image:secure_url" content="https://www.geostat.ge/regions/images/regionsbanner1.png" />
     <meta property="og:image:width" content="740" />
     <meta property="og:image:height" content="450" />
-    <title class="tr" Key="PAGE_TITLE">ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta property="og:locale" content="ka_GE" />
+
+    <!-- Page Title -->
+    <title class="tr" key="PAGE_TITLE"><?php echo $page_title ?></title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://www.geostat.ge/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="custom.css">
-    <link rel="stylesheet" href="list.css">
-    <link rel="stylesheet" href="mediastyles.css">
 
-    <link href="multiselect/styles/multiselect.css" rel="stylesheet">
-    <script src="multiselect/multiselect.min.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="../custom.css">
+    <link rel="stylesheet" href="css/comparison.css">
+    <link rel="stylesheet" href="../mediastyles.css">
+    <link rel="stylesheet" href="../multiselect/styles/multiselect.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154977204-1"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-154977204-1');
-    </script>
-
-    <script type="text/javascript">
-        function zoom() {
-            document.body.style.zoom = "90%"
-        }
-    </script>
-
-
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="../multiselect/multiselect.min.js"></script>
 </head>
 
 <body onload="zoom()">
@@ -94,7 +96,7 @@ include "config.php";
             </h1>
         </header>
         <div id="languages">
-            <a href="muncom.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
+            <a href="municipalComp.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
             <a href="muncomEN.php" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
         </div>
         <div id="recommendation">

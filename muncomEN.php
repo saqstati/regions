@@ -88,7 +88,7 @@ include "config.php";
             </h1>
         </header>
         <div id="languages">
-            <a href="muncom.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
+            <a href="municipalComp.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
             <a href="muncomEN.php" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
         </div>
         <div id="recommendation">

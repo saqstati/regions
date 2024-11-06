@@ -361,13 +361,13 @@ if ($current_page == 'qeda.php') {
         </div>
 
         <div class="d-flex">
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../listEN.php' : '../regionComp.php'; ?>">
+            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../comparison/regionComp.php?lang=en' : '../comparison/regionComp.php?lang=ka'; ?>">
                 <span class="tr" Key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?>
                 </span>
             </a>
 
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../muncomEN.php?lang=en' : '../muncom.php?lang=ka'; ?>">
+            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../comparison/municipalComp.php?lang=en' : '../comparison/municipalComp.php?lang=ka'; ?>">
                 <span class="tr" Key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?>
                 </span>
