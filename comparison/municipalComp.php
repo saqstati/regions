@@ -4,7 +4,7 @@ include "../config.php";
 $current_page = isset($_GET['region']) ? $_GET['region'] : basename($_SERVER['PHP_SELF']);
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // Default to English if no lang specified
 
-if ($current_page == 'regionComp.php') {
+if ($current_page == 'municipalComp.php') {
     $page_title = $lang == 'en' ? 'Comparison of Key Indicators by Municipalities of Georgia' : 'ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით';
     $copy1 = $lang == 'en' ? 'This website has been produced with the assistance of the European Union, Denmark and the United Nations Development Programme (UNDP).' : 'ვებგვერდი შექმნილია ევროკავშირის, დანიისა და გაეროს განვითარების პროგრამის მხარდაჭერით. მის შინაარსზე სრულად პასუხისმგებელია საქართველოს სტატისტიკის ეროვნული სამსახური.';
     $copy2 = $lang == 'en' ? 'Its contents are the sole responsibility of the GEOSTAT and do not necessarily reflect the views of the European Union, Denmark and UNDP.' : 'ვებგვერდის შინაარსი შესაძლოა არ გამოხატავდეს ევროკავშირის, დანიისა და გაეროს განვითარების პროგრამის შეხედულებებს.';
@@ -58,84 +58,55 @@ $lang_url_en = "municipalComp.php?lang=en";
     <script src="../multiselect/multiselect.min.js"></script>
 </head>
 
-<body onload="zoom()">
-    <div class="hidden">
-        <script type="text/javascript">
-            var images = new Array()
-
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
-                }
-            }
-            preload(
-                "1600-900-optimized/2.jpg",
-                "1600-900-optimized/3.jpg",
-                "1600-900-optimized/4.jpg",
-                "1600-900-optimized/5.jpg",
-                "1600-900-optimized/6.jpg",
-                "1600-900-optimized/7.jpg",
-                "1600-900-optimized/8.jpg",
-                "1600-900-optimized/9.jpg",
-                "1600-900-optimized/10.jpg",
-                "1600-900-optimized/11.jpg",
-                "1600-900-optimized/12.jpg",
-                "1600-900-optimized/15.jpg"
-            )
-        </script>
-    </div>
+<body>
     <div id="background-main" class="background-image"></div>
-    <div class="main-container">
-        <div id="brand-logo">
-            <a href="/regions/index.php" id="brand-logo-link" class=""><img src="images/logo_transparency_geo.png" /></a>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <!-- Brand Logo on the left -->
+                <div id="brand-logo" class="me-3">
+                    <a href="../index.php" id="brand-logo-link">
+                        <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../images/logo_transparency_eng.png' : '../images/logo_transparency_geo.png'; ?>" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
+                    </a>
+                </div>
+
+                <!-- Page Title centered -->
+                <h1 id="pagetitlename" class="tr mx-auto text-center" Key="REGION14" style="flex-grow: 1;">
+                    <?php echo $page_title; ?>
+                </h1>
+
+                <!-- Languages on the right -->
+                <div id="languages" class="d-flex">
+                    <a href="<?php echo $lang_url_ka; ?>" id="ka" class="lang me-2">
+                        <img src="../images/ka.png" alt="Georgian Language" class="img-fluid" style="width: 25px; height: auto;" />
+                    </a>
+                    <a href="<?php echo $lang_url_en; ?>" id="en" class="lang">
+                        <img src="../images/en.png" alt="English Language" class="img-fluid" style="width: 25px; height: auto;" />
+                    </a>
+                </div>
+            </div>
         </div>
-        <header class="header1">
-            <h1>
-                <p id="pagetitlename" class="tr" Key="REGION14">ძირითადი მაჩვენებლების შედარება საქართველოს მუნიციპალიტეტების მიხედვით</p>
-            </h1>
-        </header>
-        <div id="languages">
-            <a href="municipalComp.php" id="ka" class="lang" <?php echo $lang['lang_ka'] ?>><img src="images/ka.png" /></a>
-            <a href="muncomEN.php" id="en" class="lang" <?php echo $lang['lang_en'] ?>><img src="images/en.png" /></a>
+
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <a class="btn btn-danger" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
+            </div>
         </div>
-        <div id="recommendation">
-            <span class="tr" Key="RECTEXT1">
-                რეკომენდირებულია განახლებული
-            </span>
-            <br>
-            <span class="tr" Key="RECTEXT2">
-                ბრაუზერის გამოყენება:
-            </span>
-            <a href="http://www.google.com/chrome/"><img src="images/chrome-100.png" /></a>
-            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="images/firefox-100.png" /></a>
-            <a href="http://www.opera.com/"><img src="images/opera-100.png" /></a>
-        </div>
-    </div>
+        <form method="POST" action="" name="applyform">
+            <table class="table table-bordered table-striped table-hover text-light">
+                <?php
+                require '../connection.php';
+                $query = mysqli_query($link, "SELECT * FROM `municipalitiesaz`");
+                $i = '';
+                while ($fetch = mysqli_fetch_array($query)) {
+                ?>
 
-    <div class="display-flex">
-        <a class=" btn textbox-left-home back-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
-    </div>
-
-    <form method="POST" action="" name="applyform">
-
-        <table class="table table-bordered bg-black">
-
-            <?php
-            require 'connection.php';
-            $query = mysqli_query($link, "SELECT * FROM `municipalitiesaz`");
-            $i = '';
-            while ($fetch = mysqli_fetch_array($query)) {
-            ?>
-
-            <?php
-                $i = ($i == '') ? 2 : $i + 1;
-            }
-            ?>
-
-
-        </table>
-    </form>
+                <?php
+                    $i = ($i == '') ? 2 : $i + 1;
+                }
+                ?>
+            </table>
+        </form>
 
 
 
@@ -143,28 +114,49 @@ $lang_url_en = "municipalComp.php?lang=en";
 
     <?php
     $j = 0;
-    $item[$j++][0] = "";
-    $item[$j++][0] = "ფართობი (კვ.კმ)";
-    $item[$j++][0] = "ქალაქების და დაბების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "სოფლების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "მოსახლეობის რიცხოვნობა (ათასი)";
-    $item[$j++][0] = "ცოცხლად დაბადებულთა რიცხოვნობა (კაცი)";
-    $item[$j++][0] = "შობადობის ზოგადი კოეფიციენტი (დაბადებულთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
-    $item[$j++][0] = "გარდაცვლილთა რიცხოვნობა (კაცი)";
-    $item[$j++][0] = "მოკვდაობის ზოგადი კოეფიციენტი (გარდაცვლილთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
-    $item[$j++][0] = "ბუნებრივი მატება (კაცი):";
-    $item[$j++][0] = "დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი)";
-    $item[$j++][0] = "დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი)";
-    $item[$j++][0] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "მოქმედი ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
-    $item[$j++][0] = "ახლადრეგის-</br>ტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
-
+    if ($lang == 'en') {
+        $item[$j++][0] = "";
+        $item[$j++][0] = "Area (sq. km)";
+        $item[$j++][0] = "Number of cities and boroughs (units)";
+        $item[$j++][0] = "Number of villages (units)";
+        $item[$j++][0] = "Number of Population (thousands)";
+        $item[$j++][0] = "Number of live births (persons)";
+        $item[$j++][0] = "Crude birth rate (per 1 000 population)";
+        $item[$j++][0] = "Number of Death (persons)";
+        $item[$j++][0] = "Crude death rate (per 1 000 population)";
+        $item[$j++][0] = "Natural Increase (persons)";
+        $item[$j++][0] = "Employment level in Business Sector (thousand person)";
+        $item[$j++][0] = "Average monthly remuneration of employed persons-in business sector (GEL)";
+        $item[$j++][0] = "The Number of Registered Business Entities (units)";
+        $item[$j++][0] = "Number of active economic subjects (units)";
+        $item[$j++][0] = "Number of newly registered economic entities (units):";
+    } else {
+        $item[$j++][0] = "";
+        $item[$j++][0] = "ფართობი (კვ.კმ)";
+        $item[$j++][0] = "ქალაქების და დაბების რაოდენობა (ერთეული)";
+        $item[$j++][0] = "სოფლების რაოდენობა (ერთეული)";
+        $item[$j++][0] = "მოსახლეობის რიცხოვნობა (ათასი)";
+        $item[$j++][0] = "ცოცხლად დაბადებულთა რიცხოვნობა (კაცი)";
+        $item[$j++][0] = "შობადობის ზოგადი კოეფიციენტი (დაბადებულთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
+        $item[$j++][0] = "გარდაცვლილთა რიცხოვნობა (კაცი)";
+        $item[$j++][0] = "მოკვდაობის ზოგადი კოეფიციენტი (გარდაცვლილთა რიცხოვნობა მოსახლეობის 1000 კაცზე)";
+        $item[$j++][0] = "ბუნებრივი მატება (კაცი):";
+        $item[$j++][0] = "დასაქმებულთა რაოდენობა-ბიზნეს სექტორში (ათასი კაცი)";
+        $item[$j++][0] = "დასაქმებულთა საშუალოთვიური ხელფასი-ბიზნეს სექტორში (ლარი)";
+        $item[$j++][0] = "რეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+        $item[$j++][0] = "მოქმედი ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+        $item[$j++][0] = "ახლადრეგის-</br>ტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
+    }
     $i = 0;
     $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;
-        $item[$j++][$i] = $row["Name"];
+        if ($lang == "en") {
+            $item[$j++][$i] = $row["NameEN"];
+        } else {
+            $item[$j++][$i] = $row["Name"];
+        }
         $item[$j++][$i] = $row["Area"];
         $item[$j++][$i] = $row["NumberOfCT"];
         $item[$j++][$i] = $row["Villages"];
@@ -185,44 +177,37 @@ $lang_url_en = "municipalComp.php?lang=en";
 
     <div class="selector">
         <div class="maps">
-            <span class="selector-text">აირჩიეთ მუნიციპალიტეტები</span>
+            <span class="selector-text"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Choose Municipalities' : 'აირჩიეთ მუნიციპალიტეტები'; ?></span>
             <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
                 <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
                     <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
                 <?php } ?>
             </select>
-            <img class="chart" src="1600-900-optimized/geomaps.png" alt="chart">
+            <img class="chart" src="../1600-900-optimized/geomaps.png" alt="chart">
         </div>
         <!-- <br /> -->
-
         <div class="chart">
-            <span class="selector-text">აირჩიეთ მაჩვენებლები</span>
+            <span class="selector-text"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Choose Indicators' : 'აირჩიეთ მაჩვენებლები'; ?></span>
             <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
                 <?php foreach ($item as $x => $y) if ($x > 0) { ?>
                     <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
                 <?php } ?>
             </select>
-            <img class="chart" src="1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:147px;">
+            <img class="chart" src="../1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:147px;">
         </div>
-
         <br />
-
-        <button id="srch" type="button" class="btn btn-srch" onclick="addbackcolor()">ძიება</button>
-
+        <button id="srch" type="button" class="btn btn-danger" data-bs-toggle="button" onclick="addbackcolor()"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Search' : 'ძიება'; ?></button>
     </div>
 
     <?php
-    $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_reg' : 'key_indicators_reg';
+    $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_reg_en' : 'key_indicators_reg';
     $query = mysqli_query($link, "select * from " . $tableRight);
     while ($row = mysqli_fetch_array($query)) {
         $dataHover[$row['ID']] = $row['dataHover'];
     }
     ?>
 
-    <?php // print_r($dataContent); exit; 
-    ?>
-
-    <table class="table table-responsive table-bordered bg-black" style="text-align: center;">
+    <table class="table table-sm table-responsive table-bordered table-hover mt-5">
         <tbody id="cxrili">
             <?php $index = 0; ?>
             <?php foreach ($item as $k => $v) { ?>
@@ -238,7 +223,7 @@ $lang_url_en = "municipalComp.php?lang=en";
                             <th class="machveneblebi_height Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important;display:none;"><?php echo $b; ?></th>
                         <?php } else if ($l == 0) { ?>
                             <?php if ($index <= 15) $index = $index + 1;  ?>
-                            <td title="" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important; width: 131px; display:none;"><?php echo $b; ?></td>
+                            <td title="" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="<?php echo $dataHover[$index] ?>" class="regionebi reg Col<?php echo $k; ?> Row<?php echo $l; ?>" style="height : 160px !important; width: 131px; display:none;  border-bottom: 1px solid #dee2e6"><?php echo $b; ?></td>
                         <?php } else { ?>
                             <td class="Col<?php echo $k; ?> Row<?php echo $l; ?> table<?php echo $k . "_" . $l; ?>" style="height : 50px !important; text-align: right;display: none;">
                                 <div style=""><?php echo $b; ?></div>
@@ -251,12 +236,10 @@ $lang_url_en = "municipalComp.php?lang=en";
     </table>
 
     <div id="displayNone" class="download center displayNone">
-
-        <button id="export" type="button" class="btn btn-success"><img src="images/download.png" alt="download" style="width:25px;">გადმოწერა</button>
-
+        <button id="export" type="button" class="btn btn-success"><img src="../images/download.png" alt="download" style="width:25px;"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Download' : 'გადმოწერა'; ?></button>
     </div>
 
-
+    <?php include 'components/footer.php'; ?>
 
     <script>
         $("#srch").on("click", function(e) {
@@ -289,22 +272,6 @@ $lang_url_en = "municipalComp.php?lang=en";
             }
         }
 
-        /*
-        $('.js-example-basic-multiple').select2().on("change", function(e) {
-            var selected = $('.js-example-basic-multiple').val();
-            var i;
-            for (i = 1; i <= 64; i++) {
-                var j;
-
-                if (!inArray(selected, i)) $(".Row" + i).hide();
-                else {
-                    $(".Row" + i).show();
-                    for (j = 1; j <= 13; j++)
-                        if (!$("#reg" + j).is(':checked')) $(".Col" + j).hide();
-                }
-            }
-        });
-*/
         $(document).ready(function() {
             $('#municipaliteties').multiselect();
             $('#key_indicators').multiselect();
@@ -321,22 +288,6 @@ $lang_url_en = "municipalComp.php?lang=en";
         });
 
 
-
-        //document.multiselect('#municipaliteties');
-        //document.multiselect('#key_indicators');
-        /*
-                $(document).ready(function() {
-                    $('.js-example-basic-multiple').select2({
-                        placeholder: "აირჩიე მუნიციპალიტეტები"
-                    });
-                });
-
-                $('select').select2({
-                    theme: 'bootstrap4',
-                });
-                */
-
-
         function inArray(haystack, needle) {
             var length = haystack.length;
             for (var i = 0; i < length; i++) {
@@ -345,73 +296,21 @@ $lang_url_en = "municipalComp.php?lang=en";
             return false;
         }
     </script>
-
-    <footer id="list-footer">
-        <div>
-            <div>
-                <div id="fb-root"></div>
-                <script>
-                    (function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
-                </script>
-                <div class="fb-share-button" data-href="http://geostat.ge/regions/" data-layout="button" data-mobile-iframe="false">
-                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"></a>
-                </div>
-                <style media="screen" type="text/css">
-                    .fb_iframe_widget span {
-                        vertical-align: baseline !important;
-                        /* width: 27px !important; */
-                        overflow: hidden !important;
-                        border-radius: 3px;
-                    }
-
-                    #twitter-widget-0 {
-                        /* width: 23px !important; */
-                        overflow: hidden !important;
-                        border-radius: 3px;
-                    }
-                </style>
-                <a class="twitter-share-button" href="https://twitter.com/intent/tweet"></a>
-                <!-- <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large"></a> -->
-                <!-- <div class="footer-icons">
-                    <a class="iconsPng" target="_blank" href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=http%3A%2F%2Fgeostat.ge%2Fregions%2F&display=popup&ref=plugin&src=share_button"> <img class="pngIcons" src="images/facebook.png" alt="icon"> </a>
-                    <a class="iconsPng" target="_blank" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Flocalhost%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text=%E1%83%A1%E1%83%A2%E1%83%90%E1%83%A2%E1%83%98%E1%83%A1%E1%83%A2%E1%83%98%E1%83%99%E1%83%A3%E1%83%A0%E1%83%98%20%E1%83%98%E1%83%9C%E1%83%A4%E1%83%9D%E1%83%A0%E1%83%9B%E1%83%90%E1%83%AA%E1%83%98%E1%83%90%20%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1%20%E1%83%A0%E1%83%94%E1%83%92%E1%83%98%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1%20%E1%83%9B%E1%83%98%E1%83%AE%E1%83%94%E1%83%93%E1%83%95%E1%83%98%E1%83%97&url=http%3A%2F%2Flocalhost%2Fregions%2F"> <img class="pngIcons" src="images/twitter.png" alt="icon"> </a>
-                </div> -->
-                <script>
-                    window.twttr = (function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            t = window.twttr || {};
-                        if (d.getElementById(id)) return t;
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = "https://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                        t._e = [];
-                        t.ready = function(f) {
-                            t._e.push(f);
-                        };
-                        return t;
-                    }(document, "script", "twitter-wjs"));
-                </script>
-            </div>
-        </div>
-        <span class="tr" key="COPYRIGHT1">© 2022 ყველა უფლება დაცულია.</span>
-        <br>
-        <span class="tr" key="COPYRIGHT2">საქართველოს სტატისტიკის ეროვნული სამსახური (საქსტატი)</span><br>
-
-        <span class="tr copy3" key="COPYRIGHT3"><a href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a></span>
-    </footer>
-
-
-
-    <script src="script.js"></script>
-    <script type="text/javascript" src="lang.js"></script>
+    <script type="text/javascript" src="../lang.js"></script>
+    <script src="../script.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
+    <script src="../multiselect/multiselect.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#municipalities, #key_indicators').select2({
+                theme: 'bootstrap4',
+                placeholder: '<?php echo $lang == "en" ? "Select Options" : "აირჩიეთ პარამეტრები"; ?>'
+            });
+        });
+    </script>
 </body>
 
 </html>
