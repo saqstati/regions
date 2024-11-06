@@ -223,8 +223,14 @@ function addbackcolor() {
   var element = document.getElementById("cxrili");
   element.classList.add("cxrili_style");
 
-  var element = document.getElementById("displayNone");
-  element.classList.remove("displayNone");
+  var displayNone = document.getElementById("displayNone");
+  displayNone.classList.remove("displayNone");
+
+  var hidenFooter = document.getElementById("hiden_footer");
+  hidenFooter.classList.remove("displayNone");
+
+  var centerTable = document.getElementById("center_table");
+  centerTable.classList.add("center")
 }
 
 document.addEventListener("DOMContentLoaded", function () {

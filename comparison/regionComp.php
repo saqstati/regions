@@ -45,13 +45,14 @@ $lang_url_en = "regionComp.php?lang=en";
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@1.5.2/dist/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../custom.css">
     <link rel="stylesheet" href="css/comparison.css">
     <link rel="stylesheet" href="../mediastyles.css">
     <link rel="stylesheet" href="../multiselect/styles/multiselect.css">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -205,7 +206,7 @@ $lang_url_en = "regionComp.php?lang=en";
     }
     ?>
 
-    <table class="table table-sm table-responsive table-bordered table-hover mt-5">
+    <table id="center_table" class="table table-sm table-responsive table-bordered table-hover mt-5">
         <tbody id="cxrili">
             <?php $index = 0; ?>
             <?php foreach ($item as $k => $v) { ?>
@@ -233,8 +234,11 @@ $lang_url_en = "regionComp.php?lang=en";
         </tbody>
     </table>
 
-    <div id="displayNone" class="download center displayNone">
-        <button id="export" type="button" class="btn btn-success"><img src="../images/download.png" alt="download" style="width:25px;"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Download' : 'გადმოწერა'; ?></button>
+    <div id="displayNone" class="download justify-content-center displayNone">
+        <button id="export" type="button" class="btn btn-success d-flex align-items-center gap-2">
+            <i class="fas fa-download" aria-hidden="true"></i>
+            <span><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Download' : 'გადმოწერა'; ?></span>
+        </button>
     </div>
 
     <?php include 'components/footer.php'; ?>

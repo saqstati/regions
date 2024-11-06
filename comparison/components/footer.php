@@ -1,4 +1,4 @@
-<footer class="mt-5">
+<footer id="hiden_footer" class="mt-5 displayNone">
     <?php
     $isGendersPage = strpos($_SERVER['REQUEST_URI'], 'genders') !== false;
     ?>

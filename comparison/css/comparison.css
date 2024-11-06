@@ -184,5 +184,9 @@ th.machveneblebi_height {
 }
 
 .displayNone {
-  display: none;
+  display: none !important;
+}
+
+.download {
+  display: flex;
 }
