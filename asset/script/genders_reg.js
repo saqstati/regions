@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Tbilisi.xlsx",
       },
@@ -23,31 +23,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20live%20births%20by%20sex/Shida%20Kartli.xlsx",
       },
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/გურია.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/თბილისი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Tbilisi.xlsx",
       },
@@ -69,31 +69,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/იმერეთი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/კახეთი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/სქესთა%20რაოდენობრივი%20თანაფარდობა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Quantitative%20ratio%20of%20sexes/Shida%20Kartli.xlsx",
       },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/გურია.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Tbilisi.xlsx",
       },
@@ -115,31 +115,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20childbearing/Shida%20Kartli.xlsx",
       },
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Tbilisi.xlsx",
       },
@@ -161,31 +161,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Shida%20Kartli.xlsx",
       },
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Tbilisi.xlsx",
       },
@@ -207,31 +207,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Shida%20Kartli.xlsx",
       },
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tbilisi.xlsx",
       },
@@ -253,31 +253,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Shida%20Kartli.xlsx",
       },
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Tbilisi.xlsx",
       },
@@ -299,31 +299,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20married%20people/Shida%20Kartli.xlsx",
       },
@@ -337,7 +337,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/გურია.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Tbilisi.xlsx",
       },
@@ -345,31 +345,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Mean%20age%20of%20spouses/Shida%20Kartli.xlsx",
       },
@@ -383,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Tbilisi.xlsx",
       },
@@ -391,31 +391,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Shida%20Kartli.xlsx",
       },
@@ -429,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/გურია.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/თბილისი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Tbilisi.xlsx",
       },
@@ -437,31 +437,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/იმერეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/კახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Median%20age%20of%20population/Shida%20Kartli.xlsx",
       },
@@ -475,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/გურია.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/თბილისი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tbilisi.xlsx",
       },
@@ -483,31 +483,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/იმერეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/კახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Shida%20Kartli.xlsx",
       },
@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/გურია.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/თბილისი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Tbilisi.xlsx",
       },
@@ -529,31 +529,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/იმერეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/კახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Age%20dependency%20ratios/Shida%20Kartli.xlsx",
       },
@@ -567,7 +567,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/გურია.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/თბილისი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Tbilisi.xlsx",
       },
@@ -575,31 +575,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/იმერეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/კახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Number%20of%20population/Shida%20Kartli.xlsx",
       },
@@ -613,7 +613,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/გურია.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/თბილისი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Tbilisi.xlsx",
       },
@@ -621,31 +621,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/იმერეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/კახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Mtskheta-Mtianeti.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Population%20census/Share%20of%20working%20age%20population/Shida%20Kartli.xlsx",
       },
@@ -659,7 +659,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/გურიის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Guria%20Region.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/თბილისი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Tbilisi.xlsx",
       },
@@ -667,31 +667,31 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/იმერეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Imereti%20Region.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/კახეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Kakheti%20Region.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/მცხეთა-მთიანეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Mtskheta-Mtianeti%20Region.xlsx",
       },
-      racha: {
+      Racha: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Racha-Lechkhumi%20and%20Kvemo%20Svaneti%20Region.xlsx",
       },
-      samegrelo: {
+      Samegrelo: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/სამეგრელო-ზემო%20სვანეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Samegrelo-Zemo%20Svaneti%20Region.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/სამცხე-ჯავახეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Samtskhe-Javakheti%20Region.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/ქვემო%20ქართლის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Kvemo%20Kartli%20Region.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/შიდა%20ქართლის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Shida%20Kartli%20Region.xlsx",
       },

@@ -262,7 +262,7 @@ function applyRegionStyles(region) {
       hoverColor = "#c75685";
       bgImage = "url('/regions/1600-900-optimized/6.jpg')";
       break;
-    case "Samtskhe-Javakheri":
+    case "samtskhe_javakheti":
       bgColor = "#9e6e9c";
       hoverColor = "#b5568c";
       bgImage = "url('/regions/1600-900-optimized/5.jpg')";
@@ -272,7 +272,7 @@ function applyRegionStyles(region) {
       hoverColor = "#c75685";
       bgImage = "url('/regions/1600-900-optimized/9.jpg')";
       break;
-    case "Mtskheta-Mtianeti":
+    case "mtskheta_mtianeti":
       bgColor = "#9e6e9c";
       hoverColor = "#b5568c";
       bgImage = "url('/regions/1600-900-optimized/11.jpg')";
@@ -372,7 +372,7 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
     "ninotsminda",
   ].includes(municipal)
 ) {
-  region = "Samtskhe-Javakheri";
+  region = "samtskhe_javakheti";
 } else if (
   [
     "akhmeta",
@@ -387,7 +387,7 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
 ) {
   region = "Kakheti";
 } else if (["dusheti", "mtskheta", "tianeti", "kazbegi"].includes(municipal)) {
-  region = "Mtskheta-Mtianeti";
+  region = "mtskheta_mtianeti";
 } else if (
   [
     "bolnisi",
@@ -425,11 +425,11 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
 } else if (window.location.pathname.includes("imereti")) {
   region = "imereti";
 } else if (window.location.pathname.includes("javaxeti")) {
-  region = "Samtskhe-Javakheti";
+  region = "samtskhe_javakheti";
 } else if (window.location.pathname.includes("kakheti")) {
   region = "Kakheti";
 } else if (window.location.pathname.includes("mcxeta-mtianeti")) {
-  region = "Mtskheta-Mtianeti";
+  region = "mtskheta_mtianeti";
 } else if (window.location.pathname.includes("qvemo-qartli")) {
   region = "kvemo_kartli";
 } else if (window.location.pathname.includes("racha")) {
@@ -451,14 +451,14 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
     case "imereti":
       region = "imereti";
       break;
-    case "samtskhe-javakheti":
-      region = "Samtskhe-Javakheti";
+    case "samtskhe_javakheti":
+      region = "samtskhe_javakheti";
       break;
     case "kakheti":
       region = "Kakheti";
       break;
-    case "mtskheta-mtianeti":
-      region = "Mtskheta-Mtianeti";
+    case "mtskheta_mtianeti":
+      region = "mtskheta_mtianeti";
       break;
     case "kvemo_kartli":
       region = "kvemo_kartli";
