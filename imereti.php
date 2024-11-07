@@ -34,10 +34,9 @@ include "config.php";
 
 <body>
     <div id="background-main" class="background-image"></div>
-    <div class="main-container">
+    <div class="container-fluid">
         <?php include 'asset/header.php' ?>
-
-        <table class="machveneblebi-left">
+        <table class="machveneblebi-left col">
             <?php
             include('connection.php');
             $tableLeft = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'regional_statistics_en' : 'regional_statistics';
@@ -787,8 +786,8 @@ include "config.php";
 
             </tbody>
         </table>
-        <div class="map-box">
-            <svg id="svg4380" xmlns="http://www.w3.org/2000/svg" viewBox="" version="1.1">
+        <div class="col-6" style="height: 100%;">
+            <svg id="svg4" xmlns="http://www.w3.org/2000/svg" viewBox="" version="1.1">
 
                 <g id="layer6">
                     <a xlink:href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'imereti/sachxere.php?lang=en' : 'imereti/sachxere.php?lang=ka'; ?>" class="text-decoration-none">
@@ -875,7 +874,7 @@ include "config.php";
             </svg>
         </div>
 
-        <table class="machveneblebi-right">
+        <table class="machveneblebi-right col">
             <?php
             include('connection.php');
             $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_en' : 'key_indicators';

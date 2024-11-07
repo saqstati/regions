@@ -33,9 +33,9 @@ include "config.php";
 
 <body>
     <div id="background-main" class="background-image"></div>
-    <div class="main-container">
+    <div class="container-fluid">
         <?php include 'asset/header.php' ?>
-        <table class="machveneblebi-left">
+        <table class="machveneblebi-left col">
             <?php
             include('connection.php');
             $tableLeft = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'regional_statistics_en' : 'regional_statistics';
@@ -789,11 +789,11 @@ include "config.php";
 
             </tbody>
         </table>
-        <div class="map-box" style="max-width: 700px; margin-left:55px;">
+        <div class="map-box">
             <img src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'tbilisien.svg' : 'tbilisi.svg'; ?>" alt="tbilisiSVG" id="tbilisiSVG">
         </div>
 
-        <table class="machveneblebi-right">
+        <table class="machveneblebi-right col">
             <?php
             include('connection.php');
             $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_en' : 'key_indicators';

@@ -1,8 +1,31 @@
 @media screen and (max-width: 1600px) {
-  g.layer1 {
-    transform: scale(1.1) !important;
-    -webkit-transform-origin-x: 4100px !important;
-    -webkit-transform-origin-y: 1746px !important;
+  .regions-btn {
+    width: 27vh;
+  }
+
+  .machveneblebi-left,
+  .machveneblebi-right {
+    font-size: 14px;
+  }
+
+  svg#svg9 {
+    float: unset;
+    width: 655px;
+    height: 1000px;
+    position: unset;
+    border: unset;
+  }
+
+  svg {
+    float: left;
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    border: 0px solid blue;
+  }
+
+  #tbilisiSVG {
+    width: 59%;
   }
 
   #mestiaSVG {
@@ -18,27 +41,27 @@
   }
 
   g#layer3 {
-    transform: scale(2.2);
-    -webkit-transform-origin-x: 781px;
-    -webkit-transform-origin-y: 1330px;
-  }
-
-  g#layer7 {
     transform: scale(1.7);
-    -webkit-transform-origin-x: 1728px;
-    -webkit-transform-origin-y: 690px;
+    -webkit-transform-origin-x: 911px;
+    -webkit-transform-origin-y: 1653px;
   }
 
   g#layer5 {
     transform: scale(1.4);
-    -webkit-transform-origin-x: 2420px;
-    -webkit-transform-origin-y: 2420px;
+    -webkit-transform-origin-x: 289vh;
+    -webkit-transform-origin-y: 281vh;
   }
 
-  g#layer12 {
-    transform: scale(2);
-    -webkit-transform-origin-x: 1954px;
-    -webkit-transform-origin-y: 1131px;
+  g#layer6 {
+    transform: scale(1.4);
+    -webkit-transform-origin-x: 273vh;
+    -webkit-transform-origin-y: 183vh;
+  }
+
+  g#layer7 {
+    transform: scale(1.5);
+    -webkit-transform-origin-x: 264vh;
+    -webkit-transform-origin-y: 690px;
   }
 
   g#layer8 {
@@ -46,6 +69,19 @@
     -webkit-transform-origin-x: 3600px;
     -webkit-transform-origin-y: 2417px;
   }
+
+  g#layer9 {
+    transform: scale(1.2);
+    -webkit-transform-origin-x: 1035vh;
+    -webkit-transform-origin-y: 2555px;
+  }
+
+  g#layer12 {
+    transform: scale(1.8);
+    -webkit-transform-origin-x: 267vh;
+    -webkit-transform-origin-y: 1131px;
+  }
+
   g.layer11 {
     transform: scale(1.1) !important;
     -webkit-transform-origin-x: 12500px !important;
@@ -110,10 +146,6 @@
   }
   .popover {
     font-size: 12px;
-  }
-
-  svg {
-    width: 60%;
   }
 }
 @media screen and (max-width: 1280px) {
