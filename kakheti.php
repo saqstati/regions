@@ -918,7 +918,7 @@ include "config.php";
         </div>
     </main>
 
-    <?php include 'footer.php' ?>
+    <?php include 'asset/components/footer.php' ?>
 
     <script src="script.js"></script>
     <script type="text/javascript" src="lang.js"></script>
