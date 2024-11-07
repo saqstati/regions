@@ -26,6 +26,8 @@ if ($current_page == 'adjara') {
     $page_title = $lang['samegrelotitlename'];
 } elseif ($current_page == 'shida_kartli') {
     $page_title = $lang['shidakartlititlename'];
+} elseif ($current_page == 'Tbilisi') {
+    $page_title = $lang['tbilisititlename'];
 } else {
     $page_title = $lang['loadingtitlename'];
 }

@@ -26,6 +26,8 @@ if ($current_page == 'adjara.php') {
     $page_title = $lang['samegrelotitlename'];
 } elseif ($current_page == 'shida-qartli.php') {
     $page_title = $lang['shidakartlititlename'];
+} elseif ($current_page == 'tbilisi.php') {
+    $page_title = $lang['tbilisititlename'];
 } else {
     $page_title = $lang['loadingtitlename'];
 }
@@ -61,6 +63,9 @@ if ($current_page == 'adjara.php') {
 } elseif ($current_page == 'shida-qartli.php') {
     $lang_url_ka = 'shida-qartli.php?lang=ka';
     $lang_url_en = 'shida-qartli.php?lang=en';
+} elseif ($current_page == 'tbilisi.php') {
+    $lang_url_ka = 'tbilisi.php?lang=ka';
+    $lang_url_en = 'tbilisi.php?lang=en';
 } else {
     $lang_url_ka = 'default.php?lang=ka';
     $lang_url_en = 'default.php?lang=en';

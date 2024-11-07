@@ -230,7 +230,7 @@ function addbackcolor() {
   hidenFooter.classList.remove("displayNone");
 
   var centerTable = document.getElementById("center_table");
-  centerTable.classList.add("center")
+  centerTable.classList.add("center");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -296,6 +296,11 @@ function applyRegionStyles(region) {
       bgColor = "#678dac";
       hoverColor = "#757ea6";
       bgImage = "url('/regions/1600-900-optimized/12.jpg')";
+      break;
+    case "Tbilisi":
+      bgColor = "#ce8d34";
+      hoverColor = "#cb744c";
+      bgImage = "url('/regions/1600-900-optimized/10.jpg')";
       break;
     default:
       bgColor = "#ce8d34"; // Default color (Adjara) if region is unknown
@@ -433,6 +438,8 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
   region = "Samegrelo";
 } else if (window.location.pathname.includes("shida-qartli")) {
   region = "shida_kartli";
+} else if (window.location.pathname.includes("tbilisi")) {
+  region = "Tbilisi";
 } else if (regionQueryParam) {
   switch (regionQueryParam) {
     case "guria":
@@ -464,6 +471,9 @@ if (["lanchkhuti", "ozurgeti", "chokhatauri"].includes(municipal)) {
       break;
     case "shida_kartli":
       region = "shida_kartli";
+      break;
+    case "tbilisi":
+      region = "Tbilisi";
       break;
   }
 }
