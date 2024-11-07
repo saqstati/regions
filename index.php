@@ -131,6 +131,20 @@ include "config.php";
 			    z-index:99;
 			}
 		</style> -->
+
+		<style>
+			@media screen and (max-width: 1600px) {
+				svg {
+					width: 60%;
+				}
+
+				.map-box {
+					max-width: 1050px;
+					margin-left: 46px;
+					margin-top: -10%;
+				}
+			}
+		</style>
 		<div>
 			<div class="col-md-2">
 				<div class="side-box1" id="resultleftbox">

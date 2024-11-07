@@ -53,9 +53,9 @@
   }
 
   g#layer6 {
-    transform: scale(1.4);
-    -webkit-transform-origin-x: 273vh;
-    -webkit-transform-origin-y: 183vh;
+    transform: scale(1.3);
+    -webkit-transform-origin-x: 395vh;
+    -webkit-transform-origin-y: 315vh;
   }
 
   g#layer7 {
@@ -148,6 +148,11 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 1400px) {
+  
+}
+
 @media screen and (max-width: 1280px) {
   table thead tr th {
     font-size: 15px;
