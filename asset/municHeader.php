@@ -353,31 +353,52 @@ if ($current_page == 'qeda.php') {
 </div>
 
 <div class="container-fluid">
-    <div class="d-flex justify-content-between">
-        <div>
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+        <!-- Back Button on the left -->
+        <div class="mb-2 mb-md-0">
             <a class="btn header-btn" onclick="previous()">
-                <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span>
+                <span class="tr" key="backBtn">
+                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?>
+                </span>
             </a>
         </div>
 
-        <div class="d-flex">
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../comparison/regionComp.php?lang=en' : '../comparison/regionComp.php?lang=ka'; ?>">
-                <span class="tr" Key="regionsBtn">
+        <!-- Navigation Links with responsive wrapping -->
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-end">
+            <a class="btn header-btn me-2 mb-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../comparison/regionComp.php?lang=en' : '../comparison/regionComp.php?lang=ka'; ?>">
+                <span class="tr" key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Regions' : 'რეგიონების შედარება'; ?>
                 </span>
             </a>
 
-            <a class="btn header-btn me-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../comparison/municipalComp.php?lang=en' : '../comparison/municipalComp.php?lang=ka'; ?>">
-                <span class="tr" Key="regionsBtn">
+            <a class="btn header-btn me-2 mb-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../comparison/municipalComp.php?lang=en' : '../comparison/municipalComp.php?lang=ka'; ?>">
+                <span class="tr" key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Comparison of Municipalities' : 'მუნიციპალიტეტების შედარება'; ?>
                 </span>
             </a>
 
-            <a class="btn header-btn" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../genders/genders.php?lang=en' : '../genders/genders.php?lang=ka'; ?>">
-                <span class="tr" Key="regionsBtn">
+            <a class="btn header-btn mb-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '../genders/genders.php?lang=en' : '../genders/genders.php?lang=ka'; ?>">
+                <span class="tr" key="regionsBtn">
                     <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators' : 'გენდერული სტატისტიკა'; ?>
                 </span>
             </a>
         </div>
     </div>
 </div>
+
+<style>
+    /* Additional Styles for Responsive Municipal Header */
+    @media (max-width: 768px) {
+        .header-btn {
+            font-size: 0.9rem;
+            padding: 0.5rem 0.75rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .header-btn {
+            font-size: 0.8rem;
+            padding: 0.4rem 0.6rem;
+        }
+    }
+</style>
