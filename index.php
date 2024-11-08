@@ -133,16 +133,9 @@ include "config.php";
 		</style> -->
 
 		<style>
-			@media screen and (max-width: 1600px) {
-				svg {
-					width: 60%;
-				}
-
-				.map-box {
-					max-width: 1050px;
-					margin-left: 46px;
-					margin-top: -10%;
-				}
+			.map-box {
+				width: 100% !important;
+				margin-left: 46px;
 			}
 		</style>
 		<div>

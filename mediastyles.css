@@ -8,7 +8,7 @@
     font-size: 14px;
   }
 
-  svg#svg9 {
+  /* svg#svg9 {
     float: unset;
     width: 655px;
     height: 1000px;
@@ -22,7 +22,7 @@
     height: inherit;
     position: fixed;
     border: 0px solid blue;
-  }
+  } */
 
   #tbilisiSVG {
     width: 59%;
@@ -146,128 +146,5 @@
   }
   .popover {
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  
-}
-
-@media screen and (max-width: 1280px) {
-  table thead tr th {
-    font-size: 15px;
-  }
-  table tr th {
-    font-size: 11px;
-  }
-  table tbody tr td div {
-    font-size: 11px;
-  }
-  .zoom-out {
-    font-size: 10px;
-    top: 59px;
-  }
-  table tbody tr th img {
-    width: 17px;
-    height: 17px;
-  }
-  table tbody tr th img:after {
-    width: 17px;
-    height: 17px;
-  }
-  table tbody tr td img {
-    width: 17px;
-    height: 17px;
-  }
-  table tbody tr td img:after {
-    width: 17px;
-    height: 17px;
-  }
-  #textbox1 span,
-  #textbox2 span,
-  #textbox3 span,
-  #textbox4 span,
-  #textbox5 span,
-  #textbox6 span,
-  #textbox7 span {
-    font-size: 10px;
-  }
-  #recommendation {
-    font-size: 6.9px;
-  }
-  .indic-icons {
-    margin: 7px 10px 7px 10px;
-    height: 35px;
-    width: 35px;
-  }
-  #textbox {
-    top: 14%;
-  }
-  #recommendation img {
-    width: 9px;
-    height: 9px;
-  }
-  .popover {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  table thead tr th {
-    font-size: 13px;
-  }
-  table tr th {
-    font-size: 10px;
-  }
-  table tbody tr td div {
-    font-size: 10px;
-  }
-  .zoom-out {
-    font-size: 8px;
-    top: 51px;
-  }
-
-  table tbody tr th img {
-    width: 14px;
-    height: 14px;
-  }
-  table tbody tr th img:after {
-    width: 14px;
-    height: 14px;
-  }
-  table tbody tr td img {
-    width: 14px;
-    height: 14px;
-  }
-  table tbody tr td img:after {
-    width: 14px;
-    height: 14px;
-  }
-  #textbox1 span,
-  #textbox2 span,
-  #textbox3 span,
-  #textbox4 span,
-  #textbox5 span,
-  #textbox6 span,
-  #textbox7 span {
-    font-size: 8px;
-  }
-  #recommendation {
-    font-size: 6px;
-  }
-  .indic-icons {
-    margin: 3px 9px 3px 9px;
-    height: 30px;
-    width: 30px;
-  }
-
-  #textbox {
-    top: 12%;
-  }
-  #recommendation img {
-    width: 7.8px;
-    height: 7.8px;
-  }
-  .popover {
-    font-size: 8px;
   }
 }

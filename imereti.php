@@ -39,7 +39,7 @@ include "config.php";
             <?php include 'asset/header.php' ?>
             <!-- Left Table -->
             <div class="col-12 col-md-3">
-                <table class="table table-hover">
+                <table class="table">
                     <?php
                     include('connection.php');
                     $tableLeft = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'regional_statistics_en' : 'regional_statistics';

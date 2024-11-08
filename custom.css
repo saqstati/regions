@@ -141,13 +141,23 @@ body {
 #textbox7 i {
   color: #9e6e9c;
 }
-svg {
+/* svg {
   float: left;
   width: inherit;
   height: inherit;
   position: fixed;
   border: 0px solid blue;
+} */
+
+.table > :not(caption) > * > * {
+  background-color: unset;
 }
+
+.row.g3 {
+  font-weight: bold;
+  font-family: arial, sans-serif !important;
+}
+
 .main-container {
   height: 100%;
   width: 100%;
