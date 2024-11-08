@@ -34,12 +34,6 @@
     margin-top: -14%;
   }
 
-  g#layer2 {
-    transform: scale(2.2);
-    -webkit-transform-origin-x: 840px;
-    -webkit-transform-origin-y: 1005px;
-  }
-
   g#layer3 {
     transform: scale(1.7);
     -webkit-transform-origin-x: 911px;

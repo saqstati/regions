@@ -137,6 +137,18 @@ include "config.php";
 				width: 100% !important;
 				margin-left: 46px;
 			}
+
+			@media screen and (max-width: 1600px) {
+				svg {
+					width: 90%;
+				}
+
+				.map-box {
+					width: 100% !important;
+					margin-left: 46px;
+					margin-top: -8%;
+				}
+			}
 		</style>
 		<div>
 			<div class="col-md-2">

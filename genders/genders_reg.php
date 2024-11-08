@@ -74,7 +74,7 @@ $lang_url_en = "genders_reg.php?region=$region&lang=en";
 
 <body>
     <div id="background-main" class="background-image"></div>
-    <div class="main-container">
+    <div class="container-fluid">
         <div class="content">
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between mb-4">
@@ -375,8 +375,8 @@ $lang_url_en = "genders_reg.php?region=$region&lang=en";
                 </table>
             </div>
         </div>
-        <?php include '../footer_mun.php' ?>
     </div>
+    <?php include '../asset/components/footer.php' ?>
 
     <script src="../script.js"></script>
     <script src="../asset/script/genders_reg.js"></script>
