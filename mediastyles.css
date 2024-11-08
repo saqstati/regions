@@ -81,15 +81,7 @@
     -webkit-transform-origin-x: 12500px !important;
     -webkit-transform-origin-y: 3936px !important;
   }
-  table thead tr th {
-    font-size: 18px;
-  }
-  table tr th {
-    font-size: 13px;
-  }
-  table tbody tr td div {
-    font-size: 13px;
-  }
+
   .zoom-out {
     font-size: 12px;
     top: 71px;
@@ -120,9 +112,7 @@
   #textbox7 span {
     font-size: 12px;
   }
-  #recommendation {
-    font-size: 8.3px;
-  }
+
   .indic-icons {
     margin: 8.3px 13px 8.3px 13px;
     height: 42px;
@@ -133,10 +123,6 @@
   }
   #textbox {
     top: 17%;
-  }
-  #recommendation img {
-    width: 11px;
-    height: 11px;
   }
   .popover {
     font-size: 12px;

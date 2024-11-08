@@ -33,15 +33,6 @@ h1 {
     color: #333;
 }
 
-.recommendation p {
-    margin: 0;
-}
-
-.recommendation a img {
-    width: 100px;
-    margin: 0 10px;
-}
-
 .selector .form-group {
     margin-bottom: 20px;
 }
