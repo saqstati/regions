@@ -46,12 +46,6 @@
     -webkit-transform-origin-y: 281vh;
   }
 
-  g#layer6 {
-    transform: scale(1.3);
-    -webkit-transform-origin-x: 395vh;
-    -webkit-transform-origin-y: 315vh;
-  }
-
   g#layer7 {
     transform: scale(1.5);
     -webkit-transform-origin-x: 264vh;
