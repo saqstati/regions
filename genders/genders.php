@@ -186,15 +186,9 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
 
 <body>
     <div id="background-main" class="background-image"></div>
-    <div class="container-fluid">
+    <main class="container-fluid">
         <div class="content">
             <?php include "components/header.php"; ?>
-
-            <div class="container-fluid">
-                <div class="d-flex justify-content-between">
-                    <a class="btn header-btn" onclick="previous()"> <span class="tr" Key="backBtn"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Back' : 'უკან დაბრუნება'; ?></span></a>
-                </div>
-            </div>
 
             <div class="center">
                 <table class="container gender_table">
@@ -549,7 +543,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                 </table>
             </div>
         </div>
-    </div>
+    </main>
     <?php include '../asset/components/footer.php' ?>
 
     <script src="../script.js"></script>
