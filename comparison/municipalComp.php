@@ -61,27 +61,27 @@ $lang_url_en = "municipalComp.php?lang=en";
 
 <body>
     <div id="background-main" class="background-image"></div>
-    <div class="content">
+
+    <div class="container content py-3">
         <?php include 'components/header.php'; ?>
 
-        <form method="POST" action="" name="applyform">
-            <table class="table table-bordered table-striped table-hover text-light">
-                <?php
-                require '../connection.php';
-                $query = mysqli_query($link, "SELECT * FROM `municipalitiesaz`");
-                $i = '';
-                while ($fetch = mysqli_fetch_array($query)) {
-                ?>
+        <form method="POST" action="" name="applyform" class="w-100">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-light">
+                    <?php
+                    require '../connection.php';
+                    $query = mysqli_query($link, "SELECT * FROM `municipalitiesaz`");
+                    $i = '';
+                    while ($fetch = mysqli_fetch_array($query)) {
+                    ?>
 
-                <?php
-                    $i = ($i == '') ? 2 : $i + 1;
-                }
-                ?>
-            </table>
+                    <?php
+                        $i = ($i == '') ? 2 : $i + 1;
+                    }
+                    ?>
+                </table>˝
+            </div>
         </form>
-
-
-
     </div>
 
     <?php
@@ -147,28 +147,40 @@ $lang_url_en = "municipalComp.php?lang=en";
 
     ?>
 
-    <div class="selector">
-        <div class="maps">
-            <span class="selector-text"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Choose Municipalities' : 'აირჩიეთ მუნიციპალიტეტები'; ?></span>
-            <select id="municipaliteties" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
-                <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
-                    <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
-                <?php } ?>
-            </select>
-            <img class="chart" src="../1600-900-optimized/geomaps.png" alt="chart">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <div class="maps d-flex flex-column align-items-center">
+                    <span class="selector-text">
+                        <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Choose Municipalities' : 'აირჩიეთ მუნიციპალიტეტები'; ?>
+                    </span>
+                    <select id="municipaliteties" name="states[]" multiple="multiple" class="form-select" style="width: 100%;">
+                        <?php foreach ($item[0] as $x => $y) if ($x > 0) { ?>
+                            <option value="<?php echo $x; ?>"><?php echo $y; ?></option>
+                        <?php } ?>
+                    </select>
+                    <img class="mt-3 responsive-img" src="../1600-900-optimized/geomaps.png" alt="chart">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="chart d-flex flex-column align-items-center">
+                    <span class="selector-text">
+                        <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Choose Indicators' : 'აირჩიეთ მაჩვენებლები'; ?>
+                    </span>
+                    <select id="key_indicators" name="states[]" multiple="multiple" class="form-select" style="width: 100%;">
+                        <?php foreach ($item as $x => $y) if ($x > 0) { ?>
+                            <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
+                        <?php } ?>
+                    </select>
+                    <img class="mt-3 responsive-img" src="../1600-900-optimized/1612523122750-Charts.jpg" alt="chart">
+                </div>
+            </div>
         </div>
-        <!-- <br /> -->
-        <div class="chart">
-            <span class="selector-text"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Choose Indicators' : 'აირჩიეთ მაჩვენებლები'; ?></span>
-            <select id="key_indicators" name="states[]" multiple="multiple" style="width: 60%; height:20px;">
-                <?php foreach ($item as $x => $y) if ($x > 0) { ?>
-                    <option value="<?php echo $x; ?>"><?php echo $y[0]; ?></option>
-                <?php } ?>
-            </select>
-            <img class="chart" src="../1600-900-optimized/1612523122750-Charts.jpg" alt="chart" style="height:147px;">
+        <div class="d-flex justify-content-center">
+            <button id="srch" type="button" class="btn btn-danger" data-bs-toggle="button" onclick="addbackcolor()">
+                <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Search' : 'ძიება'; ?>
+            </button>
         </div>
-        <br />
-        <button id="srch" type="button" class="btn btn-danger" data-bs-toggle="button" onclick="addbackcolor()"><?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Search' : 'ძიება'; ?></button>
     </div>
 
     <?php
