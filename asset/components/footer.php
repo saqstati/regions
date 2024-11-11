@@ -21,10 +21,10 @@ $isGendersPage = strpos($_SERVER['REQUEST_URI'], 'genders') !== false;
             <div class="col-12 col-md-8 text-center">
                 <div class="logos mb-2">
                     <img class="eu-logo" src="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en')
-                                                    ? ($isGendersPage ? '../images/logo/eu.png' : '/images/logo/eu.png')
-                                                    : ($isGendersPage ? '../images/logo/eu-geo.png' : '/images/logo/eu-geo.png'); ?>" alt="EU Logo">
-                    <img class="partner-logo" src="<?php echo $isGendersPage ? '../images/logo/denmark.PNG' : '/images/logo/denmark.PNG'; ?>" alt="Denmark Logo">
-                    <img class="partner-logo" src="<?php echo $isGendersPage ? '../images/logo/undp.PNG' : '/images/logo/undp.PNG'; ?>" alt="UNDP Logo">
+                                                    ? ($isGendersPage ? '../images/logo/eu.png' : '/regions/images/logo/eu.png')
+                                                    : ($isGendersPage ? '../images/logo/eu-geo.png' : '/regions/images/logo/eu-geo.png'); ?>" alt="EU Logo">
+                    <img class="partner-logo" src="<?php echo $isGendersPage ? '../images/logo/denmark.PNG' : '/regions/images/logo/denmark.PNG'; ?>" alt="Denmark Logo">
+                    <img class="partner-logo" src="<?php echo $isGendersPage ? '../images/logo/undp.PNG' : '/regions/images/logo/undp.PNG'; ?>" alt="UNDP Logo">
                 </div>
                 <div class="footer-text">
                     <span><b><?php echo $lang['COPYRIGHT1'] ?></b></span><br>

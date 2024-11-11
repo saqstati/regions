@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const linkData = {
     births: {
-      batumi: {
+      Batumi: {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/C.%20Batumi.xlsx",
       },
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     ratio: {
       Batumi: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ბათუმი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Batumi.xlsx",
       },
       Keda: {
@@ -782,7 +782,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     stillbirths: {
       Batumi: {
-        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/ბათუმი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Adjara%20A.R/Batumi.xlsx",
       },
       Keda: {
@@ -1294,7 +1294,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     deathclases: {
       Batumi: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ბათუმის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Batumi.xlsx",
       },
       Keda: {
@@ -2068,8 +2068,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     numberdivorce: {
       Batumi: {
-        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ბათუმი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Batumi.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Batumi.xlsx",
       },
       Keda: {
         ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქედა.xlsx",
@@ -3870,7 +3870,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     employmentAndSalaries3: {
       Batumi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/აჭარა%20ა.რ/ბათუმი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
@@ -4124,7 +4124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     employmentAndSalaries4: {
       Batumi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ბათუმი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
@@ -4378,7 +4378,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     hotels5: {
       Batumi: {
-        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ბათუმი.xlsx",
+        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
@@ -4886,7 +4886,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     education3: {
       Batumi: {
-        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ბათუმი.xlsx",
+        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
@@ -5140,27 +5140,27 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     education4: {
       Batumi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Keda.xlsx",
       },
       Kobuleti: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Kobuleti.xlsx",
       },
       Shuakhevi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Shuakhevi.xlsx",
       },
       Khelvachauri: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Khelvachauri.xlsx",
       },
       Khulo: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Khulo.xlsx",
       },
       Abasha: {

@@ -32,7 +32,13 @@ footer .copyright_text a {
 }
 
 .gender_table {
-  width: 40%;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .gender_table {
+    width: 40%;
+  }
 }
 
 .gender_table th {

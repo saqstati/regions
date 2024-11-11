@@ -38,11 +38,11 @@ tbody tr:first-child {
   width: 245px !important;
 }
 
-@media screen and (max-width: 1366px) {
+/* @media screen and (max-width: 1366px) {
   body {
     zoom: 67%;
   }
-}
+} */
 
 .regionebi.reg {
   display: flex;
