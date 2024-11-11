@@ -2,22 +2,11 @@ function previous() {
   window.history.back();
 }
 
-// const btn = document.querySelector("#btn");
-// const container = document.querySelector("#press");
-// btn.addEventListener("click", function () {
-//     if (container.style.display === "block") {
-//         container.style.display = "none";
-//         btn.innerHTML = "ძიება"
-//     } else {
-//         container.style.display = "block";
-//         btn.innerHTML = "ძიება"
-//     }
-// } );
-
-// function changeClass() {
-//   var element = document.getElementById("classchange");
-//   element.classList.toggle("dropdown_img_down");
-// }
+// Hide the spinner when the page is fully loaded
+window.addEventListener("load", function () {
+  document.getElementById("loadingSpinner").style.display = "none";
+  document.getElementById("forSpinner").style.display = "block";
+});
 
 let itemsToShow = {
   dziritadi1: "informacia1",
