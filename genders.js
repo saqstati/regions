@@ -310,8 +310,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ფოთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/Poti.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
@@ -826,8 +826,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Samegrelo-Zemo%20Svaneti/Poti.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
@@ -1338,7 +1338,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ფოთის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
@@ -2112,8 +2112,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ფოთი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Poti.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ჩხოროწყუ.xlsx",
@@ -2843,259 +2843,259 @@ document.addEventListener("DOMContentLoaded", function () {
     populationDescription4: {
       Batumi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20ბათუმი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Batumi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Batumi.xlsx",
       },
       Keda: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქედა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Keda.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Keda.xlsx",
       },
       Kobuleti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქობულეთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kobuleti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Kobuleti.xlsx",
       },
       Shuakhevi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/შუახევი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Shuakhevi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Shuakhevi.xlsx",
       },
       Khelvachauri: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ხელვაჩაური.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Khelvachauri.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Khelvachauri.xlsx",
       },
       Khulo: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ხულო.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Khulo.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Khulo.xlsx",
       },
       Abasha: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/აბაშა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Abasha.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Abasha.xlsx",
       },
       Zugdidi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ზუგდიდი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Zugdidi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Zugdidi.xlsx",
       },
       Martvili: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/მარტვილი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Martvili.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Martvili.xlsx",
       },
       Mestia: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/მესტია.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Mestia.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Mestia.xlsx",
       },
       Senaki: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/სენაკი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Senaki.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Senaki.xlsx",
       },
       Poti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20ფოთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Poti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ჩხოროწყუ.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Chkhorotsku.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Chkhorotsku.xlsx",
       },
       Tsalenjikha: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/წალენჯიხა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tsalenjikha.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tsalenjikha.xlsx",
       },
       Khobi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ხობი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Khobi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Khobi.xlsx",
       },
       Lanchkhuti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ლანჩხუთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Lanchkhuti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Lanchkhuti.xlsx",
       },
       Ozurgeti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ოზურგეთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Ozurgeti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Ozurgeti.xlsx",
       },
       Chokhatauri: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ჩოხატაური.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Chokhatauri.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Chokhatauri.xlsx",
       },
       Adigeni: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ადიგენი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Adigeni.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Adigeni.xlsx",
       },
       Aspindza: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ასპინძა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Aspindza.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Aspindza.xlsx",
       },
       Akhalkalaki: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ახალქალაქი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Akhalkalaki.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Akhalkalaki.xlsx",
       },
       Akhaltsikhe: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ახალციხე.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Akhaltsikhe.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Akhaltsikhe.xlsx",
       },
       Borjomi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ბორჯომი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Borjomi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Borjomi.xlsx",
       },
       Ninotsminda: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ნინოწმინდა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Ninotsminda.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Ninotsminda.xlsx",
       },
       Baghdati: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ბაღდათი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Baghdati.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Baghdati.xlsx",
       },
       Vani: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ვანი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Vani.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Vani.xlsx",
       },
       Zestaponi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ზესტაფონი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Zestaponi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Zestaponi.xlsx",
       },
       Terjola: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/თერჯოლა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Terjola.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Terjola.xlsx",
       },
       Samtredia: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/სამტრედია.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Samtredia.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Samtredia.xlsx",
       },
       Sachkhere: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/საჩხერე.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Sachkhere.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Sachkhere.xlsx",
       },
       Tkibuli: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ტყიბული.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tkibuli.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tkibuli.xlsx",
       },
       Kutaisi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20ქუთაისი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Kutaisi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/წყალტუბო.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tskaltubo.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tskaltubo.xlsx",
       },
       Chiatura: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ჭიათურა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Chiatura.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Chiatura.xlsx",
       },
       Kharagauli: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ხარაგაული.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kharagauli.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Kharagauli.xlsx",
       },
       Khoni: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ხონი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Khoni.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Khoni.xlsx",
       },
       Ambrolauri: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ამბროლაური.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Ambrolauri.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Ambrolauri.xlsx",
       },
       Lentekhi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ლენტეხი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Lentekhi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Lentekhi.xlsx",
       },
       Oni: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ონი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Oni.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ ცაგერი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tsageri.xlsx",
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tsageri.xlsx",
       },
       Bolnisi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ბოლნისი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Bolnisi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Bolnisi.xlsx",
       },
       Gardabani: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/გარდაბანი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Gardabani.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Gardabani.xlsx",
       },
       Dmanisi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/დმანისი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Dmanisi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Dmanisi.xlsx",
       },
       Tetritskaro: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/თეთრიწყარო.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tetritskaro.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tetritskaro.xlsx",
       },
       Marneuli: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/მარნეული.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Marneuli.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Marneuli.xlsx",
       },
       Rustavi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქ.%20რუსთავი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Rustavi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/C.%20Rustavi.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/წალკა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tsalka.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tsalka.xlsx",
       },
       Gori: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/გორი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Gori.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Gori.xlsx",
       },
       Kaspi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/კასპი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kaspi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Kaspi.xlsx",
       },
       Kareli: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ქარელი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kareli.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Kareli.xlsx",
       },
       Khashuri: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ხაშური.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Khashuri.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Khashuri.xlsx",
       },
       Dusheti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/დუშეთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Dusheti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Dusheti.xlsx",
       },
       Tianeti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/თიანეთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tianeti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tianeti.xlsx",
       },
       Mtskheta: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/მცხეთა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Mtskheta.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Mtskheta.xlsx",
       },
       Kazbegi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ყაზბეგი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kazbegi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Kazbegi.xlsx",
       },
       Tbilisi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/თბილისი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/C.%20Tbilisi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Tbilisi.xlsx",
       },
       Akhmeta: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ახმეტა.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Akhmeta.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Akhmeta.xlsx",
       },
       Gurjaani: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/გურჯაანი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Gurjaani.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Gurjaani.xlsx",
       },
       Dedoplistskaro: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/დედოფლისწყარო.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Dedoplistskaro.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Dedoplistskaro.xlsx",
       },
       Telavi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/თელავი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Telavi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Telavi.xlsx",
       },
       Lagodekhi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ლაგოდეხი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Lagodekhi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Lagodekhi.xlsx",
       },
       Sagarejo: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/საგარეჯო.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Sagarejo.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Sagarejo.xlsx",
       },
       Sighnaghi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/სიღნაღი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Sighnaghi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Sighnaghi.xlsx",
       },
       Kvareli: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/ყვარელი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Kvareli.xlsx",
+        en: "/regions/municipal/ENG/Population%20census/Age%20dependency%20ratios/Kvareli.xlsx",
       },
     },
     populationDescription5: {
@@ -3660,7 +3660,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
@@ -3914,7 +3914,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
@@ -4168,7 +4168,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
@@ -4383,251 +4383,251 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       Keda: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქედა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Keda.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Keda%20Municipality.xlsx",
       },
       Kobuleti: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქობულეთი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Kobuleti.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Kobuleti%20Municipality.xlsx",
       },
       Shuakhevi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/შუახევი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Shuakhevi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Shuakhevi%20Municipality.xlsx",
       },
       Khelvachauri: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Khelvachauri.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Khelvachauri%20Municipality.xlsx",
       },
       Khulo: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ხულო.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Khulo.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/Khulo%20Municipality.xlsx",
       },
       Abasha: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Abasha%20Municipality.xlsx",
       },
       Zugdidi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Zugdidi%20Municipality.xlsx",
       },
       Martvili: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Martvili%20Municipality.xlsx",
       },
       Mestia: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx",
       },
       Senaki: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Senaki%20Municipality.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
+        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
         en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Chkhorotsku%20Municipality.xlsx",
       },
       Tsalenjikha: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Tsalenjikha%20Municipality.xlsx",
       },
       Khobi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samegrelo-Zemo%20Svaneti/Khobi%20Municipality.xlsx",
       },
       Lanchkhuti: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/გურია/ლანჩხუთი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Guria/Lanchkhuti.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Guria/Lanchkhuti%20Municipality.xlsx",
       },
       Ozurgeti: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/გურია/ოზურგეთი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Guria/Ozurgeti.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Guria/Ozurgeti%20Municipality.xlsx",
       },
       Chokhatauri: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/გურია/ჩოხატაური.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Guria/Chokhatauri.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Guria/Chokhatauri%20Municipality.xlsx",
       },
       Adigeni: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ადიგენი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Adigeni.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Adigeni%20Municipality.xlsx",
       },
       Aspindza: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ასპინძა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Aspindza.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Aspindza%20Municipality.xlsx",
       },
       Akhalkalaki: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Akhalkalaki%20Municipality.xlsx",
       },
       Akhaltsikhe: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ახალციხე.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Akhaltsikhe%20Municipality.xlsx",
       },
       Borjomi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Borjomi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Borjomi%20Municipality.xlsx",
       },
       Ninotsminda: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Ninotsminda.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Samtskhe-Javakheti/Ninotsminda%20Municipality.xlsx",
       },
       Baghdati: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ბაღდათი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Baghdati.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Baghdati%20Municipality.xlsx",
       },
       Vani: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ვანი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Vani.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Vani%20Municipality.xlsx",
       },
       Zestaponi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ზესტაფონი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Zestaponi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Zestaponi%20Municipality.xlsx",
       },
       Terjola: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/თერჯოლა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Terjola.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Terjola%20Municipality.xlsx",
       },
       Samtredia: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/სამტრედია.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Samtredia.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Samtredia%20Municipality.xlsx",
       },
       Sachkhere: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/საჩხერე.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Sachkhere.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Sachkhere%20Municipality.xlsx",
       },
       Tkibuli: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ტყიბული.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Tkibuli.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Tkibuli%20Municipality.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ქუთაისი.xlsx",
+        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ქ.%20ქუთაისი.xlsx",
         en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/წყალტუბო.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Tskaltubo.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Tskaltubo%20Municipality.xlsx",
       },
       Chiatura: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ჭიათურა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Chiatura.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Chiatura%20Municipality.xlsx",
       },
       Kharagauli: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ხარაგაული.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Kharagauli.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Kharagauli%20Municipality.xlsx",
       },
       Khoni: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/იმერეთი/ხონი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Khoni.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Imereti/Khoni%20Municipality.xlsx",
       },
       Ambrolauri: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri%20Municipality.xlsx",
       },
       Lentekhi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi%20Municipality.xlsx",
       },
       Oni: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni%20Municipality.xlsx",
       },
       Tsageri: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri%20Municipality.xlsx",
       },
       Bolnisi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/ბოლნისი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Bolnisi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Bolnisi%20Municipality.xlsx",
       },
       Gardabani: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/გარდაბანი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Gardabani.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Gardabani%20Municipality.xlsx",
       },
       Dmanisi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/დმანისი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Dmanisi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Dmanisi%20Municipality.xlsx",
       },
       Tetritskaro: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Tetritskaro.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Tetritskaro%20Municipality.xlsx",
       },
       Marneuli: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/მარნეული.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Marneuli.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Marneuli%20Municipality.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/რუსთავი.xlsx",
+        ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
         en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/წალკა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Tsalka.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kvemo%20Kartli/Tsalka%20Municipality.xlsx",
       },
       Gori: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/შიდა%20ქართლი/გორი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Gori.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Gori%20Municipality.xlsx",
       },
       Kaspi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/შიდა%20ქართლი/კასპი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Kaspi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Kaspi%20Municipality.xlsx",
       },
       Kareli: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/შიდა%20ქართლი/ქარელი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Kareli.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Kareli%20Municipality.xlsx",
       },
       Khashuri: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/შიდა%20ქართლი/ხაშური.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Khashuri.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Shida%20Kartli/Khashuri%20Municipality.xlsx",
       },
       Dusheti: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/დუშეთი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Dusheti.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Dusheti%20Municipality.xlsx",
       },
       Tianeti: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/თიანეთი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Tianeti.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Tianeti%20Municipality.xlsx",
       },
       Mtskheta: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/მცხეთა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Mtskheta.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Mtskheta%20Municipality.xlsx",
       },
       Kazbegi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Kazbegi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Mtskheta-Mtianeti/Kazbegi%20Municipality.xlsx",
       },
       Akhmeta: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/ახმეტა.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Akhmeta.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Akhmeta%20Municipality.xlsx",
       },
       Gurjaani: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/გურჯაანი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Gurjaani.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Gurjaani%20Municipality.xlsx",
       },
       Dedoplistskaro: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/დედოფლისწყარო.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Dedoplistskaro.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Dedoplistskaro%20Municipality.xlsx",
       },
       Telavi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/თელავი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Telavi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Telavi%20Municipality.xlsx",
       },
       Lagodekhi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/ლაგოდეხი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Lagodekhi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Lagodekhi%20Municipality.xlsx",
       },
       Sagarejo: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/საგარეჯო.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Sagarejo.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Sagarejo%20Municipality.xlsx",
       },
       Sighnaghi: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/სიღნაღი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Sighnaghi.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Sighnaghi%20Municipality.xlsx",
       },
       Kvareli: {
         ka: "/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/კახეთი/ყვარელი.xlsx",
-        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Kvareli.xlsx",
+        en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Kvareli%20Municipality.xlsx",
       },
     },
     healthCareAndSocialSecurity11: {
@@ -4930,7 +4930,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
+        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
@@ -5184,7 +5184,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
