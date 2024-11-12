@@ -8,22 +8,6 @@
     font-size: 14px;
   }
 
-  /* svg#svg9 {
-    float: unset;
-    width: 655px;
-    height: 1000px;
-    position: unset;
-    border: unset;
-  }
-
-  svg {
-    float: left;
-    width: inherit;
-    height: inherit;
-    position: fixed;
-    border: 0px solid blue;
-  } */
-
   #tbilisiSVG {
     width: 59%;
   }
@@ -120,5 +104,62 @@
   }
   .popover {
     font-size: 12px;
+  }
+}
+
+#textbox_small_device {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #textbox {
+    display: none;
+  }
+
+  #textbox_small_device {
+    display: block;
+  }
+
+  .regions-btn {
+    font-size: 13px;
+  }
+
+  .indic-icons {
+    width: 24px;
+    height: auto;
+  }
+  #textbox_small_device .tr {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #pagetitlename {
+    font-size: 5vw !important;
+  }
+
+  .regions-btn {
+    font-size: 12px;
+  }
+
+  #brand-logo-link img {
+    max-width: 70px !important;
+  }
+}
+
+#footer_small_devices {
+  display: block;
+}
+#footer_large_devices {
+  display: none;
+}
+
+/* Show only the large footer on screens larger than 768px */
+@media (min-width: 769px) {
+  #footer_small_devices {
+    display: none;
+  }
+  #footer_large_devices {
+    display: block;
   }
 }

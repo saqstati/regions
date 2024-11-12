@@ -2,12 +2,6 @@ function previous() {
   window.history.back();
 }
 
-// Hide the spinner when the page is fully loaded
-window.addEventListener("load", function () {
-  document.getElementById("loadingSpinner").style.display = "none";
-  document.getElementById("forSpinner").style.display = "block";
-});
-
 let itemsToShow = {
   dziritadi1: "informacia1",
   dziritadi2: "informacia2",

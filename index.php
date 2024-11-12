@@ -73,14 +73,14 @@ include "config.php";
 			<div class="container-fluid">
 				<div class="d-flex align-items-center justify-content-between mb-4" style="display:flex; justify-content: space-between">
 					<!-- Brand Logo on the left -->
-					<div id="brand-logo" class="me-3">
+					<div id="brand-logo" class="me-3 mb-3 mb-md-0">
 						<a href="index.php" id="brand-logo-link">
-							<img src="images/logo_transparency_geo.png" alt="Brand Logo" class="img-fluid" style="width: 100px; height: auto;" />
+							<img src="images/logo_transparency_geo.png" alt="Brand Logo" class="img-fluid" style="max-width: 100px; height: auto;" />
 						</a>
 					</div>
 
 					<!-- Page Title centered -->
-					<h1 id="pagetitlename" class="tr mx-auto" Key="REGION14" style="font-size: 1.7vw; text-align: center; flex-grow: 1; font-weight:bold;">
+					<h1 id="pagetitlename" class="tr mx-auto" Key="REGION14" style="text-align: center; font-weight: bold;">
 						სტატისტიკური ინფორმაცია საქართველოს რეგიონებისა და მუნიციპალიტეტების მიხედვით
 					</h1>
 
@@ -105,10 +105,6 @@ include "config.php";
 					<a class="regions-btn btn btn-sm mb-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'comparison/municipalComp.php?lang=en' : 'comparison/municipalComp.php?lang=ka'; ?>">
 						<span class="tr" Key="municipalBtn">მუნიციპალიტეტების შედარება</span>
 					</a>
-
-					<div class="btn btn-md btn-secondary zoom-out btn-sm index-btn">
-						<span class="tr" key="ZOOMOUT">უკან დაბრუნება</span>
-					</div>
 				</div>
 			</div>
 
@@ -122,6 +118,39 @@ include "config.php";
 				<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 0.6%</span></div>
 				<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 16.4%</span></div>
 				<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 847 097</span></div>
+			</div>
+
+			<div id="textbox_small_device" class="container">
+				<div class="row">
+					<div id="textbox1" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/map-200-b.png" />
+						<span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69 700 კვ. კმ</span>
+					</div>
+					<div id="textbox2" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/population-200-p.png" />
+						<span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 694.6 ათასი</span>
+					</div>
+					<div id="textbox3" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/line-chart-200-r.png" />
+						<span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: 7.5%</span>
+					</div>
+					<div id="textbox4" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/user-200-y.png" />
+						<span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 8218.8 აშშ დოლარი</span>
+					</div>
+					<div id="textbox5" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/area-chart-200-g.png" />
+						<span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 0.6%</span>
+					</div>
+					<div id="textbox6" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/pie-chart-200-b.png" />
+						<span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 16.4%</span>
+					</div>
+					<div id="textbox7" class="col-12 col-sm-6 d-flex align-items-center mb-3">
+						<img class="indic-icons me-2" src="images/suitcase-200-p.png" />
+						<span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 847 097</span>
+					</div>
+				</div>
 			</div>
 
 			<style>
@@ -506,7 +535,11 @@ include "config.php";
 		</div>
 	</main>
 
-	<footer>
+	<footer id="footer_small_devices">
+		<?php include "asset/components/footer.php" ?>
+	</footer>
+
+	<footer id="footer_large_devices" style="position:fixed">
 		<div>
 			<div>
 				<div id="fb-root"></div>
@@ -564,7 +597,6 @@ include "config.php";
 			<a class="tr" key="COPYRIGHT3" href="https://www.geostat.ge/ka/page/monacemta-gamoyenebis-pirobebi">მონაცემთა გამოყენების პირობები</a>
 		</div>
 	</footer>
-	</m>
 
 	<script>
 		function gotolink(t) {

@@ -185,9 +185,8 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
 </head>
 
 <body>
-    <?php include_once '../asset/components/spinner.php' ?>
     <div id="background-main" class="background-image"></div>
-    <main id="forSpinner" class="container-fluid">
+    <main class="container-fluid">
         <div class="content">
             <?php include "components/header.php"; ?>
 
