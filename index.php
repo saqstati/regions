@@ -529,11 +529,7 @@ include "config.php";
 		</div>
 	</main>
 
-	<footer id="footer_small_devices">
-		<?php include "asset/components/footer.php" ?>
-	</footer>
-
-	<footer id="footer_large_devices" style="position:fixed">
+	<footer id="footer_large_devices">
 		<div>
 			<div>
 				<div id="fb-root"></div>

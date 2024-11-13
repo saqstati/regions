@@ -147,19 +147,3 @@
   }
 }
 
-#footer_small_devices {
-  display: block;
-}
-#footer_large_devices {
-  display: none;
-}
-
-/* Show only the large footer on screens larger than 768px */
-@media (min-width: 769px) {
-  #footer_small_devices {
-    display: none;
-  }
-  #footer_large_devices {
-    display: block;
-  }
-}
