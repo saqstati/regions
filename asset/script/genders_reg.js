@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Guria.xlsx",
       },
-      tbilisi: {
+      Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/C.%20Tbilisi.xlsx",
       },
@@ -161,11 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Imereti.xlsx",
       },
-      kakheti: {
+      Kakheti: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Kakheti.xlsx",
       },
-      mtskheta: {
+      mtskheta_mtianeti: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Mtskheta-Mtianeti.xlsx",
       },
@@ -181,11 +181,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Shida%20Kartli.xlsx",
       },
