@@ -962,8 +962,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქვემო%20ქართლი/რუსთავი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Kvemo%20Kartli/Rustavi.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქვემო%20ქართლი/წალკა.xlsx",
@@ -2248,8 +2248,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/რუსთავი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Rustavi.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Rustavi.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/წალკა.xlsx",
@@ -3796,7 +3796,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/ქვემო%20ქართლი/რუსთავი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
@@ -4050,7 +4050,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/ქვემო%20ქართლი/რუსთავი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
@@ -4304,7 +4304,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/ქვემო%20ქართლი/რუსთავი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
@@ -4812,7 +4812,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/რუსთავის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
@@ -5066,7 +5066,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი/რუსთავი.xlsx",
+        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
@@ -5320,7 +5320,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
