@@ -101,13 +101,13 @@ if ($current_page == 'Keda') {
 } elseif ($current_page == 'Kaspi') {
     $page_title = $lang['kaspititlename'];
 } elseif ($current_page == 'Kareli') {
-    $page_title = $lang['karelitiitlename'];
+    $page_title = $lang['karelititlename'];
 } elseif ($current_page == 'Javakheti') {
     $page_title = $lang['javakhetititlename'];
 } elseif ($current_page == 'Tskhinvali') {
     $page_title = $lang['tskhinvalititlename'];
 } elseif ($current_page == 'Khashuri') {
-    $page_title = $lang['khashuritiitlename'];
+    $page_title = $lang['khashurititlename'];
 } elseif ($current_page == 'Rustavi') {
     $page_title = $lang['rustavititlename'];
 } elseif ($current_page == 'Zugdidi') {

@@ -146,47 +146,47 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     stillbirths: {
       adjara: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/აჭარა.xlsx",
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Adjara.xlsx",
       },
       guria: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/გურია.xlsx",
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/გურია.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Guria.xlsx",
       },
-      Tbilisi: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/თბილისი.xlsx",
-        en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Tbilisi.xlsx",
+      tbilisi: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/C.%20Tbilisi.xlsx",
       },
       imereti: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/იმერეთი.xlsx",
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Imereti.xlsx",
       },
-      Kakheti: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/კახეთი.xlsx",
+      kakheti: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/კახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Kakheti.xlsx",
       },
-      mtskheta_mtianeti: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
+      mtskheta: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Mtskheta-Mtianeti.xlsx",
       },
       Racha: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
       },
-      Samegrelo: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
+      samegrelo: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      samtskhe_javakheti: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
+      javakheti: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_kartli: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
+      kvemo_Kartli: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Kvemo%20Kartli.xlsx",
       },
-      shida_kartli: {
-        ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
+      shida_Kartli: {
+        ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Shida%20Kartli.xlsx",
       },
     },
@@ -676,7 +676,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Mtskheta-Mtianeti%20Region.xlsx",
       },
       Racha: {
-        ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთის%20რეგიონი.xlsx",
+        ka: "/regions/regions/სასტუმროები/დასაქმებულთა%20რაოდენობა/რაჭა-ლეჩხუმისა%20და%20ქვემო%20სვანეთის%20რეგიონი.xlsx",
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Racha-Lechkhumi%20and%20Kvemo%20Svaneti%20Region.xlsx",
       },
       Samegrelo: {

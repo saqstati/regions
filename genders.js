@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ ცაგერი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20live%20births%20by%20sex/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -680,7 +680,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ ცაგერი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -906,8 +906,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი/ქუთაისი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Imereti/Kutaisi.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი/წყალტუბო.xlsx",
@@ -1192,7 +1192,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/ ცაგერი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -1450,7 +1450,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ ცაგერის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ცაგერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -1708,7 +1708,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20married%20people/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ ცაგერი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Demography/Number%20of%20married%20people/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -1966,7 +1966,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ ცაგერი.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -2192,8 +2192,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქუთაისი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/Kutaisi.xlsx",
+        ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/წყალტუბო.xlsx",
@@ -2482,7 +2482,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ ცაგერი.xlsx",
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Population%20census/Median%20age%20of%20population/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -2740,7 +2740,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ ცაგერი.xlsx",
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -3256,7 +3256,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Population%20census/Number%20of%20population/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ ცაგერი.xlsx",
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Population%20census/Number%20of%20population/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -3514,7 +3514,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ ცაგერი.xlsx",
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/ცაგერი.xlsx",
         en: "/regions/municipal/ENG/Population%20census/Share%20of%20working%20age%20population/Tsageri.xlsx",
       },
       Bolnisi: {
@@ -3740,7 +3740,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/იმერეთი/ქუთაისი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დასაქმებულები/იმერეთი/ქ.%20ქუთაისი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employed%20persons/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -3994,7 +3994,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/იმერეთი/ქუთაისი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/დაქირავებულები/იმერეთი/ქ.%20ქუთაისი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Employees/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -4248,7 +4248,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/იმერეთი/ქუთაისი.xlsx",
+        ka: "/regions/municipal/დასაქმება%20და%20ხელფასები/ხელფასი/იმერეთი/ქ.%20ქუთაისი.xlsx",
         en: "/regions/municipal/ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -5010,7 +5010,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/იმერეთი/ქუთაისი.xlsx",
+        ka: "/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/იმერეთი/ქ.%20ქუთაისი.xlsx",
         en: "/regions/municipal/ENG/Education/General%20Educational%20Institution/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
@@ -5264,7 +5264,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/იმერეთი/ქ.%20ქუთაისი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
