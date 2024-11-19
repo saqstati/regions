@@ -128,7 +128,7 @@ if ($current_page == 'adjara.php') {
 
             <a class="btn header-btn mb-2" href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? './genders/genders_reg.php?lang=en' : './genders/genders_reg.php?lang=ka'; ?>">
                 <span class="tr" key="regionsBtn">
-                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender-based indicators' : 'გენდერული სტატისტიკა'; ?>
+                    <?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'Gender Statistics' : 'გენდერული სტატისტიკა'; ?>
                 </span>
             </a>
         </div>
