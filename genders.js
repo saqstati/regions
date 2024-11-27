@@ -783,7 +783,7 @@ document.addEventListener("DOMContentLoaded", function () {
     stillbirths: {
       Batumi: {
         ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
-        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Adjara%20A.R/Batumi.xlsx",
+        en: "/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
         ka: "/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქედა.xlsx",
@@ -5141,27 +5141,27 @@ document.addEventListener("DOMContentLoaded", function () {
     education4: {
       Batumi: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/C.%20Batumi.xlsx",
+        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Batumi.xlsx",
       },
       Keda: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Keda.xlsx",
+        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara.R/Keda.xlsx",
       },
       Kobuleti: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Kobuleti.xlsx",
+        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Kobuleti.xlsx",
       },
       Shuakhevi: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Shuakhevi.xlsx",
+        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Shuakhevi.xlsx",
       },
       Khelvachauri: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Khelvachauri.xlsx",
+        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Khelvachauri.xlsx",
       },
       Khulo: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara%20A.R/Khulo.xlsx",
+        en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/Khulo.xlsx",
       },
       Abasha: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/აბაშის%20მუნიციპალიტეტი.xlsx",
