@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
       },
-      javakheti: {
+      samtskhe_javakheti: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Samtskhe-Javakheti.xlsx",
       },
