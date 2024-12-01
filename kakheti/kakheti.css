@@ -24,52 +24,34 @@ g#layer9 {
   opacity: 1;
 }
 
-.map-box {
-  max-width: 1000px;
-  margin-left: 8%;
-}
-
 #axmetaSVG {
-  width: 531px;
-  margin-left: 362px;
+  width: 80%;
 }
 
 #telaviSVG {
-  width: 560px;
-  margin-left: 291px;
+  width: 80%;
 }
 
 #kvareliSVG {
-  width: 971px;
-  margin-left: 61px;
+  width: 80%;
 }
 
 #lagodexiSVG {
-  width: 752px;
-  margin-left: 21%;
+  width: 80%;
 }
 
 #gurjaaniSVG {
-  width: 709px;
-  margin-left: 25%;
+  width: 80%;
 }
 
 #sagarejoSVG {
-  width: 622px;
-  margin-left: 24%;
+  width: 80%;
 }
 
 #signagiSVG {
-  width: 932px;
-  margin-left: 10%;
+  width: 80%;
 }
 
 #dedofliswyaroSVG {
-  width: 932px;
-  margin-left: 10%;
-  margin-top: 0%;
-}
-
-#svg4380 {
-  margin-left: 33px;
+  width: 80%;
 }

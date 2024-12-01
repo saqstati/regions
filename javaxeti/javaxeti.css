@@ -4,10 +4,6 @@ g#layer5 {
   -webkit-transform-origin-y: 1516px;
 }
 
-.map-box {
-  left: 20% !important;
-}
-
 #group5-zoomed {
   fill: #9e6e9c;
   stroke-width: 0.5px;
@@ -32,12 +28,10 @@ g#layer5 {
 #ninowmindaSVG,
 #akhaltsikheSVG,
 #aspindzaSVG {
-  width: 619px;
-  margin-left: 19%;
+  width: 80%;
 }
 
 #borjomiSVG,
 #adigeniSVG {
-  width: 1000px;
-  margin-left: 8%;
+  width: 80%;
 }
