@@ -24,23 +24,12 @@ g#layer7 {
   opacity: 1;
 }
 
-.map-box{
-  left: 18% !important;
-}
-
-#svgRegions {
-  font-size: 12px;
-  text-decoration: none;
-}
-
 #ambrolauriSVG,
 #oniSVG {
-  width: 633px;
-  margin-left: 17%;
+  width: 80%;
 }
 
 #cageriSVG,
 #lentekhiSVG {
-  width: 996px;
-  margin-left: 8%;
+  width: 80%;
 }

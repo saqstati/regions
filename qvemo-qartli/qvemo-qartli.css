@@ -1,13 +1,3 @@
-g#layer8 {
-  transform: scale(1.9);
-  -webkit-transform-origin-x: 2175px;
-  -webkit-transform-origin-y: 1405px;
-}
-
-.map-box {
-  left: 18% !important;
-}
-
 #group3-zoomed {
   fill: #6ea76f;
   stroke-width: 0.5px;
@@ -31,17 +21,14 @@ g#layer8 {
 #marneuliSVG,
 #dmanisiSVG,
 #bolnisiSVG {
-  width: 803px;
-  margin-left: 11%;
+  width: 80%;
 }
 
 #walkaSVG,
 #tetriwyaroSVG {
-  width: 1056px;
-  margin-left: 8%;
+  width: 80%;
 }
 
 #gardabaniSVG {
-  width: 551px;
-  margin-left: 17%;
+  width: 80%;
 }
