@@ -26,20 +26,12 @@ g#layer5 {
 
 #dushetiSVG,
 #tianetiSVG {
-  width: 592px;
-  margin-left: 267px;
+  width: 80%;
 }
 
 #yazbegiSVG {
-  width: 1099px;
-  margin-left: 35px;
+  width: 80%;
 }
 #mcxetaSVG {
-  width: 970px;
-  margin-left: 82px;
-}
-
-.map-box {
-  max-width: 1050px;
-  left: 18% !important;
+  width: 80%;
 }
