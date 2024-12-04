@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       Tbilisi: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx",
-        en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/C.%20Tbilisi.xlsx",
+        en: "/regions/regionseng/Demography/Number%20of%20stillbirths%20by%20sex/Tbilisi.xlsx",
       },
       imereti: {
         ka: "/regions/regions/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/იმერეთი.xlsx",
