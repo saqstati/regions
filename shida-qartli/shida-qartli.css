@@ -4,14 +4,9 @@ g#layer12 {
   -webkit-transform-origin-y: 842px;
 }
 
-#svg4380 {
-  margin-left: 170px;
-}
-
 #goriSVG,
 #kaspiSVG,
 #qareliSVG,
 #xashuriSVG {
-  width: 621px;
-  margin-left: 19%;
+  width: 80%;
 }

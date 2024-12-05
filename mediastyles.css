@@ -12,12 +12,6 @@
     width: 59%;
   }
 
-  #mestiaSVG {
-    width: 852px;
-    margin-left: 0.54%;
-    margin-top: -14%;
-  }
-
   g#layer3 {
     transform: scale(1.7);
     -webkit-transform-origin-x: 911px;
@@ -146,4 +140,3 @@
     max-width: 70px !important;
   }
 }
-

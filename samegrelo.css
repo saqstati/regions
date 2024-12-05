@@ -28,15 +28,6 @@
   left: 18% !important;
 }
 
-#svgRegions {
-  font-size: 15px;
-  text-decoration: none;
-}
-
-#svgRegions:hover {
-  text-decoration: none;
-}
-
 .text-decoration-none:hover {
   text-decoration: none;
 }
@@ -339,48 +330,39 @@ tr.informaciaMain {
 }
 
 #abashaSVG {
-  width: 940px;
-  margin-left: 8%;
+  width: 80%;
 }
 
 #chxorowyuSVG {
-  width: 560px;
-  margin-left: 24%;
+  width: 80%;
 }
 
 #xobiSVG {
-  width: 692px;
-  margin-left: 19%;
+  width: 80%;
 }
 
 #martviliSVG {
-  width: 595px;
-  margin-left: 29%;
+  width: 80%;
 }
 
 #mestiaSVG {
-  width: 1111px;
-  margin-left: 4%;
+  width: 80%;
 }
 
 #senakiSVG {
-  width: 713px;
-  margin-left: 15%;
+  width: 80%;
 }
 
 #tsalenjikhaSVG {
-  width: 600px;
-  margin-left: 26%;
+  width: 80%;
 }
 
 #zugdidiSVG {
-  width: 837px;
-  margin-left: 10%;
+  width: 80%;
 }
 
 #potiSVG {
-  width: 552px;
-  margin-left: 21%;
+  width: 80%;
 }
 
 #tbilisiSVG {
