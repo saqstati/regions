@@ -1,3 +1,13 @@
+g#layer8 {
+  transform: scale(8.1);
+  -webkit-transform-origin-x: 1570px;
+  -webkit-transform-origin-y: 911px;
+}
+
+g#layer8 text {
+  font-size: 5px;
+}
+
 #group3-zoomed {
   fill: #6ea76f;
   stroke-width: 0.5px;

@@ -30,12 +30,6 @@
     -webkit-transform-origin-y: 690px;
   }
 
-  g#layer8 {
-    transform: scale(1.4);
-    -webkit-transform-origin-x: 3600px;
-    -webkit-transform-origin-y: 2417px;
-  }
-
   g#layer9 {
     transform: scale(1.2);
     -webkit-transform-origin-x: 1035vh;
