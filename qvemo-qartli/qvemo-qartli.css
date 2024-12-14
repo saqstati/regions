@@ -4,6 +4,14 @@ g#layer8 {
   -webkit-transform-origin-y: 911px;
 }
 
+/* this is for mac responsive */
+
+/* g#layer8 {
+  transform: scale(2.1);
+  -webkit-transform-origin-x: 1990px;
+  -webkit-transform-origin-y: 1234px;
+} */
+
 g#layer8 text {
   font-size: 5px;
 }
