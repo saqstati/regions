@@ -1,7 +1,6 @@
 g#layer9 {
   transform: scale(1.2);
-  -webkit-transform-origin-x: 7200px;
-  -webkit-transform-origin-y: 2555px;
+  transform-origin: center;
 }
 
 #group6-zoomed {
