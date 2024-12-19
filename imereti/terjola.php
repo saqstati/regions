@@ -767,13 +767,147 @@ include "../config.php";
                             <td id="dziritadiMain20" title="" onclick="GetIdChange(); healthcareShow();" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['1'] ?></td>
                         </tr>
                         <tr>
-                            <td id="dziritadi20" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['2']; ?>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            <td id="dziritadi20" onclick="GetIdChange();" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['2']; ?>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['3']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Indicators/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/მაჩვენებლები/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['4']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Abortions/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['5']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Anemia/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/ანემია/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['6']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Diabetes/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/დიაბეტი/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['7']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Cancer/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['8']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['9']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['10']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['11']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/AIDS/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['12']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['13']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Hepatitis/Imereti/Terjola.xlsx' : '/regions/municipal/ჯანდაცვა/ჰეპატიტი/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>
-                            <td id="dziritadi21" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['11']; ?>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            <td id="dziritadi21" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['14']; ?>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['15']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['16']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disability%20Persons/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['17']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disabilities%20Registered/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['18']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Subsistence%20Allowance/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/საარსებო/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['19']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Receiving/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მიმღები/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['20']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Terjola.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/თერჯოლა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>

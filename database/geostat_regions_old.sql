@@ -1,25 +1,26 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
+-- version 4.0.4.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2024 at 12:54 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Oct 10, 2024 at 03:25 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `geostat_regions`
 --
+CREATE DATABASE IF NOT EXISTS `geostat_regions` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `geostat_regions`;
 
 -- --------------------------------------------------------
 
@@ -27,8 +28,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `georgia_indicators`
 --
 
-CREATE TABLE `georgia_indicators` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `georgia_indicators` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Area` varchar(128) NOT NULL,
   `Population` varchar(128) NOT NULL,
   `GDP` varchar(128) NOT NULL,
@@ -37,8 +38,9 @@ CREATE TABLE `georgia_indicators` (
   `EmploymentRate` varchar(128) NOT NULL,
   `EmploymentRateIndustry` varchar(128) NOT NULL,
   `AverageSalaryIndustry` varchar(128) NOT NULL,
-  `RegistredEntities` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `RegistredEntities` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `georgia_indicators`
@@ -53,12 +55,13 @@ INSERT INTO `georgia_indicators` (`ID`, `Area`, `Population`, `GDP`, `GDPPerCapi
 -- Table structure for table `key_indicators`
 --
 
-CREATE TABLE `key_indicators` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `key_indicators` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `keyIndicators` varchar(128) NOT NULL,
   `dataContent` varchar(255) DEFAULT NULL,
-  `dataHover` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `dataHover` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `key_indicators`
@@ -87,12 +90,13 @@ INSERT INTO `key_indicators` (`ID`, `keyIndicators`, `dataContent`, `dataHover`)
 -- Table structure for table `key_indicators_en`
 --
 
-CREATE TABLE `key_indicators_en` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `key_indicators_en` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `keyIndicatorsEn` varchar(128) NOT NULL,
   `dataContent` varchar(255) DEFAULT NULL,
-  `dataHover` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `dataHover` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `key_indicators_en`
@@ -121,12 +125,13 @@ INSERT INTO `key_indicators_en` (`ID`, `keyIndicatorsEn`, `dataContent`, `dataHo
 -- Table structure for table `key_indicators_reg`
 --
 
-CREATE TABLE `key_indicators_reg` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `key_indicators_reg` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `keyIndicators` varchar(128) NOT NULL,
   `dataContent` varchar(255) DEFAULT NULL,
-  `dataHover` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `dataHover` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `key_indicators_reg`
@@ -155,12 +160,13 @@ INSERT INTO `key_indicators_reg` (`ID`, `keyIndicators`, `dataContent`, `dataHov
 -- Table structure for table `key_indicators_reg_en`
 --
 
-CREATE TABLE `key_indicators_reg_en` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `key_indicators_reg_en` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `keyIndicators` varchar(128) NOT NULL,
   `dataContent` varchar(255) DEFAULT NULL,
-  `dataHover` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `dataHover` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `key_indicators_reg_en`
@@ -189,8 +195,8 @@ INSERT INTO `key_indicators_reg_en` (`ID`, `keyIndicators`, `dataContent`, `data
 -- Table structure for table `municipalities`
 --
 
-CREATE TABLE `municipalities` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `municipalities` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(128) NOT NULL,
   `NameEN` varchar(255) NOT NULL,
   `Area` varchar(128) NOT NULL,
@@ -206,8 +212,9 @@ CREATE TABLE `municipalities` (
   `AVGSalary` varchar(128) NOT NULL,
   `RegEcSub` varchar(128) NOT NULL,
   `ActEcSub` varchar(128) NOT NULL,
-  `NewlyEcEnt` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `NewlyEcEnt` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=65 ;
 
 --
 -- Dumping data for table `municipalities`
@@ -285,7 +292,7 @@ INSERT INTO `municipalities` (`ID`, `Name`, `NameEN`, `Area`, `NumberOfCT`, `Vil
 -- Table structure for table `municipalitiesaz`
 --
 
-CREATE TABLE `municipalitiesaz` (
+CREATE TABLE IF NOT EXISTS `municipalitiesaz` (
   `ID` int(11) NOT NULL,
   `Name` varchar(128) NOT NULL,
   `NameEN` varchar(255) NOT NULL,
@@ -302,7 +309,8 @@ CREATE TABLE `municipalitiesaz` (
   `AVGSalary` varchar(128) NOT NULL,
   `RegEcSub` varchar(128) NOT NULL,
   `ActEcSub` varchar(128) NOT NULL,
-  `NewlyEcEnt` varchar(255) DEFAULT NULL
+  `NewlyEcEnt` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -381,8 +389,8 @@ INSERT INTO `municipalitiesaz` (`ID`, `Name`, `NameEN`, `Area`, `NumberOfCT`, `V
 -- Table structure for table `municipal_statistics`
 --
 
-CREATE TABLE `municipal_statistics` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `municipal_statistics` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `basicInformation` varchar(128) NOT NULL,
   `Population` varchar(128) NOT NULL,
   `birth` varchar(128) NOT NULL,
@@ -405,8 +413,9 @@ CREATE TABLE `municipal_statistics` (
   `transportAndStorage` varchar(128) NOT NULL,
   `healthCareAndSocialSecurity` varchar(128) NOT NULL,
   `education` varchar(128) NOT NULL,
-  `culture` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `culture` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `municipal_statistics`
@@ -414,25 +423,20 @@ CREATE TABLE `municipal_statistics` (
 
 INSERT INTO `municipal_statistics` (`ID`, `basicInformation`, `Population`, `birth`, `death`, `naturalIncrease`, `marriage`, `divorce`, `populationDescription`, `employmentAndSalaries`, `businessSector`, `businessRegister`, `accordingToTheTypesOfActivities`, `AccordingToTheFormsOfOwnership`, `accordingToOrganizationalLegalForms`, `budget`, `agriculture`, `construction`, `trading`, `hotels`, `transportAndStorage`, `healthCareAndSocialSecurity`, `education`, `culture`) VALUES
 (1, 'ძირითადი ინფორმაცია', 'მოსახლეობა', 'დაბადება', 'გარდაცვალება', 'ბუნებრივი მატება', 'ქორწინება', 'განქორწინება', 'მოსახლეობის 2014 წლის აღწერა', 'დასაქმება და ხელფასები', 'ბიზნეს სექტორი', 'ბიზნეს რეგისტრი', 'ეკონომიკური საქმიანობის სახეების მიხედვით', 'საკუთრების ფორმების მიხედვით', 'ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'ბიუჯეტი', 'სოფლის მეურნეობა', 'მშენებლობა', 'მომსახურება', 'სასტუმროები', 'ტრანსპორტი და დასაწყობება', 'ჯანდაცვა და სოციალური უზრუნველყოფა', 'განათლება', 'კულტურა'),
-(2, 'მუნიციპალიტეტის ფართობი ', 'მოსახლეობის რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით 1 იანვრის მდგომარეობით', 'ცოცხლად დაბადებულთა რიცხოვნობა', 'გარდაცვლილთა რიცხოვნობა', 'ბუნებრივი მატება', 'რეგისტრირებულ ქორწინებათა რაოდენობა', 'რეგისტრირებულ განქორწინებათა რაოდენობა', 'მოსახლეობის მედიანური ასაკი საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', 'დასაქმებულთა რაოდენობა სქესის მიხედვით- ბიზნეს სექტორში', 'ბიზნეს სექტორის ბრუნვა, სულ', 'საქართველოში რეგისტრირებულ ბიზნეს სუბიექტეთა რაოდენობა (მოსახლეობის 1 000 კაცზე)', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა ეკონომიკური საქმიანობის სახეების მიხედვით', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა საკუთრების ფორმების მიხედვით', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', NULL, 'სასოფლო-სამეურნეო დანიშნულების მიწის ფართობის წილი მუნიციპალიტეტის მთელ ფართობში კვ.კმ-ზე', 'მშენებლობაზე გაცემული ნებართვები', 'ბაზრების და ბაზრობების  რაოდენობა, ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებების რაოდენობა და ფართობი (ადგილობრივი ერთეულების ჩათვლით)', 'საერთო სარგებლობის საავტომობილო გზების სიგრძე', 'ჯანდაცვა (ავადობები)', 'საჯარო სკოლამდელი აღზრდისა და განათლების დაწესებულებები', 'მუზეუმების და პროფესიული თეატრების რაოდენობა'),
-(3, 'დასახლებების რაოდენობა', 'საქალაქო დასახლებაში მცხოვრები  მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში  (%)', 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ბუნებრივი მატების კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'განქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', '65 წლის და უფროსი ასაკის მოსახლეობის წილი (%) საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით ', 'დაქირავებით დასაქმებულთა რაოდენობა სქესის მიხედვით - ბიზნეს სექტორში', 'ბიზნეს სექტორის პროდუქციის გამოშვება, სულ', 'საქართველოში ახლადრეგისტრირებულ ბიზნეს სუბიექტთა რაოდენობა (მოსახლეობის 1000 კაცზე)', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა ეკონომიკური საქმიანობის სახეებისა და ზომების მიხედვით', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა საკუთრების ფორმებისა და ზომების მიხედვით', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', NULL, '', 'ექსპლუატაციაში მიღებული ობიექტები', 'ბაზრების და ბაზრობების რაოდენობა საკუთრების ფორმის მიხედვით', 'ნომრების რაოდენობა სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში', '', 'ჯანმრთელობის დაცვის ძირითადი მაჩვენებლები', 'საჯარო და კერძო ზოგადსაგანმანათლებლო დაწესებულებები', ''),
-(4, '', 'მოსახლეობის სიმჭიდროვე 1 კვ.კმ-ზე', 'ცოცხლად დაბადებულთა რიცხოვნობა სქესის მიხედვით', 'გარდაცვლილთა რიცხოვნობა ასაკის და სქესის მიხედვით', '', 'დაქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'განქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'მოსახლეობის ასაკის დატვირთვის კოეფიციენტები სქესისი მიხედვით', 'დაქირავებით დასაქმებულთა შრომის საშუალოთვიური ანაზღაურება  სქესის მიხედვით - ბიზნეს სექტორში (ლარი)', 'ბიზნეს სექტორის შრომითი დანახარჯები, სულ', 'საქართველოში რეგისტრირებულ მოქმედ ბიზნეს სუბიექტეთა რაოდენობა (მოსახლეობის 1 000 კაცზე)', '', 'საქართველოში ახლადრეგისტრირებულ სუბიექტთა რაოდენობა საკუთრების ფორმების მიხედვით', 'საქართველოში ახლადრეგისტრირებულ სუბიექტთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით ', NULL, '', '', 'ბაზრების და ბაზრობების რაოდენობა ტიპების მიხედვით', 'სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში სტუმართა რაოდენობა ჩამოსვლის ადგილისა და მიზნის მიხედვით', '', 'აბორტების რაოდენობა', 'პროფესიული და უმაღლესი საგანმანათლებლო დაწესებულებები', ''),
-(5, '', '', 'სქესთა რაოდენობრივი თანაფარდობა დაბადებისას', 'ჩვილ ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', '', 'ქორწინების საშუალო ასაკი სქესის მიხედვით', '', 'მოსახლეობის რიცხოვნობა ასაკობრივი ჯგუფების, საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', '', 'ბიზნეს სექტორის საქონლისა და მომსახურების ყიდვები, სულ ', 'საჯარო დაწესებულებების რაოდენობა (მოსახლეობის 1000 კაცზე)', '', '', '', NULL, '', '', 'ბაზრები და ბაზრობები ვაჭრობის დღეთა რაოდენობის მიხედვით.', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებებში დასაქმებულთა რაოდენობა სქესის მიხედვით', '', 'ანემიის ახალი შემთხვევების რაოდენობა* ასაკის მიხედვით', '', ''),
-(6, '', '', 'დედის საშუალო ასაკი ბავშვის დაბადებისას', '5 წლამდე ასაკის ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', '', '', '', 'შრომისუნარიანი ასაკის მოსახლეობის წილი (%) საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', '', 'ბიზნეს სექტორის გადასაყიდად განკუთვნილი საქონლისა და მომსახურების ყიდვები, სულ ', '', '', '', '', NULL, '', '', 'ბაზრების და ბაზრობების დირექციებში დასაქმებულთა საშუალო წლიური რაოდენობა', '', '', 'შაქრიანი დიაბეტის ახალი შემთხვევების რაოდენობა', '', ''),
-(7, '', '', 'მკვდრადშობილთა რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით', 'გარდაცვლილთა რიცხოვნობა სქესის და გარდაცვალების მიზეზების ძირითადი კლასების მიხედვით', '', '', '', 'კერძო შინამეურნეობების რაოდენობა საქალაქო-სასოფლო დასახლებების და მათში მცხოვრებთა რიცხვის მიხედვით', '', 'ბიზნეს სექტორის დამატებული ღირებულება, სულ', '', '', '', '', NULL, '', '', 'ბაზრების და ბაზრობების სავაჭრო ადგილების და მოვაჭრეთა რაოდენობა ', '', '', 'კიბოს ახალი შემთხვევების რაოდენობა სქესის მიხედვით', '', ''),
-(8, '', '', 'მკვდრადშობილთა რიცხოვნობა სქესის მიხედვით ', 'გარდაცვლილთა რიცხოვნობა საქალაქო-სასოფლო დასახლებების და გარდაცვალების მიზეზების ძირითადი კლასების   მიხედვით', '', '', '', '', '', 'ბიზნეს სექტორის შუალედური მოხმარება, სულ', '', '', '', '', NULL, '', '', 'ბაზრების და ბაზრობების ფინანსური მაჩვენებლები', '', '', 'სისხლის მიმოქცევის სისტემის ავადმყოფობების ახალ შემთხვევათა რაოდენობა სქესის მიხედვით', '', ''),
-(9, '', '', '', 'გარდაცვლილთა რიცხოვნობა ასაკის და გარდაცვალების მიზეზების ძირითადი კლასების  მიხედვით', '', '', '', '', '', 'ბიზნეს სექტორის ფიქსირებულ აქტივებში განხორციელებული ინვესტიციები, სულ', '', '', '', '', NULL, '', '', '', '', '', 'სუნთქვის ორგანოთა ავადმყოფობების ახალ შემთხვევათა რაოდენობა სქესის მიხედვით', '', ''),
-(10, '', '', '', 'თვითმკვლელობით გარდაცვლილთა რიცხოვნობა', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'მოსახლეობის ავადობა ათაშანგით და გონოკოკური ინფექციით სქესის მიხედვით', '', ''),
-(11, '', '', '', 'თვითმკვლელობის დონე (მოსახლეობის 100 000 კაცზე)', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'აივ ინფექციის/შიდსის შემთხვევათა რაოდენობა სქესის მიხედვით', '', ''),
-(12, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'მოსახლეობის ავადობა ტუბერკულიოზით სქესის მიხედვით', '', ''),
-(13, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'მოსახლეობის ავადობა ვირუსული ჰეპატიტით', '', ''),
-(14, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'სოციალური უზრუნველყოვა (შშმ-პირები)', '', ''),
-(15, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'სოციალური უზრუნველყოფის ძირითადი მაჩვენებლები', '', ''),
-(16, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'დევნილის სტატუსის მქონე სოციალური პაკეტის მიმღები შშმ პირების რიცხოვნობა', '', ''),
-(17, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'მიზნობრივი სოციალური დახმარების პროგრამის მონაცემთა ერთიან ბაზაში რეგისტრირებული  შშმ პირების რიცხოვნობა', '', ''),
-(18, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'მიზნობრივი სოციალური დახმარების პროგრამის მონაცემთა ერთიან ბაზაში რეგისტრირებული, საარსებო შემწეობის მიმღები შშმ პირების რიცხოვნ', '', ''),
-(19, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'სოციალური პაკეტის მიმღები შშმ პირების რიცხოვნობა', '', ''),
-(20, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'ახლად რეგისტრირებულ, შშმ პირის სტატუსის საფუძვლით სახელმწიფო გასაცემლ(ებ)ის მიმღებ ბენეფიციართა რიცხოვნობა სქესისი მიხედვით', '', '');
+(2, 'მუნიციპალიტეტის ფართობი ', 'მოსახლეობის რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით 1 იანვრის მდგომარეობით', 'ცოცხლად დაბადებულთა რიცხოვნობა', 'გარდაცვლილთა რიცხოვნობა', 'ბუნებრივი მატება', 'რეგისტრირებულ ქორწინებათა რაოდენობა', 'რეგისტრირებულ განქორწინებათა რაოდენობა', 'მოსახლეობის მედიანური ასაკი საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', 'დასაქმებულთა რაოდენობა სქესის მიხედვით- ბიზნეს სექტორში', 'ბიზნეს სექტორის ბრუნვა, სულ', 'საქართველოში რეგისტრირებულ ბიზნეს სუბიექტეთა რაოდენობა (მოსახლეობის 1 000 კაცზე)', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა ეკონომიკური საქმიანობის სახეების მიხედვით', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა საკუთრების ფორმების მიხედვით', 'საქართველოში რეგისტრირებულ სუბიექტეთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', NULL, 'სასოფლო-სამეურნეო დანიშნულების მიწის ფართობის წილი მუნიციპალიტეტის მთელ ფართობში კვ.კმ-ზე', 'მშენებლობაზე გაცემული ნებართვები', 'ბაზრების და ბაზრობების  რაოდენობა, ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებების რაოდენობა და ფართობი (ადგილობრივი ერთეულების ჩათვლით)', 'საერთო სარგებლობის საავტომობილო გზების სიგრძე', 'ჯანდაცვა', 'საჯარო სკოლამდელი აღზრდისა და განათლების დაწესებულებები', 'მუზეუმების და პროფესიული თეატრების რაოდენობა'),
+(3, 'დასახლებების რაოდენობა', 'საქალაქო დასახლებაში მცხოვრები  მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში  (%)', 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ბუნებრივი მატების კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'განქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', '65 წლის და უფროსი ასაკის მოსახლეობის წილი (%) საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით ', 'დაქირავებით დასაქმებულთა რაოდენობა სქესის მიხედვით - ბიზნეს სექტორში', 'ბიზნეს სექტორის პროდუქციის გამოშვება, სულ', 'საქართველოში ახლადრეგისტრირებულ ბიზნეს სუბიექტთა რაოდენობა (მოსახლეობის 1000 კაცზე)', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა ეკონომიკური საქმიანობის სახეებისა და ზომების მიხედვით', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა საკუთრების ფორმებისა და ზომების მიხედვით', 'საქართველოში რეგისტრირებულ მოქმედ სუბიექტეთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', NULL, '', 'ექსპლუატაციაში მიღებული ობიექტები', 'ბაზრების და ბაზრობების რაოდენობა საკუთრების ფორმის მიხედვით', 'ნომრების რაოდენობა სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში', '', 'საექთნო პერსონალის რიცხოვნობა', 'საჯარო და კერძო ზოგადსაგანმანათლებლო დაწესებულებები', ''),
+(4, '', 'მოსახლეობის სიმჭიდროვე 1 კვ.კმ-ზე', 'ცოცხლად დაბადებულთა რიცხოვნობა სქესის მიხედვით', 'გარდაცვლილთა რიცხოვნობა ასაკის და სქესის მიხედვით', '', 'დაქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'განქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'მოსახლეობის ასაკის დატვირთვის კოეფიციენტები სქესისი მიხედვით', 'დაქირავებით დასაქმებულთა შრომის საშუალოთვიური ანაზღაურება  სქესის მიხედვით - ბიზნეს სექტორში (ლარი)', 'ბიზნეს სექტორის შრომითი დანახარჯები, სულ', 'საქართველოში რეგისტრირებულ მოქმედ ბიზნეს სუბიექტეთა რაოდენობა (მოსახლეობის 1 000 კაცზე)', '', 'საქართველოში ახლადრეგისტრირებულ სუბიექტთა რაოდენობა საკუთრების ფორმების მიხედვით', 'საქართველოში ახლადრეგისტრირებულ სუბიექტთა რაოდენობა ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით ', NULL, '', '', 'ბაზრების და ბაზრობების რაოდენობა ტიპების მიხედვით', 'სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში სტუმართა რაოდენობა ჩამოსვლის ადგილისა და მიზნის მიხედვით', '', 'ექიმების რიცხოვნობა დაკავებული თანამდებობების მიხედვით', 'პროფესიული და უმაღლესი საგანმანათლებლო დაწესებულებები', ''),
+(5, '', '', 'სქესთა რაოდენობრივი თანაფარდობა დაბადებისას', 'ჩვილ ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', '', 'ქორწინების საშუალო ასაკი სქესის მიხედვით', '', 'მოსახლეობის რიცხოვნობა ასაკობრივი ჯგუფების, საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', '', 'ბიზნეს სექტორის საქონლისა და მომსახურების ყიდვები, სულ ', 'საჯარო დაწესებულებების რაოდენობა (მოსახლეობის 1000 კაცზე)', '', '', '', NULL, '', '', 'ბაზრები და ბაზრობები ვაჭრობის დღეთა რაოდენობის მიხედვით.', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებებში დასაქმებულთა რაოდენობა სქესის მიხედვით', '', 'ამბულატორიულ-პოლიკლინიკურ დაწესებულებებში ექიმთან მიმართვების რაოდენობა', '', ''),
+(6, '', '', 'დედის საშუალო ასაკი ბავშვის დაბადებისას', '5 წლამდე ასაკის ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', '', '', '', 'შრომისუნარიანი ასაკის მოსახლეობის წილი (%) საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', '', 'ბიზნეს სექტორის გადასაყიდად განკუთვნილი საქონლისა და მომსახურების ყიდვები, სულ ', '', '', '', '', NULL, '', '', 'ბაზრების და ბაზრობების დირექციებში დასაქმებულთა საშუალო წლიური რაოდენობა', '', '', 'ამბულატორიულ-პოლიკლინიკური დაწესებულებების რაოდენობა', '', ''),
+(7, '', '', 'მკვდრადშობილთა რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით', 'გარდაცვლილთა რიცხოვნობა სქესის და გარდაცვალების მიზეზების ძირითადი კლასების მიხედვით', '', '', '', 'კერძო შინამეურნეობების რაოდენობა საქალაქო-სასოფლო დასახლებების და მათში მცხოვრებთა რიცხვის მიხედვით', '', 'ბიზნეს სექტორის დამატებული ღირებულება, სულ', '', '', '', '', NULL, '', '', 'ბაზრების და ბაზრობების სავაჭრო ადგილების და მოვაჭრეთა რაოდენობა ', '', '', 'საავადმყოფოების და სამედიცინო ცენტრების რაოდენობა', '', ''),
+(8, '', '', 'მკვდრადშობილთა რიცხოვნობა სქესის მიხედვით ', 'გარდაცვლილთა რიცხოვნობა საქალაქო-სასოფლო დასახლებების და გარდაცვალების მიზეზების ძირითადი კლასების   მიხედვით', '', '', '', '', '', 'ბიზნეს სექტორის შუალედური მოხმარება, სულ', '', '', '', '', NULL, '', '', 'ბაზრების და ბაზრობების ფინანსური მაჩვენებლები', '', '', 'საავადმყოფო საწოლების რაოდენობა', '', ''),
+(9, '', '', '', 'გარდაცვლილთა რიცხოვნობა ასაკის და გარდაცვალების მიზეზების ძირითადი კლასების  მიხედვით', '', '', '', '', '', 'ბიზნეს სექტორის ფიქსირებულ აქტივებში განხორციელებული ინვესტიციები, სულ', '', '', '', '', NULL, '', '', '', '', '', 'საავადმყოფო საწოლების რაოდენობა მოსახლეობის 1000 კაცზე', '', ''),
+(10, '', '', '', 'თვითმკვლელობით გარდაცვლილთა რიცხოვნობა', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'ჯანდაცვის პერსონალის რიცხოვნობა მოსახლეობის 1000 კაცზე', '', ''),
+(11, '', '', '', 'თვითმკვლელობის დონე (მოსახლეობის 100 000 კაცზე)', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'სოციალური უზრუნველყოფა', '', ''),
+(12, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'პენსიის მიმღებთა რიცხოვნობა ', '', ''),
+(13, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'სოციალური პაკეტის მიმღებთა რიცხოვნობა', '', ''),
+(14, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'სოციალურად დაუცველი პირების წილი მთლიან მოსახლეობაში', '', ''),
+(15, '', '', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', 'რეგისტრირებული და საარსებო შემწეობის მიმღები ოჯახების რაოდენობა', '', '');
 
 -- --------------------------------------------------------
 
@@ -440,7 +444,7 @@ INSERT INTO `municipal_statistics` (`ID`, `basicInformation`, `Population`, `bir
 -- Table structure for table `municipal_statistics_en`
 --
 
-CREATE TABLE `municipal_statistics_en` (
+CREATE TABLE IF NOT EXISTS `municipal_statistics_en` (
   `ID` int(11) NOT NULL,
   `basicInformation` varchar(128) NOT NULL,
   `Population` varchar(128) NOT NULL,
@@ -464,7 +468,8 @@ CREATE TABLE `municipal_statistics_en` (
   `transportAndStorage` varchar(128) NOT NULL,
   `healthCareAndSocialSecurity` varchar(128) NOT NULL,
   `education` varchar(128) NOT NULL,
-  `culture` varchar(128) NOT NULL
+  `culture` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -474,24 +479,19 @@ CREATE TABLE `municipal_statistics_en` (
 INSERT INTO `municipal_statistics_en` (`ID`, `basicInformation`, `Population`, `birth`, `death`, `naturalIncrease`, `marriage`, `divorce`, `populationDescription`, `employmentAndSalaries`, `businessSector`, `businessRegister`, `accordingToTheTypesOfActivities`, `AccordingToTheFormsOfOwnership`, `accordingToOrganizationalLegalForms`, `budget`, `agriculture`, `construction`, `trading`, `hotels`, `transportAndStorage`, `healthCareAndSocialSecurity`, `education`, `culture`) VALUES
 (1, 'Main Information', 'Population', 'Births', 'Deaths', 'Natural Increase', 'Marriages', 'Divorce', '2014 Population census', 'Employment and Wages', 'Business Sector', 'Business Register', 'By kind of economic activity', 'By ownership type', 'By organizational-legal forms', 'Budget', 'Agriculture', 'Construction', 'Service', 'Hotels', 'Transportation and storage', 'Healthcare and Social Protection', 'Education', 'Culture'),
 (2, 'Municipality area', 'Number of population by urban-rural settlements as of 1 January', 'Number of live births', 'Number of deaths', 'Natural increase', 'Number of registered marriages', 'Number of registered divorces', 'Median age of the population by urban-rural settlements and sex', 'Number of employed persons by sex - in the Business sector', 'Turnover of the business sector, total', 'Number of business entities registered in Georgia (per 1 000 population)', 'Number of entities registered in Georgia by kind of economic activity', 'Number of entities registered in Georgia by ownership type', 'Number of entities registered in Georgia by organizational-legal form', NULL, 'Share of Agriculture Land Area in Total Land Area of Municipality per sq. km', 'Permissions granted for construction', 'Number of markets and fairs by organizational legal forms in Georgia', 'Number of hotels and hotel-type establishments and their total area (including local units)', 'Length of transport ways ', 'Healthcare', 'public preschool education and care (PEC) institutions', 'Number of museums and professional theaters'),
-(3, 'Number of settlements', 'Share of urban population in total population of the municipality (%)', 'Crude birth rate (per 1 000 population)', 'Crude death rate (per 1 000 population)', 'Natural increase rate (per 1 000 population)', 'Crude marriage rate (per 1 000 population)', 'Crude divorce rate (per 1 000 population)', 'Percentage of population aged 65 and over by urban-rural settlements and sex ', 'Number of employees by sex - in the Business sector', 'Production value of  the Business sector, Total', 'Number of newly registered business entities in Georgia (per 1 000 population)', 'Number of activ entities registered in Georgia by kind of economic activity and size', 'Number of activ entities registered in Georgia by ownership type and size', 'Number of activ entities registered in Georgia by organizational-legal form', NULL, '', 'Completed construction objects', 'Number of markets and fairs by ownership type in Georgia', 'Number of Rooms in Hotels and Hotel-type enterprises', '', 'Main characteristics of public health', 'Public and Private General Education Schools', ''),
-(4, '', 'Density of population per 1 sq. km', 'Number of live births by sex ', 'Number of deaths by age and sex', '', 'Number of married people by age and sex', 'Number of divorced people by age and sex', 'Age dependency ratios by sex ', 'Average monthly wages of employees by sex - in the Business sector (GEL)', 'Personal cost of the Business sector, Total', 'Number of active business entities registered in Georgia (per 1 000 population)', '', 'Number of entities newly registered in Georgia by ownership type', 'Number of entities newly registered in Georgia by organizational-legal form', NULL, '', '', 'Number of markets and fairs by type in Georgia', 'Number of Guests in Hotels and Hotel-type enterprises by visited place and purpose', '', 'Number of Abortions', 'Vocational and Higher educational institutions', ''),
-(5, '', '', 'Sex ratio at birth', 'Infant mortality rate (per 1 000 live births)', '', 'Mean age of spouses by sex', '', 'Number of population by age groups, urban-rural settlements and sex', '', 'Purchase of goods and services of the Business sector, Total', 'Number of public institutions (per 1 000 population)', '', '', '', NULL, '', '', 'Number of markets and fairs on days of trade', 'Number of Employees in Hotels and Hotel-type enterprises by sex', '', 'New Cases of Anemia* by Age', '', ''),
-(6, '', '', 'Mean age of childbearing', 'Under-5 mortality rate (per 1 000 live births)', '', '', '', 'Percentage of working age population by urban-rural settlements and sex', '', 'Purchase of goods and services for resale of the Business sector, Total', '', '', '', '', NULL, '', '', 'Average annual number of employed persons', '', '', 'Number of New Cases of Diabetes Mellitus', '', ''),
-(7, '', '', 'Number of stillbirths', 'Number of deaths by chapters of ICD-10 and sex', '', '', '', 'Number of private households by regions, self-governed units, urban-rural settlements and size', '', 'Value added of the Business sector, Total', '', '', '', '', NULL, '', '', 'Number of market-place and  sellers on the markets and fairs', '', '', 'Number New Cases of Malignant Neoplasm by Sex', '', ''),
-(8, '', '', 'Number of stillbirths by sex', 'Number of deaths by chapters of ICD-10 and by urban-rural settlements', '', '', '', '', '', 'Intermediate consumption of the Business sector, Total', '', '', '', '', NULL, '', '', 'Financial indices of markets and fairs', '', '', 'New cases of the diseases of the circulatory system by sex', '', ''),
-(9, '', '', '', 'Number of deaths by chapters of ICD-10 and by age groups', '', '', '', NULL, '', 'Investments in fixed assets of the Business sector, Total', '', '', '', '', NULL, '', '', '', '', '', 'New cases of the diseases of the respiratory system by sex', '', ''),
-(10, '', '', '', 'Number of deaths from suicide', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Morbidity of patients with syphilis and gonorrheae by Sex', '', ''),
-(11, '', '', '', 'Suicide rate (per 100 000 population)', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Number of HIV infection/AIDS cases by sex', '', ''),
-(12, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Morbidity of patients with tuberculosis by sex', '', ''),
-(13, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Morbidity of patients with Virus hepatitis', '', ''),
-(14, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Social Protection', '', ''),
-(15, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Main characteristics of social security', '', ''),
-(16, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Number of Internally Displaced Disability Persons Receiving Social Package', '', ''),
-(17, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'The number of persons with disabilities registered in the Unified database of targeted social assistance program', '', ''),
-(18, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Number of disabilitie persons, registered in the Unified database of targeted social assistance program, receiving subsistence a', '', ''),
-(19, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Number of Disability Persons Receiving Social Package', '', ''),
-(20, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'The number of newly registered beneficiaries of the state grant(s) based on the status of a person with disabilities by sex', '', '');
+(3, 'Number of settlements', 'Share of urban population in total population of the municipality (%)', 'Crude birth rate (per 1 000 population)', 'Crude death rate (per 1 000 population)', 'Natural increase rate (per 1 000 population)', 'Crude marriage rate (per 1 000 population)', 'Crude divorce rate (per 1 000 population)', 'Percentage of population aged 65 and over by urban-rural settlements and sex ', 'Number of employees by sex - in the Business sector', 'Production value of  the Business sector, Total', 'Number of newly registered business entities in Georgia (per 1 000 population)', 'Number of activ entities registered in Georgia by kind of economic activity and size', 'Number of activ entities registered in Georgia by ownership type and size', 'Number of activ entities registered in Georgia by organizational-legal form', NULL, '', 'Completed construction objects', 'Number of markets and fairs by ownership type in Georgia', 'Number of Rooms in Hotels and Hotel-type enterprises', '', 'Number of nurses total', 'Public and Private General Education Schools', ''),
+(4, '', 'Density of population per 1 sq. km', 'Number of live births by sex ', 'Number of deaths by age and sex', '', 'Number of married people by age and sex', 'Number of divorced people by age and sex', 'Age dependency ratios by sex ', 'Average monthly wages of employees by sex - in the Business sector (GEL)', 'Personal cost of the Business sector, Total', 'Number of active business entities registered in Georgia (per 1 000 population)', '', 'Number of entities newly registered in Georgia by ownership type', 'Number of entities newly registered in Georgia by organizational-legal form', NULL, '', '', 'Number of markets and fairs by type in Georgia', 'Number of Guests in Hotels and Hotel-type enterprises by visited place and purpose', '', 'Number of physicians of all specialties total', 'Vocational and Higher educational institutions', ''),
+(5, '', '', 'Sex ratio at birth', 'Infant mortality rate (per 1 000 live births)', '', 'Mean age of spouses by sex', '', 'Number of population by age groups, urban-rural settlements and sex', '', 'Purchase of goods and services of the Business sector, Total', 'Number of public institutions (per 1 000 population)', '', '', '', NULL, '', '', 'Number of markets and fairs on days of trade', 'Number of Employees in Hotels and Hotel-type enterprises by sex', '', 'Number of visits in medical institutions rendering out-patient services to population', '', ''),
+(6, '', '', 'Mean age of childbearing', 'Under-5 mortality rate (per 1 000 live births)', '', '', '', 'Percentage of working age population by urban-rural settlements and sex', '', 'Purchase of goods and services for resale of the Business sector, Total', '', '', '', '', NULL, '', '', 'Average annual number of employed persons', '', '', 'Number of medical institutions rendering out-patient services to population', '', ''),
+(7, '', '', 'Number of stillbirths', 'Number of deaths by chapters of ICD-10 and sex', '', '', '', 'Number of private households by regions, self-governed units, urban-rural settlements and size', '', 'Value added of the Business sector, Total', '', '', '', '', NULL, '', '', 'Number of market-place and  sellers on the markets and fairs', '', '', 'Number of hospitals and medical centers', '', ''),
+(8, '', '', 'Number of stillbirths by sex', 'Number of deaths by chapters of ICD-10 and by urban-rural settlements', '', '', '', '', '', 'Intermediate consumption of the Business sector, Total', '', '', '', '', NULL, '', '', 'Financial indices of markets and fairs', '', '', 'Number of hospital beds', '', ''),
+(9, '', '', '', 'Number of deaths by chapters of ICD-10 and by age groups', '', '', '', NULL, '', 'Investments in fixed assets of the Business sector, Total', '', '', '', '', NULL, '', '', '', '', '', 'Number of hospital beds per 1 000 population', '', ''),
+(10, '', '', '', 'Number of deaths from suicide', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Number of health care staff per 1 000 population', '', ''),
+(11, '', '', '', 'Suicide rate (per 100 000 population)', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Social Protection', '', ''),
+(12, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Persons Receiving Pension', '', ''),
+(13, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Persons Receiving Social Package', '', ''),
+(14, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'The share of socially vulnerable persons in the population', '', ''),
+(15, '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', NULL, '', '', '', '', '', 'Number of Families Receiving Subsistence Allowance', '', '');
 
 -- --------------------------------------------------------
 
@@ -499,10 +499,11 @@ INSERT INTO `municipal_statistics_en` (`ID`, `basicInformation`, `Population`, `
 -- Table structure for table `pagetitle`
 --
 
-CREATE TABLE `pagetitle` (
-  `TitleID` int(11) NOT NULL,
-  `PageTitleName` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `pagetitle` (
+  `TitleID` int(11) NOT NULL AUTO_INCREMENT,
+  `PageTitleName` varchar(128) NOT NULL,
+  PRIMARY KEY (`TitleID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `pagetitle`
@@ -530,10 +531,11 @@ INSERT INTO `pagetitle` (`TitleID`, `PageTitleName`) VALUES
 -- Table structure for table `pagetitleeng`
 --
 
-CREATE TABLE `pagetitleeng` (
-  `ID` int(11) NOT NULL,
-  `PageTitleNameEng` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `pagetitleeng` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `PageTitleNameEng` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `pagetitleeng`
@@ -561,8 +563,8 @@ INSERT INTO `pagetitleeng` (`ID`, `PageTitleNameEng`) VALUES
 -- Table structure for table `regional_statistics`
 --
 
-CREATE TABLE `regional_statistics` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `regional_statistics` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `basicInformation` varchar(128) NOT NULL,
   `population` varchar(128) NOT NULL,
   `birth` varchar(255) DEFAULT NULL,
@@ -593,8 +595,9 @@ CREATE TABLE `regional_statistics` (
   `education` varchar(128) NOT NULL,
   `culture` varchar(128) NOT NULL,
   `environmentalProtection` varchar(128) NOT NULL,
-  `infrastructure` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `infrastructure` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `regional_statistics`
@@ -602,11 +605,11 @@ CREATE TABLE `regional_statistics` (
 
 INSERT INTO `regional_statistics` (`ID`, `basicInformation`, `population`, `birth`, `death`, `naturalIncrease`, `marriage`, `divorce`, `populationDescription`, `demography`, `gdbAndValueAdded`, `foreignDirectInvestment`, `employmentAndSalaries`, `pricesAndInflation`, `standartOfLiving`, `businessSector`, `businessRegister`, `budget`, `agriculture`, `industry`, `construction`, `service`, `trading`, `hotelsAndRestaurants`, `transportAndStorage`, `tourism`, `legalStatistics`, `healthCareAndSocialSecurity`, `education`, `culture`, `environmentalProtection`, `infrastructure`) VALUES
 (1, 'ძირითადი ინფორმაცია', 'მოსახლეობა', 'დაბადება', 'გარდაცვალება', 'ბუნებრივი მატება', 'ქორწინება', 'განქორწინება', 'მოსახლეობის 2014 წლის აღწერა', 'დემოგრაფია', 'მშპ და დამატებული ღირებულება', 'პირდაპირი უცხოური ინვესტიციები', 'დასაქმება და ხელფასები', 'ფასები და ინფლაცია', 'ცხოვრების დონე', 'ბიზნეს სექტორი', 'ბიზნეს რეგისტრი', 'ბიუჯეტი', 'სოფლის მეურნეობა', 'მრეწველობა', 'მშენებლობა', 'მომსახურება', 'ვაჭრობა', 'სასტუმროები და რესტორნები', 'ტრანსპორტი და დასაწყობება', 'ტურიზმი (ადგილობრივი)', 'სამართლებრივი სტატისტიკა', 'ჯანდაცვა და სოციალური უზრუნველყოფა', 'განათლება', 'კულტურა', 'გარემოს დაცვა', 'ინფრასტრუქტურა'),
-(2, 'რეგიონის ფართობი', 'მოსახლეობის რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით 1 იანვრის მდგომარეობით', 'ცოცხლად დაბადებულთა რიცხოვნობა', 'გარდაცვლილთა რიცხოვნობა', 'ბუნებრივი მატება', 'რეგისტრირებულ ქორწინებათა რაოდენობა', 'რეგისტრირებულ განქორწინებათა რაოდენობა', 'მოსახლეობის მედიანური ასაკი სქესის მიხედვით', 'მოკვდაობა', '', '', 'დასაქმება, უმუშევრობა', 'სამომხმარებლო ფასების ინდექსები 12 თვის საშუალო წინა 12 თვის საშუალოსთან', 'შემოსავლები', 'საქმიანობის მიხედვით (NACE rev.2)', '', NULL, 'ერთწლიანი კულტურები', '', 'მშენებლობაზე გაცემული ნებართვები', 'ბაზრების და ბაზრობების  რაოდენობა, ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', '', 'სასტუმროები და რესტორნები', 'ტრანსპორტი და დასაწყობება', 'საცხოვრებელი ადგილის მიხედვით', '', '', '', '', '', ''),
-(3, 'მუნიციპალიტეტების, ქალაქების და სოფლების რაოდენობა', 'საქალაქო დასახლებაში მცხოვრები  მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში  (%)', 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ბუნებრივი მატების კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'განქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', '65 წელზე მეტი ასაკის მოსახლეობის წილი (%) სქესის მიხედვით', 'გარდაცვალების მიზეზები', '', '', 'ხელფასები', 'სამომხმარებლო ფასების ინდექსები წინა თვესთან', 'ხარჯები', 'საკუთრების ფორმის მიხედვით', '', NULL, 'მრავალწლოვანი კულტურების წარმოება', '', 'ექსპლუატაციაში მიღებული ობიექტები', 'ბაზრების და ბაზრობების რაოდენობა საკუთრების ფორმის მიხედვით', '', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებების რაოდენობა და ფართობი (ადგილობრივი ერთეულების ჩათვლით)', 'რეგისტრირებული ავტომობილების რაოდენობა', 'მონახულებული რეგიონებით', '', '', '', '', '', ''),
-(4, '', 'მოსახლეობის სიმჭიდროვე 1 კვ.კმ-ზე', 'ცოცხლად დაბადებულთა რიცხოვნობა სქესის მიხედვით', 'გარდაცვლილთა რიცხოვნობა ასაკის და სქესის მიხედვით', NULL, 'დაქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'განქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'ასაკის დატვირთვის კოეფიციენტები სქესის მიხედვით', 'ძირითადი დემოგრაფიული მაჩვენებლები', '', '', '', 'სამომხმარებლო ფასების ინდექსები წინა წლის შესაბამის თვესთან', '', 'ზომის მიხედვით', '', NULL, 'პირუტყვის სულადობა', '', 'ძირითადი მაჩვენებლები', 'ბაზრების და ბაზრობების რაოდენობა ტიპების მიხედვით', '', 'ნომრების რაოდენობა სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში', 'საერთო სარგებლობის საავტომობილო გზების სიგრძე', '', '', '', '', '', '', ''),
+(2, 'რეგიონის ფართობი', 'მოსახლეობის რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით 1 იანვრის მდგომარეობით', 'ცოცხლად დაბადებულთა რიცხოვნობა', 'გარდაცვლილთა რიცხოვნობა', 'ბუნებრივი მატება', 'რეგისტრირებულ ქორწინებათა რაოდენობა', 'რეგისტრირებულ განქორწინებათა რაოდენობა', 'მოსახლეობის მედიანური ასაკი', 'მოკვდაობა', '', '', 'დასაქმება, უმუშევრობა', 'სამომხმარებლო ფასების ინდექსები 12 თვის საშუალო წინა 12 თვის საშუალოსთან', 'შემოსავლები', 'საქმიანობის მიხედვით (NACE rev.2)', '', NULL, 'ერთწლიანი კულტურები', '', 'მშენებლობაზე გაცემული ნებართვები', 'ბაზრების და ბაზრობების  რაოდენობა, ორგანიზაციულ-სამართლებრივი ფორმების მიხედვით', '', 'სასტუმროები და რესტორნები', 'ტრანსპორტი და დასაწყობება', 'საცხოვრებელი ადგილის მიხედვით', '', '', '', '', '', ''),
+(3, 'მუნიციპალიტეტების, ქალაქების და სოფლების რაოდენობა', 'საქალაქო დასახლებაში მცხოვრები  მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში  (%)', 'შობადობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'მოკვდაობის ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ბუნებრივი მატების კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'ქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', 'განქორწინების ზოგადი კოეფიციენტი (მოსახლეობის 1 000 კაცზე)', '65 წელზე მეტი ასაკის მოსახლეობის წილი (%)', 'გარდაცვალების მიზეზები', '', '', 'ხელფასები', 'სამომხმარებლო ფასების ინდექსები წინა თვესთან', 'ხარჯები', 'საკუთრების ფორმის მიხედვით', '', NULL, 'მრავალწლოვანი კულტურების წარმოება', '', 'ექსპლუატაციაში მიღებული ობიექტები', 'ბაზრების და ბაზრობების რაოდენობა საკუთრების ფორმის მიხედვით', '', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებების რაოდენობა და ფართობი (ადგილობრივი ერთეულების ჩათვლით)', 'რეგისტრირებული ავტომობილების რაოდენობა', 'მონახულებული რეგიონებით', '', '', '', '', '', ''),
+(4, '', 'მოსახლეობის სიმჭიდროვე 1 კვ.კმ-ზე', 'ცოცხლად დაბადებულთა რიცხოვნობა სქესის მიხედვით', 'გარდაცვლილთა რიცხოვნობა ასაკის და სქესის მიხედვით', NULL, 'დაქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'განქორწინებულთა რიცხოვნობა ასაკის და სქესის მიხედვით', 'ასაკის დატვირთვის კოეფიციენტები', 'ძირითადი დემოგრაფიული მაჩვენებლები', '', '', '', 'სამომხმარებლო ფასების ინდექსები წინა წლის შესაბამის თვესთან', '', 'ზომის მიხედვით', '', NULL, 'პირუტყვის სულადობა', '', 'ძირითადი მაჩვენებლები', 'ბაზრების და ბაზრობების რაოდენობა ტიპების მიხედვით', '', 'ნომრების რაოდენობა სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში', 'საერთო სარგებლობის საავტომობილო გზების სიგრძე', '', '', '', '', '', '', ''),
 (5, '', '', 'სქესთა რაოდენობრივი თანაფარდობა დაბადებისას', 'ჩვილ ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', NULL, 'ქორწინების საშუალო ასაკი სქესის მიხედვით', NULL, 'მოსახლეობის რიცხოვნობა ასაკობრივი ჯგუფების, საქალაქო-სასოფლო დასახლებების და სქესის მიხედვით', '', '', '', '', 'სამომხმარებლო ფასების ინდექსები 2010 წლის საშუალო', '', '', '', NULL, 'მეცხოველეობის პროდუქციის წარმოება', '', '', 'ბაზრები და ბაზრობები ვაჭრობის დღეთა რაოდენობის მიხედვით.', '', 'სასტუმროებსა და სასტუმროს ტიპის დაწესებულებებში სტუმართა რაოდენობა ჩამოსვლის ადგილისა და მიზნის მიხედვით', '', '', '', '', '', '', '', ''),
-(6, '', '', 'დედის საშუალო ასაკი ბავშვის დაბადებისას', '5 წლამდე ასაკის ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', NULL, NULL, NULL, 'შრომისუნარიანი ასაკის მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში (%) სქესის მიხედვით', '', '', '', '', '', '', '', '', NULL, '', '', '', 'ბაზრების და ბაზრობების დირექციებში დასაქმებულთა საშუალო წლიური რაოდენობა', '', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებებში დასაქმებულთა რაოდენობა', '', '', '', '', '', '', '', ''),
+(6, '', '', 'დედის საშუალო ასაკი ბავშვის დაბადებისას', '5 წლამდე ასაკის ბავშვთა მოკვდაობის კოეფიციენტი (1 000 ცოცხლად დაბადებულზე)', NULL, NULL, NULL, 'შრომისუნარიანი ასაკის მოსახლეობის წილი მუნიციპალიტეტის მთლიან მოსახლეობაში (%)', '', '', '', '', '', '', '', '', NULL, '', '', '', 'ბაზრების და ბაზრობების დირექციებში დასაქმებულთა საშუალო წლიური რაოდენობა', '', 'სასტუმროებისა და სასტუმროს ტიპის დაწესებულებებში დასაქმებულთა რაოდენობა', '', '', '', '', '', '', '', ''),
 (7, '', '', 'მკვდრადშობილთა რიცხოვნობა საქალაქო-სასოფლო დასახლებების მიხედვით', 'გარდაცვლილთა რიცხოვნობა სქესის და გარდაცვალების მიზეზების ძირითადი კლასების მიხედვით', NULL, NULL, NULL, 'კერძო შინამეურნეობების რაოდენობა საქალაქო-სასოფლო დასახლებების და მათში მცხოვრებთა რიცხვის მიხედვით', '', '', '', '', '', '', '', '', NULL, '', '', '', 'ბაზრების და ბაზრობების სავაჭრო ადგილების და მოვაჭრეთა რაოდენობა ', '', '', '', '', '', '', '', '', '', ''),
 (8, '', '', 'მკვდრადშობილთა რიცხოვნობა სქესის მიხედვით ', 'გარდაცვლილთა რიცხოვნობა საქალაქო-სასოფლო დასახლებების და გარდაცვალების მიზეზების ძირითადი კლასების   მიხედვით', NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', NULL, '', '', '', 'ბაზრების და ბაზრობების ფინანსური მაჩვენებლები', '', '', '', '', '', '', '', '', '', ''),
 (9, '', '', NULL, 'გარდაცვლილთა რიცხოვნობა ასაკის და გარდაცვალების მიზეზების ძირითადი კლასების  მიხედვით', NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
@@ -619,8 +622,8 @@ INSERT INTO `regional_statistics` (`ID`, `basicInformation`, `population`, `birt
 -- Table structure for table `regional_statistics_en`
 --
 
-CREATE TABLE `regional_statistics_en` (
-  `ID` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `regional_statistics_en` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `basicInformation` varchar(128) NOT NULL,
   `population` varchar(128) NOT NULL,
   `birth` varchar(255) DEFAULT NULL,
@@ -651,8 +654,9 @@ CREATE TABLE `regional_statistics_en` (
   `education` varchar(128) NOT NULL,
   `culture` varchar(128) NOT NULL,
   `environmentalProtection` varchar(128) NOT NULL,
-  `infrastructure` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `infrastructure` varchar(128) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `regional_statistics_en`
@@ -660,11 +664,11 @@ CREATE TABLE `regional_statistics_en` (
 
 INSERT INTO `regional_statistics_en` (`ID`, `basicInformation`, `population`, `birth`, `death`, `naturalIncrease`, `marriage`, `divorce`, `populationDescription`, `demography`, `gdbAndValueAdded`, `foreignDirectInvestment`, `employmentAndSalaries`, `pricesAndInflation`, `standartOfLiving`, `businessSector`, `businessRegister`, `budget`, `agriculture`, `industry`, `construction`, `service`, `trading`, `hotelsAndRestaurants`, `transportAndStorage`, `tourism`, `legalStatistics`, `healthCareAndSocialSecurity`, `education`, `culture`, `environmentalProtection`, `infrastructure`) VALUES
 (1, 'Basic information', 'Population', 'Births', 'Deaths', 'Natural Increase', 'Marriages', 'Divorce', '2014 Population census', 'Demography', 'GDP and value added', 'Foreign Direct Investments', 'Employment and salaries', 'Prices and inflation', 'Standard of living', 'Business sector', 'Business register', 'Budget', 'Agriculture', 'Industry', 'Construction', 'Service', 'Trading', 'Hotels and restaurants', 'Transport and storage', 'Tourism (domestic)', 'Legal statistics', 'Health care and social security', 'Education', 'Culture', 'Environmental protection', 'Infrastructure'),
-(2, 'Area of ​​the region', 'Number of population by urban-rural settlements as of 1 January', 'Number of live births', 'Number of deaths', 'Natural Increase', 'Number of registered marriages', 'Number of registered divorces', 'Median age of the population by sex', 'Mortality', '', '', 'Employment, unemployment', 'Consumer Price Index 12-month average versus previous 12-month average', 'Revenues', 'By activity (NACE rev.2)', '', NULL, 'Annual crops', '', 'Permissions granted for construction', 'Number of markets and fairs by organizational legal forms in Georgia', '', 'Hotels and restaurants', 'Transport and storage', 'According to the place of residence', '', '', '', '', '', ''),
-(3, 'Number of municipalities, cities and villages', 'Share of urban population in total population of the municipality (%)', 'Crude birth rate (per 1 000 population)', 'Crude death rate (per 1 000 population)', 'Natural increase rate (per 1 000 population)', 'Crude marriage rate (per 1 000 population)', 'Crude divorce rate (per 1 000 population)', 'Percentage of population aged 65 and over by sex', 'Causes of death', '', '', 'Salaries', 'Consumer price index compared to the previous month', 'Expenses', 'According to the form of ownership', '', NULL, 'Production of perennial crops', '', 'Completed construction objects', 'Number of markets and fairs by ownership type in Georgia', '', 'Number of hotels and hotel-type establishments and their total area (including local units)', 'Number of registered vehicles', 'By regions visited', '', '', '', '', '', ''),
-(4, '', 'Density of population per 1 sq. km', 'Number of live births by sex ', 'Number of deaths by age and sex', NULL, 'Number of married people by age and sex', 'Number of divorced people by age and sex', 'Age dependency ratios by sex', 'Basic Demographic Indicators', '', '', '', 'Consumer price index compared to the corresponding month of the previous year', '', 'By size', '', NULL, 'Cattle breeding', '', 'Main Indicators of Construction  ', 'Number of markets and fairs by type in Georgia', '', 'Number of Rooms in Hotels and Hotel-type enterprises', 'Length of public highways', '', '', '', '', '', '', ''),
+(2, 'Area of ​​the region', 'Number of population by urban-rural settlements as of 1 January', 'Number of live births', 'Number of deaths', 'Natural Increase', 'Number of registered marriages', 'Number of registered divorces', 'Median age of the population', 'Mortality', '', '', 'Employment, unemployment', 'Consumer Price Index 12-month average versus previous 12-month average', 'Revenues', 'By activity (NACE rev.2)', '', NULL, 'Annual crops', '', 'Permissions granted for construction', 'Number of markets and fairs by organizational legal forms in Georgia', '', 'Hotels and restaurants', 'Transport and storage', 'According to the place of residence', '', '', '', '', '', ''),
+(3, 'Number of municipalities, cities and villages', 'Share of urban population in total population of the municipality (%)', 'Crude birth rate (per 1 000 population)', 'Crude death rate (per 1 000 population)', 'Natural increase rate (per 1 000 population)', 'Crude marriage rate (per 1 000 population)', 'Crude divorce rate (per 1 000 population)', 'Percentage of population aged 65 and over', 'Causes of death', '', '', 'Salaries', 'Consumer price index compared to the previous month', 'Expenses', 'According to the form of ownership', '', NULL, 'Production of perennial crops', '', 'Completed construction objects', 'Number of markets and fairs by ownership type in Georgia', '', 'Number of hotels and hotel-type establishments and their total area (including local units)', 'Number of registered vehicles', 'By regions visited', '', '', '', '', '', ''),
+(4, '', 'Density of population per 1 sq. km', 'Number of live births by sex ', 'Number of deaths by age and sex', NULL, 'Number of married people by age and sex', 'Number of divorced people by age and sex', 'Age dependency ratios', 'Basic Demographic Indicators', '', '', '', 'Consumer price index compared to the corresponding month of the previous year', '', 'By size', '', NULL, 'Cattle breeding', '', 'Main Indicators of Construction  ', 'Number of markets and fairs by type in Georgia', '', 'Number of Rooms in Hotels and Hotel-type enterprises', 'Length of public highways', '', '', '', '', '', '', ''),
 (5, '', '', 'Sex ratio at birth', 'Infant mortality rate (per 1 000 live births)', NULL, 'Mean age of spouses by sex', NULL, 'Number of population by age groups, urban-rural settlements and sex', '', '', '', '', 'Consumer price index 2010 years average', '', '', '', NULL, 'Production of livestock products', '', '', 'Number of markets and fairs on days of trade', '', 'Number of Guests in Hotels and Hotel-type enterprises by visited place and purpose', '', '', '', '', '', '', '', ''),
-(6, '', '', 'Mean age of childbearing', 'Under-5 mortality rate (per 1 000 live births)', NULL, NULL, NULL, 'Share of working age population in total population of the municipality (%) by sex', '', '', '', '', '', '', '', '', NULL, '', '', '', 'Average annual number of employed persons', '', 'Number of Employees in Hotels and Hotel-type enterprises', '', '', '', '', '', '', '', ''),
+(6, '', '', 'Mean age of childbearing', 'Under-5 mortality rate (per 1 000 live births)', NULL, NULL, NULL, 'Share of working age population in total population of the municipality (%)', '', '', '', '', '', '', '', '', NULL, '', '', '', 'Average annual number of employed persons', '', 'Number of Employees in Hotels and Hotel-type enterprises', '', '', '', '', '', '', '', ''),
 (7, '', '', 'Number of stillbirths', 'Number of deaths by chapters of ICD-10 and sex', NULL, NULL, NULL, 'Number of private households by regions, self-governed units, urban-rural settlements and size', '', '', '', '', '', '', '', '', NULL, '', '', '', 'Number of market-place and  sellers on the markets and fairs', '', '', '', '', '', '', '', '', '', ''),
 (8, '', '', 'Number of stillbirths by sex', 'Number of deaths by chapters of ICD-10 and by urban-rural settlements', NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', NULL, '', '', '', 'Financial indices of markets and fairs', '', '', '', '', '', '', '', '', '', ''),
 (9, '', '', NULL, 'Number of deaths by chapters of ICD-10 and by age groups', NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
@@ -677,7 +681,7 @@ INSERT INTO `regional_statistics_en` (`ID`, `basicInformation`, `population`, `b
 -- Table structure for table `regions`
 --
 
-CREATE TABLE `regions` (
+CREATE TABLE IF NOT EXISTS `regions` (
   `ID` int(11) NOT NULL,
   `Name` varchar(128) NOT NULL,
   `NameEN` varchar(255) NOT NULL,
@@ -694,7 +698,8 @@ CREATE TABLE `regions` (
   `AverageSalaryIndustry` varchar(128) NOT NULL,
   `RegistredEntities` varchar(128) NOT NULL,
   `activeEntities` varchar(225) DEFAULT NULL,
-  `newlyRegistredEntities` varchar(225) DEFAULT NULL
+  `newlyRegistredEntities` varchar(225) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -722,7 +727,7 @@ INSERT INTO `regions` (`ID`, `Name`, `NameEN`, `Area`, `Population`, `liveBirth`
 -- Table structure for table `regionsaz`
 --
 
-CREATE TABLE `regionsaz` (
+CREATE TABLE IF NOT EXISTS `regionsaz` (
   `ID` int(11) NOT NULL,
   `Name` varchar(128) NOT NULL,
   `NameEN` varchar(255) DEFAULT NULL,
@@ -739,7 +744,8 @@ CREATE TABLE `regionsaz` (
   `AverageSalaryIndustry` varchar(128) NOT NULL,
   `RegistredEntities` varchar(128) NOT NULL,
   `activeEntities` varchar(255) DEFAULT NULL,
-  `newlyRegistredEntities` varchar(255) DEFAULT NULL
+  `newlyRegistredEntities` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -758,171 +764,6 @@ INSERT INTO `regionsaz` (`ID`, `Name`, `NameEN`, `Area`, `Population`, `liveBirt
 (9, 'სამცხე-ჯავახეთი', 'Samtskhe-Javakheti', '6 412.8', '142.1', '1 585', '1 740', '-155', '2 182.0', '5 061.9', '11.2', '62.2', '13.5', '1 112.4', '32 748', '10 543', '2 981'),
 (10, 'ქვემო ქართლი', 'Kvemo Kartli', '6 436.2', '436.0', '4 878', '4 159', '719', '6 305.5', '4 930.4', '21.7', '135.0', '47.4', '1 374.9', '70 951', '19 150', '5 184'),
 (11, 'შიდა ქართლი', 'Shida Kartli', '3 428.3', '244.1', '2 504', '3 012', '-508', '2 927.0', '4 013.0', '17', '91.1', '20.6', '1 004.6', '42 098', '12 168', '3 228');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `georgia_indicators`
---
-ALTER TABLE `georgia_indicators`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `key_indicators`
---
-ALTER TABLE `key_indicators`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `key_indicators_en`
---
-ALTER TABLE `key_indicators_en`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `key_indicators_reg`
---
-ALTER TABLE `key_indicators_reg`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `key_indicators_reg_en`
---
-ALTER TABLE `key_indicators_reg_en`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `municipalities`
---
-ALTER TABLE `municipalities`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `municipalitiesaz`
---
-ALTER TABLE `municipalitiesaz`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `municipal_statistics`
---
-ALTER TABLE `municipal_statistics`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `municipal_statistics_en`
---
-ALTER TABLE `municipal_statistics_en`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `pagetitle`
---
-ALTER TABLE `pagetitle`
-  ADD PRIMARY KEY (`TitleID`);
-
---
--- Indexes for table `pagetitleeng`
---
-ALTER TABLE `pagetitleeng`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `regional_statistics`
---
-ALTER TABLE `regional_statistics`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `regional_statistics_en`
---
-ALTER TABLE `regional_statistics_en`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `regions`
---
-ALTER TABLE `regions`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `regionsaz`
---
-ALTER TABLE `regionsaz`
-  ADD PRIMARY KEY (`ID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `georgia_indicators`
---
-ALTER TABLE `georgia_indicators`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `key_indicators`
---
-ALTER TABLE `key_indicators`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT for table `key_indicators_en`
---
-ALTER TABLE `key_indicators_en`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT for table `key_indicators_reg`
---
-ALTER TABLE `key_indicators_reg`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT for table `key_indicators_reg_en`
---
-ALTER TABLE `key_indicators_reg_en`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT for table `municipalities`
---
-ALTER TABLE `municipalities`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
-
---
--- AUTO_INCREMENT for table `municipal_statistics`
---
-ALTER TABLE `municipal_statistics`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-
---
--- AUTO_INCREMENT for table `pagetitle`
---
-ALTER TABLE `pagetitle`
-  MODIFY `TitleID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `pagetitleeng`
---
-ALTER TABLE `pagetitleeng`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `regional_statistics`
---
-ALTER TABLE `regional_statistics`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `regional_statistics_en`
---
-ALTER TABLE `regional_statistics_en`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

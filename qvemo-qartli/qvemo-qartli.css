@@ -1,19 +1,19 @@
-g#layer8 {
+/* g#layer8 {
   transform: scale(8.1);
   -webkit-transform-origin-x: 1570px;
   -webkit-transform-origin-y: 911px;
-}
+} */
 
 /* this is for mac responsive */
 
-/* g#layer8 {
+g#layer8 {
   transform: scale(2.1);
   -webkit-transform-origin-x: 1990px;
   -webkit-transform-origin-y: 1234px;
-} */
+}
 
 g#layer8 text {
-  font-size: 5px;
+  font-size: 12px;
 }
 
 #group3-zoomed {
