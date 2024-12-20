@@ -774,7 +774,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['3']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Indicators/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/მაჩვენებლები/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Indicators/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/მაჩვენებლები/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -782,7 +782,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['4']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -790,7 +790,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['5']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Anemia/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/ანემია/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Anemia/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/ანემია/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -798,7 +798,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['6']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Diabetes/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/დიაბეტი/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Diabetes/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/დიაბეტი/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -806,7 +806,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['7']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -814,7 +814,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['8']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -822,7 +822,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['9']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -830,7 +830,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['10']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -838,7 +838,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['11']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -846,7 +846,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['12']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia20">
@@ -854,7 +854,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['13']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Hepatitis/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/ჯანდაცვა/ჰეპატიტი/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Hepatitis/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/ჯანდაცვა/ჰეპატიტი/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>
@@ -866,7 +866,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['15']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -874,7 +874,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['16']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disability%20Persons/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disability%20Persons/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -882,7 +882,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['17']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disabilities%20Registered/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disabilities%20Registered/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -890,7 +890,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['18']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Subsistence%20Allowance/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/საარსებო/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Subsistence%20Allowance/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/საარსებო/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -898,7 +898,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['19']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Receiving/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მიმღები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Receiving/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მიმღები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -906,7 +906,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['20']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Adigeni.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ადიგენი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Aspindza.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ასპინძა.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>
