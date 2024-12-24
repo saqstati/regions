@@ -4630,258 +4630,2036 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Kakheti/Kvareli%20Municipality.xlsx",
       },
     },
-    healthCareAndSocialSecurity11: {
+    healthCareAndSocialSecurity4: {
       Batumi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Adjara%20A.R/C.%20Batumi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Adjara%20A.R/Keda.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/Keda.xlsx",
       },
       Kobuleti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/აჭარა%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Adjara%20A.R/Kobuleti.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/Kobuleti.xlsx",
       },
       Shuakhevi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/აჭარა%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Adjara%20A.R/Shuakhevi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/Shuakhevi.xlsx",
       },
       Khelvachauri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/აჭარა%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Adjara%20A.R/Khelvachauri.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/Khelvachauri.xlsx",
       },
       Khulo: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/აჭარა%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Adjara%20A.R/Khulo.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/Khulo.xlsx",
       },
       Abasha: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/აბაშის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
       },
       Zugdidi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/ზუგდიდის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
       },
       Martvili: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/მარტვილის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
       },
       Senaki: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/სენაკის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
       },
       Tsalenjikha: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/წალენჯიხის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
       },
       Khobi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამეგრელო-ზემო%20სვანეთი/ხობის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
       },
       Lanchkhuti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/გურია/ლანჩხუთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Guria/Lanchkhuti.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Guria/Lanchkhuti.xlsx",
       },
       Ozurgeti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/გურია/ოზურგეთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Guria/Ozurgeti.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Guria/Ozurgeti.xlsx",
       },
       Chokhatauri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/გურია/ჩოხატაურის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Guria/Chokhatauri.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Guria/Chokhatauri.xlsx",
       },
       Adigeni: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამცხე-ჯავახეთი/ადიგენის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samtskhe-Javakheti/Adigeni.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Adigeni.xlsx",
       },
       Aspindza: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samtskhe-Javakheti/Aspindza.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Aspindza.xlsx",
       },
       Akhalkalaki: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამცხე-ჯავახეთი/ახალქალაქის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Akhalkalaki.xlsx",
       },
       Akhaltsikhe: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამცხე-ჯავახეთი/ახალციხის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
       },
       Borjomi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამცხე-ჯავახეთი/ბორჯომის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samtskhe-Javakheti/Borjomi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Borjomi.xlsx",
       },
       Ninotsminda: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/სამცხე-ჯავახეთი/ნინოწმინდის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Samtskhe-Javakheti/Ninotsminda.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Samtskhe-Javakheti/Ninotsminda.xlsx",
       },
       Baghdati: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ბაღდათის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Baghdati.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Baghdati.xlsx",
       },
       Vani: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ვანის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Vani.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Vani.xlsx",
       },
       Zestaponi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ზესტაფონის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Zestaponi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Zestaponi.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Terjola.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Terjola.xlsx",
       },
       Samtredia: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Samtredia.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Samtredia.xlsx",
       },
       Sachkhere: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/საჩხერის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Sachkhere.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Sachkhere.xlsx",
       },
       Tkibuli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ტყიბულის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Tkibuli.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/C.%20Kutaisi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/წყალტუბოს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Tskaltubo.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Tskaltubo.xlsx",
       },
       Chiatura: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ჭიათურის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Chiatura.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Chiatura.xlsx",
       },
       Kharagauli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ხარაგაულის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Kharagauli.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Kharagauli.xlsx",
       },
       Khoni: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/იმერეთი/ხონის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Imereti/Khoni.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Imereti/Khoni.xlsx",
       },
       Ambrolauri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაურის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
       },
       Lentekhi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
       },
       Oni: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
       },
       Bolnisi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/ბოლნისის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Bolnisi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/Bolnisi.xlsx",
       },
       Gardabani: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/გარდაბნის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Gardabani.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/Gardabani.xlsx",
       },
       Dmanisi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/დმანისის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Dmanisi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/Dmanisi.xlsx",
       },
       Tetritskaro: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/თეთრიწყაროს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Tetritskaro.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/Tetritskaro.xlsx",
       },
       Marneuli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/მარნეულის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Marneuli.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ქვემო%20ქართლი/წალკის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kvemo%20Kartli/Tsalka.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kvemo%20Kartli/Tsalka.xlsx",
       },
       Gori: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/შიდა%20ქართლი/გორის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Shida%20Kartli/Gori.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Shida%20Kartli/Gori.xlsx",
       },
       Kaspi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/შიდა%20ქართლი/კასპის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Shida%20Kartli/Kaspi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Shida%20Kartli/Kaspi.xlsx",
       },
       Kareli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/შიდა%20ქართლი/ქარელის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Shida%20Kartli/Kareli.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Shida%20Kartli/Kareli.xlsx",
       },
       Khashuri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/შიდა%20ქართლი/ხაშურის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Shida%20Kartli/Khashuri.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Shida%20Kartli/Khashuri.xlsx",
       },
       Dusheti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მცხეთა-მთიანეთი/დუშეთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Mtskheta-Mtianeti/Dusheti.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Mtskheta-Mtianeti/Dusheti.xlsx",
       },
       Tianeti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მცხეთა-მთიანეთი/თიანეთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Mtskheta-Mtianeti/Tianeti.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Mtskheta-Mtianeti/Tianeti.xlsx",
       },
       Mtskheta: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მცხეთა-მთიანეთი/მცხეთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Mtskheta-Mtianeti/Mtskheta.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Mtskheta-Mtianeti/Mtskheta.xlsx",
       },
       Kazbegi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მცხეთა-მთიანეთი/ყაზბეგის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Mtskheta-Mtianeti/Kazbegi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Mtskheta-Mtianeti/Kazbegi.xlsx",
       },
       Akhmeta: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/ახმეტის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Akhmeta.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Akhmeta.xlsx",
       },
       Gurjaani: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/გურჯაანის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Gurjaani.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Gurjaani.xlsx",
       },
       Dedoplistskaro: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/დედოფლისწყაროს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Dedoplistskaro.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Dedoplistskaro.xlsx",
       },
       Telavi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/თელავის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Telavi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Telavi.xlsx",
       },
       Lagodekhi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/ლაგოდეხის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Lagodekhi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Lagodekhi.xlsx",
       },
       Sagarejo: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/საგარეჯოს%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Sagarejo.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Sagarejo.xlsx",
       },
       Sighnaghi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/სიღნაღის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Sighnaghi.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Sighnaghi.xlsx",
       },
       Kvareli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/კახეთი/ყვარლის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Social%20Statistic/Kakheti/Kvareli.xlsx",
+        ka: "/regions/municipal/ჯანდაცვა/აბორტები/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Abortions/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity7: {
+      Batumi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/ჯანდაცვა/კიბო/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Cancer/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity8: {
+      Batumi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Circulatory/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity9: {
+      Batumi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/ჯანდაცვა/სუნთქვა/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Respiratory/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity10: {
+      Batumi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/ჯანდაცვა/ათაშანგი/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Syphilis/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity11: {
+      Batumi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/ჯანდაცვა/შიდსი/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/AIDS/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity12: {
+      Batumi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Healthcare/Tuberculosis/Kakheti/Kvareli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity20: {
+      Batumi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/C.%20Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/C.%20Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/C.%20Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Kakheti/Kvareli.xlsx",
       },
     },
     education3: {
@@ -5463,8 +7241,43 @@ document.addEventListener("DOMContentLoaded", function () {
       lang
     );
     const hotels5Link = getLink("hotels5", pageName, lang);
+    const healthCareAndSocialSecurityLink4 = getLink(
+      "healthCareAndSocialSecurity4",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurityLink7 = getLink(
+      "healthCareAndSocialSecurity7",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurityLink8 = getLink(
+      "healthCareAndSocialSecurity8",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurityLink9 = getLink(
+      "healthCareAndSocialSecurity9",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurityLink10 = getLink(
+      "healthCareAndSocialSecurity10",
+      pageName,
+      lang
+    );
     const healthCareAndSocialSecurityLink11 = getLink(
       "healthCareAndSocialSecurity11",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurityLink12 = getLink(
+      "healthCareAndSocialSecurity12",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurityLink20 = getLink(
+      "healthCareAndSocialSecurity20",
       pageName,
       lang
     );
@@ -5490,8 +7303,36 @@ document.addEventListener("DOMContentLoaded", function () {
     updateLink("linkemploymentAndSalaries4", employmentAndSalariesLink4);
     updateLink("linkhotels5", hotels5Link);
     updateLink(
+      "linkhealthCareAndSocialSecurity4",
+      healthCareAndSocialSecurityLink4
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity7",
+      healthCareAndSocialSecurityLink7
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity8",
+      healthCareAndSocialSecurityLink8
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity9",
+      healthCareAndSocialSecurityLink9
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity10",
+      healthCareAndSocialSecurityLink10
+    );
+    updateLink(
       "linkhealthCareAndSocialSecurity11",
       healthCareAndSocialSecurityLink11
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity12",
+      healthCareAndSocialSecurityLink12
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity20",
+      healthCareAndSocialSecurityLink20
     );
     updateLink("linkeducation3", education3Link);
     updateLink("linkeducation4", education4Link);
