@@ -597,6 +597,20 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         </tr>
                         <tr class="informacia21">
                             <td>
+                                <span id="healthCareAndSocialSecurity15">
+                                    <?php echo $healthCareAndSocialSecurity['15']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity15" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
                                 <span id="healthCareAndSocialSecurity20">
                                     <?php echo $healthCareAndSocialSecurity['20']; ?>
                                 </span>
