@@ -6410,255 +6410,255 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     healthCareAndSocialSecurity15: {
       Batumi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქედა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/Keda.xlsx",
       },
       Kobuleti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/Kobuleti.xlsx",
       },
       Shuakhevi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/შუახევი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/Shuakhevi.xlsx",
       },
       Khelvachauri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/Khelvachauri.xlsx",
       },
       Khulo: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ხულო.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/Khulo.xlsx",
       },
       Abasha: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/აბაშის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
       },
       Zugdidi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ზუგდიდის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
       },
       Martvili: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/მარტვილის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
       },
       Senaki: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/სენაკის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
       },
       Tsalenjikha: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/წალენჯიხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
       },
       Khobi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/ხობის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
       },
       Lanchkhuti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია/ლანჩხუთი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია/ლანჩხუთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Guria/Lanchkhuti.xlsx",
       },
       Ozurgeti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია/ოზურგეთი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია/ოზურგეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Guria/Ozurgeti.xlsx",
       },
       Chokhatauri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია/ჩოხატაური.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია/ჩოხატაურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Guria/Chokhatauri.xlsx",
       },
       Adigeni: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ადიგენის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Adigeni.xlsx",
       },
       Aspindza: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ასპინძის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Aspindza.xlsx",
       },
       Akhalkalaki: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ახალქალაქის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Akhalkalaki.xlsx",
       },
       Akhaltsikhe: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ახალციხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
       },
       Borjomi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ბორჯომის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Borjomi.xlsx",
       },
       Ninotsminda: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი/ნინოწმინდის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Samtskhe-Javakheti/Ninotsminda.xlsx",
       },
       Baghdati: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ბაღდათი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ბაღდათის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Baghdati.xlsx",
       },
       Vani: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ვანი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ვანის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Vani.xlsx",
       },
       Zestaponi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ზესტაფონი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ზესტაფონის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Zestaponi.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/თერჯოლა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Terjola.xlsx",
       },
       Samtredia: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/სამტრედია.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/სამტრედიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Samtredia.xlsx",
       },
       Sachkhere: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/საჩხერე.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/საჩხერეს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Sachkhere.xlsx",
       },
       Tkibuli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ტყიბული.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ტყიბულის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Tkibuli.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ქ.%20ქუთაისი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/წყალტუბო.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/წყალტუბოს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Tskaltubo.xlsx",
       },
       Chiatura: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ჭიათურა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ჭიათურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Chiatura.xlsx",
       },
       Kharagauli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ხარაგაული.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ხარაგაულის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Kharagauli.xlsx",
       },
       Khoni: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ხონი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/ხონის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Khoni.xlsx",
       },
       Ambrolauri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
       },
       Lentekhi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
       },
       Oni: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
       },
       Tsageri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
       },
       Bolnisi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/ბოლნისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Bolnisi.xlsx",
       },
       Gardabani: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/გარდაბნის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Gardabani.xlsx",
       },
       Dmanisi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/დმანისი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/დმანისის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Dmanisi.xlsx",
       },
       Tetritskaro: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/თეთრიწყაროს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Tetritskaro.xlsx",
       },
       Marneuli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/მარნეული.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/მარნეულის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Marneuli.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/ქ.%20რუსთავი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/წალკა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/წალკას%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Tsalka.xlsx",
       },
       Gori: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/გორი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/გორის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Shida%20Kartli/Gori.xlsx",
       },
       Kaspi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/კასპი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/კასპის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Shida%20Kartli/Kaspi.xlsx",
       },
       Kareli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/ქარელი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/ქარელის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Shida%20Kartli/Kareli.xlsx",
       },
       Khashuri: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/ხაშური.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი/ხაშურის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Shida%20Kartli/Khashuri.xlsx",
       },
       Dusheti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/დუშეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Mtskheta-Mtianeti/Dusheti.xlsx",
       },
       Tianeti: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/თიანეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Mtskheta-Mtianeti/Tianeti.xlsx",
       },
       Mtskheta: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/მცხეთის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Mtskheta-Mtianeti/Mtskheta.xlsx",
       },
       Kazbegi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი/ყაზბეგის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Mtskheta-Mtianeti/Kazbegi.xlsx",
       },
       Akhmeta: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/ახმეტა.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/ახმეტის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Akhmeta.xlsx",
       },
       Gurjaani: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/გურჯაანი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/გურჯაანის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Gurjaani.xlsx",
       },
       Dedoplistskaro: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/დედოფლისწყარო.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/დედოფლისწყაროს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Dedoplistskaro.xlsx",
       },
       Telavi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/თელავი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/თელავის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Telavi.xlsx",
       },
       Lagodekhi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/ლაგოდეხი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/ლაგოდეხის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Lagodekhi.xlsx",
       },
       Sagarejo: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/საგარეჯო.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/საგარეჯოს%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Sagarejo.xlsx",
       },
       Sighnaghi: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/სიღნაღი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/სიღნაღის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Sighnaghi.xlsx",
       },
       Kvareli: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/ყვარელი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი/ყვარლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kakheti/Kvareli.xlsx",
       },
     },
