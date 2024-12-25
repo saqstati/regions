@@ -7530,6 +7530,11 @@ document.addEventListener("DOMContentLoaded", function () {
       pageName,
       lang
     );
+    const healthCareAndSocialSecurityLink15 = getLink(
+      "healthCareAndSocialSecurity15",
+      pageName,
+      lang
+    );
     const healthCareAndSocialSecurityLink20 = getLink(
       "healthCareAndSocialSecurity20",
       pageName,
@@ -7583,6 +7588,10 @@ document.addEventListener("DOMContentLoaded", function () {
     updateLink(
       "linkhealthCareAndSocialSecurity12",
       healthCareAndSocialSecurityLink12
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity15",
+      healthCareAndSocialSecurityLink15
     );
     updateLink(
       "linkhealthCareAndSocialSecurity20",
