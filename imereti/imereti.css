@@ -4,6 +4,10 @@ g#layer6 {
   -webkit-transform-origin-y: 945px;
 }
 
+g#layer6 text {
+  font-size: 8px;
+}
+
 #group6-zoomed {
   fill: #c85861;
   stroke-width: 0.5px;

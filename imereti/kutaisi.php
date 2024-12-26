@@ -875,7 +875,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['16']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disability%20Persons/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disability%20Persons/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/იმერეთი/ქ.%20ქუთაისი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -883,7 +883,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['17']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disabilities%20Registered/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disabilities%20Registered/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/იმერეთი/ქ.%20ქუთაისი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -891,7 +891,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['18']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Subsistence%20Allowance/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/საარსებო/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Subsistence%20Allowance/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/საარსებო/იმერეთი/ქ.%20ქუთაისი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
@@ -899,7 +899,7 @@ include "../config.php";
                                 <?php echo $healthCareAndSocialSecurity['19']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Receiving/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მიმღები/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Receiving/Imereti/C.%20Kutaisi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მიმღები/იმერეთი/ქ.%20ქუთაისი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
