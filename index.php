@@ -1,16 +1,17 @@
 <?php
+include "config.php";
+
+// Prevent caching
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
-
-include "config.php";
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="ka">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:url" content="http://regions.geostat.ge/regions/" />
 	<meta property="og:type" content="website" />
@@ -40,11 +41,6 @@ include "config.php";
 
 		gtag('config', 'UA-154977204-1');
 	</script>
-
-	header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-	header("Cache-Control: post-check=0, pre-check=0", false);
-	header("Pragma: no-cache");
-
 </head>
 
 <body>
