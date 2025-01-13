@@ -657,7 +657,7 @@ header("Pragma: no-cache");
 			$('.textboxspan5').popover({
 				html: true,
 				animation: true,
-				content: 'წლიური (2024 წლის სექტემბრის მდგომარეობით)',
+				content: 'წლიური (2024 წლის დეკემბრის მდგომარეობით)',
 				placement: 'right'
 			});
 			$('.textboxspan6').popover({
