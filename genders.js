@@ -6526,7 +6526,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Samtredia.xlsx",
       },
       Sachkhere: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/საჩხერეს%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი/საჩხერის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Imereti/Sachkhere.xlsx",
       },
       Tkibuli: {
@@ -6594,7 +6594,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
-        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/წალკას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/წალკის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/Tsalka.xlsx",
       },
       Gori: {
