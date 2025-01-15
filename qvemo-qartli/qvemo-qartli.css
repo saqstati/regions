@@ -6,14 +6,20 @@
 
 /* this is for mac responsive */
 
-g#layer8 {
+/* g#layer8 {
   transform: scale(2.1);
   -webkit-transform-origin-x: 1990px;
   -webkit-transform-origin-y: 1234px;
+} */
+
+g#layer8 {
+  transform: scale(8.4);
+  -webkit-transform-origin-x: 166vh;
+  -webkit-transform-origin-y: 96vh;
 }
 
 g#layer8 text {
-  font-size: 12px;
+  font-size: 6px;
 }
 
 #group3-zoomed {
