@@ -341,6 +341,141 @@ $lang_url_en = "genders_reg.php?region=$region&lang=en";
                                 </span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['1']; ?></td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['2']; ?></td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity4">
+                                    <?php echo $healthCareAndSocialSecurity['4']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity4" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity7">
+                                    <?php echo $healthCareAndSocialSecurity['7']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity7" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity8">
+                                    <?php echo $healthCareAndSocialSecurity['8']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity8" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity9">
+                                    <?php echo $healthCareAndSocialSecurity['9']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity9" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity10">
+                                    <?php echo $healthCareAndSocialSecurity['10']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity10" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity11">
+                                    <?php echo $healthCareAndSocialSecurity['11']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity11" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia9">
+                            <td>
+                                <span id="healthCareAndSocialSecurity12">
+                                    <?php echo $healthCareAndSocialSecurity['12']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity12" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['14']; ?></td>
+                        </tr>
+                        <tr class="informacia10">
+                            <td>
+                                <span id="healthCareAndSocialSecurity15">
+                                    <?php echo $healthCareAndSocialSecurity['15']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity15" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia10">
+                            <td>
+                                <span id="healthCareAndSocialSecurity20">
+                                    <?php echo $healthCareAndSocialSecurity['20']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkhealthCareAndSocialSecurity20" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

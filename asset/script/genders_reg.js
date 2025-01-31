@@ -696,6 +696,420 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/regionseng/Hotels/Number%20of%20Employees/Shida%20Kartli%20Region.xlsx",
       },
     },
+    healthCareAndSocialSecurity4: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/აბორტები/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Abortions/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity7: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/კიბო/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Cancer/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity8: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Circulatory/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity9: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/სუნთქვა/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Respiratory/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity10: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/ათაშანგი/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Syphilis/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity11: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/შიდსი/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/AIDS/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity12: {
+      adjara: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/აჭარა.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/გურია.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/იმერეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/კახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Healthcare/Tuberculosis/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity15: {
+      adjara: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/გურია.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/იმერეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/კახეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Indicators/Shida%20Kartli.xlsx",
+      },
+    },
+    healthCareAndSocialSecurity20: {
+      adjara: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/გურია.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Guria.xlsx",
+      },
+      tbilisi: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/იმერეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Imereti.xlsx",
+      },
+      kakheti: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/კახეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Kakheti.xlsx",
+      },
+      mtskheta: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Mtskheta-Mtianeti.xlsx",
+      },
+      racha: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      samegrelo: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      javakheti: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_Kartli: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Kvemo%20Kartli.xlsx",
+      },
+      shida_Kartli: {
+        ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Shida%20Kartli.xlsx",
+      },
+    },
   };
 
   function updateLink(elementId, link) {
@@ -750,6 +1164,51 @@ document.addEventListener("DOMContentLoaded", function () {
       lang
     );
     const hotels5Link = getLink("hotels5", pageName, lang);
+    const healthCareAndSocialSecurity4Link = getLink(
+      "healthCareAndSocialSecurity4",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity7Link = getLink(
+      "healthCareAndSocialSecurity7",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity8Link = getLink(
+      "healthCareAndSocialSecurity8",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity9Link = getLink(
+      "healthCareAndSocialSecurity9",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity10Link = getLink(
+      "healthCareAndSocialSecurity10",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity11Link = getLink(
+      "healthCareAndSocialSecurity11",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity12Link = getLink(
+      "healthCareAndSocialSecurity12",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity15Link = getLink(
+      "healthCareAndSocialSecurity15",
+      pageName,
+      lang
+    );
+    const healthCareAndSocialSecurity20Link = getLink(
+      "healthCareAndSocialSecurity20",
+      pageName,
+      lang
+    );
 
     updateLink("linkBirths", birthLink);
     updateLink("linkRatio", ratioLink);
@@ -766,6 +1225,42 @@ document.addEventListener("DOMContentLoaded", function () {
     updateLink("linkpopulationDescription5", populationDescription5Link);
     updateLink("linkpopulationDescription6", populationDescription6Link);
     updateLink("linkhotels5", hotels5Link);
+    updateLink(
+      "linkhealthCareAndSocialSecurity4",
+      healthCareAndSocialSecurity4Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity7",
+      healthCareAndSocialSecurity7Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity8",
+      healthCareAndSocialSecurity8Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity9",
+      healthCareAndSocialSecurity9Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity10",
+      healthCareAndSocialSecurity10Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity11",
+      healthCareAndSocialSecurity11Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity12",
+      healthCareAndSocialSecurity12Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity15",
+      healthCareAndSocialSecurity15Link
+    );
+    updateLink(
+      "linkhealthCareAndSocialSecurity20",
+      healthCareAndSocialSecurity20Link
+    );
   }
 
   updateMunicipalityLinks();
