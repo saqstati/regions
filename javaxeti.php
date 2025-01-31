@@ -778,6 +778,14 @@ include "config.php";
                         </tr>
                         <tr class="informacia20">
                             <td>
+                                <?php echo $healthCareAndSocialSecurity['3']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/Healthcare/Indicators/Samtskhe-Javakheti.xlsx' : '/regions/regions/ჯანდაცვა/მაჩვენებლები/სამცხე-ჯავახეთი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia20">
+                            <td>
                                 <?php echo $healthCareAndSocialSecurity['4']; ?>
                             </td>
                             <td>
@@ -858,6 +866,14 @@ include "config.php";
                         </tr>
                         <tr>
                             <td id="dziritadi21" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['14']; ?>
+                            </td>
+                        </tr>
+                        <tr class="informacia21">
+                            <td>
+                                <?php echo $healthCareAndSocialSecurity['15']; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/Social%20Statistic/Indicators/Samtskhe-Javakheti.xlsx' : '/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia21">
