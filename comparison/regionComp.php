@@ -185,8 +185,10 @@ $lang_url_en = "regionComp.php?lang=en";
 
     <?php
     $tableRight = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'key_indicators_en' : 'key_indicators';
-    $query = mysqli_query($link, "select * from " . $tableRight);
-    while ($row = mysqli_fetch_array($query)) {
+    $stmt = $link->prepare("SELECT * FROM " . $tableRight);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    while ($row = $result->fetch_assoc()) {
         $dataHover[$row['ID']] = $row['dataHover'];
     }
     ?>
@@ -264,12 +266,10 @@ $lang_url_en = "regionComp.php?lang=en";
             $('#key_indicators').multiselect();
 
             $('#export').on('click', function() {
-                var mun;
-                mun = $('#municipaliteties').val();
-                var key;
-                key = $('#key_indicators').val();
+                var mun = $('#municipaliteties').val().join(',');
+                var key = $('#key_indicators').val().join(',');
                 if (mun != '' && key != '')
-                    window.location = "/regions/export_excel_reg.php?mun=" + mun + "&key=" + key;
+                    window.location = "/regions/export_excel_reg.php?mun=" + mun + "&key=" + key + "&lang=<?php echo $lang; ?>";
             });
         });
 

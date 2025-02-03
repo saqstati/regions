@@ -264,13 +264,11 @@ $lang_url_en = "municipalComp.php?lang=en";
             $('#key_indicators').multiselect();
 
             $('#export').on('click', function() {
-                var mun;
-                mun = $('#municipaliteties').val();
-                var key;
-                key = $('#key_indicators').val();
+                var mun = $('#municipaliteties').val();
+                var key = $('#key_indicators').val();
+                var lang = '<?php echo $lang; ?>'; // Get the current language
                 if (mun != '' && key != '')
-                    //console.log("/regions/export_excel.php?mun=" + mun + "&key=" + key);
-                    window.location = "/regions/export_excel.php?mun=" + mun + "&key=" + key;
+                    window.location = "/regions/export_excel.php?mun=" + mun + "&key=" + key + "&lang=" + lang;
             });
         });
 
