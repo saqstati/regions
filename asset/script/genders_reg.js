@@ -733,11 +733,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/აბორტები/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/Abortions/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/აბორტები/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Abortions/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/აბორტები/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Abortions/Shida%20Kartli.xlsx",
       },
@@ -779,11 +779,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/კიბო/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/Cancer/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/კიბო/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Cancer/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/კიბო/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Cancer/Shida%20Kartli.xlsx",
       },
@@ -825,11 +825,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/Circulatory/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Circulatory/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/სისხლის%20მიმოქცევა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Circulatory/Shida%20Kartli.xlsx",
       },
@@ -871,11 +871,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/სუნთქვა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/Respiratory/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Respiratory/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/სუნთქვა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Respiratory/Shida%20Kartli.xlsx",
       },
@@ -917,11 +917,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/ათაშანგი/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/Syphilis/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Syphilis/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/ათაშანგი/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Syphilis/Shida%20Kartli.xlsx",
       },
@@ -963,11 +963,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/შიდსი/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/AIDS/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/შიდსი/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/AIDS/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/შიდსი/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/AIDS/Shida%20Kartli.xlsx",
       },
@@ -1009,11 +1009,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Healthcare/Tuberculosis/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Tuberculosis/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/ჯანდაცვა/ტუბერკულიოზი/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Healthcare/Tuberculosis/Shida%20Kartli.xlsx",
       },
@@ -1055,11 +1055,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Social%20Statistic/Indicators/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Social%20Statistic/Indicators/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/სოციალური%20სტატისტიკა/მაჩვენებლები/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Social%20Statistic/Indicators/Shida%20Kartli.xlsx",
       },
@@ -1101,11 +1101,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/სამცხე-ჯავახეთი.xlsx",
         en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Samtskhe-Javakheti.xlsx",
       },
-      kvemo_Kartli: {
+      kvemo_kartli: {
         ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი.xlsx",
         en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Kvemo%20Kartli.xlsx",
       },
-      shida_Kartli: {
+      shida_kartli: {
         ka: "/regions/regions/სოციალური%20სტატისტიკა/ბენეფიციართა/შიდა%20ქართლი.xlsx",
         en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Shida%20Kartli.xlsx",
       },
