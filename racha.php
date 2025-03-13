@@ -915,7 +915,31 @@ include "config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="dziritadi" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $education[1]; ?><span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/7/education/education.xlsx' : '/regions/regions/7/ganatleba/ganatleba.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            <td id="dziritadi19" title="" onclick="GetIdChange()" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""> <?php echo $education[1]; ?><span class="float-right"><i id="classchange" class="dropdown_img_up"></i>
+                            </td>
+                        </tr>
+                        <tr class="informacia19">
+                            <td>
+                                <?php echo $education[2]; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/Education/Preschool%20and%20Education%20Institutions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx' : '/regions/regions/განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia19">
+                            <td>
+                                <?php echo $education[3]; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/Education/General%20Educational%20Institution/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx' : '/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia19">
+                            <td>
+                                <?php echo $education[4]; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx' : '/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>
