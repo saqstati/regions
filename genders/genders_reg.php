@@ -476,6 +476,37 @@ $lang_url_en = "genders_reg.php?region=$region&lang=en";
                                 </span>
                             </td>
                         </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $education['1']; ?></td>
+                        </tr>
+                        <tr class="informacia11">
+                            <td>
+                                <span id="education2">
+                                    <?php echo $education['2']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkeducation2" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia11">
+                            <td>
+                                <span id="education3">
+                                    <?php echo $education['3']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkeducation3" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
