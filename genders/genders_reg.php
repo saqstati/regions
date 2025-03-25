@@ -481,20 +481,6 @@ $lang_url_en = "genders_reg.php?region=$region&lang=en";
                         </tr>
                         <tr class="informacia11">
                             <td>
-                                <span id="education2">
-                                    <?php echo $education['2']; ?>
-                                </span>
-                            </td>
-                            <td>
-                                <span class="float-right">
-                                    <a id="linkeducation2" href="#">
-                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
-                                    </a>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr class="informacia11">
-                            <td>
                                 <span id="education3">
                                     <?php echo $education['3']; ?>
                                 </span>
@@ -502,6 +488,20 @@ $lang_url_en = "genders_reg.php?region=$region&lang=en";
                             <td>
                                 <span class="float-right">
                                     <a id="linkeducation3" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia11">
+                            <td>
+                                <span id="education4">
+                                    <?php echo $education['4']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkeducation4" href="#">
                                         <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>

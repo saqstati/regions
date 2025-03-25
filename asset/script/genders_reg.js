@@ -1110,6 +1110,98 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/regionseng/Social%20Statistic/Beneficiaries/Shida%20Kartli.xlsx",
       },
     },
+    education3: {
+      adjara: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/აჭარა.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/გურია.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Guria.xlsx",
+      },
+      Tbilisi: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/იმერეთი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Imereti.xlsx",
+      },
+      Kakheti: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/კახეთი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Kakheti.xlsx",
+      },
+      mtskheta_mtianeti: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Mtskheta-Mtianeti.xlsx",
+      },
+      Racha: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      Samegrelo: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      samtskhe_javakheti: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_kartli: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Kvemo%20Kartli.xlsx",
+      },
+      shida_kartli: {
+        ka: "/regions/regions/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Education/General%20Educational%20Institution/Shida%20Kartli.xlsx",
+      },
+    },
+    education4: {
+      adjara: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარა.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/გურია.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Guria.xlsx",
+      },
+      Tbilisi: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/იმერეთი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Imereti.xlsx",
+      },
+      Kakheti: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/კახეთი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Kakheti.xlsx",
+      },
+      mtskheta_mtianeti: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Mtskheta-Mtianeti.xlsx",
+      },
+      Racha: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      Samegrelo: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      samtskhe_javakheti: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_kartli: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Kvemo%20Kartli.xlsx",
+      },
+      shida_kartli: {
+        ka: "/regions/regions/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Education/Vocational%20and%20Higher%20educational%20institutions/Shida%20Kartli.xlsx",
+      },
+    },
   };
 
   function updateLink(elementId, link) {
@@ -1210,6 +1302,10 @@ document.addEventListener("DOMContentLoaded", function () {
       lang
     );
 
+    const education3Link = getLink("education3", pageName, lang);
+
+    const education4Link = getLink("education4", pageName, lang);
+
     updateLink("linkBirths", birthLink);
     updateLink("linkRatio", ratioLink);
     updateLink("motherAge", ageMotherLink);
@@ -1261,6 +1357,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "linkhealthCareAndSocialSecurity20",
       healthCareAndSocialSecurity20Link
     );
+    updateLink("linkeducation3", education3Link);
+    updateLink("linkeducation4", education4Link);
   }
 
   updateMunicipalityLinks();
