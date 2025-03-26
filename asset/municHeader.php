@@ -74,7 +74,7 @@ if ($current_page == 'qeda.php') {
 } elseif ($current_page == 'dusheti.php') {
     $page_title = $lang['dushetititlename'];
 } elseif ($current_page == 'mcxeta.php') {
-    $page_title = $lang['mtskhetamtianetititlename'];
+    $page_title = $lang['mtskhetatitlename'];
 } elseif ($current_page == 'tianeti.php') {
     $page_title = $lang['tianetititlename'];
 } elseif ($current_page == 'yazbegi.php') {
