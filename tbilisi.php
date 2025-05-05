@@ -456,7 +456,7 @@ include "config.php";
                                 <?php echo $pricesAndInflation[2]; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/4/prices/consumer-price-index-12-month-avarage-over-the-previous-12-month-avarage.xlsx' : '/regions/regions/4/fasebi/samomxmareblo-fasebis-indeqsebi-12-tvis-sashualo-wina-12-Tvis-saSualosTan.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/10/prices/consumer-price-index-12-month-avarage-over-the-previous-12-month-avarage.xlsx' : '/regions/regions/10/fasebi/samomxmareblo-fasebis-indeqsebi-12-tvis-sashualo-wina-12-Tvis-saSualosTan.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia16">
@@ -464,7 +464,7 @@ include "config.php";
                                 <?php echo $pricesAndInflation[3]; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/4/prices/Consumer-Price-Indices-(Previous-month=100).xlsx' : '/regions/regions/4/fasebi/samomxmareblo-fasebis-indeqsebi-wina-TvesTan.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/10/prices/Consumer-Price-Indices-(Previous-month=100).xlsx' : '/regions/regions/10/fasebi/samomxmareblo-fasebis-indeqsebi-wina-TvesTan.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia16">
@@ -472,7 +472,7 @@ include "config.php";
                                 <?php echo $pricesAndInflation[4]; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/4/prices/consumer-price-index-to-the-same-month-of-previous-year.xlsx' : '/regions/regions/4/fasebi/samomxmareblo-fasebis-indeqsebi-wina-wlis-shesabamis-TvesTan.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/10/prices/consumer-price-index-to-the-same-month-of-previous-year.xlsx' : '/regions/regions/10/fasebi/samomxmareblo-fasebis-indeqsebi-wina-wlis-shesabamis-TvesTan.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia16">
@@ -480,7 +480,7 @@ include "config.php";
                                 <?php echo $pricesAndInflation[5]; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/4/prices/consumer-price-index-2010=100.xlsx' : '/regions/regions/4/fasebi/samomxmareblo-fasebis-indeqsebi-2010-wlis-sashualo=100.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/10/prices/consumer-price-index-2010=100.xlsx' : '/regions/regions/10/fasebi/samomxmareblo-fasebis-indeqsebi-2010-wlis-sashualo=100.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>

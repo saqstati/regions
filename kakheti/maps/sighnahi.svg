@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanoger</title>
+</head>
+<body>
+    <!--  Y?kleme Alan?n? Olu?turduk -->
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="dosya">
+        <input type="submit" value="Yukle">
+    </form>
+    <!--  Yukleme Alanini Bitti -->
+</body>
+<?php
+    if(isset($_FILES['dosya']))//Dosya y?klendimi diye kontrol ediyoruz.
+    {
+        $hata = $_FILES['dosya']['error'];//Dosyada hata var ise hata de?i?kenine aktard?k. Buradan 1 veya 0 sonucu ??kar.
+        if($hata != 0)//hata 0 de?ilse hatay? g?ster dedik.
+        {
+            echo 'Yuklenirken bir hata gerceklesmis.';//Hatamizi ekrana yazdirdik.
+        }
+        else//Hata yoksa dedik
+        {
+            $boyut = $_FILES['dosya']['size'];//Dosya boyutumuzu al?p de?i?kene aktard?k.
+            if($boyut > (1024*1024*3))//Buarada dosyam?z 3 mb b?y?kse girmesini s?yledik
+            {//?steyen arkadaslar buray? istedi?i gibi de?i?tirebilir size kalm?? bir ?ey
+                echo 'Dosya 3MB den b?y?k olamaz.';// 3 mb b?y?kse ekrana yazd?raca??m?z alan
+            }
+            else
+            {
+                $tip = $_FILES['dosya']['type'];//Dosya tipimizi ald?k
+                $isim = $_FILES['dosya']['name'];// Dosya ismimizi ald?k
+                $uzanti = explode('.', $isim);//Burada . sonraki k?sm? ald?k yani resim.jpg dosyam?z var . sonraki olan k?s?m .jpg al?cakt?r.
+                $uzanti = $uzanti[count($uzanti)-1];//Yukar?da .jpg k?sm?n? alm??t?k burada . k?sm?n? silmi? oluyoruz elimizdeki uzant? sadece olarak jpg veya png olmu? olacak
+                if($uzanti == 'jpg' || $uzanti == 'zip' || $uzanti == 'php')
+                {//Kontrol?m?z? yap?yoruz sadece jpg veya png veya gif dosyalar?n? kabul edicez
+
+                    $dosya = $_FILES['dosya']['tmp_name'];//Dosyam?z? gecici dizinden $dosya de?i?kenine aktard?k.
+                    copy($dosya, './' . $_FILES['dosya']['name']);// copy fonksiyonu ile dosyalar isimli klas?r?ne kaydettik.
+                    echo 'Serkefti bu here -> z...... ';//Ba?ar?l? olmas? durumunda ekranda g?z?kecek.
+                }
+                else
+                {//E?er Dosya uzant?s?n? kabul etmediysek kullan?c?y? bilgilendiriyoruz.
+                    echo 'Yanl?zca JPG,PNG dosyalar? g?nderebilirsiniz.';
+                }
+            }
+        }
+    }
+ ?>
+</html>

