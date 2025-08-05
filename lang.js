@@ -438,19 +438,19 @@ aLangKeys["ka"]["MAINLEFTBOX_TITLE"] = "საქართველოს სტ
 
 aLangKeys["en"]["AREAMSR"] = "Area: 69 700 sq. km";
 aLangKeys["ka"]["AREAMSR"] = "ფართობი: 69 700 კვ. კმ";
-aLangKeys["en"]["POPULMSR"] = "Population: 3 736.4 thousands";
-aLangKeys["ka"]["POPULMSR"] = "მოსახლეობა: 3 736.4 ათასი";
+aLangKeys["en"]["POPULMSR"] = "Population: 3 704.5 thousands";
+aLangKeys["ka"]["POPULMSR"] = "მოსახლეობა: 3 704.5 ათასი";
 aLangKeys["en"]["GDPMSR"] = "GDP Real Growth Rate: 9.4%";
 aLangKeys["ka"]["GDPMSR"] = "მშპ-ს რეალური ზრდა: 9.4%";
 aLangKeys["en"]["CURMSR"] = "GDP Per Capita: 9 141.4 USD";
 aLangKeys["ka"]["CURMSR"] = "მშპ ერთ სულ მოსახლეზე: 9 141.4 აშშ დოლარი";
-aLangKeys["en"]["INFMSR"] = "Inflation: 3.5%";
-aLangKeys["ka"]["INFMSR"] = "ინფლაცია: 3.5%";
-aLangKeys["en"]["UNEMPMSR"] = "Unemployment Rate: 16.4%";
-aLangKeys["ka"]["UNEMPMSR"] = "უმუშევრობის დონე: 16.4%";
+aLangKeys["en"]["INFMSR"] = "Inflation: 4.3%";
+aLangKeys["ka"]["INFMSR"] = "ინფლაცია: 4.3%";
+aLangKeys["en"]["UNEMPMSR"] = "Unemployment Rate: 13.9%";
+aLangKeys["ka"]["UNEMPMSR"] = "უმუშევრობის დონე: 13.9%";
 aLangKeys["en"]["BUSMSR"] =
-  "The Number of Registered Business Entities (unit): 847 097";
-aLangKeys["ka"]["BUSMSR"] = "რეგისტრირებული ეკონომიკური სუბიექტები: 847 097";
+  "The Number of Registered Business Entities (unit): 1 044 368";
+aLangKeys["ka"]["BUSMSR"] = "რეგისტრირებული ეკონომიკური სუბიექტები: 1 044 368";
 
 aLangKeys["en"]["RECTEXT1"] = "";
 aLangKeys["ka"]["RECTEXT1"] = "რეკომენდირებულია განახლებული";

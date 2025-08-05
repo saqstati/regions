@@ -95,20 +95,20 @@ while ($fetch = $query->fetch_array()) {
                 <tr>
                     <td>" . ($lang == 'en' ? $fetch['NameEN'] : $fetch['Name']) . "</td>";
 
-    $output .= in_array('1', $key_array) ? "<td>" . $fetch['Area'] . "</td>" : "";
-    $output .= in_array('2', $key_array) ? "<td>" . $fetch['NumberOfCT'] . "</td>" : "";
-    $output .= in_array('3', $key_array) ? "<td>" . $fetch['Villages'] . "</td>" : "";
-    $output .= in_array('4', $key_array) ? "<td>" . $fetch['Population'] . "</td>" : "";
-    $output .= in_array('5', $key_array) ? "<td>" . $fetch['LiveBirths'] . "</td>" : "";
-    $output .= in_array('6', $key_array) ? "<td>" . $fetch['GeneralBirthRate'] . "</td>" : "";
-    $output .= in_array('7', $key_array) ? "<td>" . $fetch['Dead'] . "</td>" : "";
-    $output .= in_array('8', $key_array) ? "<td>" . $fetch['GeneralMortalityRate'] . "</td>" : "";
-    $output .= in_array('9', $key_array) ? "<td>" . $fetch['NaturalIncrease'] . "</td>" : "";
-    $output .= in_array('10', $key_array) ? "<td>" . $fetch['Employees'] . "</td>" : "";
-    $output .= in_array('11', $key_array) ? "<td>" . $fetch['AVGSalary'] . "</td>" : "";
-    $output .= in_array('12', $key_array) ? "<td>" . $fetch['RegEcSub'] . "</td>" : "";
-    $output .= in_array('13', $key_array) ? "<td>" . $fetch['ActEcSub'] . "</td>" : "";
-    $output .= in_array('14', $key_array) ? "<td>" . $fetch['NewlyEcEnt'] . "</td>" : "";
+    $output .= in_array('1', $key_array) ? '<td style="text-align: right">' . $fetch['Area'] . '</td>' : "";
+    $output .= in_array('2', $key_array) ? '<td style="text-align: right">' . $fetch['NumberOfCT'] . '</td>' : "";
+    $output .= in_array('3', $key_array) ? '<td style="text-align: right">' . $fetch['Villages'] . '</td>' : "";
+    $output .= in_array('4', $key_array) ? '<td style="text-align: right">' . $fetch['Population'] . '</td>' : "";
+    $output .= in_array('5', $key_array) ? '<td style="text-align: right">' . $fetch['LiveBirths'] . '</td>' : "";
+    $output .= in_array('6', $key_array) ? '<td style="text-align: right">' . $fetch['GeneralBirthRate'] . '</td>' : "";
+    $output .= in_array('7', $key_array) ? '<td style="text-align: right">' . $fetch['Dead'] . '</td>' : "";
+    $output .= in_array('8', $key_array) ? '<td style="text-align: right">' . $fetch['GeneralMortalityRate'] . '</td>' : "";
+    $output .= in_array('9', $key_array) ? '<td style="text-align: right">' . $fetch['NaturalIncrease'] . '</td>' : "";
+    $output .= in_array('10', $key_array) ? '<td style="text-align: right">' . $fetch['Employees'] . '</td>' : "";
+    $output .= in_array('11', $key_array) ? '<td style="text-align: right">' . $fetch['AVGSalary'] . '</td>' : "";
+    $output .= in_array('12', $key_array) ? '<td style="text-align: right">' . $fetch['RegEcSub'] . '</td>' : "";
+    $output .= in_array('13', $key_array) ? '<td style="text-align: right">' . $fetch['ActEcSub'] . '</td>' : "";
+    $output .= in_array('14', $key_array) ? '<td style="text-align: right">' . $fetch['NewlyEcEnt'] . '</td>' : "";
 
     $output .= "</tr>";
 }

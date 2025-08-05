@@ -116,12 +116,12 @@ header("Pragma: no-cache");
 
 			<div id="textbox">
 				<div id="textbox1"><img class="indic-icons" src="images/map-200-b.png" /><span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69 700 კვ. კმ</span></div>
-				<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png" /><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 694.6 ათასი</span></div>
+				<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png" /><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 704.5 ათასი</span></div>
 				<div id="textbox3"><img class="indic-icons" src="images/line-chart-200-r.png" /><span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: 9.4%</span></div>
 				<div id="textbox4"><img class="indic-icons" src="images/user-200-y.png" /><span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 9 141.4 აშშ დოლარი</span></div>
-				<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 3.5%</span></div>
-				<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 16.4%</span></div>
-				<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 847 097</span></div>
+				<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 4.3%</span></div>
+				<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 13.9%</span></div>
+				<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 1 044 368</span></div>
 			</div>
 
 			<div id="textbox_small_device" class="container">
@@ -132,7 +132,7 @@ header("Pragma: no-cache");
 					</div>
 					<div id="textbox2" class="col-12 col-sm-6 d-flex align-items-center mb-3">
 						<img class="indic-icons me-2" src="images/population-200-p.png" />
-						<span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 694.6 ათასი</span>
+						<span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 704.5 ათასი</span>
 					</div>
 					<div id="textbox3" class="col-12 col-sm-6 d-flex align-items-center mb-3">
 						<img class="indic-icons me-2" src="images/line-chart-200-r.png" />
@@ -144,15 +144,15 @@ header("Pragma: no-cache");
 					</div>
 					<div id="textbox5" class="col-12 col-sm-6 d-flex align-items-center mb-3">
 						<img class="indic-icons me-2" src="images/area-chart-200-g.png" />
-						<span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 3.5%</span>
+						<span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 4.3%</span>
 					</div>
 					<div id="textbox6" class="col-12 col-sm-6 d-flex align-items-center mb-3">
 						<img class="indic-icons me-2" src="images/pie-chart-200-b.png" />
-						<span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 16.4%</span>
+						<span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 13.9%</span>
 					</div>
 					<div id="textbox7" class="col-12 col-sm-6 d-flex align-items-center mb-3">
 						<img class="indic-icons me-2" src="images/suitcase-200-p.png" />
-						<span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 847 097</span>
+						<span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 1 044 368</span>
 					</div>
 				</div>
 			</div>
@@ -606,12 +606,12 @@ header("Pragma: no-cache");
 			});
 			$('#en').click(function() {
 				$('.textboxspan1').attr('data-content', 'By March 1, 2014');
-				$('.textboxspan2').attr('data-content', 'By January 1, 2024');
+				$('.textboxspan2').attr('data-content', 'By January 1, 2025');
 				$('.textboxspan3').attr('data-content', 'Preliminary data of 2024');
 				$('.textboxspan4').attr('data-content', 'Preliminary data of 2023');
-				$('.textboxspan5').attr('data-content', 'annual March, 2025');
-				$('.textboxspan6').attr('data-content', 'Data of 2023');
-				$('.textboxspan7').attr('data-content', 'By January 1, 2023');
+				$('.textboxspan5').attr('data-content', 'annual July, 2025');
+				$('.textboxspan6').attr('data-content', 'Data of 2024');
+				$('.textboxspan7').attr('data-content', 'By January 1, 2025');
 				$('#brand-logo-link img').attr('src', 'images/logo_transparency_eng.png');
 				$('.eu_png').attr('src', 'images/logo/eu.png');
 
@@ -619,12 +619,12 @@ header("Pragma: no-cache");
 			});
 			$('#ka').click(function() {
 				$('.textboxspan1').attr('data-content', '2014 წლის 1 მარტის მდგომარეობით');
-				$('.textboxspan2').attr('data-content', '2024 წლის 1 იანვრის მდგომარეობით');
+				$('.textboxspan2').attr('data-content', '2025 წლის 1 იანვრის მდგომარეობით');
 				$('.textboxspan3').attr('data-content', '2024 წლის წინასწარი მონაცემები');
 				$('.textboxspan4').attr('data-content', '2024 წლის წინასწარი მონაცემები');
-				$('.textboxspan5').attr('data-content', 'წლიური 2025 წლის მარტი');
-				$('.textboxspan6').attr('data-content', '2023 წლის მიხედვით');
-				$('.textboxspan7').attr('data-content', '2023 წლის 1 იანვრის მდგომარეობით');
+				$('.textboxspan5').attr('data-content', 'წლიური 2025 წლის ივლისის მდგომარეობით');
+				$('.textboxspan6').attr('data-content', '2024 წლის მიხედვით');
+				$('.textboxspan7').attr('data-content', '2025 წლის 1 იანვრის მდგომარეობით');
 				$('#brand-logo-link img').attr('src', 'images/logo_transparency_geo.png');
 				$('.eu_png').attr('src', 'images/logo/eu-geo.png');
 			});
@@ -639,7 +639,7 @@ header("Pragma: no-cache");
 			$('.textboxspan2').popover({
 				html: true,
 				animation: true,
-				content: '2024 წლის 1 იანვრის მდგომარეობით',
+				content: '2025 წლის 1 იანვრის მდგომარეობით',
 				placement: 'right'
 			});
 			$('.textboxspan3').popover({
@@ -657,19 +657,19 @@ header("Pragma: no-cache");
 			$('.textboxspan5').popover({
 				html: true,
 				animation: true,
-				content: 'წლიური (2025 წლის მარტის მდგომარეობით)',
+				content: 'წლიური (2025 წლის ივლისის მდგომარეობით)',
 				placement: 'right'
 			});
 			$('.textboxspan6').popover({
 				html: true,
 				animation: true,
-				content: '2023 წლის მიხედვით',
+				content: '2024 წლის მიხედვით',
 				placement: 'right'
 			});
 			$('.textboxspan7').popover({
 				html: true,
 				animation: true,
-				content: '2023 წლის 1 იანვრის მდგომარეობით',
+				content: '2025 წლის 1 იანვრის მდგომარეობით',
 				placement: 'right'
 			});
 		});

@@ -120,7 +120,26 @@ $lang_url_en = "municipalComp.php?lang=en";
         $item[$j++][0] = "ახლადრეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
     }
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");
+    $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");    // Add this helper function at the top of your PHP code
+    function formatNumber($value, $isPopulation = false)
+    {
+        if (!is_numeric(str_replace([' ', ','], '', $value))) {
+            return $value; // Return as-is if not a number
+        }
+
+        // Remove existing formatting
+        $cleanValue = str_replace([' ', ','], '', $value);
+        
+        // For population values, use 1 decimal place
+        if ($isPopulation) {
+            return number_format((float)$cleanValue, 1, '.', ' ');
+        }
+        
+        // For other values, format with thousand separators, no decimals
+        return number_format((float)$cleanValue, 0, '.', ' ');
+    }
+
+    // Then modify your data population loop like this:
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;
@@ -128,21 +147,20 @@ $lang_url_en = "municipalComp.php?lang=en";
             $item[$j++][$i] = $row["NameEN"];
         } else {
             $item[$j++][$i] = $row["Name"];
-        }
-        $item[$j++][$i] = $row["Area"];
-        $item[$j++][$i] = $row["NumberOfCT"];
-        $item[$j++][$i] = $row["Villages"];
-        $item[$j++][$i] = $row["Population"];
-        $item[$j++][$i] = $row["LiveBirths"];
-        $item[$j++][$i] = $row["GeneralBirthRate"];
-        $item[$j++][$i] = $row["Dead"];
-        $item[$j++][$i] = $row["GeneralMortalityRate"];
-        $item[$j++][$i] = $row["NaturalIncrease"];
-        $item[$j++][$i] = $row["Employees"];
-        $item[$j++][$i] = $row["AVGSalary"];
-        $item[$j++][$i] = $row["RegEcSub"];
-        $item[$j++][$i] = $row["ActEcSub"];
-        $item[$j++][$i] = $row["NewlyEcEnt"];
+        }        $item[$j++][$i] = formatNumber($row["Area"]);
+        $item[$j++][$i] = formatNumber($row["NumberOfCT"]);
+        $item[$j++][$i] = formatNumber($row["Villages"]);
+        $item[$j++][$i] = formatNumber($row["Population"], true); // This will format as "183.8" or "2 764.4"
+        $item[$j++][$i] = formatNumber($row["LiveBirths"]);
+        $item[$j++][$i] = formatNumber($row["GeneralBirthRate"]);
+        $item[$j++][$i] = formatNumber($row["Dead"]);
+        $item[$j++][$i] = formatNumber($row["GeneralMortalityRate"]);
+        $item[$j++][$i] = formatNumber($row["NaturalIncrease"]);
+        $item[$j++][$i] = formatNumber($row["Employees"]);
+        $item[$j++][$i] = formatNumber($row["AVGSalary"]);
+        $item[$j++][$i] = formatNumber($row["RegEcSub"]);
+        $item[$j++][$i] = formatNumber($row["ActEcSub"]);
+        $item[$j++][$i] = formatNumber($row["NewlyEcEnt"]);
     }
 
     ?>
