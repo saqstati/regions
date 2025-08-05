@@ -25,6 +25,7 @@ let itemsToShow = {
   dziritadi20: "informacia20",
   dziritadi21: "informacia21",
   dziritadi22: "informacia22",
+  dziritadi23: "informacia23",
   dziritadi31: "informacia31",
   dziritadi32: "informacia32",
   dziritadi33: "informacia33",
