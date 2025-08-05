@@ -46,6 +46,7 @@ include "config.php";
                     $query = mysqli_query($link, "select * from " . $tableLeft);
                     while ($row = mysqli_fetch_array($query)) {
                         $basicInformation[$row['ID']] = $row['basicInformation'];
+                        $populationCensus[$row['ID']] = $row['populationCensus'];
                         $population[$row['ID']] = $row['population'];
                         $birth[$row['ID']] = $row['birth'];
                         $death[$row['ID']] = $row['death'];
