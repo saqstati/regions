@@ -43,6 +43,7 @@ include "../config.php";
                     $query = mysqli_query($link, "select * from " . $table);
                     while ($row = mysqli_fetch_array($query)) {
                         $basicInformation[$row['ID']] = $row['basicInformation'];
+                        $populationCensus[$row['ID']] = $row['populationCensus'];
                         $Population[$row['ID']] = $row['Population'];
                         $birth[$row['ID']] = $row['birth'];
                         $death[$row['ID']] = $row['death'];
@@ -87,7 +88,26 @@ include "../config.php";
                                 <?php echo $basicInformation['3']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Main%20Information/Administrative%20structure/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx' : '/regions/municipal/ძირითადი%20ინფორმაცია/ადმინისტრაციული%20მოწყობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Main%20Information/Administrative%20structure/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Cageri.xlsx' : '/regions/municipal/ძირითადი%20ინფორმაცია/ადმინისტრაციული%20მოწყობა/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                                               <tr>
+                            <td id="dziritadi23" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $populationCensus[1]; ?></td>
+                        </tr>
+                        <tr class="informacia23">
+                            <td>
+                                <?php echo $populationCensus[2]; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census%20pre/urban-rural%20settlements/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Cageri.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                            </td>
+                        </tr>
+                        <tr class="informacia23">
+                            <td>
+                                <?php echo $populationCensus[3]; ?>
+                            </td>
+                            <td>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Cageri.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>
@@ -98,7 +118,7 @@ include "../config.php";
                                 <?php echo $Population['2']; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Number%20of%20population/Tsageri.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/ცაგერი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Number%20of%20population/Cageri.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/ცაგერი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia2" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="">
