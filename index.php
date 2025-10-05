@@ -1,5 +1,9 @@
 <?php
 include "config.php";
+include "geostat_scraper_v2.php";
+
+// Get dynamic statistics data
+$statsData = getGeostatData();
 
 // Prevent caching
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
