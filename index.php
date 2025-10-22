@@ -119,45 +119,124 @@ header("Pragma: no-cache");
 			<!-- left content -->
 
 			<div id="textbox">
-				<div id="textbox1"><img class="indic-icons" src="images/map-200-b.png" /><span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69 700 კვ. კმ</span></div>
-				<div id="textbox2"><img class="indic-icons" src="images/population-200-p.png" /><span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 704.5 ათასი</span></div>
-				<div id="textbox3"><img class="indic-icons" src="images/line-chart-200-r.png" /><span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: 9.4%</span></div>
-				<div id="textbox4"><img class="indic-icons" src="images/user-200-y.png" /><span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 9 141.4 აშშ დოლარი</span></div>
-				<div id="textbox5"><img class="indic-icons" src="images/area-chart-200-g.png" /><span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 4.3%</span></div>
-				<div id="textbox6"><img class="indic-icons" src="images/pie-chart-200-b.png" /><span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 13.9%</span></div>
-				<div id="textbox7"><img class="indic-icons" src="images/suitcase-200-p.png" /><span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 1 044 368</span></div>
+				<?php if (isset($statsData['area'])): ?>
+					<div id="textbox1">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['area']['icon']); ?>" />
+						<span class="tr textboxspan1" Key="AREAMSR" data-content="<?php echo htmlspecialchars($statsData['area']['tooltip']); ?>">
+							ფართობი: <?php echo htmlspecialchars($statsData['area']['value']); ?>
+						</span>
+					</div>
+				<?php endif; ?>
+				<?php if (isset($statsData['population'])): ?>
+					<div id="textbox2">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['population']['icon']); ?>" />
+						<span class="tr textboxspan2" Key="POPULMSR" data-content="<?php echo htmlspecialchars($statsData['population']['tooltip']); ?>">
+							მოსახლეობა: <?php echo htmlspecialchars($statsData['population']['value']); ?> ათასი
+						</span>
+					</div>
+				<?php endif; ?>
+				<?php if (isset($statsData['gdp_growth'])): ?>
+					<div id="textbox3">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['gdp_growth']['icon']); ?>" />
+						<span class="tr textboxspan3" Key="GDPMSR" data-content="<?php echo htmlspecialchars($statsData['gdp_growth']['tooltip']); ?>">
+							მშპ-ს რეალური ზრდა: <?php echo htmlspecialchars($statsData['gdp_growth']['value']); ?>%
+						</span>
+					</div>
+				<?php endif; ?>
+				<?php if (isset($statsData['gdp_per_capita'])): ?>
+					<div id="textbox4">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['gdp_per_capita']['icon']); ?>" />
+						<span class="tr textboxspan4" Key="CURMSR" data-content="<?php echo htmlspecialchars($statsData['gdp_per_capita']['tooltip']); ?>">
+							მშპ ერთ სულ მოსახლეზე: <?php echo htmlspecialchars($statsData['gdp_per_capita']['value']); ?> აშშ დოლარი
+						</span>
+					</div>
+				<?php endif; ?>
+				<?php if (isset($statsData['inflation'])): ?>
+					<div id="textbox5">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['inflation']['icon']); ?>" />
+						<span class="tr textboxspan5" Key="INFMSR" data-content="<?php echo htmlspecialchars($statsData['inflation']['tooltip']); ?>">
+							ინფლაცია: <?php echo htmlspecialchars($statsData['inflation']['value']); ?>%
+						</span>
+					</div>
+				<?php endif; ?>
+				<?php if (isset($statsData['unemployment'])): ?>
+					<div id="textbox6">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['unemployment']['icon']); ?>" />
+						<span class="tr textboxspan6" Key="UNEMPMSR" data-content="<?php echo htmlspecialchars($statsData['unemployment']['tooltip']); ?>">
+							უმუშევრობის დონე: <?php echo htmlspecialchars($statsData['unemployment']['value']); ?>%
+						</span>
+					</div>
+				<?php endif; ?>
+				
+				<?php if (isset($statsData['businesses'])): ?>
+					<div id="textbox7">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['businesses']['icon']); ?>" />
+						<span class="tr textboxspan7" Key="BUSMSR" data-content="<?php echo htmlspecialchars($statsData['businesses']['tooltip']); ?>">
+							რეგისტრირებული ეკონომიკური სუბიექტები: <?php echo htmlspecialchars($statsData['businesses']['value']); ?>
+						</span>
+					</div>
+				<?php endif; ?>
 			</div>
 
 			<div id="textbox_small_device" class="container">
 				<div class="row">
-					<div id="textbox1" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/map-200-b.png" />
-						<span class="tr textboxspan1" Key="AREAMSR">ფართობი: 69 700 კვ. კმ</span>
+					<?php if (isset($statsData['area'])): ?>
+					<div id="textbox1">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['area']['icon']); ?>" />
+						<span class="tr textboxspan1" Key="AREAMSR" data-content="<?php echo htmlspecialchars($statsData['area']['tooltip']); ?>">
+							ფართობი: <?php echo htmlspecialchars($statsData['area']['value']); ?>
+						</span>
 					</div>
-					<div id="textbox2" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/population-200-p.png" />
-						<span class="tr textboxspan2" Key="POPULMSR">მოსახლეობა: 3 704.5 ათასი</span>
+				<?php endif; ?>
+				<?php if (isset($statsData['population'])): ?>
+					<div id="textbox2">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['population']['icon']); ?>" />
+						<span class="tr textboxspan2" Key="POPULMSR" data-content="<?php echo htmlspecialchars($statsData['population']['tooltip']); ?>">
+							მოსახლეობა: <?php echo htmlspecialchars($statsData['population']['value']); ?> ათასი
+						</span>
 					</div>
-					<div id="textbox3" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/line-chart-200-r.png" />
-						<span class="tr textboxspan3" Key="GDPMSR">მშპ-ს რეალური ზრდა: 9.4%</span>
+				<?php endif; ?>
+				<?php if (isset($statsData['gdp_growth'])): ?>
+					<div id="textbox3">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['gdp_growth']['icon']); ?>" />
+						<span class="tr textboxspan3" Key="GDPMSR" data-content="<?php echo htmlspecialchars($statsData['gdp_growth']['tooltip']); ?>">
+							მშპ-ს რეალური ზრდა: <?php echo htmlspecialchars($statsData['gdp_growth']['value']); ?>%
+						</span>
 					</div>
-					<div id="textbox4" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/user-200-y.png" />
-						<span class="tr textboxspan4" Key="CURMSR">მშპ ერთ სულ მოსახლეზე: 9 141.4 აშშ დოლარი</span>
+				<?php endif; ?>
+				<?php if (isset($statsData['gdp_per_capita'])): ?>
+					<div id="textbox4">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['gdp_per_capita']['icon']); ?>" />
+						<span class="tr textboxspan4" Key="CURMSR" data-content="<?php echo htmlspecialchars($statsData['gdp_per_capita']['tooltip']); ?>">
+							მშპ ერთ სულ მოსახლეზე: <?php echo htmlspecialchars($statsData['gdp_per_capita']['value']); ?> აშშ დოლარი
+						</span>
 					</div>
-					<div id="textbox5" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/area-chart-200-g.png" />
-						<span class="tr textboxspan5" Key="INFMSR">ინფლაცია: 4.3%</span>
+				<?php endif; ?>
+				<?php if (isset($statsData['inflation'])): ?>
+					<div id="textbox5">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['inflation']['icon']); ?>" />
+						<span class="tr textboxspan5" Key="INFMSR" data-content="<?php echo htmlspecialchars($statsData['inflation']['tooltip']); ?>">
+							ინფლაცია: <?php echo htmlspecialchars($statsData['inflation']['value']); ?>%
+						</span>
 					</div>
-					<div id="textbox6" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/pie-chart-200-b.png" />
-						<span class="tr textboxspan6" Key="UNEMPMSR">უმუშევრობის დონე: 13.9%</span>
+				<?php endif; ?>
+				<?php if (isset($statsData['unemployment'])): ?>
+					<div id="textbox6">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['unemployment']['icon']); ?>" />
+						<span class="tr textboxspan6" Key="UNEMPMSR" data-content="<?php echo htmlspecialchars($statsData['unemployment']['tooltip']); ?>">
+							უმუშევრობის დონე: <?php echo htmlspecialchars($statsData['unemployment']['value']); ?>%
+						</span>
 					</div>
-					<div id="textbox7" class="col-12 col-sm-6 d-flex align-items-center mb-3">
-						<img class="indic-icons me-2" src="images/suitcase-200-p.png" />
-						<span class="tr textboxspan7" Key="BUSMSR">რეგისტრირებული ეკონომიკური სუბიექტები: 1 044 368</span>
+				<?php endif; ?>
+				
+				<?php if (isset($statsData['businesses'])): ?>
+					<div id="textbox7">
+						<img class="indic-icons" src="<?php echo htmlspecialchars($statsData['businesses']['icon']); ?>" />
+						<span class="tr textboxspan7" Key="BUSMSR" data-content="<?php echo htmlspecialchars($statsData['businesses']['tooltip']); ?>">
+							რეგისტრირებული ეკონომიკური სუბიექტები: <?php echo htmlspecialchars($statsData['businesses']['value']); ?>
+						</span>
 					</div>
+				<?php endif; ?>
 				</div>
 			</div>
 
