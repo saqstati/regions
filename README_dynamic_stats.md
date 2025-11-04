@@ -226,3 +226,5 @@ For issues or improvements:
 ---
 
 **Note**: This implementation respects the geostat.ge website by using appropriate caching and rate limiting to minimize server load.
+
+ cd /c/xampp/htdocs/regions && rm -f cache/geostat_data.json && php api_stats.php - ქეშის გასუფთავება
