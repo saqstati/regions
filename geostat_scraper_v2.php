@@ -124,7 +124,7 @@ class GeostatScraper {
                     'value' => $value,
                     'link' => 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia',
                     'image' => 'https://geostat.ge/media/5178/5.png',
-                    'tooltip' => $tooltip ?: $this->generateInflationTooltip(),
+                    'tooltip' => $tooltip ? $tooltip : $this->generateInflationTooltip(),
                     'icon' => 'images/area-chart-200-g.png'
                 ];
             }
@@ -329,7 +329,7 @@ class GeostatScraper {
             'inflation' => 'https://geostat.ge/media/5178/5.png'
         ];
         
-        return $images[$statKey] ?? '';
+        return isset($images[$statKey]) ? $images[$statKey] : '';
     }
     
     /**
@@ -368,7 +368,7 @@ class GeostatScraper {
             'businesses' => 'images/suitcase-200-p.png'
         ];
         
-        return $icons[$statKey] ?? 'images/line-chart-200-r.png';
+        return isset($icons[$statKey]) ? $icons[$statKey] : 'images/line-chart-200-r.png';
     }
     
     /**
