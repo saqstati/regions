@@ -71,6 +71,12 @@ class GeostatScraper {
                 $statistics = $this->parseHtmlWithDOM($html);
             }
             
+            // Scrape inflation separately from its category page
+            $inflationData = $this->scrapeInflationData();
+            if ($inflationData) {
+                $statistics['inflation'] = $inflationData;
+            }
+            
             // If still no data, return fallback
             if (empty($statistics)) {
                 return $this->getFallbackData();
@@ -82,6 +88,97 @@ class GeostatScraper {
             error_log("Geostat scraper error: " . $e->getMessage());
             return $this->getFallbackData();
         }
+    }
+    
+    /**
+     * Scrape inflation data from the inflation category page
+     */
+    private function scrapeInflationData() {
+        try {
+            $inflationUrl = 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia';
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $inflationUrl);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
+            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+            
+            $html = curl_exec($ch);
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+            
+            if ($httpCode !== 200 || !$html) {
+                return null;
+            }
+            
+            // Try to extract tooltip from the latest news title
+            // Pattern: "ინფლაცია საქართველოში, 2025 წლის ოქტომბერი"
+            $tooltip = $this->extractInflationTooltip($html);
+            
+            // Look for the latest inflation value
+            if (preg_match('/(\d+\.\d+)\s*%/u', $html, $matches)) {
+                $value = $matches[1];
+                return [
+                    'title' => 'ინფლაცია (%)',
+                    'value' => $value,
+                    'link' => 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia',
+                    'image' => 'https://geostat.ge/media/5178/5.png',
+                    'tooltip' => $tooltip ?: $this->generateInflationTooltip(),
+                    'icon' => 'images/area-chart-200-g.png'
+                ];
+            }
+            
+            return null;
+            
+        } catch (Exception $e) {
+            error_log("Inflation scraper error: " . $e->getMessage());
+            return null;
+        }
+    }
+    
+    /**
+     * Extract inflation tooltip from the news section
+     */
+    private function extractInflationTooltip($html) {
+        // Try to find the latest news title about inflation
+        // Pattern: "ინფლაცია საქართველოში, 2025 წლის ოქტომბერი"
+        if (preg_match('/ინფლაცია\s+საქართველოში,\s*(\d{4})\s+წლის\s+(\S+)/u', $html, $matches)) {
+            $year = $matches[1];
+            $month = $matches[2];
+            return "წლიური ({$year} წლის {$month})";
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Generate dynamic inflation tooltip based on current date
+     */
+    private function generateInflationTooltip() {
+        $georgianMonths = [
+            1 => 'იანვარი',
+            2 => 'თებერვალი',
+            3 => 'მარტი',
+            4 => 'აპრილი',
+            5 => 'მაისი',
+            6 => 'ივნისი',
+            7 => 'ივლისი',
+            8 => 'აგვისტო',
+            9 => 'სექტემბერი',
+            10 => 'ოქტომბერი',
+            11 => 'ნოემბერი',
+            12 => 'დეკემბერი'
+        ];
+        
+        // Get previous month (inflation data is usually published for the previous month)
+        $currentDate = new DateTime();
+        $currentDate->modify('-1 month');
+        $year = $currentDate->format('Y');
+        $month = (int)$currentDate->format('n');
+        
+        $monthName = $georgianMonths[$month];
+        return "წლიური ({$year} წლის {$monthName})";
     }
     
     /**
@@ -156,7 +253,7 @@ class GeostatScraper {
                 'pattern' => '/ინფლაცია[^>]*>.*?(\d+\.?\d*)\s*%/u',
                 'title' => 'ინფლაცია (%)',
                 'link' => 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia',
-                'tooltip' => 'წლიური (2025 წლის სექტემბერი)'
+                'tooltip' => 'წლიური (2025 წლის ოქტომბერი)'
             ]
         ];
         
@@ -313,10 +410,10 @@ class GeostatScraper {
             ],
             'inflation' => [
                 'title' => 'ინფლაცია (%)',
-                'value' => '4.8',
+                'value' => '5.2',
                 'link' => 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia',
                 'image' => 'https://geostat.ge/media/5178/5.png',
-                'tooltip' => 'წლიური (2025 წლის სექტემბერი)',
+                'tooltip' => $this->generateInflationTooltip(),
                 'icon' => 'images/area-chart-200-g.png'
             ],
             'unemployment' => [
