@@ -104,6 +104,9 @@ class GeostatScraper {
     private function scrapeGDPDataFromHomepage($html) {
         $gdpData = array();
         
+        // Extract tooltip from the page or generate it
+        $gdpTooltip = $this->extractGDPTooltip($html);
+        
         // Pattern to find GDP per capita: <h3>მშპ ერთ სულზე ($)</h3><p>9 241.5</p>
         if (preg_match('/<h3[^>]*>მშპ\s+ერთ\s+სულზე[^<]*<\/h3>\s*<p[^>]*>([^<]+)<\/p>/u', $html, $matches)) {
             $value = trim($matches[1]);  // Keep the space in the number
@@ -112,7 +115,7 @@ class GeostatScraper {
                 'value' => $value,
                 'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
                 'image' => 'https://geostat.ge/media/5175/2.png',
-                'tooltip' => '2024 წელი (წინასწარი)',
+                'tooltip' => $gdpTooltip,
                 'icon' => 'images/user-200-y.png'
             );
         }
@@ -125,7 +128,7 @@ class GeostatScraper {
                 'value' => $value,
                 'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
                 'image' => 'https://geostat.ge/media/5176/3.png',
-                'tooltip' => '2024 წელი (წინასწარი)',
+                'tooltip' => $gdpTooltip,
                 'icon' => 'images/line-chart-200-r.png'
             );
         }
@@ -193,6 +196,22 @@ class GeostatScraper {
         }
         
         return null;
+    }
+    
+    /**
+     * Extract or generate GDP tooltip
+     */
+    private function extractGDPTooltip($html) {
+        // Try to extract tooltip from title attribute
+        if (preg_match('/title="([^"]*წელი[^"]*)"/u', $html, $matches)) {
+            // Clean up multiple spaces
+            return preg_replace('/\s+/', ' ', trim($matches[1]));
+        }
+        
+        // Generate tooltip based on current year (without "წინასწარი")
+        $currentYear = date('Y');
+        $previousYear = $currentYear - 1;
+        return "{$previousYear} წელი";
     }
     
     /**
@@ -278,13 +297,13 @@ class GeostatScraper {
                 'pattern' => '/მშპ ერთ სულზე[^>]*>.*?(\d+[\s\d]*\.?\d*)/u',
                 'title' => 'მშპ ერთ სულზე ($)',
                 'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
-                'tooltip' => '2024 წელი (წინასწარი)'
+                'tooltip' => $this->extractGDPTooltip($html)
             ],
             'gdp_growth' => [
                 'pattern' => '/რეალური მშპ.*?ზრდა[^>]*>.*?(\d+\.?\d*)\s*%/u',
                 'title' => 'რეალური მშპ-ის ზრდა (%)',
                 'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
-                'tooltip' => '2024 წელი (წინასწარი)'
+                'tooltip' => $this->extractGDPTooltip($html)
             ],
             'unemployment' => [
                 'pattern' => '/უმუშევრობის დონე[^>]*>.*?(\d+\.?\d*)\s*%/u',
@@ -440,7 +459,7 @@ class GeostatScraper {
                 'value' => '9.4',
                 'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
                 'image' => 'https://geostat.ge/media/5176/3.png',
-                'tooltip' => '2024 წელი (წინასწარი)',
+                'tooltip' => $this->extractGDPTooltip(''),
                 'icon' => 'images/line-chart-200-r.png'
             ],
             'gdp_per_capita' => [
@@ -448,7 +467,7 @@ class GeostatScraper {
                 'value' => '9 141.4',
                 'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
                 'image' => 'https://geostat.ge/media/5175/2.png',
-                'tooltip' => '2024 წელი (წინასწარი)',
+                'tooltip' => $this->extractGDPTooltip(''),
                 'icon' => 'images/user-200-y.png'
             ],
             'inflation' => [
