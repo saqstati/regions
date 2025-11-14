@@ -71,15 +71,23 @@ class GeostatScraper {
                 $statistics = $this->parseHtmlWithDOM($html);
             }
             
+            // If still no data from main page, use fallback and then override with specific scrapers
+            if (empty($statistics)) {
+                $statistics = $this->getFallbackData();
+            }
+            
             // Scrape inflation separately from its category page
             $inflationData = $this->scrapeInflationData();
             if ($inflationData) {
                 $statistics['inflation'] = $inflationData;
             }
             
-            // If still no data, return fallback
-            if (empty($statistics)) {
-                return $this->getFallbackData();
+            // Scrape GDP data from main page
+            $gdpData = $this->scrapeGDPDataFromHomepage($html);
+            if (!empty($gdpData)) {
+                foreach ($gdpData as $key => $value) {
+                    $statistics[$key] = $value;
+                }
             }
             
             return $statistics;
@@ -88,6 +96,41 @@ class GeostatScraper {
             error_log("Geostat scraper error: " . $e->getMessage());
             return $this->getFallbackData();
         }
+    }
+    
+    /**
+     * Scrape GDP data directly from homepage HTML
+     */
+    private function scrapeGDPDataFromHomepage($html) {
+        $gdpData = array();
+        
+        // Pattern to find GDP per capita: <h3>მშპ ერთ სულზე ($)</h3><p>9 241.5</p>
+        if (preg_match('/<h3[^>]*>მშპ\s+ერთ\s+სულზე[^<]*<\/h3>\s*<p[^>]*>([^<]+)<\/p>/u', $html, $matches)) {
+            $value = trim($matches[1]);  // Keep the space in the number
+            $gdpData['gdp_per_capita'] = array(
+                'title' => 'მშპ ერთ სულზე ($)',
+                'value' => $value,
+                'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
+                'image' => 'https://geostat.ge/media/5175/2.png',
+                'tooltip' => '2024 წელი (წინასწარი)',
+                'icon' => 'images/user-200-y.png'
+            );
+        }
+        
+        // Pattern to find GDP growth: <h3>რეალური მშპ-ის ზრდა (%)</h3><p>9.7</p>
+        if (preg_match('/<h3[^>]*>რეალური\s+მშპ[^<]*<\/h3>\s*<p[^>]*>([^<]+)<\/p>/u', $html, $matches)) {
+            $value = trim(str_replace(' ', '', $matches[1]));
+            $gdpData['gdp_growth'] = array(
+                'title' => 'რეალური მშპ-ის ზრდა (%)',
+                'value' => $value,
+                'link' => 'https://www.geostat.ge/ka/modules/categories/23/mtliani-shida-produkti-mshp',
+                'image' => 'https://geostat.ge/media/5176/3.png',
+                'tooltip' => '2024 წელი (წინასწარი)',
+                'icon' => 'images/line-chart-200-r.png'
+            );
+        }
+        
+        return $gdpData;
     }
     
     /**
