@@ -6,6 +6,52 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const linkData = {
+    populationCensus: {
+      adjara: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara.xlsx",
+      },
+      guria: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/გურია.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Guria.xlsx",
+      },
+      Tbilisi: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქ.%20თბილისი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/C.%20Tbilisi.xlsx",
+      },
+      imereti: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti.xlsx",
+      },
+      Kakheti: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti.xlsx",
+      },
+      mtskheta_mtianeti: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Mtskheta-Mtianeti.xlsx",
+      },
+      Racha: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti.xlsx",
+      },
+      Samegrelo: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti.xlsx",
+      },
+      samtskhe_javakheti: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti.xlsx",
+      },
+      kvemo_kartli: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli.xlsx",
+      },
+      shida_kartli: {
+        ka: "/regions/regions/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/შიდა%20ქართლი.xlsx",
+        en: "/regions/regionseng/Population%20census%20pre/number%20of%20population%20by%20sex/Shida%20Kartli.xlsx",
+      },
+    },
     births: {
       adjara: {
         ka: "/regions/regions/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/აჭარა.xlsx",
@@ -1221,6 +1267,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pageName = localStorage.getItem("region");
     const lang = getURLParameter("lang");
 
+    const populationCensusLink = getLink("populationCensus", pageName, lang);
     const birthLink = getLink("births", pageName, lang);
     const ratioLink = getLink("ratio", pageName, lang);
     const ageMotherLink = getLink("ageMother", pageName, lang);
@@ -1306,6 +1353,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const education4Link = getLink("education4", pageName, lang);
 
+    updateLink("linkPopulationCensus", populationCensusLink);
     updateLink("linkBirths", birthLink);
     updateLink("linkRatio", ratioLink);
     updateLink("motherAge", ageMotherLink);

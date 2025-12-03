@@ -6,6 +6,260 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const linkData = {
+    populationCensus: {
+      Batumi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ბათუმი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Batumi.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქედა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Keda.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქობულეთი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Kobuleti.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/შუახევი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Shuakhevi.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ხელვაჩაური.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Khelvachauri.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ხულო.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Khulo.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/აბაშა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Abasha.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ზუგდიდი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Zugdidi.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მარტვილი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Martvili.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/მესტია.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Mestia.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/სენაკი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Senaki.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Poti.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Chkhorotsku.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/წალენჯიხა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Tsalenjikha.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ხობი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Khobi.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/გურია/ლანჩხუთი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Guria/Lanchkhuti.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/გურია/ოზურგეთი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Guria/Ozurgeti.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/გურია/ჩოხატაური.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Guria/Chokhatauri.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ადიგენი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti/Adigeni.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ასპინძა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti/Aspindza.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ახალქალაქი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti/Akhalkalaki.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ახალციხე.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti/Akhaltsikhe.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ბორჯომი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti/Borjomi.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამცხე-ჯავახეთი/ნინოწმინდა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samtskhe-Javakheti/Ninotsminda.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ბაღდათი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Baghdati.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ვანი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Vani.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ზესტაფონი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Zestaponi.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/თერჯოლა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Terjola.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/სამტრედია.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Samtredia.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/საჩხერე.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Sachkhere.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ტყიბული.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Tkibuli.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ქუთაისი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Kutaisi.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/წყალტუბო.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Tskaltubo.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ჭიათურა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Chiatura.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ხარაგაული.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Kharagauli.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ხონი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Khoni.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაური.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/ბოლნისი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Bolnisi.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/გარდაბანი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Gardabani.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/დმანისი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Dmanisi.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/თეთრიწყარო.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Tetritskaro.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/მარნეული.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Marneuli.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/რუსთავი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Rustavi.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/წალკა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Tsalka.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/შიდა%20ქართლი/გორი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Shida%20Kartli/Gori.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/შიდა%20ქართლი/კასპი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Shida%20Kartli/Kaspi.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/შიდა%20ქართლი/ქარელი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Shida%20Kartli/Kareli.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/შიდა%20ქართლი/ხაშური.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Shida%20Kartli/Khashuri.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/დუშეთი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Mtskheta-Mtianeti/Dusheti.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/თიანეთი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Mtskheta-Mtianeti/Tianeti.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/მცხეთა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Mtskheta-Mtianeti/Mtskheta.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/მცხეთა-მთიანეთი/ყაზბეგი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Mtskheta-Mtianeti/Kazbegi.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/ახმეტა.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Akhmeta.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/გურჯაანი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Gurjaani.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/დედოფლისწყარო.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Dedoplistskaro.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/თელავი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Telavi.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/ლაგოდეხი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Lagodekhi.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/საგარეჯო.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Sagarejo.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/სიღნაღი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Sighnaghi.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/კახეთი/ყვარელი.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kakheti/Kvareli.xlsx",
+      },
+    },
     births: {
       Batumi: {
         ka: "/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/ქ.%20ბათუმი.xlsx",
@@ -7445,6 +7699,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pageName = localStorage.getItem("municipal");
     const lang = getURLParameter("lang");
 
+    const populationCensusLink = getLink("populationCensus", pageName, lang);
     const birthLink = getLink("births", pageName, lang);
     const ratioLink = getLink("ratio", pageName, lang);
     const ageMotherLink = getLink("ageMother", pageName, lang);
@@ -7543,6 +7798,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const education3Link = getLink("education3", pageName, lang);
     const education4Link = getLink("education4", pageName, lang);
 
+    updateLink("linkPopulationCensus", populationCensusLink);
     updateLink("linkBirths", birthLink);
     updateLink("linkRatio", ratioLink);
     updateLink("motherAge", ageMotherLink);

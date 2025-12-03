@@ -198,6 +198,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                     $query = mysqli_query($link, "select * from " . $table);
                     while ($row = mysqli_fetch_array($query)) {
                         $basicInformation[$row['ID']] = $row['basicInformation'];
+                        $populationCensus[$row['ID']] = $row['populationCensus'];
                         $Population[$row['ID']] = $row['Population'];
                         $birth[$row['ID']] = $row['birth'];
                         $death[$row['ID']] = $row['death'];
@@ -225,6 +226,21 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <th><?php echo $lang['genderTitleName'] ?></th>
                     </tr>
                     <tbody>
+                        <tr>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $populationCensus['1'] ?></td>
+                        </tr>
+                        <tr class="informacia23">
+                            <td>
+                                <span id="populationCensus3"><?php echo $populationCensus['3']; ?></span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkPopulationCensus" href="#">
+                                        <img src="../images/excel-9-24.png" alt="excel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
                         <tr>
                             <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $lang['demograph'] ?></td>
                         </tr>
