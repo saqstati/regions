@@ -6,7 +6,7 @@
 class DynamicStatsUpdater {
     constructor(apiUrl = 'api_stats.php') {
         this.apiUrl = apiUrl;
-        this.updateInterval = 60 * 60 * 1000; // 1 hour in milliseconds
+        this.updateInterval = 60 * 1000; // 1 minute in milliseconds
         this.lastUpdate = null;
         this.data = null;
     }
@@ -49,15 +49,15 @@ class DynamicStatsUpdater {
             return;
         }
 
-        // Mapping of statistic keys to textbox elements
+        // Mapping of statistic keys to textbox elements (both desktop and mobile)
         const mappings = {
-            'area': { id: 'textbox1', spanClass: 'textboxspan1' },
-            'population': { id: 'textbox2', spanClass: 'textboxspan2' },
-            'gdp_growth': { id: 'textbox3', spanClass: 'textboxspan3' },
-            'gdp_per_capita': { id: 'textbox4', spanClass: 'textboxspan4' },
-            'inflation': { id: 'textbox5', spanClass: 'textboxspan5' },
-            'unemployment': { id: 'textbox6', spanClass: 'textboxspan6' },
-            'businesses': { id: 'textbox7', spanClass: 'textboxspan7' }
+            'area': { spanClass: 'textboxspan1' },
+            'population': { spanClass: 'textboxspan2' },
+            'gdp_growth': { spanClass: 'textboxspan3' },
+            'gdp_per_capita': { spanClass: 'textboxspan4' },
+            'inflation': { spanClass: 'textboxspan5' },
+            'unemployment': { spanClass: 'textboxspan6' },
+            'businesses': { spanClass: 'textboxspan7' }
         };
 
         Object.keys(mappings).forEach(key => {
@@ -73,49 +73,58 @@ class DynamicStatsUpdater {
      * Update a single textbox element
      */
     updateTextboxElement(mapping, statData) {
-        const textboxElement = document.getElementById(mapping.id);
-        if (!textboxElement) {
-            console.warn(`Textbox element ${mapping.id} not found`);
+        // Find all span elements with the specified class (both desktop and mobile)
+        const spanElements = document.querySelectorAll(`span.${mapping.spanClass}`);
+        
+        if (spanElements.length === 0) {
+            console.warn(`No span elements found for ${mapping.spanClass}`);
             return;
         }
 
-        // Update icon
-        const iconImg = textboxElement.querySelector('img.indic-icons');
-        if (iconImg && statData.icon) {
-            iconImg.src = statData.icon;
+        spanElements.forEach(spanElement => {
+            // Update text content based on the language key
+            this.updateSingleElement(spanElement, statData);
+        });
+
+        console.log(`Updated ${spanElements.length} elements for ${mapping.spanClass}`);
+    }
+
+    /**
+     * Update a single span element with new data
+     */
+    updateSingleElement(spanElement, statData) {
+        const key = spanElement.getAttribute('key');
+        
+        // Update content based on the Key attribute
+        switch(key) {
+            case 'AREAMSR': // Area
+                spanElement.textContent = `${statData.title}: ${statData.value}`;
+                break;
+            case 'POPULMSR': // Population  
+                spanElement.textContent = `მოსახლეობა: ${statData.value} ათასი`;
+                break;
+            case 'GDPMSR': // GDP Growth
+                spanElement.textContent = `მშპ-ს რეალური ზრდა: ${statData.value}%`;
+                break;
+            case 'CURMSR': // GDP per capita
+                spanElement.textContent = `მშპ ერთ სულ მოსახლეზე: ${statData.value} აშშ დოლარი`;
+                break;
+            case 'INFMSR': // Inflation
+                spanElement.textContent = `ინფლაცია: ${statData.value}%`;
+                break;
+            case 'UNEMPMSR': // Unemployment
+                spanElement.textContent = `უმუშევრობის დონე: ${statData.value}%`;
+                break;
+            case 'BUSMSR': // Businesses
+                spanElement.textContent = `რეგისტრირებული ეკონომიკური სუბიექტები: ${statData.value}`;
+                break;
+            default:
+                spanElement.textContent = `${statData.title}: ${statData.value}`;
         }
 
-        // Update text content
-        const spanElement = textboxElement.querySelector(`span.${mapping.spanClass}`);
-        if (spanElement) {
-            // Preserve the original structure but update the content
-            let displayText = '';
-            
-            // Format display text based on statistic type
-            if (mapping.spanClass === 'textboxspan1') { // Area
-                displayText = `${statData.title}: ${statData.value}`;
-            } else if (mapping.spanClass === 'textboxspan2') { // Population
-                displayText = `მოსახლეობა: ${statData.value} ათასი`;
-            } else if (mapping.spanClass === 'textboxspan3') { // GDP Growth
-                displayText = `მშპ-ს რეალური ზრდა: ${statData.value}%`;
-            } else if (mapping.spanClass === 'textboxspan4') { // GDP per capita
-                displayText = `მშპ ერთ სულ მოსახლეზე: ${statData.value} აშშ დოლარი`;
-            } else if (mapping.spanClass === 'textboxspan5') { // Inflation
-                displayText = `ინფლაცია: ${statData.value}%`;
-            } else if (mapping.spanClass === 'textboxspan6') { // Unemployment
-                displayText = `უმუშევრობის დონე: ${statData.value}%`;
-            } else if (mapping.spanClass === 'textboxspan7') { // Businesses
-                displayText = `რეგისტრირებული ეკონომიკური სუბიექტები: ${statData.value}`;
-            } else {
-                displayText = `${statData.title}: ${statData.value}`;
-            }
-
-            spanElement.textContent = displayText;
-
-            // Update data-content attribute for tooltips
-            if (statData.tooltip) {
-                spanElement.setAttribute('data-content', statData.tooltip);
-            }
+        // Update data-content attribute for tooltips
+        if (statData.tooltip) {
+            spanElement.setAttribute('data-content', statData.tooltip);
         }
     }
 
@@ -182,9 +191,12 @@ document.addEventListener('DOMContentLoaded', function() {
     dynamicStats = new DynamicStatsUpdater();
     
     // Auto-start if textbox elements exist
-    if (document.getElementById('textbox')) {
+    const textboxElements = document.querySelector('#textbox') || document.querySelector('#textbox_small_device');
+    if (textboxElements) {
         console.log('Textbox elements found, starting auto-update');
         dynamicStats.startAutoUpdate();
+    } else {
+        console.warn('No textbox elements found - auto-update not started');
     }
 });
 

@@ -76,10 +76,15 @@ class GeostatScraper {
                 $statistics = $this->getFallbackData();
             }
             
-            // Scrape inflation separately from its category page
-            $inflationData = $this->scrapeInflationData();
-            if ($inflationData) {
-                $statistics['inflation'] = $inflationData;
+            // Get inflation data from main homepage (already parsed above)
+            // Inflation data should be included in the main page parsing
+            
+            // Ensure we have all required statistics by merging with fallback
+            $fallbackData = $this->getFallbackData();
+            foreach ($fallbackData as $key => $data) {
+                if (!isset($statistics[$key])) {
+                    $statistics[$key] = $data;
+                }
             }
             
             // Scrape GDP data from main page
@@ -162,9 +167,45 @@ class GeostatScraper {
             // Pattern: "ინფლაცია საქართველოში, 2025 წლის ოქტომბერი"
             $tooltip = $this->extractInflationTooltip($html);
             
-            // Look for the latest inflation value
-            if (preg_match('/(\d+\.\d+)\s*%/u', $html, $matches)) {
-                $value = $matches[1];
+            // Look for the latest inflation value from chart data (most accurate)
+            $value = null;
+            
+            // Try to extract the latest value from chart data arrays
+            if (preg_match('/data-chart="\[\[.*?(\d+\.\d+)\]\]"/u', $html, $matches)) {
+                // Find all decimal numbers in chart data and get the last one (most recent)
+                preg_match_all('/(\d+\.\d+)/', $matches[0], $numbers);
+                if (!empty($numbers[1])) {
+                    // Get the last few values and pick the most reasonable one (4-6% range)
+                    $recentValues = array_slice($numbers[1], -10); // Last 10 values
+                    foreach (array_reverse($recentValues) as $val) {
+                        if ($val >= 3.0 && $val <= 8.0) { // Reasonable inflation range
+                            $value = $val;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            // Fallback patterns if chart data extraction fails
+            if (!$value) {
+                // Pattern 1: Look for percentage after "ინფლაცია" or in latest news
+                if (preg_match('/(?:ინფლაცია|inflation).*?(\d+\.\d+)\s*%/ui', $html, $matches)) {
+                    $value = $matches[1];
+                }
+                // Pattern 2: Look for percentage in table data or spans
+                elseif (preg_match('/<td[^>]*>\s*(\d+\.\d+)\s*%\s*<\/td>/u', $html, $matches)) {
+                    $value = $matches[1];
+                }
+                // Pattern 3: Fallback to any reasonable percentage
+                elseif (preg_match('/(\d+\.\d+)\s*%/u', $html, $matches)) {
+                    $candidateValue = floatval($matches[1]);
+                    if ($candidateValue >= 3.0 && $candidateValue <= 8.0) {
+                        $value = $matches[1];
+                    }
+                }
+            }
+            
+            if ($value) {
                 return [
                     'title' => 'ინფლაცია (%)',
                     'value' => $value,
@@ -312,10 +353,10 @@ class GeostatScraper {
                 'tooltip' => '2024 წელი'
             ],
             'inflation' => [
-                'pattern' => '/ინფლაცია[^>]*>.*?(\d+\.?\d*)\s*%/u',
+                'pattern' => '/<h3[^>]*>ინფლაცია[^<]*<\/h3>\s*<p[^>]*>([^<]+)<\/p>/u',
                 'title' => 'ინფლაცია (%)',
-                'link' => 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia',
-                'tooltip' => 'წლიური (2025 წლის ოქტომბერი)'
+                'link' => '#',
+                'tooltip' => 'წლიური (2025 წლის ნოემბერი)'
             ]
         ];
         
@@ -472,10 +513,10 @@ class GeostatScraper {
             ],
             'inflation' => [
                 'title' => 'ინფლაცია (%)',
-                'value' => '5.2',
-                'link' => 'https://www.geostat.ge/ka/modules/categories/26/samomkhmareblo-fasebis-indeksi-inflatsia',
+                'value' => '4.8',
+                'link' => '#',
                 'image' => 'https://geostat.ge/media/5178/5.png',
-                'tooltip' => $this->generateInflationTooltip(),
+                'tooltip' => 'წლიური (2025 წლის ნოემბერი)',
                 'icon' => 'images/area-chart-200-g.png'
             ],
             'unemployment' => [

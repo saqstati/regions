@@ -775,6 +775,7 @@ header("Pragma: no-cache");
 	</script>
 	<script type="text/javascript" src="lang.js"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="dynamic_stats.js"></script>
 </body>
 
 </html>
