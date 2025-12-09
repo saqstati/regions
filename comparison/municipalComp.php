@@ -70,7 +70,7 @@ $lang_url_en = "municipalComp.php?lang=en";
                 <table class="table table-bordered table-striped table-hover text-light">
                     <?php
                     require '../connection.php';
-                    $query = mysqli_query($link, "SELECT * FROM `municipalitiesaz`");
+                    $query = mysqli_query($link, "SELECT * FROM `municipalities` ORDER BY Name ASC");
                     $i = '';
                     while ($fetch = mysqli_fetch_array($query)) {
                     ?>
@@ -120,8 +120,8 @@ $lang_url_en = "municipalComp.php?lang=en";
         $item[$j++][0] = "ახლადრეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
     }
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `municipalitiesaz` ORDER BY Name ASC");    // Add this helper function at the top of your PHP code
-    function formatNumber($value, $isPopulation = false)
+    $result = mysqli_query($link, "SELECT * FROM `municipalities` ORDER BY Name ASC");    // Add this helper function at the top of your PHP code
+    function formatNumber($value, $isPopulation = false, $isAvgSalary = false)
     {
         if (!is_numeric(str_replace([' ', ','], '', $value))) {
             return $value; // Return as-is if not a number
@@ -132,6 +132,11 @@ $lang_url_en = "municipalComp.php?lang=en";
         
         // For population values, use 1 decimal place
         if ($isPopulation) {
+            return number_format((float)$cleanValue, 1, '.', ' ');
+        }
+        
+        // For average salary, use 1 decimal place
+        if ($isAvgSalary) {
             return number_format((float)$cleanValue, 1, '.', ' ');
         }
         
@@ -157,7 +162,7 @@ $lang_url_en = "municipalComp.php?lang=en";
         $item[$j++][$i] = formatNumber($row["GeneralMortalityRate"]);
         $item[$j++][$i] = formatNumber($row["NaturalIncrease"]);
         $item[$j++][$i] = formatNumber($row["Employees"]);
-        $item[$j++][$i] = formatNumber($row["AVGSalary"]);
+        $item[$j++][$i] = formatNumber($row["AVGSalary"], false, true); // Use 1 decimal place for salary
         $item[$j++][$i] = formatNumber($row["RegEcSub"]);
         $item[$j++][$i] = formatNumber($row["ActEcSub"]);
         $item[$j++][$i] = formatNumber($row["NewlyEcEnt"]);

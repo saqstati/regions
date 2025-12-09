@@ -85,6 +85,30 @@ $lang_url_en = "regionComp.php?lang=en";
     </div>
 
     <?php
+    // Add this helper function at the top of your PHP code
+    function formatNumber($value, $isPopulation = false, $isAvgSalary = false)
+    {
+        if (!is_numeric(str_replace([' ', ','], '', $value))) {
+            return $value; // Return as-is if not a number
+        }
+
+        // Remove existing formatting
+        $cleanValue = str_replace([' ', ','], '', $value);
+        
+        // For population values, use 1 decimal place
+        if ($isPopulation) {
+            return number_format((float)$cleanValue, 1, '.', ' ');
+        }
+        
+        // For average salary, use 1 decimal place
+        if ($isAvgSalary) {
+            return number_format((float)$cleanValue, 1, '.', ' ');
+        }
+        
+        // For other values, format with thousand separators, no decimals
+        return number_format((float)$cleanValue, 0, '.', ' ');
+    }
+
     $j = 0;
     if ($lang == 'en') {
         $item[$j++][0] = "";
@@ -120,7 +144,7 @@ $lang_url_en = "regionComp.php?lang=en";
         $item[$j++][0] = "ახლადრეგისტრირებული ეკონომიკური სუბიექტების რაოდენობა (ერთეული)";
     }
     $i = 0;
-    $result = mysqli_query($link, "SELECT * FROM `regionsaz`");
+    $result = mysqli_query($link, "SELECT * FROM `regions` ORDER BY `Name` ASC");
     while ($row = $result->fetch_assoc()) {
         $i++;
         $j = 0;
@@ -129,20 +153,20 @@ $lang_url_en = "regionComp.php?lang=en";
         } else {
             $item[$j++][$i] = $row["Name"];
         }
-        $item[$j++][$i] = $row["Area"];
-        $item[$j++][$i] = $row["Population"];
-        $item[$j++][$i] = $row["liveBirth"];
-        $item[$j++][$i] = $row["death"];
-        $item[$j++][$i] = $row["naturalIncrease"];
-        $item[$j++][$i] = $row["GDP"];
-        $item[$j++][$i] = $row["GDPPerCapita"];
-        $item[$j++][$i] = $row["UnemploymentRate"];
-        $item[$j++][$i] = $row["EmploymentRate"];
-        $item[$j++][$i] = $row["EmploymentRateIndustry"];
-        $item[$j++][$i] = $row["AverageSalaryIndustry"];
-        $item[$j++][$i] = $row["RegistredEntities"];
-        $item[$j++][$i] = $row["activeEntities"];
-        $item[$j++][$i] = $row["newlyRegistredEntities"];
+        $item[$j++][$i] = formatNumber($row["Area"]);
+        $item[$j++][$i] = formatNumber($row["Population"], true); // Population with 1 decimal
+        $item[$j++][$i] = formatNumber($row["liveBirth"]);
+        $item[$j++][$i] = formatNumber($row["death"]);
+        $item[$j++][$i] = formatNumber($row["naturalIncrease"]);
+        $item[$j++][$i] = formatNumber($row["GDP"]);
+        $item[$j++][$i] = formatNumber($row["GDPPerCapita"]);
+        $item[$j++][$i] = formatNumber($row["UnemploymentRate"]);
+        $item[$j++][$i] = formatNumber($row["EmploymentRate"]);
+        $item[$j++][$i] = formatNumber($row["EmploymentRateIndustry"]);
+        $item[$j++][$i] = formatNumber($row["AverageSalaryIndustry"], false, true); // Salary with 1 decimal
+        $item[$j++][$i] = formatNumber($row["RegistredEntities"]);
+        $item[$j++][$i] = formatNumber($row["activeEntities"]);
+        $item[$j++][$i] = formatNumber($row["newlyRegistredEntities"]);
     }
 
     ?>
