@@ -474,18 +474,7 @@
                 /* =======================
          * SOCIAL STATISTICS
          * ======================= */
-                'social_indicators' => [
-                    'en' => "ENG/Social%20Statistic/Indicators/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
-                ],
-                'social_disability' => [
-                    'en' => "ENG/Social%20Statistic/Disability%20Persons/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/აჭარა%20ა.რ/{$kaSafe}"
-                ],
-                'social_registered' => [
-                    'en' => "ENG/Social%20Statistic/Disabilities%20Registered/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/აჭარა%20ა.რ/{$kaSafe}"
-                ],
+                
                 'social_subsistence' => [
                     'en' => "ENG/Social%20Statistic/Subsistence%20Allowance/Adjara%20A.R/{$en}",
                     'ka' => "სოციალური%20სტატისტიკა/საარსებო/აჭარა%20ა.რ/{$kaSafe}"
@@ -526,14 +515,7 @@
                 /* =======================
          * OTHER MISSING PATHS
          * ======================= */
-                'death_suicide_rate' => [
-                    'en' => "ENG/Demography/Suicide%20rate/{$en}",
-                    'ka' => "დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/{$kaSafe}"
-                ],
-                'healthcare_indicators' => [
-                    'en' => "ENG/Healthcare/Indicators/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
-                ],
+                
                 'trading_financial_indices' => [
                     'en' => "ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Adjara%20A.R/{$en}%20Municipality",
                     'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
