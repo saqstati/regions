@@ -211,10 +211,7 @@
                     'en' => "ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/{$en}",
                     'ka' => "დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/{$kaSafe}"
                 ],
-                'divorce_rate' => [
-                    'en' => "ENG/Demography/Crude%20divorce%20rate/{$en}",
-                    'ka' => "დემოგრაფია/განქორწინების%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
-                ],
+
 
                 /* =======================
          * EMPLOYMENT & SALARIES
@@ -260,21 +257,7 @@
                     'ka' => "მოსახლეობის%20აღწერა/კერძო%20შინამეურნეობები/{$kaSafe}"
                 ],
 
-                /* =======================
-         * BIRTH - ADDITIONAL
-         * ======================= */
-                'birth_by_sex' => [
-                    'en' => "ENG/Demography/Number%20of%20live%20births%20by%20sex/{$en}",
-                    'ka' => "დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/{$kaSafe}"
-                ],
 
-                /* =======================
-         * DEATH - ADDITIONAL
-         * ======================= */
-                'death_suicide_rate' => [
-                    'en' => "ENG/Demography/Suicide%20rate/{$en}",
-                    'ka' => "დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/{$kaSafe}"
-                ],
 
                 /* =======================
          * BUSINESS - ADDITIONAL
@@ -546,6 +529,14 @@
                 'organizational_newly' => [
                     'en' => "ENG/byOrganization-legalForms/Number%20of%20entities%20newly%20registered%20in%20Georgia%20by%20organizational-legal%20form/Adjara%20A.R/{$en}",
                     'ka' => "ორგანიზაციულ-სამართლებრივი%20ფორმების%20მიხედვით/ახლადრეგისტრირებულ%20სუბიექტთა%20რაოდენობა/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+
+                /* =======================
+         * AGRICULTURE
+         * ======================= */
+                'agriculture_land' => [
+                    'en' => "ENG/Share%20of%20Agriculture%20Land%20Area/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "soflis%20meurneoba/ეკო_აქტ/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
             ];
 
@@ -1159,12 +1150,12 @@
             </tr>
             <tr>
                 <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $budget['1']; ?>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Budget/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიუჯეტი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                    <span class="float-right"><a href="<?= getExcelPath('budget_main', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
             <tr>
                 <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $agriculture['1']; ?>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Share%20of%20Agriculture%20Land%20Area/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/soflis%20meurneoba/ეკო_აქტ/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                    <span class="float-right"><a href="<?= getExcelPath('agriculture_land', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
             <tr>
