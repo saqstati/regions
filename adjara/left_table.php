@@ -223,6 +223,206 @@
                     'en' => "ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/{$en}",
                     'ka' => "დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/{$kaSafe}"
                 ],
+
+                /* =======================
+         * DEMOGRAPHY - ADDITIONAL BIRTH
+         * ======================= */
+                'birth_stillbirths' => [
+                    'en' => "ENG/Demography/Number%20of%20stillbirths/{$en}",
+                    'ka' => "დემოგრაფია/მკვდრადშობილთა%20რიცხოვნობა/{$kaSafe}"
+                ],
+                'birth_stillbirths_by_sex' => [
+                    'en' => "ENG/Demography/Number%20of%20stillbirths%20by%20sex/Adjara%20A.R/{$en}",
+                    'ka' => "დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * DEMOGRAPHY - ADDITIONAL DEATH
+         * ======================= */
+                'death_by_age_sex' => [
+                    'en' => "ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/{$en}",
+                    'ka' => "დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/{$kaSafe}"
+                ],
+                'death_infant_rate' => [
+                    'en' => "ENG/Demography/Infant%20mortality%20rate/{$en}",
+                    'ka' => "დემოგრაფია/ჩვილ%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/{$kaSafe}"
+                ],
+                'death_under5_rate' => [
+                    'en' => "ENG/Demography/Under-5%20mortality%20rate/{$en}",
+                    'ka' => "დემოგრაფია/5%20წლამდე%20ასაკის%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/{$municipal_info['ka_full']}"
+                ],
+                'death_by_causes_sex' => [
+                    'en' => "ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/{$en}",
+                    'ka' => "დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/{$municipal_info['ka_full']}"
+                ],
+                'death_by_causes_urban' => [
+                    'en' => "ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20by%20urban-rural%20settlements/{$en}",
+                    'ka' => "დემოგრაფია/გარდაცვალების%20მიზეზები%20საქალაქო%20სასოფლო/{$municipal_info['ka_full']}"
+                ],
+                'death_by_causes_age' => [
+                    'en' => "ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20by%20age%20groups/{$en}",
+                    'ka' => "დემოგრაფია/მიზეზები%20ძირითადი%20კლასების%20და%20ასაკის%20მიხედვით/{$municipal_info['ka_full']}"
+                ],
+                'death_suicide' => [
+                    'en' => "ENG/Demography/Deaths%20from%20suicide/{$en}",
+                    'ka' => "დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/{$kaSafe}"
+                ],
+                'death_suicide_rate' => [
+                    'en' => "ENG/Demography/Suicide%20rate/{$en}",
+                    'ka' => "დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/{$kaSafe}"
+                ],
+
+                /* =======================
+         * MARRIAGE - ADDITIONAL
+         * ======================= */
+                'marriage_married_people' => [
+                    'en' => "ENG/Demography/Number%20of%20married%20people/{$en}",
+                    'ka' => "დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/{$kaSafe}"
+                ],
+                'marriage_mean_age' => [
+                    'en' => "ENG/Demography/Mean%20age%20of%20spouses/{$en}",
+                    'ka' => "დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/{$kaSafe}"
+                ],
+
+                /* =======================
+         * BUSINESS SECTOR
+         * ======================= */
+                'business_turnover' => [
+                    'en' => "ENG/Business%20Sector/turnover/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/ბრუნვა/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_production' => [
+                    'en' => "ENG/Business%20Sector/Production%20Value/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/პროდუქციის%20გამოშვება/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_personnel_costs' => [
+                    'en' => "ENG/Business%20Sector/Pesronal%20Costs/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/შრომითი%20დანახარჯები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_purchases' => [
+                    'en' => "ENG/Business%20Sector/Purchase%20of%20good%20and%20services/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/საქონლისა%20და%20მომსახურების%20ყიდვები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_purchases_resale' => [
+                    'en' => "ENG/Business%20Sector/Purchase%20of%20good%20and%20services%20for%20resale/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/გადასაყიდად%20განკუთვნილი%20საქონლისა%20და%20მომსახურების%20ყიდვები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_value_added' => [
+                    'en' => "ENG/Business%20Sector/Value%20added/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/დამატებული%20ღირებულება/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_intermediate' => [
+                    'en' => "ENG/Business%20Sector/Intermediate%20consumption/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/შუალედური%20მოხმარება/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_investment' => [
+                    'en' => "ENG/Business%20Sector/Investment%20in%20fixed%20assets/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20სექტორი/ინვესტიცია%20ძირითად%20კაპიტალში/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * BUDGET
+         * ======================= */
+                'budget_main' => [
+                    'en' => "ENG/Budget/Adjara%20A.R/{$en}",
+                    'ka' => "ბიუჯეტი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * CONSTRUCTION
+         * ======================= */
+                'construction_permissions' => [
+                    'en' => "ENG/Construction/Permissions%20granted/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'construction_completed' => [
+                    'en' => "ENG/Construction/Completed%20Construction/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "მშენებლობა/დასრულებული%20მშენებლობა/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * TRADING
+         * ======================= */
+                'trading_markets_legal' => [
+                    'en' => "ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20organizational%20legal%20forms%20in%20Georgia/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ორგანიზაციულ-სამართლებლივი%20ფორმების%20მიხედვით/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'trading_markets_ownership' => [
+                    'en' => "ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20ownership%20type%20in%20Georgia/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20საკუთრების%20ფორმის%20მიხედვით/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'trading_markets_type' => [
+                    'en' => "ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20type%20in%20Georgia/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ტიპების%20მიხედვით/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'trading_markets_days' => [
+                    'en' => "ENG/Trading/Number%20of%20markets%20and%20fairs%20on%20days%20of%20trade/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ვაჭრობის%20დღეთა%20მიხედვით/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'trading_employed' => [
+                    'en' => "ENG/Trading/Average%20annual%20number%20of%20employed%20persons/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20დირექციებში%20დასაქმებულთა%20რაოდენობა/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'trading_sellers' => [
+                    'en' => "ENG/Trading/Number%20of%20market-place%20and%20sellers%20on%20the%20markets%20and%20fairs/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრებში%20და%20ბაზრობებში%20სავაჭრო%20ადგილების%20და%20მოვაჭრეთა%20რაოდენობა/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'trading_financial' => [
+                    'en' => "ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+
+                /* =======================
+         * TRANSPORT AND STORAGE
+         * ======================= */
+                'transport_roads' => [
+                    'en' => "ENG/TransportAndStorage/Length%20of%20transport%20ways/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ტრანსპორტი%20და%20დასაწყობება/საერთო%20სარგებლობის%20საავტომობილო%20გზების%20სიგრძე/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+
+                /* =======================
+         * HEALTHCARE
+         * ======================= */
+                'healthcare_indicators' => [
+                    'en' => "ENG/Healthcare/Indicators/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_abortions' => [
+                    'en' => "ENG/Healthcare/Abortions/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/აბორტები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_anemia' => [
+                    'en' => "ENG/Healthcare/Anemia/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/ანემია/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_diabetes' => [
+                    'en' => "ENG/Healthcare/Diabetes/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/დიაბეტი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_cancer' => [
+                    'en' => "ENG/Healthcare/Cancer/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/კიბო/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_circulatory' => [
+                    'en' => "ENG/Healthcare/Circulatory/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_respiratory' => [
+                    'en' => "ENG/Healthcare/Respiratory/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_syphilis' => [
+                    'en' => "ENG/Healthcare/Syphilis/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_aids' => [
+                    'en' => "ENG/Healthcare/AIDS/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/შიდსი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'healthcare_tuberculosis' => [
+                    'en' => "ENG/Healthcare/Tuberculosis/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
             ];
 
             if (!isset($map[$key][$lang_code])) {
@@ -371,7 +571,7 @@
                     <?php echo $birth['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Sex%20ratio%20at%20birth/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('birth_sex_ratio', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia3">
@@ -379,7 +579,7 @@
                     <?php echo $birth['6']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20childbearing/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('birth_mean_age', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia3">
@@ -387,7 +587,7 @@
                     <?php echo $birth['7']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/მკვდრადშობილთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('birth_stillbirths', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia3">
@@ -395,7 +595,7 @@
                     <?php echo $birth['8']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20stillbirths%20by%20sex/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/მკვდართშობილები%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('birth_stillbirths_by_sex', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -407,7 +607,7 @@
                     <?php echo $death['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_total', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -415,7 +615,7 @@
                     <?php echo $death['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20death%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_rate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -423,7 +623,7 @@
                     <?php echo $death['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_by_age_sex', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -431,7 +631,7 @@
                     <?php echo $death['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Infant%20mortality%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ჩვილ%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_infant_rate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -439,7 +639,7 @@
                     <?php echo $death['6']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Under-5%20mortality%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/5%20წლამდე%20ასაკის%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_under5_rate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -447,14 +647,14 @@
                     <?php echo $death['7']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20sex/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20სქესის%20მიხედვით/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_by_causes_sex', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             <tr class="informacia4">
                 <td>
                     <?php echo $death['8']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20by%20urban-rural%20settlements/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/გარდაცვალების%20მიზეზები%20საქალაქო%20სასოფლო/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_by_causes_urban', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -462,7 +662,7 @@
                     <?php echo $death['9']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20deaths%20by%20chapters%20of%20ICD-10%20and%20by%20age%20groups/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/მიზეზები%20ძირითადი%20კლასების%20და%20ასაკის%20მიხედვით/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_by_causes_age', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -470,7 +670,7 @@
                     <?php echo $death['10']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Deaths%20from%20suicide/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_suicide', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia4">
@@ -490,7 +690,7 @@
                     <?php echo $naturalIncrease['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Natural%20increase/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ბუნებრივი%20მატება/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('natural_increase', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia5">
@@ -498,7 +698,7 @@
                     <?php echo $naturalIncrease['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Natural%20increase%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ბუნებრივი%20მატების%20კოეფიციენტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('natural_increase_rate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -510,7 +710,7 @@
                     <?php echo $marriage['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20registered%20marriages/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('marriage_total', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia6">
@@ -518,7 +718,7 @@
                     <?php echo $marriage['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20marriage%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20ზოგადი%20კოეფიციენტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('marriage_rate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia6">
@@ -526,7 +726,7 @@
                     <?php echo $marriage['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20married%20people/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('marriage_married_people', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia6">
@@ -534,7 +734,7 @@
                     <?php echo $marriage['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Mean%20age%20of%20spouses/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('marriage_mean_age', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -546,7 +746,7 @@
                     <?php echo $divorce['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20registered%20divorces/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/რეგისტრირებულ%20განქორწინებათა%20რაოდენობა/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('divorce_total', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia7">
@@ -654,7 +854,7 @@
                     <?php echo $businessSector['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/turnover/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/ბრუნვა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_turnover', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
@@ -662,7 +862,7 @@
                     <?php echo $businessSector['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Production%20Value/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/პროდუქციის%20გამოშვება/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_production', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
@@ -670,7 +870,7 @@
                     <?php echo $businessSector['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Pesronal%20Costs/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/შრომითი%20დანახარჯები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_personnel_costs', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
@@ -678,7 +878,7 @@
                     <?php echo $businessSector['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Purchase%20of%20good%20and%20services/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/საქონლისა%20და%20მომსახურების%20ყიდვები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_purchases', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
@@ -686,7 +886,7 @@
                     <?php echo $businessSector['6']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Purchase%20of%20good%20and%20services%20for%20resale/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/გადასაყიდად%20განკუთვნილი%20საქონლისა%20და%20მომსახურების%20ყიდვები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_purchases_resale', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
@@ -694,7 +894,7 @@
                     <?php echo $businessSector['7']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Value%20added/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/დამატებული%20ღირებულება/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_value_added', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
@@ -702,7 +902,7 @@
                     <?php echo $businessSector['8']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Sector/Intermediate%20consumption/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20სექტორი/შუალედური%20მოხმარება/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_intermediate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia10">
