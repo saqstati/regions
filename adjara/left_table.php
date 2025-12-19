@@ -35,6 +35,15 @@
                 'ka_full' => 'ქედის მუნიციპალიტეტი',
                 'ka_short' => 'ქედა'
             ];
+        } elseif (strpos($current_page, 'qobuleti') !== false || strpos($current_page, 'kobuleti') !== false) {
+            $municipal_info = [
+                'en_name' => 'Kobuleti',
+                'en_full' => 'Kobuleti Municipality',
+                'en_short' => 'Kobuleti',
+                'ka_name' => 'ქობულეთი',
+                'ka_full' => 'ქობულეთის მუნიციპალიტეტი',
+                'ka_short' => 'ქობულეთი'
+            ];
         } else {
             // Fallback
             $municipal_info = [
