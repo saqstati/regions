@@ -483,6 +483,38 @@
                     'en' => "ENG/Healthcare/Tuberculosis/Adjara%20A.R/{$en}",
                     'ka' => "ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/{$kaSafe}"
                 ],
+
+                /* =======================
+         * BUSINESS REGISTER
+         * ======================= */
+                'business_register_entities' => [
+                    'en' => "ENG/Business%20Register/Registered%20entities%20per%201000%20persons/Adjara%20A.R/{$en}",
+                    'ka' => "ბიზნეს%20რეგისტრი/რეგისტრირებული%20სუბიექტები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'business_register_newly' => [
+                    'en' => "ENG/Business%20Register/Number%20of%20newly%20registered%20business%20entities%20in%20Georgia/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ბიზნეს%20რეგისტრი/ახლად%20რეგისტრირებული%20ბიზნეს%20სუბიექტები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'business_register_active' => [
+                    'en' => "ENG/Business%20Register/Number%20of%20active%20business%20entities%20registered%20in%20Georgia/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ბიზნეს%20რეგისტრი/ეკონომიკურად%20აქტიური%20ბიზნეს%20სუბიექტების%20რაოდენობა/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'business_register_public' => [
+                    'en' => "ENG/Business%20Register/Number%20of%20public%20institutions/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ბიზნეს%20რეგისტრი/საჯარო%20დაწესებულებების%20რაოდენობა/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+
+                /* =======================
+         * ECONOMIC ACTIVITY TYPES
+         * ======================= */
+                'economic_activity_registered' => [
+                    'en' => "ENG/byKindOfEconomicActivity/Number%20of%20registered%20entities%20by%20kind%20of%20economic%20activity/Adjara%20A.R/{$en}",
+                    'ka' => "ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'economic_activity_active' => [
+                    'en' => "ENG/byKindOfEconomicActivity/Number%20of%20active%20entities%20by%20kind%20of%20economic%20activity/Adjara%20A.R/{$en}",
+                    'ka' => "ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/აჭარა%20ა.რ/{$kaSafe}"
+                ],
             ];
 
             if (!isset($map[$key][$lang_code])) {
@@ -990,7 +1022,7 @@
                     <?php echo $businessRegister['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Registered%20entities%20per%201000%20persons/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/რეგისტრირებული%20სუბიექტები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_register_entities', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia11">
@@ -998,7 +1030,7 @@
                     <?php echo $businessRegister['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20newly%20registered%20business%20entities%20in%20Georgia/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/ახლად%20რეგისტრირებული%20ბიზნეს%20სუბიექტები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_register_newly', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia11">
@@ -1006,7 +1038,7 @@
                     <?php echo $businessRegister['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20active%20business%20entities%20registered%20in%20Georgia/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/ეკონომიკურად%20აქტიური%20ბიზნეს%20სუბიექტების%20რაოდენობა/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_register_active', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia11">
@@ -1014,7 +1046,7 @@
                     <?php echo $businessRegister['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Business%20Register/Number%20of%20public%20institutions/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ბიზნეს%20რეგისტრი/საჯარო%20დაწესებულებების%20რაოდენობა/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('business_register_public', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -1026,7 +1058,7 @@
                     <?php echo $accordingToTheTypesOfActivities['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byKindOfEconomicActivity/Number%20of%20registered%20entities%20by%20kind%20of%20economic%20activity/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('economic_activity_registered', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia12">
@@ -1034,7 +1066,7 @@
                     <?php echo $accordingToTheTypesOfActivities['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/byKindOfEconomicActivity/Number%20of%20active%20entities%20by%20kind%20of%20economic%20activity/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/რეგისტრირებულ%20მოქმედ%20სუბიექტთა%20რაოდენობა%20ეკონომიკური%20საქმიანობის%20სახეების%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('economic_activity_active', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
