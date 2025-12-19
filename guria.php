@@ -766,7 +766,7 @@ include "config.php";
                                 <?php echo $tourism[2]; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/3/tourism/place%20of%20residence.xls' : '/regions/regions/3/turizmi/ganawileba%20sacxovrebeli%20adgilis%20mixedvit.xls'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/3/tourism/place%20of%20residence.xlsx' : '/regions/regions/3/turizmi/ganawileba%20sacxovrebeli%20adgilis%20mixedvit.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr class="informacia11">
@@ -774,7 +774,7 @@ include "config.php";
                                 <?php echo $tourism[3]; ?>
                             </td>
                             <td>
-                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/3/tourism/visited%20regions.xls' : '/regions/regions/3/turizmi/ganawileba%20monaxulebuli%20regionebit.xls'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                                <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/regionseng/3/tourism/visited%20regions.xlsx' : '/regions/regions/3/turizmi/ganawileba%20monaxulebuli%20regionebit.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                             </td>
                         </tr>
                         <tr>
