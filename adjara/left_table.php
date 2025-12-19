@@ -466,6 +466,78 @@
                     'en' => "ENG/Healthcare/Tuberculosis/Adjara%20A.R/{$en}",
                     'ka' => "ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/{$kaSafe}"
                 ],
+                'healthcare_hepatitis' => [
+                    'en' => "ENG/Healthcare/Hepatitis/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/ჰეპატიტი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * SOCIAL STATISTICS
+         * ======================= */
+                'social_indicators' => [
+                    'en' => "ENG/Social%20Statistic/Indicators/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'social_disability' => [
+                    'en' => "ENG/Social%20Statistic/Disability%20Persons/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'social_registered' => [
+                    'en' => "ENG/Social%20Statistic/Disabilities%20Registered/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'social_subsistence' => [
+                    'en' => "ENG/Social%20Statistic/Subsistence%20Allowance/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/საარსებო/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'social_receiving' => [
+                    'en' => "ENG/Social%20Statistic/Receiving/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/მიმღები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'social_beneficiaries' => [
+                    'en' => "ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * EDUCATION
+         * ======================= */
+                'education_preschool' => [
+                    'en' => "ENG/Education/Preschool%20and%20Education%20Institutions/Adjara%20A.R/{$en}",
+                    'ka' => "განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'education_general' => [
+                    'en' => "ENG/Education/General%20Educational%20Institution/Adjara%20A.R/{$en}",
+                    'ka' => "განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'education_vocational' => [
+                    'en' => "ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/{$en}",
+                    'ka' => "განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * CULTURE
+         * ======================= */
+                'culture' => [
+                    'en' => "ENG/Culture/Adjara%20A.R/{$en}",
+                    'ka' => "კულტურა/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * OTHER MISSING PATHS
+         * ======================= */
+                'death_suicide_rate' => [
+                    'en' => "ENG/Demography/Suicide%20rate/{$en}",
+                    'ka' => "დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/{$kaSafe}"
+                ],
+                'healthcare_indicators' => [
+                    'en' => "ENG/Healthcare/Indicators/Adjara%20A.R/{$en}",
+                    'ka' => "ჯანდაცვა/მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'trading_financial_indices' => [
+                    'en' => "ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
 
                 /* =======================
          * BUSINESS REGISTER
@@ -579,6 +651,22 @@
                 'hotels_employees' => [
                     'en' => "ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/{$en}%20Municipality",
                     'ka' => "სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * SOCIAL STATISTICS
+         * ======================= */
+                'social_indicators' => [
+                    'en' => "ENG/Social%20Statistic/Indicators/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/მაჭვენებლები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'social_disability' => [
+                    'en' => "ENG/Social%20Statistic/Disability%20Persons/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'social_registered' => [
+                    'en' => "ENG/Social%20Statistic/Disabilities%20Registered/Adjara%20A.R/{$en}",
+                    'ka' => "სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
             ];
 
@@ -835,7 +923,7 @@
                     <?php echo $death['11']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Suicide%20rate/C.%20Batumi.xlsx' : '/regions/municipal/დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('death_suicide_rate', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -1277,7 +1365,7 @@
                     <?php echo $trading['8']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_financial_indices', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -1340,7 +1428,7 @@
                     <?php echo $healthCareAndSocialSecurity['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Indicators/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/მაჩვენებლები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_indicators', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1348,7 +1436,7 @@
                     <?php echo $healthCareAndSocialSecurity['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Abortions/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/აბორტები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_abortions', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1356,7 +1444,7 @@
                     <?php echo $healthCareAndSocialSecurity['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Anemia/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/ანემია/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_anemia', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1364,7 +1452,7 @@
                     <?php echo $healthCareAndSocialSecurity['6']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Diabetes/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/დიაბეტი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_diabetes', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1372,7 +1460,7 @@
                     <?php echo $healthCareAndSocialSecurity['7']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Cancer/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/კიბო/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_cancer', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1380,7 +1468,7 @@
                     <?php echo $healthCareAndSocialSecurity['8']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Circulatory/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_circulatory', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1388,7 +1476,7 @@
                     <?php echo $healthCareAndSocialSecurity['9']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Respiratory/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_respiratory', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1396,7 +1484,7 @@
                     <?php echo $healthCareAndSocialSecurity['10']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Syphilis/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_syphilis', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1404,7 +1492,7 @@
                     <?php echo $healthCareAndSocialSecurity['11']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/AIDS/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/შიდსი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_aids', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1412,7 +1500,7 @@
                     <?php echo $healthCareAndSocialSecurity['12']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Tuberculosis/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_tuberculosis', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia20">
@@ -1420,7 +1508,7 @@
                     <?php echo $healthCareAndSocialSecurity['13']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Healthcare/Hepatitis/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/ჯანდაცვა/ჰეპატიტი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('healthcare_hepatitis', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -1432,7 +1520,7 @@
                     <?php echo $healthCareAndSocialSecurity['15']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Indicators/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_indicators', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1440,7 +1528,7 @@
                     <?php echo $healthCareAndSocialSecurity['16']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disability%20Persons/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/დევნილი%20შშმ%20პირები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_disability', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1448,7 +1536,7 @@
                     <?php echo $healthCareAndSocialSecurity['17']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Disabilities%20Registered/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_registered', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1456,7 +1544,7 @@
                     <?php echo $healthCareAndSocialSecurity['18']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Subsistence%20Allowance/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/საარსებო/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_subsistence', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1464,7 +1552,7 @@
                     <?php echo $healthCareAndSocialSecurity['19']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Receiving/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/მიმღები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_receiving', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1472,7 +1560,7 @@
                     <?php echo $healthCareAndSocialSecurity['20']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_beneficiaries', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -1484,7 +1572,7 @@
                     <?php echo $education['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/Preschool%20and%20Education%20Institutions/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('education_preschool', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia22">
@@ -1492,7 +1580,7 @@
                     <?php echo $education['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/General%20Educational%20Institution/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('education_general', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia22">
@@ -1500,12 +1588,12 @@
                     <?php echo $education['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Batumi.xlsx' : '/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('education_vocational', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
                 <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $culture['1']; ?>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Culture/Adjara%20A.R/C.%20Batumi.xlsx' : '/regions/municipal/კულტურა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                    <span class="float-right"><a href="<?= getExcelPath('culture', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
 
