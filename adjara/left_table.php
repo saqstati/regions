@@ -538,6 +538,48 @@
                     'en' => "ENG/Share%20of%20Agriculture%20Land%20Area/Adjara%20A.R/{$en}%20Municipality",
                     'ka' => "soflis%20meurneoba/ეკო_აქტ/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
+
+                /* =======================
+         * HOTELS AND ACCOMMODATION
+         * ======================= */
+                'hotels_accommodation' => [
+                    'en' => "ENG/Hotels/Accommodation/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმრო%20ობიექტები/სასტუმრო%20ობიექტები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'hotels_visitors_residents' => [
+                    'en' => "ENG/Hotels/Visitors%20Residents/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმრო%20ობიექტები/ვიზიტორები%20რეზიდენტები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'hotels_visitors_nonresidents' => [
+                    'en' => "ENG/Hotels/Visitors%20non%20residents/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმრო%20ობიექტები/ვიზიტორები%20არარეზიდენტები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'hotels_nights_residents' => [
+                    'en' => "ENG/Hotels/Nights%20spent%20Residents/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმრო%20ობიექტები/ღამეები%20რეზიდენტები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+
+
+
+                /* =======================
+         * HOTELS - Detailed
+         * ======================= */
+                'hotels_number_area' => [
+                    'en' => "ENG/Hotels/Number%20of%20hotels%20and%20hotel-type%20establishments%20and%20their%20total%20area/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმროები/სასტუმროების%20რაოდენობა%20და%20ფართობი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'hotels_rooms' => [
+                    'en' => "ENG/Hotels/Number%20of%20Rooms%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმროები/ნომრების%20რაოდენობა%20სასტუმროებსა%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'hotels_guests' => [
+                    'en' => "ENG/Hotels/Guests/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმროები/სტუმრები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'hotels_employees' => [
+                    'en' => "ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/{$kaSafe}"
+                ],
             ];
 
             if (!isset($map[$key][$lang_code])) {
@@ -1167,7 +1209,7 @@
                     <?php echo $construction['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Permissions%20granted/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('construction_permissions', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia16">
@@ -1175,7 +1217,7 @@
                     <?php echo $construction['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Construction/Completed%20Construction/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/მშენებლობა/დასრულებული%20მშენებლობა/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('construction_completed', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
@@ -1187,7 +1229,7 @@
                     <?php echo $trading['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20organizational%20legal%20forms%20in%20Georgia/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ორგანიზაციულ-სამართლებლივი%20ფორმების%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_markets_legal', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia17">
@@ -1195,7 +1237,7 @@
                     <?php echo $trading['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20ownership%20type%20in%20Georgia/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20საკუთრების%20ფორმის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_markets_ownership', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia17">
@@ -1203,7 +1245,7 @@
                     <?php echo $trading['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20by%20type%20in%20Georgia/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ტიპების%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_markets_type', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia17">
@@ -1211,7 +1253,7 @@
                     <?php echo $trading['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20markets%20and%20fairs%20on%20days%20of%20trade/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20რაოდენობა%20ვაჭრობის%20დღეთა%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_markets_days', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia17">
@@ -1219,7 +1261,7 @@
                     <?php echo $trading['6']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Average%20annual%20number%20of%20employed%20persons/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრების%20და%20ბაზრობების%20დირექციებში%20დასაქმებულთა%20რაოდენობა/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_employed', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia17">
@@ -1227,7 +1269,7 @@
                     <?php echo $trading['7']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Trading/Number%20of%20market-place%20and%20sellers%20on%20the%20markets%20and%20fairs/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ვაჭრობა/ბაზრებში%20და%20ბაზრობებში%20სავაჭრო%20ადგილების%20და%20მოვაჭრეთა%20რაოდენობა/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('trading_sellers', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia17">
@@ -1247,7 +1289,7 @@
                     <?php echo $hotels['2']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20hotels%20and%20hotel-type%20establishments%20and%20their%20total%20area/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20რაოდენობა%20და%20ფართობი/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('hotels_number_area', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia18">
@@ -1255,7 +1297,7 @@
                     <?php echo $hotels['3']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Rooms%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/ნომრების%20რაოდენობა%20სასტუმროებსა%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('hotels_rooms', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia18">
@@ -1263,7 +1305,7 @@
                     <?php echo $hotels['4']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Guests/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სტუმრები/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('hotels_guests', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia18">
@@ -1271,12 +1313,12 @@
                     <?php echo $hotels['5']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Hotels/Number%20of%20Employees%20in%20Hotels%20and%20Hotel-type%20enterprises/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/სასტუმროები/სასტუმროების%20და%20სასტუმროს%20ტიპის%20დაწესებულებებში%20დასაქმებულთა%20რაოდენობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქ.%20ბათუმი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('hotels_employees', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr>
                 <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $transportAndStorage['1']; ?>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/TransportAndStorage/Length%20of%20transport%20ways/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx' : '/regions/municipal/ტრანსპორტი%20და%20დასაწყობება/საერთო%20სარგებლობის%20საავტომობილო%20გზების%20სიგრძე/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                    <span class="float-right"><a href="<?= getExcelPath('transport_roads', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
             <style>
