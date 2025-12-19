@@ -44,6 +44,33 @@
                 'ka_full' => 'ქობულეთის მუნიციპალიტეტი',
                 'ka_short' => 'ქობულეთი'
             ];
+        } elseif (strpos($current_page, 'shuaxevi') !== false) {
+            $municipal_info = [
+                'en_name' => 'Shuakhevi',
+                'en_full' => 'Shuakhevi Municipality',
+                'en_short' => 'Shuakhevi',
+                'ka_name' => 'შუახევი',
+                'ka_full' => 'შუახევის მუნიციპალიტეტი',
+                'ka_short' => 'შუახევი'
+            ];
+        } elseif (strpos($current_page, 'xelvachauri') !== false || strpos($current_page, 'khelvachauri') !== false) {
+            $municipal_info = [
+                'en_name' => 'Khelvachauri',
+                'en_full' => 'Khelvachauri Municipality',
+                'en_short' => 'Khelvachauri',
+                'ka_name' => 'ხელვაჩაური',
+                'ka_full' => 'ხელვაჩაურის მუნიციპალიტეტი',
+                'ka_short' => 'ხელვაჩაური'
+            ];
+        } elseif (strpos($current_page, 'xulo') !== false || strpos($current_page, 'khulo') !== false) {
+            $municipal_info = [
+                'en_name' => 'Khulo',
+                'en_full' => 'Khulo Municipality',
+                'en_short' => 'Khulo',
+                'ka_name' => 'ხულო',
+                'ka_full' => 'ხულოს მუნიციპალიტეტი',
+                'ka_short' => 'ხულო'
+            ];
         } else {
             // Fallback
             $municipal_info = [
