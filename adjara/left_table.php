@@ -3,12 +3,12 @@
     <table class="table">
         <?php
         include('../connection.php');
-        
+
         // Ensure config is loaded for language support
         if (!isset($lang)) {
             include('../config.php');
         }
-        
+
         // Determine language code for paths and table selection
         $lang_code = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'en' : 'ka';
         $table = ($lang_code == 'en') ? 'municipal_statistics_en' : 'municipal_statistics';
@@ -84,37 +84,154 @@
 
         // Helper function to generate dynamic municipality paths
         // Helper: dynamic path generator
-        function getExcelPath($section_key, $municipal_info, $lang_code)
+        function getExcelPath($key, $municipal_info, $lang_code)
         {
             $base = '/regions/municipal/';
-            $en_name = $municipal_info['en_short'];
-            $ka_name = (strpos($municipal_info['ka_name'], 'ქ.') !== false) ? $municipal_info['ka_short'] : $municipal_info['ka_name'];
 
-            $paths = [
-                'main_info_area'      => [$lang_code == 'en' ? 'ENG/Main%20Information/Municipality%20area/' : 'ძირითადი%20ინფორმაცია/მუნიციპალიტეტის%20ფართობი/', $municipal_info['en_full'], $municipal_info['ka_name']],
-                'main_info_admin'     => [$lang_code == 'en' ? 'ENG/Main%20Information/Administrative%20structure/Adjara%20A.R/' : 'ძირითადი%20ინფორმაცია/ადმინისტრაციული%20მოწყობა/აჭარა%20ა.რ/', $en_name, $ka_name],
+            $en = $municipal_info['en_name'];
+            $enShort = $municipal_info['en_short'];
 
-                'pop_census_urban_rural' => [$lang_code == 'en' ? 'ENG/Population%20census%20pre/urban-rural%20settlements/Adjara%20A.R/' : 'მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/აჭარა%20ა.რ/', $en_name, $ka_name],
-                'pop_census_by_sex'       => [$lang_code == 'en' ? 'ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/' : 'მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/', $en_name, $ka_name],
+            $ka = $municipal_info['ka_name'];
+            $kaSafe = (strpos($ka, 'ქ.') !== false) ? $municipal_info['ka_short'] : $ka;
 
-                'population_number'       => [$lang_code == 'en' ? 'ENG/Population/Number%20of%20population/' : 'მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/', $en_name, $municipal_info['ka_name']],
-                'population_urban_share'  => [$lang_code == 'en' ? 'ENG/Population/Share%20of%20urban%20population/' : 'მოსახლეობა/საქალაქო%20დასახლებაში%20მცხოვრები%20მოსახლეობის%20წილი/', $en_name, $municipal_info['ka_name']],
-                'population_density'      => [$lang_code == 'en' ? 'ENG/Population/Density%20of%20population/' : 'მოსახლეობა/მოსახლეობის%20სიმჭიდროვე/', $en_name, $municipal_info['ka_name']],
+            $map = [
 
-                // Add more as needed — just follow the pattern
-                'birth_live'              => [$lang_code == 'en' ? 'ENG/Demography/Number%20of%20live%20births/' : 'დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა/', $en_name, $municipal_info['ka_name']],
-                // ... continue for all sections
+                /* =======================
+         * MAIN INFORMATION
+         * ======================= */
+                'main_info_area' => [
+                    'en' => "ENG/Main%20Information/Municipality%20area/{$municipal_info['en_full']}",
+                    'ka' => "ძირითადი%20ინფორმაცია/მუნიციპალიტეტის%20ფართობი/{$ka}"
+                ],
+                'main_info_admin' => [
+                    'en' => "ENG/Main%20Information/Administrative%20structure/Adjara%20A.R/{$enShort}",
+                    'ka' => "ძირითადი%20ინფორმაცია/ადმინისტრაციული%20მოწყობა/აჭარა%20ა.რ/{$ka}"
+                ],
+
+                /* =======================
+         * POPULATION CENSUS (PRE)
+         * ======================= */
+                'pop_urban_rural' => [
+                    'en' => "ENG/Population%20census%20pre/urban-rural%20settlements/Adjara%20A.R/{$en}",
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'pop_by_sex' => [
+                    'en' => "ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/{$en}",
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+
+                /* =======================
+         * POPULATION
+         * ======================= */
+                'population_number' => [
+                    'en' => "ENG/Population/Number%20of%20population/{$en}",
+                    'ka' => "მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/{$ka}"
+                ],
+                'population_urban_share' => [
+                    'en' => "ENG/Population/Share%20of%20urban%20population/{$en}",
+                    'ka' => "მოსახლეობა/საქალაქო%20დასახლებაში%20მცხოვრები%20მოსახლეობის%20წილი/{$ka}"
+                ],
+                'population_density' => [
+                    'en' => "ENG/Population/Density%20of%20population/{$en}",
+                    'ka' => "მოსახლეობა/მოსახლეობის%20სიმჭიდროვე/{$ka}"
+                ],
+
+                /* =======================
+         * DEMOGRAPHY – BIRTH
+         * ======================= */
+                'birth_live' => [
+                    'en' => "ENG/Demography/Number%20of%20live%20births/{$en}",
+                    'ka' => "დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა/{$ka}"
+                ],
+                'birth_rate' => [
+                    'en' => "ENG/Demography/Crude%20birth%20rate/{$en}",
+                    'ka' => "დემოგრაფია/შობადობის%20ზოგადი%20კოეფიციენტი/{$ka}"
+                ],
+                'birth_by_sex' => [
+                    'en' => "ENG/Demography/Number%20of%20live%20births%20by%20sex/{$en}",
+                    'ka' => "დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა%20სქესის%20მიხედვით/{$ka}"
+                ],
+                'birth_sex_ratio' => [
+                    'en' => "ENG/Demography/Sex%20ratio%20at%20birth/{$en}",
+                    'ka' => "დემოგრაფია/სქესთა%20რაოდენობრივი%20თანაფარდობა/{$municipal_info['ka_full']}"
+                ],
+                'birth_mean_age' => [
+                    'en' => "ENG/Demography/Mean%20age%20of%20childbearing/{$en}",
+                    'ka' => "დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/{$kaSafe}"
+                ],
+
+                /* =======================
+         * DEMOGRAPHY – DEATH
+         * ======================= */
+                'death_total' => [
+                    'en' => "ENG/Demography/Number%20of%20deaths/{$en}",
+                    'ka' => "დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/{$kaSafe}"
+                ],
+                'death_rate' => [
+                    'en' => "ENG/Demography/Crude%20death%20rate/{$en}",
+                    'ka' => "დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
+                ],
+
+                /* =======================
+         * NATURAL INCREASE
+         * ======================= */
+                'natural_increase' => [
+                    'en' => "ENG/Demography/Natural%20increase/{$en}",
+                    'ka' => "დემოგრაფია/ბუნებრივი%20მატება/{$kaSafe}"
+                ],
+                'natural_increase_rate' => [
+                    'en' => "ENG/Demography/Natural%20increase%20rate/{$en}",
+                    'ka' => "დემოგრაფია/ბუნებრივი%20მატების%20კოეფიციენტი/{$kaSafe}"
+                ],
+
+                /* =======================
+         * MARRIAGE
+         * ======================= */
+                'marriage_total' => [
+                    'en' => "ENG/Demography/Number%20of%20registered%20marriages/{$en}",
+                    'ka' => "დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/{$kaSafe}"
+                ],
+                'marriage_rate' => [
+                    'en' => "ENG/Demography/Crude%20marriage%20rate/{$en}",
+                    'ka' => "დემოგრაფია/ქორწინების%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
+                ],
+
+                /* =======================
+         * DIVORCE
+         * ======================= */
+                'divorce_total' => [
+                    'en' => "ENG/Demography/Number%20of%20registered%20divorces/{$en}",
+                    'ka' => "დემოგრაფია/რეგისტრირებულ%20განქორწინებათა%20რაოდენობა/{$kaSafe}"
+                ],
+                'divorce_rate' => [
+                    'en' => "ENG/Demography/Crude%20divorce%20rate/{$en}",
+                    'ka' => "დემოგრაფია/განქორწინების%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
+                ],
+
+                /* =======================
+         * EMPLOYMENT & SALARIES
+         * ======================= */
+                'employment_employed' => [
+                    'en' => "ENG/Employment%20and%20Wages/Employed%20persons/Adjara%20A.R/{$en}",
+                    'ka' => "დასაქმება%20და%20ხელფასები/დასაქმებულები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'employment_employees' => [
+                    'en' => "ENG/Employment%20and%20Wages/Employees/Adjara%20A.R/{$en}",
+                    'ka' => "დასაქმება%20და%20ხელფასები/დაქირავებულები/აჭარა%20ა.რ/{$kaSafe}"
+                ],
+                'employment_salary' => [
+                    'en' => "ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Adjara%20A.R/{$en}",
+                    'ka' => "დასაქმება%20და%20ხელფასები/ხელფასი/აჭარა%20ა.რ/{$kaSafe}"
+                ],
             ];
 
-            if (!isset($paths[$section_key])) {
-                return '#'; // fallback
+            if (!isset($map[$key][$lang_code])) {
+                return '#';
             }
 
-            $folder = $paths[$section_key][0];
-            $filename = ($lang_code == 'en') ? $paths[$section_key][1] : $paths[$section_key][2];
-
-            return $base . $folder . $filename . '.xlsx';
+            return $base . $map[$key][$lang_code] . '.xlsx';
         }
+
         ?>
         <tr>
             <th><?php echo $lang['munstat'] ?></th>
@@ -125,63 +242,84 @@
                 </th>
             </tr>
             <tr class="informacia1">
-                <td><?php echo $basicInformation[2]; ?></td>
-                <td><span class="float-right"><a href="<?php echo getExcelPath('main_info_area', $municipal_info, $lang_code); ?>"><img src="../images/excel-9-24.png" width="25" height="25"></a></span></td>
+                <td><?= $basicInformation[2]; ?></td>
+                <td>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('main_info_area', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
+                </td>
             </tr>
             <tr class="informacia1">
+                <td><?= $basicInformation[3]; ?></td>
                 <td>
-                    <?php echo $basicInformation['3']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo getExcelPath('main_info_admin', $municipal_info, $lang_code); ?>"><img src="../images/excel-9-24.png" width="25" height="25"></a></span>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('main_info_admin', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
                 </td>
             </tr>
             <tr>
                 <td id="dziritadi23" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $populationCensus[1]; ?></td>
             </tr>
             <tr class="informacia23">
+                <td><?= $populationCensus[2]; ?></td>
                 <td>
-                    <?php echo $populationCensus[2]; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census%20pre/urban-rural%20settlements/Adjara%20A.R/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/აჭარა%20ა.რ/' . (strpos($municipal_info['ka_name'], 'ქ.') !== false ? 'ბათუმი' : $municipal_info['ka_name']) . '.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('pop_urban_rural', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
                 </td>
             </tr>
             <tr class="informacia23">
+                <td><?= $populationCensus[3]; ?></td>
                 <td>
-                    <?php echo $populationCensus[3]; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/' . (strpos($municipal_info['ka_name'], 'ქ.') !== false ? 'ბათუმი' : $municipal_info['ka_name']) . '.xlsx'; ?>"> <img src="images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('pop_by_sex', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
                 </td>
             </tr>
             <tr>
                 <td id="dziritadi2" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $Population['1']; ?></td>
             </tr>
-            <tr class="informacia2" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="">
-                <td>
-                    <?php echo $Population['2']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Number%20of%20population/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20რიცხოვნობა%20საქალაქო-სასოფლო%20დასახლებების%20მიხედვით/' . $municipal_info['ka_name'] . '.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                </td>
-            </tr>
-            <tr class="informacia2" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="">
-                <td>
-                    <?php echo $Population['3']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Share%20of%20urban%20population/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/მოსახლეობა/საქალაქო%20დასახლებაში%20მცხოვრები%20მოსახლეობის%20წილი/' . $municipal_info['ka_name'] . '.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
-                </td>
-            </tr>
             <tr class="informacia2">
+                <td><?= $Population[2]; ?></td>
                 <td>
-                    <?php echo $Population['4']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Population/Density%20of%20population/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/მოსახლეობა/მოსახლეობის%20სიმჭიდროვე/' . $municipal_info['ka_name'] . '.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('population_number', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
                 </td>
             </tr>
+
+            <tr class="informacia2">
+                <td><?= $Population[3]; ?></td>
+                <td>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('population_urban_share', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
+                </td>
+            </tr>
+
+            <tr class="informacia2">
+                <td><?= $Population[4]; ?></td>
+                <td>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('population_density', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
+                </td>
+            </tr>
+
             <tr>
                 <td id="dziritadiMain" title="" onclick="GetIdChange(); demografiaShow();" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $lang['demograph'] ?></td>
             </tr>
@@ -199,21 +337,27 @@
                 <td id="dziritadi3" title="" onclick="GetIdChange()" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $birth['1']; ?></td>
             </tr>
             <tr class="informacia3">
+                <td><?= $birth[2]; ?></td>
                 <td>
-                    <?php echo $birth['2']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Number%20of%20live%20births/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/დემოგრაფია/ცოცხლად%20დაბადებულთა%20რიცხოვნობა/' . $municipal_info['ka_name'] . '.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('birth_live', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
                 </td>
             </tr>
+
             <tr class="informacia3">
+                <td><?= $birth[3]; ?></td>
                 <td>
-                    <?php echo $birth['3']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?php echo (isset($_GET['lang']) && $_GET['lang'] == 'en') ? '/regions/municipal/ENG/Demography/Crude%20birth%20rate/' . $municipal_info['en_name'] . '.xlsx' : '/regions/municipal/დემოგრაფია/შობადობის%20ზოგადი%20კოეფიციენტი/' . $municipal_info['ka_name'] . '.xlsx'; ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right">
+                        <a href="<?= getExcelPath('birth_rate', $municipal_info, $lang_code); ?>">
+                            <img src="../images/excel-9-24.png" width="25" height="25" alt="Excel">
+                        </a>
+                    </span>
                 </td>
             </tr>
+
             <tr class="informacia3">
                 <td>
                     <?php echo $birth['4']; ?>
