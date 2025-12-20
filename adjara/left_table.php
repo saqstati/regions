@@ -465,7 +465,7 @@
          * ======================= */
                 'tourism_domestic' => [
                     'en' => "ENG/Tourism/Adjara%20A.R/{$en}",
-                    'ka' => "ტურიზმი/აჭარა%20ა.რ/{$ka}"
+                    'ka' => "ტურიზმი/აჭარის%20ა.რ/{$municipal_info['ka_full']}"
                 ],
                 
 
