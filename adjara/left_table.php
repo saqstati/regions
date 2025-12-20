@@ -543,15 +543,23 @@
          * ======================= */
                 'education_preschool' => [
                     'en' => "ENG/Education/Preschool%20and%20Education%20Institutions/Adjara%20A.R/{$en}",
-                    'ka' => "განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "განათლება/სკოლამდელი%20აღზრდისა%20და%20განათლების%20დაწესებულებები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
                 'education_general' => [
                     'en' => "ENG/Education/General%20Educational%20Institution/Adjara%20A.R/{$en}",
                     'ka' => "განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/აჭარა%20ა.რ/{$kaSafe}"
                 ],
+                'education_status' => [
+                    'en' => "ENG/Education/Status/Adjara%20A.R/{$municipal_info['en_full']}",
+                    'ka' => "განათლება/სტატუსი/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'education_directors' => [
+                    'en' => "ENG/Education/Directors/Adjara%20A.R/{$municipal_info['en_full']}",
+                    'ka' => "განათლება/დირექტორები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
                 'education_vocational' => [
                     'en' => "ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/{$en}",
-                    'ka' => "განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/{$kaSafe}"
+                    'ka' => "განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/{$municipal_info['ka_full']}"
                 ],
 
                 /* =======================
@@ -1631,6 +1639,22 @@
             <tr class="informacia22">
                 <td>
                     <?php echo $education['4']; ?>
+                </td>
+                <td>
+                    <span class="float-right"><a href="<?= getExcelPath('education_status', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                </td>
+            </tr>
+            <tr class="informacia22">
+                <td>
+                    <?php echo $education['5']; ?>
+                </td>
+                <td>
+                    <span class="float-right"><a href="<?= getExcelPath('education_directors', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                </td>
+            </tr>
+            <tr class="informacia22">
+                <td>
+                    <?php echo $education['6']; ?>
                 </td>
                 <td>
                     <span class="float-right"><a href="<?= getExcelPath('education_vocational', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
