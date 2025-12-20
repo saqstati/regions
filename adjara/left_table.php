@@ -89,7 +89,7 @@
             $marriage = $divorce = $populationDescription = $employmentAndSalaries = $businessSector =
             $businessRegister = $accordingToTheTypesOfActivities = $AccordingToTheFormsOfOwnership =
             $accordingToOrganizationalLegalForms = $budget = $agriculture = $construction = $trading =
-            $hotels = $transportAndStorage = $tourism = $healthCareAndSocialSecurity = $education = $culture = [];
+            $hotels = $transportAndStorage = $tourism = $healthCareAndSocialSecurity = $education = $culture = $Government = [];
 
         while ($row = mysqli_fetch_array($query)) {
             $basicInformation[$row['ID']] = $row['basicInformation'];
@@ -117,6 +117,7 @@
             $healthCareAndSocialSecurity[$row['ID']] = $row['healthCareAndSocialSecurity'];
             $education[$row['ID']] = $row['education'];
             $culture[$row['ID']] = $row['culture'];
+            $Government[$row['ID']] = $row['Government'];
         }
 
         // Helper function to generate dynamic municipality paths
@@ -467,7 +468,7 @@
                     'en' => "ENG/Tourism/Adjara%20A.R/{$en}",
                     'ka' => "ტურიზმი/აჭარის%20ა.რ/{$municipal_info['ka_full']}"
                 ],
-                
+
 
                 /* =======================
          * HEALTHCARE
@@ -524,7 +525,7 @@
                 /* =======================
          * SOCIAL STATISTICS
          * ======================= */
-                
+
                 'social_subsistence' => [
                     'en' => "ENG/Social%20Statistic/Subsistence%20Allowance/Adjara%20A.R/{$en}",
                     'ka' => "სოციალური%20სტატისტიკა/საარსებო/აჭარა%20ა.რ/{$kaSafe}"
@@ -573,7 +574,7 @@
                 /* =======================
          * OTHER MISSING PATHS
          * ======================= */
-                
+
                 'trading_financial_indices' => [
                     'en' => "ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Adjara%20A.R/{$en}%20Municipality",
                     'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
@@ -707,6 +708,18 @@
                 'social_registered' => [
                     'en' => "ENG/Social%20Statistic/Disabilities%20Registered/Adjara%20A.R/{$en}",
                     'ka' => "სოციალური%20სტატისტიკა/რეგისტრირებული%20შშმ%20პირები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+
+                /* =======================
+         * GOVERNMENT
+         * ======================= */
+                'self_governance' => [
+                    'en' => "ENG/Government/Self-Governance/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ხელისუფლება/თვითმმართველობა/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                ],
+                'voters' => [
+                    'en' => "ENG/Government/Voters/Adjara%20A.R/{$en}%20Municipality",
+                    'ka' => "ხელისუფლება/ამომრჩეველი/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
             ];
 
@@ -1449,7 +1462,7 @@
                     <span class="float-right"><a href="<?= getExcelPath('transport_roads', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
-             <tr>
+            <tr>
                 <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $tourism['1']; ?>
                     <span class="float-right"><a href="<?= getExcelPath('tourism_domestic', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
@@ -1665,7 +1678,26 @@
                     <span class="float-right"><a href="<?= getExcelPath('culture', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
-
+            <tr>
+                <td id="dziritadi36" title="" onclick="GetIdChange()" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $Government['1']; ?>
+                </td>
+            </tr>
+            <tr class="informacia36">
+                <td>
+                    <?php echo $Government['2']; ?>
+                </td>
+                <td>
+                    <span class="float-right"><a href="<?= getExcelPath('self_governance', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                </td>
+            </tr>
+            <tr class="informacia36">
+                <td>
+                    <?php echo $Government['3']; ?>
+                </td>
+                <td>
+                    <span class="float-right"><a href="<?= getExcelPath('voters', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                </td>
+            </tr>
 
 
 
