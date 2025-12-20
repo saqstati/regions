@@ -1565,15 +1565,7 @@
                 </td>
             </tr>
             <tr>
-                <td id="dziritadi21" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['14']; ?>
-                </td>
-            </tr>
-            <tr class="informacia21">
-                <td>
-                    <?php echo $healthCareAndSocialSecurity['15']; ?>
-                </td>
-                <td>
-                    <span class="float-right"><a href="<?= getExcelPath('social_indicators', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                <td id="dziritadi21" onclick="GetIdChange()" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['15']; ?>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1581,7 +1573,7 @@
                     <?php echo $healthCareAndSocialSecurity['16']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?= getExcelPath('social_disability', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_indicators', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1589,7 +1581,7 @@
                     <?php echo $healthCareAndSocialSecurity['17']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?= getExcelPath('social_registered', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_disability', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1597,7 +1589,7 @@
                     <?php echo $healthCareAndSocialSecurity['18']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?= getExcelPath('social_subsistence', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_registered', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
@@ -1605,12 +1597,20 @@
                     <?php echo $healthCareAndSocialSecurity['19']; ?>
                 </td>
                 <td>
-                    <span class="float-right"><a href="<?= getExcelPath('social_receiving', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                    <span class="float-right"><a href="<?= getExcelPath('social_subsistence', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
                 </td>
             </tr>
             <tr class="informacia21">
                 <td>
                     <?php echo $healthCareAndSocialSecurity['20']; ?>
+                </td>
+                <td>
+                    <span class="float-right"><a href="<?= getExcelPath('social_receiving', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
+                </td>
+            </tr>
+            <tr class="informacia21">
+                <td>
+                    <?php echo $healthCareAndSocialSecurity['21']; ?>
                 </td>
                 <td>
                     <span class="float-right"><a href="<?= getExcelPath('social_beneficiaries', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a></span>
