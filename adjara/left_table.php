@@ -89,7 +89,7 @@
             $marriage = $divorce = $populationDescription = $employmentAndSalaries = $businessSector =
             $businessRegister = $accordingToTheTypesOfActivities = $AccordingToTheFormsOfOwnership =
             $accordingToOrganizationalLegalForms = $budget = $agriculture = $construction = $trading =
-            $hotels = $transportAndStorage = $healthCareAndSocialSecurity = $education = $culture = [];
+            $hotels = $transportAndStorage = $tourism = $healthCareAndSocialSecurity = $education = $culture = [];
 
         while ($row = mysqli_fetch_array($query)) {
             $basicInformation[$row['ID']] = $row['basicInformation'];
@@ -113,6 +113,7 @@
             $trading[$row['ID']] = $row['trading'];
             $hotels[$row['ID']] = $row['hotels'];
             $transportAndStorage[$row['ID']] = $row['transportAndStorage'];
+            $tourism[$row['ID']] = $row['tourism'];
             $healthCareAndSocialSecurity[$row['ID']] = $row['healthCareAndSocialSecurity'];
             $education[$row['ID']] = $row['education'];
             $culture[$row['ID']] = $row['culture'];
@@ -458,6 +459,15 @@
                     'en' => "ENG/TransportAndStorage/Length%20of%20transport%20ways/Adjara%20A.R/{$en}%20Municipality",
                     'ka' => "ტრანსპორტი%20და%20დასაწყობება/საერთო%20სარგებლობის%20საავტომობილო%20გზების%20სიგრძე/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
+
+                /* =======================
+         * TOURISM
+         * ======================= */
+                'tourism_domestic' => [
+                    'en' => "ENG/Tourism/Adjara%20A.R/{$en}",
+                    'ka' => "ტურიზმი/აჭარა%20ა.რ/{$ka}"
+                ],
+                
 
                 /* =======================
          * HEALTHCARE
@@ -1425,6 +1435,11 @@
             <tr>
                 <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $transportAndStorage['1']; ?>
                     <span class="float-right"><a href="<?= getExcelPath('transport_roads', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
+                </td>
+            </tr>
+             <tr>
+                <td id="withoutArrow" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $tourism['1']; ?>
+                    <span class="float-right"><a href="<?= getExcelPath('tourism_domestic', $municipal_info, $lang_code); ?>"> <img src="../images/excel-9-24.png" alt="exel" width="25" height="25"> </a>
                 </td>
             </tr>
             <style>
