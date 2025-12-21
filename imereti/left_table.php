@@ -107,7 +107,7 @@
                 'ka_full' => 'ვანის მუნიციპალიტეტი',
                 'ka_short' => 'ვანი'
             ];
-        } elseif (strpos($current_page, 'zestaponi') !== false) {
+        } elseif (strpos($current_page, 'zestafoni') !== false) {
             $municipal_info = [
                 'en_name' => 'Zestaponi',
                 'en_full' => 'Zestaponi Municipality',
