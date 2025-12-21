@@ -551,7 +551,7 @@ include "config.php";
                             </td>
                         </tr>
                         <tr>
-                            <td id="dziritadi" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><a target="_blank" href="http://br.geostat.ge/register_geo/"><?php echo $businessRegister[1]; ?></a> <span class="float-right"></span>
+                            <td id="dziritadi" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><a target="_blank" href="http://br.geostat.ge//"><?php echo $businessRegister[1]; ?></a> <span class="float-right"></span>
                             </td>
                         </tr>
                         <tr>
