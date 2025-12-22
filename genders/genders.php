@@ -514,7 +514,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity4">
-                                    <?php echo $healthCareAndSocialSecurity['4']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['5']; ?>
                                 </span>
                             </td>
                             <td>
@@ -528,7 +528,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity7">
-                                    <?php echo $healthCareAndSocialSecurity['7']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['8']; ?>
                                 </span>
                             </td>
                             <td>
@@ -542,7 +542,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity8">
-                                    <?php echo $healthCareAndSocialSecurity['8']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['9']; ?>
                                 </span>
                             </td>
                             <td>
@@ -556,7 +556,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity9">
-                                    <?php echo $healthCareAndSocialSecurity['9']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['10']; ?>
                                 </span>
                             </td>
                             <td>
@@ -570,7 +570,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity10">
-                                    <?php echo $healthCareAndSocialSecurity['10']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['11']; ?>
                                 </span>
                             </td>
                             <td>
@@ -584,7 +584,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity11">
-                                    <?php echo $healthCareAndSocialSecurity['11']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['12']; ?>
                                 </span>
                             </td>
                             <td>
@@ -598,7 +598,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity12">
-                                    <?php echo $healthCareAndSocialSecurity['12']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['13']; ?>
                                 </span>
                             </td>
                             <td>
@@ -610,12 +610,12 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                             </td>
                         </tr>
                         <tr>
-                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['14']; ?></td>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $healthCareAndSocialSecurity['15']; ?></td>
                         </tr>
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity15">
-                                    <?php echo $healthCareAndSocialSecurity['15']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['16']; ?>
                                 </span>
                             </td>
                             <td>
@@ -629,7 +629,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         <tr class="informacia21">
                             <td>
                                 <span id="healthCareAndSocialSecurity20">
-                                    <?php echo $healthCareAndSocialSecurity['20']; ?>
+                                    <?php echo $healthCareAndSocialSecurity['21']; ?>
                                 </span>
                             </td>
                             <td>
