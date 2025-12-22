@@ -221,6 +221,7 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                         $healthCareAndSocialSecurity[$row['ID']] = $row['healthCareAndSocialSecurity'];
                         $education[$row['ID']] = $row['education'];
                         $culture[$row['ID']] = $row['culture'];
+                        $Government[$row['ID']] = $row['Government'];
                     }
                     ?> <tr style="justify-content: center;">
                         <th><?php echo $lang['genderTitleName'] ?></th>
@@ -665,6 +666,37 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                             <td>
                                 <span class="float-right">
                                     <a id="linkeducation4" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $Government['1']; ?></td>
+                        </tr>
+                        <tr class="informacia24">
+                            <td>
+                                <span id="government2">
+                                    <?php echo $Government['2']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkgovernment2" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia24">
+                            <td>
+                                <span id="government3">
+                                    <?php echo $Government['3']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkgovernment3" href="#">
                                         <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
                                     </a>
                                 </span>

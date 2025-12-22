@@ -475,51 +475,51 @@
          * ======================= */
                 'healthcare_indicators' => [
                     'en' => "ENG/Healthcare/Indicators/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/მაჩვენებლები/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/მაჩვენებლები/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_emergent' => [
                     'en' => "ENG/Healthcare/Emergent/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/სასწრაფო/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/სასწრაფო/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_abortions' => [
                     'en' => "ENG/Healthcare/Abortions/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/აბორტები/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/აბორტები/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_anemia' => [
                     'en' => "ENG/Healthcare/Anemia/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/ანემია/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ანემია/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_diabetes' => [
                     'en' => "ENG/Healthcare/Diabetes/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/დიაბეტი/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/დიაბეტი/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_cancer' => [
                     'en' => "ENG/Healthcare/Cancer/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/კიბო/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/კიბო/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_circulatory' => [
                     'en' => "ENG/Healthcare/Circulatory/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/სისხლის%20მიმოქცევა/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_respiratory' => [
                     'en' => "ENG/Healthcare/Respiratory/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/სუნთქვა/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_syphilis' => [
                     'en' => "ENG/Healthcare/Syphilis/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ათაშანგი/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_aids' => [
                     'en' => "ENG/Healthcare/AIDS/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/შიდსი/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/შიდსი/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_tuberculosis' => [
                     'en' => "ENG/Healthcare/Tuberculosis/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ტუბერკულიოზი/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_hepatitis' => [
                     'en' => "ENG/Healthcare/Hepatitis/Adjara%20A.R/{$en}",
-                    'ka' => "ჯანდაცვა/ჰეპატიტი/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ჰეპატიტი/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -528,15 +528,15 @@
 
                 'social_subsistence' => [
                     'en' => "ENG/Social%20Statistic/Subsistence%20Allowance/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/საარსებო/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "სოციალური%20სტატისტიკა/საარსებო/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'social_receiving' => [
                     'en' => "ENG/Social%20Statistic/Receiving/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/მიმღები/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "სოციალური%20სტატისტიკა/მიმღები/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
                 'social_beneficiaries' => [
                     'en' => "ENG/Social%20Statistic/Beneficiaries/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/{$kaSafe}"
+                    'ka' => "სოციალური%20სტატისტიკა/ბენეფიციართა/აჭარა%20ა.რ/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -699,7 +699,7 @@
          * ======================= */
                 'social_indicators' => [
                     'en' => "ENG/Social%20Statistic/Indicators/Adjara%20A.R/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/მაჭვენებლები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
+                    'ka' => "სოციალური%20სტატისტიკა/მაჩვენებლები/აჭარა%20ა.რ/{$municipal_info['ka_full']}"
                 ],
                 'social_disability' => [
                     'en' => "ENG/Social%20Statistic/Disability%20Persons/Adjara%20A.R/{$en}",
