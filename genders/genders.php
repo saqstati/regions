@@ -671,6 +671,34 @@ $lang_url_en = "genders.php?municipal=$municipal&lang=en";
                                 </span>
                             </td>
                         </tr>
+                        <tr class="informacia22">
+                            <td>
+                                <span id="education5">
+                                    <?php echo $education['5']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkeducation5" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="informacia22">
+                            <td>
+                                <span id="education6">
+                                    <?php echo $education['6']; ?>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="float-right">
+                                    <a id="linkeducation6" href="#">
+                                        <img src="../images/excel-9-24.png" alt="exel" width="25" height="25">
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
                         <tr>
                             <td id="genderListTitle" title="" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content=""><?php echo $Government['1']; ?></td>
                         </tr>

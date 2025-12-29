@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     populationCensus: {
       Batumi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ბათუმი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/Batumi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Adjara%20A.R/C.%20Batumi.xlsx",
       },
       Keda: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/აჭარა%20ა.რ/ქედა.xlsx",
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       Poti: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ფოთი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/Poti.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/C.%20Poti.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუ.xlsx",
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       Kutaisi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/ქუთაისი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/Kutaisi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/C.%20Kutaisi.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/წყალტუბო.xlsx",
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       Rustavi: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/რუსთავი.xlsx",
-        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/Rustavi.xlsx",
+        en: "/regions/municipal/ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/C.%20Rustavi.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/წალკა.xlsx",
@@ -7426,6 +7426,514 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     education4: {
       Batumi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/განათლება/სტატუსი/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Adjara%20A.R/Keda%20Municipality.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/განათლება/სტატუსი/აჭარა%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Adjara%20A.R/Kobuleti%20Municipality.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/აჭარა%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Adjara%20A.R/Shuakhevi%20Municipality.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/განათლება/სტატუსი/აჭარა%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Adjara%20A.R/Khelvachauri%20Municipality.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/განათლება/სტატუსი/აჭარა%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Adjara%20A.R/Khulo%20Municipality.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/აბაშას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Abasha%20Municipality.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/ზუგდიდის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Zugdidi%20Municipality.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/მარტვილის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Martvili%20Municipality.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/სენაკის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Senaki%20Municipality.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/C.%20Poti%20Municipality.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Chkhorotsku%20Municipality.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/წალენჯიხას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Tsalenjikha%20Municipality.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამეგრელო-ზემო%20სვანეთი/ხობის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samegrelo-Zemo%20Svaneti/Khobi%20Municipality.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/განათლება/სტატუსი/გურია/ლანჩხუთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Guria/Lanchkhuti%20Municipality.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/განათლება/სტატუსი/გურია/ოზურგეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Guria/Ozurgeti%20Municipality.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/განათლება/სტატუსი/გურია/ჩოხატაურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Guria/Chokhatauri%20Municipality.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამცხე-ჯავახეთი/ადიგენის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samtskhe-Javakheti/Adigeni%20Municipality.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამცხე-ჯავახეთი/ასპინძას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samtskhe-Javakheti/Aspindza%20Municipality.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამცხე-ჯავახეთი/ახალქალაქის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samtskhe-Javakheti/Akhalkalaki%20Municipality.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამცხე-ჯავახეთი/ახალციხეს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samtskhe-Javakheti/Akhaltsikhe%20Municipality.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამცხე-ჯავახეთი/ბორჯომის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samtskhe-Javakheti/Borjomi%20Municipality.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/განათლება/სტატუსი/სამცხე-ჯავახეთი/ნინოწმინდას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Samtskhe-Javakheti/Ninotsminda%20Municipality.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ბაღდათის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Baghdati%20Municipality.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ვანის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Vani%20Municipality.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ზესტაფონის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Zestaponi%20Municipality.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Terjola%20Municipality.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/სამტრედიას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Samtredia%20Municipality.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/საჩხერეს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Sachkhere%20Municipality.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ტყიბულის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Tkibuli%20Municipality.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/C.%20Kutaisi%20Municipality.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/წყალტუბოს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Tskaltubo%20Municipality.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ჭიათურას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Chiatura%20Municipality.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ხარაგაულის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Kharagauli%20Municipality.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/განათლება/სტატუსი/იმერეთი/ხონის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Imereti/Khoni%20Municipality.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/განათლება/სტატუსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri%20Municipality.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi%20Municipality.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/განათლება/სტატუსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni%20Municipality.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/განათლება/სტატუსი/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri%20Municipality.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/ბოლნისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/Bolnisi%20Municipality.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/გარდაბანის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/Gardabani%20Municipality.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/დმანისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/Dmanisi%20Municipality.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/თეთრიწყაროს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/Tetritskaro%20Municipality.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/მარნეულის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/Marneuli%20Municipality.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/C.%20Rustavi%20Municipality.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/განათლება/სტატუსი/ქვემო%20ქართლი/წალკას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kvemo%20Kartli/Tsalka%20Municipality.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/განათლება/სტატუსი/შიდა%20ქართლი/გორის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Shida%20Kartli/Gori%20Municipality.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/შიდა%20ქართლი/კასპის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Shida%20Kartli/Kaspi%20Municipality.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/განათლება/სტატუსი/შიდა%20ქართლი/ქარელის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Shida%20Kartli/Kareli%20Municipality.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/განათლება/სტატუსი/შიდა%20ქართლი/ხაშურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Shida%20Kartli/Khashuri%20Municipality.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/განათლება/სტატუსი/მცხეთა-მთიანეთი/დუშეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Mtskheta-Mtianeti/Dusheti%20Municipality.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/განათლება/სტატუსი/მცხეთა-მთიანეთი/თიანეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Mtskheta-Mtianeti/Tianeti%20Municipality.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/განათლება/სტატუსი/მცხეთა-მთიანეთი/მცხეთას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Mtskheta-Mtianeti/Mtskheta%20Municipality.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/მცხეთა-მთიანეთი/ყაზბეგის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Mtskheta-Mtianeti/Kazbegi%20Municipality.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/ახმეტას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Akhmeta%20Municipality.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/გურჯაანის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Gurjaani%20Municipality.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/დედოფლისწყაროს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Dedoplistskaro%20Municipality.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/თელავის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Telavi%20Municipality.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/ლაგოდეხის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Lagodekhi%20Municipality.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/საგარეჯოს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Sagarejo%20Municipality.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/სიღნაღის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Sighnaghi%20Municipality.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/განათლება/სტატუსი/კახეთი/ყვარელის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Status/Kakheti/Kvareli%20Municipality.xlsx",
+      },
+    },
+    education5: {
+      Batumi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx",
+      },
+      Keda: {
+        ka: "/regions/municipal/განათლება/დირექტორები/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Adjara%20A.R/Keda%20Municipality.xlsx",
+      },
+      Kobuleti: {
+        ka: "/regions/municipal/განათლება/დირექტორები/აჭარა%20ა.რ/ქობულეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Adjara%20A.R/Kobuleti%20Municipality.xlsx",
+      },
+      Shuakhevi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/აჭარა%20ა.რ/შუახევის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Adjara%20A.R/Shuakhevi%20Municipality.xlsx",
+      },
+      Khelvachauri: {
+        ka: "/regions/municipal/განათლება/დირექტორები/აჭარა%20ა.რ/ხელვაჩაურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Adjara%20A.R/Khelvachauri%20Municipality.xlsx",
+      },
+      Khulo: {
+        ka: "/regions/municipal/განათლება/დირექტორები/აჭარა%20ა.რ/ხულოს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Adjara%20A.R/Khulo%20Municipality.xlsx",
+      },
+      Abasha: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/აბაშას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Abasha%20Municipality.xlsx",
+      },
+      Zugdidi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/ზუგდიდის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Zugdidi%20Municipality.xlsx",
+      },
+      Martvili: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/მარტვილის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Martvili%20Municipality.xlsx",
+      },
+      Mestia: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx",
+      },
+      Senaki: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/სენაკის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Senaki%20Municipality.xlsx",
+      },
+      Poti: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/C.%20Poti%20Municipality.xlsx",
+      },
+      Chkhorotsku: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Chkhorotsku%20Municipality.xlsx",
+      },
+      Tsalenjikha: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/წალენჯიხას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Tsalenjikha%20Municipality.xlsx",
+      },
+      Khobi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/ხობის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/Khobi%20Municipality.xlsx",
+      },
+      Lanchkhuti: {
+        ka: "/regions/municipal/განათლება/დირექტორები/გურია/ლანჩხუთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Guria/Lanchkhuti%20Municipality.xlsx",
+      },
+      Ozurgeti: {
+        ka: "/regions/municipal/განათლება/დირექტორები/გურია/ოზურგეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Guria/Ozurgeti%20Municipality.xlsx",
+      },
+      Chokhatauri: {
+        ka: "/regions/municipal/განათლება/დირექტორები/გურია/ჩოხატაურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Guria/Chokhatauri%20Municipality.xlsx",
+      },
+      Adigeni: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამცხე-ჯავახეთი/ადიგენის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samtskhe-Javakheti/Adigeni%20Municipality.xlsx",
+      },
+      Aspindza: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამცხე-ჯავახეთი/ასპინძას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samtskhe-Javakheti/Aspindza%20Municipality.xlsx",
+      },
+      Akhalkalaki: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამცხე-ჯავახეთი/ახალქალაქის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samtskhe-Javakheti/Akhalkalaki%20Municipality.xlsx",
+      },
+      Akhaltsikhe: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამცხე-ჯავახეთი/ახალციხეს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samtskhe-Javakheti/Akhaltsikhe%20Municipality.xlsx",
+      },
+      Borjomi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამცხე-ჯავახეთი/ბორჯომის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samtskhe-Javakheti/Borjomi%20Municipality.xlsx",
+      },
+      Ninotsminda: {
+        ka: "/regions/municipal/განათლება/დირექტორები/სამცხე-ჯავახეთი/ნინოწმინდას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Samtskhe-Javakheti/Ninotsminda%20Municipality.xlsx",
+      },
+      Baghdati: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ბაღდათის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Baghdati%20Municipality.xlsx",
+      },
+      Vani: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ვანის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Vani%20Municipality.xlsx",
+      },
+      Zestaponi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ზესტაფონის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Zestaponi%20Municipality.xlsx",
+      },
+      Terjola: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Terjola%20Municipality.xlsx",
+      },
+      Samtredia: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/სამტრედიას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Samtredia%20Municipality.xlsx",
+      },
+      Sachkhere: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/საჩხერეს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Sachkhere%20Municipality.xlsx",
+      },
+      Tkibuli: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ტყიბულის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Tkibuli%20Municipality.xlsx",
+      },
+      Kutaisi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/C.%20Kutaisi%20Municipality.xlsx",
+      },
+      Tskaltubo: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/წყალტუბოს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Tskaltubo%20Municipality.xlsx",
+      },
+      Chiatura: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ჭიათურას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Chiatura%20Municipality.xlsx",
+      },
+      Kharagauli: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ხარაგაულის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Kharagauli%20Municipality.xlsx",
+      },
+      Khoni: {
+        ka: "/regions/municipal/განათლება/დირექტორები/იმერეთი/ხონის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Imereti/Khoni%20Municipality.xlsx",
+      },
+      Ambrolauri: {
+        ka: "/regions/municipal/განათლება/დირექტორები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ამბროლაურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Ambrolauri%20Municipality.xlsx",
+      },
+      Lentekhi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ლენტეხის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Lentekhi%20Municipality.xlsx",
+      },
+      Oni: {
+        ka: "/regions/municipal/განათლება/დირექტორები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ონის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Oni%20Municipality.xlsx",
+      },
+      Tsageri: {
+        ka: "/regions/municipal/განათლება/დირექტორები/რაჭა-ლეჩხუმი%20და%20ქვემო%20სვანეთი/ცაგერის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Racha-Lechkhumi%20and%20Kvemo%20Svaneti/Tsageri%20Municipality.xlsx",
+      },
+      Bolnisi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/ბოლნისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/Bolnisi%20Municipality.xlsx",
+      },
+      Gardabani: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/გარდაბანის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/Gardabani%20Municipality.xlsx",
+      },
+      Dmanisi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/დმანისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/Dmanisi%20Municipality.xlsx",
+      },
+      Tetritskaro: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/თეთრიწყაროს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/Tetritskaro%20Municipality.xlsx",
+      },
+      Marneuli: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/მარნეულის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/Marneuli%20Municipality.xlsx",
+      },
+      Rustavi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/C.%20Rustavi%20Municipality.xlsx",
+      },
+      Tsalka: {
+        ka: "/regions/municipal/განათლება/დირექტორები/ქვემო%20ქართლი/წალკას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kvemo%20Kartli/Tsalka%20Municipality.xlsx",
+      },
+      Gori: {
+        ka: "/regions/municipal/განათლება/დირექტორები/შიდა%20ქართლი/გორის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Shida%20Kartli/Gori%20Municipality.xlsx",
+      },
+      Kaspi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/შიდა%20ქართლი/კასპის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Shida%20Kartli/Kaspi%20Municipality.xlsx",
+      },
+      Kareli: {
+        ka: "/regions/municipal/განათლება/დირექტორები/შიდა%20ქართლი/ქარელის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Shida%20Kartli/Kareli%20Municipality.xlsx",
+      },
+      Khashuri: {
+        ka: "/regions/municipal/განათლება/დირექტორები/შიდა%20ქართლი/ხაშურის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Shida%20Kartli/Khashuri%20Municipality.xlsx",
+      },
+      Dusheti: {
+        ka: "/regions/municipal/განათლება/დირექტორები/მცხეთა-მთიანეთი/დუშეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Mtskheta-Mtianeti/Dusheti%20Municipality.xlsx",
+      },
+      Tianeti: {
+        ka: "/regions/municipal/განათლება/დირექტორები/მცხეთა-მთიანეთი/თიანეთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Mtskheta-Mtianeti/Tianeti%20Municipality.xlsx",
+      },
+      Mtskheta: {
+        ka: "/regions/municipal/განათლება/დირექტორები/მცხეთა-მთიანეთი/მცხეთას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Mtskheta-Mtianeti/Mtskheta%20Municipality.xlsx",
+      },
+      Kazbegi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/მცხეთა-მთიანეთი/ყაზბეგის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Mtskheta-Mtianeti/Kazbegi%20Municipality.xlsx",
+      },
+      Akhmeta: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/ახმეტას%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Akhmeta%20Municipality.xlsx",
+      },
+      Gurjaani: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/გურჯაანის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Gurjaani%20Municipality.xlsx",
+      },
+      Dedoplistskaro: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/დედოფლისწყაროს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Dedoplistskaro%20Municipality.xlsx",
+      },
+      Telavi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/თელავის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Telavi%20Municipality.xlsx",
+      },
+      Lagodekhi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/ლაგოდეხის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Lagodekhi%20Municipality.xlsx",
+      },
+      Sagarejo: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/საგარეჯოს%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Sagarejo%20Municipality.xlsx",
+      },
+      Sighnaghi: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/სიღნაღის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Sighnaghi%20Municipality.xlsx",
+      },
+      Kvareli: {
+        ka: "/regions/municipal/განათლება/დირექტორები/კახეთი/ყვარელის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Education/Directors/Kakheti/Kvareli%20Municipality.xlsx",
+      },
+    },
+    education6: {
+      Batumi: {
         ka: "/regions/municipal/განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/აჭარის%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/C.%20Batumi.xlsx",
       },
@@ -7680,11 +8188,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     government2: {
       Batumi: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/აჭარა%20ა.რ/ბათუმის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Self-Governance/Adjara%20A.R/Batumi%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Self-Governance/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/აჭარა%20ა.რ/ქედას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Government/Self-Governance/Adjara%20A.R/Keda%20Municipality.xlsx",
       },
       Kobuleti: {
@@ -7716,7 +8224,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Self-Governance/Samegrelo-Zemo%20Svaneti/Martvili%20Municipality.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/მესტიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Government/Self-Governance/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx",
       },
       Senaki: {
@@ -7724,8 +8232,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Self-Governance/Samegrelo-Zemo%20Svaneti/Senaki%20Municipality.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/ფოთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Self-Governance/Samegrelo-Zemo%20Svaneti/Poti%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Self-Governance/Samegrelo-Zemo%20Svaneti/C.%20Poti%20Municipality.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
@@ -7788,7 +8296,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Self-Governance/Imereti/Zestaponi%20Municipality.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/იმერეთი/თერჯოლას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Government/Self-Governance/Imereti/Terjola%20Municipality.xlsx",
       },
       Samtredia: {
@@ -7804,8 +8312,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Self-Governance/Imereti/Tkibuli%20Municipality.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/იმერეთი/ქუთაისის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Self-Governance/Imereti/Kutaisi%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Self-Governance/Imereti/C.%20Kutaisi%20Municipality.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/იმერეთი/წყალტუბოს%20მუნიციპალიტეტი.xlsx",
@@ -7860,8 +8368,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Self-Governance/Kvemo%20Kartli/Marneuli%20Municipality.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/ქვემო%20ქართლი/რუსთავის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Self-Governance/Kvemo%20Kartli/Rustavi%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Self-Governance/Kvemo%20Kartli/C.%20Rustavi%20Municipality.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/ხელისუფლება/თვითმმართველობა/ქვემო%20ქართლი/წალკას%20მუნიციპალიტეტი.xlsx",
@@ -7934,11 +8442,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     government3: {
       Batumi: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/აჭარა%20ა.რ/ბათუმის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Voters/Adjara%20A.R/Batumi%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/აჭარა%20ა.რ/ქ.%20ბათუმის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Voters/Adjara%20A.R/C.%20Batumi%20Municipality.xlsx",
       },
       Keda: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/აჭარა%20ა.რ/ქედას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/აჭარა%20ა.რ/ქედის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Government/Voters/Adjara%20A.R/Keda%20Municipality.xlsx",
       },
       Kobuleti: {
@@ -7970,7 +8478,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Voters/Samegrelo-Zemo%20Svaneti/Martvili%20Municipality.xlsx",
       },
       Mestia: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/მესტიას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/მესტიის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Government/Voters/Samegrelo-Zemo%20Svaneti/Mestia%20Municipality.xlsx",
       },
       Senaki: {
@@ -7978,8 +8486,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Voters/Samegrelo-Zemo%20Svaneti/Senaki%20Municipality.xlsx",
       },
       Poti: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/ფოთის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Voters/Samegrelo-Zemo%20Svaneti/Poti%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/ქ.%20ფოთის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Voters/Samegrelo-Zemo%20Svaneti/C.%20Poti%20Municipality.xlsx",
       },
       Chkhorotsku: {
         ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/ჩხოროწყუს%20მუნიციპალიტეტი.xlsx",
@@ -8042,7 +8550,7 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Voters/Imereti/Zestaponi%20Municipality.xlsx",
       },
       Terjola: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/იმერეთი/თერჯოლას%20მუნიციპალიტეტი.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/იმერეთი/თერჯოლის%20მუნიციპალიტეტი.xlsx",
         en: "/regions/municipal/ENG/Government/Voters/Imereti/Terjola%20Municipality.xlsx",
       },
       Samtredia: {
@@ -8058,8 +8566,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Voters/Imereti/Tkibuli%20Municipality.xlsx",
       },
       Kutaisi: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/იმერეთი/ქუთაისის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Voters/Imereti/Kutaisi%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/იმერეთი/ქ.%20ქუთაისის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Voters/Imereti/C.%20Kutaisi%20Municipality.xlsx",
       },
       Tskaltubo: {
         ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/იმერეთი/წყალტუბოს%20მუნიციპალიტეტი.xlsx",
@@ -8114,8 +8622,8 @@ document.addEventListener("DOMContentLoaded", function () {
         en: "/regions/municipal/ENG/Government/Voters/Kvemo%20Kartli/Marneuli%20Municipality.xlsx",
       },
       Rustavi: {
-        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/ქვემო%20ქართლი/რუსთავის%20მუნიციპალიტეტი.xlsx",
-        en: "/regions/municipal/ENG/Government/Voters/Kvemo%20Kartli/Rustavi%20Municipality.xlsx",
+        ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/ქვემო%20ქართლი/ქ.%20რუსთავის%20მუნიციპალიტეტი.xlsx",
+        en: "/regions/municipal/ENG/Government/Voters/Kvemo%20Kartli/C.%20Rustavi%20Municipality.xlsx",
       },
       Tsalka: {
         ka: "/regions/municipal/ხელისუფლება/ამომრჩეველი/ქვემო%20ქართლი/წალკას%20მუნიციპალიტეტი.xlsx",
@@ -8305,6 +8813,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     const education3Link = getLink("education3", pageName, lang);
     const education4Link = getLink("education4", pageName, lang);
+    const education5Link = getLink("education5", pageName, lang);
+    const education6Link = getLink("education6", pageName, lang);
     const government2Link = getLink("government2", pageName, lang);
     const government3Link = getLink("government3", pageName, lang);
 
@@ -8365,6 +8875,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     updateLink("linkeducation3", education3Link);
     updateLink("linkeducation4", education4Link);
+    updateLink("linkeducation5", education5Link);
+    updateLink("linkeducation6", education6Link);
     updateLink("linkgovernment2", government2Link);
     updateLink("linkgovernment3", government3Link);
   }
