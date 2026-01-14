@@ -222,7 +222,7 @@
                 ],
                 'birth_mean_age' => [
                     'en' => "ENG/Demography/Mean%20age%20of%20childbearing/{$en}",
-                    'ka' => "დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/{$kaSafe}"
+                    'ka' => "დემოგრაფია/დედის%20საშუალო%20ასაკი%20ბავშვის%20დაბადებისას/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -230,11 +230,11 @@
          * ======================= */
                 'death_total' => [
                     'en' => "ENG/Demography/Number%20of%20deaths/{$en}",
-                    'ka' => "დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/{$kaSafe}"
+                    'ka' => "დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა/{$municipal_info['ka_name']}"
                 ],
                 'death_rate' => [
                     'en' => "ENG/Demography/Crude%20death%20rate/{$en}",
-                    'ka' => "დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/მოკვდაობის%20ზოგადი%20კოეფიციენტი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -242,11 +242,11 @@
          * ======================= */
                 'natural_increase' => [
                     'en' => "ENG/Demography/Natural%20increase/{$en}",
-                    'ka' => "დემოგრაფია/ბუნებრივი%20მატება/{$kaSafe}"
+                    'ka' => "დემოგრაფია/ბუნებრივი%20მატება/{$municipal_info['ka_name']}"
                 ],
                 'natural_increase_rate' => [
                     'en' => "ENG/Demography/Natural%20increase%20rate/{$en}",
-                    'ka' => "დემოგრაფია/ბუნებრივი%20მატების%20კოეფიციენტი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/ბუნებრივი%20მატების%20კოეფიციენტი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -254,11 +254,11 @@
          * ======================= */
                 'marriage_total' => [
                     'en' => "ENG/Demography/Number%20of%20registered%20marriages/{$en}",
-                    'ka' => "დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/{$kaSafe}"
+                    'ka' => "დემოგრაფია/რეგისტრირებულ%20ქორწინებათა%20რაოდენობა/{$municipal_info['ka_name']}"
                 ],
                 'marriage_rate' => [
                     'en' => "ENG/Demography/Crude%20marriage%20rate/{$en}",
-                    'ka' => "დემოგრაფია/ქორწინების%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/ქორწინების%20ზოგადი%20კოეფიციენტი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -266,15 +266,15 @@
          * ======================= */
                 'divorce_total' => [
                     'en' => "ENG/Demography/Number%20of%20registered%20divorces/{$en}",
-                    'ka' => "დემოგრაფია/რეგისტრირებულ%20განქორწინებათა%20რაოდენობა/{$kaSafe}"
+                    'ka' => "დემოგრაფია/რეგისტრირებულ%20განქორწინებათა%20რაოდენობა/{$municipal_info['ka_name']}"
                 ],
                 'divorce_rate' => [
                     'en' => "ENG/Demography/Crude%20divorce%20rate/{$en}",
-                    'ka' => "დემოგრაფია/განქორწინების%20ზოგადი%20კოეფიციენტი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/განქორწინების%20ზოგადი%20კოეფიციენტი/{$municipal_info['ka_name']}"
                 ],
                 'divorce_divorced_people' => [
                     'en' => "ENG/Demography/Number%20of%20divorced%20people%20by%20age%20groups%20and%20sex/{$en}",
-                    'ka' => "დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/{$kaSafe}"
+                    'ka' => "დემოგრაფია/განქორწინებულთა%20რიცხოვნობა/{$municipal_info['ka_name']}"
                 ],
 
 
@@ -283,15 +283,15 @@
          * ======================= */
                 'employment_employed' => [
                     'en' => "ENG/Employment%20and%20Wages/Employed%20persons/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "დასაქმება%20და%20ხელფასები/დასაქმებულები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "დასაქმება%20და%20ხელფასები/დასაქმებულები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'employment_employees' => [
                     'en' => "ENG/Employment%20and%20Wages/Employees/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "დასაქმება%20და%20ხელფასები/დაქირავებულები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "დასაქმება%20და%20ხელფასები/დაქირავებულები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'employment_salary' => [
                     'en' => "ENG/Employment%20and%20Wages/Average%20monthly%20remuneration/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "დასაქმება%20და%20ხელფასები/ხელფასი/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "დასაქმება%20და%20ხელფასები/ხელფასი/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -299,27 +299,27 @@
          * ======================= */
                 'pop_census_median_age' => [
                     'en' => "ENG/Population%20census/Median%20age%20of%20population/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა/მოსახლეობის%20მედიანური%20ასაკი/{$municipal_info['ka_name']}"
                 ],
                 'pop_census_over_65' => [
                     'en' => "ENG/Population%20census/Percentage%20of%20population%20aged%2065%20and%20over/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა/65%20წელზე%20მეტი/{$municipal_info['ka_name']}"
                 ],
                 'pop_census_age_dependency' => [
                     'en' => "ENG/Population%20census/Age%20dependency%20ratios/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა/ასაკის%20დატვირთვის%20კოეფიციენტები/{$municipal_info['ka_name']}"
                 ],
                 'pop_census_population_number' => [
                     'en' => "ENG/Population%20census/Number%20of%20population/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა/მოსახლეობის%20რიცხოვნობა/{$municipal_info['ka_name']}"
                 ],
                 'pop_census_working_age' => [
                     'en' => "ENG/Population%20census/Share%20of%20working%20age%20population/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა/შრომისუნარიანი%20ასაკის/{$municipal_info['ka_name']}"
                 ],
                 'pop_census_households' => [
                     'en' => "ENG/Population%20census/Number%20of%20private%20households/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა/კერძო%20შინამეურნეობები/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა/კერძო%20შინამეურნეობები/{$municipal_info['ka_name']}"
                 ],
 
 
@@ -329,7 +329,7 @@
          * ======================= */
                 'business_investments_fixed' => [
                     'en' => "ENG/Business%20Sector/Investments%20in%20fixed%20assets/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/ინვესტიციები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/ინვესტიციები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -349,11 +349,11 @@
          * ======================= */
                 'death_by_age_sex' => [
                     'en' => "ENG/Demography/Number%20of%20deaths%20by%20age%20and%20sex/{$en}",
-                    'ka' => "დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/{$kaSafe}"
+                    'ka' => "დემოგრაფია/გარდაცვლილთა%20რიცხოვნობა%20ასაკის%20და%20სქესის%20მიხედვით/{$municipal_info['ka_name']}"
                 ],
                 'death_infant_rate' => [
                     'en' => "ENG/Demography/Infant%20mortality%20rate/{$en}",
-                    'ka' => "დემოგრაფია/ჩვილ%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/ჩვილ%20ბავშვთა%20მოკვდაობის%20კოეფიციენტი/{$municipal_info['ka_name']}"
                 ],
                 'death_under5_rate' => [
                     'en' => "ENG/Demography/Under-5%20mortality%20rate/{$en}",
@@ -373,11 +373,11 @@
                 ],
                 'death_suicide' => [
                     'en' => "ENG/Demography/Deaths%20from%20suicide/{$en}",
-                    'ka' => "დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/{$kaSafe}"
+                    'ka' => "დემოგრაფია/თვითმკვლელობით%20გარდაცვლილთა%20რიცხოვნობა/{$municipal_info['ka_name']}"
                 ],
                 'death_suicide_rate' => [
                     'en' => "ENG/Demography/Suicide%20rate/{$en}",
-                    'ka' => "დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/თვითმკვლელობის%20შედეგად%20სიკვილიანობის%20კოეფიციენტი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -385,11 +385,11 @@
          * ======================= */
                 'marriage_married_people' => [
                     'en' => "ENG/Demography/Number%20of%20married%20people/{$en}",
-                    'ka' => "დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/{$kaSafe}"
+                    'ka' => "დემოგრაფია/დაქორწინებულთა%20რიცხოვნობა/{$municipal_info['ka_name']}"
                 ],
                 'marriage_mean_age' => [
                     'en' => "ENG/Demography/Mean%20age%20of%20spouses/{$en}",
-                    'ka' => "დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/{$kaSafe}"
+                    'ka' => "დემოგრაფია/ქორწინების%20საშუალო%20ასაკი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -397,35 +397,35 @@
          * ======================= */
                 'business_turnover' => [
                     'en' => "ENG/Business%20Sector/turnover/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/ბრუნვა/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/ბრუნვა/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_production' => [
                     'en' => "ENG/Business%20Sector/Production%20Value/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/პროდუქციის%20გამოშვება/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/პროდუქციის%20გამოშვება/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_personnel_costs' => [
                     'en' => "ENG/Business%20Sector/Pesronal%20Costs/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/შრომითი%20დანახარჯები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/შრომითი%20დანახარჯები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_purchases' => [
                     'en' => "ENG/Business%20Sector/Purchase%20of%20good%20and%20services/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/საქონლისა%20და%20მომსახურების%20ყიდვები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/საქონლისა%20და%20მომსახურების%20ყიდვები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_purchases_resale' => [
                     'en' => "ENG/Business%20Sector/Purchase%20of%20good%20and%20services%20for%20resale/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/გადასაყიდად%20განკუთვნილი%20საქონლისა%20და%20მომსახურების%20ყიდვები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/გადასაყიდად%20განკუთვნილი%20საქონლისა%20და%20მომსახურების%20ყიდვები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_value_added' => [
                     'en' => "ENG/Business%20Sector/Value%20added/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/დამატებული%20ღირებულება/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/დამატებული%20ღირებულება/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_intermediate' => [
                     'en' => "ENG/Business%20Sector/Intermediate%20consumption/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/შუალედური%20მოხმარება/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/შუალედური%20მოხმარება/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_investment' => [
                     'en' => "ENG/Business%20Sector/Investment%20in%20fixed%20assets/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიზნეს%20სექტორი/ინვესტიცია%20ძირითად%20კაპიტალში/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20სექტორი/ინვესტიცია%20ძირითად%20კაპიტალში/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -433,7 +433,7 @@
          * ======================= */
                 'budget_main' => [
                     'en' => "ENG/Budget/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიუჯეტი/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიუჯეტი/სამეგრელო-ზემო%20სვანეთი/{$$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -441,11 +441,11 @@
          * ======================= */
                 'construction_permissions' => [
                     'en' => "ENG/Construction/Permissions%20granted/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
-                    'ka' => "მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "მშენებლობა/მშენებლობაზე%20გაცემული%20ნებართვები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'construction_completed' => [
                     'en' => "ENG/Construction/Completed%20Construction/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
-                    'ka' => "მშენებლობა/დასრულებული%20მშენებლობა/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "მშენებლობა/დასრულებული%20მშენებლობა/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -575,7 +575,7 @@
                 ],
                 'education_general' => [
                     'en' => "ENG/Education/General%20Educational%20Institution/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "განათლება/ზოგადსაგანმანათლებლო%20დაწესებულებები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'education_status' => [
                     'en' => "ENG/Education/Status/Samegrelo-Zemo%20Svaneti/{$municipal_info['en_full']}",
@@ -583,7 +583,7 @@
                 ],
                 'education_directors' => [
                     'en' => "ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/{$municipal_info['en_full']}",
-                    'ka' => "განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_full']}"
+                    'ka' => "განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['municipal_info']['ka_name']}"
                 ],
                 'education_vocational' => [
                     'en' => "ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/{$en}",
@@ -595,7 +595,7 @@
          * ======================= */
                 'culture' => [
                     'en' => "ENG/Culture/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "კულტურა/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "კულტურა/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -604,7 +604,7 @@
 
                 'trading_financial_indices' => [
                     'en' => "ENG/Trading/Financial%20indices%20of%20markets%20and%20fairs/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
-                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ვაჭრობა/ბაზრების%20და%20ბაზრობების%20საფინანსო%20მაჩვენებლები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_full']}"
                 ],
 
                 /* =======================
@@ -616,7 +616,7 @@
                 ],
                 'business_register_newly' => [
                     'en' => "ENG/Business%20Register/Number%20of%20newly%20registered%20business%20entities%20in%20Georgia/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
-                    'ka' => "ბიზნეს%20რეგისტრი/ახლად%20რეგისტრირებული%20ბიზნეს%20სუბიექტები/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "ბიზნეს%20რეგისტრი/ახლად%20რეგისტრირებული%20ბიზნეს%20სუბიექტები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'business_register_active' => [
                     'en' => "ENG/Business%20Register/Number%20of%20active%20business%20entities%20registered%20in%20Georgia/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
