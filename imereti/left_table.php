@@ -205,11 +205,11 @@
          * ======================= */
                 'pop_urban_rural' => [
                     'en' => "ENG/Population%20census%20pre/urban-rural%20settlements/Imereti/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/იმერეთი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/იმერეთი/{$municipal_info['ka_name']}"
                 ],
                 'pop_by_sex' => [
                     'en' => "ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Imereti/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/იმერეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -769,11 +769,11 @@
          * ======================= */
                 'self_governance' => [
                     'en' => "ENG/Government/Self-Governance/Imereti/{$en}%20Municipality",
-                    'ka' => "ხელისუფლება/თვითმმართველობა/იმერეთი/{$municipal_info['ka_full']}"
+                    'ka' => "ხელისუფლება/თვითმმართველობა/იმერეთი/{$municipal_info['ka_name']}"
                 ],
                 'voters' => [
                     'en' => "ENG/Government/Voters/Imereti/{$en}%20Municipality",
-                    'ka' => "ხელისუფლება/ამომრჩეველი/იმერეთი/{$municipal_info['ka_full']}"
+                    'ka' => "ხელისუფლება/ამომრჩეველი/იმერეთი/{$municipal_info['ka_name']}"
                 ],
             ];
 

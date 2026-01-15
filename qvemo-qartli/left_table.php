@@ -160,11 +160,11 @@
          * ======================= */
                 'pop_urban_rural' => [
                     'en' => "ENG/Population%20census%20pre/urban-rural%20settlements/Kvemo%20Kartli/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'pop_by_sex' => [
                     'en' => "ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Kvemo%20Kartli/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -415,7 +415,7 @@
          * ======================= */
                 'budget_main' => [
                     'en' => "ENG/Budget/Kvemo%20Kartli/{$en}",
-                    'ka' => "ბიუჯეტი/ქვემო%20ქართლი/{$$municipal_info['ka_name']}"
+                    'ka' => "ბიუჯეტი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -484,51 +484,51 @@
          * ======================= */
                 'healthcare_indicators' => [
                     'en' => "ENG/Healthcare/Indicators/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/მაჩვენებლები/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/მაჩვენებლები/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_emergent' => [
                     'en' => "ENG/Healthcare/Emergent/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/სასწრაფო/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/სასწრაფო/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_abortions' => [
                     'en' => "ENG/Healthcare/Abortions/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/აბორტები/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/აბორტები/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_anemia' => [
                     'en' => "ENG/Healthcare/Anemia/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/ანემია/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ანემია/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_diabetes' => [
                     'en' => "ENG/Healthcare/Diabetes/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/დიაბეტი/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/დიაბეტი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_cancer' => [
                     'en' => "ENG/Healthcare/Cancer/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/კიბო/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/კიბო/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_circulatory' => [
                     'en' => "ENG/Healthcare/Circulatory/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/სისხლის%20მიმოქცევა/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_respiratory' => [
                     'en' => "ENG/Healthcare/Respiratory/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/სუნთქვა/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_syphilis' => [
                     'en' => "ENG/Healthcare/Syphilis/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ათაშანგი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_aids' => [
                     'en' => "ENG/Healthcare/AIDS/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/შიდსი/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/შიდსი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_tuberculosis' => [
                     'en' => "ENG/Healthcare/Tuberculosis/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ტუბერკულიოზი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'healthcare_hepatitis' => [
                     'en' => "ENG/Healthcare/Hepatitis/Kvemo%20Kartli/{$en}",
-                    'ka' => "ჯანდაცვა/ჰეპატიტი/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "ჯანდაცვა/ჰეპატიტი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -537,15 +537,15 @@
 
                 'social_subsistence' => [
                     'en' => "ENG/Social%20Statistic/Subsistence%20Allowance/Kvemo%20Kartli/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/საარსებო/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "სოციალური%20სტატისტიკა/საარსებო/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
                 ],
                 'social_receiving' => [
                     'en' => "ENG/Social%20Statistic/Receiving/Kvemo%20Kartli/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/მიმღები/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "სოციალური%20სტატისტიკა/მიმღები/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
                 ],
                 'social_beneficiaries' => [
                     'en' => "ENG/Social%20Statistic/Beneficiaries/Kvemo%20Kartli/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/{$kaSafe}"
+                    'ka' => "სოციალური%20სტატისტიკა/ბენეფიციართა/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -565,11 +565,11 @@
                 ],
                 'education_directors' => [
                     'en' => "ENG/Education/Directors/Kvemo%20Kartli/{$municipal_info['en_full']}",
-                    'ka' => "განათლება/დირექტორები/ქვემო%20ქართლი/{$municipal_info['municipal_info']['ka_name']}"
+                    'ka' => "განათლება/დირექტორები/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
                 ],
                 'education_vocational' => [
                     'en' => "ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/{$en}",
-                    'ka' => "განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
+                    'ka' => "განათლება/პროფესიული%20და%20უმაღლესი%20საგანმანათლებლო%20დაწესებულებები/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -708,7 +708,7 @@
          * ======================= */
                 'social_indicators' => [
                     'en' => "ENG/Social%20Statistic/Indicators/Kvemo%20Kartli/{$en}",
-                    'ka' => "სოციალური%20სტატისტიკა/მაჭვენებლები/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
+                    'ka' => "სოციალური%20სტატისტიკა/მაჩვენებლები/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
                 ],
                 'social_disability' => [
                     'en' => "ENG/Social%20Statistic/Disability%20Persons/Kvemo%20Kartli/{$en}",
@@ -724,11 +724,11 @@
          * ======================= */
                 'self_governance' => [
                     'en' => "ENG/Government/Self-Governance/Kvemo%20Kartli/{$en}%20Municipality",
-                    'ka' => "ხელისუფლება/თვითმმართველობა/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
+                    'ka' => "ხელისუფლება/თვითმმართველობა/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
                 'voters' => [
                     'en' => "ENG/Government/Voters/Kvemo%20Kartli/{$en}%20Municipality",
-                    'ka' => "ხელისუფლება/ამომრჩეველი/ქვემო%20ქართლი/{$municipal_info['ka_full']}"
+                    'ka' => "ხელისუფლება/ამომრჩეველი/ქვემო%20ქართლი/{$municipal_info['ka_name']}"
                 ],
             ];
 

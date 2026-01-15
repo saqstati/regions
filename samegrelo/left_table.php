@@ -178,11 +178,11 @@
          * ======================= */
                 'pop_urban_rural' => [
                     'en' => "ENG/Population%20census%20pre/urban-rural%20settlements/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20საქალაქო-სასოფლო/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'pop_by_sex' => [
                     'en' => "ENG/Population%20census%20pre/number%20of%20population%20by%20sex/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/{$kaSafe}"
+                    'ka' => "მოსახლეობის%20აღწერა%20წინასწარი/მოსახლეობა%20სქესის%20მიხედვით/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -433,7 +433,7 @@
          * ======================= */
                 'budget_main' => [
                     'en' => "ENG/Budget/Samegrelo-Zemo%20Svaneti/{$en}",
-                    'ka' => "ბიუჯეტი/სამეგრელო-ზემო%20სვანეთი/{$$municipal_info['ka_name']}"
+                    'ka' => "ბიუჯეტი/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
 
                 /* =======================
@@ -583,7 +583,7 @@
                 ],
                 'education_directors' => [
                     'en' => "ENG/Education/Directors/Samegrelo-Zemo%20Svaneti/{$municipal_info['en_full']}",
-                    'ka' => "განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['municipal_info']['ka_name']}"
+                    'ka' => "განათლება/დირექტორები/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'education_vocational' => [
                     'en' => "ENG/Education/Vocational%20and%20Higher%20educational%20institutions/Adjara/{$en}",
@@ -742,11 +742,11 @@
          * ======================= */
                 'self_governance' => [
                     'en' => "ENG/Government/Self-Governance/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
-                    'ka' => "ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_full']}"
+                    'ka' => "ხელისუფლება/თვითმმართველობა/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
                 'voters' => [
                     'en' => "ENG/Government/Voters/Samegrelo-Zemo%20Svaneti/{$en}%20Municipality",
-                    'ka' => "ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_full']}"
+                    'ka' => "ხელისუფლება/ამომრჩეველი/სამეგრელო-ზემო%20სვანეთი/{$municipal_info['ka_name']}"
                 ],
             ];
 
